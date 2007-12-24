@@ -1,0 +1,32 @@
+* Review and port remaining patches to Qt4.4.0
+* Fix dpkg-shlibdeps failure: couldn't find library libQtWebKit.so.4
+   debian/qt4-designer/usr/lib/qt4/plugins/designer/libqaxwidget.so (its RPATH is '').
+* Find a way to enable exceptions only for XmlPatterns
+* Install new files :
+
+usr/bin/assistant_new
+usr/bin/qcollectiongenerator
+usr/bin/qhelpconverter
+usr/bin/qhelpgenerator
+
+usr/lib/libQtCLucene.so.4
+usr/lib/libQtCLucene.so.4.4
+usr/lib/libQtCLucene.so.4.4.0
+
+usr/lib/libQtHelp.so.4
+usr/lib/libQtHelp.so.4.4
+usr/lib/libQtHelp.so.4.4.0
+
+usr/lib/libQtWebKit.so.4
+usr/lib/libQtWebKit.so.4.4
+usr/lib/libQtWebKit.so.4.4.0
+
+usr/lib/libQtXmlPatterns.so.4
+usr/lib/libQtXmlPatterns.so.4.4
+usr/lib/libQtXmlPatterns.so.4.4.0
+
+usr/lib/libphonon.so.5
+usr/lib/libphonon.so.5.0
+usr/lib/libphonon.so.5.0.0
+
+usr/lib/qt4/plugins/script/libqtscriptdbus.so
