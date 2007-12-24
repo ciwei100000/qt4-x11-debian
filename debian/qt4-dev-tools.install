@@ -2,4 +2,8 @@ usr/bin/assistant-qt4
 usr/bin/linguist-qt4
 usr/bin/qdbusviewer
 usr/bin/pixeltool
+usr/bin/assistant_new
+usr/bin/qcollectiongenerator
+usr/bin/qhelpconverter
+usr/bin/qhelpgenerator
 usr/share/qt4/phrasebooks/*
