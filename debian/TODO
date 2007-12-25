@@ -8,24 +8,4 @@
   Anyways, a simple workaround for your case is to build Qt without exceptions,
   then reconfigure with them and build QtXmlPatterns only. Unless the ABI for
   with/without exceptions changes for your compiler, of course.
-* Install new files :
-
-usr/lib/libQtCLucene.so.4
-usr/lib/libQtCLucene.so.4.4
-usr/lib/libQtCLucene.so.4.4.0
-
-usr/lib/libQtHelp.so.4
-usr/lib/libQtHelp.so.4.4
-usr/lib/libQtHelp.so.4.4.0
-
-usr/lib/libQtWebKit.so.4
-usr/lib/libQtWebKit.so.4.4
-usr/lib/libQtWebKit.so.4.4.0
-
-usr/lib/libQtXmlPatterns.so.4
-usr/lib/libQtXmlPatterns.so.4.4
-usr/lib/libQtXmlPatterns.so.4.4.0
-
-usr/lib/libphonon.so.5
-usr/lib/libphonon.so.5.0
-usr/lib/libphonon.so.5.0.0
+* Check conflicts with WebKit and Phonon (from KDE4/kdelibs) packages

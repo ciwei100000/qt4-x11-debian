@@ -24,7 +24,10 @@ qt4-x11 (4.4.0~tp1-1) experimental; urgency=low
     * Enable exceptions. It is a dependency to XmlPatterns module.
   * Refresh patches: 01, 02, 03, 04, 05.
   * Disable all other patches.
-  * Update libqt4-gui.install and qt4-dev-tool.install files.
+  * Update .install files: libqt4-core, libqt4-gui and qt4-dev-tools.
+  * Add packages: libqt4-dbus, libqt4-phonon , libqt4-webkit and
+    libqt4-xmlpatterns.
+  * Move QtDBus module from libqt4-core in libqt4-dbus package.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 20 Dec 2007 11:20:46 +0100
 

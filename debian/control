@@ -99,13 +99,13 @@ Architecture: any
 Section: devel
 Depends: ${shlibs:Depends}, ${misc:Depends}, libqt4-core (= ${binary:Version})
 Conflicts: qt3-assistant (<= 3:3.3.4-7), qt3-designer (<= 3:3.3.4-7), qt3-linguist (<= 3:3.3.4-7)
-Recommends: libqt4-dev, qt4-designer, qt4-doc
+Recommends: libqt4-dev, qt4-doc, qt4-designer
 Description: Qt 4 development tools
  Qt is a cross-platform C++ application framework.  Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
  This packages contains tools used to assist in Qt 4 development,
- including the Qt Assistant, Linguist, DBus Viewer and Pixel Tool applications.
+ including the Qt Assistant, Linguist, D-Bus Viewer and Pixel Tool applications.
 
 Package: qt4-qtconfig
 Architecture: any
@@ -133,3 +133,65 @@ Description: Qt 4 API documentation
  documentation is provided in HTML and manpage format; the HTML version
  can be viewed in conjunction with the Qt Assistant found in the
  qt4-dev-tools package.
+
+Package: libqt4-dbus
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libqt4-core (<< 4.4.0~tp1-1)
+Replaces: libqt4-core (<< 4.4.0~tp1-1)
+Description: Qt 4 D-Bus module
+ Qt is a cross-platform C++ application framework.  Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the D-Bus module for Qt.
+ .
+ The QtDBus module is a Unix-only library that you can use to make Inter-Process
+ Communication using the D-Bus protocol.
+ .
+ Applications using the QtDBus module can provide services to other, remote
+ applications by exporting objects, as well as use services exported by those
+ applications by placing calls and accessing properties.
+
+Package: libqt4-xmlpatterns
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Qt 4 XML patterns module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the XmlPatterns module for Qt.
+ .
+ QtXmlPatterns is a XQuery and XPath engine for XML and custom data models.
+
+Package: libqt4-phonon
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Qt 4 Phonon module
+ Qt is a cross-platform C++ application framework.  Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the Phonon module for Qt.
+ .
+ Phonon is a cross-platform multimedia framework that enables the use of audio
+ and video content in Qt applications.
+
+Package: libqt4-webkit
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Qt 4 WebKit module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the WebKit module for Qt.
+ .
+ QtWebKit provides a Web browser engine that makes it easy to embed content
+ from the World Wide Web into your Qt application. At the same time Web content
+ can be enhanced with native controls.
+ .
+ QtWebKit provides facilities for rendering of HyperText Markup Language (HTML),
+ Extensible HyperText Markup Language (XHTML) and Scalable Vector Graphics (SVG)
+ documents, styled using Cascading Style Sheets (CSS) and scripted with JavaScript.
