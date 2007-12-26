@@ -1,20 +1,16 @@
 # qt-copy patches
-# 0167-fix-group-reading.diff
+0167-fix-group-reading.diff
 # #0172-prefer-xrandr-over-xinerama.diff
 # 0175-fix-s390-qatomic.diff
-# 0176-coverity-fixes.diff
+0176-coverity-fixes.diff
 # 0178-transparency-window-types.diff
-# 0179-transient-hack.diff
+0179-transient-hack.diff
 # 0180-window-role.diff
 # 0187-fix-font-fixed-pitch.diff
-# 0191-listview-alternate-row-colors.diff
-# 0192-itemdelegate-palette-state.diff
-# 0194-fix-moveonly-dnd-in-itemviews.diff
+0194-fix-moveonly-dnd-in-itemviews.diff
 # 0195-compositing-properties.diff
-# 0200-fix-qsslsocket-waitfor.diff
-# 0203-qtexthtmlparser-link-color.diff
-# 0204-fix-tulip-aliasing.diff
-# 0300-pedantic-fixes.diff
+0203-qtexthtmlparser-link-color.diff
+0300-pedantic-fixes.diff
 
 # debian patches
 01_qmake_for_debian.diff

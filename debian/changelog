@@ -23,14 +23,16 @@ qt4-x11 (4.4.0~tp1-1) experimental; urgency=low
     * Enable Phonon, WebKit and XmlPatterns.
     * Enable exceptions. It is a dependency to XmlPatterns module.
   * Refresh Debian patches.
-  * Disable qt-copy patches.
+  * Refresh qt-copy patches: 0167, 0176, 0179, 0194, 0203, and 0300.
+  * Disable qt-copy patches: 0175, O178, 0180, 0187 and 0195.
+  * Remove qt-copy patches: 0191, 0192, 0200 and 0204.
   * Add patch to fix phonon_gstreamer plugin install.
   * Remove patches:
     * 21_assume_no_fpu_for_embedded_devices. Merged upstream.
       It breaks ABI on mips.
     * 30_arm_ftbfs_fixes. Merged upstream.
   * Update .install files: libqt4-core, libqt4-gui and qt4-dev-tools.
-  * Add packages: libqt4-dbus, libqt4-phonon , libqt4-webkit and
+  * Add packages: libqt4-dbus, libqt4-phonon, libqt4-webkit and
     libqt4-xmlpatterns.
   * Move QtDBus module from libqt4-core in libqt4-dbus package.
 

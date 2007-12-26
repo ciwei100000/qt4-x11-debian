@@ -2,9 +2,9 @@ author: David Faure <faure@kde.org>
 
 Fix compilation with CXXFLAGS=-pedantic -Wno-long-long.
 
---- a/src/network/qnetworkproxy.cpp
-+++ b/src/network/qnetworkproxy.cpp
-@@ -207,7 +207,7 @@
+--- a/src/network/kernel/qnetworkproxy.cpp
++++ b/src/network/kernel/qnetworkproxy.cpp
+@@ -224,7 +224,7 @@
  #endif
  };
  
@@ -13,9 +13,9 @@ Fix compilation with CXXFLAGS=-pedantic -Wno-long-long.
  
  class QNetworkProxyPrivate
  {
---- a/src/network/qsocks5socketengine.cpp
-+++ b/src/network/qsocks5socketengine.cpp
-@@ -345,7 +345,7 @@
+--- a/src/network/socket/qsocks5socketengine.cpp
++++ b/src/network/socket/qsocks5socketengine.cpp
+@@ -351,7 +351,7 @@
      QHash<int, QSocks5BindData *> store;
  };
  
@@ -24,19 +24,8 @@ Fix compilation with CXXFLAGS=-pedantic -Wno-long-long.
  
  QSocks5BindStore::QSocks5BindStore()
      : mutex(QMutex::Recursive)
---- a/src/xml/qdom.cpp
-+++ b/src/xml/qdom.cpp
-@@ -676,7 +676,7 @@
- 
-     *ok = true;
-     return result;
--};
-+}
- 
- // [15] Comment ::= '<!--' ((Char - '-') | ('-' (Char - '-')))* '-->'
- // can't escape "--", since entities are not recognised within comments
---- a/src/xml/qxmlstream_p.h
-+++ b/src/xml/qxmlstream_p.h
+--- a/src/corelib/xml/qxmlstream_p.h
++++ b/src/corelib/xml/qxmlstream_p.h
 @@ -116,7 +116,7 @@
  
      GOTO_INDEX_OFFSET = 418,
