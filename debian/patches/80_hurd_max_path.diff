@@ -2,9 +2,9 @@ author: Brian Nelson <pyro@debian.org>
 
 --- a/src/corelib/io/qfsfileengine_unix.cpp
 +++ b/src/corelib/io/qfsfileengine_unix.cpp
-@@ -53,6 +53,10 @@
- # include <private/qcore_mac_p.h>
- #endif
+@@ -56,6 +56,10 @@
+ 
+ QT_BEGIN_NAMESPACE
  
 +#ifndef PATH_MAX
 +#define PATH_MAX 4096

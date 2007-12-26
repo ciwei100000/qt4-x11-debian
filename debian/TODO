@@ -1,4 +1,4 @@
-* Review and port remaining patches to Qt4.4.0
+* Review and port qt-copy patches to Qt4.4.0
 * Fix dpkg-shlibdeps failure: couldn't find library libQtWebKit.so.4
    debian/qt4-designer/usr/lib/qt4/plugins/designer/libqaxwidget.so (its RPATH is '').
 * Find a way to enable exceptions only for XmlPatterns

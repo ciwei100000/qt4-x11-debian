@@ -26,15 +26,13 @@
 07_trust_dpkg-arch_over_uname-m.diff
 08_load_ssl.diff
 09_install_phonon_gstreamer.diff
-# 20_mips_atomic_ops.diff
-# #21_assume_no_fpu_for_embedded_devices.diff
-# 30_arm_ftbfs_fixes.diff
-# 31_arm_eabi_fix.diff
-# 40_alpha_ice.diff
-# 41_disable_opengl_visibility.diff
-# 50_kfreebsd_build_fix.diff
-# 60_m68k_inotify_fix.diff
-# 70_hppa_ldcw_fix.diff
-# 80_hurd_max_path.diff
-# 90_qmake_cxxflags_fpermissive.diff
-# 91_qmake_ldflags_as-needed.diff
+20_mips_atomic_ops.diff
+31_arm_eabi_fix.diff
+40_alpha_ice.diff
+41_disable_opengl_visibility.diff
+50_kfreebsd_build_fix.diff
+60_m68k_inotify_fix.diff
+70_hppa_ldcw_fix.diff
+80_hurd_max_path.diff
+90_qmake_cxxflags_fpermissive.diff
+91_qmake_ldflags_as-needed.diff
