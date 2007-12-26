@@ -1,0 +1,12 @@
+--- a/src/plugins/phonon/gstreamer/gstreamer.pro
++++ b/src/plugins/phonon/gstreamer/gstreamer.pro
+@@ -3,6 +3,9 @@
+ TARGET = phonon_gstreamer
+ DESTDIR = $$QT_BUILD_TREE/plugins/phonon_backend
+ 
++target.path += $$[QT_INSTALL_PLUGINS]/phonon_backend
++INSTALLS += target
++
+ DEPENDPATH += .
+ INCLUDEPATH += .
+ 

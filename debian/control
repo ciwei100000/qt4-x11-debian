@@ -169,6 +169,7 @@ Package: libqt4-phonon
 Architecture: any
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: gstreamer0.10-plugins-good
 Description: Qt 4 Phonon module
  Qt is a cross-platform C++ application framework.  Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
