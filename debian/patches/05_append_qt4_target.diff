@@ -221,3 +221,14 @@ author: Fathi Boudra <fboudra@free.fr>
  DESTDIR                = ../../bin
  
  target.path=$$[QT_INSTALL_BINS]
+--- a/tools/assistant/compat/compat.pro
++++ b/tools/assistant/compat/compat.pro
+@@ -2,7 +2,7 @@
+ 
+ TEMPLATE = app
+ LANGUAGE = C++
+-TARGET = assistant
++TARGET = assistant-qt4
+ 
+ CONFIG += qt warn_on
+ 
