@@ -1,42 +1,45 @@
-qt4-x11 (4.4.0~tp1-1) experimental; urgency=low
+qt4-x11 (4.4.0~tp1-1) UNRELEASED; urgency=low
 
   * New upstream release.
-
-  [Fathi Boudra]
-
-  * Update 0203-qtexthtmlparser-link-color qt-copy patch:
-    Add qt-bugs@ issue and Trolltech task ID.
-  * Add 0204-fix-tulip-aliasing qt-copy patch:
-    Fix KDE4 RC2 crashing on startup due to Qt 4.3.3 update.
   * Add some pedantic fixes from David Faure.
-
-  * Downgrade libqt4-dev dependency to qt4-dev-tools from Recommends to
-    Suggests.
-  * Add semicolon at the end of the MimeType key. Thanks to Pino Toscano.
-
   * Add TODO file.
   * Add libgstreamer-plugins-base0.10-dev build dependency.
   * Update rules:
     * Disable DEB_INSTALL_CHANGELOGS_ALL.
     * Disable DEB_INSTALL_DOCS_ALL.
     * Add DEB_DH_SHLIBDEPS_ARGS_ALL workaround.
-    * Enable Phonon, WebKit and XmlPatterns.
+    * Enable XmlPatterns.
     * Enable exceptions. It is a dependency to XmlPatterns module.
   * Refresh Debian patches.
   * Refresh qt-copy patches: 0167, 0176, 0179, 0194, 0203, and 0300.
   * Disable qt-copy patches: 0175, O178, 0180, 0187 and 0195.
   * Remove qt-copy patches: 0191, 0192, 0200 and 0204.
-  * Add patch to fix phonon_gstreamer plugin install.
   * Remove patches:
     * 21_assume_no_fpu_for_embedded_devices. Merged upstream.
       It breaks ABI on mips.
     * 30_arm_ftbfs_fixes. Merged upstream.
+    * 91_qmake_lflags_no-undefined. Merged upstream.
   * Update .install files: libqt4-core, libqt4-gui and qt4-dev-tools.
-  * Add packages: libqt4-dbus, libqt4-phonon, libqt4-webkit and
-    libqt4-xmlpatterns.
+  * Add packages: libqt4-dbus and libqt4-xmlpatterns.
   * Move QtDBus module from libqt4-core in libqt4-dbus package.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 20 Dec 2007 11:20:46 +0100
+ -- Fathi Boudra <fabo@debian.org>  Sun, 30 Dec 2007 23:43:04 +0100
+
+qt4-x11 (4.3.3-2) unstable; urgency=low
+
+  * Update 0203-qtexthtmlparser-link-color qt-copy patch:
+    Add qt-bugs@ issue and Trolltech task ID.
+  * Add 0204-fix-tulip-aliasing qt-copy patch:
+    Fix KDE4 RC2 crashing on startup due to Qt 4.3.3 update.
+  * Downgrade libqt4-dev dependency to qt4-dev-tools from Recommends to
+    Suggests.
+  * Add semicolon at the end of the MimeType key. Thanks to Pino Toscano.
+  * Revert build with --as-needed linker flag:
+    It breaks other packages. (Closes: #457038, #457284)
+  * Add 91_qmake_lflags_no-undefined patch:
+    By default, qmake adds --no-undefined linker flag.
+
+ -- Fathi Boudra <fabo@debian.org>  Sun, 30 Dec 2007 23:29:09 +0100
 
 qt4-x11 (4.3.3-1) unstable; urgency=low
 

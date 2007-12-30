@@ -4,7 +4,6 @@ export QTDIR := $(shell pwd)
 export PATH := $(QTDIR)/bin:$(PATH)
 export LD_LIBRARY_PATH := $(QTDIR)/lib:$(LD_LIBRARY_PATH)
 export CXXFLAGS := -fpermissive
-export LDFLAGS := -Wl,--as-needed
 
 QTVERSION := $(shell ls changes-* | cut -f2 -d '-')
 CURRENTVERSION := $(shell head -1 debian/changelog  | sed 's/[^(]*(\([^)]*\)).*/\1/')
@@ -34,16 +33,11 @@ DEB_DH_STRIP_ARGS_libqt4-debug := --exclude=.debug
 # Qt4.4.0-tp1 does not contain GPL_EXCEPTION_ADDENDUM.TXT file
 #DEB_INSTALL_DOCS_ALL := GPL_EXCEPTION_ADDENDUM.TXT
 
-# Qt4.4.0-tp1 workaround
-# dpkg-shlibdeps: failure: couldn't find library libQtWebKit.so.4 needed by
-# debian/qt4-designer/usr/lib/qt4/plugins/designer/libqaxwidget.so (its RPATH is '').
-DEB_DH_SHLIBDEPS_ARGS_ALL := --dpkg-shlibdeps-params=--ignore-missing-info
-
 ifeq ($(DEB_HOST_ARCH),arm)
 	EXTRA_CONFIGURE_OPTS += -DQT_QLOCALE_USES_FCVT
 endif
 
-DEB_CONFIGURE_SCRIPT_ENV += CXXFLAGS="-fpermissive" LDFLAGS="-Wl,--as-needed"
+DEB_CONFIGURE_SCRIPT_ENV += CXXFLAGS="-fpermissive"
 
 ifeq ($(DEB_HOST_ARCH_OS),linux)
         PLATFORM_ARG = linux-g++
@@ -103,8 +97,8 @@ endif
 	            -pch \
 	            -nomake examples \
 	            -nomake demos \
-	            -phonon \
-	            -webkit \
+	            -no-phonon \
+	            -no-webkit \
 	            -xmlpatterns \
 	            $(EXTRA_CONFIGURE_OPTS)
 

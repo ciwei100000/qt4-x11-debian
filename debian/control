@@ -164,35 +164,3 @@ Description: Qt 4 XML patterns module
  This package contains the XmlPatterns module for Qt.
  .
  QtXmlPatterns is a XQuery and XPath engine for XML and custom data models.
-
-Package: libqt4-phonon
-Architecture: any
-Section: libs
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Recommends: gstreamer0.10-plugins-good
-Description: Qt 4 Phonon module
- Qt is a cross-platform C++ application framework.  Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- This package contains the Phonon module for Qt.
- .
- Phonon is a cross-platform multimedia framework that enables the use of audio
- and video content in Qt applications.
-
-Package: libqt4-webkit
-Architecture: any
-Section: libs
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Qt 4 WebKit module
- Qt is a cross-platform C++ application framework. Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- This package contains the WebKit module for Qt.
- .
- QtWebKit provides a Web browser engine that makes it easy to embed content
- from the World Wide Web into your Qt application. At the same time Web content
- can be enhanced with native controls.
- .
- QtWebKit provides facilities for rendering of HyperText Markup Language (HTML),
- Extensible HyperText Markup Language (XHTML) and Scalable Vector Graphics (SVG)
- documents, styled using Cascading Style Sheets (CSS) and scripted with JavaScript.
