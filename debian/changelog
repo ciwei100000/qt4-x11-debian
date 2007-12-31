@@ -34,7 +34,7 @@ qt4-x11 (4.3.3-2) unstable; urgency=low
   * Downgrade libqt4-dev dependency to qt4-dev-tools from Recommends to
     Suggests.
   * Add semicolon at the end of the MimeType key. Thanks to Pino Toscano.
-  * Revert build with --as-needed linker flag:
+  * Remove 91_qmake_ldflags_as-needed patch:
     It breaks other packages. (Closes: #457038, #457284)
   * Add 91_qmake_lflags_no-undefined patch:
     By default, qmake adds --no-undefined linker flag.
