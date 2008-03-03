@@ -22,7 +22,6 @@
 06_qtdemo_destdir.diff
 07_trust_dpkg-arch_over_uname-m.diff
 08_load_ssl.diff
-# no phonon 09_install_phonon_gstreamer.diff
 10_config_tests_fixes.diff
 20_mips_atomic_ops.diff
 40_alpha_ice.diff
