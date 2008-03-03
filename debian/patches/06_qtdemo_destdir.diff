@@ -1,4 +1,4 @@
-author: Fathi Boudra <fboudra@free.fr>
+author: Fathi Boudra <fabo@debian.org>
 
 Fix qtdemo destdir.
 
@@ -16,7 +16,7 @@ Fix qtdemo destdir.
 --- a/demos/qtdemo/qtdemo.pro
 +++ b/demos/qtdemo/qtdemo.pro
 @@ -1,6 +1,6 @@
- CONFIG += assistant x11inc
+ CONFIG += assistant help x11inc
  TARGET = qtdemo
 -DESTDIR = $$QT_BUILD_TREE/bin
 +DESTDIR = bin

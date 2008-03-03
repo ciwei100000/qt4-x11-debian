@@ -1,4 +1,4 @@
-author: Fathi Boudra <fboudra@free.fr>
+author: Fathi Boudra <fabo@debian.org>
 
 --- a/config.tests/unix/compile.test
 +++ b/config.tests/unix/compile.test
@@ -57,7 +57,7 @@ author: Fathi Boudra <fboudra@free.fr>
      if [ "$VERBOSE" = "yes" ]; then
 --- a/configure
 +++ b/configure
-@@ -3615,7 +3615,7 @@
+@@ -3664,7 +3664,7 @@
  }
  
  # build qmake
@@ -66,7 +66,7 @@ author: Fathi Boudra <fboudra@free.fr>
      echo "Creating qmake. Please wait..."
  
      OLD_QCONFIG_H=
-@@ -5689,8 +5689,8 @@
+@@ -5773,8 +5773,8 @@
  QMAKE_MOC_SRC    = \$\$QT_BUILD_TREE/src/moc
  
  #local paths that cannot be queried from the QT_INSTALL_* properties while building QTDIR
@@ -77,7 +77,7 @@ author: Fathi Boudra <fboudra@free.fr>
  QMAKE_UIC3       = \$\$QT_BUILD_TREE/bin/uic3
  QMAKE_RCC        = \$\$QT_BUILD_TREE/bin/rcc
  QMAKE_QDBUSXML2CPP = \$\$QT_BUILD_TREE/bin/qdbusxml2cpp
-@@ -5961,11 +5961,11 @@
+@@ -6066,11 +6066,11 @@
  #-------------------------------------------------------------------------------
  
  echo "Finding project files. Please wait..."
@@ -91,7 +91,7 @@ author: Fathi Boudra <fboudra@free.fr>
  fi
  
  # .projects      -> projects to process
-@@ -6138,7 +6138,7 @@
+@@ -6243,7 +6243,7 @@
              echo "  for $a\c"
          fi
  
@@ -102,7 +102,7 @@ author: Fathi Boudra <fboudra@free.fr>
              if echo '\c' | grep '\c' >/dev/null; then
 --- a/projects.pro
 +++ b/projects.pro
-@@ -121,7 +121,7 @@
+@@ -141,7 +141,7 @@
  win32 {
     qmake.files=$$QT_BUILD_TREE/bin/qmake.exe
  } else {
@@ -113,7 +113,7 @@ author: Fathi Boudra <fboudra@free.fr>
  
 --- a/qmake/Makefile.unix
 +++ b/qmake/Makefile.unix
-@@ -97,17 +97,17 @@
+@@ -98,17 +98,17 @@
  
  CXXFLAGS = @QMAKE_CXXFLAGS@ $(CPPFLAGS)
  
@@ -135,6 +135,28 @@ author: Fathi Boudra <fboudra@free.fr>
  
  depend:
  	makedepend -D__MAKEDEPEND__ $(CPPFLAGS) $(DEPEND_SRC)
+--- a/src/tools/lrelease/lrelease.pro
++++ b/src/tools/lrelease/lrelease.pro
+@@ -26,7 +26,7 @@
+ SOURCES += $$PROPARSERPATH/proitems.cpp \
+         $$PROPARSERPATH/proreader.cpp
+ 
+-TARGET           = lrelease
++TARGET           = lrelease-qt4
+ INCLUDEPATH     += $$QT_SOURCE_TREE/tools/linguist/shared
+ DESTDIR          = $$QT_BUILD_TREE/bin
+ 
+--- a/src/tools/lupdate/lupdate.pro
++++ b/src/tools/lupdate/lupdate.pro
+@@ -41,7 +41,7 @@
+         $$PROPARSERPATH/proreader.cpp
+ 
+ 
+-TARGET          = lupdate
++TARGET          = lupdate-qt4
+ INCLUDEPATH     += $$QT_SOURCE_TREE/tools/linguist/shared
+ DESTDIR          = $$QT_BUILD_TREE/bin
+ 
 --- a/src/tools/moc/moc.pro
 +++ b/src/tools/moc/moc.pro
 @@ -1,5 +1,5 @@
@@ -155,17 +177,6 @@ author: Fathi Boudra <fboudra@free.fr>
  DESTDIR = ../../../bin
  
  DEFINES	       += QT_BOOTSTRAPPED QT_UIC QT_LITE_UNICODE QT_NO_DATASTREAM \
---- a/tools/assistant/compat/assistant.pro
-+++ b/tools/assistant/compat/assistant.pro
-@@ -2,7 +2,7 @@
- 
- TEMPLATE = app
- LANGUAGE = C++
--TARGET = assistant
-+TARGET = assistant-qt4
- 
- CONFIG += qt warn_on
- 
 --- a/tools/designer/src/designer/designer.pro
 +++ b/tools/designer/src/designer/designer.pro
 @@ -24,7 +24,7 @@
@@ -179,7 +190,7 @@ author: Fathi Boudra <fboudra@free.fr>
  include($$QT_SOURCE_TREE/tools/shared/qttoolbardialog/qttoolbardialog.pri)
 --- a/tools/linguist/linguist/linguist.pro
 +++ b/tools/linguist/linguist/linguist.pro
-@@ -54,7 +54,7 @@
+@@ -67,7 +67,7 @@
  contains(QT_PRODUCT, OpenSource.*):DEFINES *= QT_OPENSOURCE
  DEFINES += QT_KEYWORDS
  DESTDIR = ../../../bin
@@ -188,28 +199,6 @@ author: Fathi Boudra <fboudra@free.fr>
  win32:RC_FILE = linguist.rc
  mac { 
      static:CONFIG -= global_init_link_order
---- a/tools/linguist/lrelease/lrelease.pro
-+++ b/tools/linguist/lrelease/lrelease.pro
-@@ -29,7 +29,7 @@
- SOURCES += $$PROPARSERPATH/proitems.cpp \
-         $$PROPARSERPATH/proreader.cpp
- 
--TARGET          = lrelease
-+TARGET          = lrelease-qt4
- INCLUDEPATH     += ../shared
- DESTDIR         = ../../../bin
- 
---- a/tools/linguist/lupdate/lupdate.pro
-+++ b/tools/linguist/lupdate/lupdate.pro
-@@ -42,7 +42,7 @@
-         $$PROPARSERPATH/proreader.cpp
- 
- 
--TARGET          = lupdate
-+TARGET          = lupdate-qt4
- INCLUDEPATH     += ../shared
- DESTDIR          = ../../../bin
- 
 --- a/tools/qtconfig/qtconfig.pro
 +++ b/tools/qtconfig/qtconfig.pro
 @@ -16,7 +16,7 @@
@@ -221,14 +210,3 @@ author: Fathi Boudra <fboudra@free.fr>
  DESTDIR                = ../../bin
  
  target.path=$$[QT_INSTALL_BINS]
---- a/tools/assistant/compat/compat.pro
-+++ b/tools/assistant/compat/compat.pro
-@@ -2,7 +2,7 @@
- 
- TEMPLATE = app
- LANGUAGE = C++
--TARGET = assistant
-+TARGET = assistant-qt4
- 
- CONFIG += qt warn_on
- 

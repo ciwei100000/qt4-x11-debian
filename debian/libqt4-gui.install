@@ -7,7 +7,6 @@ usr/lib/libQtAssistantClient.so.*
 usr/lib/libQtHelp.so.*
 usr/lib/qt4/plugins/accessible/libqtaccessiblewidgets.so
 usr/lib/qt4/plugins/codecs/*.so
-usr/lib/qt4/plugins/iconengines/libqsvg.so
 usr/lib/qt4/plugins/imageformats/*.so
 usr/lib/qt4/plugins/inputmethods/libqimsw-multi.so
 usr/lib/qt4/plugins/script/libqtscriptdbus.so

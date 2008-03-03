@@ -1,0 +1,29 @@
+qt-bugs@ issue : N199247
+Trolltech task ID : none
+applied: no
+author: Bernhard Rosenkraenzer <bero@arklinux.org>
+
+Fix compile failure when using Xcursor but not RUNTIME_XCURSOR
+
+--- a/src/gui/kernel/qapplication_x11.cpp
++++ b/src/gui/kernel/qapplication_x11.cpp
+@@ -112,6 +112,10 @@
+ #include <X11/keysymdef.h>
+ #include <X11/extensions/XI.h>
+ 
++#if !defined(QT_NO_XCURSOR) && !defined(QT_RUNTIME_XCURSOR)
++#include <X11/Xcursor/Xcursor.h>
++#endif
++
+ #include <stdlib.h>
+ #include <string.h>
+ #include <ctype.h>
+@@ -1780,7 +1784,7 @@
+                 (PtrXcursorLibraryLoadCursor) xcursorLib.resolve("XcursorLibraryLoadCursor");
+         }
+ #else
+-        ptrXcursorLibraryLoadCursor = XcursorLibraryLoadCursor;
++        X11->ptrXcursorLibraryLoadCursor = XcursorLibraryLoadCursor;
+ #endif // QT_RUNTIME_XCURSOR
+ #endif // QT_NO_XCURSOR
+ 

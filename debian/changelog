@@ -1,29 +1,64 @@
-qt4-x11 (4.4.0~tp1-1) UNRELEASED; urgency=low
+qt4-x11 (4.4.0~beta1-1) experimental; urgency=low
 
   * New upstream release.
-  * Add some pedantic fixes from David Faure.
-  * Add TODO file.
-  * Add libgstreamer-plugins-base0.10-dev build dependency.
+
+  * Add build dependencies: libgstreamer-plugins-base0.10-dev, firebird2.0-dev,
+    libiodbc2-dev, libtiff4-dev, libpam0g-dev, libreadline5-dev, libxslt1-dev.
   * Update rules:
     * Disable DEB_INSTALL_CHANGELOGS_ALL.
-    * Disable DEB_INSTALL_DOCS_ALL.
     * Add DEB_DH_SHLIBDEPS_ARGS_ALL workaround.
     * Enable XmlPatterns.
     * Enable exceptions. It is a dependency to XmlPatterns module.
   * Refresh Debian patches.
-  * Refresh qt-copy patches: 0167, 0176, 0179, 0194, 0203, and 0300.
-  * Disable qt-copy patches: 0175, O178, 0180, 0187 and 0195.
-  * Remove qt-copy patches: 0191, 0192, 0200 and 0204.
+  * Refresh qt-copy patches: 0167, 0172, 0178, 0180, 0191, 0192, 0195, 0203,
+    0209 and 0210.
+  * Add qt-copy patches: 0214, 0215 and 0216.
+  * Remove qt-copy patches: 0175, 0176, 0179, 0187, 0194, 0200, 0205 and 0211.
   * Remove patches:
+    * 02_launch_assistant-qt4. assistant was renamed to assistant_adp.
     * 21_assume_no_fpu_for_embedded_devices. Merged upstream.
       It breaks ABI on mips.
     * 30_arm_ftbfs_fixes. Merged upstream.
+    * 31_arm_eabi_fix. Upstream changed arm architecture handling.
+      This patch doesn't apply as it is.
     * 91_qmake_lflags_no-undefined. Merged upstream.
   * Update .install files: libqt4-core, libqt4-gui and qt4-dev-tools.
   * Add packages: libqt4-dbus and libqt4-xmlpatterns.
   * Move QtDBus module from libqt4-core in libqt4-dbus package.
 
- -- Fathi Boudra <fabo@debian.org>  Sun, 30 Dec 2007 23:43:04 +0100
+  * Experimental test to re-introduce link_prl.
+
+ -- Fathi Boudra <fabo@debian.org>  Sat, 01 Mar 2008 18:31:24 +0100
+
+qt4-x11 (4.3.4-1) unstable; urgency=low
+
+  * New upstream release:
+    * This version adds the GNU General Public License (GPL) version 3
+      to all Qt Open Source editions. The GPL Exception version 1.1
+      applies to both versions of the GPL license.
+
+  * Add qt-copy patches:
+    * 0205-fast-qpixmap-fill
+      Fix a performance issue in QPixmap::fill()
+    * 0209-prevent-qt-mixing
+      This patch changes QObjectPrivateVersion, thus preventing mixing parts
+      of upstream Qt and qt-copy.
+    * 0210-fix-crash-q3stylesheet-font-size
+      This patch fixes crashs in q3stylesheet
+      (it was possible to use a qfont size < 1)
+    * 0211-q3action-crash
+      During porting qt3to4 port QGroupAction to Q3GroupAction but not QAction
+      to Q3Action (which is logical) But it crashs when it's not a q3action.
+  * Refresh and enable 0172-prefer-xrandr-over-xinerama patch.
+  * Remove 0204-fix-tulip-aliasing patch. Merged upstream.
+  * Remove 90_qmake_cxxflags_fpermissive patch.
+  * Add ${shlibs:Depends} to libqt4-dev. See missing shared library
+    dependencies thread on debian-devel mailing list.
+  * Add catalan translation. Thanks to Javier Serrano Polo. (Closes: #459822)
+  * Update copyright file. Add GPL version 3.
+  * Remove -fpermissive.
+
+ -- Fathi Boudra <fabo@debian.org>  Tue, 26 Feb 2008 18:38:27 +0100
 
 qt4-x11 (4.3.3-2) unstable; urgency=low
 
