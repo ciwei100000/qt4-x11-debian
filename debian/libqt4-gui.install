@@ -11,4 +11,3 @@ usr/lib/qt4/plugins/iconengines/libqsvgicon.so
 usr/lib/qt4/plugins/imageformats/*.so
 usr/lib/qt4/plugins/inputmethods/libqimsw-multi.so
 usr/lib/qt4/plugins/script/libqtscriptdbus.so
-usr/lib/qt4/plugins/sqldrivers/*.so

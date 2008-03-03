@@ -2,7 +2,6 @@
 
 export QTDIR := $(shell pwd)
 export PATH := $(QTDIR)/bin:$(PATH)
-export LD_LIBRARY_PATH := $(QTDIR)/lib:$(LD_LIBRARY_PATH)
 export LDFLAGS := -Wl,--no-undefined -Wl,--as-needed
 
 QTVERSION := $(shell ls changes-* | cut -f2 -d '-')
@@ -26,11 +25,6 @@ DEB_MAKE_CLEAN_TARGET := confclean distclean
 DEB_DH_MAKESHLIBS_ARGS_ALL := -V
 
 DEB_DH_STRIP_ARGS_libqt4-debug := --exclude=.debug
-
-# workaround for failure:
-# no dependency information found for /tmp/buildd/qt4-x11-4.4.0~beta1/lib/libQtWebKit.so.4
-# (used by debian/qt4-designer/usr/lib/qt4/plugins/designer/libqwebview.so).
-DEB_DH_SHLIBDEPS_ARGS_qt4-designer := --dpkg-shlibdeps-params=--ignore-missing-info
 
 # Qt4.4.0-beta1 does not contain changes file
 #DEB_INSTALL_CHANGELOGS_ALL := changes-$(QTVERSION)
