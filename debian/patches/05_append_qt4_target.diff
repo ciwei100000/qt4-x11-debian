@@ -177,6 +177,17 @@ author: Fathi Boudra <fabo@debian.org>
  DESTDIR = ../../../bin
  
  DEFINES	       += QT_BOOTSTRAPPED QT_UIC QT_LITE_UNICODE QT_NO_DATASTREAM \
+--- a/tools/assistant/tools/assistant/assistant.pro
++++ b/tools/assistant/tools/assistant/assistant.pro
+@@ -2,7 +2,7 @@
+ 
+ TEMPLATE = app
+ LANGUAGE = C++
+-TARGET = assistant
++TARGET = assistant-qt4
+ 
+ DEFINES += QT_CLUCENE_SUPPORT
+ 
 --- a/tools/designer/src/designer/designer.pro
 +++ b/tools/designer/src/designer/designer.pro
 @@ -24,7 +24,7 @@
