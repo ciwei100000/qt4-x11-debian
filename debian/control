@@ -163,6 +163,16 @@ Description: Qt 4 D-Bus module
  applications by exporting objects, as well as use services exported by those
  applications by placing calls and accessing properties.
 
+Package: libqt4-webkit
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Qt 4 WebKit module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the WebKit module for Qt.
+
 Package: libqt4-xmlpatterns
 Architecture: any
 Section: libs

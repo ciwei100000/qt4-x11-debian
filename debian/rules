@@ -30,7 +30,7 @@ DEB_DH_STRIP_ARGS_libqt4-debug := --exclude=.debug
 # workaround for failure:
 # no dependency information found for /tmp/buildd/qt4-x11-4.4.0~beta1/lib/libQtWebKit.so.4
 # (used by debian/qt4-designer/usr/lib/qt4/plugins/designer/libqwebview.so).
-DEB_DH_SHLIBDEPS_ARGS_ALL := --dpkg-shlibdeps-params=--ignore-missing-info
+DEB_DH_SHLIBDEPS_ARGS_libqt4-webkit := --dpkg-shlibdeps-params=--ignore-missing-info
 
 # Qt4.4.0-beta1 does not contain changes file
 #DEB_INSTALL_CHANGELOGS_ALL := changes-$(QTVERSION)
