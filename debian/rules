@@ -134,12 +134,15 @@ clean::
 	# generate on build
 	rm -f debian/shlibs.local
 
-PKGCONFIGDIR := $(DEB_DESTDIR)/usr/lib/pkgconfig
 common-install-arch::
 # Fix wrong path in pkgconfig files
-	for f in QtAssistantClient.pc QtDBus.pc QtTest.pc QtUiTools.pc; do \
-	    sed -i "s|-L/build/buildd/qt4-x11-$(QTVERSION)/lib||g" $(PKGCONFIGDIR)/$$f; \
-	done
+	find $(DEB_DESTDIR)/usr/lib/pkgconfig -type f -name '*.pc' \
+		-exec perl -pi -e "s, -L$(CURDIR)/?\S+,,g" {} \;
+# Fix wrong path in prl files
+	find $(DEB_DESTDIR)/usr/lib -type f -name '*.prl' \
+		-exec perl -pi -e "s, -L$(CURDIR)/\S+,,g" {} \;
+	find $(DEB_DESTDIR)/usr/lib -type f -name '*.prl' \
+		-exec sed -i -e "/^QMAKE_PRL_BUILD_DIR/d" {} \;
 
 install/libqt4-core::
 	$(CURDIR)/bin/lrelease-qt4 debian/translations/qt_ca.ts \
