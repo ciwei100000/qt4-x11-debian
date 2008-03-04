@@ -6,10 +6,11 @@ qt4-x11 (4.4.0~beta1-1) experimental; urgency=low
     libpam0g-dev, libreadline5-dev, libxslt1-dev.
   * Update rules:
     * Disable DEB_INSTALL_CHANGELOGS_ALL.
-    * Add DEB_DH_SHLIBDEPS_ARGS workaround for WebKit.
     * Enable WebKit and XmlPatterns.
     * Enable exceptions. It is a dependency to XmlPatterns module.
-  * Refresh Debian patches.
+  * Refresh Debian patches:
+    * Re-introduce link_prl.
+    * Add patch to set --as-needed flag.
   * Refresh qt-copy patches: 0167, 0172, 0178, 0180, 0191, 0192, 0195, 0203,
     0209 and 0210.
   * Add qt-copy patches: 0214, 0215 and 0216.
@@ -25,8 +26,6 @@ qt4-x11 (4.4.0~beta1-1) experimental; urgency=low
   * Update .install files: libqt4-core, libqt4-gui and qt4-dev-tools.
   * Add packages: libqt4-dbus, libqt4-webkit and libqt4-xmlpatterns.
   * Move QtDBus module from libqt4-core in libqt4-dbus package.
-
-  * Experimental test to re-introduce link_prl.
 
  -- Fathi Boudra <fabo@debian.org>  Sat, 01 Mar 2008 18:31:24 +0100
 
