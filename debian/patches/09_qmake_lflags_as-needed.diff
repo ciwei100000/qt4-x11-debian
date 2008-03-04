@@ -1,3 +1,8 @@
+author: Fathi Boudra <fabo@debian.org>
+
+workaround as LDFLAGS isn't honored by configure script.
+Bug reported to Trolltech.
+
 --- a/configure
 +++ b/configure
 @@ -497,6 +497,8 @@

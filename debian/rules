@@ -25,6 +25,8 @@ DEB_DH_MAKESHLIBS_ARGS_ALL := -V
 
 DEB_DH_STRIP_ARGS_libqt4-debug := --exclude=.debug
 
+DEB_DH_SHLIBDEPS_ARGS_ALL := --exclude=.debug
+
 # Qt4.4.0-beta1 does not contain changes file
 #DEB_INSTALL_CHANGELOGS_ALL := changes-$(QTVERSION)
 
