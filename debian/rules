@@ -81,11 +81,13 @@ endif
 	            -system-libjpeg \
 	            -system-nas-sound \
 	            -qt-gif \
-	            -qt-sql-psql \
-	            -qt-sql-mysql \
-	            -qt-sql-sqlite \
+	            -plugin-sql-ibase \
+	            -plugin-sql-mysql \
+	            -plugin-sql-odbc \
+	            -plugin-sql-psql \
+	            -plugin-sql-sqlite \
+	            -plugin-sql-sqlite2 \
 	            -system-sqlite \
-	            -qt-sql-sqlite2 \
 	            -I/usr/include/freetype2 \
 	            -lfontconfig \
 	            -cups \
