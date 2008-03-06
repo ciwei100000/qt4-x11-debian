@@ -1,8 +1,8 @@
 usr/lib/libQtSql.so.*
-usr/lib/qt4/plugins/sqldrivers/libqslibase.so
-usr/lib/qt4/plugins/sqldrivers/libqslmysql.so
-usr/lib/qt4/plugins/sqldrivers/libqslpsql.so
-usr/lib/qt4/plugins/sqldrivers/libqslodbc.so
-usr/lib/qt4/plugins/sqldrivers/libqslsqlite.so
-usr/lib/qt4/plugins/sqldrivers/libqslsqlite2.so
+usr/lib/qt4/plugins/sqldrivers/libqsqlibase.so
+usr/lib/qt4/plugins/sqldrivers/libqsqlmysql.so
+usr/lib/qt4/plugins/sqldrivers/libqsqlpsql.so
+usr/lib/qt4/plugins/sqldrivers/libqsqlodbc.so
+usr/lib/qt4/plugins/sqldrivers/libqsqlsqlite.so
+usr/lib/qt4/plugins/sqldrivers/libqsqlsqlite2.so
 
