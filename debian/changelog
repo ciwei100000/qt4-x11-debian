@@ -13,7 +13,7 @@ qt4-x11 (4.4.0~beta1-1) experimental; urgency=low
     * Add patch to set --as-needed flag.
   * Refresh qt-copy patches: 0167, 0172, 0178, 0180, 0191, 0192, 0195, 0203,
     0209 and 0210.
-  * Add qt-copy patches: 0214, 0215 and 0216.
+  * Add qt-copy patches: 0214, 0215, 0216, 0217 and 0218.
   * Remove qt-copy patches: 0175, 0176, 0179, 0187, 0194, 0200, 0205 and 0211.
   * Remove patches:
     * 02_launch_assistant-qt4. assistant was renamed to assistant_adp.

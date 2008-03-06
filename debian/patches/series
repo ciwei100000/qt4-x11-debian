@@ -12,6 +12,9 @@
 0214-fix-qgraphicsproxywidget-tab-crash.diff
 0215-compile-with-Xcursor-linkage.diff
 0216-allow-isystem-for-headers.diff
+fix-qt_bootstrapped-typo.diff
+0217-qurl-isempty-regression.diff
+0218-qassert-macro-fix.diff
 
 # debian patches
 01_qmake_for_debian.diff
