@@ -1,5 +1,0 @@
-usr/lib/libQtCore.so.*
-usr/lib/libQtCLucene.so.*
-usr/lib/qt4/plugins/codecs/*.so
-usr/share/qt4/translations/*.qm
-

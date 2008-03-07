@@ -18,10 +18,12 @@ Homepage: http://www.trolltech.com
 Vcs-Svn: svn://svn.debian.org/svn/pkg-kde/trunk/packages/qt4-x11
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/trunk/packages/qt4-x11
 
-Package: libqt4-core
+Package: libqtcore4
 Architecture: any
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libqt4-core (<< 4.4.0~beta1-1)
+Replaces: libqt4-core (<< 4.4.0~beta1-1)
 Description: Qt 4 core module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -33,8 +35,8 @@ Architecture: any
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}, fontconfig
 Recommends: qt4-qtconfig
-Replaces: libqt4-core (<< 4.0.1-3), qt4-designer (<< 4.1.4), libqt4-designer
-Conflicts: libqt4-designer
+Conflicts: libqt4-designer (<< 4.4.0~beta1-1)
+Replaces: libqt4-core (<< 4.0.1-3), qt4-designer (<< 4.1.4), libqt4-designer (<< 4.4.0~beta1-1)
 Description: Qt 4 GUI module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.

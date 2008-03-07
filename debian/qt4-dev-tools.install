@@ -7,3 +7,17 @@ usr/bin/qcollectiongenerator
 usr/bin/qhelpconverter
 usr/bin/qhelpgenerator
 usr/share/qt4/phrasebooks/*
+usr/share/qt4/translations/assistant_de.qm
+usr/share/qt4/translations/assistant_ja.qm
+usr/share/qt4/translations/assistant_pl.qm
+usr/share/qt4/translations/assistant_zh_CN.qm
+usr/share/qt4/translations/assistant_zh_TW.qm
+usr/share/qt4/translations/linguist_de.qm
+usr/share/qt4/translations/linguist_ja.qm
+usr/share/qt4/translations/linguist_pl.qm
+usr/share/qt4/translations/linguist_zh_CN.qm
+usr/share/qt4/translations/linguist_zh_TW.qm
+# This is a bug. It must be assistant_adp.
+# Reported to Trolltech
+usr/share/qt4/translations/assistant_new_de.qm
+usr/share/qt4/translations/assistant_new_pl.qm
