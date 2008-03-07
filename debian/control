@@ -88,9 +88,73 @@ Description: Qt 4 SQL module
  The QtSql module helps you provide seamless database integration to your Qt
  applications.
  .
- It includes support for PostgreSQL, MySQL, and SQLite databases. If you wish
- to to use the SQL module for development, you should install the libqt4-dev
- package.
+  If you wish to to use the SQL module for development, you should install the libqt4-dev package.
+
+Package: libqt4-sql-ibase
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: libqt4-dev
+Description: Qt 4 InterBase/FireBird database driver
+ This package contains the InterBase/FireBird plugin for Qt 4.
+ .
+ Install it if you intend to use or write Qt programs that are to access an
+ InterBase/FireBird DB.
+
+Package: libqt4-sql-mysql
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: libqt4-dev
+Description: Qt 4 MySQL database driver
+ This package contains the MySQL plugin for Qt 4.
+ .
+ Install it if you intend to use or write Qt programs that are to access a
+ MySQL DB.
+
+Package: libqt4-sql-odbc
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: libqt4-dev
+Description: Qt 4 ODBC database driver
+ This package contains the ODBC plugin for Qt 4.
+ .
+ Install it if you intend to use or write Qt programs that are to access an
+ ODBC DB.
+
+Package: libqt4-sql-psql
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: libqt4-dev
+Description: Qt 4 PostgreSQL database driver
+ This package contains the PostgreSQL plugin for Qt 4.
+ .
+ Install it if you intend to use or write Qt programs that are to access a
+ PostgreSQL DB.
+
+Package: libqt4-sql-sqlite
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: libqt4-dev
+Description: Qt 4 SQLite 2 database driver
+ This package contains the SQLite 2 plugin for Qt 4.
+ .
+ Install it if you intend to use or write Qt programs that are to access an
+ SQLite 2 DB.
+
+Package: libqt4-sql-sqlite2
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: libqt4-dev
+Description: Qt 4 SQLite 3 database driver
+ This package contains the SQLite 3 plugin for Qt 4.
+ .
+ Install it if you intend to use or write Qt programs that are to access an
+ SQLite 3 DB.
 
 Package: libqt4-svg
 Architecture: any
@@ -254,8 +318,8 @@ Package: qt4-designer
 Architecture: any
 Section: devel
 Depends: ${shlibs:Depends}, ${misc:Depends}, libqt4-dev
-Conflicts: libqt4-designer
-Replaces: libqt4-designer, qt4-dev-tools (<= 4.0.1-2)
+Conflicts: libqt4-designer (<< 4.4.0~beta1-1)
+Replaces: libqt4-designer (<< 4.4.0~beta1-1), qt4-dev-tools (<= 4.0.1-2)
 Description: Qt 4 Designer
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.

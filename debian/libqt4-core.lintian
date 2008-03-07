@@ -1,1 +1,2 @@
-libqt4-core: package-name-doesnt-match-sonames
+libqt4-core: package-name-doesnt-match-sonames libQtCLucene4 libQtCore4
+

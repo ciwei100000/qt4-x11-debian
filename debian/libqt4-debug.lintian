@@ -1,23 +1,21 @@
-libqt4-debug: package-name-doesnt-match-sonames
-
-libqt4-debug: sharedobject-in-library-directory-not-actually-a-shlib usr/lib/libQtCLucene.so.4.4.0.debug
-libqt4-debug: sharedobject-in-library-directory-not-actually-a-shlib usr/lib/libQtSql.so.4.4.0.debug
-libqt4-debug: sharedobject-in-library-directory-not-actually-a-shlib usr/lib/libQtTest.so.4.4.0.debug
-libqt4-debug: sharedobject-in-library-directory-not-actually-a-shlib usr/lib/libQtXmlPatterns.so.4.4.0.debug
-libqt4-debug: sharedobject-in-library-directory-not-actually-a-shlib usr/lib/libQtDBus.so.4.4.0.debug
-libqt4-debug: sharedobject-in-library-directory-not-actually-a-shlib usr/lib/libQtXml.so.4.4.0.debug
-libqt4-debug: sharedobject-in-library-directory-not-actually-a-shlib usr/lib/libQt3Support.so.4.4.0.debug
-libqt4-debug: sharedobject-in-library-directory-not-actually-a-shlib usr/lib/libQtAssistantClient.so.4.4.0.debug
-libqt4-debug: sharedobject-in-library-directory-not-actually-a-shlib usr/lib/libQtNetwork.so.4.4.0.debug
-libqt4-debug: sharedobject-in-library-directory-not-actually-a-shlib usr/lib/libQtWebKit.so.4.4.0.debug
-libqt4-debug: sharedobject-in-library-directory-not-actually-a-shlib usr/lib/libQtSvg.so.4.4.0.debug
-libqt4-debug: sharedobject-in-library-directory-not-actually-a-shlib usr/lib/libQtHelp.so.4.4.0.debug
-libqt4-debug: sharedobject-in-library-directory-not-actually-a-shlib usr/lib/libQtOpenGL.so.4.4.0.debug
-libqt4-debug: sharedobject-in-library-directory-not-actually-a-shlib usr/lib/libQtScript.so.4.4.0.debug
-libqt4-debug: sharedobject-in-library-directory-not-actually-a-shlib usr/lib/libQtGui.so.4.4.0.debug
-libqt4-debug: sharedobject-in-library-directory-not-actually-a-shlib usr/lib/libQtDesigner.so.4.4.0.debug
-libqt4-debug: sharedobject-in-library-directory-not-actually-a-shlib usr/lib/libQtCore.so.4.4.0.debug
-libqt4-debug: sharedobject-in-library-directory-not-actually-a-shlib usr/lib/libQtDesignerComponents.so.4.4.0.debug
+libqt4-debug: sharedobject-in-library-directory-missing-soname usr/lib/libQtCLucene.so.4.4.0.debug
+libqt4-debug: sharedobject-in-library-directory-missing-soname usr/lib/libQtSql.so.4.4.0.debug
+libqt4-debug: sharedobject-in-library-directory-missing-soname usr/lib/libQtTest.so.4.4.0.debug
+libqt4-debug: sharedobject-in-library-directory-missing-soname usr/lib/libQtXmlPatterns.so.4.4.0.debug
+libqt4-debug: sharedobject-in-library-directory-missing-soname usr/lib/libQtDBus.so.4.4.0.debug
+libqt4-debug: sharedobject-in-library-directory-missing-soname usr/lib/libQtXml.so.4.4.0.debug
+libqt4-debug: sharedobject-in-library-directory-missing-soname usr/lib/libQt3Support.so.4.4.0.debug
+libqt4-debug: sharedobject-in-library-directory-missing-soname usr/lib/libQtAssistantClient.so.4.4.0.debug
+libqt4-debug: sharedobject-in-library-directory-missing-soname usr/lib/libQtNetwork.so.4.4.0.debug
+libqt4-debug: sharedobject-in-library-directory-missing-soname usr/lib/libQtWebKit.so.4.4.0.debug
+libqt4-debug: sharedobject-in-library-directory-missing-soname usr/lib/libQtSvg.so.4.4.0.debug
+libqt4-debug: sharedobject-in-library-directory-missing-soname usr/lib/libQtHelp.so.4.4.0.debug
+libqt4-debug: sharedobject-in-library-directory-missing-soname usr/lib/libQtOpenGL.so.4.4.0.debug
+libqt4-debug: sharedobject-in-library-directory-missing-soname usr/lib/libQtScript.so.4.4.0.debug
+libqt4-debug: sharedobject-in-library-directory-missing-soname usr/lib/libQtGui.so.4.4.0.debug
+libqt4-debug: sharedobject-in-library-directory-missing-soname usr/lib/libQtDesigner.so.4.4.0.debug
+libqt4-debug: sharedobject-in-library-directory-missing-soname usr/lib/libQtCore.so.4.4.0.debug
+libqt4-debug: sharedobject-in-library-directory-missing-soname usr/lib/libQtDesignerComponents.so.4.4.0.debug
 
 libqt4-debug: binary-with-bad-dynamic-table ./usr/lib/libQt3Support.so.4.4.0.debug
 libqt4-debug: binary-with-bad-dynamic-table ./usr/lib/libQtAssistantClient.so.4.4.0.debug
@@ -56,7 +54,11 @@ libqt4-debug: binary-with-bad-dynamic-table ./usr/lib/qt4/plugins/imageformats/l
 libqt4-debug: binary-with-bad-dynamic-table ./usr/lib/qt4/plugins/inputmethods/libqimsw-multi.so.debug
 libqt4-debug: binary-with-bad-dynamic-table ./usr/lib/qt4/plugins/script/libqtscriptdbus.so.debug
 libqt4-debug: binary-with-bad-dynamic-table ./usr/lib/qt4/plugins/sqldrivers/libqsqlibase.so.debug
+libqt4-debug: binary-with-bad-dynamic-table ./usr/lib/qt4/plugins/sqldrivers/libqsqlite.so.debug
+libqt4-debug: binary-with-bad-dynamic-table ./usr/lib/qt4/plugins/sqldrivers/libqsqlite2.so.debug
+libqt4-debug: binary-with-bad-dynamic-table ./usr/lib/qt4/plugins/sqldrivers/libqsqlmysql.so.debug
 libqt4-debug: binary-with-bad-dynamic-table ./usr/lib/qt4/plugins/sqldrivers/libqsqlodbc.so.debug
+libqt4-debug: binary-with-bad-dynamic-table ./usr/lib/qt4/plugins/sqldrivers/libqsqlpsql.so.debug
 
 libqt4-debug: shared-lib-without-dependency-information ./usr/lib/libQt3Support.so.4.4.0.debug
 libqt4-debug: shared-lib-without-dependency-information ./usr/lib/libQtAssistantClient.so.4.4.0.debug
@@ -95,5 +97,9 @@ libqt4-debug: shared-lib-without-dependency-information ./usr/lib/qt4/plugins/im
 libqt4-debug: shared-lib-without-dependency-information ./usr/lib/qt4/plugins/inputmethods/libqimsw-multi.so.debug
 libqt4-debug: shared-lib-without-dependency-information ./usr/lib/qt4/plugins/script/libqtscriptdbus.so.debug
 libqt4-debug: shared-lib-without-dependency-information ./usr/lib/qt4/plugins/sqldrivers/libqsqlibase.so.debug
+libqt4-debug: shared-lib-without-dependency-information ./usr/lib/qt4/plugins/sqldrivers/libqsqlite.so.debug
+libqt4-debug: shared-lib-without-dependency-information ./usr/lib/qt4/plugins/sqldrivers/libqsqlite2.so.debug
+libqt4-debug: shared-lib-without-dependency-information ./usr/lib/qt4/plugins/sqldrivers/libqsqlmysql.so.debug
 libqt4-debug: shared-lib-without-dependency-information ./usr/lib/qt4/plugins/sqldrivers/libqsqlodbc.so.debug
+libqt4-debug: shared-lib-without-dependency-information ./usr/lib/qt4/plugins/sqldrivers/libqsqlpsql.so.debug
 
