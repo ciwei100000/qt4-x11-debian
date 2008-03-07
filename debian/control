@@ -288,8 +288,17 @@ Package: libqt4-dev
 Architecture: any
 Section: libdevel
 Depends: ${shlibs:Depends}, ${misc:Depends},
- libqt4-core (= ${binary:Version}), libqt4-gui (= ${binary:Version}),
- libqt4-sql (= ${binary:Version}), libqt4-qt3support (= ${binary:Version}),
+ libqt4-gui (= ${binary:Version}), libqt4-network (= ${binary:Version}),
+ libqt4-opengl (= ${binary:Version}), libqt4-script (= ${binary:Version}),
+ libqt4-sql (= ${binary:Version}), libqt4-sql-ibase (= ${binary:Version}),
+ libqt4-sql-mysql (= ${binary:Version}), libqt4-sql-odbc (= ${binary:Version}),
+ libqt4-sql-psql (= ${binary:Version}), libqt4-sql-sqlite (= ${binary:Version}),
+ libqt4-sql-sqlite2 (= ${binary:Version}), libqt4-svg (= ${binary:Version}),
+ libqt4-webkit (= ${binary:Version}), libqt4-xml (= ${binary:Version}),
+ libqt4-xmlpatterns (= ${binary:Version}), libqt4-dbus (= ${binary:Version}),
+ libqt4-qt3support (= ${binary:Version}), libqt4-designer (= ${binary:Version}),
+ libqt4-help (= ${binary:Version}), libqt4-assistant (= ${binary:Version}),
+ libqt4-test (= ${binary:Version}),
  firebird2.0-dev [i386 kfreebsd-i386 kfreebsd-amd64 knetbsd-i386 netbsd-i386 amd64 sparc powerpc],
  libaudio-dev, libcupsys2-dev, libdbus-1-dev, libfreetype6-dev,
  libgl1-mesa-dev | libgl-dev, libglib2.0-dev, libglu1-mesa-dev | libglu-dev,
@@ -333,7 +342,7 @@ Description: Qt 4 Designer
 Package: qt4-dev-tools
 Architecture: any
 Section: devel
-Depends: ${shlibs:Depends}, ${misc:Depends}, libqt4-core (= ${binary:Version})
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Conflicts: qt3-assistant (<= 3:3.3.4-7), qt3-designer (<= 3:3.3.4-7), qt3-linguist (<= 3:3.3.4-7)
 Recommends: libqt4-dev, qt4-doc, qt4-designer
 Description: Qt 4 development tools
