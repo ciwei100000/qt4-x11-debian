@@ -88,7 +88,8 @@ Description: Qt 4 SQL module
  The QtSql module helps you provide seamless database integration to your Qt
  applications.
  .
-  If you wish to to use the SQL module for development, you should install the libqt4-dev package.
+ If you wish to to use the SQL module for development, you should install the
+ libqt4-dev package.
 
 Package: libqt4-sql-ibase
 Architecture: any
@@ -139,22 +140,22 @@ Architecture: any
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Suggests: libqt4-dev
-Description: Qt 4 SQLite 2 database driver
- This package contains the SQLite 2 plugin for Qt 4.
+Description: Qt 4 SQLite 3 database driver
+ This package contains the SQLite 3 plugin for Qt 4.
  .
  Install it if you intend to use or write Qt programs that are to access an
- SQLite 2 DB.
+ SQLite 3 DB.
 
 Package: libqt4-sql-sqlite2
 Architecture: any
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Suggests: libqt4-dev
-Description: Qt 4 SQLite 3 database driver
- This package contains the SQLite 3 plugin for Qt 4.
+Description: Qt 4 SQLite 2 database driver
+ This package contains the SQLite 2 plugin for Qt 4.
  .
  Install it if you intend to use or write Qt programs that are to access an
- SQLite 3 DB.
+ SQLite 2 DB.
 
 Package: libqt4-svg
 Architecture: any
