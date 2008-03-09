@@ -87,7 +87,8 @@ Description: Qt 4 script module
 Package: libqt4-sql
 Architecture: any
 Section: libs
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ libqt4-sql-ibase | libqt4-sql-mysql | libqt4-sql-odbc | libqt4-sql-psql | libqt4-sql-sqlite | libqt4-sql-sqlite2
 Suggests: libqt4-dev
 Description: Qt 4 SQL module
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -100,7 +101,7 @@ Description: Qt 4 SQL module
  libqt4-dev package.
 
 Package: libqt4-sql-ibase
-Architecture: any
+Architecture: i386 kfreebsd-i386 kfreebsd-amd64 knetbsd-i386 netbsd-i386 amd64 sparc powerpc
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Suggests: libqt4-dev
