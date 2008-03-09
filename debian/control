@@ -331,14 +331,38 @@ Description: Qt 4 development files
  This packages contains the header development files and development programs
  such as qmake used for building Qt4 applications.
 
-Package: libqt4-debug
+Package: libqt4-dbg
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libqt4-gui (= ${binary:Version})
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ libqt4-gui (= ${binary:Version})
+Conflicts: libqt4-debug (<< 4.4.0~beta1-1)
+Replaces: libqt4-debug (<< 4.4.0~beta1-1)
 Description: Qt 4 library debugging symbols
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
  This packages contains the debugging symbols for the Qt 4 libraries.
+
+Package: libqt4-webkit-dbg
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ libqt4-webkit (= ${binary:Version})
+Description: Qt 4 WebKit library debugging symbols
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This packages contains the debugging symbols for the Qt 4 WebKit library.
+
+Package: libqt4-xmlpatterns-dbg
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ libqt4-xmlpatterns (= ${binary:Version})
+Description: Qt 4 XML patterns library debugging symbols
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This packages contains the debugging symbols for the Qt 4 XML patterns
+ library.
 
 Package: qt4-designer
 Architecture: any
