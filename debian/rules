@@ -215,3 +215,5 @@ $(patsubst %,binary-fixup/%,$(DEB_ALL_PACKAGES)) :: binary-fixup/%: binary-strip
 		sed 's/>=[^)]*/= $(CURRENTVERSION)/' debian/$(cdbs_curpkg)/DEBIAN/shlibs >> debian/shlibs.local ;\
 	fi
 
+binary-post-install/libqt4-dev::
+	doxytag -t debian/$(cdbs_curpkg)/usr/share/qt4/doc/qt4.tag $(DEB_DESTDIR)/usr/share/qt4/doc/html
