@@ -1,0 +1,22 @@
+--- a/demos/qtdemo/menumanager.cpp
++++ b/demos/qtdemo/menumanager.cpp
+@@ -264,7 +264,7 @@
+     if (this->assistantProcess.state() != QProcess::Running){
+         QString app = QLibraryInfo::location(QLibraryInfo::BinariesPath) + QDir::separator();
+ #if !defined(Q_OS_MAC)
+-        app += QLatin1String("assistant");
++        app += QLatin1String("assistant-qt4");
+ #else
+         app += QLatin1String("Assistant.app/Contents/MacOS/Assistant");
+ #endif
+--- a/tools/designer/src/designer/assistantclient.cpp
++++ b/tools/designer/src/designer/assistantclient.cpp
+@@ -115,7 +115,7 @@
+ {
+     QString app = QLibraryInfo::location(QLibraryInfo::BinariesPath) + QDir::separator();
+ #if !defined(Q_OS_MAC)
+-    app += QLatin1String("assistant");
++    app += QLatin1String("assistant-qt4");
+ #else
+     app += QLatin1String("Assistant.app/Contents/MacOS/Assistant");    
+ #endif

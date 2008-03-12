@@ -21,11 +21,11 @@ fix-qt_bootstrapped-typo.diff
 03_launch_moc-qt4.diff
 04_launch_uic-qt4.diff
 05_append_qt4_target.diff
-06_qtdemo_destdir.diff
 07_trust_dpkg-arch_over_uname-m.diff
 08_load_ssl.diff
 09_qmake_lflags_as-needed.diff
 10_config_tests_fixes.diff
+11_launch_assistant-qt4.diff
 20_mips_atomic_ops.diff
 40_alpha_ice.diff
 41_disable_opengl_visibility.diff

@@ -332,6 +332,7 @@ Description: Qt 4 development files
  such as qmake used for building Qt4 applications.
 
 Package: libqt4-dbg
+Priority: extra
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
  libqt4-gui (= ${binary:Version})
@@ -344,6 +345,7 @@ Description: Qt 4 library debugging symbols
  This packages contains the debugging symbols for the Qt 4 libraries.
 
 Package: libqt4-webkit-dbg
+Priority: extra
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
  libqt4-webkit (= ${binary:Version})
@@ -354,6 +356,7 @@ Description: Qt 4 WebKit library debugging symbols
  This packages contains the debugging symbols for the Qt 4 WebKit library.
 
 Package: libqt4-xmlpatterns-dbg
+Priority: extra
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
  libqt4-xmlpatterns (= ${binary:Version})
@@ -404,6 +407,26 @@ Description: Qt 4 configuration tool
  The Qt Configuration program allows endusers to configure the look and
  behavior of any Qt4 application.
 
+Package: qt4-demos
+Architecture: any
+Section: x11
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Qt 4 examples and demos
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains Qt 4 examples and demos.
+
+Package: qt4-demos-source
+Architecture: all
+Section: doc
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Qt 4 examples and demos sources
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains Qt 4 examples and demos sources.
+
 Package: qt4-doc
 Architecture: all
 Section: doc
@@ -418,4 +441,3 @@ Description: Qt 4 API documentation
  The documentation is provided in HTML and manpage format; the HTML version can
  be viewed in conjunction with the Qt Assistant found in the qt4-dev-tools
  package.
-
