@@ -417,16 +417,6 @@ Description: Qt 4 examples and demos
  .
  This package contains Qt 4 examples and demos.
 
-Package: qt4-demos-source
-Architecture: all
-Section: doc
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Qt 4 examples and demos sources
- Qt is a cross-platform C++ application framework. Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- This package contains Qt 4 examples and demos sources.
-
 Package: qt4-doc
 Architecture: all
 Section: doc
