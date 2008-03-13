@@ -2,33 +2,99 @@ qt4-x11 (4.4.0~beta1-1) experimental; urgency=low
 
   * New upstream release.
 
-  * Add build dependencies: firebird2.0-dev, libiodbc2-dev, libtiff4-dev,
+  * Add build dependencies: doxygen, firebird2.0-dev, libiodbc2-dev,
     libpam0g-dev, libreadline5-dev, libxslt1-dev.
-  * Update rules:
-    * Disable DEB_INSTALL_CHANGELOGS_ALL.
-    * Enable WebKit and XmlPatterns.
-    * Enable exceptions. It is a dependency to XmlPatterns module.
+  * Split libqt4-gui and libqt4-core packages.
+  * Create package for each Qt module.
+  * Enable all SQL drivers as plugins and add related packages:
+    libqt4-sql-ibase, libqt4-sql-mysql, libqt4-sql-odbc, libqt4-sql-psql,
+    libqt4-sql-sqlite, libqt4-sql-sqlite2.
+  * Add packages: libqt4-assistant, libqt4-dbus, libqt4-designer, libqt4-help,
+    libqt4-network, libqt4-opengl, libqt4-script, libqt4-svg, libqt4-test,
+    libqt4-webkit, libqt4-xml, libqt4-xmlpatterns and qt4-demos.
+  * Replace libqt4-core by libqtcore4 package.
+  * Rename libqt4-debug to libqt4-dbg like other debug packages in Debian.
+  * Update .lintian override files.
+  * Update .install files.
+  * Move translations files in their respective packages.
+  * Disable DEB_INSTALL_CHANGELOGS_ALL.
+  * Build ibase sql plugin on supported architectures only.
+  * Enable demos, examples, WebKit and XmlPatterns.
+  * Enable exceptions. It is a dependency to XmlPatterns module.
+  * Add qtdemo help collection file.
+  * Split WebKit and XmlPatterns debug packages from libqt4-dbg.
+  * Generate Doxygen tagfile in libqt4-dev. Thanks to Matthew Rosewarne.
+  * Examples and Demos are not shipped compressed anymore.
+  * Refresh qt-copy patches:
+    * 0167-fix-group-reading
+    * 0172-prefer-xrandr-over-xinerama
+    * 0178-transparency-window-types
+    * 0180-window-role
+    * 0191-listview-alternate-row-colors
+    * 0192-itemdelegate-palette-state
+    * 0195-compositing-properties
+    * 0203-qtexthtmlparser-link-color
+    * 0209-prevent-qt-mixing
+    * 0210-fix-crash-q3stylesheet-font-size
+  * Remove qt-copy patches:
+    * 0175-fix-s390-qatomic
+    * 0176-coverity-fixes
+    * 0179-transient-hack
+    * 0187-fix-font-fixed-pitch
+    * 0194-fix-moveonly-dnd-in-itemviews
+    * 0200-fix-qsslsocket-waitfor
+    * 0205-fast-qpixmap-fill
+    * 0211-q3action-crash
+  * Add qt-copy patches:
+    * 0214-fix-qgraphicsproxywidget-tab-crash
+    * 0215-compile-with-Xcursor-linkage
+    * 0216-allow-isystem-for-headers
+    * 0217-qurl-isempty-regression
+    * 0218-qassert-macro-fix
+    * fix-qt_bootstrapped-typo
   * Refresh Debian patches:
-    * Re-introduce link_prl.
-    * Add patch to set --as-needed flag.
-  * Refresh qt-copy patches: 0167, 0172, 0178, 0180, 0191, 0192, 0195, 0203,
-    0209 and 0210.
-  * Add qt-copy patches: 0214, 0215, 0216, 0217 and 0218.
-  * Remove qt-copy patches: 0175, 0176, 0179, 0187, 0194, 0200, 0205 and 0211.
-  * Remove patches:
-    * 02_launch_assistant-qt4. assistant was renamed to assistant_adp.
-    * 21_assume_no_fpu_for_embedded_devices. Merged upstream.
-      It breaks ABI on mips.
+    * 01_qmake_for_debian
+    * 02_launch_assistant-qt4
+    * 03_launch_moc-qt4
+    * 04_launch_uic-qt4
+    * 05_append_qt4_target
+    * 08_load_ssl
+    * 10_config_tests_fixes
+    * 40_alpha_ice
+    * 41_disable_opengl_visibility
+    * 50_kfreebsd_build_fix
+    * 60_m68k_inotify_fix
+    * 80_hurd_max_path
+  * Remove Debian patches:
+    * 06_qtdemo_destdir. Useless as we ship qtdemo again.
     * 30_arm_ftbfs_fixes. Merged upstream.
     * 31_arm_eabi_fix. Upstream changed arm architecture handling.
       This patch doesn't apply as it is.
     * 91_qmake_lflags_no-undefined. Merged upstream.
-  * Update .install files: libqt4-core, libqt4-gui and qt4-dev-tools.
-  * Add packages: libqt4-dbus, libqt4-webkit and libqt4-xmlpatterns.
-  * Move QtDBus module from libqt4-core in libqt4-dbus package.
-  * Enable SQL drivers as plugins.
 
- -- Fathi Boudra <fabo@debian.org>  Sat, 01 Mar 2008 18:31:24 +0100
+ -- Fathi Boudra <fabo@debian.org>  Thu, 13 Mar 2008 22:34:45 +0100
+
+qt4-x11 (4.3.4-2) unstable; urgency=low
+
+  * Add patches:
+    * 09_qmake_lflags_as-needed
+      workaround as LDFLAGS isn't honored by configure script.
+      we set --as-needed flag for Qt build only.
+    * 10_config_tests_fixes.diff
+      configuration test fixes for Interbase/Firebird and ODBC sql drivers.
+  * Update 01_qmake_for_debian patch:
+    * re-introduce link_prl and drop QT_SHARED workaround.
+  * Update rules:
+    * Remove exported LDFLAGS.
+    * Remove DEB_CONFIGURE_SCRIPT_ENV.
+    * Exclude debug files from dh_shlibdeps using DEB_DH_SHLIBDEPS_ARGS_ALL.
+    * Update configure options to use libtiff from system.
+    * Remove debug configure option to build with -02.
+    * Update common-install-arch target to fix wrong path in pkconfig and prl files.
+  * Add libtiff4-dev build dependency.
+  * Update libqt4-dev dependencies.
+
+ -- Fathi Boudra <fabo@debian.org>  Sat, 08 Mar 2008 10:09:02 +0100
 
 qt4-x11 (4.3.4-1) unstable; urgency=low
 

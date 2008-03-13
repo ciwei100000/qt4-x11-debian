@@ -18,6 +18,7 @@ fix-qt_bootstrapped-typo.diff
 
 # debian patches
 01_qmake_for_debian.diff
+02_launch_assistant-qt4.diff
 03_launch_moc-qt4.diff
 04_launch_uic-qt4.diff
 05_append_qt4_target.diff
@@ -25,7 +26,6 @@ fix-qt_bootstrapped-typo.diff
 08_load_ssl.diff
 09_qmake_lflags_as-needed.diff
 10_config_tests_fixes.diff
-11_launch_assistant-qt4.diff
 20_mips_atomic_ops.diff
 40_alpha_ice.diff
 41_disable_opengl_visibility.diff
@@ -33,4 +33,3 @@ fix-qt_bootstrapped-typo.diff
 60_m68k_inotify_fix.diff
 70_hppa_ldcw_fix.diff
 80_hurd_max_path.diff
-
