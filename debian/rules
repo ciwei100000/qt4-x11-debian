@@ -154,6 +154,7 @@ install/libqtcore4::
 		-qm $(DEB_DESTDIR)/usr/share/qt4/translations/qt_ca.qm
 
 install/qt4-demos::
+	mkdir -p debian/$(cdbs_curpkg)/usr/lib/qt4/demos/qtdemo
 	uudecode -o debian/$(cdbs_curpkg)/usr/lib/qt4/demos/qtdemo/qtdemo.qhc \
 		debian/collection/qtdemo.qhc.uu
 
