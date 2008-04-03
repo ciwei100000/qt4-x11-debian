@@ -30,6 +30,18 @@ Description: Qt 4 core module
  .
  The QtCore module contains core non-GUI functionality.
 
+Package: libqt4-core
+Architecture: all
+Section: libs
+Depends: libqtcore4 (>= ${source:Version}), libqt4-network (>= ${source:Version}), libqt4-script (>= ${source:Version}), libqt4-xml (>= ${source:Version}), libqt4-dbus (>= ${source:Version}), libqt4-test (>= ${source:Version})
+Description: Transitional package for Qt 4 core non-GUI runtime libraries
+ Qt is a cross-platform C++ application framework.  Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This is a dummy transitional package to enable installation of other Debian
+ packages linked against Qt 4.3 or earlier Qt 4 release previously shipped
+ in Debian.
+
 Package: libqt4-gui
 Architecture: any
 Section: libs

@@ -28,8 +28,9 @@ qt4-x11 (4.4.0~rc1-1~pre1) experimental; urgency=low
     * 80_hurd_max_path.diff - adjust offsets.
   * Remove Debian patches:
     * 08_load_ssl.diff - different fix applied upstream.
+  * Add libqt4-core transitional package.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 03 Apr 2008 21:17:04 +0300
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 03 Apr 2008 21:44:50 +0300
 
 qt4-x11 (4.4.0~beta1-1) experimental; urgency=low
 
