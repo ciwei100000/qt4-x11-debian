@@ -4,12 +4,12 @@
 0191-listview-alternate-row-colors.diff
 0192-itemdelegate-palette-state.diff
 0195-compositing-properties.diff
-0203-qtexthtmlparser-link-color.diff -p0
-0209-prevent-qt-mixing.diff -p0
+0203-qtexthtmlparser-link-color.diff
+0209-prevent-qt-mixing.diff
 0210-fix-crash-q3stylesheet-font-size.diff
 0214-fix-qgraphicsproxywidget-tab-crash.diff
 0216-allow-isystem-for-headers.diff
-0220-no-x-recursion-in-xerrhandler.diff -p0
+0220-no-x-recursion-in-xerrhandler.diff
 
 # debian patches
 01_qmake_for_debian.diff

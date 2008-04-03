@@ -9,8 +9,8 @@ X error handler is not allowed to do X protocol requests. Therefore e.g. creatin
 QDragManager instance should not be allowed in it, as it results in things like
 creating X pixmaps. See https://bugzilla.novell.com/show_bug.cgi?id=368456.
 
---- src/gui/kernel/qdnd_x11.cpp.sav	2008-03-01 02:33:57.000000000 +0100
-+++ src/gui/kernel/qdnd_x11.cpp	2008-04-03 14:33:02.000000000 +0200
+--- a/src/gui/kernel/qdnd_x11.cpp.sav	2008-03-01 02:33:57.000000000 +0100
++++ b/src/gui/kernel/qdnd_x11.cpp	2008-04-03 14:33:02.000000000 +0200
 @@ -1700,21 +1700,23 @@ void QDragManager::drop()
  
  bool QX11Data::xdndHandleBadwindow()

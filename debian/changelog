@@ -8,8 +8,8 @@ qt4-x11 (4.4.0~rc1-1~pre1) experimental; urgency=low
     * 0167-fix-group-reading.diff - adjust offsets.
     * 0180-window-role.diff - adjust offsets.
     * 0195-compositing-properties.diff - adjust offsets.
-    * 0203-qtexthtmlparser-link-color.diff - use -p0, adjust offsets.
-    * 0209-prevent-qt-mixing.diff - use -p0, adjust offsets.
+    * 0203-qtexthtmlparser-link-color.diff - adjust offsets.
+    * 0209-prevent-qt-mixing.diff - adjust offsets.
     * 0214-fix-qgraphicsproxywidget-tab-crash.diff - adjust offsets.
     * 0216-allow-isystem-for-headers.diff - adjust offsets.
   * Remove qt-copy patches:
@@ -20,7 +20,7 @@ qt4-x11 (4.4.0~rc1-1~pre1) experimental; urgency=low
     * 0218-qassert-macro-fix.diff - merged upstream.
     * fix-qt_bootstrapped-typo.diff  - merged upstream.
   * Add qt-copy patches:
-    * 0220-no-x-recursion-in-xerrhandler.diff - use -p0, adjust offsets.
+    * 0220-no-x-recursion-in-xerrhandler.diff - adjust offsets.
   * Refresh Debian patches:
     * 02_launch_assistant-qt4.diff - adjust offsets.
     * 05_append_qt4_target.diff - adopt to upstream changes.
@@ -29,7 +29,7 @@ qt4-x11 (4.4.0~rc1-1~pre1) experimental; urgency=low
   * Remove Debian patches:
     * 08_load_ssl.diff - different fix applied upstream.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 03 Apr 2008 21:10:42 +0300
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 03 Apr 2008 21:17:04 +0300
 
 qt4-x11 (4.4.0~beta1-1) experimental; urgency=low
 

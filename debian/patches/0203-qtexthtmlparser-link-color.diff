@@ -5,8 +5,8 @@ author: Rafael Fernández López <ereslibre@kde.org>
 
 Links are assigned a foreground color according to the system current color scheme.
 
---- src/gui/text/qtexthtmlparser.cpp	(revisión: 745183)
-+++ src/gui/text/qtexthtmlparser.cpp	(copia de trabajo)
+--- a/src/gui/text/qtexthtmlparser.cpp	(revisión: 745183)
++++ b/src/gui/text/qtexthtmlparser.cpp	(copia de trabajo)
 @@ -1053,7 +1053,7 @@ void QTextHtmlParserNode::initializeProp
                      && !attributes.at(i + 1).isEmpty()) {
                      hasHref = true;
