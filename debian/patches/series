@@ -1,20 +1,15 @@
 # qt-copy patches
 0167-fix-group-reading.diff
-0172-prefer-xrandr-over-xinerama.diff
-0178-transparency-window-types.diff
 0180-window-role.diff
 0191-listview-alternate-row-colors.diff
 0192-itemdelegate-palette-state.diff
 0195-compositing-properties.diff
-0203-qtexthtmlparser-link-color.diff
-0209-prevent-qt-mixing.diff
+0203-qtexthtmlparser-link-color.diff -p0
+0209-prevent-qt-mixing.diff -p0
 0210-fix-crash-q3stylesheet-font-size.diff
 0214-fix-qgraphicsproxywidget-tab-crash.diff
-0215-compile-with-Xcursor-linkage.diff
 0216-allow-isystem-for-headers.diff
-fix-qt_bootstrapped-typo.diff
-0217-qurl-isempty-regression.diff
-0218-qassert-macro-fix.diff
+0220-no-x-recursion-in-xerrhandler.diff -p0
 
 # debian patches
 01_qmake_for_debian.diff
@@ -23,7 +18,6 @@ fix-qt_bootstrapped-typo.diff
 04_launch_uic-qt4.diff
 05_append_qt4_target.diff
 07_trust_dpkg-arch_over_uname-m.diff
-08_load_ssl.diff
 09_qmake_lflags_as-needed.diff
 10_config_tests_fixes.diff
 20_mips_atomic_ops.diff

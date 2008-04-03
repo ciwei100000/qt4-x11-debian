@@ -10,7 +10,7 @@ attempted to give the focus to *some* QWidget (even if it was null).
 
 --- a/src/gui/graphicsview/qgraphicsproxywidget.cpp
 +++ b/src/gui/graphicsview/qgraphicsproxywidget.cpp
-@@ -328,6 +328,10 @@
+@@ -376,6 +376,10 @@
  	}
      }
  

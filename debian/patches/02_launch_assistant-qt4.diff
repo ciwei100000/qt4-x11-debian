@@ -1,6 +1,6 @@
 --- a/demos/qtdemo/menumanager.cpp
 +++ b/demos/qtdemo/menumanager.cpp
-@@ -264,7 +264,7 @@
+@@ -291,7 +291,7 @@
      if (this->assistantProcess.state() != QProcess::Running){
          QString app = QLibraryInfo::location(QLibraryInfo::BinariesPath) + QDir::separator();
  #if !defined(Q_OS_MAC)
