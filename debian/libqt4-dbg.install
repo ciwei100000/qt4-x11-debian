@@ -30,6 +30,5 @@ usr/lib/qt4/plugins/imageformats/libqmng.so.debug
 usr/lib/qt4/plugins/imageformats/libqsvg.so.debug
 usr/lib/qt4/plugins/imageformats/libqtiff.so.debug
 usr/lib/qt4/plugins/inputmethods/libqimsw-multi.so.debug
-usr/lib/qt4/plugins/script/libqtscriptdbus.so.debug
 usr/lib/qt4/plugins/sqldrivers/libqsql*.so.debug
 

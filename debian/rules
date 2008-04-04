@@ -48,7 +48,9 @@ else
         PLATFORM_ARG = glibc-g++
 endif
 
-common-configure-arch::
+common-configure-arch:: config.status
+
+config.status:
 ifeq ($(DEB_HOST_ARCH),hppa)
 	mkdir -p debian/hppa-tmp
 	echo "Testing whether getdents kernel bug is present on this buildd - see #433768"
