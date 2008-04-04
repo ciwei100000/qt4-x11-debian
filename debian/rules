@@ -89,9 +89,10 @@ config.status:
 	            -lfontconfig \
 	            -cups \
 	            -exceptions \
-	            -qdbus \
+	            -dbus-linked \
 	            -pch \
 	            -no-phonon \
+	            -svg \
 	            -webkit \
 	            -xmlpatterns \
 	            $(EXTRA_CONFIGURE_OPTS)
