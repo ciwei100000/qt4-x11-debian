@@ -138,7 +138,7 @@ common-install-arch::
 		-exec sed -i -e "/^QMAKE_PRL_BUILD_DIR/d" {} \;
 
 install/libqtcore4::
-	$(CURDIR)/bin/lrelease-qt4 debian/translations/qt_ca.ts \
+	LD_LIBRARY_PATH=$(CURDIR)/lib $(CURDIR)/bin/lrelease-qt4 debian/translations/qt_ca.ts \
 		-qm $(DEB_DESTDIR)/usr/share/qt4/translations/qt_ca.qm
 
 install/qt4-demos::
