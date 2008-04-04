@@ -1,6 +1,6 @@
-qt4-x11 (4.4.0~rc1-1~pre2) experimental; urgency=low
+qt4-x11 (4.4.0~rc1-1) unstable; urgency=low
 
-  * New upstream release.
+  * New upstream release. (Closes: #469783)
 
   +++ Changes by Modestas Vainius:
 
@@ -33,13 +33,22 @@ qt4-x11 (4.4.0~rc1-1~pre2) experimental; urgency=low
     * libqt4-script.install: remove libqtscriptdbus.so
     * qt4-dev-tools.install: a few renames of the language files,
       s/assistant-qt3/assistant-qt4/, add usr/bin/xmlpatterns
-  * Add libqt4-core transitional package.
+  * Add libqt4-core transitional package. (Closes: #473658)
   * Add debian/not-installed to document files which are deliberately not
     installed
   * Avoid calling ./configure repeatedly during build/install: tie ./configure
     to config.status
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 04 Apr 2008 03:34:39 +0300
+  +++ Changes by Fathi Boudra:
+
+  * Re-introduce LD_LIBRARY_PATH workaround to use lrelease.
+  * Remove Conflicts against libqt4-core.
+  * Reorder libqt4-sql dependencies to have packages available on all
+    architectures listed first. (Closes: #473348)
+  * Add architectures availability list to libqt4-sql-ibase package.
+    (Closes: #473348)
+
+ -- Fathi Boudra <fabo@debian.org>  Fri, 04 Apr 2008 10:42:06 +0200
 
 qt4-x11 (4.4.0~beta1-1) experimental; urgency=low
 

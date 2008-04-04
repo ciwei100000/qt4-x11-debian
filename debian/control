@@ -22,7 +22,6 @@ Package: libqtcore4
 Architecture: any
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Conflicts: libqt4-core (<< 4.4.0~beta1-1)
 Replaces: libqt4-core (<< 4.4.0~beta1-1)
 Description: Qt 4 core module
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -59,7 +58,6 @@ Package: libqt4-network
 Architecture: any
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Conflicts: libqt4-core (<< 4.4.0~beta1-1)
 Replaces: libqt4-core (<< 4.4.0~beta1-1)
 Description: Qt 4 network module
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -88,7 +86,6 @@ Package: libqt4-script
 Architecture: any
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Conflicts: libqt4-core (<< 4.4.0~beta1-1)
 Replaces: libqt4-core (<< 4.4.0~beta1-1)
 Description: Qt 4 script module
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -100,7 +97,7 @@ Package: libqt4-sql
 Architecture: any
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends},
- libqt4-sql-ibase | libqt4-sql-mysql | libqt4-sql-odbc | libqt4-sql-psql | libqt4-sql-sqlite | libqt4-sql-sqlite2
+ libqt4-sql-mysql | libqt4-sql-odbc | libqt4-sql-psql | libqt4-sql-sqlite | libqt4-sql-sqlite2 | libqt4-sql-ibase [i386 kfreebsd-i386 kfreebsd-amd64 knetbsd-i386 netbsd-i386 amd64 sparc powerpc]
 Suggests: libqt4-dev
 Description: Qt 4 SQL module
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -208,7 +205,6 @@ Package: libqt4-xml
 Architecture: any
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Conflicts: libqt4-core (<< 4.4.0~beta1-1)
 Replaces: libqt4-core (<< 4.4.0~beta1-1)
 Description: Qt 4 XML module
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -231,7 +227,6 @@ Package: libqt4-dbus
 Architecture: any
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Conflicts: libqt4-core (<< 4.4.0~beta1-1)
 Replaces: libqt4-core (<< 4.4.0~beta1-1)
 Description: Qt 4 D-Bus module
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -301,7 +296,6 @@ Package: libqt4-test
 Architecture: any
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Conflicts: libqt4-core (<< 4.4.0~beta1-1)
 Replaces: libqt4-core (<< 4.4.0~beta1-1)
 Description: Qt 4 test module
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -316,15 +310,15 @@ Section: libdevel
 Depends: ${shlibs:Depends}, ${misc:Depends},
  libqt4-gui (= ${binary:Version}), libqt4-network (= ${binary:Version}),
  libqt4-opengl (= ${binary:Version}), libqt4-script (= ${binary:Version}),
- libqt4-sql (= ${binary:Version}), libqt4-sql-ibase (= ${binary:Version}),
- libqt4-sql-mysql (= ${binary:Version}), libqt4-sql-odbc (= ${binary:Version}),
- libqt4-sql-psql (= ${binary:Version}), libqt4-sql-sqlite (= ${binary:Version}),
- libqt4-sql-sqlite2 (= ${binary:Version}), libqt4-svg (= ${binary:Version}),
- libqt4-webkit (= ${binary:Version}), libqt4-xml (= ${binary:Version}),
- libqt4-xmlpatterns (= ${binary:Version}), libqt4-dbus (= ${binary:Version}),
- libqt4-qt3support (= ${binary:Version}), libqt4-designer (= ${binary:Version}),
- libqt4-help (= ${binary:Version}), libqt4-assistant (= ${binary:Version}),
- libqt4-test (= ${binary:Version}),
+ libqt4-sql (= ${binary:Version}), libqt4-sql-mysql (= ${binary:Version}),
+ libqt4-sql-odbc (= ${binary:Version}), libqt4-sql-psql (= ${binary:Version}),
+ libqt4-sql-sqlite (= ${binary:Version}), libqt4-sql-sqlite2 (= ${binary:Version}),
+ libqt4-svg (= ${binary:Version}), libqt4-webkit (= ${binary:Version}),
+ libqt4-xml (= ${binary:Version}), libqt4-xmlpatterns (= ${binary:Version}),
+ libqt4-dbus (= ${binary:Version}), libqt4-qt3support (= ${binary:Version}),
+ libqt4-designer (= ${binary:Version}), libqt4-help (= ${binary:Version}),
+ libqt4-assistant (= ${binary:Version}), libqt4-test (= ${binary:Version}),
+ libqt4-sql-ibase (= ${binary:Version}) [i386 kfreebsd-i386 kfreebsd-amd64 knetbsd-i386 netbsd-i386 amd64 sparc powerpc]
  firebird2.0-dev [i386 kfreebsd-i386 kfreebsd-amd64 knetbsd-i386 netbsd-i386 amd64 sparc powerpc],
  libaudio-dev, libcupsys2-dev, libdbus-1-dev, libfreetype6-dev,
  libgl1-mesa-dev | libgl-dev, libglib2.0-dev, libglu1-mesa-dev | libglu-dev,
