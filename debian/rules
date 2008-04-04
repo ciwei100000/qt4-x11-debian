@@ -89,7 +89,7 @@ config.status:
 	            -lfontconfig \
 	            -cups \
 	            -exceptions \
-	            -dbus-linked \
+	            -dbus \
 	            -pch \
 	            -no-phonon \
 	            -svg \

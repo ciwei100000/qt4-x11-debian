@@ -49,8 +49,9 @@ qt4-x11 (4.4.0~rc1-1) unstable; urgency=low
     (Closes: #473348)
   * Add patch to fix unaligned access that cause a bus error on hppa.
     Thanks to Bernhard R. Link. (Closes: #458133)
+  * Add patch to replace remaining qdbus by dbus.
   * Update configure options:
-    * Replace -qdbus by -dbus-linked.
+    * Replace -qdbus by -dbus.
     * Add -svg.
 
  -- Fathi Boudra <fabo@debian.org>  Fri, 04 Apr 2008 10:42:06 +0200

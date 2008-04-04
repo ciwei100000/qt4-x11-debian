@@ -20,6 +20,7 @@
 07_trust_dpkg-arch_over_uname-m.diff
 09_qmake_lflags_as-needed.diff
 10_config_tests_fixes.diff
+11_qdbus_to_dbus_fix.diff
 20_mips_atomic_ops.diff
 40_alpha_ice.diff
 41_disable_opengl_visibility.diff
