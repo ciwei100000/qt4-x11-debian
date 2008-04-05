@@ -30,7 +30,6 @@ qt4-x11 (4.4.0~rc1-1) unstable; urgency=low
   * Remove Debian patches:
     * 08_load_ssl.diff - different fix applied upstream.
   * Update *.install files:
-    * libqt4-script.install: remove libqtscriptdbus.so
     * qt4-dev-tools.install: a few renames of the language files,
       s/assistant-qt3/assistant-qt4/, add usr/bin/xmlpatterns
   * Add libqt4-core transitional package. (Closes: #473658)
@@ -49,7 +48,7 @@ qt4-x11 (4.4.0~rc1-1) unstable; urgency=low
     (Closes: #473348)
   * Add patch to fix unaligned access that cause a bus error on hppa.
     Thanks to Bernhard R. Link. (Closes: #458133)
-  * Add patch to replace remaining qdbus by dbus.
+  * Add patch to replace remaining qdbus by dbus. Fix libqtscriptdbus build.
   * Update configure options:
     * Replace -qdbus by -dbus.
     * Add -svg.
