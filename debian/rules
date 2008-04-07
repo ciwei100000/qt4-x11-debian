@@ -99,32 +99,65 @@ config.status:
 
 clean::
 # Extra stuff missed by confclean/distclean
-	rm -f Makefile \
-	      bin/qmake-qt4 \
-	      mkspecs/default \
-	      src/corelib/global/arch \
-	      examples/tools/plugandpaint/plugins/*.so \
-	      config.status \
-	      demos/shared/libdemo_shared.prl \
-	      mkspecs/qconfig.pri \
-	      src/corelib/global/qconfig.* \
-	      tools/qtestlib/updater/updater \
-	      tools/qtestlib/updater/updater.debug \
-	      examples/tools/plugandpaint/plugins/libpnp_basictools.a \
-	      examples/qdbus/complexpingpong/Makefile* \
-	      examples/qdbus/pingpong/Makefile*
+	
+	# Misc. files
+	rm -f \
+	  config.status \
+	  config.tests/.qmake.cache \
+	  examples/dbus/*/Makefile.* \
+	  mkspecs/qconfig.pri \
+	  src/corelib/global/qconfig.* \
+	;
+	
+	# Misc. directories
+	rm -rf \
+	  examples/tools/plugandpaint/plugins/ \
+	  examples/tools/styleplugin/styles/ \
+	  lib/ \
+	  mkspecs/glibc-g++/ \
+	  plugins/ \
+	;
+	
+	# Leftover dirs
+	find -depth -type d \( -false \
+	  -o -name debug-shared \
+	  -o -name debug-static \
+	  -o -name \*.gch \
+	  -o -name .moc\* \
+	  -o -name .obj\* \
+	  -o -name .pch \
+	  -o -name pkgconfig \
+	  -o -name .rcc \
+	  -o -name release-shared \
+	  -o -name release-static \
+	  -o -name .uic \
+	\) -print0 | xargs -0 rm -rf
+		
+	# Leftover files and all symlinks
+	find \( -false \
+	  -o -name \*.a \
+	  -o -name Makefile.Debug \
+	  -o -name Makefile.Release \
+	  -o -name \*.o \
+	  -o -name \*.prl \
+	  -o -name \*.so \
+	  -o -name \*.so.debug \
+	  -o -type l \
+	\) -delete
+	
+	# Delete all Makefiles, excluding some from src/3rdparty
+	find $(CURDIR) -name Makefile \
+	  ! -path $(CURDIR)/src/3rdparty/Makefile \
+	  ! -path $(CURDIR)/src/3rdparty/freetype/\* \
+	  ! -path $(CURDIR)/src/3rdparty/zlib/\* \
+	-delete
+	
+	# Any remaining executables
+	find $(CURDIR) -type f -exec file -i '{}' \; | grep \
+	  -e application/x-executable \
+	| cut -d ':' -f 1 | xargs rm -f
 
-	rm -rf lib/ plugins/ mkspecs/glibc-g++
-
-	find bin/ config.tests/ qmake/ -exec file {} \; | grep ELF | sed 's/:.*//'  | xargs rm -f
-
-	find include/ -type l -print0 | xargs -0r rm -f
-	find . -mindepth 2 -name Makefile -print0 \
-	                -o -name Makefile.Debug -print0 \
-	                -o -name Makefile.Release -print0 \
-	                | xargs -0r rm -f
-
-	# generate on build
+	# Generated on build
 	rm -f debian/shlibs.local
 
 common-install-arch::
