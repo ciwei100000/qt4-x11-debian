@@ -1,6 +1,6 @@
 author: Bernhard R. Link <brlink@debian.org>
 
-Fix unaligned access that cause a bus error on hppa (ftbfs)
+Fix unaligned access on hppa
 
 --- a/src/corelib/global/qnumeric_p.h
 +++ b/src/corelib/global/qnumeric_p.h

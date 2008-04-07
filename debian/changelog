@@ -46,8 +46,8 @@ qt4-x11 (4.4.0~rc1-1) unstable; urgency=low
     architectures listed first. (Closes: #473348)
   * Add architectures availability list to libqt4-sql-ibase package.
     (Closes: #473348)
-  * Add patch to fix unaligned access that cause a bus error on hppa.
-    Thanks to Bernhard R. Link. (Closes: #458133)
+  * Add patch to fix unaligned access on hppa. Thanks to Bernhard R. Link.
+    (Closes: #458133)
   * Add patch to replace remaining qdbus by dbus. Fix libqtscriptdbus build.
   * Update configure options:
     * Replace -qdbus by -dbus.
