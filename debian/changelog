@@ -53,7 +53,11 @@ qt4-x11 (4.4.0~rc1-1) unstable; urgency=low
     * Replace -qdbus by -dbus.
     * Add -svg.
 
- -- Fathi Boudra <fabo@debian.org>  Fri, 04 Apr 2008 10:42:06 +0200
+  +++ Changes by Matthew Rosewarne:
+
+  * Rewrite clean rule to remove remaining build cruft.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 07 Apr 2008 01:36:54 -0400
 
 qt4-x11 (4.4.0~beta1-1) experimental; urgency=low
 
