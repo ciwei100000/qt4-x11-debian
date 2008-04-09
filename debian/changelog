@@ -1,3 +1,11 @@
+qt4-x11 (4.4.0~rc1-2) UNRELEASED; urgency=low
+
+  * Add patch for Explicit template specialization cannot have a storage class
+    with gcc-4.3. Specializations of templates cannot explicitly specify
+    a storage class, and have the same storage as the primary template. 
+
+ -- Fathi Boudra <fabo@debian.org>  Wed, 09 Apr 2008 09:40:00 +0200
+
 qt4-x11 (4.4.0~rc1-1) unstable; urgency=low
 
   * New upstream release. (Closes: #469783)

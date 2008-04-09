@@ -29,3 +29,4 @@
 70_hppa_ldcw_fix.diff
 71_hppa_unaligned_access_fix_458133.diff
 80_hurd_max_path.diff
+90_gcc43.diff
