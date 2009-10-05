@@ -12,7 +12,7 @@ Subject: [PATCH 16/18] Fill gap of X.org/XFree multimedia/special/launcher keys
 
 --- a/src/corelib/global/qnamespace.h
 +++ b/src/corelib/global/qnamespace.h
-@@ -895,12 +895,10 @@ public:
+@@ -915,12 +915,10 @@ public:
          Key_Dead_Horn           = 0x01001262,
  
          // multimedia/internet keys - ignored by default - see QKeyEvent c'tor
@@ -25,7 +25,7 @@ Subject: [PATCH 16/18] Fill gap of X.org/XFree multimedia/special/launcher keys
          Key_VolumeDown = 0x01000070,
          Key_VolumeMute  = 0x01000071,
          Key_VolumeUp = 0x01000072,
-@@ -909,7 +907,6 @@ public:
+@@ -929,7 +927,6 @@ public:
          Key_BassDown = 0x01000075,
          Key_TrebleUp = 0x01000076,
          Key_TrebleDown = 0x01000077,
@@ -33,7 +33,7 @@ Subject: [PATCH 16/18] Fill gap of X.org/XFree multimedia/special/launcher keys
          Key_MediaPlay  = 0x01000080,
          Key_MediaStop  = 0x01000081,
          Key_MediaPrevious  = 0x01000082,
-@@ -918,13 +915,11 @@ public:
+@@ -938,13 +935,11 @@ public:
  #endif
          Key_MediaNext  = 0x01000083,
          Key_MediaRecord = 0x01000084,
@@ -47,7 +47,7 @@ Subject: [PATCH 16/18] Fill gap of X.org/XFree multimedia/special/launcher keys
          Key_LaunchMail  = 0x010000a0,
          Key_LaunchMedia = 0x010000a1,
          Key_Launch0  = 0x010000a2,
-@@ -943,6 +938,98 @@ public:
+@@ -963,6 +958,98 @@ public:
          Key_LaunchD  = 0x010000af,
          Key_LaunchE  = 0x010000b0,
          Key_LaunchF  = 0x010000b1,
@@ -468,7 +468,7 @@ Subject: [PATCH 16/18] Fill gap of X.org/XFree multimedia/special/launcher keys
      XF86XK_Launch2,             Qt::Key_Launch4,
 --- a/src/gui/kernel/qkeysequence.cpp
 +++ b/src/gui/kernel/qkeysequence.cpp
-@@ -396,47 +396,139 @@ static const struct {
+@@ -416,47 +416,139 @@ static const struct {
      { Qt::Key_Menu,         QT_TRANSLATE_NOOP("QShortcut", "Menu") },
      { Qt::Key_Help,         QT_TRANSLATE_NOOP("QShortcut", "Help") },
  

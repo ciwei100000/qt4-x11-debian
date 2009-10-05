@@ -8,7 +8,9 @@ usr/bin/qdbusviewer
 usr/bin/qdoc3
 usr/bin/qhelpconverter
 usr/bin/qhelpgenerator
+usr/bin/qttracereplay
 usr/bin/xmlpatterns
+usr/bin/xmlpatternsvalidator
 usr/share/qt4/phrasebooks/*
 usr/share/qt4/translations/assistant_adp_de.qm
 usr/share/qt4/translations/assistant_adp_ja.qm

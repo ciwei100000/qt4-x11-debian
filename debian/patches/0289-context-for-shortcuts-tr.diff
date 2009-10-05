@@ -12,7 +12,7 @@ context to these strings helps creating a more correct translation
 
 --- a/src/gui/kernel/qkeysequence.cpp
 +++ b/src/gui/kernel/qkeysequence.cpp
-@@ -1083,10 +1083,10 @@ int QKeySequencePrivate::decodeString(co
+@@ -1139,10 +1139,10 @@ int QKeySequencePrivate::decodeString(co
  
      QList<QModifKeyName> modifs;
      if (nativeText) {
@@ -27,7 +27,7 @@ context to these strings helps creating a more correct translation
      }
      modifs += *gmodifs; // Test non-translated ones last
  
-@@ -1178,7 +1178,7 @@ QString QKeySequence::encodeString(int k
+@@ -1232,7 +1232,7 @@ QString QKeySequence::encodeString(int k
  static inline void addKey(QString &str, const QString &theKey, QKeySequence::SequenceFormat format)
  {
      if (!str.isEmpty())
@@ -36,7 +36,7 @@ context to these strings helps creating a more correct translation
                                                      : QString::fromLatin1("+");
      str += theKey;
  }
-@@ -1203,13 +1203,13 @@ QString QKeySequencePrivate::encodeStrin
+@@ -1272,13 +1272,13 @@ QString QKeySequencePrivate::encodeStrin
      {
          // On other systems the order is Meta, Control, Alt, Shift
          if ((key & Qt::META) == Qt::META)
@@ -54,7 +54,7 @@ context to these strings helps creating a more correct translation
      }
  
  
-@@ -1224,7 +1224,7 @@ QString QKeySequencePrivate::encodeStrin
+@@ -1293,7 +1293,7 @@ QString QKeySequencePrivate::encodeStrin
              p += QChar((key-0x10000)%400+0xdc00);
          }
      } else if (key >= Qt::Key_F1 && key <= Qt::Key_F35) {

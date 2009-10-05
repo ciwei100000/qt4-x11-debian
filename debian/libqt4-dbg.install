@@ -7,6 +7,7 @@ usr/lib/libQtDesigner.so.*.debug
 usr/lib/libQtDesignerComponents.so.*.debug
 usr/lib/libQtGui.so.*.debug
 usr/lib/libQtHelp.so.*.debug
+usr/lib/libQtMultimedia.so.*.debug
 usr/lib/libQtNetwork.so.*.debug
 usr/lib/libQtOpenGL.so.*.debug
 usr/lib/libQtScript.so.*.debug
@@ -22,6 +23,7 @@ usr/lib/qt4/plugins/codecs/libqjpcodecs.so.debug
 usr/lib/qt4/plugins/codecs/libqkrcodecs.so.debug
 usr/lib/qt4/plugins/codecs/libqtwcodecs.so.debug
 usr/lib/qt4/plugins/graphicssystems/libqglgraphicssystem.so.debug
+usr/lib/qt4/plugins/graphicssystems/libqtracegraphicssystem.so.debug
 usr/lib/qt4/plugins/iconengines/libqsvgicon.so.debug
 usr/lib/qt4/plugins/imageformats/libqgif.so.debug
 usr/lib/qt4/plugins/imageformats/libqico.so.debug

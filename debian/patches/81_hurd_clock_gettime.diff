@@ -8,13 +8,13 @@ Debian bug #533526
 
 --- a/src/corelib/concurrent/qtconcurrentiteratekernel.cpp
 +++ b/src/corelib/concurrent/qtconcurrentiteratekernel.cpp
-@@ -49,6 +49,9 @@
- 
+@@ -46,6 +46,9 @@
+ #include <mach/mach_time.h>
+ #include <unistd.h>
  #elif defined(Q_OS_UNIX)
- 
 +#if defined(Q_OS_HURD)
 +#include <sys/time.h>
 +#endif
  #include <time.h>
  #include <unistd.h>
- 
+ #elif defined(Q_OS_WIN)

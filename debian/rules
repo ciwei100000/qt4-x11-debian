@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 
-#export DH_VERBOSE=1
+export DH_VERBOSE=1
 
 export QTDIR := $(shell pwd)
 export PATH := $(QTDIR)/bin:$(PATH)
@@ -44,7 +44,7 @@ DEB_DH_STRIP_ARGS_qt4-demos-dbg := --exclude=.debug
 DEB_DH_SHLIBDEPS_ARGS_ALL := --exclude=.debug
 
 # Disable for rc
-DEB_INSTALL_CHANGELOGS_ALL := changes-$(QTVERSION)
+#DEB_INSTALL_CHANGELOGS_ALL := changes-$(QTVERSION)
 
 DEB_INSTALL_DOCS_ALL := LGPL_EXCEPTION.txt
 

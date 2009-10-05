@@ -4,12 +4,8 @@
 0209-prevent-qt-mixing.diff
 0216-allow-isystem-for-headers.diff
 0225-invalidate-tabbar-geometry-on-refresh.patch
-0255-qtreeview-selection-columns-hidden.diff
-0274-shm-native-image-fix.diff
-0280-deserialization-custom-dbus-properties.diff
 0288-more-x-keycodes.diff
 0289-context-for-shortcuts-tr.diff
-0287-qmenu-respect-minwidth.diff
 
 # debian patches
 01_qmake_for_debian.diff
@@ -21,7 +17,6 @@
 09_qmake_lflags_as-needed.diff
 10_config_tests_fixes.diff
 11_build_translations.diff
-14_add_libraries_to_gui_build_where_actually_needed.diff
 15_fix_qmake_makefile_generation.diff
 16_hide_std_symbols_on_qtwebkit.diff
 17_add_postgresql_8.3_support.diff
