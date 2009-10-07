@@ -1,4 +1,4 @@
-qt4-x11 (4:4.6.0~~tp1+git1336+gc5c58c2-0fabo1) experimental-snapshot; urgency=low
+qt4-x11 (4:4.6.0~~tp1+git1336+gc5c58c2-0fabo1) experimental-snapshots; urgency=low
 
   * New release from 4.6-stable git branch.
   * Refresh qt-copy patches: 0180 and 209.
