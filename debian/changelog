@@ -4,22 +4,30 @@ qt4-x11 (4:4.6.0~~tp1+git1336+gc5c58c2-0fabo1) experimental-snapshot; urgency=lo
   * Refresh qt-copy patches: 0180 and 209.
   * Remove qt-copy patches: 0255, 0274, 0280 and 0287.
   * Refresh Debian patches: 01, 05, 09, 11, 16, 18, 19, 30, 40, 41, 50 and 81.
+  * Remove upstream patches:
+    - 0078-Fix-regressions-in-qeventloop-qtimer-and-qsocketnoti - stolen
+      upstream.
   * Remove Debian patches:
     - 14_add_libraries_to_gui_build_where_actually_needed - fixed upstream.
   * Update debian/control:
+    - Remove Brian Nelson from uploaders field.
+      Thanks for his great work on Qt.
+    - Drop cdbs build dependency.
     - Add libasound2-dev build dependency.
     - Add libqt4-multimedia package.
   * Update installed files and related lintian files.
+  * Rewrite debian/rules, converted to dh usage.
 
  -- Fathi Boudra <fabo@debian.org>  Sun, 04 Oct 2009 21:53:47 +0200
 
-qt4-x11 (4:4.5.3-1) UNRELEASED; urgency=low
+qt4-x11 (4:4.5.3-1) unstable; urgency=low
 
   * New upstream release:
     - Fix CVE-2009-2700 - QSSlCertificate  incorrect verification of SSL
       certificate with NUL in subjectAltName. (Closes: #545793)
     - Fix a regresion in Qt 4.5.2 causing a broken clipboard with scim.
       (Closes: #544764, #546282)
+    - Fix phonon wrong #include paths. (Closes: #537304)
 
   +++ Changes by Ana Beatriz Guerrero Lopez:
 
@@ -34,6 +42,9 @@ qt4-x11 (4:4.5.3-1) UNRELEASED; urgency=low
 
   +++ Changes by Fathi Boudra:
 
+  * Add upstream patches:
+    - 0078-Fix-regressions-in-qeventloop-qtimer-and-qsocketnoti.patch
+      Fix regressions in qeventloop, qtimer, and qsocketnotifier autotests.
   * Add Debian patches:
     - 99_build_translations
       Fix translations build when sources comes from git.
@@ -59,7 +70,7 @@ qt4-x11 (4:4.5.3-1) UNRELEASED; urgency=low
   * Update debian/copyright:
     - Update Nokia Qt url.
     - Update Nokia Qt LGPL Exception from version 1.0 to version 1.1.
-  * Update *.install files and *.lintian files.
+  * Update *.install and *.lintian files.
   * Update debian/rules:
     - Build translations
     - Generate include directory before configure call.
