@@ -108,9 +108,7 @@ endif
 	            $(extra_configure_opts)
 
 override_dh_auto_build:
-	$(MAKE) sub-src
-	# Build tools
-	$(MAKE) sub-tools
+	$(MAKE)
 	# Build documentations
 	$(MAKE) docs
 	# Build translations
