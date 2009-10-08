@@ -10,7 +10,8 @@ export LD_LIBRARY_PATH := $(QTDIR)/lib:$(LD_LIBRARY_PATH)
 # workaround to use qhelpgenerator.
 export QT_PLUGIN_PATH := $(QTDIR)/plugins
 
-pkgs_dbg := $(filter %-dbg,$(shell dh_listpackages))
+#pkgs_dbg := $(filter %-dbg,$(shell dh_listpackages))
+pkgs_dbg := $(shell dh_listpackages | grep dbg | sed -e '/phonon-dbg/d; /libqt4-dbg/d; s|-dbg||')
 pkgs_lib := $(filter-out %-dev %-dbg,$(filter lib%,$(shell dh_listpackages)))
 # Upstream changelog
 upstream_changes := $(wildcard changes-*)
@@ -98,6 +99,7 @@ endif
 	            -exceptions \
 	            -dbus \
 	            -pch \
+	            -no-separate-debug-info \
 	            -phonon \
 	            -no-phonon-backend \
 	            -svg \
@@ -230,10 +232,11 @@ override_dh_auto_install:
 		debian/desktop/qtconfig.png.uu
 
 override_dh_install:
-	# Run dh_install without the exclude argument to install the *.debug files
-	$(foreach pkg,$(pkgs_dbg),dh_install -p$(pkg) --sourcedir=debian/tmp;)
-	# Ensure the *.debug files aren't included in any package other than *-dbg
-	dh_install --remaining-packages --sourcedir=debian/tmp --exclude=.debug
+#	# Run dh_install without the exclude argument to install the *.debug files
+#	$(foreach pkg,$(pkgs_dbg),dh_install -p$(pkg) --sourcedir=debian/tmp;)
+#	# Ensure the *.debug files aren't included in any package other than *-dbg
+#	dh_install --remaining-packages --sourcedir=debian/tmp --exclude=.debug
+	dh_install --list-missing --sourcedir=debian/tmp
 
 override_dh_installdocs:
 	dh_installdocs --all LGPL_EXCEPTION.txt
@@ -242,8 +245,12 @@ override_dh_installchangelogs:
 	dh_installchangelogs $(upstream_changes)
 
 override_dh_strip:
-	$(foreach pkg,$(pkgs_dbg),dh_strip -p$(pkg) --exclude=.debug;)
-	dh_strip --remaining-packages
+#	$(foreach pkg,$(pkgs_dbg),dh_strip -p$(pkg) --exclude=.debug;)
+#	dh_strip --remaining-packages
+	$(foreach pkg,$(pkgs_dbg),dh_strip -p$(pkg) --dbg-package=$(pkg)-dbg;)
+	dh_strip -plibphonon4 --dbg-package=phonon-dbg
+	dh_strip --remaining-packages --dbg-package=libqt4-dbg
+	# Generate libphonon4 symbols file
 	pkgkde-symbolshelper symbolfile -p libphonon4 -o debian/libphonon4.symbols
 
 override_dh_makeshlibs:
@@ -256,7 +263,7 @@ override_dh_makeshlibs:
 		fi \
 	done
 
-override_dh_shlibdeps:
-	dh_shlibdeps --exclude=.debug
+#override_dh_shlibdeps:
+#	dh_shlibdeps --exclude=.debug
 
 .PHONY: override_dh_auto_test
