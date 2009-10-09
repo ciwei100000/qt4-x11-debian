@@ -20,7 +20,8 @@ qt4-x11 (4:4.6.0~~tp1+git1336+gc5c58c2-0fabo1) experimental-snapshots; urgency=l
     - Add libqt4-multimedia package.
   * Update installed files and related lintian files.
   * Rewrite debian/rules, converted to dh usage.
-  * Build with --no-separate-debug-info. Adjust debian/rules accordingly.
+  * Build with -no-separate-debug-info, it's the default value in Qt 4.6.
+    Adjust debian/rules accordingly by removing -separate-debug-info.
 
  -- Fathi Boudra <fabo@debian.org>  Sun, 04 Oct 2009 21:53:47 +0200
 

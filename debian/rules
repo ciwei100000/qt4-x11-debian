@@ -76,44 +76,43 @@ endif
 	            -sysconfdir "/etc/xdg" \
 	            -demosdir "/usr/lib/qt4/demos" \
 	            -examplesdir "/usr/lib/qt4/examples" \
-	            -platform $(platform_arg) \
 	            -opensource \
-	            -fast \
-	            -optimized-qmake \
-	            -no-rpath \
-	            -system-zlib \
-	            -system-libtiff \
-	            -system-libpng \
-	            -system-libjpeg \
-	            -system-nas-sound \
-	            -qt-gif \
 	            -plugin-sql-mysql \
 	            -plugin-sql-odbc \
 	            -plugin-sql-psql \
 	            -plugin-sql-sqlite \
 	            -plugin-sql-sqlite2 \
 	            -system-sqlite \
-	            -I/usr/include/freetype2 \
-	            -lfontconfig \
-	            -cups \
-	            -exceptions \
-	            -dbus \
-	            -pch \
-	            -no-separate-debug-info \
+	            -xmlpatterns \
+	            -multimedia \
 	            -phonon \
 	            -no-phonon-backend \
 	            -svg \
 	            -webkit \
-	            -xmlpatterns \
+	            -script \
+	            -scripttools \
+	            -platform $(platform_arg) \
+	            -system-zlib \
+	            -qt-gif \
+	            -system-libtiff \
+	            -system-libpng \
+	            -system-libjpeg \
+	            -no-rpath \
+	            -optimized-qmake \
+	            -dbus \
+	            -gtkstyle \
+	            -system-nas-sound \
+	            -lfontconfig \
+	            -I/usr/include/freetype2 \
 	            $(extra_configure_opts)
 
 override_dh_auto_build:
 	$(MAKE)
-	# Build documentations
-	$(MAKE) docs
-	# Build translations
-	$(MAKE) ts
-	$(MAKE) qm
+#	# Build documentations
+#	$(MAKE) docs
+#	# Build translations
+#	$(MAKE) ts
+#	$(MAKE) qm
 	# Workaround: It's a known qmake limitation.
 	# It can't generate install rules for files that don't exist yet like docs.
 	./config.status
