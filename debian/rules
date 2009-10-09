@@ -230,10 +230,6 @@ override_dh_auto_install:
 		debian/desktop/qtconfig.png.uu
 
 override_dh_install:
-#	# Run dh_install without the exclude argument to install the *.debug files
-#	$(foreach pkg,$(pkgs_dbg),dh_install -p$(pkg) --sourcedir=debian/tmp;)
-#	# Ensure the *.debug files aren't included in any package other than *-dbg
-#	dh_install --remaining-packages --sourcedir=debian/tmp --exclude=.debug
 	dh_install --list-missing --sourcedir=debian/tmp
 
 override_dh_installdocs:
@@ -243,8 +239,6 @@ override_dh_installchangelogs:
 	dh_installchangelogs $(upstream_changes)
 
 override_dh_strip:
-#	$(foreach pkg,$(pkgs_dbg),dh_strip -p$(pkg) --exclude=.debug;)
-#	dh_strip --remaining-packages
 	$(foreach pkg,$(pkgs_dbg),dh_strip -p$(pkg) --dbg-package=$(pkg)-dbg;)
 	dh_strip -plibphonon4 --dbg-package=phonon-dbg
 	dh_strip --remaining-packages --dbg-package=libqt4-dbg
@@ -260,8 +254,5 @@ override_dh_makeshlibs:
 			sed 's/>=[^)]*/= $(current_version)/' debian/$${pkg}/DEBIAN/shlibs >> debian/shlibs.local ;\
 		fi \
 	done
-
-#override_dh_shlibdeps:
-#	dh_shlibdeps --exclude=.debug
 
 .PHONY: override_dh_auto_test

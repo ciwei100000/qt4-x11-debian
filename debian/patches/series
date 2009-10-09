@@ -17,6 +17,7 @@
 09_qmake_lflags_as-needed.diff
 10_config_tests_fixes.diff
 11_build_translations.diff
+12_add_nostrip_for_debug_packages.diff
 15_fix_qmake_makefile_generation.diff
 16_hide_std_symbols_on_qtwebkit.diff
 17_add_postgresql_8.3_support.diff

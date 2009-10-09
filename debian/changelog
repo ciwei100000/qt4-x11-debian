@@ -9,6 +9,9 @@ qt4-x11 (4:4.6.0~~tp1+git1336+gc5c58c2-0fabo1) experimental-snapshots; urgency=l
       upstream.
   * Remove Debian patches:
     - 14_add_libraries_to_gui_build_where_actually_needed - fixed upstream.
+  * Add Debian patches:
+    - 12_add_nostrip_for_debug_packages
+      Set nostrip to generate debug packages.
   * Update debian/control:
     - Remove Brian Nelson from uploaders field.
       Thanks for his great work on Qt.
