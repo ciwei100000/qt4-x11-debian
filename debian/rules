@@ -101,6 +101,7 @@ endif
 	            -optimized-qmake \
 	            -dbus \
 	            -no-separate-debug-info \
+	            -verbose \
 	            -gtkstyle \
 	            -system-nas-sound \
 	            -lfontconfig \
@@ -109,11 +110,11 @@ endif
 
 override_dh_auto_build:
 	$(MAKE)
-#	# Build documentations
-#	$(MAKE) docs
-#	# Build translations
-#	$(MAKE) ts
-#	$(MAKE) qm
+	# Build documentations
+	$(MAKE) docs
+	# Build translations
+	$(MAKE) ts
+	$(MAKE) qm
 	# Workaround: It's a known qmake limitation.
 	# It can't generate install rules for files that don't exist yet like docs.
 	./config.status

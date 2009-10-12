@@ -24,6 +24,14 @@ qt4-x11 (4:4.6.0~~tp1+git1336+gc5c58c2-0fabo1) experimental-snapshots; urgency=l
 
  -- Fathi Boudra <fabo@debian.org>  Sun, 04 Oct 2009 21:53:47 +0200
 
+qt4-x11 (4:4.5.3-3) unstable; urgency=low
+
+  * Remove -fast configure option. Qt configure has -no-fast as default value
+    and will generate Makefiles for all project files, including bootstrap.
+    (Closes: #550127)
+
+ -- Fathi Boudra <fabo@debian.org>  Fri, 09 Oct 2009 13:53:57 +0200
+
 qt4-x11 (4:4.5.3-2) unstable; urgency=low
 
   * Update debian/rules: cleanup make target usage by removing sub-src and
