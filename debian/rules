@@ -10,7 +10,6 @@ export LD_LIBRARY_PATH := $(QTDIR)/lib:$(LD_LIBRARY_PATH)
 # workaround to use qhelpgenerator.
 export QT_PLUGIN_PATH := $(QTDIR)/plugins
 
-#pkgs_dbg := $(filter %-dbg,$(shell dh_listpackages))
 pkgs_dbg := $(shell dh_listpackages | grep dbg | sed -e '/phonon-dbg/d; /libqt4-dbg/d; s|-dbg||')
 pkgs_lib := $(filter-out %-dev %-dbg,$(filter lib%,$(shell dh_listpackages)))
 # Upstream changelog
