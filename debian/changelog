@@ -22,7 +22,7 @@ qt4-x11 (4:4.6.0~beta1-1) experimental; urgency=low
   * Rewrite debian/rules, converted to dh usage.
   * Build with -no-separate-debug-info. Adjust debian/rules accordingly.
 
- -- Fathi Boudra <fabo@debian.org>  Thu, 15 Oct 2009 12:16:44 +0200
+ -- Fathi Boudra <fabo@debian.org>  Thu, 15 Oct 2009 23:14:56 +0200
 
 qt4-x11 (4:4.5.3-4) unstable; urgency=low
 
