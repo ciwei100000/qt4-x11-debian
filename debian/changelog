@@ -1,6 +1,6 @@
-qt4-x11 (4:4.6.0~~tp1+git1336+gc5c58c2-0fabo1) experimental-snapshots; urgency=low
+qt4-x11 (4:4.6.0~beta1-1) experimental; urgency=low
 
-  * New release from 4.6-stable git branch.
+  * New release..
   * Refresh qt-copy patches: 0180 and 209.
   * Remove qt-copy patches: 0255, 0274, 0280 and 0287.
   * Refresh Debian patches: 01, 05, 09, 11, 16, 18, 19, 30, 40, 41, 50 and 81.
@@ -22,7 +22,7 @@ qt4-x11 (4:4.6.0~~tp1+git1336+gc5c58c2-0fabo1) experimental-snapshots; urgency=l
   * Rewrite debian/rules, converted to dh usage.
   * Build with -no-separate-debug-info. Adjust debian/rules accordingly.
 
- -- Fathi Boudra <fabo@debian.org>  Sun, 04 Oct 2009 21:53:47 +0200
+ -- Fathi Boudra <fabo@debian.org>  Thu, 15 Oct 2009 12:16:44 +0200
 
 qt4-x11 (4:4.5.3-3) unstable; urgency=low
 
