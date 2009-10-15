@@ -1,6 +1,6 @@
 qt4-x11 (4:4.6.0~beta1-1) experimental; urgency=low
 
-  * New release..
+  * New release.
   * Refresh qt-copy patches: 0180 and 209.
   * Remove qt-copy patches: 0255, 0274, 0280 and 0287.
   * Refresh Debian patches: 01, 05, 09, 11, 16, 18, 19, 30, 40, 41, 50 and 81.
@@ -23,6 +23,14 @@ qt4-x11 (4:4.6.0~beta1-1) experimental; urgency=low
   * Build with -no-separate-debug-info. Adjust debian/rules accordingly.
 
  -- Fathi Boudra <fabo@debian.org>  Thu, 15 Oct 2009 12:16:44 +0200
+
+qt4-x11 (4:4.5.3-4) unstable; urgency=low
+
+  * Add 08_configure_quilt_compat.diff patch. (Closes: #550127)
+    quilt creates '.pc' directory. It breaks qmake projects search.
+  * Update debian/rules: re-add -fast configure option.
+
+ -- Fathi Boudra <fabo@debian.org>  Thu, 15 Oct 2009 22:32:28 +0200
 
 qt4-x11 (4:4.5.3-3) unstable; urgency=low
 
