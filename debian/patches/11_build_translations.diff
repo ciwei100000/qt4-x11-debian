@@ -50,7 +50,7 @@ Use case: Qt sources comes from git and we need to build them.
 +TR_DIR = $$PWD/../../../translations
 +TRANSLATIONS = \
 +    $$TR_DIR/qt_help_da.ts \
-+    $$TR_DIR/qt_help_de.ts
++    $$TR_DIR/qt_help_de.ts \
 +    $$TR_DIR/qt_help_ja.ts \
 +    $$TR_DIR/qt_help_pl.ts \
 +    $$TR_DIR/qt_help_ru.ts \
