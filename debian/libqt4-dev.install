@@ -310,6 +310,7 @@ usr/include/qt4/Qt/qfuturesynchronizer.h
 usr/include/qt4/Qt/qfuturewatcher.h
 usr/include/qt4/Qt/qgenericmatrix.h
 usr/include/qt4/Qt/qgesture.h
+usr/include/qt4/Qt/qgesturerecognizer.h
 usr/include/qt4/Qt/qglobal.h
 usr/include/qt4/Qt/qgraphicsanchorlayout.h
 usr/include/qt4/Qt/qgraphicseffect.h
@@ -325,6 +326,7 @@ usr/include/qt4/Qt/qgraphicssceneevent.h
 usr/include/qt4/Qt/qgraphicssvgitem.h
 usr/include/qt4/Qt/qgraphicstransform.h
 usr/include/qt4/Qt/qgraphicsview.h
+usr/include/qt4/Qt/qgraphicswebview.h
 usr/include/qt4/Qt/qgraphicswidget.h
 usr/include/qt4/Qt/qgridlayout.h
 usr/include/qt4/Qt/qgroupbox.h
@@ -564,7 +566,6 @@ usr/include/qt4/Qt/qsslsocket.h
 usr/include/qt4/Qt/qstack.h
 usr/include/qt4/Qt/qstackedlayout.h
 usr/include/qt4/Qt/qstackedwidget.h
-usr/include/qt4/Qt/qstandardgestures.h
 usr/include/qt4/Qt/qstandarditemmodel.h
 usr/include/qt4/Qt/qstate.h
 usr/include/qt4/Qt/qstatemachine.h
@@ -686,7 +687,6 @@ usr/include/qt4/Qt/qwaitcondition.h
 usr/include/qt4/Qt/qwebdatabase.h
 usr/include/qt4/Qt/qwebelement.h
 usr/include/qt4/Qt/qwebframe.h
-usr/include/qt4/Qt/qwebgraphicsitem.h
 usr/include/qt4/Qt/qwebhistory.h
 usr/include/qt4/Qt/qwebhistoryinterface.h
 usr/include/qt4/Qt/qwebinspector.h
@@ -1695,11 +1695,14 @@ usr/include/qt4/QtGui/QFormLayout
 usr/include/qt4/QtGui/QFrame
 usr/include/qt4/QtGui/QGenericMatrix
 usr/include/qt4/QtGui/QGesture
+usr/include/qt4/QtGui/QGestureEvent
+usr/include/qt4/QtGui/QGestureRecognizer
 usr/include/qt4/QtGui/QGradient
 usr/include/qt4/QtGui/QGradientStop
 usr/include/qt4/QtGui/QGradientStops
 usr/include/qt4/QtGui/QGraphicsAnchor
 usr/include/qt4/QtGui/QGraphicsAnchorLayout
+usr/include/qt4/QtGui/QGraphicsBloomEffect
 usr/include/qt4/QtGui/QGraphicsBlurEffect
 usr/include/qt4/QtGui/QGraphicsColorizeEffect
 usr/include/qt4/QtGui/QGraphicsDropShadowEffect
@@ -2161,6 +2164,7 @@ usr/include/qt4/QtGui/qformlayout.h
 usr/include/qt4/QtGui/qframe.h
 usr/include/qt4/QtGui/qgenericmatrix.h
 usr/include/qt4/QtGui/qgesture.h
+usr/include/qt4/QtGui/qgesturerecognizer.h
 usr/include/qt4/QtGui/qgraphicsanchorlayout.h
 usr/include/qt4/QtGui/qgraphicseffect.h
 usr/include/qt4/QtGui/qgraphicsgridlayout.h
@@ -2294,7 +2298,6 @@ usr/include/qt4/QtGui/qsplashscreen.h
 usr/include/qt4/QtGui/qsplitter.h
 usr/include/qt4/QtGui/qstackedlayout.h
 usr/include/qt4/QtGui/qstackedwidget.h
-usr/include/qt4/QtGui/qstandardgestures.h
 usr/include/qt4/QtGui/qstandarditemmodel.h
 usr/include/qt4/QtGui/qstatusbar.h
 usr/include/qt4/QtGui/qstringlistmodel.h
@@ -2629,10 +2632,10 @@ usr/include/qt4/QtTest/qtestxunitstreamer.h
 usr/include/qt4/QtUiTools/QUiLoader
 usr/include/qt4/QtUiTools/QtUiTools
 usr/include/qt4/QtUiTools/quiloader.h
+usr/include/qt4/QtWebKit/QGraphicsWebView
 usr/include/qt4/QtWebKit/QWebDatabase
 usr/include/qt4/QtWebKit/QWebElement
 usr/include/qt4/QtWebKit/QWebFrame
-usr/include/qt4/QtWebKit/QWebGraphicsItem
 usr/include/qt4/QtWebKit/QWebHistory
 usr/include/qt4/QtWebKit/QWebHistoryInterface
 usr/include/qt4/QtWebKit/QWebHistoryItem
@@ -2646,10 +2649,10 @@ usr/include/qt4/QtWebKit/QWebSecurityOrigin
 usr/include/qt4/QtWebKit/QWebSettings
 usr/include/qt4/QtWebKit/QWebView
 usr/include/qt4/QtWebKit/QtWebKit
+usr/include/qt4/QtWebKit/qgraphicswebview.h
 usr/include/qt4/QtWebKit/qwebdatabase.h
 usr/include/qt4/QtWebKit/qwebelement.h
 usr/include/qt4/QtWebKit/qwebframe.h
-usr/include/qt4/QtWebKit/qwebgraphicsitem.h
 usr/include/qt4/QtWebKit/qwebhistory.h
 usr/include/qt4/QtWebKit/qwebhistoryinterface.h
 usr/include/qt4/QtWebKit/qwebinspector.h
