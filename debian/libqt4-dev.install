@@ -256,6 +256,7 @@ usr/include/qt4/Qt/qdbuspendingcall.h
 usr/include/qt4/Qt/qdbuspendingreply.h
 usr/include/qt4/Qt/qdbusreply.h
 usr/include/qt4/Qt/qdbusserver.h
+usr/include/qt4/Qt/qdbusservicewatcher.h
 usr/include/qt4/Qt/qdebug.h
 usr/include/qt4/Qt/qdecoration_qws.h
 usr/include/qt4/Qt/qdecorationdefault_qws.h
@@ -502,6 +503,7 @@ usr/include/qt4/Qt/qscriptengineagent.h
 usr/include/qt4/Qt/qscriptenginedebugger.h
 usr/include/qt4/Qt/qscriptextensioninterface.h
 usr/include/qt4/Qt/qscriptextensionplugin.h
+usr/include/qt4/Qt/qscriptprogram.h
 usr/include/qt4/Qt/qscriptstring.h
 usr/include/qt4/Qt/qscriptvalue.h
 usr/include/qt4/Qt/qscriptvalueiterator.h
@@ -584,6 +586,7 @@ usr/include/qt4/Qt/qstyleplugin.h
 usr/include/qt4/Qt/qsvggenerator.h
 usr/include/qt4/Qt/qsvgrenderer.h
 usr/include/qt4/Qt/qsvgwidget.h
+usr/include/qt4/Qt/qsymbianevent.h
 usr/include/qt4/Qt/qsyntaxhighlighter.h
 usr/include/qt4/Qt/qsystemsemaphore.h
 usr/include/qt4/Qt/qsystemtrayicon.h
@@ -693,7 +696,6 @@ usr/include/qt4/Qt/qwebinspector.h
 usr/include/qt4/Qt/qwebkitglobal.h
 usr/include/qt4/Qt/qwebkitversion.h
 usr/include/qt4/Qt/qwebpage.h
-usr/include/qt4/Qt/qwebplugindatabase.h
 usr/include/qt4/Qt/qwebpluginfactory.h
 usr/include/qt4/Qt/qwebsecurityorigin.h
 usr/include/qt4/Qt/qwebsettings.h
@@ -1032,6 +1034,7 @@ usr/include/qt4/QtAssistant/QtAssistant
 usr/include/qt4/QtAssistant/qassistantclient.h
 usr/include/qt4/QtAssistant/qassistantclient_global.h
 usr/include/qt4/QtCore/QAbstractAnimation
+usr/include/qt4/QtCore/QAbstractConcatenable
 usr/include/qt4/QtCore/QAbstractEventDispatcher
 usr/include/qt4/QtCore/QAbstractFileEngine
 usr/include/qt4/QtCore/QAbstractFileEngineHandler
@@ -1068,7 +1071,6 @@ usr/include/qt4/QtCore/QContiguousCacheTypedData
 usr/include/qt4/QtCore/QCoreApplication
 usr/include/qt4/QtCore/QCryptographicHash
 usr/include/qt4/QtCore/QCustomEvent
-usr/include/qt4/QtCore/QCustomScopedPointer
 usr/include/qt4/QtCore/QDataStream
 usr/include/qt4/QtCore/QDate
 usr/include/qt4/QtCore/QDateTime
@@ -1193,8 +1195,6 @@ usr/include/qt4/QtCore/QScopedPointer
 usr/include/qt4/QtCore/QScopedPointerArrayDeleter
 usr/include/qt4/QtCore/QScopedPointerDeleter
 usr/include/qt4/QtCore/QScopedPointerPodDeleter
-usr/include/qt4/QtCore/QScopedPointerSharedDeleter
-usr/include/qt4/QtCore/QScopedSharedPointer
 usr/include/qt4/QtCore/QSemaphore
 usr/include/qt4/QtCore/QSequentialAnimationGroup
 usr/include/qt4/QtCore/QSet
@@ -1485,6 +1485,7 @@ usr/include/qt4/QtDBus/QDBusPendingReply
 usr/include/qt4/QtDBus/QDBusPendingReplyData
 usr/include/qt4/QtDBus/QDBusReply
 usr/include/qt4/QtDBus/QDBusServer
+usr/include/qt4/QtDBus/QDBusServiceWatcher
 usr/include/qt4/QtDBus/QDBusSignature
 usr/include/qt4/QtDBus/QDBusVariant
 usr/include/qt4/QtDBus/QtDBus
@@ -1504,6 +1505,7 @@ usr/include/qt4/QtDBus/qdbuspendingcall.h
 usr/include/qt4/QtDBus/qdbuspendingreply.h
 usr/include/qt4/QtDBus/qdbusreply.h
 usr/include/qt4/QtDBus/qdbusserver.h
+usr/include/qt4/QtDBus/qdbusservicewatcher.h
 usr/include/qt4/QtDesigner/QAbstractExtensionFactory
 usr/include/qt4/QtDesigner/QAbstractExtensionManager
 usr/include/qt4/QtDesigner/QAbstractFormBuilder
@@ -1598,6 +1600,7 @@ usr/include/qt4/QtGui/QAbstractTextDocumentLayout
 usr/include/qt4/QtGui/QAbstractUndoItem
 usr/include/qt4/QtGui/QAccessible
 usr/include/qt4/QtGui/QAccessible2Interface
+usr/include/qt4/QtGui/QAccessibleActionInterface
 usr/include/qt4/QtGui/QAccessibleApplication
 usr/include/qt4/QtGui/QAccessibleBridge
 usr/include/qt4/QtGui/QAccessibleBridgeFactoryInterface
@@ -1605,6 +1608,7 @@ usr/include/qt4/QtGui/QAccessibleBridgePlugin
 usr/include/qt4/QtGui/QAccessibleEditableTextInterface
 usr/include/qt4/QtGui/QAccessibleEvent
 usr/include/qt4/QtGui/QAccessibleFactoryInterface
+usr/include/qt4/QtGui/QAccessibleImageInterface
 usr/include/qt4/QtGui/QAccessibleInterface
 usr/include/qt4/QtGui/QAccessibleInterfaceEx
 usr/include/qt4/QtGui/QAccessibleObject
@@ -1702,14 +1706,11 @@ usr/include/qt4/QtGui/QGradientStop
 usr/include/qt4/QtGui/QGradientStops
 usr/include/qt4/QtGui/QGraphicsAnchor
 usr/include/qt4/QtGui/QGraphicsAnchorLayout
-usr/include/qt4/QtGui/QGraphicsBloomEffect
 usr/include/qt4/QtGui/QGraphicsBlurEffect
 usr/include/qt4/QtGui/QGraphicsColorizeEffect
 usr/include/qt4/QtGui/QGraphicsDropShadowEffect
 usr/include/qt4/QtGui/QGraphicsEffect
-usr/include/qt4/QtGui/QGraphicsEffectSource
 usr/include/qt4/QtGui/QGraphicsEllipseItem
-usr/include/qt4/QtGui/QGraphicsGrayscaleEffect
 usr/include/qt4/QtGui/QGraphicsGridLayout
 usr/include/qt4/QtGui/QGraphicsItem
 usr/include/qt4/QtGui/QGraphicsItemAnimation
@@ -1721,7 +1722,6 @@ usr/include/qt4/QtGui/QGraphicsLinearLayout
 usr/include/qt4/QtGui/QGraphicsObject
 usr/include/qt4/QtGui/QGraphicsOpacityEffect
 usr/include/qt4/QtGui/QGraphicsPathItem
-usr/include/qt4/QtGui/QGraphicsPixelizeEffect
 usr/include/qt4/QtGui/QGraphicsPixmapItem
 usr/include/qt4/QtGui/QGraphicsPolygonItem
 usr/include/qt4/QtGui/QGraphicsProxyWidget
@@ -1946,6 +1946,7 @@ usr/include/qt4/QtGui/QStyleOptionTabBarBaseV2
 usr/include/qt4/QtGui/QStyleOptionTabV2
 usr/include/qt4/QtGui/QStyleOptionTabV3
 usr/include/qt4/QtGui/QStyleOptionTabWidgetFrame
+usr/include/qt4/QtGui/QStyleOptionTabWidgetFrameV2
 usr/include/qt4/QtGui/QStyleOptionTitleBar
 usr/include/qt4/QtGui/QStyleOptionToolBar
 usr/include/qt4/QtGui/QStyleOptionToolBox
@@ -1959,6 +1960,7 @@ usr/include/qt4/QtGui/QStylePainter
 usr/include/qt4/QtGui/QStylePlugin
 usr/include/qt4/QtGui/QStyledItemDelegate
 usr/include/qt4/QtGui/QSwipeGesture
+usr/include/qt4/QtGui/QSymbianEvent
 usr/include/qt4/QtGui/QSyntaxHighlighter
 usr/include/qt4/QtGui/QSystemTrayIcon
 usr/include/qt4/QtGui/QTabBar
@@ -1968,6 +1970,8 @@ usr/include/qt4/QtGui/QTableWidget
 usr/include/qt4/QtGui/QTableWidgetItem
 usr/include/qt4/QtGui/QTableWidgetSelectionRange
 usr/include/qt4/QtGui/QTabletEvent
+usr/include/qt4/QtGui/QTapAndHoldGesture
+usr/include/qt4/QtGui/QTapGesture
 usr/include/qt4/QtGui/QTextBlock
 usr/include/qt4/QtGui/QTextBlockFormat
 usr/include/qt4/QtGui/QTextBlockGroup
@@ -2307,6 +2311,7 @@ usr/include/qt4/QtGui/qstylefactory.h
 usr/include/qt4/QtGui/qstyleoption.h
 usr/include/qt4/QtGui/qstylepainter.h
 usr/include/qt4/QtGui/qstyleplugin.h
+usr/include/qt4/QtGui/qsymbianevent.h
 usr/include/qt4/QtGui/qsyntaxhighlighter.h
 usr/include/qt4/QtGui/qsystemtrayicon.h
 usr/include/qt4/QtGui/qtabbar.h
@@ -2489,6 +2494,7 @@ usr/include/qt4/QtScript/QScriptEngine
 usr/include/qt4/QtScript/QScriptEngineAgent
 usr/include/qt4/QtScript/QScriptExtensionInterface
 usr/include/qt4/QtScript/QScriptExtensionPlugin
+usr/include/qt4/QtScript/QScriptProgram
 usr/include/qt4/QtScript/QScriptString
 usr/include/qt4/QtScript/QScriptSyntaxCheckResult
 usr/include/qt4/QtScript/QScriptValue
@@ -2505,6 +2511,7 @@ usr/include/qt4/QtScript/qscriptengine.h
 usr/include/qt4/QtScript/qscriptengineagent.h
 usr/include/qt4/QtScript/qscriptextensioninterface.h
 usr/include/qt4/QtScript/qscriptextensionplugin.h
+usr/include/qt4/QtScript/qscriptprogram.h
 usr/include/qt4/QtScript/qscriptstring.h
 usr/include/qt4/QtScript/qscriptvalue.h
 usr/include/qt4/QtScript/qscriptvalueiterator.h
@@ -2635,6 +2642,7 @@ usr/include/qt4/QtUiTools/quiloader.h
 usr/include/qt4/QtWebKit/QGraphicsWebView
 usr/include/qt4/QtWebKit/QWebDatabase
 usr/include/qt4/QtWebKit/QWebElement
+usr/include/qt4/QtWebKit/QWebElementCollection
 usr/include/qt4/QtWebKit/QWebFrame
 usr/include/qt4/QtWebKit/QWebHistory
 usr/include/qt4/QtWebKit/QWebHistoryInterface
@@ -2642,9 +2650,7 @@ usr/include/qt4/QtWebKit/QWebHistoryItem
 usr/include/qt4/QtWebKit/QWebHitTestResult
 usr/include/qt4/QtWebKit/QWebInspector
 usr/include/qt4/QtWebKit/QWebPage
-usr/include/qt4/QtWebKit/QWebPluginDatabase
 usr/include/qt4/QtWebKit/QWebPluginFactory
-usr/include/qt4/QtWebKit/QWebPluginInfo
 usr/include/qt4/QtWebKit/QWebSecurityOrigin
 usr/include/qt4/QtWebKit/QWebSettings
 usr/include/qt4/QtWebKit/QWebView
@@ -2659,7 +2665,6 @@ usr/include/qt4/QtWebKit/qwebinspector.h
 usr/include/qt4/QtWebKit/qwebkitglobal.h
 usr/include/qt4/QtWebKit/qwebkitversion.h
 usr/include/qt4/QtWebKit/qwebpage.h
-usr/include/qt4/QtWebKit/qwebplugindatabase.h
 usr/include/qt4/QtWebKit/qwebpluginfactory.h
 usr/include/qt4/QtWebKit/qwebsecurityorigin.h
 usr/include/qt4/QtWebKit/qwebsettings.h
