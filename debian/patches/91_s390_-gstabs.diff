@@ -8,7 +8,7 @@ Debian bug 528485
 
 --- a/src/3rdparty/webkit/WebKit.pri
 +++ b/src/3rdparty/webkit/WebKit.pri
-@@ -36,6 +36,14 @@ CONFIG(release, debug|release) {
+@@ -43,6 +43,14 @@ CONFIG(release, debug|release) {
      DEFINES += NDEBUG
  }
  

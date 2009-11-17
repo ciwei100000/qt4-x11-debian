@@ -1,6 +1,6 @@
 --- a/src/3rdparty/webkit/WebKit.pri
 +++ b/src/3rdparty/webkit/WebKit.pri
-@@ -38,6 +38,7 @@ CONFIG(release, debug|release) {
+@@ -45,6 +45,7 @@ CONFIG(release, debug|release) {
  
  BASE_DIR = $$PWD
  INCLUDEPATH += $$PWD/WebKit/qt/Api

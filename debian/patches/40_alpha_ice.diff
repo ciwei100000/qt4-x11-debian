@@ -30,7 +30,7 @@
  {
 --- a/src/corelib/tools/qhash.h
 +++ b/src/corelib/tools/qhash.h
-@@ -510,7 +510,7 @@ Q_INLINE_TEMPLATE void QHash<Key, T>::de
+@@ -520,7 +520,7 @@ Q_INLINE_TEMPLATE void QHash<Key, T>::de
  }
  
  template <class Key, class T>
