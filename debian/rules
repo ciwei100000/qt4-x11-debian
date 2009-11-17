@@ -91,7 +91,6 @@ endif
 	            -webkit \
 	            -script \
 	            -scripttools \
-	            -declarative \
 	            -platform $(platform_arg) \
 	            -system-zlib \
 	            -qt-gif \
