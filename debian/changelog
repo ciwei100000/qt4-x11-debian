@@ -1,6 +1,12 @@
+qt4-x11 (4:4.6.0~rc1-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+
+ -- Fathi Boudra <fabo@debian.org>  Tue, 17 Nov 2009 12:12:36 +0100
+
 qt4-x11 (4:4.6.0~beta1-1) experimental; urgency=low
 
-  * New release.
+  * New upstream release.
   * Refresh qt-copy patches: 0180 and 209.
   * Remove qt-copy patches: 0255, 0274, 0280 and 0287.
   * Refresh Debian patches: 01, 05, 09, 11, 16, 18, 19, 30, 40, 41, 50 and 81.
