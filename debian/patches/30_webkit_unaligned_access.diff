@@ -64,7 +64,7 @@ a real problem yet.
      template<typename ValueArg> struct ListHashSetNode {
 --- a/src/3rdparty/webkit/JavaScriptCore/wtf/Platform.h
 +++ b/src/3rdparty/webkit/JavaScriptCore/wtf/Platform.h
-@@ -376,6 +376,23 @@
+@@ -378,6 +378,23 @@
  #   include <ce_time.h>
  #endif
  

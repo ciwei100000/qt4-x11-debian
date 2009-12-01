@@ -6,7 +6,7 @@ let dh_strip do it to generate debug packages.
 
 --- a/configure
 +++ b/configure
-@@ -645,6 +645,7 @@ rm -f "$outpath/config.tests/.qmake.cach
+@@ -635,6 +635,7 @@ rm -f "$outpath/config.tests/.qmake.cach
  cp "$QMAKE_VARS_FILE" "$outpath/config.tests/.qmake.cache"
  
  QMakeVar add QMAKE_LFLAGS -Wl,--as-needed
