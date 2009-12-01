@@ -1,6 +1,11 @@
-qt4-x11 (4:4.6.0-1) UNRELEASED; urgency=low
+qt4-x11 (4:4.6.0-1) experimental; urgency=low
 
   * New upstream release.
+
+  +++ Changes by Fathi Boudra:
+
+  * Add french translations.
+  * Merge with Kubuntu: add libqt4-sql-tds plugin.
 
   +++ Changes by Frederik Schwarzer:
 

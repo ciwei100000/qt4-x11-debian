@@ -12,7 +12,7 @@ Build-Depends: debhelper (>= 7.2), quilt, pkg-kde-tools (>= 0.4), flex, sharutil
  libsm-dev, libsqlite0-dev, libsqlite3-dev, libtiff4-dev, libx11-dev,
  libxcursor-dev, libxext-dev, libxft-dev, libxi-dev, libxinerama-dev,
  libxmu-dev, libxrandr-dev, libxrender-dev, libxslt1-dev, libxt-dev,
- x11proto-core-dev, zlib1g-dev
+ x11proto-core-dev, zlib1g-dev, freetds-dev
 Standards-Version: 3.8.3
 Homepage: http://www.qtsoftware.com
 Vcs-Git: git://git.debian.org/pkg-kde/qt4-x11.git
@@ -204,6 +204,17 @@ Description: Qt 4 SQLite 2 database driver
  .
  Install it if you intend to use or write Qt programs that are to access an
  SQLite 2 DB.
+
+Package: libqt4-sql-tds
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: libqt4-dev
+Description: Qt 4 FreeTDS database driver
+ This package contains the FreeTDS plugin for Qt 4.
+ .
+ Install it if you intend to use or write Qt programs that are to access a
+ MS SQL or Sybase SQL server.
 
 Package: libqt4-svg
 Architecture: any

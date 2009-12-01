@@ -82,6 +82,7 @@ endif
 	            -plugin-sql-psql \
 	            -plugin-sql-sqlite \
 	            -plugin-sql-sqlite2 \
+	            -plugin-sql-tds \
 	            -system-sqlite \
 	            -xmlpatterns \
 	            -multimedia \
