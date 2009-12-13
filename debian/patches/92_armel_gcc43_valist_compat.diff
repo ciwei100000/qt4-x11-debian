@@ -1,0 +1,89 @@
+From: Modestas Vainius <modax@debian.org>
+Subject: Restore QtCore ABI compatibility with binaries built with g++ 4.3 on armel
+ Once Qt is rebuilt with g++ 4.4, it becomes ABI incompatible with binaries
+ built with g++ 4.3 on armel. That's because g++ 4.4 mangles va_list
+ differently on armel. As a result, affected symbols are those which have
+ va_list type in their argument list. Qt exports 2 such symbols:
+ .
+   qvsnprintf(char *str, size_t n, const char *fmt, va_list ap);
+   QString &QString::vsprintf(const char* cformat, va_list ap);
+ .
+ The patch uses overloading feature of the C++ language to add aliases for the
+ symbols above. Those aliases are mangled under g++ 4.4 in the same way as
+ original symbols are under g++ 4.3 and below.
+Forward: not-needed
+
+--- a/src/corelib/tools/qbytearray.h
++++ b/src/corelib/tools/qbytearray.h
+@@ -52,6 +52,10 @@
+ #error qbytearray.h must be included before any header file that defines truncate
+ #endif
+ 
++// Workaround type safety when casting to va_list.
++#define DEBIAN_CAST_TO_VA_LIST(list, type) \
++    (*reinterpret_cast<va_list*>(reinterpret_cast<type*>(&list)))
++
+ QT_BEGIN_HEADER
+ 
+ QT_BEGIN_NAMESPACE
+@@ -96,6 +100,11 @@
+ 
+ // implemented in qvsnprintf.cpp
+ Q_CORE_EXPORT int qvsnprintf(char *str, size_t n, const char *fmt, va_list ap);
++#if defined __ARM_EABI__ && defined __GNUC__ && (__GNUC__ > 4 || __GNUC__ == 4 && __GNUC_MINOR__ >= 4)
++    // va_list mangling has been changed in g++ 4.4 on armel. Add binary
++    // compatibility hack for g++ 4.3 and below.
++    Q_CORE_EXPORT int qvsnprintf(char *str, size_t n, const char *fmt, void* ap);
++#endif
+ Q_CORE_EXPORT int qsnprintf(char *str, size_t n, const char *fmt, ...);
+ 
+ #ifdef QT3_SUPPORT
+--- a/src/corelib/tools/qstring.cpp
++++ b/src/corelib/tools/qstring.cpp
+@@ -5289,6 +5289,12 @@
+     return *this;
+ }
+ 
++#if defined __ARM_EABI__ && defined __GNUC__ && (__GNUC__ > 4 || __GNUC__ == 4 && __GNUC_MINOR__ >= 4)
++QString &QString::vsprintf(const char* cformat, void* ap)
++{
++    return vsprintf(cformat, DEBIAN_CAST_TO_VA_LIST(ap, void*));
++}
++#endif
+ /*!
+     Returns the string converted to a \c{long long} using base \a
+     base, which is 10 by default and must be between 2 and 36, or 0.
+--- a/src/corelib/tools/qstring.h
++++ b/src/corelib/tools/qstring.h
+@@ -177,6 +177,15 @@
+         __attribute__ ((format (printf, 2, 0)))
+ #endif
+         ;
++    // va_list mangling has been changed in g++ 4.4 on armel. Add binary
++    // compatibility hack for g++ 4.3 and below.
++#if defined __ARM_EABI__ && defined __GNUC__ && (__GNUC__ > 4 || __GNUC__ == 4 && __GNUC_MINOR__ >= 4)
++    QString    &vsprintf(const char *format, void* ap)
++#if defined(Q_CC_GNU) && !defined(__INSURE__)
++        __attribute__ ((format (printf, 2, 0)))
++#endif
++        ;
++#endif
+     QString    &sprintf(const char *format, ...)
+ #if defined(Q_CC_GNU) && !defined(__INSURE__)
+         __attribute__ ((format (printf, 2, 3)))
+--- a/src/corelib/tools/qvsnprintf.cpp
++++ b/src/corelib/tools/qvsnprintf.cpp
+@@ -104,6 +104,13 @@
+ 
+ #endif
+ 
++#if defined __ARM_EABI__ && defined __GNUC__ && (__GNUC__ > 4 || __GNUC__ == 4 && __GNUC_MINOR__ >= 4)
++int qvsnprintf(char *str, size_t n, const char *fmt, void* ap)
++{
++    return qvsnprintf(str, n, fmt, DEBIAN_CAST_TO_VA_LIST(ap, void*));
++}
++#endif
++
+ /*!
+     \relates QByteArray
+ 

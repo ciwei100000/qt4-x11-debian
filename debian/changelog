@@ -1,6 +1,8 @@
 qt4-x11 (4:4.6.0-2) UNRELEASED; urgency=low
 
   * Change my email address to @debian.org one.
+  * Restore binary compatibility with binaries built with g++-4.3 on armel
+    (patch 92_armel_gcc43_valist_compat.diff).
 
  -- Modestas Vainius <modax@debian.org>  Sun, 13 Dec 2009 18:43:29 +0200
 
