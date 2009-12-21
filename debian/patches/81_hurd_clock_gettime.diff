@@ -1,4 +1,5 @@
 author: Samuel Thibault <sthibault@debian.org>
+qt bug: QTBUG-6961
 
 FTBFS on hurd-i386 because since clock_gettime is not available there
 qt4-x11 reverts to using gettimeofday, but it doesn't include <sys/time.h>

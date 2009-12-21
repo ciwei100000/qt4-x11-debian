@@ -1,4 +1,5 @@
 author: Michael Banck <mbanck@debian.org>
+qt bug: QTBUG-6960
 
 define MAX_PATH if not defined. This is needed on hurd.
 http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=485931
