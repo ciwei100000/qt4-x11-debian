@@ -1,0 +1,30 @@
+author: Scott Kitterman <scott@kitterman.com>
+qt bug: QTBUG-6948
+
+Fails to build on IA64 due to lack of WTF_USE_JSVALUE64
+Added to fix IA64 FTBFS
+
+--- a/src/3rdparty/webkit/JavaScriptCore/wtf/Platform.h
++++ b/src/3rdparty/webkit/JavaScriptCore/wtf/Platform.h
+@@ -347,6 +347,12 @@
+ #define WTF_PLATFORM_X86_64 1
+ #endif
+ 
++/* PLATFORM(IA64) */
++/* a.k.a. Itanium Processor Family, IPF */
++#if defined(__ia64) || defined(__ia64__) || defined(_M_IA64)
++#define WTF_PLATFORM_IA64 1
++#endif
++
+ /* PLATFORM(SH4) */
+ #if defined(__SH4__)
+ #define WTF_PLATFORM_SH4 1
+@@ -726,7 +732,7 @@
+ #endif
+ 
+ #if !defined(WTF_USE_JSVALUE64) && !defined(WTF_USE_JSVALUE32) && !defined(WTF_USE_JSVALUE32_64)
+-#if PLATFORM(X86_64) && (PLATFORM(DARWIN) || PLATFORM(LINUX) || PLATFORM(WIN_OS))
++#if (PLATFORM(X86_64) || PLATFORM(IA64)) && (PLATFORM(DARWIN) || PLATFORM(LINUX) || PLATFORM(WIN_OS))
+ #define WTF_USE_JSVALUE64 1
+ #elif PLATFORM(ARM) || PLATFORM(PPC64)
+ #define WTF_USE_JSVALUE32 1
