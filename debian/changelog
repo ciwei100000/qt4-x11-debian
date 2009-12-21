@@ -8,6 +8,9 @@ qt4-x11 (4:4.6.0-2) UNRELEASED; urgency=low
   [ Fathi Boudra ]
   * Add 93_jsvalue64_on_ia64.diff patch to fix ftbfs on IA64 due to lack of
     WTF_USE_JSVALUE64. Thanks to Scott Kitterman.
+  * Add 94_fix_crash_in_qdbuspendingreply_qdbusreply.diff patch to fix a crash
+    in QDBusPendingReply/QDBusReply in case of unconnected calls.
+    (Closes: #560838)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 13 Dec 2009 18:43:29 +0200
 

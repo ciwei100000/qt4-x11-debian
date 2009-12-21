@@ -1,0 +1,122 @@
+From 970f19bdb55cd559e9ef97228d30fd52b20e39cb Mon Sep 17 00:00:00 2001
+From: Thiago Macieira <thiago.macieira@nokia.com>
+Date: Tue, 8 Dec 2009 20:28:45 +0100
+Subject: [PATCH] Fix crash in QDBusPendingReply/QDBusReply in case of unconnected calls.
+
+If we made calls on a QDBusConnection that isn't connected, the d
+pointer is 0. Ensure we don't crash.
+
+Task-number: QTBUG-6571
+Reviewed-by: Bradley T. Hughes
+---
+ src/dbus/qdbuspendingcall.cpp                      |    2 +-
+ src/dbus/qdbuspendingreply.h                       |    1 +
+ .../qdbuspendingreply/tst_qdbuspendingreply.cpp    |   25 ++++++++++++++++++++
+ tests/auto/qdbusreply/tst_qdbusreply.cpp           |   16 ++++++++++++
+ 4 files changed, 43 insertions(+), 1 deletions(-)
+
+diff --git a/src/dbus/qdbuspendingcall.cpp b/src/dbus/qdbuspendingcall.cpp
+index d10179e..d8eb53e 100644
+--- a/src/dbus/qdbuspendingcall.cpp
++++ b/src/dbus/qdbuspendingcall.cpp
+@@ -310,7 +310,7 @@ QDBusPendingCall &QDBusPendingCall::operator=(const QDBusPendingCall &other)
+ 
+ bool QDBusPendingCall::isFinished() const
+ {
+-    return d && (d->replyMessage.type() != QDBusMessage::InvalidMessage);
++    return !d || (d->replyMessage.type() != QDBusMessage::InvalidMessage);
+ }
+ 
+ void QDBusPendingCall::waitForFinished()
+diff --git a/src/dbus/qdbuspendingreply.h b/src/dbus/qdbuspendingreply.h
+index b7f54e4..4f90c98 100644
+--- a/src/dbus/qdbuspendingreply.h
++++ b/src/dbus/qdbuspendingreply.h
+@@ -188,6 +188,7 @@ public:
+ private:
+     inline void calculateMetaTypes()
+     {
++        if (!d) return;
+         int typeIds[Count > 0 ? Count : 1]; // use at least one since zero-sized arrays aren't valid
+         ForEach::fillMetaTypes(typeIds);
+         setMetaTypes(Count, typeIds);
+diff --git a/tests/auto/qdbuspendingreply/tst_qdbuspendingreply.cpp b/tests/auto/qdbuspendingreply/tst_qdbuspendingreply.cpp
+index 6398d9c..82e6389 100644
+--- a/tests/auto/qdbuspendingreply/tst_qdbuspendingreply.cpp
++++ b/tests/auto/qdbuspendingreply/tst_qdbuspendingreply.cpp
+@@ -93,6 +93,7 @@ private slots:
+     }
+ 
+     void init();
++    void unconnected();
+     void simpleTypes();
+     void complexTypes();
+     void wrongTypes();
+@@ -252,6 +253,30 @@ void tst_QDBusPendingReply::init()
+     QVERIFY(iface->isValid());
+ }
+ 
++void tst_QDBusPendingReply::unconnected()
++{
++    QDBusConnection con("invalid stored connection");
++    QVERIFY(!con.isConnected());
++    QDBusInterface iface("doesnt.matter", "/", "doesnt.matter", con);
++    QVERIFY(!iface.isValid());
++
++    QDBusPendingReply<> rvoid = iface.asyncCall("ReloadConfig");
++    QVERIFY(rvoid.isFinished());
++    QVERIFY(!rvoid.isValid());
++    QVERIFY(rvoid.isError());
++    rvoid.waitForFinished();
++    QVERIFY(!rvoid.isValid());
++    QVERIFY(rvoid.isError());
++
++    QDBusPendingReply<QString> rstring = iface.asyncCall("GetId");
++    QVERIFY(rstring.isFinished());
++    QVERIFY(!rstring.isValid());
++    QVERIFY(rstring.isError());
++    rstring.waitForFinished();
++    QVERIFY(!rstring.isValid());
++    QVERIFY(rstring.isError());
++}
++
+ void tst_QDBusPendingReply::simpleTypes()
+ {
+     QDBusPendingReply<> rvoid = iface->asyncCall("retrieveVoid");
+diff --git a/tests/auto/qdbusreply/tst_qdbusreply.cpp b/tests/auto/qdbusreply/tst_qdbusreply.cpp
+index 9866302..e36d288 100644
+--- a/tests/auto/qdbusreply/tst_qdbusreply.cpp
++++ b/tests/auto/qdbusreply/tst_qdbusreply.cpp
+@@ -93,6 +93,7 @@ private slots:
+     }
+ 
+     void init();
++    void unconnected();
+     void simpleTypes();
+     void complexTypes();
+     void wrongTypes();
+@@ -236,6 +237,21 @@ void tst_QDBusReply::init()
+     QVERIFY(iface->isValid());
+ }
+ 
++void tst_QDBusReply::unconnected()
++{
++    QDBusConnection con("invalid stored connection");
++    QVERIFY(!con.isConnected());
++    QDBusInterface iface("doesnt.matter", "/", "doesnt.matter", con);
++    QVERIFY(!iface.isValid());
++
++    QDBusReply<void> rvoid = iface.asyncCall("ReloadConfig");
++    QVERIFY(!rvoid.isValid());
++
++    QDBusReply<QString> rstring = iface.asyncCall("GetId");
++    QVERIFY(!rstring.isValid());
++    QVERIFY(rstring.value().isEmpty());
++}
++
+ void tst_QDBusReply::simpleTypes()
+ {
+     QDBusReply<bool> rbool = iface->call(QDBus::BlockWithGui, "retrieveBool");
+-- 
+1.6.1
+
