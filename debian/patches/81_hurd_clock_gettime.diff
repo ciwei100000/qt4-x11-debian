@@ -1,11 +1,18 @@
-author: Samuel Thibault <sthibault@debian.org>
-qt bug: QTBUG-6961
-
-FTBFS on hurd-i386 because since clock_gettime is not available there
-qt4-x11 reverts to using gettimeofday, but it doesn't include <sys/time.h>
-where the latter is defined.
+From 7a0fb8407b0737d6f10181846dd49791e094fd88 Mon Sep 17 00:00:00 2001
+From: Samuel Thibault <sthibault@debian.org>
+Date: Fri, 25 Dec 2009 17:09:52 +0100
+Subject: [PATCH] FTBFS on hurd-i386 because since clock_gettime is not available there
+ qt4-x11 reverts to using gettimeofday, but it doesn't include
+ <sys/time.h>
+ where the latter is defined.
 
 Debian bug #533526
+Task-number: QTBUG-6961
+Fix version: 4.6.1
+Reviewed-by: Thiago Macieira <thiago.macieira@nokia.com>
+---
+ .../concurrent/qtconcurrentiteratekernel.cpp       |    3 +++
+ 1 files changed, 3 insertions(+), 0 deletions(-)
 
 --- a/src/corelib/concurrent/qtconcurrentiteratekernel.cpp
 +++ b/src/corelib/concurrent/qtconcurrentiteratekernel.cpp
