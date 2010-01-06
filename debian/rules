@@ -30,14 +30,13 @@ ifeq ($(DEB_HOST_ARCH),arm)
 	extra_configure_opts += -DQT_QLOCALE_USES_FCVT
 endif
 
-# TODO: add sparc 64
-64bits_architectures := amd64 ia64 kfreebsd-amd64
+linux64_architectures := amd64 ia64 kfreebsd-amd64 sparc64
 ifeq ($(DEB_HOST_ARCH_OS),linux)
-ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(64bits_architectures)))
+  ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(linux64_architectures)))
 	platform_arg = linux-g++-64
-else
+  else
 	platform_arg = linux-g++
-endif
+  endif
 else
 	platform_arg = glibc-g++
 endif
