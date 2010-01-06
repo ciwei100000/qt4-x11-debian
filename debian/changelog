@@ -11,6 +11,9 @@ qt4-x11 (4:4.6.0-2) UNRELEASED; urgency=low
   * Add 94_fix_crash_in_qdbuspendingreply_qdbusreply.diff patch to fix a crash
     in QDBusPendingReply/QDBusReply in case of unconnected calls.
     (Closes: #560838)
+  * Update debian/rules:
+    - Use linux-g++-64 as platform_arg on required architectures (amd64, ia64
+      and kfreebsd-amd64).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 13 Dec 2009 18:43:29 +0200
 
