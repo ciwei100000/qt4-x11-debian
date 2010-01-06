@@ -13,7 +13,7 @@ qt4-x11 (4:4.6.0-2) UNRELEASED; urgency=low
     (Closes: #560838)
   * Update debian/rules:
     - Use linux-g++-64 as platform_arg on required architectures (amd64, ia64
-      kfreebsd-amd64 and sparc64).
+      and sparc64).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 13 Dec 2009 18:43:29 +0200
 

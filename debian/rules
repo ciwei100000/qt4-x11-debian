@@ -30,7 +30,7 @@ ifeq ($(DEB_HOST_ARCH),arm)
 	extra_configure_opts += -DQT_QLOCALE_USES_FCVT
 endif
 
-linux64_architectures := amd64 ia64 kfreebsd-amd64 sparc64
+linux64_architectures := amd64 ia64 sparc64
 ifeq ($(DEB_HOST_ARCH_OS),linux)
   ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(linux64_architectures)))
 	platform_arg = linux-g++-64
