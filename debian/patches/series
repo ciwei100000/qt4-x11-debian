@@ -36,3 +36,4 @@
 92_armel_gcc43_valist_compat.diff
 93_jsvalue64_on_ia64.diff
 94_fix_crash_in_qdbuspendingreply_qdbusreply.diff
+95_sparc_platform_definition.diff
