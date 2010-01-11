@@ -16,6 +16,9 @@ qt4-x11 (4:4.6.0-2) UNRELEASED; urgency=low
   * Update debian/rules:
     - Use linux-g++-64 as platform_arg on required architectures (amd64, ia64
       and sparc64).
+  * Add 96_powerpc_no_gc_sections.diff: Don't pass -Wl,--gc-sections on powerpc
+    when building libQtWebKit.so; works around a binutils bug that results in a
+    segfault. Thanks to Steve Langasek.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 13 Dec 2009 18:43:29 +0200
 
