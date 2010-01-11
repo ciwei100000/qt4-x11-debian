@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Fathi Boudra <fabo@debian.org>, Ana Beatriz Guerrero Lopez <ana@debian.org>, Modestas Vainius <modax@debian.org>, Sune Vuorela <debian@pusling.com>,
 Build-Depends: debhelper (>= 7.2), quilt, pkg-kde-tools (>= 0.4), flex, sharutils,
- firebird2.0-dev [i386 kfreebsd-i386 kfreebsd-amd64 amd64 sparc powerpc],
+ firebird2.1-dev [amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sparc],
  libasound2-dev, libaudio-dev, libcups2-dev, libdbus-1-dev, libfreetype6-dev,
  libgl1-mesa-dev | libgl-dev, libglib2.0-dev, libglu1-mesa-dev | libglu-dev,
  libgtk2.0-dev, libice-dev, unixodbc-dev, libjpeg62-dev, libmng-dev,
@@ -383,7 +383,7 @@ Depends: ${shlibs:Depends}, ${misc:Depends}, libqtcore4 (= ${binary:Version}),
 Recommends: libqt4-opengl-dev (= ${binary:Version})
 Conflicts: qt3-dev-tools (<= 3:3.3.4-7), libqtwebkit-dev
 Replaces: libqtwebkit-dev, libqt4-opengl-dev (<< 4.4.0-2)
-Suggests: qt4-dev-tools, qt4-doc, libmysqlclient-dev, libsqlite0-dev, libsqlite3-dev, libpq-dev, unixodbc-dev, firebird2.0-dev
+Suggests: qt4-dev-tools, qt4-doc, libmysqlclient-dev, libsqlite0-dev, libsqlite3-dev, libpq-dev, unixodbc-dev, firebird2.1-dev
 Description: Qt 4 development files
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
