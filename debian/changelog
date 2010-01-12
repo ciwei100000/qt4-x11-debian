@@ -19,6 +19,8 @@ qt4-x11 (4:4.6.0-2) UNRELEASED; urgency=low
   * Add 96_powerpc_no_gc_sections.diff: Don't pass -Wl,--gc-sections on powerpc
     when building libQtWebKit.so; works around a binutils bug that results in a
     segfault. Thanks to Steve Langasek.
+  * Add cherry-picked patch 97_prevent_crash_on_inputcontext_creation.diff:
+    Prevent a crash when creating an inputContext from the QApplication dtor.
   * Update debian/control:
     - build-depend on firebird2.1-dev instead of firebird2.0-dev.
       (Closes: #564683)

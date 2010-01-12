@@ -1,0 +1,39 @@
+From f72165460d27860cabd51691f4d935fd74b50f80 Mon Sep 17 00:00:00 2001
+From: Denis Dzyubenko <denis.dzyubenko@nokia.com>
+Date: Tue, 5 Jan 2010 13:42:49 +0100
+Subject: [PATCH] Prevent a crash when creating an inputContext from the QApplication dtor.
+
+When accessing the global input context from the QWidget destructor access it
+directly instead of calling a helper function.  Don't even bother to create an
+input context if QApplication is being destroyed (just in case if the user is
+calling the QApplication::inputContext manually from the destructor).
+
+Task-number: QTBUG-7105
+Reviewed-by: Simon Hausmann
+---
+ src/gui/kernel/qapplication.cpp |    2 ++
+ src/gui/kernel/qwidget_x11.cpp  |    2 +-
+ 2 files changed, 3 insertions(+), 1 deletions(-)
+
+--- a/src/gui/kernel/qapplication.cpp
++++ b/src/gui/kernel/qapplication.cpp
+@@ -5175,6 +5175,8 @@ QInputContext *QApplication::inputContex
+ {
+     Q_D(const QApplication);
+     Q_UNUSED(d);// only static members being used.
++    if (QApplicationPrivate::is_app_closing)
++        return d->inputContext;
+ #ifdef Q_WS_X11
+     if (!X11)
+         return 0;
+--- a/src/gui/kernel/qwidget_x11.cpp
++++ b/src/gui/kernel/qwidget_x11.cpp
+@@ -1097,7 +1097,7 @@ void QWidget::destroy(bool destroyWindow
+         } else {
+             // release previous focus information participating with
+             // preedit preservation of qic
+-            QInputContext *qic = inputContext();
++            QInputContext *qic = QApplicationPrivate::inputContext;
+             if (qic)
+                 qic->widgetDestroyed(this);
+         }
