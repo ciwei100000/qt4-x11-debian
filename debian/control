@@ -508,7 +508,7 @@ Description: Qt 4 development tools
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains tools used to assist in Qt 4 development, including
- the Qt Assistant, Linguist, D-Bus Viewer, Pixel Tool and Qt Virtual
+ the Qt Assistant, Linguist, D-Bus Viewer, Pixel Tool and Virtual
  Framebuffer applications.
 
 Package: qt4-qmake
