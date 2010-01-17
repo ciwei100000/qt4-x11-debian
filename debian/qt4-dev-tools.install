@@ -9,6 +9,7 @@ usr/bin/qdoc3
 usr/bin/qhelpconverter
 usr/bin/qhelpgenerator
 usr/bin/qttracereplay
+usr/bin/qvfb
 usr/bin/xmlpatterns
 usr/bin/xmlpatternsvalidator
 usr/share/qt4/phrasebooks/*
@@ -33,3 +34,7 @@ usr/share/qt4/translations/linguist_pl.qm
 usr/share/qt4/translations/linguist_ru.qm
 usr/share/qt4/translations/linguist_zh_CN.qm
 usr/share/qt4/translations/linguist_zh_TW.qm
+usr/share/qt4/translations/qvfb_pl.qm
+usr/share/qt4/translations/qvfb_ru.qm
+usr/share/qt4/translations/qvfb_zh_CN.qm
+usr/share/qt4/translations/qvfb_zh_TW.qm

@@ -1,0 +1,13 @@
+Description: build qvfb tool
+Author: Fathi Boudra <fabo@debian.org>
+
+--- a/tools/tools.pro
++++ b/tools/tools.pro
+@@ -15,6 +15,7 @@ no-png {
+      }
+      SUBDIRS     += linguist
+      SUBDIRS     += qdoc3
++     SUBDIRS     += qvfb
+      symbian: SUBDIRS = designer
+      wince*: SUBDIRS = qtestlib designer
+      unix:!mac:!embedded:contains(QT_CONFIG, qt3support):SUBDIRS += qtconfig

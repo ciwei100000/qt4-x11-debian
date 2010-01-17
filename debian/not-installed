@@ -16,7 +16,3 @@
 ./usr/lib/libQtXml.la
 ./usr/lib/libQtXmlPatterns.la
 ./usr/lib/libphonon.la
-./usr/share/qt4/translations/qvfb_pl.qm
-./usr/share/qt4/translations/qvfb_ru.qm
-./usr/share/qt4/translations/qvfb_zh_CN.qm
-./usr/share/qt4/translations/qvfb_zh_TW.qm

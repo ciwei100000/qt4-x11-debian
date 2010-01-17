@@ -21,10 +21,14 @@ qt4-x11 (4:4.6.0-2) UNRELEASED; urgency=low
     segfault. Thanks to Steve Langasek.
   * Add cherry-picked patch 97_prevent_crash_on_inputcontext_creation.diff:
     Prevent a crash when creating an inputContext from the QApplication dtor.
+  * Add 20_install_qvfb.diff: build Qt Virtual Framebuffer (qvfb) tool.
   * Update debian/control:
     - build-depend on firebird2.1-dev instead of firebird2.0-dev.
       (Closes: #564683)
     - extend architecture list for firebird2.1-dev.
+    - build-depend on libxtst-dev to build qvfb.
+  * Update debian/qt4-dev-tools.install: add qvfb binary and the translations.
+  * Update debian/rules: add -qvfb configure option.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 13 Dec 2009 18:43:29 +0200
 

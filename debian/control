@@ -12,7 +12,7 @@ Build-Depends: debhelper (>= 7.2), quilt, pkg-kde-tools (>= 0.4), flex, sharutil
  libsm-dev, libsqlite0-dev, libsqlite3-dev, libtiff4-dev, libx11-dev,
  libxcursor-dev, libxext-dev, libxft-dev, libxi-dev, libxinerama-dev,
  libxmu-dev, libxrandr-dev, libxrender-dev, libxslt1-dev, libxt-dev,
- x11proto-core-dev, zlib1g-dev, freetds-dev
+ libxtst-dev, zlib1g-dev, freetds-dev
 Standards-Version: 3.8.3
 Homepage: http://www.qtsoftware.com
 Vcs-Git: git://git.debian.org/pkg-kde/qt4-x11.git
@@ -508,7 +508,8 @@ Description: Qt 4 development tools
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains tools used to assist in Qt 4 development, including
- the Qt Assistant, Linguist, D-Bus Viewer and Pixel Tool applications.
+ the Qt Assistant, Linguist, D-Bus Viewer, Pixel Tool and Qt Virtual
+ Framebuffer applications.
 
 Package: qt4-qmake
 Architecture: any

@@ -112,6 +112,7 @@ endif
 	            -system-nas-sound \
 	            -lfontconfig \
 	            -I/usr/include/freetype2 \
+	            -qvfb \
 	            $(extra_configure_opts)
 
 override_dh_auto_build:
