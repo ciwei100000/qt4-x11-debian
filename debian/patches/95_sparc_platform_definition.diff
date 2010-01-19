@@ -4,8 +4,8 @@ Forwarded: not-needed
 
 --- a/src/3rdparty/webkit/JavaScriptCore/wtf/Platform.h
 +++ b/src/3rdparty/webkit/JavaScriptCore/wtf/Platform.h
-@@ -218,6 +218,16 @@
- #define WTF_PLATFORM_BIG_ENDIAN 1
+@@ -228,6 +228,16 @@
+ #define WTF_PLATFORM_SPARC
  #endif
  
 +/* PLATFORM(SPARC32) */

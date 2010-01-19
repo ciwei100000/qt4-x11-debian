@@ -26,7 +26,7 @@ Forward: not-needed
  QT_BEGIN_HEADER
  
  QT_BEGIN_NAMESPACE
-@@ -96,6 +100,11 @@
+@@ -96,6 +100,11 @@ Q_CORE_EXPORT int qstrnicmp(const char *
  
  // implemented in qvsnprintf.cpp
  Q_CORE_EXPORT int qvsnprintf(char *str, size_t n, const char *fmt, va_list ap);
@@ -40,7 +40,7 @@ Forward: not-needed
  #ifdef QT3_SUPPORT
 --- a/src/corelib/tools/qstring.cpp
 +++ b/src/corelib/tools/qstring.cpp
-@@ -5289,6 +5289,12 @@
+@@ -5289,6 +5289,12 @@ QString &QString::vsprintf(const char* c
      return *this;
  }
  
@@ -55,7 +55,7 @@ Forward: not-needed
      base, which is 10 by default and must be between 2 and 36, or 0.
 --- a/src/corelib/tools/qstring.h
 +++ b/src/corelib/tools/qstring.h
-@@ -177,6 +177,15 @@
+@@ -177,6 +177,15 @@ public:
          __attribute__ ((format (printf, 2, 0)))
  #endif
          ;
@@ -73,7 +73,7 @@ Forward: not-needed
          __attribute__ ((format (printf, 2, 3)))
 --- a/src/corelib/tools/qvsnprintf.cpp
 +++ b/src/corelib/tools/qvsnprintf.cpp
-@@ -104,6 +104,13 @@
+@@ -104,6 +104,13 @@ int qvsnprintf(char *str, size_t n, cons
  
  #endif
  

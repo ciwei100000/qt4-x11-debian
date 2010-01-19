@@ -21,7 +21,7 @@ Trolltech task ID : 168283 (status: "fixed" for Qt 4.4.0, but effectively refuse
 
 --- a/src/corelib/kernel/qobject.cpp
 +++ b/src/corelib/kernel/qobject.cpp
-@@ -1136,8 +1136,16 @@ void QObject::setObjectName(const QStrin
+@@ -1124,8 +1124,16 @@ void QObject::setObjectName(const QStrin
  {
      Q_D(QObject);
      d->objectName = name;
@@ -52,7 +52,7 @@ Trolltech task ID : 168283 (status: "fixed" for Qt 4.4.0, but effectively refuse
                                      Sender *sender);
 --- a/src/gui/kernel/qwidget_p.h
 +++ b/src/gui/kernel/qwidget_p.h
-@@ -661,6 +661,7 @@ public:
+@@ -691,6 +691,7 @@ public:
      static QWidget *keyboardGrabber;
  
      void setWindowRole();
