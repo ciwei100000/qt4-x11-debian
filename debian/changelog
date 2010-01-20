@@ -31,6 +31,7 @@ qt4-x11 (4:4.6.1-1) UNRELEASED; urgency=low
   * Update debian/rules:
     - add -qvfb configure option.
     - add -audio-backend option.
+    - remove qm target call. It isn't needed anymore.
   * Update debian/libphonon-dev.install: Include headers have been changed.
     The only official method for including Phonon headers is <phonon/ClassName>
     or <phonon/classname.h>.

@@ -122,7 +122,6 @@ override_dh_auto_build:
 	$(MAKE) docs
 	# Build translations
 	$(MAKE) ts
-#	$(MAKE) qm
 	# Workaround: It's a known qmake limitation.
 	# It can't generate install rules for files that don't exist yet like docs.
 	./config.status
