@@ -3,6 +3,8 @@ qt4-x11 (4:4.6.1-1) UNRELEASED; urgency=low
   * New upstream release.
     - Fix a crash in QDBusPendingReply/QDBusReply in case of unconnected calls.
       (Closes: #560838)
+    - Fix FTBFS on GNU/kFreeBSD due to lack of WTF_USE_JSVALUE64.
+      (Closes: #565731)
 
   [ Modestas Vainius ]
   * Change my email address to @debian.org one.
@@ -19,6 +21,8 @@ qt4-x11 (4:4.6.1-1) UNRELEASED; urgency=low
     when building libQtWebKit.so; works around a binutils bug that results in a
     segfault. Thanks to Steve Langasek.
   * Add 20_install_qvfb.diff: build Qt Virtual Framebuffer (qvfb) tool.
+  * Add 51_kfreebsd_strnstr_build_fix.diff: Fix FTBFS on GNU/kFreeBSD caused by
+    missing strnstr() on glibc systems.
   * Remove patches:
     - 19_install_qdoc3.diff - merged upstream.
     - 81_hurd_clock_gettime.diff - merged upstream.
