@@ -91,6 +91,7 @@ endif
 	            -system-sqlite \
 	            -xmlpatterns \
 	            -multimedia \
+	            -audio-backend \
 	            -phonon \
 	            -no-phonon-backend \
 	            -svg \
