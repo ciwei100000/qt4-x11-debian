@@ -1,6 +1,8 @@
 qt4-x11 (4:4.6.1-1) UNRELEASED; urgency=low
 
   * New upstream release.
+    - Fix a crash in QDBusPendingReply/QDBusReply in case of unconnected calls.
+      (Closes: #560838)
 
   [ Modestas Vainius ]
   * Change my email address to @debian.org one.
@@ -8,11 +10,6 @@ qt4-x11 (4:4.6.1-1) UNRELEASED; urgency=low
     (patch 92_armel_gcc43_valist_compat.diff).
 
   [ Fathi Boudra ]
-  * Add 93_jsvalue64_on_ia64.diff patch to fix ftbfs on IA64 due to lack of
-    WTF_USE_JSVALUE64. Thanks to Scott Kitterman.
-  * Add 94_fix_crash_in_qdbuspendingreply_qdbusreply.diff patch to fix a crash
-    in QDBusPendingReply/QDBusReply in case of unconnected calls.
-    (Closes: #560838)
   * Add debian/patches/95_sparc_platform_definition.diff patch to fix build for
     32-bit sparc machines.
   * Update debian/rules:
@@ -21,16 +18,22 @@ qt4-x11 (4:4.6.1-1) UNRELEASED; urgency=low
   * Add 96_powerpc_no_gc_sections.diff: Don't pass -Wl,--gc-sections on powerpc
     when building libQtWebKit.so; works around a binutils bug that results in a
     segfault. Thanks to Steve Langasek.
-  * Add cherry-picked patch 97_prevent_crash_on_inputcontext_creation.diff:
-    Prevent a crash when creating an inputContext from the QApplication dtor.
   * Add 20_install_qvfb.diff: build Qt Virtual Framebuffer (qvfb) tool.
+  * Remove patches:
+    - 19_install_qdoc3.diff - merged upstream.
+    - 81_hurd_clock_gettime.diff - merged upstream.
   * Update debian/control:
     - build-depend on firebird2.1-dev instead of firebird2.0-dev.
       (Closes: #564683)
     - extend architecture list for firebird2.1-dev.
     - build-depend on libxtst-dev to build qvfb.
   * Update debian/qt4-dev-tools.install: add qvfb binary and the translations.
-  * Update debian/rules: add -qvfb configure option.
+  * Update debian/rules:
+    - add -qvfb configure option.
+    - add -audio-backend option.
+  * Update debian/libphonon-dev.install: Include headers have been changed.
+    The only official method for including Phonon headers is <phonon/ClassName>
+    or <phonon/classname.h>.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 13 Dec 2009 18:43:29 +0200
 
