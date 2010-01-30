@@ -2,9 +2,10 @@ Source: qt4-x11
 Section: libs
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-Uploaders: Brian Nelson <pyro@debian.org>, Sune Vuorela <debian@pusling.com>, Fathi Boudra <fabo@debian.org>, Ana Beatriz Guerrero Lopez <ana@debian.org>, Modestas Vainius <modestas@vainius.eu>
-Build-Depends: cdbs, debhelper (>= 5), quilt, pkg-kde-tools (>= 0.4), flex, sharutils,
- firebird2.0-dev [i386 kfreebsd-i386 kfreebsd-amd64 amd64 sparc powerpc],
+Uploaders: Fathi Boudra <fabo@debian.org>, Ana Beatriz Guerrero Lopez <ana@debian.org>, Modestas Vainius <modax@debian.org>, Sune Vuorela <debian@pusling.com>,
+Build-Depends: debhelper (>= 7.2), quilt, pkg-kde-tools (>= 0.4), flex, sharutils,
+ firebird2.1-dev [amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sparc],
+ libasound2-dev [!kfreebsd-amd64 !kfreebsd-i386 !hurd-i386],
  libaudio-dev, libcups2-dev, libdbus-1-dev, libfreetype6-dev,
  libgl1-mesa-dev | libgl-dev, libglib2.0-dev, libglu1-mesa-dev | libglu-dev,
  libgtk2.0-dev, libice-dev, unixodbc-dev, libjpeg62-dev, libmng-dev,
@@ -12,7 +13,7 @@ Build-Depends: cdbs, debhelper (>= 5), quilt, pkg-kde-tools (>= 0.4), flex, shar
  libsm-dev, libsqlite0-dev, libsqlite3-dev, libtiff4-dev, libx11-dev,
  libxcursor-dev, libxext-dev, libxft-dev, libxi-dev, libxinerama-dev,
  libxmu-dev, libxrandr-dev, libxrender-dev, libxslt1-dev, libxt-dev,
- x11proto-core-dev, zlib1g-dev
+ libxtst-dev, zlib1g-dev, freetds-dev
 Standards-Version: 3.8.3
 Homepage: http://www.qtsoftware.com
 Vcs-Git: git://git.debian.org/pkg-kde/qt4-x11.git
@@ -205,6 +206,17 @@ Description: Qt 4 SQLite 2 database driver
  Install it if you intend to use or write Qt programs that are to access an
  SQLite 2 DB.
 
+Package: libqt4-sql-tds
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: libqt4-dev
+Description: Qt 4 FreeTDS database driver
+ This package contains the FreeTDS plugin for Qt 4.
+ .
+ Install it if you intend to use or write Qt programs that are to access a
+ MS SQL or Sybase SQL server.
+
 Package: libqt4-svg
 Architecture: any
 Section: libs
@@ -334,6 +346,16 @@ Description: Qt 4 test module
  The QtTest module provides classes for unit testing Qt applications and
  libraries.
 
+Package: libqt4-multimedia
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Qt 4 Multimedia module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The Qt Multimedia module provides low-level multimedia functionality.
+
 Package: libphonon4
 Architecture: any
 Section: libs
@@ -357,12 +379,12 @@ Depends: ${shlibs:Depends}, ${misc:Depends}, libqtcore4 (= ${binary:Version}),
  libqt4-scripttools (= ${binary:Version}), libqt4-xmlpatterns (= ${binary:Version}),
  libqt4-qt3support (= ${binary:Version}), libqt4-designer (= ${binary:Version}),
  libqt4-help (= ${binary:Version}), libqt4-assistant (= ${binary:Version}),
- libqt4-test (= ${binary:Version}), libphonon4 (= ${binary:Version}),
- qt4-qmake (= ${binary:Version})
+ libqt4-test (= ${binary:Version}), libqt4-multimedia (= ${binary:Version}),
+ libphonon4 (= ${binary:Version}), qt4-qmake (= ${binary:Version})
 Recommends: libqt4-opengl-dev (= ${binary:Version})
 Conflicts: qt3-dev-tools (<= 3:3.3.4-7), libqtwebkit-dev
 Replaces: libqtwebkit-dev, libqt4-opengl-dev (<< 4.4.0-2)
-Suggests: qt4-dev-tools, qt4-doc, libmysqlclient-dev, libsqlite0-dev, libsqlite3-dev, libpq-dev, unixodbc-dev, firebird2.0-dev
+Suggests: qt4-dev-tools, qt4-doc, libmysqlclient-dev, libsqlite0-dev, libsqlite3-dev, libpq-dev, unixodbc-dev, firebird2.1-dev
 Description: Qt 4 development files
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -487,7 +509,8 @@ Description: Qt 4 development tools
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains tools used to assist in Qt 4 development, including
- the Qt Assistant, Linguist, D-Bus Viewer and Pixel Tool applications.
+ the Qt Assistant, Linguist, D-Bus Viewer, Pixel Tool and Virtual
+ Framebuffer applications.
 
 Package: qt4-qmake
 Architecture: any

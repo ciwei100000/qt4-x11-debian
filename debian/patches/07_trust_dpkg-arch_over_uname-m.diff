@@ -4,7 +4,7 @@ Trolltech task ID : 181882
 
 --- a/configure
 +++ b/configure
-@@ -125,7 +125,50 @@ getQMakeConf()
+@@ -168,7 +168,50 @@ linkerSupportsFlag()
  #-------------------------------------------------------------------------------
  
  # need that throughout the script

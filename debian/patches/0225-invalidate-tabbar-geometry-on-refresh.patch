@@ -30,7 +30,7 @@ bugs.kde.org number : 159014
 
 --- a/src/gui/widgets/qtabbar.cpp
 +++ b/src/gui/widgets/qtabbar.cpp
-@@ -675,8 +675,8 @@ void QTabBarPrivate::refresh()
+@@ -678,8 +678,8 @@ void QTabBarPrivate::refresh()
          layoutTabs();
          makeVisible(currentIndex);
          q->update();

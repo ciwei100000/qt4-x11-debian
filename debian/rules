@@ -1,86 +1,50 @@
 #!/usr/bin/make -f
 
+# Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
 export QTDIR := $(shell pwd)
 export PATH := $(QTDIR)/bin:$(PATH)
 # workaround to use lrelease.
 export LD_LIBRARY_PATH := $(QTDIR)/lib:$(LD_LIBRARY_PATH)
-# workaround to use qhelpgenerator
+# workaround to use qhelpgenerator.
 export QT_PLUGIN_PATH := $(QTDIR)/plugins
 
-# Qt upstream version (e.g.: 4.5.2)
-QTVERSION := $(shell ls changes-* | cut -f2 -d '-')
+pkgs_dbg := $(shell dh_listpackages | grep dbg | sed -e '/phonon-dbg/d; /libqt4-dbg/d; s|-dbg||')
+pkgs_lib := $(filter-out %-dev %-dbg,$(filter lib%,$(shell dh_listpackages)))
+# Upstream changelog
+upstream_changes := $(wildcard changes-*)
 # Current debian version (e.g.: 4:4.5.2-1)
-CURRENTVERSION := $(shell dpkg-parsechangelog | sed -n 's/^Version: //p')
-
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/class/makefile.mk
-include /usr/share/cdbs/1/rules/patchsys-quilt.mk
-include /usr/share/cdbs/1/rules/utils.mk
-
-DEB_MAKE_INVOKE := $(MAKE)
-DEB_MAKE_INSTALL_TARGET := INSTALL_ROOT=$(DEB_DESTDIR) install
-DEB_DH_INSTALL_SOURCEDIR := debian/tmp
-
-# Ensure the *.debug files aren't included in any package other than *-dbg
-DEB_DH_INSTALL_ARGS := --exclude=.debug
-
-DEB_MAKE_CLEAN_TARGET := confclean distclean
-
-# Shlibs of the current upstream version
-#DEB_DH_MAKESHLIBS_ARGS_ALL := -V
+current_version := $(shell dpkg-parsechangelog | sed -n 's/^Version: //p')
 # Specific shlibs version (e.g.: 4:4.5.2)
-SHLIBSVERSION := $(shell dpkg-parsechangelog | sed -n 's/^Version: //p' | cut -f1 -d '-')
-$(foreach libpkg,$(filter-out %-dev %-dbg,$(filter lib%,$(DEB_ARCH_PACKAGES))),$(eval DEB_DH_MAKESHLIBS_ARGS_$(libpkg) := -V'$(libpkg) (>= $(SHLIBSVERSION))'))
-
-DEB_DH_STRIP_ARGS_libqt4-dbg := --exclude=.debug
-DEB_DH_STRIP_ARGS_libqt4-webkit-dbg := --exclude=.debug
-DEB_DH_STRIP_ARGS_libqt4-xmlpatterns-dbg := --exclude=.debug
-DEB_DH_STRIP_ARGS_phonon-dbg := --exclude=.debug
-DEB_DH_STRIP_ARGS_qt4-demos-dbg := --exclude=.debug
-
-DEB_DH_SHLIBDEPS_ARGS_ALL := --exclude=.debug
-
-# Disable for rc
-DEB_INSTALL_CHANGELOGS_ALL := changes-$(QTVERSION)
-
-DEB_INSTALL_DOCS_ALL := LGPL_EXCEPTION.txt
+shlibs_version := $(shell dpkg-parsechangelog | sed -n 's/^Version: //p' | cut -f1 -d '-')
 
 ibase_architectures := i386 kfreebsd-i386 kfreebsd-amd64 knetbsd-i386 netbsd-i386 amd64 sparc powerpc
 ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(ibase_architectures)))
-	EXTRA_CONFIGURE_OPTS += -plugin-sql-ibase
+	extra_configure_opts += -plugin-sql-ibase
 else
-	EXTRA_CONFIGURE_OPTS += -no-sql-ibase
+	extra_configure_opts += -no-sql-ibase
 endif
 
 ifeq ($(DEB_HOST_ARCH),arm)
-	EXTRA_CONFIGURE_OPTS += -DQT_QLOCALE_USES_FCVT
+	extra_configure_opts += -DQT_QLOCALE_USES_FCVT
 endif
 
+linux64_architectures := amd64 ia64 sparc64
 ifeq ($(DEB_HOST_ARCH_OS),linux)
-        PLATFORM_ARG = linux-g++
+  ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(linux64_architectures)))
+	platform_arg = linux-g++-64
+  else
+	platform_arg = linux-g++
+  endif
 else
-        PLATFORM_ARG = glibc-g++
+	platform_arg = glibc-g++
 endif
 
-common-build-arch::  debian/stamp-makefile-build-tools
+%:
+	+dh --with quilt $@
 
-debian/stamp-makefile-build-tools: debian/stamp-makefile-build
-	# Build documentations
-	$(MAKE) docs
-	# Build translations
-	$(MAKE) ts
-	$(MAKE) qm
-	# Workaround: It's a known qmake limitation.
-	# It can't generate install rules for files that don't exist yet like docs.
-	./config.status
-
-	touch $@
-
-common-configure-arch:: config.status
-
-config.status:
+override_dh_auto_configure:
 	# Test broken hppa kernel with glibc >= 2.5
 ifeq ($(DEB_HOST_ARCH),hppa)
 	mkdir -p debian/hppa-tmp
@@ -102,7 +66,7 @@ endif
 	cp -a mkspecs/linux-g++ mkspecs/glibc-g++
 
 	# Generate include
-	rm -rf include && QTDIR=. perl bin/syncqt
+	rm -rf include && QTDIR="." perl bin/syncqt
 
 	./configure -confirm-license \
 	            -prefix "/usr" \
@@ -123,31 +87,49 @@ endif
 	            -plugin-sql-psql \
 	            -plugin-sql-sqlite \
 	            -plugin-sql-sqlite2 \
+	            -plugin-sql-tds \
 	            -system-sqlite \
 	            -xmlpatterns \
+	            -multimedia \
+	            -audio-backend \
 	            -phonon \
 	            -no-phonon-backend \
 	            -svg \
 	            -webkit \
+	            -script \
 	            -scripttools \
-	            -platform $(PLATFORM_ARG) \
+	            -platform $(platform_arg) \
 	            -system-zlib \
 	            -qt-gif \
 	            -system-libtiff \
 	            -system-libpng \
 	            -system-libjpeg \
 	            -no-rpath \
-	            -verbose \
 	            -optimized-qmake \
 	            -dbus \
+	            -no-separate-debug-info \
+	            -verbose \
 	            -gtkstyle \
 	            -system-nas-sound \
 	            -lfontconfig \
 	            -I/usr/include/freetype2 \
-	            $(EXTRA_CONFIGURE_OPTS)
+	            -qvfb \
+	            $(extra_configure_opts)
 
-clean::
-# Extra stuff missed by confclean/distclean
+override_dh_auto_build:
+	$(MAKE)
+	# Build documentations
+	$(MAKE) docs
+	# Build translations
+	$(MAKE) ts
+	# Workaround: It's a known qmake limitation.
+	# It can't generate install rules for files that don't exist yet like docs.
+	./config.status
+
+override_dh_auto_clean:
+	[ ! -f Makefile ] || $(MAKE) confclean distclean
+
+	# Extra stuff missed by confclean/distclean
 
 	# Misc. files
 	rm -f \
@@ -215,86 +197,70 @@ clean::
 	rm -f debian/shlibs.local
 	rm -f debian/stamp-makefile-build-tools
 
-common-install-arch::
-# Fix wrong path in pkgconfig files
-	find $(DEB_DESTDIR)/usr/lib/pkgconfig -type f -name '*.pc' \
+override_dh_auto_install:
+	$(MAKE) install INSTALL_ROOT=$(CURDIR)/debian/tmp/
+
+	# Fix wrong path in pkgconfig files
+	find $(CURDIR)/debian/tmp/usr/lib/pkgconfig -type f -name '*.pc' \
 		-exec perl -pi -e "s, -L$(CURDIR)/?\S+,,g" {} \;
-# Fix wrong path in prl files
-	find $(DEB_DESTDIR)/usr/lib -type f -name '*.prl' \
+	# Fix wrong path in prl files
+	find $(CURDIR)/debian/tmp/usr/lib -type f -name '*.prl' \
 		-exec sed -i -e "/^QMAKE_PRL_BUILD_DIR/d;s/\(QMAKE_PRL_LIBS =\).*/\1/" {} \;
 
-install/libqtcore4::
-	mkdir -p $(DEB_DESTDIR)/usr/share/qt4/translations
+	mkdir -p debian/libqtcore4/usr/share/qt4/translations
 	$(CURDIR)/bin/lrelease-qt4 debian/translations/qt_ca.ts \
-		-qm $(DEB_DESTDIR)/usr/share/qt4/translations/qt_ca.qm
+		-qm $(CURDIR)/debian/libqtcore4/usr/share/qt4/translations/qt_ca.qm
 
-install/qt4-demos::
-	mkdir -p debian/$(cdbs_curpkg)/usr/lib/qt4/demos/qtdemo
-	uudecode -o debian/$(cdbs_curpkg)/usr/lib/qt4/demos/qtdemo/qtdemo.qhc \
+	mkdir -p debian/qt4-demos/usr/lib/qt4/demos/qtdemo
+	uudecode -o debian/qt4-demos/usr/lib/qt4/demos/qtdemo/qtdemo.qhc \
 		debian/collection/qtdemo.qhc.uu
 
-install/qt4-designer::
 	install -D -p -m0644 debian/desktop/designer-qt4.desktop \
-		debian/$(cdbs_curpkg)/usr/share/applications/designer-qt4.desktop
-	mkdir -p debian/$(cdbs_curpkg)/usr/share/pixmaps
-	uudecode -o debian/$(cdbs_curpkg)/usr/share/pixmaps/designer.png \
+		debian/qt4-designer/usr/share/applications/designer-qt4.desktop
+	mkdir -p debian/qt4-designer/usr/share/pixmaps
+	uudecode -o debian/qt4-designer/usr/share/pixmaps/designer.png \
 		debian/desktop/designer.png.uu
 
-install/qt4-dev-tools::
 	install -D -p -m0644 debian/desktop/assistant-qt4.desktop \
-		debian/$(cdbs_curpkg)/usr/share/applications/assistant-qt4.desktop
+		debian/qt4-dev-tools/usr/share/applications/assistant-qt4.desktop
 	install -D -p -m0644 debian/desktop/linguist-qt4.desktop \
-		debian/$(cdbs_curpkg)/usr/share/applications/linguist-qt4.desktop
-	mkdir -p debian/$(cdbs_curpkg)/usr/share/pixmaps
-	uudecode -o debian/$(cdbs_curpkg)/usr/share/pixmaps/assistant.png \
+		debian/qt4-dev-tools/usr/share/applications/linguist-qt4.desktop
+	mkdir -p debian/qt4-dev-tools/usr/share/pixmaps
+	uudecode -o debian/qt4-dev-tools/usr/share/pixmaps/assistant.png \
 		debian/desktop/assistant.png.uu
-	uudecode -o debian/$(cdbs_curpkg)/usr/share/pixmaps/linguist.png \
+	uudecode -o debian/qt4-dev-tools/usr/share/pixmaps/linguist.png \
 		debian/desktop/linguist.png.uu
 
-install/qt4-qtconfig::
 	install -D -p -m0644 debian/desktop/qt4config.desktop \
-		debian/$(cdbs_curpkg)/usr/share/applications/qt4config.desktop
-	mkdir -p debian/$(cdbs_curpkg)/usr/share/pixmaps
-	uudecode -o debian/$(cdbs_curpkg)/usr/share/pixmaps/qtconfig.png \
+		debian/qt4-qtconfig/usr/share/applications/qt4config.desktop
+	mkdir -p debian/qt4-qtconfig/usr/share/pixmaps
+	uudecode -o debian/qt4-qtconfig/usr/share/pixmaps/qtconfig.png \
 		debian/desktop/qtconfig.png.uu
 
-binary-install/libqt4-dbg::
-# Run dh_install without the default DEB_DH_INSTALL_ARGS to install the *.debug files
-	dh_install -plibqt4-dbg --sourcedir=$(DEB_DH_INSTALL_SOURCEDIR)
+override_dh_install:
+	dh_install --list-missing --sourcedir=debian/tmp
 
-binary-install/libqt4-webkit-dbg::
-# Run dh_install without the default DEB_DH_INSTALL_ARGS to install the *.debug files
-	dh_install -plibqt4-webkit-dbg --sourcedir=$(DEB_DH_INSTALL_SOURCEDIR)
+override_dh_installdocs:
+	dh_installdocs --all LGPL_EXCEPTION.txt
 
-binary-install/libqt4-xmlpatterns-dbg::
-# Run dh_install without the default DEB_DH_INSTALL_ARGS to install the *.debug files
-	dh_install -plibqt4-xmlpatterns-dbg --sourcedir=$(DEB_DH_INSTALL_SOURCEDIR)
+override_dh_installchangelogs:
+	dh_installchangelogs $(upstream_changes)
 
-binary-install/phonon-dbg::
-# Run dh_install without the default DEB_DH_INSTALL_ARGS to install the *.debug files
-	dh_install -pphonon-dbg --sourcedir=$(DEB_DH_INSTALL_SOURCEDIR)
-
-binary-install/qt4-demos-dbg::
-# Run dh_install without the default DEB_DH_INSTALL_ARGS to install the *.debug files
-	dh_install -pqt4-demos-dbg --sourcedir=$(DEB_DH_INSTALL_SOURCEDIR)
-
-binary-post-install/libqt4-dev::
-	install -D -p -m0644 doc/html/qt.tags \
-		$(DEB_DESTDIR)/usr/share/qt4/doc/html/qt.tags
-
-binary-strip/libphonon4::
+override_dh_strip:
+	$(foreach pkg,$(pkgs_dbg),dh_strip -p$(pkg) --dbg-package=$(pkg)-dbg;)
+	dh_strip -plibphonon4 --dbg-package=phonon-dbg
+	dh_strip --remaining-packages --dbg-package=libqt4-dbg
+	# Generate libphonon4 symbols file
 	pkgkde-symbolshelper symbolfile -p libphonon4 -o debian/libphonon4.symbols
 
-# Automatically install lintian overrides, stolen from debian-qt-kde.mk
-$(patsubst %,binary-install/%,$(DEB_PACKAGES)) :: binary-install/%:
-	if test -e debian/$(cdbs_curpkg).lintian; then \
-	    install -p -D -m644 debian/$(cdbs_curpkg).lintian \
-	    debian/$(cdbs_curpkg)/usr/share/lintian/overrides/$(cdbs_curpkg); \
-        fi
+override_dh_makeshlibs:
+	# Specific shlibs version (e.g.: 4:4.5.2)
+	$(foreach pkg,$(pkgs_lib),dh_makeshlibs -p$(pkg) -V '$(pkg) (>= $(shlibs_version))';)
+	# Generate shlibs local files
+	for pkg in $(pkgs_lib); do \
+		if test -e debian/$${pkg}/DEBIAN/shlibs ; then \
+			sed 's/>=[^)]*/= $(current_version)/' debian/$${pkg}/DEBIAN/shlibs >> debian/shlibs.local ;\
+		fi \
+	done
 
-# Generate shlibs local files
-$(patsubst %,binary-fixup/%,$(DEB_ALL_PACKAGES)) :: binary-fixup/%: binary-strip/%
-	if test -e debian/$(cdbs_curpkg)/DEBIAN/shlibs ; then \
-		sed 's/>=[^)]*/= $(CURRENTVERSION)/' debian/$(cdbs_curpkg)/DEBIAN/shlibs >> debian/shlibs.local ;\
-	fi
-
+.PHONY: override_dh_auto_test

@@ -1,11 +1,101 @@
-qt4-x11 (4:4.5.3-5) UNRELEASED; urgency=low
+qt4-x11 (4:4.6.1-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+    - Fix a crash in QDBusPendingReply/QDBusReply in case of unconnected calls.
+      (Closes: #560838)
+    - Fix FTBFS on GNU/kFreeBSD due to lack of WTF_USE_JSVALUE64.
+      (Closes: #565731)
+
+  [ Modestas Vainius ]
+  * Change my email address to @debian.org one.
+  * Restore binary compatibility with binaries built with g++-4.3 on armel
+    (patch 92_armel_gcc43_valist_compat.diff).
+
+  [ Fathi Boudra ]
+  * Add debian/patches/95_sparc_platform_definition.diff patch to fix build for
+    32-bit sparc machines.
+  * Update debian/rules:
+    - Use linux-g++-64 as platform_arg on required architectures (amd64, ia64
+      and sparc64).
+  * Add 96_powerpc_no_gc_sections.diff: Don't pass -Wl,--gc-sections on powerpc
+    when building libQtWebKit.so; works around a binutils bug that results in a
+    segfault. Thanks to Steve Langasek.
+  * Add 20_install_qvfb.diff: build Qt Virtual Framebuffer (qvfb) tool.
+  * Add 51_kfreebsd_strnstr_build_fix.diff: Fix FTBFS on GNU/kFreeBSD caused by
+    missing strnstr() on glibc systems.
+  * Remove patches:
+    - 19_install_qdoc3.diff - merged upstream.
+    - 81_hurd_clock_gettime.diff - merged upstream.
+  * Update debian/control:
+    - build-depend on firebird2.1-dev instead of firebird2.0-dev.
+      (Closes: #564683)
+    - extend architecture list for firebird2.1-dev.
+    - build-depend on libxtst-dev to build qvfb.
+  * Update debian/qt4-dev-tools.install: add qvfb binary and the translations.
+  * Update debian/rules:
+    - add -qvfb configure option.
+    - add -audio-backend option.
+    - remove qm target call. It isn't needed anymore.
+  * Update debian/libphonon-dev.install: Include headers have been changed.
+    The only official method for including Phonon headers is <phonon/ClassName>
+    or <phonon/classname.h>.
+
+  [ Pino Toscano ]
+  * Update debian/control: Don't build-depends on libasound2-dev for
+    GNU/kFreeBSD and GNU/Hurd architectures.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 13 Dec 2009 18:43:29 +0200
+
+qt4-x11 (4:4.6.0-1) experimental; urgency=low
+
+  * New upstream release.
+
+  +++ Changes by Fathi Boudra:
+
+  * Add french translations.
+  * Merge with Kubuntu: add libqt4-sql-tds plugin.
 
   +++ Changes by Frederik Schwarzer:
 
   * Fix typos in package descriptions.
     (Closes: #557397, #557396, #557374, #557375, #557376)
 
- -- Fathi Boudra <fabo@debian.org>  Thu, 15 Oct 2009 22:32:28 +0200
+ -- Fathi Boudra <fabo@debian.org>  Tue, 01 Dec 2009 14:07:47 +0100
+
+qt4-x11 (4:4.6.0~rc1-1) experimental; urgency=low
+
+  * New upstream release.
+  * Remove kde-qt patches:
+    - 0288-more-x-keycodes - merged upstream.
+  * Update debian/libqt4-dev.install: update installed files.
+
+ -- Fathi Boudra <fabo@debian.org>  Tue, 17 Nov 2009 12:12:36 +0100
+
+qt4-x11 (4:4.6.0~beta1-1) experimental; urgency=low
+
+  * New upstream release.
+  * Refresh qt-copy patches: 0180 and 209.
+  * Remove qt-copy patches: 0255, 0274, 0280 and 0287.
+  * Refresh Debian patches: 01, 05, 09, 11, 16, 18, 19, 30, 40, 41, 50 and 81.
+  * Remove upstream patches:
+    - 0078-Fix-regressions-in-qeventloop-qtimer-and-qsocketnoti - stolen
+      upstream.
+  * Remove Debian patches:
+    - 14_add_libraries_to_gui_build_where_actually_needed - fixed upstream.
+  * Add Debian patches:
+    - 12_add_nostrip_for_debug_packages
+      Set nostrip to generate debug packages.
+  * Update debian/control:
+    - Remove Brian Nelson from uploaders field.
+      Thanks for his great work on Qt.
+    - Drop cdbs build dependency.
+    - Add libasound2-dev build dependency.
+    - Add libqt4-multimedia package.
+  * Update installed files and related lintian files.
+  * Rewrite debian/rules, converted to dh usage.
+  * Build with -no-separate-debug-info. Adjust debian/rules accordingly.
+
+ -- Fathi Boudra <fabo@debian.org>  Thu, 15 Oct 2009 23:14:56 +0200
 
 qt4-x11 (4:4.5.3-4) unstable; urgency=low
 

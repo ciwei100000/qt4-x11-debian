@@ -1,16 +1,20 @@
-author: Michael Banck <mbanck@debian.org>
+author: Marc Dequènes <duck@duckcorp.org>
+debian bug: 485931 530308
+qt bug: QTBUG-6960
 
-define MAX_PATH if not defined. This is needed on hurd.
-http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=485931
+fix a POSIX incompatibility (as programs should not rely on having PATH_MAX
+defined on all systems) and causes FTBFS on Hurd.
 
 --- a/src/3rdparty/clucene/src/CLucene/config/compiler.h
 +++ b/src/3rdparty/clucene/src/CLucene/config/compiler.h
-@@ -147,7 +147,7 @@
- #elif defined(_MAX_PATH)
- #define CL_MAX_PATH _MAX_PATH
- #else
-- #error "CL_MAX_PATH could not be determined"
-+ #define CL_MAX_PATH 4096
- #endif
+@@ -136,6 +136,10 @@
+ #define LUCENE_INT32_MAX_SHOULDBE 0x7FFFFFFFL
+ #define LUCENE_UINT8_MAX_SHOULDBE 0xff
  
- //this is the max filename... for now its just the same,
++#if defined(__GNU__)
++ #define PATH_MAX 4096
++#endif
++
+ //maximum path length. only used for buffers that use fullpath.
+ //anything else should use a dynamic length.
+ #if defined(CL_MAX_PATH)

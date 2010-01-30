@@ -1,0 +1,23 @@
+Description: Build fix for 32-bit Sparc machines: these machines are big-endian.
+Origin: http://trac.webkit.org/changeset/51183/trunk/JavaScriptCore/wtf/Platform.h
+Forwarded: not-needed
+
+--- a/src/3rdparty/webkit/JavaScriptCore/wtf/Platform.h
++++ b/src/3rdparty/webkit/JavaScriptCore/wtf/Platform.h
+@@ -228,6 +228,16 @@
+ #define WTF_PLATFORM_SPARC
+ #endif
+ 
++/* PLATFORM(SPARC32) */
++#if defined(__sparc) && !defined(__arch64__) || defined(__sparcv8)
++#define WTF_PLATFORM_SPARC32 1
++#define WTF_PLATFORM_BIG_ENDIAN 1
++#endif
++
++#if PLATFORM(SPARC32) || PLATFORM(SPARC64)
++#define WTF_PLATFORM_SPARC
++#endif
++
+ /* PLATFORM(PPC64) */
+ #if   defined(__ppc64__) \
+    || defined(__PPC64__)

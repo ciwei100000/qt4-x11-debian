@@ -1,18 +1,10 @@
-# upstream patches
-0078-Fix-regressions-in-qeventloop-qtimer-and-qsocketnoti.patch
-
 # qt-copy patches
 0180-window-role.diff
 0195-compositing-properties.diff
 0209-prevent-qt-mixing.diff
 0216-allow-isystem-for-headers.diff
 0225-invalidate-tabbar-geometry-on-refresh.patch
-0255-qtreeview-selection-columns-hidden.diff
-0274-shm-native-image-fix.diff
-0280-deserialization-custom-dbus-properties.diff
-0288-more-x-keycodes.diff
 0289-context-for-shortcuts-tr.diff
-0287-qmenu-respect-minwidth.diff
 
 # debian patches
 01_qmake_for_debian.diff
@@ -25,19 +17,22 @@
 09_qmake_lflags_as-needed.diff
 10_config_tests_fixes.diff
 11_build_translations.diff
-14_add_libraries_to_gui_build_where_actually_needed.diff
+12_add_nostrip_for_debug_packages.diff
 15_fix_qmake_makefile_generation.diff
 16_hide_std_symbols_on_qtwebkit.diff
 17_add_postgresql_8.3_support.diff
 18_enable_qt3support_qtwebkit_debug_info.diff
-19_install_qdoc3.diff
+20_install_qvfb.diff
 30_webkit_unaligned_access.diff
 40_alpha_ice.diff
 41_disable_opengl_visibility.diff
 50_kfreebsd_build_fix.diff
+51_kfreebsd_strnstr_build_fix.diff
 70_hppa_ldcw_fix.diff
 71_hppa_unaligned_access_fix_458133.diff
 80_hurd_max_path.diff
-81_hurd_clock_gettime.diff
 89_powerpc_opts.diff
 91_s390_-gstabs.diff
+92_armel_gcc43_valist_compat.diff
+95_sparc_platform_definition.diff
+96_powerpc_no_gc_sections.diff
