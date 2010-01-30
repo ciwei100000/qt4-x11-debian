@@ -40,6 +40,10 @@ qt4-x11 (4:4.6.1-1) UNRELEASED; urgency=low
     The only official method for including Phonon headers is <phonon/ClassName>
     or <phonon/classname.h>.
 
+  [ Pino Toscano ]
+  * Update debian/control: Don't build-depends on libasound2-dev for
+    GNU/kFreeBSD and GNU/Hurd architectures.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 13 Dec 2009 18:43:29 +0200
 
 qt4-x11 (4:4.6.0-1) experimental; urgency=low
