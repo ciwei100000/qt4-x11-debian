@@ -47,8 +47,9 @@ qt4-x11 (4:4.6.1-1) UNRELEASED; urgency=low
     GNU/Hurd. This will make Qt BIC there, but we can live with that.
   * Add 82_hurd_SA_SIGINFO.diff: fix FTBFS on GNU/Hurd causes by unconditional
     usage of SA_SIGINFO.
+  * Adapt watch file to the new file names of the Qt/X11 tarballs.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 31 Jan 2010 01:31:47 +0100
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 31 Jan 2010 01:40:16 +0100
 
 qt4-x11 (4:4.6.0-1) experimental; urgency=low
 
