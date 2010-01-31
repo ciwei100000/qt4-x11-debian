@@ -23,6 +23,8 @@ qt4-x11 (4:4.6.1-1) UNRELEASED; urgency=low
   * Add 20_install_qvfb.diff: build Qt Virtual Framebuffer (qvfb) tool.
   * Add 51_kfreebsd_strnstr_build_fix.diff: Fix FTBFS on GNU/kFreeBSD caused by
     missing strnstr() on glibc systems.
+  * Add 97_update_phonon_4.3.80.diff: update Qt Phonon from kdesupport
+    Phonon 4.3.80.
   * Remove patches:
     - 19_install_qdoc3.diff - merged upstream.
     - 81_hurd_clock_gettime.diff - merged upstream.
