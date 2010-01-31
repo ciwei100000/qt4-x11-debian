@@ -43,8 +43,10 @@ qt4-x11 (4:4.6.1-1) UNRELEASED; urgency=low
   [ Pino Toscano ]
   * Update debian/control: Don't build-depends on libasound2-dev for
     GNU/kFreeBSD and GNU/Hurd architectures.
+  * Add 81_hurd_architecture.diff: recognize the proper architecture on
+    GNU/Hurd. This will make Qt BIC there, but we can live with that.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 13 Dec 2009 18:43:29 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 31 Jan 2010 01:28:35 +0100
 
 qt4-x11 (4:4.6.0-1) experimental; urgency=low
 
