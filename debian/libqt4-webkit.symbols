@@ -102,7 +102,11 @@ libQtWebKit.so.4 libqt4-webkit #MINVER#
  _Z34qt_drt_resetOriginAccessWhiteListsv@Base 4:4.6.1
  _Z35qtwebkit_webframe_scrollRecursivelyP9QWebFrameii@Base 4:4.6.1
  _Z36qt_drt_setJavaScriptProfilingEnabledP9QWebFrameb@Base 4:4.5.3
+#MISSING: 4:4.6.1# _Z39qt_websettings_localStorageDatabasePathP12QWebSettings@Base 4:4.5.3
+#MISSING: 4:4.6.1# _Z42qt_websettings_setLocalStorageDatabasePathP12QWebSettingsRK7QString@Base 4:4.5.3
+#MISSING: 4:4.6.1# _Z45qt_websettings_offlineWebApplicationCachePathv@Base 4:4.5.3
  _Z48qt_drt_garbageCollector_collectOnAlternateThreadb@Base 4:4.6.1
+#MISSING: 4:4.6.1# _Z48qt_websettings_setOfflineWebApplicationCachePathRK7QString@Base 4:4.5.3
  _ZN11QWebElement11encloseWithERK7QString@Base 4:4.6.1
  _ZN11QWebElement11encloseWithERKS_@Base 4:4.6.1
  _ZN11QWebElement11removeClassERK7QString@Base 4:4.6.1

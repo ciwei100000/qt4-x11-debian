@@ -1526,6 +1526,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN12Q3TextFormat8pntr_ldgE@Base 4:4.5.3
  _ZN12Q3TextFormat8setColorERK6QColor@Base 4:4.5.3
  _ZN12Q3TextFormat9applyFontERK5QFont@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12Q3TextFormat9removeRefEv@Base 4:4.5.3
  _ZN12Q3TextFormat9setFamilyERK7QString@Base 4:4.5.3
  _ZN12Q3TextFormat9setItalicEb@Base 4:4.5.3
  _ZN12Q3TextFormat9setVAlignENS_17VerticalAlignmentE@Base 4:4.5.3
@@ -1562,6 +1563,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN12Q3TextStream5codecEv@Base 4:4.5.3
  _ZN12Q3TextStream5resetEv@Base 4:4.5.3
  _ZN12Q3TextStream6eat_wsEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12Q3TextStream7ts_getcEv@Base 4:4.5.3
  _ZN12Q3TextStream7ts_putcE5QChar@Base 4:4.5.3
  _ZN12Q3TextStream7ts_putcEi@Base 4:4.5.3
  _ZN12Q3TextStream8readLineEv@Base 4:4.5.3
@@ -1618,6 +1620,8 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN12Q3TextStreamrsERs@Base 4:4.5.3
  _ZN12Q3TextStreamrsERt@Base 4:4.5.3
  _ZN12Q3TextString16appendParagraphsEP15Q3TextParagraphS1_@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12Q3TextString18nextCursorPositionEi@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12Q3TextString22previousCursorPositionEi@Base 4:4.5.3
  _ZN12Q3TextString5clearEv@Base 4:4.5.3
  _ZN12Q3TextString6insertEiP16Q3TextStringCharb@Base 4:4.5.3
  _ZN12Q3TextString6insertEiPK5QChariP12Q3TextFormat@Base 4:4.5.3
@@ -2242,6 +2246,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN14Q3TextDocument7setTextERK7QStringS2_@Base 4:4.5.3
  _ZN14Q3TextDocument8doLayoutEP8QPainteri@Base 4:4.5.3
  _ZN14Q3TextDocument8eatSpaceEPK5QChariRib@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14Q3TextDocument8setWidthEi@Base 4:4.5.3
  _ZN14Q3TextDocument9hasPrefixEPK5QChariiRK7QString@Base 4:4.5.3
  _ZN14Q3TextDocument9hasPrefixEPK5QChariiS0_@Base 4:4.5.3
  _ZN14Q3TextDocument9parseCharEPK5QChariRiN16Q3StyleSheetItem14WhiteSpaceModeE@Base 4:4.5.3
@@ -3544,6 +3549,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN8Q3HeaderD2Ev@Base 4:4.5.3
  _ZN8Q3Membuf11scanNewlineEP10QByteArray@Base 4:4.5.3
  _ZN8Q3Membuf12consumeBytesEmPc@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN8Q3Membuf6appendEP10QByteArray@Base 4:4.5.3
  _ZN8Q3Membuf7readAllEv@Base 4:4.5.3
  _ZN8Q3Membuf7ungetchEi@Base 4:4.5.3
  _ZN8Q3MembufC1Ev@Base 4:4.5.3
@@ -4324,6 +4330,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZNK12Q3TextFormat15minRightBearingEv@Base 4:4.5.3
  _ZNK12Q3TextFormat17makeFormatEndTagsEPS_RK7QString@Base 4:4.5.3
  _ZNK12Q3TextFormat20makeFormatChangeTagsEPS_S0_RK7QStringS3_@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK12Q3TextFormat4fontEv@Base 4:4.5.3
  _ZNK12Q3TextFormat5widthERK5QChar@Base 4:4.5.3
  _ZNK12Q3TextFormat5widthERK7QStringi@Base 4:4.5.3
  _ZNK12Q3TextFormat6ascentEv@Base 4:4.5.3
@@ -4331,6 +4338,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZNK12Q3TextFormat7descentEv@Base 4:4.5.3
  _ZNK12Q3TextFormat7leadingEv@Base 4:4.5.3
  _ZNK12Q3TextString5widthEi@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK12Q3TextString8toStringEv@Base 4:4.5.3
  _ZNK12Q3TextString9checkBidiEv@Base 4:4.5.3
  _ZNK12QPaintDevice7devTypeEv@Base 4:4.5.3
  _ZNK13Q3ActionGroup10metaObjectEv@Base 4:4.5.3
@@ -4771,7 +4779,9 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZNK5Q3Urlcv7QStringEv@Base 4:4.5.3
  _ZNK5Q3UrleqERK7QString@Base 4:4.5.3
  _ZNK5Q3UrleqERKS_@Base 4:4.5.3
+#MISSING: 4:4.6.1# (arch=amd64 armel hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390)_ZNK5QRect11intersectedERKS_@Base 4:4.5.3
  _ZNK5QRect6centerEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK5QRect6unitedERKS_@Base 4:4.5.3
  _ZNK6Q3Grid10metaObjectEv@Base 4:4.5.3
  _ZNK6Q3Grid8sizeHintEv@Base 4:4.5.3
  _ZNK6Q3HBox10metaObjectEv@Base 4:4.5.3
@@ -4855,6 +4865,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZNK7Q3Table9rowHeightEi@Base 4:4.5.3
  _ZNK7Q3Table9selectionEi@Base 4:4.5.3
  _ZNK7Q3Table9tableSizeEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# (arch=armel hurd-i386 i386 kfreebsd-i386 mips mipsel powerpc s390)_ZNK7QString3argEiiiRK5QChar@Base 4:4.5.3
  _ZNK7QWidget10colorGroupEv@Base 4:4.5.3
  _ZNK8Q3Action10metaObjectEv@Base 4:4.5.3
  _ZNK8Q3Action14isToggleActionEv@Base 4:4.5.3

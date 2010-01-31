@@ -128,6 +128,7 @@ libQtSvg.so.4 libqt4-svg #MINVER#
  _ZNK16QSvgTinyDocument16matrixForElementERK7QString@Base 4:4.5.3
  _ZNK16QSvgTinyDocument4typeEv@Base 4:4.5.3
  _ZNK16QSvgTinyDocument7svgFontERK7QString@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK16QSvgTinyDocument7viewBoxEv@Base 4:4.5.3
  _ZNK16QSvgTinyDocument8animatedEv@Base 4:4.5.3
  _ZNK16QSvgTinyDocument9namedNodeERK7QString@Base 4:4.6.1
  _ZTI10QSvgWidget@Base 4:4.5.3

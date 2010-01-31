@@ -226,6 +226,7 @@ libQtDBus.so.4 libqt4-dbus #MINVER#
  _ZN9QDBusUtil22isValidSingleSignatureERK7QString@Base 4:4.5.3
  _ZN9QDBusUtil23isValidPartOfObjectPathERK7QString@Base 4:4.5.3
  _ZN9QDBusUtil27isValidUniqueConnectionNameERK7QString@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN9QHashData8willGrowEv@Base 4:4.5.3
  _ZNK10QDBusError4nameEv@Base 4:4.5.3
  _ZNK10QDBusError4typeEv@Base 4:4.5.3
  _ZNK10QDBusError7isValidEv@Base 4:4.5.3
@@ -329,6 +330,7 @@ libQtDBus.so.4 libqt4-dbus #MINVER#
  _ZNK24QDBusConnectionInterface12serviceOwnerERK7QString@Base 4:4.5.3
  _ZNK24QDBusConnectionInterface19isServiceRegisteredERK7QString@Base 4:4.5.3
  _ZNK24QDBusConnectionInterface22registeredServiceNamesEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK7QString3argERKS_S1_@Base 4:4.5.3
  _ZTI11QDBusServer@Base 4:4.5.3
  _ZTI14QDBusInterface@Base 4:4.5.3
  _ZTI16QDBusPendingCall@Base 4:4.5.3

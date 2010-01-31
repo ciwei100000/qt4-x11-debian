@@ -603,6 +603,7 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN7QSslKeyD1Ev@Base 4:4.5.3
  _ZN7QSslKeyD2Ev@Base 4:4.5.3
  _ZN7QSslKeyaSERKS_@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN7QString5clearEv@Base 4:4.5.3
  _ZN8QUrlInfo10setSymLinkEb@Base 4:4.5.3
  _ZN8QUrlInfo11greaterThanERKS_S1_i@Base 4:4.5.3
  _ZN8QUrlInfo11setLastReadERK9QDateTime@Base 4:4.5.3

@@ -58,7 +58,20 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  (arch=!armel)_ZN12QDashStroker5beginEPv@Base 4:4.5.3
  (arch=!armel)_ZN12QDashStrokerD0Ev@Base 4:4.5.3
  (arch=!armel)_ZN12QDashStrokerD1Ev@Base 4:4.5.3
- _ZN13QPainterStateC2ERKS_@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QGLSLProgram10setUniformEii@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QGLSLProgram10setUniformEiiPf@Base 4:4.5.3
+#MISSING: 4:4.6.1# (subst)_ZN12QGLSLProgram10setUniformEi{qreal}@Base 4:4.5.3
+#MISSING: 4:4.6.1# (subst)_ZN12QGLSLProgram10setUniformEi{qreal}{qreal}@Base 4:4.5.3
+#MISSING: 4:4.6.1# (subst)_ZN12QGLSLProgram10setUniformEi{qreal}{qreal}{qreal}@Base 4:4.5.3
+#MISSING: 4:4.6.1# (subst)_ZN12QGLSLProgram10setUniformEi{qreal}{qreal}{qreal}{qreal}@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QGLSLProgram18getUniformLocationERK7QString@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QGLSLProgram6enableEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QGLSLProgram7disableEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QGLSLProgramC1ERK7QString@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QGLSLProgramC2ERK7QString@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QGLSLProgramD1Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QGLSLProgramD2Ev@Base 4:4.5.3
+ _ZN13QPainterStateC2ERKS_@Base 4:4.6.1
  _ZN14QGLPaintDevice10beginPaintEv@Base 4:4.6.1
  _ZN14QGLPaintDevice18ensureActiveTargetEv@Base 4:4.6.1
  _ZN14QGLPaintDevice8endPaintEv@Base 4:4.6.1
@@ -359,6 +372,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN26QGLFramebufferObjectFormatD2Ev@Base 4:4.6.1
  _ZN26QGLFramebufferObjectFormataSERKS_@Base 4:4.6.1
  _ZN3QGL23setPreferredPaintEngineEN12QPaintEngine4TypeE@Base 4:4.6.1
+#MISSING: 4:4.6.1# _ZN6QDebugC1E9QtMsgType@Base 4:4.5.3
  _ZN6QDebugD1Ev@Base 4:4.5.3
  _ZN6QDebuglsEPKc@Base 4:4.5.3
  _ZN6QDebuglsERK7QString@Base 4:4.6.1
@@ -471,6 +485,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN9QGLWidgetD0Ev@Base 4:4.5.3
  _ZN9QGLWidgetD1Ev@Base 4:4.5.3
  _ZN9QGLWidgetD2Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN9QHashData8willGrowEv@Base 4:4.5.3
  _ZN9QHashData9hasShrunkEv@Base 4:4.6.1
  _ZN9QPolygonFD1Ev@Base 4:4.5.3
  _ZNK10QGLContext10colorIndexERK6QColor@Base 4:4.5.3
@@ -491,7 +506,9 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZNK11QGLColormap4sizeEv@Base 4:4.5.3
  _ZNK11QGLColormap7isEmptyEv@Base 4:4.5.3
  _ZNK11QGLColormap8entryRgbEi@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK12QGLSLProgram7successEv@Base 4:4.5.3
  _ZNK12QPaintDevice6heightEv@Base 4:4.6.1
+#MISSING: 4:4.6.1# _ZNK12QPaintDevice7devTypeEv@Base 4:4.5.3
  _ZNK14QGLPaintDevice6formatEv@Base 4:4.6.1
  _ZNK14QGLPaintDevice7devTypeEv@Base 4:4.6.1
  _ZNK14QGLPixelBuffer11paintEngineEv@Base 4:4.5.3
@@ -611,7 +628,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  (arch=!armel)_ZTV12QDashStroker@Base 4:4.5.3
  _ZTV14QGLPaintDevice@Base 4:4.6.1
  _ZTV14QGLPixelBuffer@Base 4:4.5.3
- _ZTV14QGLSignalProxy@Base 4:4.5.3
+ _ZTV14QGLSignalProxy@Base 4:4.6.1
  _ZTV15QGraphicsSystem@Base 4:4.5.3
  _ZTV16QGLShaderProgram@Base 4:4.6.1
  _ZTV17QGL2PaintEngineEx@Base 4:4.6.1
