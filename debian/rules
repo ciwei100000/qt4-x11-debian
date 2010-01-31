@@ -193,7 +193,6 @@ override_dh_auto_clean:
 	| cut -d ':' -f 1 | xargs rm -f
 
 	# Generated on build
-	rm -f debian/libphonon4.symbols
 	rm -f debian/shlibs.local
 	rm -f debian/stamp-makefile-build-tools
 
@@ -250,8 +249,6 @@ override_dh_strip:
 	$(foreach pkg,$(pkgs_dbg),dh_strip -p$(pkg) --dbg-package=$(pkg)-dbg;)
 	dh_strip -plibphonon4 --dbg-package=phonon-dbg
 	dh_strip --remaining-packages --dbg-package=libqt4-dbg
-	# Generate libphonon4 symbols file
-	pkgkde-symbolshelper symbolfile -p libphonon4 -o debian/libphonon4.symbols
 
 override_dh_makeshlibs:
 	# Specific shlibs version (e.g.: 4:4.5.2)
