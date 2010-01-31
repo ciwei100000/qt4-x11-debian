@@ -28,6 +28,7 @@ qt4-x11 (4:4.6.1-1) UNRELEASED; urgency=low
   * Remove patches:
     - 19_install_qdoc3.diff - merged upstream.
     - 81_hurd_clock_gettime.diff - merged upstream.
+    - 0289-context-for-shortcuts-tr.diff - rejected upstream.
   * Merge with Kubuntu:
     - add 21_qt_ia32_library_path.diff patch
       fix ia32 library path (e.g. skype application).

@@ -4,7 +4,6 @@
 0209-prevent-qt-mixing.diff
 0216-allow-isystem-for-headers.diff
 0225-invalidate-tabbar-geometry-on-refresh.patch
-0289-context-for-shortcuts-tr.diff
 
 # debian patches
 01_qmake_for_debian.diff
