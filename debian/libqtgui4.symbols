@@ -58,12 +58,14 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _Z22qt_paint_device_metricPK12QPaintDeviceNS_17PaintDeviceMetricE@Base 4:4.6.1
  _Z24qt_qscrollbarStyleOptionP10QScrollBar@Base 4:4.5.3
  _Z24qt_x11ft_convert_patternP10_FcPatternP10QByteArrayPiPb@Base 4:4.5.3
+#MISSING: 4:4.6.1# _Z25qt_keymapper_possibleKeysP9QKeyEvent@Base 4:4.5.3
  _Z25qt_translateRawTouchEventP7QWidgetN11QTouchEvent10DeviceTypeERK5QListINS1_10TouchPointEE@Base 4:4.6.1
  _Z29qt_set_sequence_auto_mnemonicb@Base 4:4.5.3
  _Z30qt_x11_wait_for_window_managerP7QWidget@Base 4:4.5.3
  _Z31qt_x11_set_fallback_font_familyiRK7QString@Base 4:4.5.3
  _Z31qt_x11_set_global_double_bufferb@Base 4:4.5.3
  _Z33qt_x11_apply_settings_in_all_appsv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _Z5qGrayj@Base 4:4.5.3
  _Z6bitBltP12QPaintDeviceRK6QPointPKS_RK5QRectb@Base 4:4.5.3
  _Z6bitBltP12QPaintDeviceiiPK6QImageiiiii@Base 4:4.5.3
  _Z6bitBltP12QPaintDeviceiiPKS_iiiib@Base 4:4.5.3
@@ -761,13 +763,18 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN11QFontDialogD2Ev@Base 4:4.5.3
  _ZN11QFontEngine11boundingBoxEjRK10QTransform@Base 4:4.5.3
  _ZN11QFontEngine11grayPaletteEv@Base 4:4.6.1
+#MISSING: 4:4.6.1# _ZN11QFontEngine11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN11QFontEngine11qt_metacastEPKc@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN11QFontEngine13setGlyphCacheEN21QFontEngineGlyphCache4TypeEPS0_@Base 4:4.5.3
  _ZN11QFontEngine13setGlyphCacheEPvP21QFontEngineGlyphCache@Base 4:4.5.3
  _ZN11QFontEngine15addGlyphsToPathEPjP11QFixedPointiP12QPainterPath6QFlagsIN9QTextItem10RenderFlagEE@Base 4:4.5.3
  (subst)_ZN11QFontEngine16addOutlineToPathE{qreal}{qreal}RK12QGlyphLayoutP12QPainterPath6QFlagsIN9QTextItem10RenderFlagEE@Base 4:4.5.3
  _ZN11QFontEngine16alphaMapForGlyphEj@Base 4:4.5.3
  _ZN11QFontEngine16alphaMapForGlyphEjRK10QTransform@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN11QFontEngine16expireGlyphCacheEv@Base 4:4.5.3
  _ZN11QFontEngine16getUnscaledGlyphEjP12QPainterPathP15glyph_metrics_t@Base 4:4.5.3
  _ZN11QFontEngine16loadKerningPairsE6QFixed@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN11QFontEngine16staticMetaObjectE@Base 4:4.5.3
  _ZN11QFontEngine16tightBoundingBoxERK12QGlyphLayout@Base 4:4.5.3
  _ZN11QFontEngine17getGlyphPositionsERK12QGlyphLayoutRK10QTransform6QFlagsIN9QTextItem10RenderFlagEER15QVarLengthArrayIjLi256EERSA_I11QFixedPointLi256EE@Base 4:4.5.3
  _ZN11QFontEngine17getPointInOutlineEjijPiS0_Pj@Base 4:4.5.3
@@ -957,6 +964,13 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN11QInputEventD0Ev@Base 4:4.5.3
  _ZN11QInputEventD1Ev@Base 4:4.5.3
  _ZN11QInputEventD2Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN11QKeyEventExC1EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEERK7QStringbtjjj@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN11QKeyEventExC1ERKS_@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN11QKeyEventExC2EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEERK7QStringbtjjj@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN11QKeyEventExC2ERKS_@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN11QKeyEventExD0Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN11QKeyEventExD1Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN11QKeyEventExD2Ev@Base 4:4.5.3
  _ZN11QLayoutItem10invalidateEv@Base 4:4.5.3
  _ZN11QLayoutItem10spacerItemEv@Base 4:4.5.3
  _ZN11QLayoutItem12setAlignmentE6QFlagsIN2Qt13AlignmentFlagEE@Base 4:4.5.3
@@ -1795,6 +1809,26 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN12QDashStroker5beginEPv@Base 4:4.5.3
  _ZN12QDashStrokerC1EP8QStroker@Base 4:4.5.3
  _ZN12QDashStrokerC2EP8QStroker@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QDragManager10timerEventEP11QTimerEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QDragManager11eventFilterEP7QObjectP6QEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QDragManager11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QDragManager11qt_metacastEPKc@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QDragManager12updateCursorEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QDragManager12updatePixmapEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QDragManager13currentTargetEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QDragManager16setCurrentTargetEP7QWidgetb@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QDragManager16staticMetaObjectE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QDragManager4dragEP5QDrag@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QDragManager4dropEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QDragManager4moveERK6QPoint@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QDragManager4selfEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QDragManager6cancelEb@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QDragManager8instanceE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QDragManagerC1Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QDragManagerC2Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QDragManagerD0Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QDragManagerD1Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QDragManagerD2Ev@Base 4:4.5.3
  _ZN12QFontMetricsC1ERK5QFont@Base 4:4.5.3
  _ZN12QFontMetricsC1ERK5QFontP12QPaintDevice@Base 4:4.5.3
  _ZN12QFontMetricsC1ERKS_@Base 4:4.5.3
@@ -1967,6 +2001,11 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN12QLineControl8acceptedEv@Base 4:4.6.1
  _ZN12QLineControl8completeEi@Base 4:4.6.1
  _ZN12QLineControl9backspaceEv@Base 4:4.6.1
+#MISSING: 4:4.6.1# _ZN12QNativeImage12systemFormatEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QNativeImageC1EiiN6QImage6FormatEbP7QWidget@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QNativeImageC2EiiN6QImage6FormatEbP7QWidget@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QNativeImageD1Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QNativeImageD2Ev@Base 4:4.5.3
  _ZN12QPaintBuffer13beginNewFrameEv@Base 4:4.6.1
  _ZN12QPaintBuffer15setBoundingRectERK6QRectF@Base 4:4.6.1
  _ZN12QPaintBufferC1ERKS_@Base 4:4.6.1
@@ -2342,6 +2381,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN12QTextControlD0Ev@Base 4:4.5.3
  _ZN12QTextControlD1Ev@Base 4:4.5.3
  _ZN12QTextControlD2Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QToolBarItemC1EP7QWidget@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN12QToolBarItemC2EP7QWidget@Base 4:4.5.3
  _ZN12QUndoCommand4redoEv@Base 4:4.5.3
  _ZN12QUndoCommand4undoEv@Base 4:4.5.3
  _ZN12QUndoCommand7setTextERK7QString@Base 4:4.5.3
@@ -2490,6 +2531,10 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN13QFontMetricsFaSERK12QFontMetrics@Base 4:4.5.3
  _ZN13QFontMetricsFaSERKS_@Base 4:4.5.3
  _ZN13QFontMetricsFeqERKS_@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN13QFramePrivate16updateFrameWidthEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN13QFramePrivate23updateStyledFrameWidthsEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN13QFramePrivateC1Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN13QFramePrivateC2Ev@Base 4:4.5.3
  _ZN13QGestureEvent11setAcceptedEN2Qt11GestureTypeEb@Base 4:4.6.1
  _ZN13QGestureEvent11setAcceptedEP8QGestureb@Base 4:4.6.1
  _ZN13QGestureEvent6acceptEN2Qt11GestureTypeE@Base 4:4.6.1
@@ -2749,6 +2794,11 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN13QMdiSubWindowD0Ev@Base 4:4.5.3
  _ZN13QMdiSubWindowD1Ev@Base 4:4.5.3
  _ZN13QMdiSubWindowD2Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN13QMouseEventExC1EN6QEvent4TypeERK7QPointFRK6QPointN2Qt11MouseButtonE6QFlagsIS9_ESA_INS8_16KeyboardModifierEE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN13QMouseEventExC2EN6QEvent4TypeERK7QPointFRK6QPointN2Qt11MouseButtonE6QFlagsIS9_ESA_INS8_16KeyboardModifierEE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN13QMouseEventExD0Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN13QMouseEventExD1Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN13QMouseEventExD2Ev@Base 4:4.5.3
  _ZN13QPainterState4initEP8QPainter@Base 4:4.5.3
  _ZN13QPainterStateC1EPKS_@Base 4:4.5.3
  _ZN13QPainterStateC1Ev@Base 4:4.5.3
@@ -3000,6 +3050,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN14QGraphicsScene10setPaletteERK8QPalette@Base 4:4.5.3
  _ZN14QGraphicsScene10wheelEventEP24QGraphicsSceneWheelEvent@Base 4:4.5.3
  _ZN14QGraphicsScene11eventFilterEP7QObjectP6QEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QGraphicsScene11itemUpdatedEP13QGraphicsItemRK6QRectF@Base 4:4.5.3
  _ZN14QGraphicsScene11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN14QGraphicsScene11qt_metacastEPKc@Base 4:4.5.3
  _ZN14QGraphicsScene12focusInEventEP11QFocusEvent@Base 4:4.5.3
@@ -3244,6 +3295,25 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN14QStackedWidgetD1Ev@Base 4:4.5.3
  _ZN14QStackedWidgetD2Ev@Base 4:4.5.3
  _ZN14QTextTableCell9setFormatERK15QTextCharFormat@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QToolBarLayout10createItemEP7QAction@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QToolBarLayout10invalidateEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QToolBarLayout11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QToolBarLayout11qt_metacastEPKc@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QToolBarLayout11setExpandedEb@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QToolBarLayout11setGeometryERK5QRect@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QToolBarLayout12insertActionEiP7QAction@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QToolBarLayout13layoutActionsERK5QSize@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QToolBarLayout15setUsePopupMenuEb@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QToolBarLayout16staticMetaObjectE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QToolBarLayout17checkUsePopupMenuEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QToolBarLayout22updateMarginAndSpacingEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QToolBarLayout6takeAtEi@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QToolBarLayout7addItemEP11QLayoutItem@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QToolBarLayoutC1EP7QWidget@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QToolBarLayoutC2EP7QWidget@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QToolBarLayoutD0Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QToolBarLayoutD1Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QToolBarLayoutD2Ev@Base 4:4.5.3
  _ZN14QWidgetPrivate10allWidgetsE@Base 4:4.6.1
  _ZN14QWidgetPrivate10create_sysEmbb@Base 4:4.5.3
  _ZN14QWidgetPrivate10drawWidgetEP12QPaintDeviceRK7QRegionRK6QPointiP8QPainterP19QWidgetBackingStore@Base 4:4.5.3
@@ -3274,6 +3344,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN14QWidgetPrivate13resolveLocaleEv@Base 4:4.5.3
  _ZN14QWidgetPrivate13setCursor_sysERK7QCursor@Base 4:4.5.3
  _ZN14QWidgetPrivate13setParent_sysEP7QWidget6QFlagsIN2Qt10WindowTypeEE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QWidgetPrivate13setWSGeometryEb@Base 4:4.5.3
  _ZN14QWidgetPrivate13setWSGeometryEbRK5QRect@Base 4:4.6.1
  _ZN14QWidgetPrivate13setWindowRoleEv@Base 4:4.5.3
  _ZN14QWidgetPrivate14createSysExtraEv@Base 4:4.5.3
@@ -3296,8 +3367,10 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN14QWidgetPrivate16invalidateBufferERK7QRegion@Base 4:4.5.3
  _ZN14QWidgetPrivate16registerDropSiteEb@Base 4:4.5.3
  _ZN14QWidgetPrivate16setLocale_helperERK7QLocaleb@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QWidgetPrivate16setSharedPainterEP8QPainter@Base 4:4.5.3
  _ZN14QWidgetPrivate16syncBackingStoreERK7QRegion@Base 4:4.5.3
  _ZN14QWidgetPrivate16syncBackingStoreEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QWidgetPrivate16uncreatedWidgetsE@Base 4:4.5.3
  _ZN14QWidgetPrivate16updateFrameStrutEv@Base 4:4.5.3
  _ZN14QWidgetPrivate17createRecursivelyEv@Base 4:4.5.3
  _ZN14QWidgetPrivate17setEnabled_helperEb@Base 4:4.5.3
@@ -3331,6 +3404,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN14QWidgetPrivate25setLayoutDirection_helperEN2Qt15LayoutDirectionE@Base 4:4.5.3
  _ZN14QWidgetPrivate26adjustQuitOnCloseAttributeEv@Base 4:4.5.3
  _ZN14QWidgetPrivate26createDefaultWindowSurfaceEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN14QWidgetPrivate26nearestGraphicsProxyWidgetEP7QWidget@Base 4:4.5.3
  _ZN14QWidgetPrivate26nearestGraphicsProxyWidgetEPK7QWidget@Base 4:4.6.1
  _ZN14QWidgetPrivate29invalidateBuffer_resizeHelperERK6QPointRK5QSize@Base 4:4.5.3
  _ZN14QWidgetPrivate30createDefaultWindowSurface_sysEv@Base 4:4.5.3
@@ -3676,6 +3750,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN15QListWidgetItemD1Ev@Base 4:4.5.3
  _ZN15QListWidgetItemD2Ev@Base 4:4.5.3
  _ZN15QListWidgetItemaSERKS_@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN15QPicturePrivate11checkFormatEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN15QPicturePrivate11resetFormatEv@Base 4:4.5.3
  _ZN15QPlastiqueStyle10timerEventEP11QTimerEvent@Base 4:4.5.3
  _ZN15QPlastiqueStyle11eventFilterEP7QObjectP6QEvent@Base 4:4.5.3
  _ZN15QPlastiqueStyle11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -4015,6 +4091,16 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN16QFileSystemModelD0Ev@Base 4:4.5.3
  _ZN16QFileSystemModelD1Ev@Base 4:4.5.3
  _ZN16QFileSystemModelD2Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN16QFontEngineMulti11boundingBoxERK12QGlyphLayout@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN16QFontEngineMulti11boundingBoxEj@Base 4:4.5.3
+#MISSING: 4:4.6.1# (subst)_ZN16QFontEngineMulti16addOutlineToPathE{qreal}{qreal}RK12QGlyphLayoutP12QPainterPath6QFlagsIN9QTextItem10RenderFlagEE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN16QFontEngineMulti16alphaMapForGlyphEj@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN16QFontEngineMulti9canRenderEPK5QChari@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN16QFontEngineMultiC1Ei@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN16QFontEngineMultiC2Ei@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN16QFontEngineMultiD0Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN16QFontEngineMultiD1Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN16QFontEngineMultiD2Ev@Base 4:4.5.3
  _ZN16QFontEngineX11FT18freeServerGlyphSetEm@Base 4:4.5.3
  _ZN16QFontEngineX11FT22allocateServerGlyphSetEv@Base 4:4.5.3
  _ZN16QFontEngineX11FTC1EP10_FcPatternRK8QFontDefi@Base 4:4.5.3
@@ -4437,7 +4523,14 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN17QStyleOptionTabV3C2Ei@Base 4:4.5.3
  _ZN17QStyleOptionTabV3C2Ev@Base 4:4.5.3
  _ZN17QStyleOptionTabV3aSERK15QStyleOptionTab@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN17QTextImageHandler10drawObjectEP8QPainterRK6QRectFP13QTextDocumentiRK11QTextFormat@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN17QTextImageHandler11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN17QTextImageHandler11qt_metacastEPKc@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN17QTextImageHandler13intrinsicSizeEP13QTextDocumentiRK11QTextFormat@Base 4:4.5.3
  _ZN17QTextImageHandler14externalLoaderE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN17QTextImageHandler16staticMetaObjectE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN17QTextImageHandlerC1EP7QObject@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN17QTextImageHandlerC2EP7QObject@Base 4:4.5.3
  (subst)_ZN17QTextInlineObject10setDescentE{qreal}@Base 4:4.5.3
  (subst)_ZN17QTextInlineObject8setWidthE{qreal}@Base 4:4.5.3
  (subst)_ZN17QTextInlineObject9setAscentE{qreal}@Base 4:4.5.3
@@ -4512,6 +4605,10 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN18QItemEditorFactoryD0Ev@Base 4:4.5.3
  _ZN18QItemEditorFactoryD1Ev@Base 4:4.5.3
  _ZN18QItemEditorFactoryD2Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN18QPixmapDataFactory8instanceEi@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN18QPixmapDataFactoryD0Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN18QPixmapDataFactoryD1Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN18QPixmapDataFactoryD2Ev@Base 4:4.5.3
  _ZN18QStandardItemModel10insertRowsEiiRK11QModelIndex@Base 4:4.5.3
  _ZN18QStandardItemModel10removeRowsEiiRK11QModelIndex@Base 4:4.5.3
  _ZN18QStandardItemModel10takeColumnEi@Base 4:4.5.3
@@ -4709,6 +4806,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN19QApplicationPrivate14autoSipEnabledE@Base 4:4.6.1
  _ZN19QApplicationPrivate14enterModal_sysEP7QWidget@Base 4:4.5.3
  _ZN19QApplicationPrivate14leaveModal_sysEP7QWidget@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN19QApplicationPrivate14sendMouseEventEP7QWidgetP11QMouseEventS1_S1_PS1_R8QPointerIS0_E@Base 4:4.5.3
  _ZN19QApplicationPrivate14sendMouseEventEP7QWidgetP11QMouseEventS1_S1_PS1_R8QPointerIS0_Eb@Base 4:4.6.1
  _ZN19QApplicationPrivate14setFocusWidgetEP7QWidgetN2Qt11FocusReasonE@Base 4:4.5.3
  _ZN19QApplicationPrivate14shouldSetFocusEP7QWidgetN2Qt11FocusPolicyE@Base 4:4.5.3
@@ -4738,6 +4836,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN19QApplicationPrivate20emitLastWindowClosedEv@Base 4:4.5.3
  _ZN19QApplicationPrivate20graphics_system_nameE@Base 4:4.5.3
  _ZN19QApplicationPrivate20initializeMultitouchEv@Base 4:4.6.1
+#MISSING: 4:4.6.1# _ZN19QApplicationPrivate20x11_initialize_styleEv@Base 4:4.5.3
  _ZN19QApplicationPrivate21cleanupMultitouch_sysEv@Base 4:4.6.1
  _ZN19QApplicationPrivate21createEventDispatcherEv@Base 4:4.5.3
  _ZN19QApplicationPrivate21obey_desktop_settingsE@Base 4:4.5.3
@@ -4755,6 +4854,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN19QApplicationPrivate36applyX11SpecificCommandLineArgumentsEP7QWidget@Base 4:4.5.3
  _ZN19QApplicationPrivate4selfE@Base 4:4.5.3
  _ZN19QApplicationPrivate7app_palE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN19QApplicationPrivate7kdeHomeEv@Base 4:4.5.3
  _ZN19QApplicationPrivate7set_palE@Base 4:4.5.3
  _ZN19QApplicationPrivate7sys_palE@Base 4:4.5.3
  _ZN19QApplicationPrivate8app_fontE@Base 4:4.5.3
@@ -5132,6 +5232,27 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN20QGraphicsProxyWidgetD0Ev@Base 4:4.5.3
  _ZN20QGraphicsProxyWidgetD1Ev@Base 4:4.5.3
  _ZN20QGraphicsProxyWidgetD2Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN20QGraphicsViewPrivate10centerViewEN13QGraphicsView14ViewportAnchorE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN20QGraphicsViewPrivate10updateRectERK5QRect@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN20QGraphicsViewPrivate11itemUpdatedEP13QGraphicsItemRK6QRectF@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN20QGraphicsViewPrivate11updateLaterEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN20QGraphicsViewPrivate12updateRegionERK7QRegion@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN20QGraphicsViewPrivate12updateScrollEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN20QGraphicsViewPrivate15storeMouseEventEP11QMouseEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN20QGraphicsViewPrivate18_q_updateLaterSlotEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN20QGraphicsViewPrivate18storeDragDropEventEPK27QGraphicsSceneDragDropEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN20QGraphicsViewPrivate20_q_setViewportCursorERK7QCursor@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN20QGraphicsViewPrivate20replayLastMouseEventEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN20QGraphicsViewPrivate21freeStyleOptionsArrayEP24QStyleOptionGraphicsItem@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN20QGraphicsViewPrivate21mouseMoveEventHandlerEP11QMouseEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN20QGraphicsViewPrivate21updateLastCenterPointEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN20QGraphicsViewPrivate22_q_unsetViewportCursorEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN20QGraphicsViewPrivate22allocStyleOptionsArrayEi@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN20QGraphicsViewPrivate22recalculateContentSizeEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN20QGraphicsViewPrivate26populateSceneDragDropEventEP27QGraphicsSceneDragDropEventP10QDropEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN20QGraphicsViewPrivate9updateAllEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN20QGraphicsViewPrivateC1Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN20QGraphicsViewPrivateC2Ev@Base 4:4.5.3
  _ZN20QInputContextFactory11descriptionERK7QString@Base 4:4.5.3
  _ZN20QInputContextFactory11displayNameERK7QString@Base 4:4.5.3
  _ZN20QInputContextFactory4keysEv@Base 4:4.5.3
@@ -5233,6 +5354,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN21QAbstractItemDelegateD0Ev@Base 4:4.5.3
  _ZN21QAbstractItemDelegateD1Ev@Base 4:4.5.3
  _ZN21QAbstractItemDelegateD2Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN21QFontEngineGlyphCacheD0Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN21QFontEngineGlyphCacheD1Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN21QFontEngineGlyphCacheD2Ev@Base 4:4.5.3
  _ZN21QGraphicsAnchorLayout10addAnchorsEP19QGraphicsLayoutItemS1_6QFlagsIN2Qt11OrientationEE@Base 4:4.6.1
  _ZN21QGraphicsAnchorLayout10invalidateEv@Base 4:4.6.1
  _ZN21QGraphicsAnchorLayout10setSpacingEd@Base 4:4.6.1
@@ -5417,6 +5541,30 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN22QGraphicsOpacityEffectD0Ev@Base 4:4.6.1
  _ZN22QGraphicsOpacityEffectD1Ev@Base 4:4.6.1
  _ZN22QGraphicsOpacityEffectD2Ev@Base 4:4.6.1
+#MISSING: 4:4.6.1# _ZN22QGraphicsSystemFactory4keysEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN22QGraphicsSystemFactory6createERK7QString@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN22QGraphicsWidgetPrivate10updateFontERK5QFont@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN22QGraphicsWidgetPrivate11resolveFontEj@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN22QGraphicsWidgetPrivate13updatePaletteERK8QPalette@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN22QGraphicsWidgetPrivate14resolvePaletteEj@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN22QGraphicsWidgetPrivate14setFocusWidgetEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN22QGraphicsWidgetPrivate14setFont_helperERK5QFont@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN22QGraphicsWidgetPrivate16clearFocusWidgetEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN22QGraphicsWidgetPrivate16setLayout_helperEP15QGraphicsLayout@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN22QGraphicsWidgetPrivate17adjustWindowFlagsEP6QFlagsIN2Qt10WindowTypeEE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN22QGraphicsWidgetPrivate17setPalette_helperERK8QPalette@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN22QGraphicsWidgetPrivate20setLayoutItemMarginsEN6QStyle10SubElementEPK12QStyleOption@Base 4:4.5.3
+#MISSING: 4:4.6.1# (subst)_ZN22QGraphicsWidgetPrivate20setLayoutItemMarginsE{qreal}{qreal}{qreal}{qreal}@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN22QGraphicsWidgetPrivate22resolveLayoutDirectionEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN22QGraphicsWidgetPrivate23initStyleOptionTitleBarEP20QStyleOptionTitleBar@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN22QGraphicsWidgetPrivate25setLayoutDirection_helperEN2Qt15LayoutDirectionE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN22QGraphicsWidgetPrivate25windowFrameHoverMoveEventEP24QGraphicsSceneHoverEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN22QGraphicsWidgetPrivate25windowFrameMouseMoveEventEP24QGraphicsSceneMouseEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN22QGraphicsWidgetPrivate26windowFrameHoverLeaveEventEP24QGraphicsSceneHoverEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN22QGraphicsWidgetPrivate26windowFrameMousePressEventEP24QGraphicsSceneMouseEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN22QGraphicsWidgetPrivate28windowFrameMouseReleaseEventEP24QGraphicsSceneMouseEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN22QGraphicsWidgetPrivate30fixFocusChainBeforeReparentingEP15QGraphicsWidgetP14QGraphicsScene@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN22QGraphicsWidgetPrivate4initEP13QGraphicsItem6QFlagsIN2Qt10WindowTypeEE@Base 4:4.5.3
  _ZN22QPaintEngineExReplayer7processERK19QPaintBufferCommand@Base 4:4.6.1
  _ZN22QStyleOptionDockWidgetC1Ei@Base 4:4.5.3
  _ZN22QStyleOptionDockWidgetC1Ev@Base 4:4.5.3
@@ -5510,6 +5658,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN23QGraphicsSimpleTextItemD0Ev@Base 4:4.5.3
  _ZN23QGraphicsSimpleTextItemD1Ev@Base 4:4.5.3
  _ZN23QGraphicsSimpleTextItemD2Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN23QImageTextureGlyphCache11fillTextureERKN18QTextureGlyphCache5CoordEj@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN23QImageTextureGlyphCache17createTextureDataEii@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN23QImageTextureGlyphCache17resizeTextureDataEii@Base 4:4.5.3
  _ZN23QPaintBufferSignalProxy11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN23QPaintBufferSignalProxy11qt_metacastEPKc@Base 4:4.6.1
  _ZN23QPaintBufferSignalProxy14aboutToDestroyEPK19QPaintBufferPrivate@Base 4:4.6.1
@@ -5550,6 +5701,30 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN23QWindowStateChangeEventD0Ev@Base 4:4.5.3
  _ZN23QWindowStateChangeEventD1Ev@Base 4:4.5.3
  _ZN23QWindowStateChangeEventD2Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivate10openEditorERK11QModelIndexP6QEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivate12_q_fetchMoreEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivate12removeEditorEP7QWidget@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivate13clearOrRemoveEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivate14_q_rowsRemovedERK11QModelIndexii@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivate16_q_layoutChangedEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivate16droppingOnItselfEP10QDropEventRK11QModelIndex@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivate16updateEditorDataERK11QModelIndexS2_@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivate17_q_columnsRemovedERK11QModelIndexii@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivate17_q_modelDestroyedEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivate18_q_columnsInsertedERK11QModelIndexii@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivate20doDelayedItemsLayoutEi@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivate26_q_columnsAboutToBeRemovedERK11QModelIndexii@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivate26checkPersistentEditorFocusEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivate4initEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivate6dropOnEP10QDropEventPiS2_P11QModelIndex@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivate6editorERK11QModelIndexRK20QStyleOptionViewItem@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivate9addEditorERK11QModelIndexP7QWidgetb@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivate9selectAllE6QFlagsIN19QItemSelectionModel13SelectionFlagEE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivateC1Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivateC2Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivateD0Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivateD1Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN24QAbstractItemViewPrivateD2Ev@Base 4:4.5.3
  _ZN24QAbstractPageSetupDialog11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN24QAbstractPageSetupDialog11qt_metacastEPKc@Base 4:4.5.3
  _ZN24QAbstractPageSetupDialog16staticMetaObjectE@Base 4:4.5.3
@@ -5703,6 +5878,15 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN26QAbstractGraphicsShapeItemD0Ev@Base 4:4.5.3
  _ZN26QAbstractGraphicsShapeItemD1Ev@Base 4:4.5.3
  _ZN26QAbstractGraphicsShapeItemD2Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN26QAbstractScrollAreaPrivate14layoutChildrenEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN26QAbstractScrollAreaPrivate16replaceScrollBarEP10QScrollBarN2Qt11OrientationE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN26QAbstractScrollAreaPrivate22scrollBarPolicyChangedEN2Qt11OrientationENS0_15ScrollBarPolicyE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN26QAbstractScrollAreaPrivate23_q_showOrHideScrollBarsEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN26QAbstractScrollAreaPrivate4initEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN26QAbstractScrollAreaPrivate9_q_hslideEi@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN26QAbstractScrollAreaPrivate9_q_vslideEi@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN26QAbstractScrollAreaPrivateC1Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN26QAbstractScrollAreaPrivateC2Ev@Base 4:4.5.3
  _ZN26QStyleOptionQ3ListViewItemC1Ei@Base 4:4.5.3
  _ZN26QStyleOptionQ3ListViewItemC1Ev@Base 4:4.5.3
  _ZN26QStyleOptionQ3ListViewItemC2Ei@Base 4:4.5.3
@@ -5785,6 +5969,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN38QAccessibleSimpleEditableTextInterface9pasteTextEi@Base 4:4.5.3
  _ZN38QAccessibleSimpleEditableTextInterfaceC1EP20QAccessibleInterface@Base 4:4.5.3
  _ZN38QAccessibleSimpleEditableTextInterfaceC2EP20QAccessibleInterface@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN4QCss10StyleSheet12buildIndexesEN2Qt15CaseSensitivityE@Base 4:4.5.3
  _ZN4QCss13StyleSelector15selectorMatchesERKNS_8SelectorENS0_7NodePtrE@Base 4:4.5.3
  _ZN4QCss13StyleSelector17styleRulesForNodeENS0_7NodePtrE@Base 4:4.5.3
  _ZN4QCss13StyleSelector19declarationsForNodeENS0_7NodePtrEPKc@Base 4:4.5.3
@@ -5793,6 +5978,25 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN4QCss13StyleSelectorD0Ev@Base 4:4.5.3
  _ZN4QCss13StyleSelectorD1Ev@Base 4:4.5.3
  _ZN4QCss13StyleSelectorD2Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN4QCss14ValueExtractor10extractBoxEPiS1_S1_@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN4QCss14ValueExtractor10sizeValuesERKNS_11DeclarationEP5QSize@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN4QCss14ValueExtractor11borderValueERKNS_11DeclarationEPiPNS_11BorderStyleEP6QBrush@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN4QCss14ValueExtractor11extractFontEP5QFontPi@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN4QCss14ValueExtractor11extractFontEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN4QCss14ValueExtractor11lengthValueERKNS_11DeclarationE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN4QCss14ValueExtractor11lengthValueERKNS_5ValueE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN4QCss14ValueExtractor12extractImageEP5QIconP6QFlagsIN2Qt13AlignmentFlagEEP5QSize@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN4QCss14ValueExtractor12lengthValuesERKNS_11DeclarationEPi@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN4QCss14ValueExtractor13extractBorderEPiP6QBrushPNS_11BorderStyleEP5QSize@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN4QCss14ValueExtractor14extractOutlineEPiP6QBrushPNS_11BorderStyleEP5QSizeS1_@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN4QCss14ValueExtractor14extractPaletteEP6QBrushS2_S2_S2_@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN4QCss14ValueExtractor15extractGeometryEPiS1_S1_S1_S1_S1_@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN4QCss14ValueExtractor15extractPositionEPiS1_S1_S1_PNS_6OriginEP6QFlagsIN2Qt13AlignmentFlagEEPNS_12PositionModeES8_@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN4QCss14ValueExtractor17extractBackgroundEP6QBrushP7QStringPNS_6RepeatEP6QFlagsIN2Qt13AlignmentFlagEEPNS_6OriginEPNS_10AttachmentESD_@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN4QCss14ValueExtractor20extractStyleFeaturesEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN4QCss14ValueExtractor9sizeValueERKNS_11DeclarationE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN4QCss14ValueExtractorC1ERK7QVectorINS_11DeclarationEERK8QPalette@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN4QCss14ValueExtractorC2ERK7QVectorINS_11DeclarationEERK8QPalette@Base 4:4.5.3
  _ZN4QCss6Parser10lexemUntilENS_9TokenTypeE@Base 4:4.5.3
  _ZN4QCss6Parser10parseClassEP7QString@Base 4:4.5.3
  _ZN4QCss6Parser10parseMediaEPNS_9MediaRuleE@Base 4:4.5.3
@@ -6274,6 +6478,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN6QMovieD1Ev@Base 4:4.5.3
  _ZN6QMovieD2Ev@Base 4:4.5.3
  (arch=hurd-i386 i386 kfreebsd-i386 mips mipsel powerpc s390)_ZN6QRectFC1ERK5QRect@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZN6QRectFoRERKS_@Base 4:4.5.3
  _ZN6QSound11isAvailableEv@Base 4:4.5.3
  _ZN6QSound11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN6QSound11qt_metacastEPKc@Base 4:4.5.3
@@ -7965,6 +8170,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK10QBoxLayout7stretchEi@Base 4:4.5.3
  _ZNK10QBoxLayout8sizeHintEv@Base 4:4.5.3
  _ZNK10QBoxLayout9directionEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK10QByteArray8containsEc@Base 4:4.5.3
  _ZNK10QClipboard10metaObjectEv@Base 4:4.5.3
  _ZNK10QClipboard12supportsModeENS_4ModeE@Base 4:4.5.3
  _ZNK10QClipboard13ownsClipboardEv@Base 4:4.5.3
@@ -8252,8 +8458,11 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK11QFontDialog11currentFontEv@Base 4:4.5.3
  _ZNK11QFontDialog12selectedFontEv@Base 4:4.5.3
  _ZNK11QFontDialog7optionsEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK11QFontEngine10glyphCacheEN21QFontEngineGlyphCache4TypeERK10QTransform@Base 4:4.5.3
  _ZNK11QFontEngine10glyphCacheEPvN21QFontEngineGlyphCache4TypeERK10QTransform@Base 4:4.6.1
+#MISSING: 4:4.6.1# _ZNK11QFontEngine10glyphCacheEPvRK10QTransform@Base 4:4.5.3
  _ZNK11QFontEngine10glyphCountEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK11QFontEngine10metaObjectEv@Base 4:4.5.3
  _ZNK11QFontEngine10propertiesEv@Base 4:4.5.3
  _ZNK11QFontEngine12getSfntTableEj@Base 4:4.5.3
  _ZNK11QFontEngine12harfbuzzFaceEv@Base 4:4.5.3
@@ -8540,6 +8749,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK11QTextCursorneERKS_@Base 4:4.5.3
  _ZNK11QTextEngine10attributesEv@Base 4:4.5.3
  _ZNK11QTextEngine10elidedTextEN2Qt13TextElideModeERK6QFixedi@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK11QTextEngine10fontEngineERK11QScriptItemP6QFixedS4_@Base 4:4.5.3
  _ZNK11QTextEngine10fontEngineERK11QScriptItemP6QFixedS4_S4_@Base 4:4.6.1
  _ZNK11QTextEngine11boundingBoxEii@Base 4:4.5.3
  _ZNK11QTextEngine11formatIndexEPK11QScriptItem@Base 4:4.5.3
@@ -8735,6 +8945,10 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK12QCommonStyle21hitTestComplexControlEN6QStyle14ComplexControlEPK19QStyleOptionComplexRK6QPointPK7QWidget@Base 4:4.5.3
  _ZNK12QCommonStyle26standardIconImplementationEN6QStyle14StandardPixmapEPK12QStyleOptionPK7QWidget@Base 4:4.5.3
  _ZNK12QCommonStyle9styleHintEN6QStyle9StyleHintEPK12QStyleOptionPK7QWidgetP16QStyleHintReturn@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK12QDragManager10dragCursorEN2Qt10DropActionE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK12QDragManager10metaObjectEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK12QDragManager13defaultActionE6QFlagsIN2Qt10DropActionEES0_INS1_16KeyboardModifierEE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK12QDragManager20hasCustomDragCursorsEv@Base 4:4.5.3
  _ZNK12QFontMetrics10elidedTextERK7QStringN2Qt13TextElideModeEii@Base 4:4.5.3
  _ZNK12QFontMetrics11leftBearingE5QChar@Base 4:4.5.3
  _ZNK12QFontMetrics11lineSpacingEv@Base 4:4.5.3
@@ -8994,6 +9208,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK12QTextControl8canPasteEv@Base 4:4.5.3
  _ZNK12QTextControl8documentEv@Base 4:4.5.3
  _ZNK12QTextControl9textWidthEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK12QToolBarItem7isEmptyEv@Base 4:4.5.3
  _ZNK12QUndoCommand10childCountEv@Base 4:4.5.3
  _ZNK12QUndoCommand2idEv@Base 4:4.5.3
  _ZNK12QUndoCommand4textEv@Base 4:4.5.3
@@ -9523,22 +9738,40 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK14QTextTableCell6columnEv@Base 4:4.5.3
  _ZNK14QTextTableCell6formatEv@Base 4:4.5.3
  _ZNK14QTextTableCell7rowSpanEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK14QToolBarLayout10handleRectEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK14QToolBarLayout10metaObjectEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK14QToolBarLayout11minimumSizeEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK14QToolBarLayout12expandedSizeERK5QSize@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK14QToolBarLayout13hasExpandFlagEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK14QToolBarLayout15updateGeomArrayEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK14QToolBarLayout19expandingDirectionsEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK14QToolBarLayout5countEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK14QToolBarLayout6itemAtEi@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK14QToolBarLayout7indexOfEP7QAction@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK14QToolBarLayout7isEmptyEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK14QToolBarLayout7movableEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK14QToolBarLayout8sizeHintEv@Base 4:4.5.3
  _ZNK14QWidgetPrivate10clipRegionEv@Base 4:4.5.3
  _ZNK14QWidgetPrivate10frameStrutEv@Base 4:4.5.3
  _ZNK14QWidgetPrivate12adjustedSizeEv@Base 4:4.5.3
  _ZNK14QWidgetPrivate12inputContextEv@Base 4:4.5.3
  _ZNK14QWidgetPrivate12isOverlappedERK5QRect@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK14QWidgetPrivate13hasBackgroundEv@Base 4:4.5.3
  _ZNK14QWidgetPrivate13isAboutToShowEv@Base 4:4.5.3
  _ZNK14QWidgetPrivate13paintOnScreenEv@Base 4:4.5.3
  _ZNK14QWidgetPrivate14childAt_helperERK6QPointb@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK14QWidgetPrivate15getOpaqueRegionEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK14QWidgetPrivate15paintBackgroundEP8QPainterRK7QRegionRK6QPointi@Base 4:4.5.3
  _ZNK14QWidgetPrivate15paintBackgroundEP8QPainterRK7QRegioni@Base 4:4.6.1
  _ZNK14QWidgetPrivate17getOpaqueChildrenEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK14QWidgetPrivate17maybeBackingStoreEv@Base 4:4.5.3
  _ZNK14QWidgetPrivate17naturalWidgetFontEj@Base 4:4.5.3
  _ZNK14QWidgetPrivate18sendStartupMessageEPKc@Base 4:4.5.3
  _ZNK14QWidgetPrivate19clipToEffectiveMaskER7QRegion@Base 4:4.5.3
  _ZNK14QWidgetPrivate20getLayoutItemMarginsEPiS0_S0_S0_@Base 4:4.5.3
  _ZNK14QWidgetPrivate20naturalWidgetPaletteEj@Base 4:4.5.3
  _ZNK14QWidgetPrivate21isBackgroundInheritedEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK14QWidgetPrivate22fromOrToLayoutItemRectERK5QRecti@Base 4:4.5.3
  _ZNK14QWidgetPrivate22subtractOpaqueChildrenER7QRegionRK5QRect@Base 4:4.5.3
  _ZNK14QWidgetPrivate22subtractOpaqueSiblingsER7QRegionPbb@Base 4:4.5.3
  _ZNK14QWidgetPrivate8clipRectEv@Base 4:4.5.3
@@ -9806,6 +10039,20 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK16QFileSystemModel8rootPathEv@Base 4:4.5.3
  _ZNK16QFileSystemModel8rowCountERK11QModelIndex@Base 4:4.5.3
  _ZNK16QFileSystemModel9mimeTypesEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK16QFontEngineMulti12maxCharWidthEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK16QFontEngineMulti12stringToCMapEPK5QChariP12QGlyphLayoutPi6QFlagsIN11QTextEngine10ShaperFlagEE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK16QFontEngineMulti13lineThicknessEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK16QFontEngineMulti14minLeftBearingEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK16QFontEngineMulti14recalcAdvancesEP12QGlyphLayout6QFlagsIN11QTextEngine10ShaperFlagEE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK16QFontEngineMulti15minRightBearingEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK16QFontEngineMulti16averageCharWidthEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK16QFontEngineMulti17underlinePositionEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK16QFontEngineMulti6ascentEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK16QFontEngineMulti6engineEi@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK16QFontEngineMulti7descentEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK16QFontEngineMulti7leadingEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK16QFontEngineMulti7xHeightEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK16QFontEngineMulti9doKerningEP12QGlyphLayout6QFlagsIN11QTextEngine10ShaperFlagEE@Base 4:4.5.3
  _ZNK16QFontEngineX11FT19uploadGlyphToServerEPN13QFontEngineFT9QGlyphSetEjPNS0_5GlyphEP11_XGlyphInfoi@Base 4:4.5.3
  _ZNK16QPageSetupDialog10metaObjectEv@Base 4:4.5.3
  _ZNK16QPageSetupDialog10testOptionENS_21PageSetupDialogOptionE@Base 4:4.5.3
@@ -9996,6 +10243,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK17QRasterPixmapData26createCompatiblePixmapDataEv@Base 4:4.6.1
  _ZNK17QRasterPixmapData6metricEN12QPaintDevice17PaintDeviceMetricE@Base 4:4.5.3
  _ZNK17QRasterPixmapData7toImageEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK17QTextImageHandler10metaObjectEv@Base 4:4.5.3
  _ZNK17QTextInlineObject11formatIndexEv@Base 4:4.5.3
  _ZNK17QTextInlineObject12textPositionEv@Base 4:4.5.3
  _ZNK17QTextInlineObject13textDirectionEv@Base 4:4.5.3
@@ -10241,6 +10489,14 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK20QGraphicsProxyWidget4typeEv@Base 4:4.5.3
  _ZNK20QGraphicsProxyWidget6widgetEv@Base 4:4.5.3
  _ZNK20QGraphicsProxyWidget8sizeHintEN2Qt8SizeHintERK6QSizeF@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK20QGraphicsViewPrivate11itemsInAreaERK12QPainterPathN2Qt17ItemSelectionModeENS3_9SortOrderE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK20QGraphicsViewPrivate13mapToViewRectEPK13QGraphicsItemRK6QRectF@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK20QGraphicsViewPrivate14verticalScrollEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK20QGraphicsViewPrivate15mapToViewRegionEPK13QGraphicsItemRK6QRectF@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK20QGraphicsViewPrivate16horizontalScrollEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK20QGraphicsViewPrivate16rubberBandRegionEPK7QWidgetRK5QRect@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK20QGraphicsViewPrivate20generateStyleOptionsERK5QListIP13QGraphicsItemEPS2_P24QStyleOptionGraphicsItemRK10QTransformbRK7QRegion@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK20QGraphicsViewPrivate9findItemsERK7QRegionPb@Base 4:4.5.3
  _ZNK20QPaintBufferResource10metaObjectEv@Base 4:4.6.1
  _ZNK20QPictureFormatPlugin10metaObjectEv@Base 4:4.5.3
  _ZNK20QWidgetResizeHandler10metaObjectEv@Base 4:4.5.3
@@ -10352,6 +10608,11 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK22QGraphicsOpacityEffect10metaObjectEv@Base 4:4.6.1
  _ZNK22QGraphicsOpacityEffect11opacityMaskEv@Base 4:4.6.1
  _ZNK22QGraphicsOpacityEffect7opacityEv@Base 4:4.6.1
+#MISSING: 4:4.6.1# _ZNK22QGraphicsWidgetPrivate13hasDecorationEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK22QGraphicsWidgetPrivate14titleBarHeightERK20QStyleOptionTitleBar@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK22QGraphicsWidgetPrivate17naturalWidgetFontEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# (subst)_ZNK22QGraphicsWidgetPrivate20getLayoutItemMarginsEP{qreal}S0_S0_S0_@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK22QGraphicsWidgetPrivate20naturalWidgetPaletteEv@Base 4:4.5.3
  _ZNK23QAccessibleBridgePlugin10metaObjectEv@Base 4:4.5.3
  _ZNK23QGraphicsColorizeEffect10metaObjectEv@Base 4:4.6.1
  _ZNK23QGraphicsColorizeEffect5colorEv@Base 4:4.6.1
@@ -10370,6 +10631,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK23QGraphicsSimpleTextItem5shapeEv@Base 4:4.5.3
  _ZNK23QGraphicsSimpleTextItem8containsERK7QPointF@Base 4:4.5.3
  _ZNK23QGraphicsSimpleTextItem9extensionERK8QVariant@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK23QImageTextureGlyphCache11glyphMarginEv@Base 4:4.5.3
  _ZNK23QPaintBufferSignalProxy10metaObjectEv@Base 4:4.6.1
  _ZNK23QPixmapDropShadowFilter10blurRadiusEv@Base 4:4.5.3
  _ZNK23QPixmapDropShadowFilter10metaObjectEv@Base 4:4.5.3
@@ -10379,6 +10641,20 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK23QPixmapDropShadowFilter6offsetEv@Base 4:4.5.3
  _ZNK23QTreeWidgetItemIterator12matchesFlagsEPK15QTreeWidgetItem@Base 4:4.5.3
  _ZNK23QWindowStateChangeEvent10isOverrideEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK24QAbstractItemViewPrivate10shouldEditEN17QAbstractItemView11EditTriggerERK11QModelIndex@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK24QAbstractItemViewPrivate13viewOptionsV4Ev@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK24QAbstractItemViewPrivate14editorForIndexERK11QModelIndex@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK24QAbstractItemViewPrivate14indexForEditorEP7QWidget@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK24QAbstractItemViewPrivate14renderToPixmapERK5QListI11QModelIndexEP5QRect@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK24QAbstractItemViewPrivate16shouldAutoScrollERK6QPoint@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK24QAbstractItemViewPrivate17sendDelegateEventERK11QModelIndexP6QEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK24QAbstractItemViewPrivate18shouldForwardEventEN17QAbstractItemView11EditTriggerEPK6QEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK24QAbstractItemViewPrivate21multiSelectionCommandERK11QModelIndexPK6QEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK24QAbstractItemViewPrivate24extendedSelectionCommandERK11QModelIndexPK6QEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK24QAbstractItemViewPrivate24selectedDraggableIndexesEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK24QAbstractItemViewPrivate26contiguousSelectionCommandERK11QModelIndexPK6QEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK24QAbstractItemViewPrivate27interruptDelayedItemsLayoutEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK24QAbstractItemViewPrivate8positionERK6QPointRK5QRectRK11QModelIndex@Base 4:4.5.3
  _ZNK24QAbstractPageSetupDialog10metaObjectEv@Base 4:4.5.3
  _ZNK24QGraphicsSceneHoverEvent12lastScenePosEv@Base 4:4.5.3
  _ZNK24QGraphicsSceneHoverEvent13lastScreenPosEv@Base 4:4.5.3
@@ -10433,6 +10709,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK26QAbstractGraphicsShapeItem12isObscuredByEPK13QGraphicsItem@Base 4:4.5.3
  _ZNK26QAbstractGraphicsShapeItem3penEv@Base 4:4.5.3
  _ZNK26QAbstractGraphicsShapeItem5brushEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK26QAbstractScrollAreaPrivate14contentsOffsetEv@Base 4:4.5.3
  _ZNK27QAbstractTextDocumentLayout10metaObjectEv@Base 4:4.5.3
  _ZNK27QAbstractTextDocumentLayout11paintDeviceEv@Base 4:4.5.3
  _ZNK27QAbstractTextDocumentLayout16handlerForObjectEi@Base 4:4.5.3
@@ -10453,11 +10730,33 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK30QGraphicsSceneContextMenuEvent8scenePosEv@Base 4:4.5.3
  _ZNK30QGraphicsSceneContextMenuEvent9modifiersEv@Base 4:4.5.3
  _ZNK30QGraphicsSceneContextMenuEvent9screenPosEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK4QCss11Declaration10brushValueERK8QPalette@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK4QCss11Declaration10colorValueERK8QPalette@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK4QCss11Declaration10styleValueEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK4QCss11Declaration11brushValuesEP6QBrushRK8QPalette@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK4QCss11Declaration11colorValuesEP6QColorRK8QPalette@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK4QCss11Declaration11originValueEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK4QCss11Declaration11repeatValueEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK4QCss11Declaration11styleValuesEPNS_11BorderStyleE@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK4QCss11Declaration13positionValueEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK4QCss11Declaration14alignmentValueEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK4QCss11Declaration15attachmentValueEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK4QCss11Declaration16borderImageValueEP7QStringPiPNS_8TileModeES5_@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK4QCss11Declaration18styleFeaturesValueEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK4QCss11Declaration8intValueEPiPKc@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK4QCss11Declaration8uriValueEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK4QCss11Declaration9iconValueEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# (subst)_ZNK4QCss11Declaration9realValueEP{qreal}PKc@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK4QCss11Declaration9rectValueEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK4QCss11Declaration9sizeValueEv@Base 4:4.5.3
  _ZNK4QCss13StyleSelector14nodeNameEqualsENS0_7NodePtrERK7QString@Base 4:4.5.3
  _ZNK4QCss13StyleSelector7nodeIdsENS0_7NodePtrE@Base 4:4.5.3
  _ZNK4QCss5Value8toStringEv@Base 4:4.5.3
  _ZNK4QCss6Parser13unquotedLexemEv@Base 4:4.5.3
  _ZNK4QCss6Symbol5lexemEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK4QCss8Selector11pseudoClassEPy@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK4QCss8Selector11specificityEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK4QCss8Selector13pseudoElementEv@Base 4:4.5.3
  _ZNK4QPen10dashOffsetEv@Base 4:4.5.3
  _ZNK4QPen10isCosmeticEv@Base 4:4.5.3
  _ZNK4QPen10miterLimitEv@Base 4:4.5.3
@@ -10552,6 +10851,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK5QMenu7isEmptyEv@Base 4:4.5.3
  _ZNK5QMenu8actionAtERK6QPoint@Base 4:4.5.3
  _ZNK5QMenu8sizeHintEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# (arch=amd64 armel hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390)_ZNK5QRect11intersectedERKS_@Base 4:4.5.3
  _ZNK5QRect6centerEv@Base 4:4.5.3
  _ZNK6QBrush12textureImageEv@Base 4:4.5.3
  _ZNK6QBrush6pixmapEv@Base 4:4.5.3
@@ -10590,6 +10890,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK6QColor5valueEv@Base 4:4.5.3
  _ZNK6QColor6alphaFEv@Base 4:4.5.3
  _ZNK6QColor6blackFEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK6QColor6darkerEi@Base 4:4.5.3
  _ZNK6QColor6getHslEPiS0_S0_S0_@Base 4:4.6.1
  _ZNK6QColor6getHsvEPiS0_S0_S0_@Base 4:4.5.3
  _ZNK6QColor6getRgbEPiS0_S0_S0_@Base 4:4.5.3
@@ -10604,6 +10905,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (subst)_ZNK6QColor7getRgbFEP{qreal}S0_S0_S0_@Base 4:4.5.3
  _ZNK6QColor7hslHueFEv@Base 4:4.6.1
  _ZNK6QColor7hsvHueFEv@Base 4:4.6.1
+#MISSING: 4:4.6.1# _ZNK6QColor7lighterEi@Base 4:4.5.3
  _ZNK6QColor7magentaEv@Base 4:4.5.3
  _ZNK6QColor7yellowFEv@Base 4:4.5.3
  _ZNK6QColor8magentaFEv@Base 4:4.5.3
@@ -10715,6 +11017,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK6QMovie9cacheModeEv@Base 4:4.5.3
  _ZNK6QMovie9frameRectEv@Base 4:4.5.3
  _ZNK6QMovie9loopCountEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# (arch=hurd-i386 i386 ia64 kfreebsd-i386 mips mipsel)_ZNK6QRectF11intersectedERKS_@Base 4:4.5.3
  _ZNK6QRectF6toRectEv@Base 4:4.5.3
  _ZNK6QSound10isFinishedEv@Base 4:4.5.3
  _ZNK6QSound10metaObjectEv@Base 4:4.5.3
@@ -11016,6 +11319,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK7QWidget8hasFocusEv@Base 4:4.5.3
  _ZNK7QWidget8sizeHintEv@Base 4:4.5.3
  _ZNK7QWidget9frameSizeEv@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZNK7QWidget9isVisibleEv@Base 4:4.5.3
  _ZNK7QWidget9statusTipEv@Base 4:4.5.3
  _ZNK7QWidget9whatsThisEv@Base 4:4.5.3
  _ZNK7QWizard10buttonTextENS_12WizardButtonE@Base 4:4.5.3
@@ -11603,6 +11907,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTI11QHoverEvent@Base 4:4.5.3
  _ZTI11QIconEngine@Base 4:4.5.3
  _ZTI11QInputEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTI11QKeyEventEx@Base 4:4.5.3
  _ZTI11QLayoutItem@Base 4:4.5.3
  _ZTI11QListWidget@Base 4:4.5.3
  _ZTI11QMainWindow@Base 4:4.5.3
@@ -11636,6 +11941,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTI12QColorDialog@Base 4:4.5.3
  _ZTI12QCommonStyle@Base 4:4.5.3
  _ZTI12QDashStroker@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTI12QDragManager@Base 4:4.5.3
  _ZTI12QInputDialog@Base 4:4.5.3
  _ZTI12QLineControl@Base 4:4.6.1
  _ZTI12QPaintBuffer@Base 4:4.6.1
@@ -11652,11 +11958,13 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTI12QTessellator@Base 4:4.5.3
  _ZTI12QTextBrowser@Base 4:4.5.3
  _ZTI12QTextControl@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTI12QToolBarItem@Base 4:4.5.3
  _ZTI12QUndoCommand@Base 4:4.5.3
  _ZTI13QDateTimeEdit@Base 4:4.5.3
  _ZTI13QErrorMessage@Base 4:4.5.3
  _ZTI13QFontComboBox@Base 4:4.5.3
  _ZTI13QFontEngineFT@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTI13QFramePrivate@Base 4:4.5.3
  _ZTI13QGestureEvent@Base 4:4.6.1
  _ZTI13QGraphicsItem@Base 4:4.5.3
  _ZTI13QGraphicsView@Base 4:4.5.3
@@ -11665,6 +11973,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTI13QIntValidator@Base 4:4.5.3
  _ZTI13QItemDelegate@Base 4:4.5.3
  _ZTI13QMdiSubWindow@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTI13QMouseEventEx@Base 4:4.5.3
  _ZTI13QPainterState@Base 4:4.5.3
  _ZTI13QPinchGesture@Base 4:4.6.1
  _ZTI13QPixmapFilter@Base 4:4.5.3
@@ -11689,6 +11998,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTI14QShortcutEvent@Base 4:4.5.3
  _ZTI14QStackedLayout@Base 4:4.5.3
  _ZTI14QStackedWidget@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTI14QToolBarLayout@Base 4:4.5.3
  _ZTI14QWidgetPrivate@Base 4:4.5.3
  _ZTI14QWindowSurface@Base 4:4.5.3
  _ZTI14QX11PixmapData@Base 4:4.5.3
@@ -11720,6 +12030,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTI16QDialogButtonBox@Base 4:4.5.3
  _ZTI16QDoubleValidator@Base 4:4.5.3
  _ZTI16QFileSystemModel@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTI16QFontEngineMulti@Base 4:4.5.3
  _ZTI16QFontEngineX11FT@Base 4:4.5.3
  _ZTI16QPageSetupDialog@Base 4:4.5.3
  _ZTI16QPainterReplayer@Base 4:4.6.1
@@ -11746,6 +12057,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTI17QPaintEngineState@Base 4:4.5.3
  _ZTI17QPixmapBlurFilter@Base 4:4.6.1
  _ZTI17QRasterPixmapData@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTI17QTextImageHandler@Base 4:4.5.3
  _ZTI18QCommandLinkButton@Base 4:4.5.3
  _ZTI18QDragResponseEvent@Base 4:4.5.3
  _ZTI18QFontEngineMultiFT@Base 4:4.5.3
@@ -11754,6 +12066,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTI18QGraphicsTransform@Base 4:4.6.1
  _ZTI18QGuiPlatformPlugin@Base 4:4.6.1
  _ZTI18QItemEditorFactory@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTI18QPixmapDataFactory@Base 4:4.5.3
  _ZTI18QStandardItemModel@Base 4:4.5.3
  _ZTI18QSyntaxHighlighter@Base 4:4.5.3
  _ZTI18QTapAndHoldGesture@Base 4:4.6.1
@@ -11784,6 +12097,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTI20QGraphicsItemPrivate@Base 4:4.6.1
  _ZTI20QGraphicsPolygonItem@Base 4:4.5.3
  _ZTI20QGraphicsProxyWidget@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTI20QGraphicsViewPrivate@Base 4:4.5.3
  _ZTI20QMenubarUpdatedEvent@Base 4:4.5.3
  _ZTI20QPaintBufferResource@Base 4:4.6.1
  _ZTI20QPictureFormatPlugin@Base 4:4.5.3
@@ -11793,6 +12107,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTI20QWidgetResizeHandler@Base 4:4.5.3
  _ZTI21QAbstractItemDelegate@Base 4:4.5.3
  _ZTI21QAccessible2Interface@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTI21QFontEngineGlyphCache@Base 4:4.5.3
  _ZTI21QGraphicsAnchorLayout@Base 4:4.6.1
  _ZTI21QGraphicsEffectSource@Base 4:4.6.1
  _ZTI21QGraphicsLinearLayout@Base 4:4.5.3
@@ -11806,6 +12121,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTI22QGraphicsEffectPrivate@Base 4:4.6.1
  _ZTI22QGraphicsItemAnimation@Base 4:4.5.3
  _ZTI22QGraphicsOpacityEffect@Base 4:4.6.1
+#MISSING: 4:4.6.1# _ZTI22QGraphicsWidgetPrivate@Base 4:4.5.3
  _ZTI22QPaintEngineExReplayer@Base 4:4.6.1
  _ZTI22QStyleFactoryInterface@Base 4:4.5.3
  _ZTI22QWhatsThisClickedEvent@Base 4:4.5.3
@@ -11815,10 +12131,12 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTI23QGraphicsSceneHelpEvent@Base 4:4.5.3
  _ZTI23QGraphicsSceneMoveEvent@Base 4:4.5.3
  _ZTI23QGraphicsSimpleTextItem@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTI23QImageTextureGlyphCache@Base 4:4.5.3
  _ZTI23QPaintBufferSignalProxy@Base 4:4.6.1
  _ZTI23QPictureFormatInterface@Base 4:4.5.3
  _ZTI23QPixmapDropShadowFilter@Base 4:4.5.3
  _ZTI23QWindowStateChangeEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTI24QAbstractItemViewPrivate@Base 4:4.5.3
  _ZTI24QAbstractPageSetupDialog@Base 4:4.5.3
  _ZTI24QGraphicsSceneHoverEvent@Base 4:4.5.3
  _ZTI24QGraphicsSceneMouseEvent@Base 4:4.5.3
@@ -11829,6 +12147,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTI25QGraphicsDropShadowEffect@Base 4:4.6.1
  _ZTI25QGraphicsSceneResizeEvent@Base 4:4.5.3
  _ZTI26QAbstractGraphicsShapeItem@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTI26QAbstractScrollAreaPrivate@Base 4:4.5.3
  _ZTI27QAbstractTextDocumentLayout@Base 4:4.5.3
  _ZTI27QAccessibleFactoryInterface@Base 4:4.5.3
  _ZTI27QEventDispatcherGlibPrivate@Base 4:4.5.3
@@ -11839,6 +12158,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTI29QInputContextFactoryInterface@Base 4:4.5.3
  _ZTI30QGraphicsSceneContextMenuEvent@Base 4:4.5.3
  _ZTI31QAbstractEventDispatcherPrivate@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTI31QGraphicsSystemFactoryInterface@Base 4:4.5.3
  _ZTI31QImageIOHandlerFactoryInterface@Base 4:4.5.3
  _ZTI32QAccessibleEditableTextInterface@Base 4:4.5.3
  _ZTI33QAccessibleBridgeFactoryInterface@Base 4:4.5.3
@@ -11925,6 +12245,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTS11QHoverEvent@Base 4:4.5.3
  _ZTS11QIconEngine@Base 4:4.5.3
  _ZTS11QInputEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTS11QKeyEventEx@Base 4:4.5.3
  _ZTS11QLayoutItem@Base 4:4.5.3
  _ZTS11QListWidget@Base 4:4.5.3
  _ZTS11QMainWindow@Base 4:4.5.3
@@ -11958,6 +12279,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTS12QColorDialog@Base 4:4.5.3
  _ZTS12QCommonStyle@Base 4:4.5.3
  _ZTS12QDashStroker@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTS12QDragManager@Base 4:4.5.3
  _ZTS12QInputDialog@Base 4:4.5.3
  _ZTS12QLineControl@Base 4:4.6.1
  _ZTS12QPaintBuffer@Base 4:4.6.1
@@ -11974,11 +12296,13 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTS12QTessellator@Base 4:4.5.3
  _ZTS12QTextBrowser@Base 4:4.5.3
  _ZTS12QTextControl@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTS12QToolBarItem@Base 4:4.5.3
  _ZTS12QUndoCommand@Base 4:4.5.3
  _ZTS13QDateTimeEdit@Base 4:4.5.3
  _ZTS13QErrorMessage@Base 4:4.5.3
  _ZTS13QFontComboBox@Base 4:4.5.3
  _ZTS13QFontEngineFT@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTS13QFramePrivate@Base 4:4.5.3
  _ZTS13QGestureEvent@Base 4:4.6.1
  _ZTS13QGraphicsItem@Base 4:4.5.3
  _ZTS13QGraphicsView@Base 4:4.5.3
@@ -11987,6 +12311,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTS13QIntValidator@Base 4:4.5.3
  _ZTS13QItemDelegate@Base 4:4.5.3
  _ZTS13QMdiSubWindow@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTS13QMouseEventEx@Base 4:4.5.3
  _ZTS13QPainterState@Base 4:4.5.3
  _ZTS13QPinchGesture@Base 4:4.6.1
  _ZTS13QPixmapFilter@Base 4:4.5.3
@@ -12011,6 +12336,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTS14QShortcutEvent@Base 4:4.5.3
  _ZTS14QStackedLayout@Base 4:4.5.3
  _ZTS14QStackedWidget@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTS14QToolBarLayout@Base 4:4.5.3
  _ZTS14QWidgetPrivate@Base 4:4.5.3
  _ZTS14QWindowSurface@Base 4:4.5.3
  _ZTS14QX11PixmapData@Base 4:4.5.3
@@ -12042,6 +12368,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTS16QDialogButtonBox@Base 4:4.5.3
  _ZTS16QDoubleValidator@Base 4:4.5.3
  _ZTS16QFileSystemModel@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTS16QFontEngineMulti@Base 4:4.5.3
  _ZTS16QFontEngineX11FT@Base 4:4.5.3
  _ZTS16QPageSetupDialog@Base 4:4.5.3
  _ZTS16QPainterReplayer@Base 4:4.6.1
@@ -12068,6 +12395,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTS17QPaintEngineState@Base 4:4.5.3
  _ZTS17QPixmapBlurFilter@Base 4:4.6.1
  _ZTS17QRasterPixmapData@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTS17QTextImageHandler@Base 4:4.5.3
  _ZTS18QCommandLinkButton@Base 4:4.5.3
  _ZTS18QDragResponseEvent@Base 4:4.5.3
  _ZTS18QFontEngineMultiFT@Base 4:4.5.3
@@ -12076,6 +12404,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTS18QGraphicsTransform@Base 4:4.6.1
  _ZTS18QGuiPlatformPlugin@Base 4:4.6.1
  _ZTS18QItemEditorFactory@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTS18QPixmapDataFactory@Base 4:4.5.3
  _ZTS18QStandardItemModel@Base 4:4.5.3
  _ZTS18QSyntaxHighlighter@Base 4:4.5.3
  _ZTS18QTapAndHoldGesture@Base 4:4.6.1
@@ -12106,6 +12435,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTS20QGraphicsItemPrivate@Base 4:4.6.1
  _ZTS20QGraphicsPolygonItem@Base 4:4.5.3
  _ZTS20QGraphicsProxyWidget@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTS20QGraphicsViewPrivate@Base 4:4.5.3
  _ZTS20QMenubarUpdatedEvent@Base 4:4.5.3
  _ZTS20QPaintBufferResource@Base 4:4.6.1
  _ZTS20QPictureFormatPlugin@Base 4:4.5.3
@@ -12115,6 +12445,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTS20QWidgetResizeHandler@Base 4:4.5.3
  _ZTS21QAbstractItemDelegate@Base 4:4.5.3
  _ZTS21QAccessible2Interface@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTS21QFontEngineGlyphCache@Base 4:4.5.3
  _ZTS21QGraphicsAnchorLayout@Base 4:4.6.1
  _ZTS21QGraphicsEffectSource@Base 4:4.6.1
  _ZTS21QGraphicsLinearLayout@Base 4:4.5.3
@@ -12128,6 +12459,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTS22QGraphicsEffectPrivate@Base 4:4.6.1
  _ZTS22QGraphicsItemAnimation@Base 4:4.5.3
  _ZTS22QGraphicsOpacityEffect@Base 4:4.6.1
+#MISSING: 4:4.6.1# _ZTS22QGraphicsWidgetPrivate@Base 4:4.5.3
  _ZTS22QPaintEngineExReplayer@Base 4:4.6.1
  _ZTS22QStyleFactoryInterface@Base 4:4.5.3
  _ZTS22QWhatsThisClickedEvent@Base 4:4.5.3
@@ -12137,10 +12469,12 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTS23QGraphicsSceneHelpEvent@Base 4:4.5.3
  _ZTS23QGraphicsSceneMoveEvent@Base 4:4.5.3
  _ZTS23QGraphicsSimpleTextItem@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTS23QImageTextureGlyphCache@Base 4:4.5.3
  _ZTS23QPaintBufferSignalProxy@Base 4:4.6.1
  _ZTS23QPictureFormatInterface@Base 4:4.5.3
  _ZTS23QPixmapDropShadowFilter@Base 4:4.5.3
  _ZTS23QWindowStateChangeEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTS24QAbstractItemViewPrivate@Base 4:4.5.3
  _ZTS24QAbstractPageSetupDialog@Base 4:4.5.3
  _ZTS24QGraphicsSceneHoverEvent@Base 4:4.5.3
  _ZTS24QGraphicsSceneMouseEvent@Base 4:4.5.3
@@ -12151,6 +12485,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTS25QGraphicsDropShadowEffect@Base 4:4.6.1
  _ZTS25QGraphicsSceneResizeEvent@Base 4:4.5.3
  _ZTS26QAbstractGraphicsShapeItem@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTS26QAbstractScrollAreaPrivate@Base 4:4.5.3
  _ZTS27QAbstractTextDocumentLayout@Base 4:4.5.3
  _ZTS27QAccessibleFactoryInterface@Base 4:4.5.3
  _ZTS27QEventDispatcherGlibPrivate@Base 4:4.5.3
@@ -12161,6 +12496,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTS29QInputContextFactoryInterface@Base 4:4.5.3
  _ZTS30QGraphicsSceneContextMenuEvent@Base 4:4.5.3
  _ZTS31QAbstractEventDispatcherPrivate@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTS31QGraphicsSystemFactoryInterface@Base 4:4.5.3
  _ZTS31QImageIOHandlerFactoryInterface@Base 4:4.5.3
  _ZTS32QAccessibleEditableTextInterface@Base 4:4.5.3
  _ZTS33QAccessibleBridgeFactoryInterface@Base 4:4.5.3
@@ -12246,6 +12582,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV11QHoverEvent@Base 4:4.5.3
  _ZTV11QIconEngine@Base 4:4.5.3
  _ZTV11QInputEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTV11QKeyEventEx@Base 4:4.5.3
  _ZTV11QLayoutItem@Base 4:4.5.3
  _ZTV11QListWidget@Base 4:4.5.3
  _ZTV11QMainWindow@Base 4:4.5.3
@@ -12279,6 +12616,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV12QColorDialog@Base 4:4.5.3
  _ZTV12QCommonStyle@Base 4:4.5.3
  _ZTV12QDashStroker@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTV12QDragManager@Base 4:4.5.3
  _ZTV12QInputDialog@Base 4:4.5.3
  _ZTV12QLineControl@Base 4:4.6.1
  _ZTV12QPaintBuffer@Base 4:4.6.1
@@ -12295,11 +12633,13 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV12QTessellator@Base 4:4.5.3
  _ZTV12QTextBrowser@Base 4:4.5.3
  _ZTV12QTextControl@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTV12QToolBarItem@Base 4:4.5.3
  _ZTV12QUndoCommand@Base 4:4.5.3
  _ZTV13QDateTimeEdit@Base 4:4.5.3
  _ZTV13QErrorMessage@Base 4:4.5.3
  _ZTV13QFontComboBox@Base 4:4.5.3
  _ZTV13QFontEngineFT@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTV13QFramePrivate@Base 4:4.5.3
  _ZTV13QGestureEvent@Base 4:4.6.1
  _ZTV13QGraphicsItem@Base 4:4.5.3
  _ZTV13QGraphicsView@Base 4:4.5.3
@@ -12308,6 +12648,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV13QIntValidator@Base 4:4.5.3
  _ZTV13QItemDelegate@Base 4:4.5.3
  _ZTV13QMdiSubWindow@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTV13QMouseEventEx@Base 4:4.5.3
  _ZTV13QPainterState@Base 4:4.5.3
  _ZTV13QPinchGesture@Base 4:4.6.1
  _ZTV13QPixmapFilter@Base 4:4.5.3
@@ -12332,6 +12673,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV14QShortcutEvent@Base 4:4.5.3
  _ZTV14QStackedLayout@Base 4:4.5.3
  _ZTV14QStackedWidget@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTV14QToolBarLayout@Base 4:4.5.3
  _ZTV14QWidgetPrivate@Base 4:4.5.3
  _ZTV14QWindowSurface@Base 4:4.5.3
  _ZTV14QX11PixmapData@Base 4:4.5.3
@@ -12363,6 +12705,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV16QDialogButtonBox@Base 4:4.5.3
  _ZTV16QDoubleValidator@Base 4:4.5.3
  _ZTV16QFileSystemModel@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTV16QFontEngineMulti@Base 4:4.5.3
  _ZTV16QFontEngineX11FT@Base 4:4.5.3
  _ZTV16QPageSetupDialog@Base 4:4.5.3
  _ZTV16QPainterReplayer@Base 4:4.6.1
@@ -12388,6 +12731,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV17QInputMethodEvent@Base 4:4.5.3
  _ZTV17QPixmapBlurFilter@Base 4:4.6.1
  _ZTV17QRasterPixmapData@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTV17QTextImageHandler@Base 4:4.5.3
  _ZTV18QCommandLinkButton@Base 4:4.5.3
  _ZTV18QDragResponseEvent@Base 4:4.5.3
  _ZTV18QFontEngineMultiFT@Base 4:4.5.3
@@ -12396,6 +12740,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV18QGraphicsTransform@Base 4:4.6.1
  _ZTV18QGuiPlatformPlugin@Base 4:4.6.1
  _ZTV18QItemEditorFactory@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTV18QPixmapDataFactory@Base 4:4.5.3
  _ZTV18QStandardItemModel@Base 4:4.5.3
  _ZTV18QSyntaxHighlighter@Base 4:4.5.3
  _ZTV18QTapAndHoldGesture@Base 4:4.6.1
@@ -12426,6 +12771,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV20QGraphicsItemPrivate@Base 4:4.6.1
  _ZTV20QGraphicsPolygonItem@Base 4:4.5.3
  _ZTV20QGraphicsProxyWidget@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTV20QGraphicsViewPrivate@Base 4:4.5.3
  _ZTV20QMenubarUpdatedEvent@Base 4:4.5.3
  _ZTV20QPaintBufferResource@Base 4:4.6.1
  _ZTV20QPictureFormatPlugin@Base 4:4.5.3
@@ -12435,6 +12781,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV20QWidgetResizeHandler@Base 4:4.5.3
  _ZTV21QAbstractItemDelegate@Base 4:4.5.3
  _ZTV21QAccessible2Interface@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTV21QFontEngineGlyphCache@Base 4:4.5.3
  _ZTV21QGraphicsAnchorLayout@Base 4:4.6.1
  _ZTV21QGraphicsEffectSource@Base 4:4.6.1
  _ZTV21QGraphicsLinearLayout@Base 4:4.5.3
@@ -12448,6 +12795,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV22QGraphicsEffectPrivate@Base 4:4.6.1
  _ZTV22QGraphicsItemAnimation@Base 4:4.5.3
  _ZTV22QGraphicsOpacityEffect@Base 4:4.6.1
+#MISSING: 4:4.6.1# _ZTV22QGraphicsWidgetPrivate@Base 4:4.5.3
  _ZTV22QPaintEngineExReplayer@Base 4:4.6.1
  _ZTV22QStyleFactoryInterface@Base 4:4.5.3
  _ZTV22QWhatsThisClickedEvent@Base 4:4.5.3
@@ -12457,10 +12805,12 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV23QGraphicsSceneHelpEvent@Base 4:4.5.3
  _ZTV23QGraphicsSceneMoveEvent@Base 4:4.5.3
  _ZTV23QGraphicsSimpleTextItem@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTV23QImageTextureGlyphCache@Base 4:4.5.3
  _ZTV23QPaintBufferSignalProxy@Base 4:4.6.1
  _ZTV23QPictureFormatInterface@Base 4:4.5.3
  _ZTV23QPixmapDropShadowFilter@Base 4:4.5.3
  _ZTV23QWindowStateChangeEvent@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTV24QAbstractItemViewPrivate@Base 4:4.5.3
  _ZTV24QAbstractPageSetupDialog@Base 4:4.5.3
  _ZTV24QGraphicsSceneHoverEvent@Base 4:4.5.3
  _ZTV24QGraphicsSceneMouseEvent@Base 4:4.5.3
@@ -12471,6 +12821,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV25QGraphicsDropShadowEffect@Base 4:4.6.1
  _ZTV25QGraphicsSceneResizeEvent@Base 4:4.5.3
  _ZTV26QAbstractGraphicsShapeItem@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTV26QAbstractScrollAreaPrivate@Base 4:4.5.3
  _ZTV27QAbstractTextDocumentLayout@Base 4:4.5.3
  _ZTV27QAccessibleFactoryInterface@Base 4:4.5.3
  _ZTV27QEventDispatcherGlibPrivate@Base 4:4.5.3
@@ -12481,6 +12832,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV29QInputContextFactoryInterface@Base 4:4.5.3
  _ZTV30QGraphicsSceneContextMenuEvent@Base 4:4.5.3
  _ZTV31QAbstractEventDispatcherPrivate@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZTV31QGraphicsSystemFactoryInterface@Base 4:4.5.3
  _ZTV31QImageIOHandlerFactoryInterface@Base 4:4.5.3
  _ZTV32QAccessibleEditableTextInterface@Base 4:4.5.3
  _ZTV33QAccessibleBridgeFactoryInterface@Base 4:4.5.3
@@ -12533,6 +12885,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV9QUndoView@Base 4:4.5.3
  _ZTVN4QCss13StyleSelectorE@Base 4:4.5.3
  _ZdvRK10QMatrix4x4d@Base 4:4.6.1
+#MISSING: 4:4.6.1# (arch=!armel)_ZeqRK6QRectFS1_@Base 4:4.5.3
  _Zls6QDebug6QFlagsIN13QGraphicsItem16GraphicsItemFlagEE@Base 4:4.5.3
  _Zls6QDebug6QFlagsIN6QStyle9StateFlagEE@Base 4:4.6.1
  _Zls6QDebugN13QGraphicsItem16GraphicsItemFlagE@Base 4:4.5.3
@@ -12593,6 +12946,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZlsR11QTextStreamRK9QSplitter@Base 4:4.5.3
  _ZlsR6QDebugRK11QVectorPath@Base 4:4.5.3
  _ZmlRK12QPainterPathRK7QMatrix@Base 4:4.5.3
+#MISSING: 4:4.6.1# (arch=!armel)_ZmlRK7QPointFRK10QTransform@Base 4:4.5.3
+#MISSING: 4:4.6.1# _ZneRK6QRectFS1_@Base 4:4.5.3
  _ZrsR11QDataStreamR10QMatrix4x4@Base 4:4.6.1
  _ZrsR11QDataStreamR10QTransform@Base 4:4.5.3
  _ZrsR11QDataStreamR11QColorGroup@Base 4:4.5.3
@@ -12816,7 +13171,16 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (c++)"non-virtual thunk to QTableWidget::~QTableWidget()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QTextBrowser::~QTextBrowser()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QTextEdit::~QTextEdit()@Base" 4:4.5.3
+#MISSING: 4:4.6.1# (c++)"non-virtual thunk to QTextImageHandler::drawObject(QPainter*, QRectF const&, QTextDocument*, int, QTextFormat const&)@Base" 4:4.5.3
+#MISSING: 4:4.6.1# (c++)"non-virtual thunk to QTextImageHandler::intrinsicSize(QTextDocument*, int, QTextFormat const&)@Base" 4:4.5.3
  (c++)"non-virtual thunk to QToolBar::~QToolBar()@Base" 4:4.5.3
+#MISSING: 4:4.6.1# (c++)"non-virtual thunk to QToolBarLayout::expandingDirections() const@Base" 4:4.5.3
+#MISSING: 4:4.6.1# (c++)"non-virtual thunk to QToolBarLayout::invalidate()@Base" 4:4.5.3
+#MISSING: 4:4.6.1# (c++)"non-virtual thunk to QToolBarLayout::isEmpty() const@Base" 4:4.5.3
+#MISSING: 4:4.6.1# (c++)"non-virtual thunk to QToolBarLayout::minimumSize() const@Base" 4:4.5.3
+#MISSING: 4:4.6.1# (c++)"non-virtual thunk to QToolBarLayout::setGeometry(QRect const&)@Base" 4:4.5.3
+#MISSING: 4:4.6.1# (c++)"non-virtual thunk to QToolBarLayout::sizeHint() const@Base" 4:4.5.3
+#MISSING: 4:4.6.1# (c++)"non-virtual thunk to QToolBarLayout::~QToolBarLayout()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QToolBox::~QToolBox()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QToolButton::~QToolButton()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QTreeView::~QTreeView()@Base" 4:4.5.3
@@ -12832,6 +13196,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (c++)"non-virtual thunk to QWorkspace::~QWorkspace()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QX11EmbedContainer::~QX11EmbedContainer()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QX11EmbedWidget::~QX11EmbedWidget()@Base" 4:4.5.3
+#MISSING: 4:4.6.1# qt_enable_test_font@Base 4:4.5.3
  qt_filedialog_existing_directory_hook@Base 4:4.5.3
  qt_filedialog_open_filename_hook@Base 4:4.5.3
  qt_filedialog_open_filenames_hook@Base 4:4.5.3
