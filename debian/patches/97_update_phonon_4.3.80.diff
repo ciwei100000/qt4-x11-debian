@@ -70,7 +70,7 @@ Author: Fathi Boudra <fabo@debian.org>
  
  static void arts_sink_dispose (GObject * object)
 --- /dev/null
-+++ b/gstreamer/audiodataoutput.cpp
++++ b/src/3rdparty/phonon/gstreamer/audiodataoutput.cpp
 @@ -0,0 +1,143 @@
 +/*  This file is part of the KDE project
 +    Copyright (C) 2006 Matthias Kretz <kretz@kde.org>
@@ -216,7 +216,7 @@ Author: Fathi Boudra <fabo@debian.org>
 +// vim: sw=4 ts=4
 +
 --- /dev/null
-+++ b/gstreamer/audiodataoutput.h
++++ b/src/3rdparty/phonon/gstreamer/audiodataoutput.h
 @@ -0,0 +1,84 @@
 +/*  This file is part of the KDE project
 +    Copyright (C) 2006 Matthias Kretz <kretz@kde.org>
@@ -1468,7 +1468,7 @@ Author: Fathi Boudra <fabo@debian.org>
  }
  } //namespace Phonon::Gstreamer
 --- /dev/null
-+++ b/gstreamer/phonon-config-gstreamer.h.cmake
++++ b/src/3rdparty/phonon/gstreamer/phonon-config-gstreamer.h.cmake
 @@ -0,0 +1,5 @@
 +/* GStreamer install plugin definitions */
 +
@@ -1774,7 +1774,7 @@ Author: Fathi Boudra <fabo@debian.org>
          m_renderWidget->setGeometry(m_videoWidget->calculateDrawFrameRect());
      }
 --- /dev/null
-+++ b/Mainpage.dox
++++ b/src/3rdparty/phonon/Mainpage.dox
 @@ -0,0 +1,64 @@
 +/** @mainpage The Phonon Library API Reference
 +
@@ -1880,7 +1880,7 @@ Author: Fathi Boudra <fabo@debian.org>
          virtual void setStreamSize(qint64 newSize);
          virtual void setStreamSeekable(bool s);
 --- /dev/null
-+++ b/phonon/audiodataoutput.cpp
++++ b/src/3rdparty/phonon/phonon/audiodataoutput.cpp
 @@ -0,0 +1,68 @@
 +/*  This file is part of the KDE project
 +    Copyright (C) 2005 Matthias Kretz <kretz@kde.org>
@@ -1951,7 +1951,7 @@ Author: Fathi Boudra <fabo@debian.org>
 +#undef PHONON_CLASSNAME
 +// vim: sw=4 ts=4 tw=80
 --- /dev/null
-+++ b/phonon/audiodataoutput.h
++++ b/src/3rdparty/phonon/phonon/audiodataoutput.h
 @@ -0,0 +1,129 @@
 +/*  This file is part of the KDE project
 +    Copyright (C) 2005-2006 Matthias Kretz <kretz@kde.org>
@@ -2083,7 +2083,7 @@ Author: Fathi Boudra <fabo@debian.org>
 +// vim: sw=4 ts=4 tw=80
 +#endif // Phonon_AUDIODATAOUTPUT_H
 --- /dev/null
-+++ b/phonon/audiodataoutputinterface.h
++++ b/src/3rdparty/phonon/phonon/audiodataoutputinterface.h
 @@ -0,0 +1,44 @@
 +/*  This file is part of the KDE project
 +    Copyright (C) 2008 Matthias Kretz <kretz@kde.org>
@@ -2130,7 +2130,7 @@ Author: Fathi Boudra <fabo@debian.org>
 +
 +#endif // PHONON_AUDIODATAOUTPUTINTERFACE_H
 --- /dev/null
-+++ b/phonon/audiodataoutput_p.h
++++ b/src/3rdparty/phonon/phonon/audiodataoutput_p.h
 @@ -0,0 +1,48 @@
 +/*  This file is part of the KDE project
 +    Copyright (C) 2006 Matthias Kretz <kretz@kde.org>
@@ -2351,7 +2351,7 @@ Author: Fathi Boudra <fabo@debian.org>
          Phonon::AudioOutputAdaptor *adaptor;
  #endif
 --- /dev/null
-+++ b/phonon/backend/Mainpage.dox
++++ b/src/3rdparty/phonon/phonon/backend/Mainpage.dox
 @@ -0,0 +1,109 @@
 +/** \mainpage Phonon Backend Interface
 +
@@ -3307,7 +3307,7 @@ Author: Fathi Boudra <fabo@debian.org>
  
  int GlobalConfig::audioCaptureDeviceFor(Phonon::Category category, int override) const
 --- /dev/null
-+++ b/phonon/globalconfig.h
++++ b/src/3rdparty/phonon/phonon/globalconfig.h
 @@ -0,0 +1,71 @@
 +/*  This file is part of the KDE project
 +Copyright (C) 2006-2008 Matthias Kretz <kretz@kde.org>
@@ -4191,7 +4191,7 @@ Author: Fathi Boudra <fabo@debian.org>
 -// vim: sw=4 ts=4 tw=80
 -#endif // PHONONNAMESPACE_H
 --- /dev/null
-+++ b/phonon/pulsesupport.cpp
++++ b/src/3rdparty/phonon/phonon/pulsesupport.cpp
 @@ -0,0 +1,968 @@
 +/*  This file is part of the KDE project
 +    Copyright (C) 2009 Colin Guthrie <cguthrie@mandriva.org>
@@ -5162,7 +5162,7 @@ Author: Fathi Boudra <fabo@debian.org>
 +
 +// vim: sw=4 ts=4
 --- /dev/null
-+++ b/phonon/pulsesupport_p.h
++++ b/src/3rdparty/phonon/phonon/pulsesupport_p.h
 @@ -0,0 +1,74 @@
 +/*  This file is part of the KDE project
 +    Copyright (C) 2009 Colin Guthrie <cguthrie@mandriva.org>
@@ -5296,7 +5296,7 @@ Author: Fathi Boudra <fabo@debian.org>
          QPointer<MediaObject> media;
          bool ticking;
 --- /dev/null
-+++ b/phonon/swiftslider.cpp
++++ b/src/3rdparty/phonon/phonon/swiftslider.cpp
 @@ -0,0 +1,103 @@
 +/*  This file is part of the KDE project
 +    Copyright (C) 2006-2008 Ricardo Villalba <rvm@escomposlinux.org>
@@ -5402,7 +5402,7 @@ Author: Fathi Boudra <fabo@debian.org>
 +
 +#include "moc_swiftslider_p.cpp"
 --- /dev/null
-+++ b/phonon/swiftslider_p.h
++++ b/src/3rdparty/phonon/phonon/swiftslider_p.h
 @@ -0,0 +1,68 @@
 +/*  This file is part of the KDE project
 +    Copyright (C) 2006-2008 Ricardo Villalba <rvm@escomposlinux.org>

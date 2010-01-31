@@ -6,7 +6,7 @@ Author: Pino Toscano <pino@kde.org>
 Forwarded: no
 --- a/configure
 +++ b/configure
-@@ -2723,6 +2723,17 @@
+@@ -2723,6 +2723,17 @@ fi
  
  if [ -z "${CFG_HOST_ARCH}" ]; then
      case "$UNAME_SYSTEM:$UNAME_RELEASE:$UNAME_MACHINE" in

@@ -1,6 +1,6 @@
 --- a/src/corelib/global/qlibraryinfo.cpp
 +++ b/src/corelib/global/qlibraryinfo.cpp
-@@ -79,12 +79,7 @@ class QLibraryInfoPrivate
+@@ -83,12 +83,7 @@ class QLibraryInfoPrivate
  {
  public:
      static QSettings *findConfiguration();
@@ -14,7 +14,7 @@
      static QSettings *configuration()
      {
          QLibrarySettings *ls = qt_library_settings();
-@@ -92,6 +87,13 @@ public:
+@@ -96,6 +91,13 @@ public:
      }
  };
  
