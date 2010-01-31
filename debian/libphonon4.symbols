@@ -22,14 +22,14 @@ libphonon.so.4 libphonon4 #MINVER#
  _ZN6Phonon11AudioOutput11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.2.0
  _ZN6Phonon11AudioOutput11qt_metacastEPKc@Base 4:4.2.0
  _ZN6Phonon11AudioOutput12mutedChangedEb@Base 4:4.2.0
- _ZN6Phonon11AudioOutput13volumeChangedE{qreal}@Base 4:4.2.0
+ (subst)_ZN6Phonon11AudioOutput13volumeChangedE{qreal}@Base 4:4.2.0
  _ZN6Phonon11AudioOutput15setOutputDeviceERKNS_17ObjectDescriptionILNS_21ObjectDescriptionTypeE0EEE@Base 4:4.2.0
- _ZN6Phonon11AudioOutput16setVolumeDecibelE{qreal}@Base 4:4.2.0
+ (subst)_ZN6Phonon11AudioOutput16setVolumeDecibelE{qreal}@Base 4:4.2.0
  _ZN6Phonon11AudioOutput16staticMetaObjectE@Base 4:4.2.0
  _ZN6Phonon11AudioOutput19outputDeviceChangedERKNS_17ObjectDescriptionILNS_21ObjectDescriptionTypeE0EEE@Base 4:4.2.0
  _ZN6Phonon11AudioOutput7setNameERK7QString@Base 4:4.2.0
  _ZN6Phonon11AudioOutput8setMutedEb@Base 4:4.2.0
- _ZN6Phonon11AudioOutput9setVolumeE{qreal}@Base 4:4.2.0
+ (subst)_ZN6Phonon11AudioOutput9setVolumeE{qreal}@Base 4:4.2.0
  _ZN6Phonon11AudioOutputC1ENS_8CategoryEP7QObject@Base 4:4.2.0
  _ZN6Phonon11AudioOutputC1EP7QObject@Base 4:4.2.0
  _ZN6Phonon11AudioOutputC2ENS_8CategoryEP7QObject@Base 4:4.2.0
@@ -108,18 +108,18 @@ libphonon.so.4 libphonon4 #MINVER#
  _ZN6Phonon11VideoPlayerD2Ev@Base 4:4.2.0
  _ZN6Phonon11VideoWidget11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.2.0
  _ZN6Phonon11VideoWidget11qt_metacastEPKc@Base 4:4.2.0
- _ZN6Phonon11VideoWidget11setContrastE{qreal}@Base 4:4.2.0
+ (subst)_ZN6Phonon11VideoWidget11setContrastE{qreal}@Base 4:4.2.0
  _ZN6Phonon11VideoWidget12setScaleModeENS0_9ScaleModeE@Base 4:4.2.0
- _ZN6Phonon11VideoWidget13setBrightnessE{qreal}@Base 4:4.2.0
+ (subst)_ZN6Phonon11VideoWidget13setBrightnessE{qreal}@Base 4:4.2.0
  _ZN6Phonon11VideoWidget13setFullScreenEb@Base 4:4.2.0
- _ZN6Phonon11VideoWidget13setSaturationE{qreal}@Base 4:4.2.0
+ (subst)_ZN6Phonon11VideoWidget13setSaturationE{qreal}@Base 4:4.2.0
  _ZN6Phonon11VideoWidget14exitFullScreenEv@Base 4:4.2.0
  _ZN6Phonon11VideoWidget14mouseMoveEventEP11QMouseEvent@Base 4:4.2.0
  _ZN6Phonon11VideoWidget14setAspectRatioENS0_11AspectRatioE@Base 4:4.2.0
  _ZN6Phonon11VideoWidget15enterFullScreenEv@Base 4:4.2.0
  _ZN6Phonon11VideoWidget16staticMetaObjectE@Base 4:4.2.0
  _ZN6Phonon11VideoWidget5eventEP6QEvent@Base 4:4.2.0
- _ZN6Phonon11VideoWidget6setHueE{qreal}@Base 4:4.2.0
+ (subst)_ZN6Phonon11VideoWidget6setHueE{qreal}@Base 4:4.2.0
  _ZN6Phonon11VideoWidgetC1EP7QWidget@Base 4:4.2.0
  _ZN6Phonon11VideoWidgetC1ERNS_18VideoWidgetPrivateEP7QWidget@Base 4:4.2.0
  _ZN6Phonon11VideoWidgetC2EP7QWidget@Base 4:4.2.0
@@ -146,7 +146,7 @@ libphonon.so.4 libphonon4 #MINVER#
  _ZN6Phonon12VolumeSlider14setAudioOutputEPNS_11AudioOutputE@Base 4:4.2.0
  _ZN6Phonon12VolumeSlider14setMuteVisibleEb@Base 4:4.2.0
  _ZN6Phonon12VolumeSlider14setOrientationEN2Qt11OrientationE@Base 4:4.2.0
- _ZN6Phonon12VolumeSlider16setMaximumVolumeE{qreal}@Base 4:4.2.0
+ (subst)_ZN6Phonon12VolumeSlider16setMaximumVolumeE{qreal}@Base 4:4.2.0
  _ZN6Phonon12VolumeSlider16staticMetaObjectE@Base 4:4.2.0
  _ZN6Phonon12VolumeSliderC1EP7QWidget@Base 4:4.2.0
  _ZN6Phonon12VolumeSliderC1EPNS_11AudioOutputEP7QWidget@Base 4:4.2.0
@@ -271,15 +271,15 @@ libphonon.so.4 libphonon4 #MINVER#
  _ZN6Phonon21ObjectDescriptionDataC2EiRK5QHashI10QByteArray8QVariantE@Base 4:4.2.0
  _ZN6Phonon21ObjectDescriptionDataD1Ev@Base 4:4.2.0
  _ZN6Phonon21ObjectDescriptionDataD2Ev@Base 4:4.2.0
-#DEPRECATED: PRIVATE: TEMPLINST# _ZN6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE0EE11qt_metacastEPKc@Base 4:4.2.0
+ (optional=templinst)_ZN6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE0EE11qt_metacastEPKc@Base 4:4.2.0
  _ZN6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE0EE16staticMetaObjectE@Base 4:4.2.0
-#DEPRECATED: PRIVATE: TEMPLINST# _ZN6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE1EE11qt_metacastEPKc@Base 4:4.2.0
+ (optional=templinst)_ZN6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE1EE11qt_metacastEPKc@Base 4:4.2.0
  _ZN6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE1EE16staticMetaObjectE@Base 4:4.2.0
-#DEPRECATED: PRIVATE: TEMPLINST# _ZN6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE2EE11qt_metacastEPKc@Base 4:4.2.0
+ (optional=templinst)_ZN6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE2EE11qt_metacastEPKc@Base 4:4.2.0
  _ZN6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE2EE16staticMetaObjectE@Base 4:4.2.0
-#DEPRECATED: PRIVATE: TEMPLINST# _ZN6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE3EE11qt_metacastEPKc@Base 4:4.2.0
+ (optional=templinst)_ZN6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE3EE11qt_metacastEPKc@Base 4:4.2.0
  _ZN6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE3EE16staticMetaObjectE@Base 4:4.2.0
-#DEPRECATED: PRIVATE: TEMPLINST# _ZN6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE4EE11qt_metacastEPKc@Base 4:4.2.0
+ (optional=templinst)_ZN6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE4EE11qt_metacastEPKc@Base 4:4.2.0
  _ZN6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE4EE16staticMetaObjectE@Base 4:4.2.0
  _ZN6Phonon26AbstractMediaStreamPrivate13setStreamSizeEx@Base 4:4.3.0
  _ZN6Phonon26AbstractMediaStreamPrivate17setStreamSeekableEb@Base 4:4.3.0
@@ -448,11 +448,11 @@ libphonon.so.4 libphonon4 #MINVER#
  _ZNK6Phonon21ObjectDescriptionData8propertyEPKc@Base 4:4.2.0
  _ZNK6Phonon21ObjectDescriptionDataeqERKS0_@Base 4:4.2.0
  _ZNK6Phonon22AudioOutputInterface4219deviceAccessListForERKNS_17ObjectDescriptionILNS_21ObjectDescriptionTypeE0EEE@Base 4:4.3.0
-#DEPRECATED: PRIVATE: TEMPLINST# _ZNK6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE0EE10metaObjectEv@Base 4:4.2.0
-#DEPRECATED: PRIVATE: TEMPLINST# _ZNK6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE1EE10metaObjectEv@Base 4:4.2.0
-#DEPRECATED: PRIVATE: TEMPLINST# _ZNK6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE2EE10metaObjectEv@Base 4:4.2.0
-#DEPRECATED: PRIVATE: TEMPLINST# _ZNK6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE3EE10metaObjectEv@Base 4:4.2.0
-#DEPRECATED: PRIVATE: TEMPLINST# _ZNK6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE4EE10metaObjectEv@Base 4:4.2.0
+ (optional=templinst)_ZNK6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE0EE10metaObjectEv@Base 4:4.2.0
+ (optional=templinst)_ZNK6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE1EE10metaObjectEv@Base 4:4.2.0
+ (optional=templinst)_ZNK6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE2EE10metaObjectEv@Base 4:4.2.0
+ (optional=templinst)_ZNK6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE3EE10metaObjectEv@Base 4:4.2.0
+ (optional=templinst)_ZNK6Phonon22ObjectDescriptionModelILNS_21ObjectDescriptionTypeE4EE10metaObjectEv@Base 4:4.2.0
  _ZNK6Phonon26ObjectDescriptionModelData15tupleIndexOrderEv@Base 4:4.2.0
  _ZNK6Phonon26ObjectDescriptionModelData20supportedDropActionsEv@Base 4:4.2.0
  _ZNK6Phonon26ObjectDescriptionModelData25tupleIndexAtPositionIndexEi@Base 4:4.2.0
@@ -533,17 +533,17 @@ libphonon.so.4 libphonon4 #MINVER#
  _ZTVN6Phonon26AbstractMediaStreamPrivateE@Base 4:4.2.0
  _ZTVN6Phonon6EffectE@Base 4:4.2.0
  _ZTVN6Phonon9MediaNodeE@Base 4:4.2.0
- _ZThn{vt:8}_N6Phonon10SeekSliderD0Ev@Base 4:4.2.0
- _ZThn{vt:8}_N6Phonon10SeekSliderD1Ev@Base 4:4.2.0
- _ZThn{vt:8}_N6Phonon11MediaObjectD0Ev@Base 4:4.2.0
- _ZThn{vt:8}_N6Phonon11MediaObjectD1Ev@Base 4:4.2.0
- _ZThn{vt:8}_N6Phonon11VideoPlayerD0Ev@Base 4:4.2.0
- _ZThn{vt:8}_N6Phonon11VideoPlayerD1Ev@Base 4:4.2.0
- _ZThn{vt:8}_N6Phonon12EffectWidgetD0Ev@Base 4:4.2.0
- _ZThn{vt:8}_N6Phonon12EffectWidgetD1Ev@Base 4:4.2.0
- _ZThn{vt:8}_N6Phonon12VolumeSliderD0Ev@Base 4:4.2.0
- _ZThn{vt:8}_N6Phonon12VolumeSliderD1Ev@Base 4:4.2.0
- _ZThn{vt:8}_N6Phonon19AbstractAudioOutputD0Ev@Base 4:4.2.0
- _ZThn{vt:8}_N6Phonon19AbstractAudioOutputD1Ev@Base 4:4.2.0
- _ZThn{vt:8}_N6Phonon6EffectD0Ev@Base 4:4.2.0
- _ZThn{vt:8}_N6Phonon6EffectD1Ev@Base 4:4.2.0
+ (c++)"non-virtual thunk to Phonon::AbstractAudioOutput::~AbstractAudioOutput()@Base" 4:4.2.0
+ (c++)"non-virtual thunk to Phonon::AbstractAudioOutput::~AbstractAudioOutput()@Base" 4:4.2.0
+ (c++)"non-virtual thunk to Phonon::Effect::~Effect()@Base" 4:4.2.0
+ (c++)"non-virtual thunk to Phonon::Effect::~Effect()@Base" 4:4.2.0
+ (c++)"non-virtual thunk to Phonon::EffectWidget::~EffectWidget()@Base" 4:4.2.0
+ (c++)"non-virtual thunk to Phonon::EffectWidget::~EffectWidget()@Base" 4:4.2.0
+ (c++)"non-virtual thunk to Phonon::MediaObject::~MediaObject()@Base" 4:4.2.0
+ (c++)"non-virtual thunk to Phonon::MediaObject::~MediaObject()@Base" 4:4.2.0
+ (c++)"non-virtual thunk to Phonon::SeekSlider::~SeekSlider()@Base" 4:4.2.0
+ (c++)"non-virtual thunk to Phonon::SeekSlider::~SeekSlider()@Base" 4:4.2.0
+ (c++)"non-virtual thunk to Phonon::VideoPlayer::~VideoPlayer()@Base" 4:4.2.0
+ (c++)"non-virtual thunk to Phonon::VideoPlayer::~VideoPlayer()@Base" 4:4.2.0
+ (c++)"non-virtual thunk to Phonon::VolumeSlider::~VolumeSlider()@Base" 4:4.2.0
+ (c++)"non-virtual thunk to Phonon::VolumeSlider::~VolumeSlider()@Base" 4:4.2.0
