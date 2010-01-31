@@ -32,6 +32,7 @@
 71_hppa_unaligned_access_fix_458133.diff
 80_hurd_max_path.diff
 81_hurd_architecture.diff
+82_hurd_SA_SIGINFO.diff
 89_powerpc_opts.diff
 91_s390_-gstabs.diff
 92_armel_gcc43_valist_compat.diff
