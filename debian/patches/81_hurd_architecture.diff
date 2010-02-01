@@ -3,7 +3,7 @@ Description: recognize the correct architecture on GNU/Hurd.
  used autotools, we can recognize the correct architecture, and thus using
  non-generic atomic primitives.
 Author: Pino Toscano <pino@kde.org>
-Forwarded: no
+Forwarded: http://bugreports.qt.nokia.com/browse/QTBUG-7803
 --- a/configure
 +++ b/configure
 @@ -2723,6 +2723,17 @@ fi
