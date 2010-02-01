@@ -83,8 +83,8 @@ libQtDBus.so.4 libqt4-dbus #MINVER#
  _ZN14QDBusInterfaceD1Ev@Base 4:4.5.3
  _ZN14QDBusInterfaceD2Ev@Base 4:4.5.3
  _ZN14QDBusSignature5checkEv@Base 4:4.5.3
- (arch=armel hppa hurd-i386 sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (arch=armel hppa hurd-i386 sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
+ (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
+ (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN15QDBusConnection10disconnectERK7QStringS2_S2_S2_P7QObjectPKc@Base 4:4.5.3
  _ZN15QDBusConnection10disconnectERK7QStringS2_S2_S2_RK11QStringListS2_P7QObjectPKc@Base 4:4.6.1
  _ZN15QDBusConnection10disconnectERK7QStringS2_S2_S2_S2_P7QObjectPKc@Base 4:4.5.3

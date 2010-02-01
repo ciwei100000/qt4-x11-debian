@@ -1,7 +1,7 @@
 # SymbolsHelper-Confirmed: 4:4.6.1 amd64 i386
 libQtScriptTools.so.4 libqt4-scripttools #MINVER#
- (arch=armel hppa hurd-i386 sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (arch=armel hppa hurd-i386 sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
+ (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
+ (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN21QScriptEngineDebugger11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN21QScriptEngineDebugger11qt_metacastEPKc@Base 4:4.5.3
  _ZN21QScriptEngineDebugger16staticMetaObjectE@Base 4:4.5.3

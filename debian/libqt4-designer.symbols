@@ -488,8 +488,8 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN15DomResourceIconC2Ev@Base 4:4.5.3
  _ZN15DomResourceIconD1Ev@Base 4:4.5.3
  _ZN15DomResourceIconD2Ev@Base 4:4.5.3
- (arch=armel hppa hurd-i386 sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (arch=armel hppa hurd-i386 sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
+ (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
+ (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN15QDesignerDialog10paintEventEP11QPaintEvent@Base 4:4.5.3
  _ZN15QDesignerDialog11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN15QDesignerDialog11qt_metacastEPKc@Base 4:4.5.3
@@ -4275,8 +4275,8 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (c++)"non-virtual thunk to qdesigner_internal::StyleSheetEditorDialog::~StyleSheetEditorDialog()@Base" 4:4.5.3
  (c++)"non-virtual thunk to qdesigner_internal::ZoomProxyWidget::itemChange(QGraphicsItem::GraphicsItemChange, QVariant const&)@Base" 4:4.5.3
 libQtDesignerComponents.so.4 libqt4-designer #MINVER#
- (arch=armel hppa hurd-i386 sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (arch=armel hppa hurd-i386 sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
+ (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
+ (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN19QDesignerComponents14createTaskMenuEP28QDesignerFormEditorInterfaceP7QObject@Base 4:4.5.3
  _ZN19QDesignerComponents15createWidgetBoxEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  _ZN19QDesignerComponents16createFormEditorEP7QObject@Base 4:4.5.3

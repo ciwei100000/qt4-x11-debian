@@ -2457,8 +2457,8 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN15Q3TextTableCellD0Ev@Base 4:4.5.3
  _ZN15Q3TextTableCellD1Ev@Base 4:4.5.3
  _ZN15Q3TextTableCellD2Ev@Base 4:4.5.3
- (arch=armel hppa hurd-i386 sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (arch=armel hppa hurd-i386 sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
+ (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
+ (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN16Q3CanvasItemList10drawUniqueER8QPainter@Base 4:4.5.3
  _ZN16Q3CanvasItemList4sortEv@Base 4:4.5.3
  _ZN16Q3CheckTableItem10setCheckedEb@Base 4:4.5.3

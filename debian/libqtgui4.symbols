@@ -3532,8 +3532,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN15QAbstractSliderD0Ev@Base 4:4.5.3
  _ZN15QAbstractSliderD1Ev@Base 4:4.5.3
  _ZN15QAbstractSliderD2Ev@Base 4:4.5.3
- (arch=armel hppa hurd-i386 sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (arch=armel hppa hurd-i386 sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
+ (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
+ (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN15QCalendarWidget10updateCellERK5QDate@Base 4:4.5.3
  _ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent@Base 4:4.5.3
  _ZN15QCalendarWidget11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
