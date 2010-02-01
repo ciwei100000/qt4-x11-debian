@@ -406,18 +406,18 @@ Description: Qt 4 OpenGL library development files
  This package contains the development files needed to build Qt 4 applications
  using QtOpenGL library.
 
-Package: libphonon-dev
-Architecture: any
-Section: libdevel
-Depends: ${shlibs:Depends}, ${misc:Depends},
- libphonon4 (= ${binary:Version})
-Replaces: kdelibs5-dev (<< 4:4.0.81)
-Description: Qt 4 Phonon library development files
- Qt is a cross-platform C++ application framework. Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- This package contains the development files needed to build Qt 4 applications
- using Qt Phonon library.
+#Package: libphonon-dev
+#Architecture: any
+#Section: libdevel
+#Depends: ${shlibs:Depends}, ${misc:Depends},
+# libphonon4 (= ${binary:Version})
+#Replaces: kdelibs5-dev (<< 4:4.0.81)
+#Description: Qt 4 Phonon library development files
+# Qt is a cross-platform C++ application framework. Qt's primary feature
+# is its rich set of widgets that provide standard GUI functionality.
+# .
+# This package contains the development files needed to build Qt 4 applications
+# using Qt Phonon library.
 
 Package: libqt4-dbg
 Priority: extra
