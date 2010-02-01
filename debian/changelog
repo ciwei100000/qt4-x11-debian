@@ -31,6 +31,7 @@ qt4-x11 (4:4.6.1-1) UNRELEASED; urgency=low
     - add 21_qt_ia32_library_path.diff patch
       fix ia32 library path (e.g. skype application).
   * Update debian/control:
+    - bump Standards-Version to 3.8.4 (no changes needed).
     - build-depend on firebird2.1-dev instead of firebird2.0-dev.
       (Closes: #564683)
     - extend architecture list for firebird2.1-dev.

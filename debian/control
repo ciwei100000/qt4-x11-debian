@@ -14,7 +14,7 @@ Build-Depends: debhelper (>= 7.2), quilt, pkg-kde-tools (>= 0.4), flex, sharutil
  libxcursor-dev, libxext-dev, libxft-dev, libxi-dev, libxinerama-dev,
  libxmu-dev, libxrandr-dev, libxrender-dev, libxslt1-dev, libxt-dev,
  libxtst-dev, zlib1g-dev, freetds-dev
-Standards-Version: 3.8.3
+Standards-Version: 3.8.4
 Homepage: http://www.qtsoftware.com
 Vcs-Git: git://git.debian.org/pkg-kde/qt4-x11.git
 Vcs-Browser: http://git.debian.org/?p=pkg-kde/qt4-x11.git;a=summary
