@@ -42,7 +42,7 @@ else
 endif
 
 %:
-	+dh --with quilt $@
+	+dh --with pkgkde_symbolshelper --with quilt $@
 
 override_dh_auto_configure:
 	# Test broken hppa kernel with glibc >= 2.5
