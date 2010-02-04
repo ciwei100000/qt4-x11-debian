@@ -27,9 +27,9 @@ Author: Bo Thorsen <bo@sonofthor.dk>
 +    struct utsname uts;
 +
 +    uname(&uts);
-+    if (!strcmp("x86_64", uts.machine) && (path.startsWith("/usr/lib/")))
++    if (!strcmp("x86_64", uts.machine) && (path.startsWith(QLatin1String("/usr/lib/"))))
 +    {
-+        QString newPath = "/usr/lib32/" + path.mid(8);
++        QString newPath = QLatin1String("/usr/lib32/") + path.mid(8);
 +        if (QFileInfo(newPath).isDir())
 +            return newPath;
 +    }
