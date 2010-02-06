@@ -221,7 +221,7 @@ libQtXmlPatterns.so.4 libqt4-xmlpatterns #MINVER#
  _ZNK21QAbstractXmlNodeModel7iterateERK18QXmlNodeModelIndexNS0_4AxisE@Base 4:4.5.3
  _ZNK23QAbstractMessageHandler10metaObjectEv@Base 4:4.5.3
  _ZNK7QString3argERKS_S1_@Base 4:4.5.3
-#MISSING: 4:4.6.1# (arch=alpha amd64 armel hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390)_ZNK7QString3argERKS_S1_S1_@Base 4:4.5.3
+#MISSING: 4:4.6.1# (arch=!hppa !sparc)_ZNK7QString3argERKS_S1_S1_@Base 4:4.5.3
  _ZNK8QXmlItem13isAtomicValueEv@Base 4:4.5.3
  _ZNK8QXmlItem13toAtomicValueEv@Base 4:4.5.3
  _ZNK8QXmlItem16toNodeModelIndexEv@Base 4:4.5.3

@@ -4779,7 +4779,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZNK5Q3Urlcv7QStringEv@Base 4:4.5.3
  _ZNK5Q3UrleqERK7QString@Base 4:4.5.3
  _ZNK5Q3UrleqERKS_@Base 4:4.5.3
-#MISSING: 4:4.6.1# (arch=amd64 armel hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390)_ZNK5QRect11intersectedERKS_@Base 4:4.5.3
+#MISSING: 4:4.6.1# (arch=!alpha !hppa !sparc)_ZNK5QRect11intersectedERKS_@Base 4:4.5.3
  _ZNK5QRect6centerEv@Base 4:4.5.3
 #MISSING: 4:4.6.1# _ZNK5QRect6unitedERKS_@Base 4:4.5.3
  _ZNK6Q3Grid10metaObjectEv@Base 4:4.5.3
@@ -4865,7 +4865,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZNK7Q3Table9rowHeightEi@Base 4:4.5.3
  _ZNK7Q3Table9selectionEi@Base 4:4.5.3
  _ZNK7Q3Table9tableSizeEv@Base 4:4.5.3
-#MISSING: 4:4.6.1# (arch=armel hurd-i386 i386 kfreebsd-i386 mips mipsel powerpc s390)_ZNK7QString3argEiiiRK5QChar@Base 4:4.5.3
+#MISSING: 4:4.6.1# (arch=!alpha !amd64 !hppa !ia64 !kfreebsd-amd64 !sparc)_ZNK7QString3argEiiiRK5QChar@Base 4:4.5.3
  _ZNK7QWidget10colorGroupEv@Base 4:4.5.3
  _ZNK8Q3Action10metaObjectEv@Base 4:4.5.3
  _ZNK8Q3Action14isToggleActionEv@Base 4:4.5.3
