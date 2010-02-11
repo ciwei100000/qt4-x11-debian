@@ -14,6 +14,7 @@ qt4-x11 (4:4.6.1-1) UNRELEASED; urgency=low
     version and upgraded to 4:4.6.1 on amd64/i386.
   * Bump build dependency of pkg-kde-tools to version 0.6 as it is needed to
     handle symbol files.
+  * Build depend on libjpeg-dev rather than libjpeg62-dev.
 
   [ Fathi Boudra ]
   * Add debian/patches/95_sparc_platform_definition.diff patch to fix build for
