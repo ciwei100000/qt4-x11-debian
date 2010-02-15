@@ -1,5 +1,6 @@
 # SymbolsHelper-Confirmed: 4:4.6.1 amd64 i386
 libQtOpenGL.so.4 libqt4-opengl #MINVER#
+* Build-Depends-Package: libqt4-dev
  _Z13qgl_share_regv@Base 4:4.5.3
  _Z18qt_gl_library_namev@Base 4:4.5.3
  _Z19qt_qgl_paint_enginev@Base 4:4.6.1

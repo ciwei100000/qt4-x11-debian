@@ -1,5 +1,6 @@
 # SymbolsHelper-Confirmed: 4:4.6.1 amd64 i386
 libQtScriptTools.so.4 libqt4-scripttools #MINVER#
+* Build-Depends-Package: libqt4-dev
  (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
  (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN21QScriptEngineDebugger11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
