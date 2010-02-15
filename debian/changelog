@@ -64,8 +64,9 @@ qt4-x11 (4:4.6.2-1) UNRELEASED; urgency=low
     usage of SA_SIGINFO.
   * Adapt watch file to the new file names of the Qt/X11 tarballs.
   * Polish a bit qdbus manpage.
+  * Add x-www-browser as alternative in qt4-doc-html's browser suggestion.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 15 Feb 2010 16:04:13 +0100
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 15 Feb 2010 16:49:38 +0100
 
 qt4-x11 (4:4.6.0-1) experimental; urgency=low
 
