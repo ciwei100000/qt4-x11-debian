@@ -236,6 +236,13 @@ override_dh_auto_install:
 	uudecode -o debian/qt4-qtconfig/usr/share/pixmaps/qtconfig.png \
 		debian/desktop/qtconfig.png.uu
 
+	# Remove phonon development files
+	rm -f debian/tmp/usr/lib/libphonon.la
+	rm -f debian/tmp/usr/lib/libphonon.prl
+	rm -f debian/tmp/usr/lib/libphonon.so
+	rm -f debian/tmp/usr/lib/pkgconfig/phonon.pc
+	rm -rf debian/tmp/usr/include/qt4/phonon
+
 override_dh_install:
 	dh_install --list-missing --sourcedir=debian/tmp
 

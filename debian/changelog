@@ -49,6 +49,7 @@ qt4-x11 (4:4.6.2-1) UNRELEASED; urgency=low
     - bump debhelper build dependency to version 0.4.13 to properly support dh
       options.
     - enable parallel build by passing --parallel option to dh.
+    - remove Phonon development files.
   * Update debian/libphonon-dev.install: Include headers have been changed.
     The only official method for including Phonon headers is <phonon/ClassName>
     or <phonon/classname.h>.
