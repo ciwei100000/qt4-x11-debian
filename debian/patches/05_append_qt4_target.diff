@@ -221,11 +221,11 @@ author: Fathi Boudra <fabo@debian.org>
      return ($$result)
  }
  
--LUPDATE = $$QT_BUILD_TREE/bin/lupdate -locations relative -no-ui-lines
-+LUPDATE = $$QT_BUILD_TREE/bin/lupdate-qt4 -locations relative -no-ui-lines
- LUPDATE ~= s,/,$$QMAKE_DIR_SEP,
- 
- ###### Qt Libraries
+-LUPDATE = $$QT_BUILD_TREE/bin/lupdate
++LUPDATE = $$QT_BUILD_TREE/bin/lupdate-qt4
+ win32 {
+     LUPDATE ~= s,/,$$QMAKE_DIR_SEP,
+     LUPDATE = $${LUPDATE}.exe
 --- a/translations/translations.pro
 +++ b/translations/translations.pro
 @@ -1,6 +1,6 @@
@@ -233,15 +233,15 @@ author: Fathi Boudra <fabo@debian.org>
  
 -LRELEASE = $$QT_BUILD_TREE/bin/lrelease
 +LRELEASE = $$QT_BUILD_TREE/bin/lrelease-qt4
- LRELEASE ~= s,/,$$QMAKE_DIR_SEP,
- 
- contains(TEMPLATE_PREFIX, vc):vcproj = 1
-@@ -14,7 +14,7 @@ LIBS =
- updateqm.input = TRANSLATIONS
+ win32 {
+     LRELEASE ~= s,/,$$QMAKE_DIR_SEP,
+     LRELEASE = $${LRELEASE}.exe
+@@ -18,7 +18,7 @@ updateqm.input = TRANSLATIONS
  updateqm.output = ${QMAKE_FILE_BASE}.qm
  isEmpty(vcproj):updateqm.variable_out = PRE_TARGETDEPS
--updateqm.commands = @echo lrelease ${QMAKE_FILE_IN} && $$LRELEASE ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_OUT}
-+updateqm.commands = @echo lrelease-qt4 ${QMAKE_FILE_IN} && $$LRELEASE ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_OUT}
+ updateqm.commands = $$LRELEASE ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_OUT}
+-silent:updateqm.commands = @echo lrelease ${QMAKE_FILE_IN} && $$updateqm.commands
++silent:updateqm.commands = @echo lrelease-qt4 ${QMAKE_FILE_IN} && $$updateqm.commands
  updateqm.name = LRELEASE ${QMAKE_FILE_IN}
  updateqm.CONFIG += no_link
  QMAKE_EXTRA_COMPILERS += updateqm
