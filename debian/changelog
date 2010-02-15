@@ -1,4 +1,4 @@
-qt4-x11 (4:4.6.1-1) UNRELEASED; urgency=low
+qt4-x11 (4:4.6.2-1) UNRELEASED; urgency=low
 
   * New upstream release.
     - Fix a crash in QDBusPendingReply/QDBusReply in case of unconnected calls.
@@ -60,7 +60,7 @@ qt4-x11 (4:4.6.1-1) UNRELEASED; urgency=low
     usage of SA_SIGINFO.
   * Adapt watch file to the new file names of the Qt/X11 tarballs.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 31 Jan 2010 01:40:16 +0100
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 15 Feb 2010 14:11:37 +0100
 
 qt4-x11 (4:4.6.0-1) experimental; urgency=low
 
