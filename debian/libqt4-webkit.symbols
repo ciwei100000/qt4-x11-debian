@@ -1,5 +1,6 @@
 # SymbolsHelper-Confirmed: 4:4.6.1 amd64 i386
 libQtWebKit.so.4 libqt4-webkit #MINVER#
+* Build-Depends-Package: libqt4-dev
  JSCheckScriptSyntax@Base 4:4.5.3
  JSClassCreate@Base 4:4.5.3
  JSClassRelease@Base 4:4.5.3

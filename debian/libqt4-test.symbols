@@ -1,5 +1,6 @@
 # SymbolsHelper-Confirmed: 4:4.6.1 amd64 i386
 libQtTest.so.4 libqt4-test #MINVER#
+* Build-Depends-Package: libqt4-dev
  _ZGVZN14QTestEventLoop8instanceEvE8testLoop@Base 4:4.5.3
  _ZN14QTestEventLoop11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN14QTestEventLoop11qt_metacastEPKc@Base 4:4.5.3
