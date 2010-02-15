@@ -65,8 +65,10 @@ qt4-x11 (4:4.6.2-1) UNRELEASED; urgency=low
   * Adapt watch file to the new file names of the Qt/X11 tarballs.
   * Polish a bit qdbus manpage.
   * Add x-www-browser as alternative in qt4-doc-html's browser suggestion.
+  * Suggest qt4-doc-html in qt4-dev-tools, as the latter contains assistant_adp
+    which uses such HTML documentation. (Closes: #498701)
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 15 Feb 2010 16:49:38 +0100
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 15 Feb 2010 17:00:35 +0100
 
 qt4-x11 (4:4.6.0-1) experimental; urgency=low
 
