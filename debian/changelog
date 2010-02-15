@@ -53,7 +53,7 @@ qt4-x11 (4:4.6.2-1) UNRELEASED; urgency=low
   * Update debian/libphonon-dev.install: Include headers have been changed.
     The only official method for including Phonon headers is <phonon/ClassName>
     or <phonon/classname.h>.
-  * Add a manpage fo qdbus. Thanks to Andreas Marschke. (Closes: #568186)
+  * Add a manpage for qdbus. Thanks to Andreas Marschke. (Closes: #568186)
 
   [ Pino Toscano ]
   * Update debian/control: Don't build-depends on libasound2-dev for
