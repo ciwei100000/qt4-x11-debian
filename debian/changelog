@@ -12,7 +12,7 @@ qt4-x11 (4:4.6.2-1) UNRELEASED; urgency=low
     (patch 92_armel_gcc43_valist_compat.diff).
   * Add symbol files for Qt public libraries. They are based on the 4:4.5.3
     version and upgraded to 4:4.6.1 on amd64/i386.
-  * Bump build dependency of pkg-kde-tools to version 0.6 as it is needed to
+  * Bump build dependency of pkg-kde-tools to version 0.6.3 as it is needed to
     handle symbol files.
   * Build depend on libjpeg-dev rather than libjpeg62-dev.
 
@@ -46,6 +46,8 @@ qt4-x11 (4:4.6.2-1) UNRELEASED; urgency=low
     - add -qvfb configure option.
     - add -audio-backend option.
     - remove qm target call. It isn't needed anymore.
+    - bump debhelper build dependency to version 0.4.13 to properly support dh
+      options.
     - enable parallel build by passing --parallel option to dh.
   * Update debian/libphonon-dev.install: Include headers have been changed.
     The only official method for including Phonon headers is <phonon/ClassName>
