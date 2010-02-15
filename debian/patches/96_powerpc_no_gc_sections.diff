@@ -5,7 +5,7 @@ Author: Steve Langasek <steve.langasek@ubuntu.com>
 
 --- a/src/3rdparty/webkit/WebCore/WebCore.pro
 +++ b/src/3rdparty/webkit/WebCore/WebCore.pro
-@@ -60,7 +60,7 @@ unix {
+@@ -63,7 +63,7 @@ unix {
  }
  
  unix:!mac:*-g++*:QMAKE_CXXFLAGS += -ffunction-sections -fdata-sections 

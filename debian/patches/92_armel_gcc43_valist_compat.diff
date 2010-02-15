@@ -15,7 +15,7 @@ Forward: not-needed
 
 --- a/src/corelib/tools/qstring.cpp
 +++ b/src/corelib/tools/qstring.cpp
-@@ -5289,6 +5289,11 @@
+@@ -5289,6 +5289,11 @@ QString &QString::vsprintf(const char* c
      return *this;
  }
  
@@ -29,7 +29,7 @@ Forward: not-needed
      base, which is 10 by default and must be between 2 and 36, or 0.
 --- a/src/corelib/tools/qvsnprintf.cpp
 +++ b/src/corelib/tools/qvsnprintf.cpp
-@@ -104,6 +104,12 @@
+@@ -104,6 +104,12 @@ int qvsnprintf(char *str, size_t n, cons
  
  #endif
  
