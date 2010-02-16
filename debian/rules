@@ -10,14 +10,18 @@ export LD_LIBRARY_PATH := $(QTDIR)/lib:$(LD_LIBRARY_PATH)
 # workaround to use qhelpgenerator.
 export QT_PLUGIN_PATH := $(QTDIR)/plugins
 
-pkgs_dbg := $(shell dh_listpackages | grep dbg | sed -e '/phonon-dbg/d; /libqt4-dbg/d; s|-dbg||')
-pkgs_lib := $(filter-out %-dev %-dbg,$(filter lib%,$(shell dh_listpackages)))
+pkgs_dbg := $(shell dh_listpackages | grep dbg | sed -e '/libqt4-dbg/d; s|-dbg||')
+# Library package list for override_dh_makeshlibs, excludes libqt4-phonon
+pkgs_lib := $(filter-out %-dev %-dbg libqt4-phonon,$(filter lib%,$(shell dh_listpackages)))
 # Upstream changelog
 upstream_changes := $(wildcard changes-*)
 # Current debian version (e.g.: 4:4.5.2-1)
 current_version := $(shell dpkg-parsechangelog | sed -n 's/^Version: //p')
 # Specific shlibs version (e.g.: 4:4.5.2)
 shlibs_version := $(shell dpkg-parsechangelog | sed -n 's/^Version: //p' | cut -f1 -d '-')
+# libqt4-phonon shlibs. Minimum libphonon4 version may need adjusting for new
+# Qt upstream release
+libqt4phonon_shlibs := libphonon4 (>= 4:4.6.0) | libqt4-phonon (= $(current_version))
 
 ibase_architectures := i386 kfreebsd-i386 kfreebsd-amd64 knetbsd-i386 netbsd-i386 amd64 sparc powerpc
 ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(ibase_architectures)))
@@ -254,17 +258,23 @@ override_dh_installchangelogs:
 
 override_dh_strip:
 	$(foreach pkg,$(pkgs_dbg),dh_strip -p$(pkg) --dbg-package=$(pkg)-dbg;)
-	dh_strip -plibphonon4 --dbg-package=phonon-dbg
+	dh_strip -plibqt4-phonon
 	dh_strip --remaining-packages --dbg-package=libqt4-dbg
 
 override_dh_makeshlibs:
 	# Specific shlibs version (e.g.: 4:4.5.2)
 	$(foreach pkg,$(pkgs_lib),dh_makeshlibs -p$(pkg) -V '$(pkg) (>= $(shlibs_version))' -- -c0;)
+	dh_makeshlibs -plibqt4-phonon -V'$(libqt4phonon_shlibs)'
 	# Generate shlibs local files
 	for pkg in $(pkgs_lib); do \
 		if test -e debian/$${pkg}/DEBIAN/shlibs ; then \
 			sed 's/>=[^)]*/= $(current_version)/' debian/$${pkg}/DEBIAN/shlibs >> debian/shlibs.local ;\
 		fi \
 	done
+
+override_dh_shlibdeps:
+	# Exclude phonon deps from libqt4-phonon itself (they get injected there somehow)
+	dh_shlibdeps -plibqt4-phonon -- -xlibphonon4 -xlibqt4-phonon
+	dh_shlibdeps --remaining-packages
 
 .PHONY: override_dh_auto_test

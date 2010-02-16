@@ -15,6 +15,8 @@ qt4-x11 (4:4.6.2-1) UNRELEASED; urgency=low
   * Bump build dependency of pkg-kde-tools to version 0.6.4 as it is needed to
     handle symbol files.
   * Build depend on libjpeg-dev rather than libjpeg62-dev.
+  * Drop Phonon from Qt. Leave only libqt4-phonon package which sole purpose is
+    to enable bootstraping of new arches.
 
   [ Fathi Boudra ]
   * Add debian/patches/95_sparc_platform_definition.diff patch to fix build for
