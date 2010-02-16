@@ -1,4 +1,4 @@
-qt4-x11 (4:4.6.2-1) UNRELEASED; urgency=low
+qt4-x11 (4:4.6.2-1~pre2) UNRELEASED; urgency=low
 
   * New upstream release.
     - Fix a crash in QDBusPendingReply/QDBusReply in case of unconnected calls.
