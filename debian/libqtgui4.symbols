@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.6.1 amd64 i386
+# SymbolsHelper-Confirmed: 4:4.6.2 amd64
 libQtGui.so.4 libqtgui4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qDrawArrowP8QPainterN2Qt9ArrowTypeENS1_8GUIStyleEbiiiiRK8QPaletteb@Base 4:4.5.3
@@ -5172,7 +5172,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN20QGraphicsItemPrivate18siblingOrderChangeEv@Base 4:4.6.1
  _ZN20QGraphicsItemPrivate18subFocusItemChangeEv@Base 4:4.6.1
  _ZN20QGraphicsItemPrivate18updateAncestorFlagEN13QGraphicsItem16GraphicsItemFlagENS_12AncestorFlagEbb@Base 4:4.6.1
- _ZN20QGraphicsItemPrivate19setParentItemHelperEP13QGraphicsItem@Base 4:4.6.1
+ _ZN20QGraphicsItemPrivate19setParentItemHelperEP13QGraphicsItemPK8QVariantS4_@Base 4:4.6.2
+ _ZN20QGraphicsItemPrivate19updateAncestorFlagsEv@Base 4:4.6.2
  _ZN20QGraphicsItemPrivate20removeExtraItemCacheEv@Base 4:4.6.1
  _ZN20QGraphicsItemPrivate23appendGraphicsTransformEP18QGraphicsTransform@Base 4:4.6.1
  _ZN20QGraphicsItemPrivate25movableAncestorIsSelectedEPK13QGraphicsItem@Base 4:4.6.1
@@ -5181,7 +5182,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN20QGraphicsItemPrivate28ensureSequentialSiblingIndexEv@Base 4:4.6.1
  _ZN20QGraphicsItemPrivate29ensureSceneTransformRecursiveEPP13QGraphicsItem@Base 4:4.6.1
  _ZN20QGraphicsItemPrivate30updateSceneTransformFromParentEv@Base 4:4.6.1
- _ZN20QGraphicsItemPrivate36invalidateGraphicsEffectsRecursivelyEv@Base 4:4.6.1
+ _ZN20QGraphicsItemPrivate41invalidateChildGraphicsEffectsRecursivelyENS_16InvalidateReasonE@Base 4:4.6.2
+ _ZN20QGraphicsItemPrivate42invalidateParentGraphicsEffectsRecursivelyEv@Base 4:4.6.2
+ _ZN20QGraphicsItemPrivate44updateChildWithGraphicsEffectFlagRecursivelyEv@Base 4:4.6.2
  _ZN20QGraphicsItemPrivate8addChildEP13QGraphicsItem@Base 4:4.6.1
  _ZN20QGraphicsPolygonItem10setPolygonERK9QPolygonF@Base 4:4.5.3
  _ZN20QGraphicsPolygonItem11setFillRuleEN2Qt8FillRuleE@Base 4:4.5.3
@@ -5785,12 +5788,12 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN24QImagePixmapCleanupHooks18enableCleanupHooksEP11QPixmapData@Base 4:4.6.1
  _ZN24QImagePixmapCleanupHooks18enableCleanupHooksERK6QImage@Base 4:4.6.1
  _ZN24QImagePixmapCleanupHooks18enableCleanupHooksERK7QPixmap@Base 4:4.6.1
- _ZN24QImagePixmapCleanupHooks24addPixmapDestructionHookEPFvP7QPixmapE@Base 4:4.6.1
- _ZN24QImagePixmapCleanupHooks25addPixmapModificationHookEPFvP7QPixmapE@Base 4:4.6.1
- _ZN24QImagePixmapCleanupHooks27removePixmapDestructionHookEPFvP7QPixmapE@Base 4:4.6.1
- _ZN24QImagePixmapCleanupHooks28removePixmapModificationHookEPFvP7QPixmapE@Base 4:4.6.1
- _ZN24QImagePixmapCleanupHooks29executePixmapDestructionHooksEP7QPixmap@Base 4:4.6.1
- _ZN24QImagePixmapCleanupHooks30executePixmapModificationHooksEP7QPixmap@Base 4:4.6.1
+ _ZN24QImagePixmapCleanupHooks28addPixmapDataDestructionHookEPFvP11QPixmapDataE@Base 4:4.6.2
+ _ZN24QImagePixmapCleanupHooks29addPixmapDataModificationHookEPFvP11QPixmapDataE@Base 4:4.6.2
+ _ZN24QImagePixmapCleanupHooks31removePixmapDataDestructionHookEPFvP11QPixmapDataE@Base 4:4.6.2
+ _ZN24QImagePixmapCleanupHooks32removePixmapDataModificationHookEPFvP11QPixmapDataE@Base 4:4.6.2
+ _ZN24QImagePixmapCleanupHooks33executePixmapDataDestructionHooksEP11QPixmapData@Base 4:4.6.2
+ _ZN24QImagePixmapCleanupHooks34executePixmapDataModificationHooksEP11QPixmapData@Base 4:4.6.2
  _ZN24QImagePixmapCleanupHooks8instanceEv@Base 4:4.6.1
  _ZN24QPixmapConvolutionFilter11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN24QPixmapConvolutionFilter11qt_metacastEPKc@Base 4:4.5.3
