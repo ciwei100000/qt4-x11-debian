@@ -259,7 +259,7 @@ override_dh_strip:
 
 override_dh_makeshlibs:
 	# Specific shlibs version (e.g.: 4:4.5.2)
-	$(foreach pkg,$(pkgs_lib),dh_makeshlibs -p$(pkg) -V '$(pkg) (>= $(shlibs_version))';)
+	$(foreach pkg,$(pkgs_lib),dh_makeshlibs -p$(pkg) -V '$(pkg) (>= $(shlibs_version))' -- -c0;)
 	# Generate shlibs local files
 	for pkg in $(pkgs_lib); do \
 		if test -e debian/$${pkg}/DEBIAN/shlibs ; then \
