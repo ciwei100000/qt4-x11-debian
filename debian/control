@@ -481,7 +481,8 @@ Package: qt4-dev-tools
 Architecture: any
 Section: devel
 Depends: ${shlibs:Depends}, ${misc:Depends}, libqt4-sql-sqlite
-Conflicts: qt3-assistant (<= 3:3.3.4-7), qt3-designer (<= 3:3.3.4-7), qt3-linguist (<= 3:3.3.4-7)
+Conflicts: qt3-assistant (<= 3:3.3.4-7), qt3-designer (<= 3:3.3.4-7),
+ qt3-linguist (<= 3:3.3.4-7), qt3-dev-tools-embedded
 Replaces: libqt4-core (<< 4.4.0~beta1-1)
 Recommends: libqt4-dev, qt4-doc, qt4-designer
 Suggests: qt4-doc-html

@@ -43,8 +43,8 @@ qt4-x11 (4:4.6.2-1~pre2) UNRELEASED; urgency=low
       (Closes: #564683)
     - extend architecture list for firebird2.1-dev.
     - build-depend on libxtst-dev to build qvfb.
-    - conflict against qt-x11-free-dbg on libqt4-dbg as qvfb is in both
-      packages.
+    - conflict against qt-x11-free-dbg on libqt4-dbg (qvfb).
+    - conflict against qt3-dev-tools-embedded on qt4-dev-tools (qvfb).
   * Update debian/qt4-dev-tools.install: add qvfb binary and the translations.
   * Update debian/rules:
     - add -qvfb configure option.
