@@ -417,7 +417,7 @@ Architecture: any
 Section: debug
 Depends: ${shlibs:Depends}, ${misc:Depends},
  libqtcore4 (= ${binary:Version})
-Conflicts: libqt4-debug (<< 4.4.0~beta1-1)
+Conflicts: libqt4-debug (<< 4.4.0~beta1-1), qt-x11-free-dbg
 Replaces: libqt4-debug (<< 4.4.0~beta1-1)
 Description: Qt 4 library debugging symbols
  Qt is a cross-platform C++ application framework. Qt's primary feature
