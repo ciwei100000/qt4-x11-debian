@@ -1,6 +1,6 @@
 qt4-x11 (4:4.6.2-1~pre2) UNRELEASED; urgency=low
 
-  * New upstream release.
+  * New upstream release (Closes: #571990).
     - Fix a crash in QDBusPendingReply/QDBusReply in case of unconnected calls.
       (Closes: #560838)
     - Fix FTBFS on GNU/kFreeBSD due to lack of WTF_USE_JSVALUE64.
