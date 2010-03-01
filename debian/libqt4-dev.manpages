@@ -2,4 +2,3 @@ debian/manpages/lrelease-qt4.1
 debian/manpages/lupdate-qt4.1
 debian/manpages/moc-qt4.1
 debian/manpages/qdbus.1
-debian/manpages/uic-qt4.1
