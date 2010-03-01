@@ -1,4 +1,4 @@
-qt4-x11 (4:4.6.2-1~pre2) UNRELEASED; urgency=low
+qt4-x11 (4:4.6.2-1) experimental; urgency=low
 
   * New upstream release (Closes: #571990).
     - Fix a crash in QDBusPendingReply/QDBusReply in case of unconnected calls.
@@ -74,7 +74,7 @@ qt4-x11 (4:4.6.2-1~pre2) UNRELEASED; urgency=low
   * For now, remove the uic-qt4 manpage, which actually refers to Qt3's uic;
     a totally misleading manpage is worse than no manpage at all. (Closes: #464375)
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 01 Mar 2010 12:15:42 +0100
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 01 Mar 2010 13:26:14 +0100
 
 qt4-x11 (4:4.6.0-1) experimental; urgency=low
 
