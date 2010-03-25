@@ -5,6 +5,8 @@ qt4-x11 (4:4.6.2-2) UNRELEASED; urgency=low
       Fixed QPixmap::load() to not modify referenced copies.
   * Fix FTBFS on sparc caused by a wrong platform_arg value:
     check for exact string match (instead of findstring usage).
+  * Fix FTBFS on ia64: -m64 option isn't recognized by gcc.
+    set platform_arg to linux-g++ on this architecture.
 
  -- Fathi Boudra <fabo@debian.org>  Fri, 19 Mar 2010 16:28:34 +0100
 
