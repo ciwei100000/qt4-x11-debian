@@ -3,6 +3,8 @@ qt4-x11 (4:4.6.2-2) UNRELEASED; urgency=low
   * Add upstream patch:
     - 0001_qpixmap_load_no_modify_referenced_copies.diff
       Fixed QPixmap::load() to not modify referenced copies.
+  * Fix FTBFS on sparc caused by a wrong platform_arg value:
+    check for exact string match (instead of findstring usage).
 
  -- Fathi Boudra <fabo@debian.org>  Fri, 19 Mar 2010 16:28:34 +0100
 
