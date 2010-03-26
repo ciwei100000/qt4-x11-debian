@@ -1,6 +1,5 @@
 [Desktop Entry]
 Categories=Qt;Settings;
-Encoding=UTF-8
 Exec=/usr/bin/qtconfig-qt4
 Name=Qt 4 Settings
 X-KDE-StartupNotify=true
