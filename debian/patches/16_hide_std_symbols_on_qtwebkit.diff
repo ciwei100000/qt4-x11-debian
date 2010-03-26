@@ -1,3 +1,7 @@
+Description: Don't make the std:: symbols in webkit public.
+Solution based on the work of Mike Hommey in the gtk webkit package.
+Author: Sune Vuorela <debian@pusling.com>
+
 --- a/src/3rdparty/webkit/WebKit.pri
 +++ b/src/3rdparty/webkit/WebKit.pri
 @@ -45,6 +45,7 @@ CONFIG(release, debug|release) {

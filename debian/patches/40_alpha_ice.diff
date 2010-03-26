@@ -1,3 +1,9 @@
+Description: Workaround for -fvisibility-inlines-hidden on alpha:
+             break out the static methods so they're not inlined.
+             fix FTBFS on alpha.
+Bug-Debian: http://bugs.debian.org/368883
+Author: Steve Langasek <vorlon@debian.org>
+
 --- a/src/corelib/global/qlibraryinfo.cpp
 +++ b/src/corelib/global/qlibraryinfo.cpp
 @@ -83,12 +83,7 @@ class QLibraryInfoPrivate

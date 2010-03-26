@@ -1,3 +1,7 @@
+Description: Various config.test fixes.
+             Build ibase sql plugin against firebird.
+Author: Fathi Boudra <fabo@debian.org>
+
 --- a/config.tests/unix/ibase/ibase.pro
 +++ b/config.tests/unix/ibase/ibase.pro
 @@ -1,4 +1,4 @@
