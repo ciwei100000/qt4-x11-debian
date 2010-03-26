@@ -18,9 +18,6 @@ qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/browser/data/closetab.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/browser/data/defaulticon.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/browser/data/history.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/browser/data/loading.gif
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/browser/images/addtab.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/browser/images/closetab.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/browser/images/history.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/chip/fileprint.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/chip/qt4logo.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/chip/rotateleft.png
@@ -178,7 +175,6 @@ qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/assistant/simpletextviewer
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/assistant/simpletextviewer/documentation/images/fadedfilemenu.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/assistant/simpletextviewer/documentation/images/filedialog.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/assistant/simpletextviewer/documentation/images/handbook.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/assistant/simpletextviewer/documentation/images/icon.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/assistant/simpletextviewer/documentation/images/mainwindow.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/assistant/simpletextviewer/documentation/images/open.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/assistant/simpletextviewer/documentation/images/wildcard.png
@@ -444,11 +440,9 @@ qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/network/torrent/icons/play
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/network/torrent/icons/player_stop.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/network/torrent/icons/stop.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/opengl/framebufferobject/designer.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/opengl/framebufferobject/qt4-logo.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/opengl/framebufferobject2/cubelogo.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/opengl/pbuffers/cubelogo.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/opengl/pbuffers2/designer.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/opengl/pbuffers2/qt4-logo.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/opengl/textures/images/side1.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/opengl/textures/images/side2.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/opengl/textures/images/side3.png
@@ -461,8 +455,6 @@ qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/painting/imagecomposition/
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/painting/imagecomposition/images/blackrectangle.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/painting/imagecomposition/images/butterfly.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/painting/imagecomposition/images/checker.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/painting/pixmapfilters/images/checker.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/painting/pixmapfilters/images/qt-logo.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/sql/drilldown/images/beijing.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/sql/drilldown/images/berlin.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/sql/drilldown/images/brisbane.png
@@ -487,14 +479,6 @@ qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/widgets/icons/images/monke
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/widgets/icons/images/qt_extended_16x16.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/widgets/icons/images/qt_extended_32x32.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/widgets/icons/images/qt_extended_48x48.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/widgets/icons/images/qtopia_16x16.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/widgets/icons/images/qtopia_32x32.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/widgets/icons/images/qtopia_48x48.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/widgets/movie/images/open.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/widgets/movie/images/pause.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/widgets/movie/images/play.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/widgets/movie/images/quit.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/widgets/movie/images/stop.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/widgets/styles/images/woodbackground.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/widgets/styles/images/woodbutton.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/widgets/stylesheet/images/checkbox_checked.png
