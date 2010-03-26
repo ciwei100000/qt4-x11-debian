@@ -1,8 +1,11 @@
-qt4-x11 (4:4.6.2-2) UNRELEASED; urgency=low
+qt4-x11 (4:4.6.2-2) experimental; urgency=low
 
-  * Add upstream patch:
+  * Add upstream patches:
     - 0001_qpixmap_load_no_modify_referenced_copies.diff
       Fixed QPixmap::load() to not modify referenced copies.
+    - 0002_qmake_qfileinfo_absolutepath.diff
+      Fixed QFileInfo::absolutePath() warning when running "qmake -project"
+      (Closes: #574043)
   * Fix FTBFS on sparc caused by a wrong platform_arg value:
     check for exact string match (instead of findstring usage).
   * Fix FTBFS on ia64: -m64 option isn't recognized by gcc.
@@ -971,7 +974,7 @@ qt4-x11 (4.3.4-2) unstable; urgency=low
     * Exclude debug files from dh_shlibdeps using DEB_DH_SHLIBDEPS_ARGS_ALL.
     * Update configure options to use libtiff from system.
     * Remove debug configure option to build with -02.
-    * Update common-install-arch target to fix wrong path in pkconfig and prl files.
+    * Update common-install-arch target to fix wrong path in pkgconfig and prl files.
   * Add libtiff4-dev build dependency.
   * Update libqt4-dev dependencies.
 
