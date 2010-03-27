@@ -217,31 +217,27 @@ override_dh_auto_install:
 	$(CURDIR)/bin/lrelease-qt4 debian/translations/qt_ca.ts \
 		-qm $(CURDIR)/debian/libqtcore4/usr/share/qt4/translations/qt_ca.qm
 
-	mkdir -p debian/qt4-demos/usr/lib/qt4/demos/qtdemo
-	uudecode -o debian/qt4-demos/usr/lib/qt4/demos/qtdemo/qtdemo.qhc \
-		debian/collection/qtdemo.qhc.uu
+	install -D -p -m0644 debian/collection/qtdemo.qhc \
+		debian/qt4-demos/usr/lib/qt4/demos/qtdemo/qtdemo.qhc
 
 	install -D -p -m0644 debian/desktop/designer-qt4.desktop \
 		debian/qt4-designer/usr/share/applications/designer-qt4.desktop
-	mkdir -p debian/qt4-designer/usr/share/pixmaps
-	uudecode -o debian/qt4-designer/usr/share/pixmaps/designer.png \
-		debian/desktop/designer.png.uu
+	install -D -p -m0644 debian/desktop/designer.png \
+		debian/qt4-designer/usr/share/pixmaps/designer.png
 
 	install -D -p -m0644 debian/desktop/assistant-qt4.desktop \
 		debian/qt4-dev-tools/usr/share/applications/assistant-qt4.desktop
 	install -D -p -m0644 debian/desktop/linguist-qt4.desktop \
 		debian/qt4-dev-tools/usr/share/applications/linguist-qt4.desktop
-	mkdir -p debian/qt4-dev-tools/usr/share/pixmaps
-	uudecode -o debian/qt4-dev-tools/usr/share/pixmaps/assistant.png \
-		debian/desktop/assistant.png.uu
-	uudecode -o debian/qt4-dev-tools/usr/share/pixmaps/linguist.png \
-		debian/desktop/linguist.png.uu
+	install -D -p -m0644 debian/desktop/assistant.png \
+		debian/qt4-dev-tools/usr/share/pixmaps/assistant.png
+	install -D -p -m0644 debian/desktop/linguist.png \
+		debian/qt4-dev-tools/usr/share/pixmaps/linguist.png
 
 	install -D -p -m0644 debian/desktop/qt4config.desktop \
 		debian/qt4-qtconfig/usr/share/applications/qt4config.desktop
-	mkdir -p debian/qt4-qtconfig/usr/share/pixmaps
-	uudecode -o debian/qt4-qtconfig/usr/share/pixmaps/qtconfig.png \
-		debian/desktop/qtconfig.png.uu
+	install -D -p -m0644 debian/desktop/qtconfig.png \
+		debian/qt4-qtconfig/usr/share/pixmaps/qtconfig.png
 
 	# Remove phonon development files
 	rm -f debian/tmp/usr/lib/libphonon.la

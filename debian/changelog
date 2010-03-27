@@ -1,7 +1,10 @@
 qt4-x11 (4:4.6.2-3) UNRELEASED; urgency=low
 
+  [ Pino Toscano ]
+  * Make more use of the dpkg source 3.0 format: directly ship the binary files
+    (PNG icons and qch) instead of uuencode them at install time.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 27 Mar 2010 13:06:16 +0100
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 27 Mar 2010 13:11:34 +0100
 
 qt4-x11 (4:4.6.2-2) experimental; urgency=low
 
