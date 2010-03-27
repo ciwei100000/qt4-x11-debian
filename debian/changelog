@@ -1,3 +1,8 @@
+qt4-x11 (4:4.6.2-3) UNRELEASED; urgency=low
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 27 Mar 2010 13:06:16 +0100
+
 qt4-x11 (4:4.6.2-2) experimental; urgency=low
 
   * Add upstream patches:
