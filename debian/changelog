@@ -1,5 +1,11 @@
 qt4-x11 (4:4.6.2-3) UNRELEASED; urgency=low
 
+  [ Fathi Boudra ]
+  * Switch to dpkg-source 3.0 (quilt).
+  * Fix some lintian warnings.
+  * Add libqt4-phonon lintian overrides.
+  * Update applications icons.
+
   [ Pino Toscano ]
   * Make more use of the dpkg source 3.0 format: directly ship the binary files
     (PNG icons and qch) instead of uuencode them at install time.
