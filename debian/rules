@@ -49,7 +49,7 @@ else
 endif
 
 %:
-	dh --parallel --with pkgkde_symbolshelper --with quilt $@
+	dh $@ --parallel --with pkgkde_symbolshelper
 
 override_dh_auto_configure:
 	# Test broken hppa kernel with glibc >= 2.5
