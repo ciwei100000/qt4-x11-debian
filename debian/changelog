@@ -1,20 +1,6 @@
-qt4-x11 (4:4.6.2-3) UNRELEASED; urgency=low
-
-  [ Fathi Boudra ]
-  * Switch to dpkg-source 3.0 (quilt).
-  * Fix some lintian warnings.
-  * Add libqt4-phonon lintian overrides.
-  * Update applications icons.
-
-  [ Pino Toscano ]
-  * Make more use of the dpkg source 3.0 format: directly ship the binary files
-    (PNG icons and qch) instead of uuencode them at install time.
-  * Fix watch file to report only stable versions (ie non-tp and non-rc ones).
-
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 30 Mar 2010 14:12:24 +0200
-
 qt4-x11 (4:4.6.2-2) experimental; urgency=low
 
+  [ Fathi Boudra ]
   * Add upstream patches:
     - 0001_qpixmap_load_no_modify_referenced_copies.diff
       Fixed QPixmap::load() to not modify referenced copies.
@@ -25,8 +11,17 @@ qt4-x11 (4:4.6.2-2) experimental; urgency=low
     check for exact string match (instead of findstring usage).
   * Fix FTBFS on ia64: -m64 option isn't recognized by gcc.
     set platform_arg to linux-g++ on this architecture.
+  * Switch to dpkg-source 3.0 (quilt).
+  * Fix some lintian warnings.
+  * Add libqt4-phonon lintian overrides.
+  * Update applications icons.
 
- -- Fathi Boudra <fabo@debian.org>  Fri, 19 Mar 2010 16:28:34 +0100
+  [ Pino Toscano ]
+  * Make more use of the dpkg source 3.0 format: directly ship the binary files
+    (PNG icons and qch) instead of uuencode them at install time.
+  * Fix watch file to report only stable versions (ie non-tp and non-rc ones).
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 04 Apr 2010 09:51:36 +0200
 
 qt4-x11 (4:4.6.2-1) experimental; urgency=low
 
