@@ -1,3 +1,7 @@
+qt4-x11 (4:4.6.2-3) experimentalUNRELEASED; urgency=low
+
+ -- Sune Vuorela <debian@pusling.com>  Fri, 09 Apr 2010 01:37:15 +0200
+
 qt4-x11 (4:4.6.2-2) experimental; urgency=low
 
   [ Fathi Boudra ]
