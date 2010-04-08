@@ -1,14 +1,13 @@
 author: Sune Vuorela <sune@debian.org>
 
-Build s390 debugging symbols with -gstabs instead of with -g
-to reduce linker memory usage.
+Don't do debugging symbols for webkit on s390, it is too big for the linker.
 Thanks to Oswald Buddenhagen for the hint.
 
 Debian bug 528485
 
 --- a/src/3rdparty/webkit/WebKit.pri
 +++ b/src/3rdparty/webkit/WebKit.pri
-@@ -43,6 +43,14 @@ CONFIG(release, debug|release) {
+@@ -43,6 +43,13 @@ CONFIG(release, debug|release) {
      DEFINES += NDEBUG
  }
  
@@ -16,7 +15,6 @@ Debian bug 528485
 +equals(arch, s390) {
 +	message("S/390 workaround: is not building with -g, but with -gstabs")
 +	QMAKE_CXXFLAGS -= -g
-+	QMAKE_CXXFLAGS += -gstabs
 +}
 +
 +

@@ -1,5 +1,10 @@
 qt4-x11 (4:4.6.2-3) experimentalUNRELEASED; urgency=low
 
+  * Do not build webkit with debugging symbols on s390. These becomes too big
+    and thus the build fails, as the linker can't handle more than a couple of
+    GB large files, and debugging symbols on s390 are real large. This is a
+    repetition of #528485
+
  -- Sune Vuorela <debian@pusling.com>  Fri, 09 Apr 2010 01:37:15 +0200
 
 qt4-x11 (4:4.6.2-2) experimental; urgency=low
