@@ -1,4 +1,4 @@
-qt4-x11 (4:4.6.2-3) UNRELEASED; urgency=low
+qt4-x11 (4:4.6.2-3) experimental; urgency=low
 
   [ Sune Vuorela ]
   * Do not build webkit with debugging symbols on s390. These becomes too big
@@ -14,7 +14,7 @@ qt4-x11 (4:4.6.2-3) UNRELEASED; urgency=low
   * Add 97_alpha_ftbfs_qatomic_alpha_h_types.diff patch to fix FTBFS on alpha
     caused by invalid type conversions in qatomic_alpha.h.
 
- -- Sune Vuorela <debian@pusling.com>  Fri, 09 Apr 2010 01:37:15 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 10 Apr 2010 01:00:49 +0300
 
 qt4-x11 (4:4.6.2-2) experimental; urgency=low
 
