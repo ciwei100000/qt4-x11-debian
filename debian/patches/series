@@ -42,3 +42,4 @@
 92_armel_gcc43_valist_compat.diff
 95_sparc_platform_definition.diff
 96_powerpc_no_gc_sections.diff
+97_alpha_ftbfs_qatomic_alpha_h_types.diff
