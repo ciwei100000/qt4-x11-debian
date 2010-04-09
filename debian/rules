@@ -195,7 +195,7 @@ override_dh_auto_clean:
 	-delete
 
 	# Any remaining executables
-	find $(CURDIR) -type f -exec file -i '{}' \; | grep \
+	find $(CURDIR) -type f -executable -exec file -i '{}' \; | grep \
 	  -e application/x-executable \
 	| cut -d ':' -f 1 | xargs rm -f
 
