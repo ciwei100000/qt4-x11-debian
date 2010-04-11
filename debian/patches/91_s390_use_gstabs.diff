@@ -1,12 +1,10 @@
 Author: Sune Vuorela <sune@debian.org>
-Author: Modestas Vainius <modax@debian.org>
-Description: workaround webkit FTBFSes on s390
- * Build s390 debugging symbols with -gstabs instead of with -g to reduce
-   linker memory usage. Thanks to Oswald Buddenhagen for the hint.
+Description: use -gstabs debugging symbols on s390
+ Build s390 debugging symbols with -gstabs instead of with -g to reduce linker
+ memory usage. Thanks to Oswald Buddenhagen for the hint.
 Bug-Debian: http://bugs.debian.org/528485
 Origin: vendor
 Forwarded: no
-Last-Update: 2010-04-11 (-ffunction-sections removal)
 
 --- a/src/3rdparty/webkit/WebKit.pri
 +++ b/src/3rdparty/webkit/WebKit.pri
