@@ -1,6 +1,7 @@
 # upstream patches
 0001_qpixmap_load_no_modify_referenced_copies.diff
 0002_qmake_qfileinfo_absolutepath.diff
+0003_s390_fix_atomic_ops_related_crashes.diff
 
 # qt-copy patches
 0180-window-role.diff

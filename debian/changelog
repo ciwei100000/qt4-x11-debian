@@ -5,6 +5,9 @@ qt4-x11 (4:4.6.2-4~pre1) UNRELEASED; urgency=low
     FTBFS on s390 caused by internal linker error which is due to bugs when
     processing UString.o and some others (built with -ffunction-sections).
     Implemented in the 96_webkit_no_gc_sections.diff patch.
+  * Steal patch from upstream 4.6 branch to fix s390 atomic ops related
+    crashes. One of them made the package to FTBFS. Upstream commit:
+    cdf4701f442149546043b155cddcc53116875f1c
 
  -- Modestas Vainius <modax@debian.org>  Sun, 11 Apr 2010 19:06:59 +0300
 
