@@ -1,0 +1,32 @@
+Author: Sune Vuorela <sune@debian.org>
+Author: Modestas Vainius <modax@debian.org>
+Description: workaround webkit FTBFSes on s390
+ * Build s390 debugging symbols with -gstabs instead of with -g to reduce
+   linker memory usage. Thanks to Oswald Buddenhagen for the hint.
+ * Do not build webkit with -ffunction-sections on s390 as it triggers internal
+   linker error with "gcc (Debian 4.4.3-7) 4.4.3" / "ld 2.20.1-system.20100303"
+   (there are problems with at least UString.o and some more).
+Bug-Debian: http://bugs.debian.org/528485
+Origin: vendor
+Forwarded: no
+Last-Update: 2010-04-11 (-ffunction-sections removal)
+
+--- a/src/3rdparty/webkit/WebKit.pri
++++ b/src/3rdparty/webkit/WebKit.pri
+@@ -43,6 +43,16 @@ CONFIG(release, debug|release) {
+     DEFINES += NDEBUG
+ }
+ 
++arch=$$system(dpkg-architecture -qDEB_BUILD_ARCH)
++equals(arch, s390) {
++	message("S/390 workaround: do not build with -g, but with -gstabs")
++	QMAKE_CXXFLAGS -= -g
++	QMAKE_CXXFLAGS += -gstabs
++	message("S/390 workaround: do not build with -ffunction-sections")
++	QMAKE_CXXFLAGS -= -ffunction-sections
++}
++
++
+ BASE_DIR = $$PWD
+ INCLUDEPATH += $$PWD/WebKit/qt/Api
+ QMAKE_LFLAGS += -Wl,--version-script,$$BASE_DIR/symbols.filter

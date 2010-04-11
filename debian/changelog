@@ -1,5 +1,9 @@
 qt4-x11 (4:4.6.2-4~pre1) UNRELEASED; urgency=low
 
+  * Revert previous s390 specific change as it did not solve FTBFS.
+  * Do not build with -ffunction-sections on s390. This should actually
+    workaround FTBFS on s390 caused by internal linker error which is due to
+    miscompilation of UString.o and others.
 
  -- Modestas Vainius <modax@debian.org>  Sun, 11 Apr 2010 19:06:59 +0300
 

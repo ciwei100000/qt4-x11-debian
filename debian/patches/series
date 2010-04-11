@@ -38,7 +38,7 @@
 81_hurd_architecture.diff
 82_hurd_SA_SIGINFO.diff
 89_powerpc_opts.diff
-91_s390_no_webkit_debugging.diff
+91_s390_webkit_ftbfs_fixes.diff
 92_armel_gcc43_valist_compat.diff
 95_sparc_platform_definition.diff
 96_powerpc_no_gc_sections.diff
