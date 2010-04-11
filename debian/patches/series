@@ -38,8 +38,8 @@
 81_hurd_architecture.diff
 82_hurd_SA_SIGINFO.diff
 89_powerpc_opts.diff
-91_s390_webkit_ftbfs_fixes.diff
+91_s390_use_gstabs.diff
 92_armel_gcc43_valist_compat.diff
 95_sparc_platform_definition.diff
-96_powerpc_no_gc_sections.diff
+96_webkit_no_gc_sections.diff
 97_alpha_ftbfs_qatomic_alpha_h_types.diff
