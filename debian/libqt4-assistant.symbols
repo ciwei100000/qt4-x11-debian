@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.6.2 amd64 i386 ia64 kfreebsd-amd64 kfreebsd-i386 powerpc sparc
+# SymbolsHelper-Confirmed: 4:4.6.2 amd64 i386 ia64 kfreebsd-amd64 kfreebsd-i386 powerpc s390 sparc
 libQtAssistantClient.so.4 libqt4-assistant #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZGVZ13qvariant_castI8QVariantET_RKS0_E3vid@Base 4:4.6.1

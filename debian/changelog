@@ -9,7 +9,7 @@ qt4-x11 (4:4.6.2-4~pre1) UNRELEASED; urgency=low
     crashes. One of them made the package to FTBFS. Upstream commit:
     cdf4701f442149546043b155cddcc53116875f1c
   * Update symbol files for amd64, i386, ia64, kfreebsd-amd64, kfreebsd-i386,
-    powerpc, sparc.
+    powerpc, s390, sparc.
 
  -- Modestas Vainius <modax@debian.org>  Sun, 11 Apr 2010 19:06:59 +0300
 

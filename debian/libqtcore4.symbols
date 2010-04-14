@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.6.2 amd64 i386 ia64 kfreebsd-amd64 kfreebsd-i386 powerpc sparc
+# SymbolsHelper-Confirmed: 4:4.6.2 amd64 i386 ia64 kfreebsd-amd64 kfreebsd-i386 powerpc s390 sparc
 libQtCLucene.so.4 libqtcore4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN12QCLuceneHits2idEi@Base 4:4.5.3
