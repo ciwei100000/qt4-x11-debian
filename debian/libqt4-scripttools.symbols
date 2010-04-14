@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.6.1 amd64 i386
+# SymbolsHelper-Confirmed: 4:4.6.2 amd64 i386 ia64 kfreebsd-amd64 kfreebsd-i386 powerpc sparc
 libQtScriptTools.so.4 libqt4-scripttools #MINVER#
 * Build-Depends-Package: libqt4-dev
  (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
@@ -18,7 +18,7 @@ libQtScriptTools.so.4 libqt4-scripttools #MINVER#
  _ZN21QScriptEngineDebuggerD0Ev@Base 4:4.5.3
  _ZN21QScriptEngineDebuggerD1Ev@Base 4:4.5.3
  _ZN21QScriptEngineDebuggerD2Ev@Base 4:4.5.3
-#MISSING: 4:4.6.1# _ZN9QHashData8willGrowEv@Base 4:4.5.3
+ (arch=sparc)_ZN9QHashData8willGrowEv@Base 4:4.6.2
  _ZNK21QScriptEngineDebugger10metaObjectEv@Base 4:4.5.3
  _ZNK21QScriptEngineDebugger14standardWindowEv@Base 4:4.5.3
  _ZNK21QScriptEngineDebugger22autoShowStandardWindowEv@Base 4:4.5.3

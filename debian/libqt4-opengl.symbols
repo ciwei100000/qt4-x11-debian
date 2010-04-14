@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.6.2 amd64
+# SymbolsHelper-Confirmed: 4:4.6.2 amd64 i386 ia64 kfreebsd-amd64 kfreebsd-i386 powerpc sparc
 libQtOpenGL.so.4 libqt4-opengl #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z18qt_gl_library_namev@Base 4:4.5.3
@@ -59,7 +59,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  (arch=!armel)_ZN12QDashStroker5beginEPv@Base 4:4.5.3
  (arch=!armel)_ZN12QDashStrokerD0Ev@Base 4:4.5.3
  (arch=!armel)_ZN12QDashStrokerD1Ev@Base 4:4.5.3
- _ZN13QPainterStateC2ERKS_@Base 4:4.6.1
+ (arch=sparc)_ZN13QPainterStateC2ERKS_@Base 4:4.6.2
  _ZN14QGLPaintDevice10beginPaintEv@Base 4:4.6.1
  _ZN14QGLPaintDevice18ensureActiveTargetEv@Base 4:4.6.1
  _ZN14QGLPaintDevice8endPaintEv@Base 4:4.6.1
@@ -359,6 +359,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN26QGLFramebufferObjectFormatD2Ev@Base 4:4.6.1
  _ZN26QGLFramebufferObjectFormataSERKS_@Base 4:4.6.1
  _ZN3QGL23setPreferredPaintEngineEN12QPaintEngine4TypeE@Base 4:4.6.1
+ (arch=sparc)_ZN6QDebugC1E9QtMsgType@Base 4:4.6.2
  _ZN6QDebugD1Ev@Base 4:4.5.3
  _ZN6QDebuglsEPKc@Base 4:4.5.3
  _ZN6QDebuglsERK7QString@Base 4:4.6.1
@@ -493,7 +494,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZNK11QGLColormap7isEmptyEv@Base 4:4.5.3
  _ZNK11QGLColormap8entryRgbEi@Base 4:4.5.3
 #MISSING: 4:4.6.1# _ZNK12QGLSLProgram7successEv@Base 4:4.5.3
- _ZNK12QPaintDevice6heightEv@Base 4:4.6.1
+#MISSING: 4:4.6.2# _ZNK12QPaintDevice6heightEv@Base 4:4.6.1
 #MISSING: 4:4.6.1# _ZNK12QPaintDevice7devTypeEv@Base 4:4.5.3
  _ZNK14QGLPaintDevice6formatEv@Base 4:4.6.1
  _ZNK14QGLPaintDevice7devTypeEv@Base 4:4.6.1
@@ -546,7 +547,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZNK26QGLFramebufferObjectFormat7samplesEv@Base 4:4.6.1
  _ZNK26QGLFramebufferObjectFormateqERKS_@Base 4:4.6.1
  _ZNK26QGLFramebufferObjectFormatneERKS_@Base 4:4.6.1
- (arch=armel sparc)_ZNK7QString7sectionE5QCharii6QFlagsINS_11SectionFlagEE@Base 4:4.5.3
+#MISSING: 4:4.6.2# (arch=armel sparc)_ZNK7QString7sectionE5QCharii6QFlagsINS_11SectionFlagEE@Base 4:4.5.3
  _ZNK9QGLFormat10testOptionE6QFlagsIN3QGL12FormatOptionEE@Base 4:4.5.3
  _ZNK9QGLFormat12swapIntervalEv@Base 4:4.5.3
  _ZNK9QGLFormat13redBufferSizeEv@Base 4:4.5.3

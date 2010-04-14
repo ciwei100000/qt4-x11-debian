@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.6.2 amd64 i386
+# SymbolsHelper-Confirmed: 4:4.6.2 amd64 i386 ia64 kfreebsd-amd64 kfreebsd-i386 powerpc sparc
 libQtCLucene.so.4 libqtcore4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN12QCLuceneHits2idEi@Base 4:4.5.3
@@ -448,7 +448,7 @@ libQtCLucene.so.4 libqtcore4 #MINVER#
  (optional=templinst|arch=!hurd-i386 !kfreebsd-amd64 !kfreebsd-i386|subst)_ZNSs4_Rep9_S_createE{size_t}{size_t}RKSaIcE@Base 4:4.5.3
  (optional=templinst|arch=!hurd-i386 !kfreebsd-amd64 !kfreebsd-i386|subst)_ZNSs6appendEPKc{size_t}@Base 4:4.5.3
  (optional=templinst|arch=!hurd-i386 !kfreebsd-amd64 !kfreebsd-i386|subst)_ZNSs6assignEPKc{size_t}@Base 4:4.5.3
- (optional=templinst|subst)_ZNSs7_M_copyEPcPKc{size_t}@Base 4:4.6.1
+#MISSING: 4:4.6.2# (optional=templinst|subst)_ZNSs7_M_copyEPcPKc{size_t}@Base 4:4.6.1
  (optional=templinst|arch=!hurd-i386 !kfreebsd-amd64 !kfreebsd-i386|subst)_ZNSs7reserveE{size_t}@Base 4:4.5.3
 #MISSING: 4:4.6.1# (optional=templinst|arch=!hurd-i386 !kfreebsd-amd64 !kfreebsd-i386|subst)_ZNSs9_M_mutateE{size_t}{size_t}{size_t}@Base 4:4.5.3
  (optional=templinst|arch=!hurd-i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSsD1Ev@Base 4:4.5.3
@@ -1566,8 +1566,8 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN15QAnimationGroupD0Ev@Base 4:4.6.1
  _ZN15QAnimationGroupD1Ev@Base 4:4.6.1
  _ZN15QAnimationGroupD2Ev@Base 4:4.6.1
- (arch=sparc)_ZN15QBasicAtomicInt17testAndSetOrderedEii@Base 4:4.5.3
- (arch=ia64 sparc)_ZN15QBasicAtomicInt18fetchAndAddAcquireEi@Base 4:4.5.3
+#MISSING: 4:4.6.2# (arch=sparc)_ZN15QBasicAtomicInt17testAndSetOrderedEii@Base 4:4.5.3
+#MISSING: 4:4.6.2# (arch=ia64 sparc)_ZN15QBasicAtomicInt18fetchAndAddAcquireEi@Base 4:4.5.3
  (arch=armel hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
  (arch=armel hppa sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN15QDateTimeParser11parseFormatERK7QString@Base 4:4.5.3
@@ -3122,7 +3122,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN9QHashData6rehashEi@Base 4:4.5.3
  _ZN9QHashData8freeNodeEPv@Base 4:4.5.3
  _ZN9QHashData8nextNodeEPNS_4NodeE@Base 4:4.5.3
- (arch=!hurd-i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN9QHashData8willGrowEv@Base 4:4.5.3
+ _ZN9QHashData8willGrowEv@Base 4:4.6.2
  _ZN9QHashData9hasShrunkEv@Base 4:4.6.1
  _ZN9QIODevice11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN9QIODevice11qt_metacastEPKc@Base 4:4.5.3
