@@ -472,7 +472,6 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN9QGLWidgetD0Ev@Base 4:4.5.3
  _ZN9QGLWidgetD1Ev@Base 4:4.5.3
  _ZN9QGLWidgetD2Ev@Base 4:4.5.3
-#MISSING: 4:4.6.1# _ZN9QHashData8willGrowEv@Base 4:4.5.3
  _ZN9QHashData9hasShrunkEv@Base 4:4.6.1
  _ZN9QPolygonFD1Ev@Base 4:4.5.3
  _ZNK10QGLContext10colorIndexERK6QColor@Base 4:4.5.3
@@ -493,9 +492,6 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZNK11QGLColormap4sizeEv@Base 4:4.5.3
  _ZNK11QGLColormap7isEmptyEv@Base 4:4.5.3
  _ZNK11QGLColormap8entryRgbEi@Base 4:4.5.3
-#MISSING: 4:4.6.1# _ZNK12QGLSLProgram7successEv@Base 4:4.5.3
-#MISSING: 4:4.6.2# _ZNK12QPaintDevice6heightEv@Base 4:4.6.1
-#MISSING: 4:4.6.1# _ZNK12QPaintDevice7devTypeEv@Base 4:4.5.3
  _ZNK14QGLPaintDevice6formatEv@Base 4:4.6.1
  _ZNK14QGLPaintDevice7devTypeEv@Base 4:4.6.1
  _ZNK14QGLPixelBuffer11paintEngineEv@Base 4:4.5.3
@@ -547,7 +543,6 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZNK26QGLFramebufferObjectFormat7samplesEv@Base 4:4.6.1
  _ZNK26QGLFramebufferObjectFormateqERKS_@Base 4:4.6.1
  _ZNK26QGLFramebufferObjectFormatneERKS_@Base 4:4.6.1
-#MISSING: 4:4.6.2# (arch=armel sparc)_ZNK7QString7sectionE5QCharii6QFlagsINS_11SectionFlagEE@Base 4:4.5.3
  _ZNK9QGLFormat10testOptionE6QFlagsIN3QGL12FormatOptionEE@Base 4:4.5.3
  _ZNK9QGLFormat12swapIntervalEv@Base 4:4.5.3
  _ZNK9QGLFormat13redBufferSizeEv@Base 4:4.5.3

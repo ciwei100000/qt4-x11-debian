@@ -571,7 +571,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN16QDesignerMenuBar22handleContextMenuEventEP7QWidgetP17QContextMenuEvent@Base 4:4.5.3
  _ZN16QDesignerMenuBar23handleMouseReleaseEventEP7QWidgetP11QMouseEvent@Base 4:4.5.3
  _ZN16QDesignerMenuBar27handleMouseDoubleClickEventEP7QWidgetP11QMouseEvent@Base 4:4.5.3
-#MISSING: 4:4.6.1# _ZN16QDesignerMenuBar4swapEii@Base 4:4.5.3
  _ZN16QDesignerMenuBar6moveUpEv@Base 4:4.5.3
  _ZN16QDesignerMenuBar8hideMenuEi@Base 4:4.5.3
  _ZN16QDesignerMenuBar8moveDownEv@Base 4:4.5.3
@@ -641,7 +640,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN17QExtensionManagerD1Ev@Base 4:4.5.3
  _ZN17QExtensionManagerD2Ev@Base 4:4.5.3
  _ZN17QFormBuilderExtra10applyBuddyERK7QStringNS_9BuddyModeEP6QLabel@Base 4:4.5.3
-#MISSING: 4:4.6.1# _ZN17QFormBuilderExtra13setRootWidgetERK8QPointerI7QWidgetE@Base 4:4.5.3
  _ZN17QFormBuilderExtra14removeInstanceEPK20QAbstractFormBuilder@Base 4:4.5.3
  _ZN17QFormBuilderExtra14setTextBuilderEP12QTextBuilder@Base 4:4.5.3
  _ZN17QFormBuilderExtra15setParentWidgetERK8QPointerI7QWidgetE@Base 4:4.6.1
@@ -662,16 +660,13 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN17QFormBuilderExtra23applyPropertyInternallyEP7QObjectRK7QStringRK8QVariant@Base 4:4.5.3
  _ZN17QFormBuilderExtra23gridLayoutColumnStretchEPK11QGridLayout@Base 4:4.5.3
  _ZN17QFormBuilderExtra23setGridLayoutRowStretchERK7QStringP11QGridLayout@Base 4:4.5.3
-#MISSING: 4:4.6.1# _ZN17QFormBuilderExtra23storeCustomWidgetScriptERK7QStringS2_@Base 4:4.5.3
  _ZN17QFormBuilderExtra25clearGridLayoutRowStretchEP11QGridLayout@Base 4:4.5.3
  _ZN17QFormBuilderExtra25setProcessingLayoutWidgetEb@Base 4:4.5.3
  _ZN17QFormBuilderExtra26gridLayoutRowMinimumHeightEPK11QGridLayout@Base 4:4.5.3
  _ZN17QFormBuilderExtra26setGridLayoutColumnStretchERK7QStringP11QGridLayout@Base 4:4.5.3
-#MISSING: 4:4.6.1# _ZN17QFormBuilderExtra26storeCustomWidgetBaseClassERK7QStringS2_@Base 4:4.5.3
  _ZN17QFormBuilderExtra28clearGridLayoutColumnStretchEP11QGridLayout@Base 4:4.5.3
  _ZN17QFormBuilderExtra28gridLayoutColumnMinimumWidthEPK11QGridLayout@Base 4:4.5.3
  _ZN17QFormBuilderExtra29setGridLayoutRowMinimumHeightERK7QStringP11QGridLayout@Base 4:4.5.3
-#MISSING: 4:4.6.1# _ZN17QFormBuilderExtra30storeCustomWidgetAddPageMethodERK7QStringS2_@Base 4:4.5.3
  _ZN17QFormBuilderExtra31clearGridLayoutRowMinimumHeightEP11QGridLayout@Base 4:4.5.3
  _ZN17QFormBuilderExtra31setGridLayoutColumnMinimumWidthERK7QStringP11QGridLayout@Base 4:4.5.3
  _ZN17QFormBuilderExtra33clearGridLayoutColumnMinimumWidthEP11QGridLayout@Base 4:4.5.3
@@ -2104,7 +2099,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN18qdesigner_internal8ZoomView16contextMenuEventEP17QContextMenuEvent@Base 4:4.5.3
  _ZN18qdesigner_internal8ZoomView16staticMetaObjectE@Base 4:4.5.3
  _ZN18qdesigner_internal8ZoomView17setScrollPositionERK6QPoint@Base 4:4.5.3
-#MISSING: 4:4.6.1# _ZN18qdesigner_internal8ZoomView23setAutoScrollSuppressedEb@Base 4:4.5.3
  _ZN18qdesigner_internal8ZoomView25setZoomContextMenuEnabledEb@Base 4:4.5.3
  _ZN18qdesigner_internal8ZoomView7setZoomEi@Base 4:4.5.3
  _ZN18qdesigner_internal8ZoomView8zoomMenuEv@Base 4:4.5.3
@@ -3063,7 +3057,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZNK17QExtensionFactory9extensionEP7QObjectRK7QString@Base 4:4.5.3
  _ZNK17QExtensionManager10metaObjectEv@Base 4:4.5.3
  _ZNK17QExtensionManager9extensionEP7QObjectRK7QString@Base 4:4.5.3
-#MISSING: 4:4.6.1# _ZNK17QFormBuilderExtra10rootWidgetEv@Base 4:4.5.3
  _ZNK17QFormBuilderExtra11textBuilderEv@Base 4:4.5.3
  _ZNK17QFormBuilderExtra12parentWidgetEv@Base 4:4.6.1
  _ZNK17QFormBuilderExtra15resourceBuilderEv@Base 4:4.5.3
@@ -3416,7 +3409,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZNK18qdesigner_internal8ZoomView10metaObjectEv@Base 4:4.5.3
  _ZNK18qdesigner_internal8ZoomView10zoomFactorEv@Base 4:4.5.3
  _ZNK18qdesigner_internal8ZoomView14scrollPositionEv@Base 4:4.5.3
-#MISSING: 4:4.6.1# _ZNK18qdesigner_internal8ZoomView22isAutoScrollSuppressedEv@Base 4:4.5.3
  _ZNK18qdesigner_internal8ZoomView24isZoomContextMenuEnabledEv@Base 4:4.5.3
  _ZNK18qdesigner_internal8ZoomView4zoomEv@Base 4:4.5.3
  _ZNK18qdesigner_internal9GridPanel10metaObjectEv@Base 4:4.5.3
