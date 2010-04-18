@@ -1,5 +1,6 @@
 qt4-x11 (4:4.6.2-5) UNRELEASED; urgency=low
 
+  * Update symbol files for armel, hppa and mips.
 
  -- Modestas Vainius <modax@debian.org>  Sun, 18 Apr 2010 23:42:13 +0300
 
