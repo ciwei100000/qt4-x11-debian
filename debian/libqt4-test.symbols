@@ -1,7 +1,7 @@
 # SymbolsHelper-Confirmed: 4:4.6.2 amd64 armel hppa i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips powerpc s390 sparc
 libQtTest.so.4 libqt4-test #MINVER#
 * Build-Depends-Package: libqt4-dev
- (arch=armel sparc)_Z6qDebugv@Base 4:4.6.2
+ (optional=external|arch=armel sparc)_Z6qDebugv@Base 4:4.6.2
  _ZGVZN14QTestEventLoop8instanceEvE8testLoop@Base 4:4.5.3
  _ZN14QTestEventLoop11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN14QTestEventLoop11qt_metacastEPKc@Base 4:4.5.3

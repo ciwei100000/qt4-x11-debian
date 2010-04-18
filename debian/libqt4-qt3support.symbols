@@ -4332,7 +4332,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZNK12Q3TextFormat7descentEv@Base 4:4.5.3
  _ZNK12Q3TextFormat7leadingEv@Base 4:4.5.3
  _ZNK12Q3TextString5widthEi@Base 4:4.5.3
- (arch=armel hppa sparc)_ZNK12Q3TextString8toStringEv@Base 4:4.6.2
+ (optional=private|arch=armel hppa sparc)_ZNK12Q3TextString8toStringEv@Base 4:4.6.2
  _ZNK12Q3TextString9checkBidiEv@Base 4:4.5.3
  _ZNK12QPaintDevice7devTypeEv@Base 4:4.5.3
  _ZNK13Q3ActionGroup10metaObjectEv@Base 4:4.5.3

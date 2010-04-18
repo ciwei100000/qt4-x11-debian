@@ -4282,7 +4282,7 @@ libQtDesignerComponents.so.4 libqt4-designer #MINVER#
  _ZN19QDesignerComponents21createObjectInspectorEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  _ZN19QDesignerComponents22createSignalSlotEditorEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  _ZN7QString5clearEv@Base 4:4.5.3
- (arch=armel hppa sparc)_ZN9QHashData8willGrowEv@Base 4:4.6.2
+ (optional=external|arch=armel hppa sparc)_ZN9QHashData8willGrowEv@Base 4:4.6.2
  _ZN9QHashData9hasShrunkEv@Base 4:4.6.1
  _ZTI22QItemEditorCreatorBase@Base 4:4.5.3
  _ZTS22QItemEditorCreatorBase@Base 4:4.5.3

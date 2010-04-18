@@ -1532,8 +1532,8 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN15QAnimationGroupD0Ev@Base 4:4.6.1
  _ZN15QAnimationGroupD1Ev@Base 4:4.6.1
  _ZN15QAnimationGroupD2Ev@Base 4:4.6.1
- (arch=armel hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (arch=armel sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
+ (optional=inline|arch=armel hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
+ (optional=inline|arch=armel sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN15QDateTimeParser11parseFormatERK7QString@Base 4:4.5.3
  _ZN15QLinkedListData11shared_nullE@Base 4:4.5.3
  _ZN15QObjectUserDataD0Ev@Base 4:4.5.3
