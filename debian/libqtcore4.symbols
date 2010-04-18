@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.6.2 amd64 i386 ia64 kfreebsd-amd64 kfreebsd-i386 powerpc s390 sparc
+# SymbolsHelper-Confirmed: 4:4.6.2 amd64 armel hppa i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips powerpc s390 sparc
 libQtCLucene.so.4 libqtcore4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN12QCLuceneHits2idEi@Base 4:4.5.3
@@ -75,7 +75,7 @@ libQtCLucene.so.4 libqtcore4 #MINVER#
  _ZN14QCLuceneReaderD1Ev@Base 4:4.5.3
  _ZN14QCLuceneReaderD2Ev@Base 4:4.5.3
  (optional=external|arch=armel sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
+ (optional=external|arch=sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN16QCLuceneAnalyzerC1Ev@Base 4:4.5.3
  _ZN16QCLuceneAnalyzerC2Ev@Base 4:4.5.3
  _ZN16QCLuceneAnalyzerD0Ev@Base 4:4.5.3
@@ -751,6 +751,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _Z10qHBNewFacePvPF8HB_ErrorS_jPhPjE@Base 4:4.5.3
  _Z10qShapeItemP14HB_ShaperItem_@Base 4:4.6.1
  (arch=hurd-i386 i386 kfreebsd-i386)_Z10qvsnprintfPcjPKcS_@Base 4:4.5.3
+ (arch=armel)_Z10qvsnprintfPcjPKcSt9__va_list@Base 4:4.6.2
  (arch=alpha)_Z10qvsnprintfPcmPKc13__va_list_tag@Base 4:4.5.3
  (arch=amd64 kfreebsd-amd64 powerpc s390|subst)_Z10qvsnprintfPc{size_t}PKcP13__va_list_tag@Base 4:4.5.3
  (arch=armel hppa ia64 mips mipsel sparc|subst)_Z10qvsnprintfPc{size_t}PKcPv@Base 4:4.5.3
@@ -1172,12 +1173,12 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN12QDirIteratorD0Ev@Base 4:4.5.3
  _ZN12QDirIteratorD1Ev@Base 4:4.5.3
  _ZN12QDirIteratorD2Ev@Base 4:4.5.3
- _ZN12QEasingCurve12setAmplitudeEd@Base 4:4.6.1
- _ZN12QEasingCurve12setOvershootEd@Base 4:4.6.1
- _ZN12QEasingCurve13setCustomTypeEPFddE@Base 4:4.6.1
+ (subst)_ZN12QEasingCurve12setAmplitudeE{qreal}@Base 4:4.6.2
+ (subst)_ZN12QEasingCurve12setOvershootE{qreal}@Base 4:4.6.2
+ (subst)_ZN12QEasingCurve13setCustomTypeEPF{qreal}{qreal}E@Base 4:4.6.2
  _ZN12QEasingCurve16staticMetaObjectE@Base 4:4.6.1
  _ZN12QEasingCurve7setTypeENS_4TypeE@Base 4:4.6.1
- _ZN12QEasingCurve9setPeriodEd@Base 4:4.6.1
+ (subst)_ZN12QEasingCurve9setPeriodE{qreal}@Base 4:4.6.2
  _ZN12QEasingCurveC1ENS_4TypeE@Base 4:4.6.1
  _ZN12QEasingCurveC1ERKS_@Base 4:4.6.1
  _ZN12QEasingCurveC2ENS_4TypeE@Base 4:4.6.1
@@ -1532,7 +1533,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN15QAnimationGroupD1Ev@Base 4:4.6.1
  _ZN15QAnimationGroupD2Ev@Base 4:4.6.1
  (arch=armel hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (arch=armel hppa sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
+ (arch=armel sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN15QDateTimeParser11parseFormatERK7QString@Base 4:4.5.3
  _ZN15QLinkedListData11shared_nullE@Base 4:4.5.3
  _ZN15QObjectUserDataD0Ev@Base 4:4.5.3
@@ -1776,14 +1777,14 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN17QVariantAnimation11setDurationEi@Base 4:4.6.1
  _ZN17QVariantAnimation11setEndValueERK8QVariant@Base 4:4.6.1
  _ZN17QVariantAnimation11updateStateEN18QAbstractAnimation5StateES1_@Base 4:4.6.1
- _ZN17QVariantAnimation12setKeyValuesERK7QVectorI5QPairId8QVariantEE@Base 4:4.6.1
+ (subst)_ZN17QVariantAnimation12setKeyValuesERK7QVectorI5QPairI{qreal}8QVariantEE@Base 4:4.6.2
  _ZN17QVariantAnimation12valueChangedERK8QVariant@Base 4:4.6.1
- _ZN17QVariantAnimation13setKeyValueAtEdRK8QVariant@Base 4:4.6.1
+ (subst)_ZN17QVariantAnimation13setKeyValueAtE{qreal}RK8QVariant@Base 4:4.6.2
  _ZN17QVariantAnimation13setStartValueERK8QVariant@Base 4:4.6.1
  _ZN17QVariantAnimation14setEasingCurveERK12QEasingCurve@Base 4:4.6.1
  _ZN17QVariantAnimation16staticMetaObjectE@Base 4:4.6.1
  _ZN17QVariantAnimation17updateCurrentTimeEi@Base 4:4.6.1
- _ZN17QVariantAnimation20registerInterpolatorEPF8QVariantPKvS2_dEi@Base 4:4.6.1
+ (subst)_ZN17QVariantAnimation20registerInterpolatorEPF8QVariantPKvS2_{qreal}Ei@Base 4:4.6.2
  _ZN17QVariantAnimation5eventEP6QEvent@Base 4:4.6.1
  _ZN17QVariantAnimationC1EP7QObject@Base 4:4.6.1
  _ZN17QVariantAnimationC1ER24QVariantAnimationPrivateP7QObject@Base 4:4.6.1
@@ -2803,6 +2804,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  (arch=amd64 kfreebsd-amd64 powerpc s390)_ZN7QString8vsprintfEPKcP13__va_list_tag@Base 4:4.5.3
  (arch=hurd-i386 i386 kfreebsd-i386)_ZN7QString8vsprintfEPKcPc@Base 4:4.5.3
  (arch=armel hppa ia64 mips mipsel sparc)_ZN7QString8vsprintfEPKcPv@Base 4:4.5.3
+ (arch=armel)_ZN7QString8vsprintfEPKcSt9__va_list@Base 4:4.6.2
  _ZN7QString9fromAsciiEPKci@Base 4:4.5.3
  _ZN7QString9fromUtf16EPKti@Base 4:4.5.3
  _ZN7QStringC1E5QChar@Base 4:4.5.3
@@ -3388,7 +3390,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK12QDirIterator8fileNameEv@Base 4:4.5.3
  _ZNK12QDirIterator8filePathEv@Base 4:4.5.3
  _ZNK12QEasingCurve10customTypeEv@Base 4:4.6.1
- _ZNK12QEasingCurve16valueForProgressEd@Base 4:4.6.1
+ (subst)_ZNK12QEasingCurve16valueForProgressE{qreal}@Base 4:4.6.2
  _ZNK12QEasingCurve4typeEv@Base 4:4.6.1
  _ZNK12QEasingCurve6periodEv@Base 4:4.6.1
  _ZNK12QEasingCurve9amplitudeEv@Base 4:4.6.1
@@ -3606,12 +3608,12 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK17QSignalTransition10metaObjectEv@Base 4:4.6.1
  _ZNK17QSignalTransition12senderObjectEv@Base 4:4.6.1
  _ZNK17QSignalTransition6signalEv@Base 4:4.6.1
- _ZNK17QVariantAnimation10keyValueAtEd@Base 4:4.6.1
+ (subst)_ZNK17QVariantAnimation10keyValueAtE{qreal}@Base 4:4.6.2
  _ZNK17QVariantAnimation10metaObjectEv@Base 4:4.6.1
  _ZNK17QVariantAnimation10startValueEv@Base 4:4.6.1
  _ZNK17QVariantAnimation11easingCurveEv@Base 4:4.6.1
  _ZNK17QVariantAnimation12currentValueEv@Base 4:4.6.1
- _ZNK17QVariantAnimation12interpolatedERK8QVariantS2_d@Base 4:4.6.1
+ (subst)_ZNK17QVariantAnimation12interpolatedERK8QVariantS2_{qreal}@Base 4:4.6.2
  _ZNK17QVariantAnimation8durationEv@Base 4:4.6.1
  _ZNK17QVariantAnimation8endValueEv@Base 4:4.6.1
  _ZNK17QVariantAnimation9keyValuesEv@Base 4:4.6.1

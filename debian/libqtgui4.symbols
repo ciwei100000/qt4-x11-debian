@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.6.2 amd64 i386 ia64 kfreebsd-amd64 kfreebsd-i386 powerpc s390 sparc
+# SymbolsHelper-Confirmed: 4:4.6.2 amd64 armel hppa i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips powerpc s390 sparc
 libQtGui.so.4 libqtgui4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qDrawArrowP8QPainterN2Qt9ArrowTypeENS1_8GUIStyleEbiiiiRK8QPaletteb@Base 4:4.5.3
@@ -7,8 +7,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _Z11qt_image_idRK6QImage@Base 4:4.5.3
  _Z12qDrawPixmapsP8QPainterPKN12QDrawPixmaps4DataEiRK7QPixmap6QFlagsINS1_11DrawingHintEE@Base 4:4.6.1
  _Z12qt_accHotKeyRK7QString@Base 4:4.5.3
- _Z12qt_blurImageP8QPainterR6QImagedbbi@Base 4:4.6.1
- _Z12qt_blurImageR6QImagedbi@Base 4:4.6.1
+ (subst)_Z12qt_blurImageP8QPainterR6QImage{qreal}bbi@Base 4:4.6.2
+ (subst)_Z12qt_blurImageR6QImage{qreal}bi@Base 4:4.6.2
  _Z12qt_pixmap_idRK7QPixmap@Base 4:4.5.3
  _Z12qt_try_modalP7QWidgetP7_XEvent@Base 4:4.5.3
  _Z12qt_x11HandlePK12QPaintDevice@Base 4:4.5.3
@@ -213,34 +213,34 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN10QLCDNumberD0Ev@Base 4:4.5.3
  _ZN10QLCDNumberD1Ev@Base 4:4.5.3
  _ZN10QLCDNumberD2Ev@Base 4:4.5.3
- _ZN10QMatrix4x411perspectiveEdddd@Base 4:4.6.1
+ (subst)_ZN10QMatrix4x411perspectiveE{qreal}{qreal}{qreal}{qreal}@Base 4:4.6.2
  _ZN10QMatrix4x415flipCoordinatesEv@Base 4:4.6.1
- _ZN10QMatrix4x415projectedRotateEdddd@Base 4:4.6.1
+ (subst)_ZN10QMatrix4x415projectedRotateE{qreal}{qreal}{qreal}{qreal}@Base 4:4.6.2
  _ZN10QMatrix4x45orthoERK5QRect@Base 4:4.6.1
  _ZN10QMatrix4x45orthoERK6QRectF@Base 4:4.6.1
- _ZN10QMatrix4x45orthoEdddddd@Base 4:4.6.1
+ (subst)_ZN10QMatrix4x45orthoE{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}@Base 4:4.6.2
  _ZN10QMatrix4x45scaleERK9QVector3D@Base 4:4.6.1
- _ZN10QMatrix4x45scaleEd@Base 4:4.6.1
- _ZN10QMatrix4x45scaleEdd@Base 4:4.6.1
- _ZN10QMatrix4x45scaleEddd@Base 4:4.6.1
+ (subst)_ZN10QMatrix4x45scaleE{qreal}@Base 4:4.6.2
+ (subst)_ZN10QMatrix4x45scaleE{qreal}{qreal}@Base 4:4.6.2
+ (subst)_ZN10QMatrix4x45scaleE{qreal}{qreal}{qreal}@Base 4:4.6.2
  _ZN10QMatrix4x46lookAtERK9QVector3DS2_S2_@Base 4:4.6.1
  _ZN10QMatrix4x46rotateERK11QQuaternion@Base 4:4.6.1
- _ZN10QMatrix4x46rotateEdRK9QVector3D@Base 4:4.6.1
- _ZN10QMatrix4x46rotateEdddd@Base 4:4.6.1
- _ZN10QMatrix4x47frustumEdddddd@Base 4:4.6.1
+ (subst)_ZN10QMatrix4x46rotateE{qreal}RK9QVector3D@Base 4:4.6.2
+ (subst)_ZN10QMatrix4x46rotateE{qreal}{qreal}{qreal}{qreal}@Base 4:4.6.2
+ (subst)_ZN10QMatrix4x47frustumE{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}@Base 4:4.6.2
  _ZN10QMatrix4x48optimizeEv@Base 4:4.6.1
  _ZN10QMatrix4x49translateERK9QVector3D@Base 4:4.6.1
- _ZN10QMatrix4x49translateEdd@Base 4:4.6.1
- _ZN10QMatrix4x49translateEddd@Base 4:4.6.1
- _ZN10QMatrix4x4C1EPKd@Base 4:4.6.1
- _ZN10QMatrix4x4C1EPKdii@Base 4:4.6.1
+ (subst)_ZN10QMatrix4x49translateE{qreal}{qreal}@Base 4:4.6.2
+ (subst)_ZN10QMatrix4x49translateE{qreal}{qreal}{qreal}@Base 4:4.6.2
+ (subst)_ZN10QMatrix4x4C1EPK{qreal}@Base 4:4.6.2
+ (subst)_ZN10QMatrix4x4C1EPK{qreal}ii@Base 4:4.6.2
  _ZN10QMatrix4x4C1ERK10QTransform@Base 4:4.6.1
  _ZN10QMatrix4x4C1ERK7QMatrix@Base 4:4.6.1
- _ZN10QMatrix4x4C2EPKd@Base 4:4.6.1
- _ZN10QMatrix4x4C2EPKdii@Base 4:4.6.1
+ (subst)_ZN10QMatrix4x4C2EPK{qreal}@Base 4:4.6.2
+ (subst)_ZN10QMatrix4x4C2EPK{qreal}ii@Base 4:4.6.2
  _ZN10QMatrix4x4C2ERK10QTransform@Base 4:4.6.1
  _ZN10QMatrix4x4C2ERK7QMatrix@Base 4:4.6.1
- _ZN10QMatrix4x4dVEd@Base 4:4.6.1
+ (subst)_ZN10QMatrix4x4dVE{qreal}@Base 4:4.6.2
  _ZN10QMoveEventC1ERK6QPointS2_@Base 4:4.5.3
  _ZN10QMoveEventC2ERK6QPointS2_@Base 4:4.5.3
  _ZN10QMoveEventD0Ev@Base 4:4.5.3
@@ -1153,7 +1153,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN11QPanGesture11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN11QPanGesture11qt_metacastEPKc@Base 4:4.6.1
  _ZN11QPanGesture13setLastOffsetERK7QPointF@Base 4:4.6.1
- _ZN11QPanGesture15setAccelerationEd@Base 4:4.6.1
+ (subst)_ZN11QPanGesture15setAccelerationE{qreal}@Base 4:4.6.2
  _ZN11QPanGesture16staticMetaObjectE@Base 4:4.6.1
  _ZN11QPanGesture9setOffsetERK7QPointF@Base 4:4.6.1
  _ZN11QPanGestureC1EP7QObject@Base 4:4.6.1
@@ -1237,10 +1237,10 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN11QPushButtonD0Ev@Base 4:4.5.3
  _ZN11QPushButtonD1Ev@Base 4:4.5.3
  _ZN11QPushButtonD2Ev@Base 4:4.5.3
- _ZN11QQuaternion16fromAxisAndAngleERK9QVector3Dd@Base 4:4.6.1
- _ZN11QQuaternion16fromAxisAndAngleEdddd@Base 4:4.6.1
- _ZN11QQuaternion5nlerpERKS_S1_d@Base 4:4.6.1
- _ZN11QQuaternion5slerpERKS_S1_d@Base 4:4.6.1
+ (subst)_ZN11QQuaternion16fromAxisAndAngleERK9QVector3D{qreal}@Base 4:4.6.2
+ (subst)_ZN11QQuaternion16fromAxisAndAngleE{qreal}{qreal}{qreal}{qreal}@Base 4:4.6.2
+ (subst)_ZN11QQuaternion5nlerpERKS_S1_{qreal}@Base 4:4.6.2
+ (subst)_ZN11QQuaternion5slerpERKS_S1_{qreal}@Base 4:4.6.2
  _ZN11QQuaternion9normalizeEv@Base 4:4.6.1
  _ZN11QRubberBand10paintEventEP11QPaintEvent@Base 4:4.5.3
  _ZN11QRubberBand11changeEventEP6QEvent@Base 4:4.5.3
@@ -1470,7 +1470,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN11QToolButtonD1Ev@Base 4:4.5.3
  _ZN11QToolButtonD2Ev@Base 4:4.5.3
  _ZN11QTouchEvent10TouchPoint10setLastPosERK7QPointF@Base 4:4.6.1
- _ZN11QTouchEvent10TouchPoint11setPressureEd@Base 4:4.6.1
+ (subst)_ZN11QTouchEvent10TouchPoint11setPressureE{qreal}@Base 4:4.6.2
  _ZN11QTouchEvent10TouchPoint11setScenePosERK7QPointF@Base 4:4.6.1
  _ZN11QTouchEvent10TouchPoint11setStartPosERK7QPointF@Base 4:4.6.1
  _ZN11QTouchEvent10TouchPoint12setSceneRectERK6QRectF@Base 4:4.6.1
@@ -2040,7 +2040,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN12QPainterPath8setDirtyEb@Base 4:4.5.3
  _ZN12QPainterPath9addRegionERK7QRegion@Base 4:4.5.3
  (subst)_ZN12QPainterPath9arcMoveToERK6QRectF{qreal}@Base 4:4.5.3
- _ZN12QPainterPath9translateEdd@Base 4:4.6.1
+ (subst)_ZN12QPainterPath9translateE{qreal}{qreal}@Base 4:4.6.2
  _ZN12QPainterPathC1ERK7QPointF@Base 4:4.5.3
  _ZN12QPainterPathC1ERKS_@Base 4:4.5.3
  _ZN12QPainterPathC1Ev@Base 4:4.5.3
@@ -2513,7 +2513,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN13QGraphicsItem10setVisibleEb@Base 4:4.5.3
  _ZN13QGraphicsItem10wheelEventEP24QGraphicsSceneWheelEvent@Base 4:4.5.3
  _ZN13QGraphicsItem11resetMatrixEv@Base 4:4.5.3
- _ZN13QGraphicsItem11setRotationEd@Base 4:4.6.1
+ (subst)_ZN13QGraphicsItem11setRotationE{qreal}@Base 4:4.6.2
  _ZN13QGraphicsItem11setSelectedEb@Base 4:4.5.3
  _ZN13QGraphicsItem11stackBeforeEPKS_@Base 4:4.6.1
  _ZN13QGraphicsItem11ungrabMouseEv@Base 4:4.5.3
@@ -2562,8 +2562,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN13QGraphicsItem23setAcceptedMouseButtonsE6QFlagsIN2Qt11MouseButtonEE@Base 4:4.5.3
  _ZN13QGraphicsItem23setTransformOriginPointERK7QPointF@Base 4:4.6.1
  (subst)_ZN13QGraphicsItem28setBoundingRegionGranularityE{qreal}@Base 4:4.5.3
- _ZN13QGraphicsItem4setXEd@Base 4:4.6.1
- _ZN13QGraphicsItem4setYEd@Base 4:4.6.1
+ (subst)_ZN13QGraphicsItem4setXE{qreal}@Base 4:4.6.2
+ (subst)_ZN13QGraphicsItem4setYE{qreal}@Base 4:4.6.2
  (subst)_ZN13QGraphicsItem5scaleE{qreal}{qreal}@Base 4:4.5.3
  (subst)_ZN13QGraphicsItem5shearE{qreal}{qreal}@Base 4:4.5.3
  (subst)_ZN13QGraphicsItem6rotateE{qreal}@Base 4:4.5.3
@@ -2576,7 +2576,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN13QGraphicsItem8setFlagsE6QFlagsINS_16GraphicsItemFlagEE@Base 4:4.5.3
  _ZN13QGraphicsItem8setFocusEN2Qt11FocusReasonE@Base 4:4.5.3
  _ZN13QGraphicsItem8setGroupEP18QGraphicsItemGroup@Base 4:4.5.3
- _ZN13QGraphicsItem8setScaleEd@Base 4:4.6.1
+ (subst)_ZN13QGraphicsItem8setScaleE{qreal}@Base 4:4.6.2
  _ZN13QGraphicsItem9dropEventEP27QGraphicsSceneDragDropEvent@Base 4:4.5.3
  _ZN13QGraphicsItem9grabMouseEv@Base 4:4.5.3
  _ZN13QGraphicsItem9setActiveEb@Base 4:4.6.1
@@ -2761,16 +2761,16 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN13QPinchGesture11qt_metacastEPKc@Base 4:4.6.1
  _ZN13QPinchGesture14setCenterPointERK7QPointF@Base 4:4.6.1
  _ZN13QPinchGesture14setChangeFlagsE6QFlagsINS_10ChangeFlagEE@Base 4:4.6.1
- _ZN13QPinchGesture14setScaleFactorEd@Base 4:4.6.1
- _ZN13QPinchGesture16setRotationAngleEd@Base 4:4.6.1
+ (subst)_ZN13QPinchGesture14setScaleFactorE{qreal}@Base 4:4.6.2
+ (subst)_ZN13QPinchGesture16setRotationAngleE{qreal}@Base 4:4.6.2
  _ZN13QPinchGesture16staticMetaObjectE@Base 4:4.6.1
  _ZN13QPinchGesture18setLastCenterPointERK7QPointF@Base 4:4.6.1
- _ZN13QPinchGesture18setLastScaleFactorEd@Base 4:4.6.1
+ (subst)_ZN13QPinchGesture18setLastScaleFactorE{qreal}@Base 4:4.6.2
  _ZN13QPinchGesture19setStartCenterPointERK7QPointF@Base 4:4.6.1
  _ZN13QPinchGesture19setTotalChangeFlagsE6QFlagsINS_10ChangeFlagEE@Base 4:4.6.1
- _ZN13QPinchGesture19setTotalScaleFactorEd@Base 4:4.6.1
- _ZN13QPinchGesture20setLastRotationAngleEd@Base 4:4.6.1
- _ZN13QPinchGesture21setTotalRotationAngleEd@Base 4:4.6.1
+ (subst)_ZN13QPinchGesture19setTotalScaleFactorE{qreal}@Base 4:4.6.2
+ (subst)_ZN13QPinchGesture20setLastRotationAngleE{qreal}@Base 4:4.6.2
+ (subst)_ZN13QPinchGesture21setTotalRotationAngleE{qreal}@Base 4:4.6.2
  _ZN13QPinchGestureC1EP7QObject@Base 4:4.6.1
  _ZN13QPinchGestureC2EP7QObject@Base 4:4.6.1
  _ZN13QPixmapFilter11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -2849,7 +2849,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN13QStyleFactory6createERK7QString@Base 4:4.5.3
  _ZN13QSwipeGesture11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN13QSwipeGesture11qt_metacastEPKc@Base 4:4.6.1
- _ZN13QSwipeGesture13setSwipeAngleEd@Base 4:4.6.1
+ (subst)_ZN13QSwipeGesture13setSwipeAngleE{qreal}@Base 4:4.6.2
  _ZN13QSwipeGesture16staticMetaObjectE@Base 4:4.6.1
  _ZN13QSwipeGestureC1EP7QObject@Base 4:4.6.1
  _ZN13QSwipeGestureC2EP7QObject@Base 4:4.6.1
@@ -2984,9 +2984,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN14QGraphicsScale13originChangedEv@Base 4:4.6.1
  _ZN14QGraphicsScale16staticMetaObjectE@Base 4:4.6.1
  _ZN14QGraphicsScale9setOriginERK9QVector3D@Base 4:4.6.1
- _ZN14QGraphicsScale9setXScaleEd@Base 4:4.6.1
- _ZN14QGraphicsScale9setYScaleEd@Base 4:4.6.1
- _ZN14QGraphicsScale9setZScaleEd@Base 4:4.6.1
+ (subst)_ZN14QGraphicsScale9setXScaleE{qreal}@Base 4:4.6.2
+ (subst)_ZN14QGraphicsScale9setYScaleE{qreal}@Base 4:4.6.2
+ (subst)_ZN14QGraphicsScale9setZScaleE{qreal}@Base 4:4.6.2
  _ZN14QGraphicsScaleC1EP7QObject@Base 4:4.6.1
  _ZN14QGraphicsScaleC2EP7QObject@Base 4:4.6.1
  _ZN14QGraphicsScaleD0Ev@Base 4:4.6.1
@@ -3103,7 +3103,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN14QPaintEngineEx11drawPolygonEPK6QPointiN12QPaintEngine15PolygonDrawModeE@Base 4:4.5.3
  _ZN14QPaintEngineEx11drawPolygonEPK7QPointFiN12QPaintEngine15PolygonDrawModeE@Base 4:4.5.3
  _ZN14QPaintEngineEx11updateStateERK17QPaintEngineState@Base 4:4.5.3
- _ZN14QPaintEngineEx15drawRoundedRectERK6QRectFddN2Qt8SizeModeE@Base 4:4.6.1
+ (subst)_ZN14QPaintEngineEx15drawRoundedRectERK6QRectF{qreal}{qreal}N2Qt8SizeModeE@Base 4:4.6.2
  _ZN14QPaintEngineEx15drawTiledPixmapERK6QRectFRK7QPixmapRK7QPointF@Base 4:4.5.3
  _ZN14QPaintEngineEx4clipERK12QPainterPathN2Qt13ClipOperationE@Base 4:4.5.3
  _ZN14QPaintEngineEx4clipERK5QRectN2Qt13ClipOperationE@Base 4:4.5.3
@@ -3296,6 +3296,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN14QWidgetPrivate16invalidateBufferERK7QRegion@Base 4:4.5.3
  _ZN14QWidgetPrivate16registerDropSiteEb@Base 4:4.5.3
  _ZN14QWidgetPrivate16setLocale_helperERK7QLocaleb@Base 4:4.5.3
+ (arch=armel)_ZN14QWidgetPrivate16setSharedPainterEP8QPainter@Base 4:4.6.2
  _ZN14QWidgetPrivate16syncBackingStoreERK7QRegion@Base 4:4.5.3
  _ZN14QWidgetPrivate16syncBackingStoreEv@Base 4:4.5.3
  _ZN14QWidgetPrivate16updateFrameStrutEv@Base 4:4.5.3
@@ -3459,7 +3460,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN15QAbstractSliderD1Ev@Base 4:4.5.3
  _ZN15QAbstractSliderD2Ev@Base 4:4.5.3
  (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
+ (optional=external|arch=armel sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN15QCalendarWidget10updateCellERK5QDate@Base 4:4.5.3
  _ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent@Base 4:4.5.3
  _ZN15QCalendarWidget11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -3517,7 +3518,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN15QDragLeaveEventD0Ev@Base 4:4.5.3
  _ZN15QDragLeaveEventD1Ev@Base 4:4.5.3
  _ZN15QDragLeaveEventD2Ev@Base 4:4.5.3
- _ZN15QGraphicsAnchor10setSpacingEd@Base 4:4.6.1
+ (subst)_ZN15QGraphicsAnchor10setSpacingE{qreal}@Base 4:4.6.2
  _ZN15QGraphicsAnchor11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN15QGraphicsAnchor11qt_metacastEPKc@Base 4:4.6.1
  _ZN15QGraphicsAnchor12unsetSpacingEv@Base 4:4.6.1
@@ -4332,7 +4333,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN17QGraphicsRotation16staticMetaObjectE@Base 4:4.6.1
  _ZN17QGraphicsRotation7setAxisEN2Qt4AxisE@Base 4:4.6.1
  _ZN17QGraphicsRotation7setAxisERK9QVector3D@Base 4:4.6.1
- _ZN17QGraphicsRotation8setAngleEd@Base 4:4.6.1
+ (subst)_ZN17QGraphicsRotation8setAngleE{qreal}@Base 4:4.6.2
  _ZN17QGraphicsRotation9setOriginERK9QVector3D@Base 4:4.6.1
  _ZN17QGraphicsRotationC1EP7QObject@Base 4:4.6.1
  _ZN17QGraphicsRotationC2EP7QObject@Base 4:4.6.1
@@ -4401,7 +4402,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN17QPixmapBlurFilter11qt_metacastEPKc@Base 4:4.6.1
  _ZN17QPixmapBlurFilter12setBlurHintsE6QFlagsIN19QGraphicsBlurEffect8BlurHintEE@Base 4:4.6.1
  _ZN17QPixmapBlurFilter16staticMetaObjectE@Base 4:4.6.1
- _ZN17QPixmapBlurFilter9setRadiusEd@Base 4:4.6.1
+ (subst)_ZN17QPixmapBlurFilter9setRadiusE{qreal}@Base 4:4.6.2
  _ZN17QPixmapBlurFilterC1EP7QObject@Base 4:4.6.1
  _ZN17QPixmapBlurFilterC2EP7QObject@Base 4:4.6.1
  _ZN17QPixmapBlurFilterD0Ev@Base 4:4.6.1
@@ -4775,10 +4776,10 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN19QGraphicsBlurEffect11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN19QGraphicsBlurEffect11qt_metacastEPKc@Base 4:4.6.1
  _ZN19QGraphicsBlurEffect12setBlurHintsE6QFlagsINS_8BlurHintEE@Base 4:4.6.1
- _ZN19QGraphicsBlurEffect13setBlurRadiusEd@Base 4:4.6.1
+ (subst)_ZN19QGraphicsBlurEffect13setBlurRadiusE{qreal}@Base 4:4.6.2
  _ZN19QGraphicsBlurEffect16blurHintsChangedE6QFlagsINS_8BlurHintEE@Base 4:4.6.1
  _ZN19QGraphicsBlurEffect16staticMetaObjectE@Base 4:4.6.1
- _ZN19QGraphicsBlurEffect17blurRadiusChangedEd@Base 4:4.6.1
+ (subst)_ZN19QGraphicsBlurEffect17blurRadiusChangedE{qreal}@Base 4:4.6.2
  _ZN19QGraphicsBlurEffect4drawEP8QPainter@Base 4:4.6.1
  _ZN19QGraphicsBlurEffectC1EP7QObject@Base 4:4.6.1
  _ZN19QGraphicsBlurEffectC2EP7QObject@Base 4:4.6.1
@@ -5238,11 +5239,11 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN21QAbstractItemDelegateD2Ev@Base 4:4.5.3
  _ZN21QGraphicsAnchorLayout10addAnchorsEP19QGraphicsLayoutItemS1_6QFlagsIN2Qt11OrientationEE@Base 4:4.6.1
  _ZN21QGraphicsAnchorLayout10invalidateEv@Base 4:4.6.1
- _ZN21QGraphicsAnchorLayout10setSpacingEd@Base 4:4.6.1
+ (subst)_ZN21QGraphicsAnchorLayout10setSpacingE{qreal}@Base 4:4.6.2
  _ZN21QGraphicsAnchorLayout11setGeometryERK6QRectF@Base 4:4.6.1
  _ZN21QGraphicsAnchorLayout16addCornerAnchorsEP19QGraphicsLayoutItemN2Qt6CornerES1_S3_@Base 4:4.6.1
- _ZN21QGraphicsAnchorLayout18setVerticalSpacingEd@Base 4:4.6.1
- _ZN21QGraphicsAnchorLayout20setHorizontalSpacingEd@Base 4:4.6.1
+ (subst)_ZN21QGraphicsAnchorLayout18setVerticalSpacingE{qreal}@Base 4:4.6.2
+ (subst)_ZN21QGraphicsAnchorLayout20setHorizontalSpacingE{qreal}@Base 4:4.6.2
  _ZN21QGraphicsAnchorLayout6anchorEP19QGraphicsLayoutItemN2Qt11AnchorPointES1_S3_@Base 4:4.6.1
  _ZN21QGraphicsAnchorLayout8removeAtEi@Base 4:4.6.1
  _ZN21QGraphicsAnchorLayout9addAnchorEP19QGraphicsLayoutItemN2Qt11AnchorPointES1_S3_@Base 4:4.6.1
@@ -5310,7 +5311,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN21QPaintEngineExPrivateD2Ev@Base 4:4.5.3
  _ZN21QPixmapColorizeFilter11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN21QPixmapColorizeFilter11qt_metacastEPKc@Base 4:4.5.3
- _ZN21QPixmapColorizeFilter11setStrengthEd@Base 4:4.6.1
+ (subst)_ZN21QPixmapColorizeFilter11setStrengthE{qreal}@Base 4:4.6.2
  _ZN21QPixmapColorizeFilter16staticMetaObjectE@Base 4:4.5.3
  _ZN21QPixmapColorizeFilter8setColorERK6QColor@Base 4:4.5.3
  _ZN21QPixmapColorizeFilterC1EP7QObject@Base 4:4.5.3
@@ -5407,10 +5408,10 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN22QGraphicsItemAnimationD0Ev@Base 4:4.5.3
  _ZN22QGraphicsItemAnimationD1Ev@Base 4:4.5.3
  _ZN22QGraphicsItemAnimationD2Ev@Base 4:4.5.3
- _ZN22QGraphicsOpacityEffect10setOpacityEd@Base 4:4.6.1
+ (subst)_ZN22QGraphicsOpacityEffect10setOpacityE{qreal}@Base 4:4.6.2
  _ZN22QGraphicsOpacityEffect11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN22QGraphicsOpacityEffect11qt_metacastEPKc@Base 4:4.6.1
- _ZN22QGraphicsOpacityEffect14opacityChangedEd@Base 4:4.6.1
+ (subst)_ZN22QGraphicsOpacityEffect14opacityChangedE{qreal}@Base 4:4.6.2
  _ZN22QGraphicsOpacityEffect14setOpacityMaskERK6QBrush@Base 4:4.6.1
  _ZN22QGraphicsOpacityEffect16staticMetaObjectE@Base 4:4.6.1
  _ZN22QGraphicsOpacityEffect18opacityMaskChangedERK6QBrush@Base 4:4.6.1
@@ -5477,9 +5478,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN23QAccessibleBridgePluginD2Ev@Base 4:4.5.3
  _ZN23QGraphicsColorizeEffect11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN23QGraphicsColorizeEffect11qt_metacastEPKc@Base 4:4.6.1
- _ZN23QGraphicsColorizeEffect11setStrengthEd@Base 4:4.6.1
+ (subst)_ZN23QGraphicsColorizeEffect11setStrengthE{qreal}@Base 4:4.6.2
  _ZN23QGraphicsColorizeEffect12colorChangedERK6QColor@Base 4:4.6.1
- _ZN23QGraphicsColorizeEffect15strengthChangedEd@Base 4:4.6.1
+ (subst)_ZN23QGraphicsColorizeEffect15strengthChangedE{qreal}@Base 4:4.6.2
  _ZN23QGraphicsColorizeEffect16staticMetaObjectE@Base 4:4.6.1
  _ZN23QGraphicsColorizeEffect4drawEP8QPainter@Base 4:4.6.1
  _ZN23QGraphicsColorizeEffect8setColorERK6QColor@Base 4:4.6.1
@@ -5670,9 +5671,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN25QGraphicsDropShadowEffect11qt_metacastEPKc@Base 4:4.6.1
  _ZN25QGraphicsDropShadowEffect12colorChangedERK6QColor@Base 4:4.6.1
  _ZN25QGraphicsDropShadowEffect13offsetChangedERK7QPointF@Base 4:4.6.1
- _ZN25QGraphicsDropShadowEffect13setBlurRadiusEd@Base 4:4.6.1
+ (subst)_ZN25QGraphicsDropShadowEffect13setBlurRadiusE{qreal}@Base 4:4.6.2
  _ZN25QGraphicsDropShadowEffect16staticMetaObjectE@Base 4:4.6.1
- _ZN25QGraphicsDropShadowEffect17blurRadiusChangedEd@Base 4:4.6.1
+ (subst)_ZN25QGraphicsDropShadowEffect17blurRadiusChangedE{qreal}@Base 4:4.6.2
  _ZN25QGraphicsDropShadowEffect4drawEP8QPainter@Base 4:4.6.1
  _ZN25QGraphicsDropShadowEffect8setColorERK6QColor@Base 4:4.6.1
  _ZN25QGraphicsDropShadowEffect9setOffsetERK7QPointF@Base 4:4.6.1
@@ -6088,13 +6089,13 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN6QColor7getCmykEPiS0_S0_S0_S0_@Base 4:4.5.3
  _ZN6QColor7setBlueEi@Base 4:4.5.3
  _ZN6QColor7setCmykEiiiii@Base 4:4.5.3
- _ZN6QColor7setHslFEdddd@Base 4:4.6.1
+ (subst)_ZN6QColor7setHslFE{qreal}{qreal}{qreal}{qreal}@Base 4:4.6.2
  (subst)_ZN6QColor7setHsvFE{qreal}{qreal}{qreal}{qreal}@Base 4:4.5.3
  (subst)_ZN6QColor7setRedFE{qreal}@Base 4:4.5.3
  (subst)_ZN6QColor7setRgbFE{qreal}{qreal}{qreal}{qreal}@Base 4:4.5.3
  _ZN6QColor7setRgbaEj@Base 4:4.5.3
  _ZN6QColor8fromCmykEiiiii@Base 4:4.5.3
- _ZN6QColor8fromHslFEdddd@Base 4:4.6.1
+ (subst)_ZN6QColor8fromHslFE{qreal}{qreal}{qreal}{qreal}@Base 4:4.6.2
  (subst)_ZN6QColor8fromHsvFE{qreal}{qreal}{qreal}{qreal}@Base 4:4.5.3
  (subst)_ZN6QColor8fromRgbFE{qreal}{qreal}{qreal}{qreal}@Base 4:4.5.3
  _ZN6QColor8fromRgbaEj@Base 4:4.5.3
@@ -6606,7 +6607,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN7QSliderD0Ev@Base 4:4.5.3
  _ZN7QSliderD1Ev@Base 4:4.5.3
  _ZN7QSliderD2Ev@Base 4:4.5.3
- (arch=armel)_ZN7QString5clearEv@Base 4:4.5.3
+#MISSING: 4:4.6.2# (arch=armel)_ZN7QString5clearEv@Base 4:4.5.3
  _ZN7QTabBar10paintEventEP11QPaintEvent@Base 4:4.5.3
  _ZN7QTabBar10setMovableEb@Base 4:4.5.3
  _ZN7QTabBar10setTabDataEiRK8QVariant@Base 4:4.5.3
@@ -7940,21 +7941,21 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN9QVector3D6normalERKS_S1_S1_@Base 4:4.6.1
  _ZN9QVector3D9normalizeEv@Base 4:4.6.1
  _ZN9QVector3DC1ERK9QVector2D@Base 4:4.6.1
- _ZN9QVector3DC1ERK9QVector2Dd@Base 4:4.6.1
+ (subst)_ZN9QVector3DC1ERK9QVector2D{qreal}@Base 4:4.6.2
  _ZN9QVector3DC1ERK9QVector4D@Base 4:4.6.1
  _ZN9QVector3DC2ERK9QVector2D@Base 4:4.6.1
- _ZN9QVector3DC2ERK9QVector2Dd@Base 4:4.6.1
+ (subst)_ZN9QVector3DC2ERK9QVector2D{qreal}@Base 4:4.6.2
  _ZN9QVector3DC2ERK9QVector4D@Base 4:4.6.1
  _ZN9QVector4D10dotProductERKS_S1_@Base 4:4.6.1
  _ZN9QVector4D9normalizeEv@Base 4:4.6.1
  _ZN9QVector4DC1ERK9QVector2D@Base 4:4.6.1
- _ZN9QVector4DC1ERK9QVector2Ddd@Base 4:4.6.1
+ (subst)_ZN9QVector4DC1ERK9QVector2D{qreal}{qreal}@Base 4:4.6.2
  _ZN9QVector4DC1ERK9QVector3D@Base 4:4.6.1
- _ZN9QVector4DC1ERK9QVector3Dd@Base 4:4.6.1
+ (subst)_ZN9QVector4DC1ERK9QVector3D{qreal}@Base 4:4.6.2
  _ZN9QVector4DC2ERK9QVector2D@Base 4:4.6.1
- _ZN9QVector4DC2ERK9QVector2Ddd@Base 4:4.6.1
+ (subst)_ZN9QVector4DC2ERK9QVector2D{qreal}{qreal}@Base 4:4.6.2
  _ZN9QVector4DC2ERK9QVector3D@Base 4:4.6.1
- _ZN9QVector4DC2ERK9QVector3Dd@Base 4:4.6.1
+ (subst)_ZN9QVector4DC2ERK9QVector3D{qreal}@Base 4:4.6.2
  _ZNK10QBoxLayout10metaObjectEv@Base 4:4.5.3
  _ZNK10QBoxLayout11maximumSizeEv@Base 4:4.5.3
  _ZNK10QBoxLayout11minimumSizeEv@Base 4:4.5.3
@@ -8019,11 +8020,11 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK10QLCDNumber8intValueEv@Base 4:4.5.3
  _ZNK10QLCDNumber8sizeHintEv@Base 4:4.5.3
  _ZNK10QLCDNumber9numDigitsEv@Base 4:4.5.3
- _ZNK10QMatrix4x410copyDataToEPd@Base 4:4.6.1
+ (subst)_ZNK10QMatrix4x410copyDataToEP{qreal}@Base 4:4.6.2
  _ZNK10QMatrix4x410transposedEv@Base 4:4.6.1
  _ZNK10QMatrix4x411determinantEv@Base 4:4.6.1
- _ZNK10QMatrix4x411toTransformEd@Base 4:4.6.1
  _ZNK10QMatrix4x411toTransformEv@Base 4:4.6.1
+ (subst)_ZNK10QMatrix4x411toTransformE{qreal}@Base 4:4.6.2
  _ZNK10QMatrix4x412normalMatrixEv@Base 4:4.6.1
  _ZNK10QMatrix4x418orthonormalInverseEv@Base 4:4.6.1
  _ZNK10QMatrix4x47mapRectERK5QRect@Base 4:4.6.1
@@ -8843,7 +8844,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK12QLineControl11stripStringERK7QString@Base 4:4.6.1
  _ZNK12QLineControl12isValidInputE5QCharS0_@Base 4:4.6.1
  _ZNK12QLineControl18hasAcceptableInputERK7QString@Base 4:4.6.1
- (arch=sparc)_ZNK12QLineControl18textAfterSelectionEv@Base 4:4.6.2
+ (arch=armel hppa sparc)_ZNK12QLineControl18textAfterSelectionEv@Base 4:4.6.2
  _ZNK12QLineControl4copyEN10QClipboard4ModeE@Base 4:4.6.1
  _ZNK12QLineControl6xToPosEiN9QTextLine14CursorPositionE@Base 4:4.6.1
  _ZNK12QPaintBuffer11paintEngineEv@Base 4:4.6.1
@@ -8873,7 +8874,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK12QPainterPath10simplifiedEv@Base 4:4.5.3
  _ZNK12QPainterPath10subtractedERKS_@Base 4:4.5.3
  _ZNK12QPainterPath10toReversedEv@Base 4:4.5.3
- _ZNK12QPainterPath10translatedEdd@Base 4:4.6.1
+ (subst)_ZNK12QPainterPath10translatedE{qreal}{qreal}@Base 4:4.6.2
  _ZNK12QPainterPath11intersectedERKS_@Base 4:4.5.3
  _ZNK12QPainterPath12boundingRectEv@Base 4:4.5.3
  _ZNK12QPainterPath13toFillPolygonERK10QTransform@Base 4:4.5.3
@@ -10603,7 +10604,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK6QColor6toCmykEv@Base 4:4.5.3
  _ZNK6QColor6valueFEv@Base 4:4.5.3
  _ZNK6QColor6yellowEv@Base 4:4.5.3
- _ZNK6QColor7getHslFEPdS0_S0_S0_@Base 4:4.6.1
+ (subst)_ZNK6QColor7getHslFEP{qreal}S0_S0_S0_@Base 4:4.6.2
  (subst)_ZNK6QColor7getHsvFEP{qreal}S0_S0_S0_@Base 4:4.5.3
  (subst)_ZNK6QColor7getRgbFEP{qreal}S0_S0_S0_@Base 4:4.5.3
  _ZNK6QColor7hslHueFEv@Base 4:4.6.1
@@ -12536,7 +12537,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV9QTreeView@Base 4:4.5.3
  _ZTV9QUndoView@Base 4:4.5.3
  _ZTVN4QCss13StyleSelectorE@Base 4:4.5.3
- _ZdvRK10QMatrix4x4d@Base 4:4.6.1
+ (subst)_ZdvRK10QMatrix4x4{qreal}@Base 4:4.6.2
  _Zls6QDebug6QFlagsIN13QGraphicsItem16GraphicsItemFlagEE@Base 4:4.5.3
  _Zls6QDebug6QFlagsIN6QStyle9StateFlagEE@Base 4:4.6.1
  _Zls6QDebugN13QGraphicsItem16GraphicsItemFlagE@Base 4:4.5.3

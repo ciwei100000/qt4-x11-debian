@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.6.1 amd64 i386
+# SymbolsHelper-Confirmed: 4:4.6.2 armel hppa i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips powerpc s390 sparc
 libQtMultimedia.so.4 libqt4-multimedia #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN11QAudioInput11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
@@ -116,7 +116,7 @@ libQtMultimedia.so.4 libqt4-multimedia #MINVER#
  _ZN19QAbstractAudioInput6notifyEv@Base 4:4.6.1
  _ZN19QVideoSurfaceFormat11setPropertyEPKcRK8QVariant@Base 4:4.6.1
  _ZN19QVideoSurfaceFormat11setViewportERK5QRect@Base 4:4.6.1
- _ZN19QVideoSurfaceFormat12setFrameRateEd@Base 4:4.6.1
+ (subst)_ZN19QVideoSurfaceFormat12setFrameRateE{qreal}@Base 4:4.6.2
  _ZN19QVideoSurfaceFormat12setFrameSizeERK5QSize@Base 4:4.6.1
  _ZN19QVideoSurfaceFormat12setFrameSizeEii@Base 4:4.6.1
  _ZN19QVideoSurfaceFormat18setYCbCrColorSpaceENS_15YCbCrColorSpaceE@Base 4:4.6.1

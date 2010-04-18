@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.6.1 amd64 i386
+# SymbolsHelper-Confirmed: 4:4.6.2 armel hppa i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips powerpc s390 sparc
 libQtWebKit.so.4 libqt4-webkit #MINVER#
 * Build-Depends-Package: libqt4-dev
  JSCheckScriptSyntax@Base 4:4.5.3
@@ -224,7 +224,7 @@ libQtWebKit.so.4 libqt4-webkit #MINVER#
  _ZN14QWebPluginInfoD2Ev@Base 4:4.6.1
  _ZN14QWebPluginInfoaSERKS_@Base 4:4.6.1
  (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
+ (optional=external|arch=sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN15QWebHistoryItem11setUserDataERK8QVariant@Base 4:4.5.3
  _ZN15QWebHistoryItemC1EP22QWebHistoryItemPrivate@Base 4:4.5.3
  _ZN15QWebHistoryItemC1ERKS_@Base 4:4.5.3
@@ -251,7 +251,7 @@ libQtWebKit.so.4 libqt4-webkit #MINVER#
  _ZN16QGraphicsWebView13dragMoveEventEP27QGraphicsSceneDragDropEvent@Base 4:4.6.1
  _ZN16QGraphicsWebView13focusOutEventEP11QFocusEvent@Base 4:4.6.1
  _ZN16QGraphicsWebView13keyPressEventEP9QKeyEvent@Base 4:4.6.1
- _ZN16QGraphicsWebView13setZoomFactorEd@Base 4:4.6.1
+ (subst)_ZN16QGraphicsWebView13setZoomFactorE{qreal}@Base 4:4.6.2
  _ZN16QGraphicsWebView14dragEnterEventEP27QGraphicsSceneDragDropEvent@Base 4:4.6.1
  _ZN16QGraphicsWebView14dragLeaveEventEP27QGraphicsSceneDragDropEvent@Base 4:4.6.1
  _ZN16QGraphicsWebView14hoverMoveEventEP24QGraphicsSceneHoverEvent@Base 4:4.6.1
@@ -726,6 +726,114 @@ libQtWebKit.so.4 libqt4-webkit #MINVER#
  _ZTV9QWebFrame@Base 4:4.5.3
  _ZlsR11QDataStreamRK11QWebHistory@Base 4:4.6.1
  _ZrsR11QDataStreamR11QWebHistory@Base 4:4.6.1
+ (arch=armel)cti_has_property@Base 4:4.6.2
+ (arch=armel)cti_op_add@Base 4:4.6.2
+ (arch=armel)cti_op_bitand@Base 4:4.6.2
+ (arch=armel)cti_op_bitnot@Base 4:4.6.2
+ (arch=armel)cti_op_bitor@Base 4:4.6.2
+ (arch=armel)cti_op_bitxor@Base 4:4.6.2
+ (arch=armel)cti_op_call_JSFunction@Base 4:4.6.2
+ (arch=armel)cti_op_call_NotJSFunction@Base 4:4.6.2
+ (arch=armel)cti_op_call_arityCheck@Base 4:4.6.2
+ (arch=armel)cti_op_call_eval@Base 4:4.6.2
+ (arch=armel)cti_op_construct_JSConstruct@Base 4:4.6.2
+ (arch=armel)cti_op_construct_NotJSConstruct@Base 4:4.6.2
+ (arch=armel)cti_op_convert_this@Base 4:4.6.2
+ (arch=armel)cti_op_create_arguments@Base 4:4.6.2
+ (arch=armel)cti_op_create_arguments_no_params@Base 4:4.6.2
+ (arch=armel)cti_op_debug@Base 4:4.6.2
+ (arch=armel)cti_op_del_by_id@Base 4:4.6.2
+ (arch=armel)cti_op_del_by_val@Base 4:4.6.2
+ (arch=armel)cti_op_div@Base 4:4.6.2
+ (arch=armel)cti_op_end@Base 4:4.6.2
+ (arch=armel)cti_op_eq@Base 4:4.6.2
+ (arch=armel)cti_op_get_by_id@Base 4:4.6.2
+ (arch=armel)cti_op_get_by_id_array_fail@Base 4:4.6.2
+ (arch=armel)cti_op_get_by_id_generic@Base 4:4.6.2
+ (arch=armel)cti_op_get_by_id_method_check@Base 4:4.6.2
+ (arch=armel)cti_op_get_by_id_proto_fail@Base 4:4.6.2
+ (arch=armel)cti_op_get_by_id_proto_list@Base 4:4.6.2
+ (arch=armel)cti_op_get_by_id_proto_list_full@Base 4:4.6.2
+ (arch=armel)cti_op_get_by_id_self_fail@Base 4:4.6.2
+ (arch=armel)cti_op_get_by_id_string_fail@Base 4:4.6.2
+ (arch=armel)cti_op_get_by_val@Base 4:4.6.2
+ (arch=armel)cti_op_get_by_val_byte_array@Base 4:4.6.2
+ (arch=armel)cti_op_get_by_val_string@Base 4:4.6.2
+ (arch=armel)cti_op_get_pnames@Base 4:4.6.2
+ (arch=armel)cti_op_in@Base 4:4.6.2
+ (arch=armel)cti_op_instanceof@Base 4:4.6.2
+ (arch=armel)cti_op_is_boolean@Base 4:4.6.2
+ (arch=armel)cti_op_is_function@Base 4:4.6.2
+ (arch=armel)cti_op_is_number@Base 4:4.6.2
+ (arch=armel)cti_op_is_object@Base 4:4.6.2
+ (arch=armel)cti_op_is_string@Base 4:4.6.2
+ (arch=armel)cti_op_is_undefined@Base 4:4.6.2
+ (arch=armel)cti_op_jless@Base 4:4.6.2
+ (arch=armel)cti_op_jlesseq@Base 4:4.6.2
+ (arch=armel)cti_op_jmp_scopes@Base 4:4.6.2
+ (arch=armel)cti_op_jtrue@Base 4:4.6.2
+ (arch=armel)cti_op_less@Base 4:4.6.2
+ (arch=armel)cti_op_lesseq@Base 4:4.6.2
+ (arch=armel)cti_op_load_varargs@Base 4:4.6.2
+ (arch=armel)cti_op_loop_if_less@Base 4:4.6.2
+ (arch=armel)cti_op_loop_if_lesseq@Base 4:4.6.2
+ (arch=armel)cti_op_loop_if_true@Base 4:4.6.2
+ (arch=armel)cti_op_lshift@Base 4:4.6.2
+ (arch=armel)cti_op_mod@Base 4:4.6.2
+ (arch=armel)cti_op_mul@Base 4:4.6.2
+ (arch=armel)cti_op_negate@Base 4:4.6.2
+ (arch=armel)cti_op_new_array@Base 4:4.6.2
+ (arch=armel)cti_op_new_error@Base 4:4.6.2
+ (arch=armel)cti_op_new_func@Base 4:4.6.2
+ (arch=armel)cti_op_new_func_exp@Base 4:4.6.2
+ (arch=armel)cti_op_new_object@Base 4:4.6.2
+ (arch=armel)cti_op_new_regexp@Base 4:4.6.2
+ (arch=armel)cti_op_not@Base 4:4.6.2
+ (arch=armel)cti_op_nstricteq@Base 4:4.6.2
+ (arch=armel)cti_op_pop_scope@Base 4:4.6.2
+ (arch=armel)cti_op_post_dec@Base 4:4.6.2
+ (arch=armel)cti_op_post_inc@Base 4:4.6.2
+ (arch=armel)cti_op_pre_dec@Base 4:4.6.2
+ (arch=armel)cti_op_pre_inc@Base 4:4.6.2
+ (arch=armel)cti_op_profile_did_call@Base 4:4.6.2
+ (arch=armel)cti_op_profile_will_call@Base 4:4.6.2
+ (arch=armel)cti_op_push_activation@Base 4:4.6.2
+ (arch=armel)cti_op_push_new_scope@Base 4:4.6.2
+ (arch=armel)cti_op_push_scope@Base 4:4.6.2
+ (arch=armel)cti_op_put_by_id@Base 4:4.6.2
+ (arch=armel)cti_op_put_by_id_fail@Base 4:4.6.2
+ (arch=armel)cti_op_put_by_id_generic@Base 4:4.6.2
+ (arch=armel)cti_op_put_by_id_transition_realloc@Base 4:4.6.2
+ (arch=armel)cti_op_put_by_index@Base 4:4.6.2
+ (arch=armel)cti_op_put_by_val@Base 4:4.6.2
+ (arch=armel)cti_op_put_by_val_byte_array@Base 4:4.6.2
+ (arch=armel)cti_op_put_getter@Base 4:4.6.2
+ (arch=armel)cti_op_put_setter@Base 4:4.6.2
+ (arch=armel)cti_op_resolve@Base 4:4.6.2
+ (arch=armel)cti_op_resolve_base@Base 4:4.6.2
+ (arch=armel)cti_op_resolve_global@Base 4:4.6.2
+ (arch=armel)cti_op_resolve_skip@Base 4:4.6.2
+ (arch=armel)cti_op_resolve_with_base@Base 4:4.6.2
+ (arch=armel)cti_op_ret_scopeChain@Base 4:4.6.2
+ (arch=armel)cti_op_rshift@Base 4:4.6.2
+ (arch=armel)cti_op_strcat@Base 4:4.6.2
+ (arch=armel)cti_op_stricteq@Base 4:4.6.2
+ (arch=armel)cti_op_sub@Base 4:4.6.2
+ (arch=armel)cti_op_switch_char@Base 4:4.6.2
+ (arch=armel)cti_op_switch_imm@Base 4:4.6.2
+ (arch=armel)cti_op_switch_string@Base 4:4.6.2
+ (arch=armel)cti_op_tear_off_activation@Base 4:4.6.2
+ (arch=armel)cti_op_tear_off_arguments@Base 4:4.6.2
+ (arch=armel)cti_op_throw@Base 4:4.6.2
+ (arch=armel)cti_op_to_jsnumber@Base 4:4.6.2
+ (arch=armel)cti_op_to_primitive@Base 4:4.6.2
+ (arch=armel)cti_op_typeof@Base 4:4.6.2
+ (arch=armel)cti_op_urshift@Base 4:4.6.2
+ (arch=armel)cti_register_file_check@Base 4:4.6.2
+ (arch=armel)cti_timeout_check@Base 4:4.6.2
+ (arch=armel)cti_to_object@Base 4:4.6.2
+ (arch=armel)cti_vm_lazyLinkCall@Base 4:4.6.2
+ (arch=armel)cti_vm_throw@Base 4:4.6.2
  kJSClassDefinitionEmpty@Base 4:4.5.3
  (c++)"non-virtual thunk to QGraphicsWebView::contextMenuEvent(QGraphicsSceneContextMenuEvent*)@Base" 4:4.6.1
  (c++)"non-virtual thunk to QGraphicsWebView::dragEnterEvent(QGraphicsSceneDragDropEvent*)@Base" 4:4.6.1

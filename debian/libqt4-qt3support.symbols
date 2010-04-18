@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.6.2 amd64 i386 ia64 kfreebsd-amd64 kfreebsd-i386 powerpc s390 sparc
+# SymbolsHelper-Confirmed: 4:4.6.2 amd64 armel hppa i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips powerpc s390 sparc
 libQt3Support.so.4 libqt4-qt3support #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z16qt_tryAccelEventP7QWidgetP9QKeyEvent@Base 4:4.5.3
@@ -2454,7 +2454,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN15Q3TextTableCellD1Ev@Base 4:4.5.3
  _ZN15Q3TextTableCellD2Ev@Base 4:4.5.3
  (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
+ (optional=external|arch=sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN16Q3CanvasItemList10drawUniqueER8QPainter@Base 4:4.5.3
  _ZN16Q3CanvasItemList4sortEv@Base 4:4.5.3
  _ZN16Q3CheckTableItem10setCheckedEb@Base 4:4.5.3
@@ -4332,7 +4332,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZNK12Q3TextFormat7descentEv@Base 4:4.5.3
  _ZNK12Q3TextFormat7leadingEv@Base 4:4.5.3
  _ZNK12Q3TextString5widthEi@Base 4:4.5.3
- (arch=sparc)_ZNK12Q3TextString8toStringEv@Base 4:4.6.2
+ (arch=armel hppa sparc)_ZNK12Q3TextString8toStringEv@Base 4:4.6.2
  _ZNK12Q3TextString9checkBidiEv@Base 4:4.5.3
  _ZNK12QPaintDevice7devTypeEv@Base 4:4.5.3
  _ZNK13Q3ActionGroup10metaObjectEv@Base 4:4.5.3

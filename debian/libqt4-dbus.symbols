@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.6.1 amd64 i386
+# SymbolsHelper-Confirmed: 4:4.6.2 armel hppa i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips powerpc s390 sparc
 libQtDBus.so.4 libqt4-dbus #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z14qDBusReplyFillRK12QDBusMessageR10QDBusErrorR8QVariant@Base 4:4.5.3
@@ -85,7 +85,7 @@ libQtDBus.so.4 libqt4-dbus #MINVER#
  _ZN14QDBusInterfaceD2Ev@Base 4:4.5.3
  _ZN14QDBusSignature5checkEv@Base 4:4.5.3
  (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
+ (optional=external|arch=sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN15QDBusConnection10disconnectERK7QStringS2_S2_S2_P7QObjectPKc@Base 4:4.5.3
  _ZN15QDBusConnection10disconnectERK7QStringS2_S2_S2_RK11QStringListS2_P7QObjectPKc@Base 4:4.6.1
  _ZN15QDBusConnection10disconnectERK7QStringS2_S2_S2_S2_P7QObjectPKc@Base 4:4.5.3
