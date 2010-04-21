@@ -1,10 +1,19 @@
 qt4-x11 (4:4.6.2-5) UNRELEASED; urgency=low
 
+  [ Modestas Vainius ]
   * Update symbol files for armel, hppa and mips.
   * Add support for alpha to QtScript copy of wtf/Platform.h. This change
     should fix FTBFS on alpha (patch 52_wtf_platform_support_alpha.diff).
 
- -- Modestas Vainius <modax@debian.org>  Sun, 18 Apr 2010 23:42:13 +0300
+  [ Fathi Boudra ]
+  * Add upstream patches:
+    - 0004_problem_displaying_half_width_character.diff (Closes: #578604)
+      QTBUG-1726 - Fixed problem displaying half width character as full width.
+    - 0005_always_redraw_the_complete_control.diff (Closes: #578606)
+      QTBUG-8807 - Always redraw the complete control when an input event comes
+      in.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 18 Apr 2010 23:42:13 +0300
 
 qt4-x11 (4:4.6.2-4) unstable; urgency=low
 

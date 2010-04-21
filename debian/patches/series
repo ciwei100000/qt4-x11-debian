@@ -2,6 +2,8 @@
 0001_qpixmap_load_no_modify_referenced_copies.diff
 0002_qmake_qfileinfo_absolutepath.diff
 0003_s390_fix_atomic_ops_related_crashes.diff
+0004_problem_displaying_half_width_character.diff
+0005_always_redraw_the_complete_control.diff
 
 # qt-copy patches
 0180-window-role.diff
