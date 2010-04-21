@@ -4,6 +4,7 @@
 0003_s390_fix_atomic_ops_related_crashes.diff
 0004_problem_displaying_half_width_character.diff
 0005_always_redraw_the_complete_control.diff
+0006_expand_indicator_would_not_be_displayed.diff
 
 # qt-copy patches
 0180-window-role.diff

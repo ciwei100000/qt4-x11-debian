@@ -12,6 +12,9 @@ qt4-x11 (4:4.6.2-5) UNRELEASED; urgency=low
     - 0005_always_redraw_the_complete_control.diff (Closes: #578606)
       QTBUG-8807 - Always redraw the complete control when an input event comes
       in.
+    - 0006_expand_indicator_would_not_be_displayed.diff
+      QTBUG-7443 - Expand indicator would not be displayed after removal of a
+      collapsed item's child.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 18 Apr 2010 23:42:13 +0300
 
