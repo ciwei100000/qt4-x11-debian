@@ -86,10 +86,12 @@ Trolltech task ID : 168283 (status: "fixed" for Qt 4.4.0, but effectively refuse
          }
  
          // set client leader property
-@@ -2919,6 +2923,17 @@ void QWidgetPrivate::setWindowRole()
+@@ -2917,6 +2921,17 @@ void QWidgetPrivate::setWindowRole()
+     XChangeProperty(X11->display, q->internalWinId(),
+                     ATOM(WM_WINDOW_ROLE), XA_STRING, 8, PropModeReplace,
                      (unsigned char *)windowRole.constData(), windowRole.length());
- }
- 
++}
++
 +void QWidgetPrivate::checkWindowRole()
 +{
 +    Q_Q(QWidget);
@@ -99,8 +101,6 @@ Trolltech task ID : 168283 (status: "fixed" for Qt 4.4.0, but effectively refuse
 +    XChangeProperty(X11->display, q->internalWinId(),
 +                    ATOM(WM_WINDOW_ROLE), XA_STRING, 8, PropModeReplace,
 +                    (unsigned char *)windowRole.constData(), windowRole.length());
-+}
-+
+ }
+ 
  Q_GLOBAL_STATIC(QX11PaintEngine, qt_widget_paintengine)
- QPaintEngine *QWidget::paintEngine() const
- {

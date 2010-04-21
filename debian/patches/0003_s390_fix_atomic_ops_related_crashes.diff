@@ -17,8 +17,6 @@ Origin: upstream, http://qt.gitorious.org/qt/qt/commit/cdf4701f442149546043b155c
  src/corelib/arch/qatomic_s390.h |   16 ++++++----------
  1 files changed, 6 insertions(+), 10 deletions(-)
 
-diff --git a/src/corelib/arch/qatomic_s390.h b/src/corelib/arch/qatomic_s390.h
-index 21f5037..273c17b 100644
 --- a/src/corelib/arch/qatomic_s390.h
 +++ b/src/corelib/arch/qatomic_s390.h
 @@ -366,11 +366,9 @@ template <typename T>
@@ -61,6 +59,3 @@ index 21f5037..273c17b 100644
  #endif
  }
  
--- 
-1.6.1
-
