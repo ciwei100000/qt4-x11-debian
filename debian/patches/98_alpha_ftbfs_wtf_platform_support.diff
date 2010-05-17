@@ -13,7 +13,7 @@ Last-Update: 2010-04-19
  #endif
  
 +/* PLATFORM(ALPHA) */
-+#if defined(__alpha) || defined(__alpha__)
++#if defined(__alpha__)
 +#define WTF_PLATFORM_ALPHA 1
 +#endif
 +

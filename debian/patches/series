@@ -36,7 +36,6 @@
 41_disable_opengl_visibility.diff
 50_kfreebsd_build_fix.diff
 51_kfreebsd_strnstr_build_fix.diff
-52_wtf_platform_support_alpha.diff
 70_hppa_ldcw_fix.diff
 71_hppa_unaligned_access_fix_458133.diff
 80_hurd_max_path.diff
@@ -48,3 +47,4 @@
 95_sparc_platform_definition.diff
 96_webkit_no_gc_sections.diff
 97_alpha_ftbfs_qatomic_alpha_h_types.diff
+98_alpha_ftbfs_wtf_platform_support.diff
