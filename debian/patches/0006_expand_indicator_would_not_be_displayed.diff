@@ -16,11 +16,9 @@ Task-number: QTBUG-7443
  tests/auto/qtreeview/tst_qtreeview.cpp |   14 ++++++++++++++
  2 files changed, 23 insertions(+), 4 deletions(-)
 
-diff --git a/src/gui/itemviews/qtreeview.cpp b/src/gui/itemviews/qtreeview.cpp
-index 706d2a8..37168eb 100644
 --- a/src/gui/itemviews/qtreeview.cpp
 +++ b/src/gui/itemviews/qtreeview.cpp
-@@ -3770,10 +3770,15 @@ void QTreeViewPrivate::rowsRemoved(const QModelIndex &parent,
+@@ -3769,10 +3769,15 @@ void QTreeViewPrivate::rowsRemoved(const
          if (previousSibiling != -1 && after && model->rowCount(parent) == start)
              viewItems[previousSibiling].hasMoreSiblings = false;
  
@@ -40,31 +38,3 @@ index 706d2a8..37168eb 100644
          if (after) {
              q->updateGeometries();
              viewport->update();
-diff --git a/tests/auto/qtreeview/tst_qtreeview.cpp b/tests/auto/qtreeview/tst_qtreeview.cpp
-index fd4815e..e39cf6c 100644
---- a/tests/auto/qtreeview/tst_qtreeview.cpp
-+++ b/tests/auto/qtreeview/tst_qtreeview.cpp
-@@ -3083,6 +3083,20 @@ void tst_QTreeView::styleOptionViewItem()
-         QApplication::processEvents();
-         QTRY_VERIFY(delegate.count >= 3);
-         QApplication::processEvents();
-+
-+        item00->setText("OnlyOne");
-+        item0->insertRow(2, new QStandardItem("OnlyOne Last"));
-+        view.collapse(item0->index());
-+        item0->removeRow(0);
-+        delegate.count = 0;
-+        QTRY_VERIFY(delegate.count >= 2);
-+        QApplication::processEvents();
-+
-+        item0->removeRow(1);
-+        item0->setText("OnlyOne");
-+        delegate.count = 0;
-+        QTRY_VERIFY(delegate.count >= 2);
-+        QApplication::processEvents();
-     }
- }
- 
--- 
-1.6.1
-
