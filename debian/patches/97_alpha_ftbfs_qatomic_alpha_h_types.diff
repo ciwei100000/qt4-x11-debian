@@ -3,6 +3,7 @@ Description: fix FTBFS on alpha due to invalid type conversions
   ../../include/QtCore/../../src/corelib/arch/qatomic_alpha.h: In member function 'T* QBasicAtomicPointer<T>::fetchAndStoreAcquire(T*) [with T = QMutexPool]':
   kernel/qobject.cpp:123:   instantiated from here
   ../../include/QtCore/../../src/corelib/arch/qatomic_alpha.h:401: error: invalid conversion from 'void*' to 'QMutexPool*'
+Forwarded: http://bugreports.qt.nokia.com/browse/QTBUG-5955
 
 --- a/src/corelib/arch/qatomic_alpha.h
 +++ b/src/corelib/arch/qatomic_alpha.h
