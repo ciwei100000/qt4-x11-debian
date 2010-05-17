@@ -1945,7 +1945,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN12QLineControl17cursorWordForwardEb@Base 4:4.6.1
  _ZN12QLineControl17processMouseEventEP11QMouseEvent@Base 4:4.6.1
  _ZN12QLineControl17resetInputContextEv@Base 4:4.6.1
- _ZN12QLineControl17updateDisplayTextEv@Base 4:4.6.1
+ _ZN12QLineControl17updateDisplayTextEb@Base 4:4.6.2
  _ZN12QLineControl18cursorWordBackwardEb@Base 4:4.6.1
  _ZN12QLineControl18displayTextChangedERK7QString@Base 4:4.6.1
  _ZN12QLineControl18removeSelectedTextEv@Base 4:4.6.1
