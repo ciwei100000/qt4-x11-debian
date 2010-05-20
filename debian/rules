@@ -34,6 +34,10 @@ ifeq ($(DEB_HOST_ARCH),arm)
 	extra_configure_opts += -DQT_QLOCALE_USES_FCVT
 endif
 
+ifeq ($(DEB_HOST_ARCH),armel)
+    extra_configure_opts += -arch armv6
+endif
+
 ifeq ($(DEB_HOST_ARCH_OS),linux)
   ifeq ($(DEB_HOST_ARCH),amd64)
 	platform_arg = linux-g++-64
