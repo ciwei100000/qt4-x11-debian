@@ -1,3 +1,22 @@
+qt4-x11 (4:4.7.0~beta1-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+  * Remove upstream patches:
+    - 0001_qpixmap_load_no_modify_referenced_copies.diff - stolen upstream
+    - 0002_qmake_qfileinfo_absolutepath.diff - stolen upstream
+    - 0003_s390_fix_atomic_ops_related_crashes.diff - stolen upstream
+    - 0004_problem_displaying_half_width_character.diff - stolen upstream
+    - 0005_always_redraw_the_complete_control.diff - stolen upstream
+    - 0006_expand_indicator_would_not_be_displayed.diff - stolen upstream
+  * Remove Debian patches:
+    - 82_hurd_SA_SIGINFO.diff - merged upstream
+    - 95_sparc_platform_definition.diff - merged upstream
+    - 98_alpha_ftbfs_wtf_platform_support.diff - stolen upstream
+  * Refresh Debian patches:
+    - 30_webkit_unaligned_access.diff - partially merged upstream
+
+ -- Fathi Boudra <fabo@debian.org>  Fri, 21 May 2010 10:31:22 +0300
+
 qt4-x11 (4:4.6.2-5) unstable; urgency=low
 
   [ Modestas Vainius ]

@@ -27,7 +27,7 @@ bugs.kde.org number :
 
 --- a/configure
 +++ b/configure
-@@ -1029,6 +1029,11 @@ while [ "$#" -gt 0 ]; do
+@@ -1046,6 +1046,11 @@ while [ "$#" -gt 0 ]; do
              VAL=`echo $1 | sed 's,-D,,'`
          fi
          ;;
@@ -39,7 +39,7 @@ bugs.kde.org number :
      -I?*|-I)
          VAR="add_ipath"
          if [ "$1" = "-I" ]; then
-@@ -2047,6 +2052,9 @@ while [ "$#" -gt 0 ]; do
+@@ -2106,6 +2111,9 @@ while [ "$#" -gt 0 ]; do
      add_ipath)
          I_FLAGS="$I_FLAGS -I\"${VAL}\""
          ;;

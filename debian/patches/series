@@ -1,10 +1,10 @@
 # upstream patches
-0001_qpixmap_load_no_modify_referenced_copies.diff
-0002_qmake_qfileinfo_absolutepath.diff
-0003_s390_fix_atomic_ops_related_crashes.diff
-0004_problem_displaying_half_width_character.diff
-0005_always_redraw_the_complete_control.diff
-0006_expand_indicator_would_not_be_displayed.diff
+# 0001_qpixmap_load_no_modify_referenced_copies.diff - stolen upstream
+# 0002_qmake_qfileinfo_absolutepath.diff - stolen upstream
+# 0003_s390_fix_atomic_ops_related_crashes.diff - stolen upstream
+# 0004_problem_displaying_half_width_character.diff - stolen upstream
+# 0005_always_redraw_the_complete_control.diff - stolen upstream
+# 0006_expand_indicator_would_not_be_displayed.diff - stolen upstream
 
 # qt-copy patches
 0180-window-role.diff
@@ -40,11 +40,11 @@
 71_hppa_unaligned_access_fix_458133.diff
 80_hurd_max_path.diff
 81_hurd_architecture.diff
-82_hurd_SA_SIGINFO.diff
+# 82_hurd_SA_SIGINFO.diff - merged upstream
 89_powerpc_opts.diff
 91_s390_use_gstabs.diff
 92_armel_gcc43_valist_compat.diff
-95_sparc_platform_definition.diff
+# 95_sparc_platform_definition.diff - merged upstream
 96_webkit_no_gc_sections.diff
 97_alpha_ftbfs_qatomic_alpha_h_types.diff
-98_alpha_ftbfs_wtf_platform_support.diff
+# 98_alpha_ftbfs_wtf_platform_support.diff - stolen upstream

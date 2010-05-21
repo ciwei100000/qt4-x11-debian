@@ -55,7 +55,7 @@ Fixes FTBFS on GNU/kFreeBSD by creating new Q_OS_GLIBC.
  #    include <fenv.h>
  #endif
  
-@@ -6537,7 +6537,7 @@ Q_CORE_EXPORT char *qdtoa ( double d, in
+@@ -6598,7 +6598,7 @@ Q_CORE_EXPORT char *qdtoa ( double d, in
      _control87(MCW_EM, MCW_EM);
  #endif
  
@@ -64,7 +64,7 @@ Fixes FTBFS on GNU/kFreeBSD by creating new Q_OS_GLIBC.
      fenv_t envp;
      feholdexcept(&envp);
  #endif
-@@ -6553,7 +6553,7 @@ Q_CORE_EXPORT char *qdtoa ( double d, in
+@@ -6614,7 +6614,7 @@ Q_CORE_EXPORT char *qdtoa ( double d, in
  #endif //_M_X64
  #endif //Q_OS_WIN
  

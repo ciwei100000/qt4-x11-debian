@@ -13,7 +13,7 @@ bugs.kde.org number : none
 
 --- a/src/gui/kernel/qwidget_x11.cpp
 +++ b/src/gui/kernel/qwidget_x11.cpp
-@@ -763,6 +763,11 @@ void QWidgetPrivate::create_sys(WId wind
+@@ -762,6 +762,11 @@ void QWidgetPrivate::create_sys(WId wind
          Q_ASSERT(id);
          XChangeWindowAttributes(dpy, id, CWOverrideRedirect | CWSaveUnder,
                                  &wsa);
@@ -25,7 +25,7 @@ bugs.kde.org number : none
      } else if (topLevel && !desktop) {        // top-level widget
          if (!X11->wm_client_leader)
              create_wm_client_leader();
-@@ -816,13 +821,21 @@ void QWidgetPrivate::create_sys(WId wind
+@@ -815,13 +820,21 @@ void QWidgetPrivate::create_sys(WId wind
          // set EWMH window types
          setNetWmWindowTypes();
  
@@ -49,7 +49,7 @@ bugs.kde.org number : none
  
          // declare the widget's window role
          QByteArray windowRole;
-@@ -842,10 +855,6 @@ void QWidgetPrivate::create_sys(WId wind
+@@ -841,10 +854,6 @@ void QWidgetPrivate::create_sys(WId wind
          XChangeProperty(dpy, id, ATOM(WM_CLIENT_LEADER),
                          XA_WINDOW, 32, PropModeReplace,
                          (unsigned char *)&X11->wm_client_leader, 1);

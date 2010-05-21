@@ -40,7 +40,7 @@ Author: Bo Thorsen <bo@sonofthor.dk>
  /*!
      \since 4.6
      Returns the installation date for this build of Qt. The install date will
-@@ -430,7 +450,7 @@ QLibraryInfo::location(LibraryLocation l
+@@ -439,7 +459,7 @@ QLibraryInfo::location(LibraryLocation l
          if (loc == PrefixPath) {
              // we make the prefix path absolute to the executable's directory
  #ifdef BOOTSTRAPPING
@@ -49,12 +49,12 @@ Author: Bo Thorsen <bo@sonofthor.dk>
  #else
              if (QCoreApplication::instance()) {
  #ifdef Q_OS_MAC
-@@ -439,21 +459,21 @@ QLibraryInfo::location(LibraryLocation l
+@@ -448,21 +468,21 @@ QLibraryInfo::location(LibraryLocation l
                      QCFType<CFURLRef> urlRef = CFBundleCopyBundleURL(bundleRef);
                      if (urlRef) {
                          QCFString path = CFURLCopyFileSystemPath(urlRef, kCFURLPOSIXPathStyle);
--                        return QDir::cleanPath(path + QLatin1String("/Contents/") + ret);
-+                        return fixLibraryPath32(QDir::cleanPath(path + QLatin1String("/Contents/") + ret));
+-                        return QDir::cleanPath(QString(path) + QLatin1String("/Contents/") + ret);
++                        return fixLibraryPath32(QDir::cleanPath(QString(path) + QLatin1String("/Contents/") + ret));
                      }
                  }
  #endif
