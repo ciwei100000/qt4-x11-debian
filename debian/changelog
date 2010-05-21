@@ -1,6 +1,8 @@
 qt4-x11 (4:4.7.0~beta1-1) UNRELEASED; urgency=low
 
   * New upstream release.
+    - QtAssistant client library removal (libqt4-assistant).
+    - legacy Qt Assistant removal (assistant_adp).
   * Remove upstream patches:
     - 0001_qpixmap_load_no_modify_referenced_copies.diff - stolen upstream
     - 0002_qmake_qfileinfo_absolutepath.diff - stolen upstream

@@ -1,5 +1,4 @@
 usr/bin/assistant-qt4
-usr/bin/assistant_adp
 usr/bin/lconvert
 usr/bin/linguist-qt4
 usr/bin/pixeltool
@@ -13,12 +12,6 @@ usr/bin/qvfb
 usr/bin/xmlpatterns
 usr/bin/xmlpatternsvalidator
 usr/share/qt4/phrasebooks/*
-usr/share/qt4/translations/assistant_adp_de.qm
-usr/share/qt4/translations/assistant_adp_ja.qm
-usr/share/qt4/translations/assistant_adp_pl.qm
-usr/share/qt4/translations/assistant_adp_ru.qm
-usr/share/qt4/translations/assistant_adp_zh_CN.qm
-usr/share/qt4/translations/assistant_adp_zh_TW.qm
 usr/share/qt4/translations/assistant_da.qm
 usr/share/qt4/translations/assistant_de.qm
 usr/share/qt4/translations/assistant_fr.qm

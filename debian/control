@@ -58,7 +58,7 @@ Description: Qt 4 GUI module
 Package: libqt4-gui
 Architecture: any
 Depends: ${misc:Depends}, libqtgui4 (= ${binary:Version}), libqt4-svg (= ${binary:Version}), libqt4-opengl (= ${binary:Version}),
- libqt4-designer (= ${binary:Version}), libqt4-assistant (= ${binary:Version})
+ libqt4-designer (= ${binary:Version})
 Description: transitional package for Qt 4 GUI runtime libraries
  Qt is a cross-platform C++ application framework.  Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -297,18 +297,6 @@ Description: Qt 4 help module
  The QtHelp module provides classes for integrating online documentation in
  applications.
 
-Package: libqt4-assistant
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Conflicts: libqt4-gui (<< 4.4.0~beta1-1)
-Replaces: libqt4-gui (<< 4.4.0~beta1-1)
-Description: Qt 4 assistant module
- Qt is a cross-platform C++ application framework. Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- The QtAssistant module provides a means of launching Qt Assistant to provide
- online help.
-
 Package: libqt4-test
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
@@ -355,9 +343,8 @@ Depends: ${shlibs:Depends}, ${misc:Depends}, libqtcore4 (= ${binary:Version}),
  libqt4-sql (= ${binary:Version}), libqt4-script (= ${binary:Version}),
  libqt4-scripttools (= ${binary:Version}), libqt4-xmlpatterns (= ${binary:Version}),
  libqt4-qt3support (= ${binary:Version}), libqt4-designer (= ${binary:Version}),
- libqt4-help (= ${binary:Version}), libqt4-assistant (= ${binary:Version}),
- libqt4-test (= ${binary:Version}), libqt4-multimedia (= ${binary:Version}),
- qt4-qmake (= ${binary:Version})
+ libqt4-help (= ${binary:Version}), libqt4-test (= ${binary:Version}),
+ libqt4-multimedia (= ${binary:Version}), qt4-qmake (= ${binary:Version})
 Recommends: libqt4-opengl-dev (= ${binary:Version})
 Conflicts: qt3-dev-tools (<= 3:3.3.4-7), libqtwebkit-dev
 Replaces: libqtwebkit-dev, libqt4-opengl-dev (<< 4.4.0-2)
@@ -536,7 +523,5 @@ Description: Qt 4 API documentation (HTML format)
  .
  This package contains the complete Qt 4 API documentation (HTML format).
  .
- The documentation is provided in HTML format; the HTML version can be viewed
- in conjunction with the legacy Qt Assistant (assistant_adp) found in the
- qt4-dev-tools package.
+ The documentation is provided in HTML format.
 

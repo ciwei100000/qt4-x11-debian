@@ -1029,10 +1029,6 @@ usr/include/qt4/Qt3Support/q3whatsthis.h
 usr/include/qt4/Qt3Support/q3widgetstack.h
 usr/include/qt4/Qt3Support/q3wizard.h
 usr/include/qt4/Qt3Support/qiconset.h
-usr/include/qt4/QtAssistant/QAssistantClient
-usr/include/qt4/QtAssistant/QtAssistant
-usr/include/qt4/QtAssistant/qassistantclient.h
-usr/include/qt4/QtAssistant/qassistantclient_global.h
 usr/include/qt4/QtCore/QAbstractAnimation
 usr/include/qt4/QtCore/QAbstractConcatenable
 usr/include/qt4/QtCore/QAbstractEventDispatcher
@@ -2749,8 +2745,6 @@ usr/include/qt4/QtXmlPatterns/qxmlschemavalidator.h
 usr/include/qt4/QtXmlPatterns/qxmlserializer.h
 usr/lib/libQt3Support.prl
 usr/lib/libQt3Support.so
-usr/lib/libQtAssistantClient.prl
-usr/lib/libQtAssistantClient.so
 usr/lib/libQtCLucene.prl
 usr/lib/libQtCLucene.so
 usr/lib/libQtCore.prl
@@ -2788,7 +2782,6 @@ usr/lib/libQtXml.so
 usr/lib/libQtXmlPatterns.prl
 usr/lib/libQtXmlPatterns.so
 usr/lib/pkgconfig/Qt3Support.pc
-usr/lib/pkgconfig/QtAssistantClient.pc
 usr/lib/pkgconfig/QtCLucene.pc
 usr/lib/pkgconfig/QtCore.pc
 usr/lib/pkgconfig/QtDBus.pc
