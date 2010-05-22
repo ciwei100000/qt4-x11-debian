@@ -1,2 +1,2 @@
-usr/lib/libQtDBus.so.*
 usr/bin/qdbus
+usr/lib/libQtDBus.so.*

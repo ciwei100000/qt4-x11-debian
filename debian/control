@@ -317,6 +317,15 @@ Description: Qt 4 Multimedia module
  .
  The Qt Multimedia module provides low-level multimedia functionality.
 
+Package: libqt4-mediaservices
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Qt 4 MediaServices module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The Qt MediServices module provides ??? (NOT DOCUMENTED).
+
 Package: libqt4-phonon
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
@@ -332,6 +341,16 @@ Description: Qt 4 Phonon module
  The sole purpose of this package to provide Phonon libraries until libphonon4
  is built from the phonon source package. Therefore it's only useful when
  bootstraping new architectures or rebuilding the whole archive from scratch.
+
+Package: libqt4-declarative
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Qt 4 Declarative module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The Qt Declarative module provides a declarative framework for building highly
+ dynamic, custom user interfaces.
 
 Package: libqt4-dev
 Architecture: any

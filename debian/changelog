@@ -3,6 +3,8 @@ qt4-x11 (4:4.7.0~beta1-1) UNRELEASED; urgency=low
   * New upstream release.
     - QtAssistant client library removal (libqt4-assistant).
     - legacy Qt Assistant removal (assistant_adp).
+    - new QtDeclarative module (libqt4-declarative).
+    - new QtMediaServices module (libqt4-mediaservices).
   * Remove upstream patches:
     - 0001_qpixmap_load_no_modify_referenced_copies.diff - stolen upstream
     - 0002_qmake_qfileinfo_absolutepath.diff - stolen upstream
@@ -18,6 +20,7 @@ qt4-x11 (4:4.7.0~beta1-1) UNRELEASED; urgency=low
     - 30_webkit_unaligned_access.diff - partially merged upstream
   * Update debian/rules:
     - add -importdir configure option.
+  * Update installed files.
 
  -- Fathi Boudra <fabo@debian.org>  Fri, 21 May 2010 10:31:22 +0300
 

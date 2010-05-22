@@ -1,0 +1,3 @@
+usr/bin/qml
+usr/lib/libQtDeclarative.so.*
+usr/lib/qt4/plugins/designer/libqdeclarativeview.so
