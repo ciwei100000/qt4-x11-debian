@@ -18,6 +18,9 @@ qt4-x11 (4:4.7.0~beta1-1) UNRELEASED; urgency=low
     - 98_alpha_ftbfs_wtf_platform_support.diff - stolen upstream
   * Refresh Debian patches:
     - 30_webkit_unaligned_access.diff - partially merged upstream
+  * Update debian/control:
+    - add libgstreamer0.10-dev and libgstreamer-plugins-base0.10-dev build
+      dependencies.
   * Update debian/rules:
     - add -importdir configure option.
   * Update installed files.

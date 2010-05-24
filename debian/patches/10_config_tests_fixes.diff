@@ -1,6 +1,8 @@
 Description: Various config.test fixes.
              Build ibase sql plugin against firebird.
+             Add gstreamer include path.
 Author: Fathi Boudra <fabo@debian.org>
+Last-Update: 2010-05-24
 
 --- a/config.tests/unix/ibase/ibase.pro
 +++ b/config.tests/unix/ibase/ibase.pro
@@ -39,3 +41,10 @@ Author: Fathi Boudra <fabo@debian.org>
  CONFIG -= qt dylib
  mac:CONFIG -= app_bundle
 +LIBS += -ldl
+--- a/config.tests/unix/gstreamer/gstreamer.pro
++++ b/config.tests/unix/gstreamer/gstreamer.pro
+@@ -1,3 +1,4 @@
+ SOURCES = gstreamer.cpp
+ CONFIG -= qt
+ LIBS += -lgstinterfaces-0.10 -lgstvideo-0.10 -lgstbase-0.10
++INCLUDEPATH += /usr/include/gstreamer-0.10
