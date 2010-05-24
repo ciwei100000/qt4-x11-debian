@@ -21,9 +21,13 @@ qt4-x11 (4:4.7.0~beta1-1) UNRELEASED; urgency=low
   * Update debian/control:
     - add libgstreamer0.10-dev, libgstreamer-plugins-base0.10-dev,
       libpulse-dev and libxv-dev build dependencies.
+    - add libqt4-declarative, libqt4-mediaservices,
+      libqt4-declarative-$PLUGINS packages.
+    - remove libqt4-assistant package.
   * Update debian/rules:
     - add -importdir configure option.
   * Update installed files.
+  * Update symbols files.
 
  -- Fathi Boudra <fabo@debian.org>  Fri, 21 May 2010 10:31:22 +0300
 
