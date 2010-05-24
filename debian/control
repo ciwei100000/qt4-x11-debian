@@ -343,6 +343,42 @@ Description: Qt 4 Declarative module
  The Qt Declarative module provides a declarative framework for building highly
  dynamic, custom user interfaces.
 
+Package: libqt4-declarative-particles
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Qt 4 particles QML plugin
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the particles QML plugin for QtDeclarative.
+
+Package: libqt4-declarative-multimedia
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Qt 4 multimedia QML plugin
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the multimedia QML plugin for QtDeclarative.
+
+Package: libqt4-declarative-widgets
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Qt 4 widgets QML plugin
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the widgets QML plugin for QtDeclarative.
+
+Package: libqt4-declarative-webkitqmlplugin
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Qt 4 WebKit QML plugin
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the WebKit QML plugin for QtDeclarative.
+
 Package: libqt4-dev
 Architecture: any
 Section: libdevel
