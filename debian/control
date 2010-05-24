@@ -317,6 +317,15 @@ Description: Qt 4 Multimedia module
  .
  The Qt Multimedia module provides low-level multimedia functionality.
 
+Package: libqt4-mediaservices
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Qt 4 MediaServices module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The Qt MediaServices module provides multimedia services functionality.
+
 Package: libqt4-phonon
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
