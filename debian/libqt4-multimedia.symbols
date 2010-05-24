@@ -1,6 +1,7 @@
-# SymbolsHelper-Confirmed: 4:4.6.2 armel hppa i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips powerpc s390 sparc
+# SymbolsHelper-Confirmed: 4:4.7.0~beta1 amd64
 libQtMultimedia.so.4 libqt4-multimedia #MINVER#
 * Build-Depends-Package: libqt4-dev
+ _Z8qWarningv@Base 4:4.7.0~beta1
  _ZN11QAudioInput11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN11QAudioInput11qt_metacastEPKc@Base 4:4.6.1
  _ZN11QAudioInput12stateChangedEN6QAudio5StateE@Base 4:4.6.1
@@ -45,8 +46,10 @@ libQtMultimedia.so.4 libqt4-multimedia #MINVER#
  _ZN12QAudioFormat11setChannelsEi@Base 4:4.6.1
  _ZN12QAudioFormat12setByteOrderENS_6EndianE@Base 4:4.6.1
  _ZN12QAudioFormat12setFrequencyEi@Base 4:4.6.1
+ _ZN12QAudioFormat13setSampleRateEi@Base 4:4.7.0~beta1
  _ZN12QAudioFormat13setSampleSizeEi@Base 4:4.6.1
  _ZN12QAudioFormat13setSampleTypeENS_10SampleTypeE@Base 4:4.6.1
+ _ZN12QAudioFormat15setChannelCountEi@Base 4:4.7.0~beta1
  _ZN12QAudioFormat8setCodecERK7QString@Base 4:4.6.1
  _ZN12QAudioFormatC1ERKS_@Base 4:4.6.1
  _ZN12QAudioFormatC1Ev@Base 4:4.6.1
@@ -190,8 +193,10 @@ libQtMultimedia.so.4 libqt4-multimedia #MINVER#
  _ZNK11QVideoFrame8isMappedEv@Base 4:4.6.1
  _ZNK11QVideoFrame9fieldTypeEv@Base 4:4.6.1
  _ZNK11QVideoFrame9startTimeEv@Base 4:4.6.1
+ _ZNK12QAudioFormat10sampleRateEv@Base 4:4.7.0~beta1
  _ZNK12QAudioFormat10sampleSizeEv@Base 4:4.6.1
  _ZNK12QAudioFormat10sampleTypeEv@Base 4:4.6.1
+ _ZNK12QAudioFormat12channelCountEv@Base 4:4.7.0~beta1
  _ZNK12QAudioFormat5codecEv@Base 4:4.6.1
  _ZNK12QAudioFormat7isValidEv@Base 4:4.6.1
  _ZNK12QAudioFormat8channelsEv@Base 4:4.6.1
@@ -217,8 +222,10 @@ libQtMultimedia.so.4 libqt4-multimedia #MINVER#
  _ZNK16QAudioDeviceInfo17supportedChannelsEv@Base 4:4.6.1
  _ZNK16QAudioDeviceInfo19supportedByteOrdersEv@Base 4:4.6.1
  _ZNK16QAudioDeviceInfo20supportedFrequenciesEv@Base 4:4.6.1
+ _ZNK16QAudioDeviceInfo20supportedSampleRatesEv@Base 4:4.7.0~beta1
  _ZNK16QAudioDeviceInfo20supportedSampleSizesEv@Base 4:4.6.1
  _ZNK16QAudioDeviceInfo20supportedSampleTypesEv@Base 4:4.6.1
+ _ZNK16QAudioDeviceInfo22supportedChannelCountsEv@Base 4:4.7.0~beta1
  _ZNK16QAudioDeviceInfo4modeEv@Base 4:4.6.1
  _ZNK16QAudioDeviceInfo5realmEv@Base 4:4.6.1
  _ZNK16QAudioDeviceInfo6handleEv@Base 4:4.6.1

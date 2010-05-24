@@ -1,7 +1,7 @@
-# SymbolsHelper-Confirmed: 4:4.6.2 armel hppa i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips powerpc s390 sparc
+# SymbolsHelper-Confirmed: 4:4.7.0~beta1 amd64
 libQtWebKit.so.4 libqt4-webkit #MINVER#
 * Build-Depends-Package: libqt4-dev
- JSCheckScriptSyntax@Base 4:4.5.3
+#MISSING: 4:4.7.0~beta1# JSCheckScriptSyntax@Base 4:4.5.3
  JSClassCreate@Base 4:4.5.3
  JSClassRelease@Base 4:4.5.3
  JSClassRetain@Base 4:4.5.3
@@ -11,8 +11,8 @@ libQtWebKit.so.4 libqt4-webkit #MINVER#
  JSContextGroupCreate@Base 4:4.5.3
  JSContextGroupRelease@Base 4:4.5.3
  JSContextGroupRetain@Base 4:4.5.3
- JSEvaluateScript@Base 4:4.5.3
- JSGarbageCollect@Base 4:4.5.3
+#MISSING: 4:4.7.0~beta1# JSEvaluateScript@Base 4:4.5.3
+#MISSING: 4:4.7.0~beta1# JSGarbageCollect@Base 4:4.5.3
  JSGlobalContextCreate@Base 4:4.5.3
  JSGlobalContextCreateInGroup@Base 4:4.5.3
  JSGlobalContextRelease@Base 4:4.5.3
@@ -20,8 +20,10 @@ libQtWebKit.so.4 libqt4-webkit #MINVER#
  JSObjectCallAsConstructor@Base 4:4.5.3
  JSObjectCallAsFunction@Base 4:4.5.3
  JSObjectCopyPropertyNames@Base 4:4.5.3
+ JSObjectDeletePrivateProperty@Base 4:4.7.0~beta1
  JSObjectDeleteProperty@Base 4:4.5.3
  JSObjectGetPrivate@Base 4:4.5.3
+ JSObjectGetPrivateProperty@Base 4:4.7.0~beta1
  JSObjectGetProperty@Base 4:4.5.3
  JSObjectGetPropertyAtIndex@Base 4:4.5.3
  JSObjectGetPrototype@Base 4:4.5.3
@@ -37,6 +39,7 @@ libQtWebKit.so.4 libqt4-webkit #MINVER#
  JSObjectMakeFunctionWithCallback@Base 4:4.5.3
  JSObjectMakeRegExp@Base 4:4.5.3
  JSObjectSetPrivate@Base 4:4.5.3
+ JSObjectSetPrivateProperty@Base 4:4.7.0~beta1
  JSObjectSetProperty@Base 4:4.5.3
  JSObjectSetPropertyAtIndex@Base 4:4.5.3
  JSObjectSetPrototype@Base 4:4.5.3
@@ -45,7 +48,7 @@ libQtWebKit.so.4 libqt4-webkit #MINVER#
  JSPropertyNameArrayGetNameAtIndex@Base 4:4.5.3
  JSPropertyNameArrayRelease@Base 4:4.5.3
  JSPropertyNameArrayRetain@Base 4:4.5.3
- JSReportExtraMemoryCost@Base 4:4.5.3
+#MISSING: 4:4.7.0~beta1# JSReportExtraMemoryCost@Base 4:4.5.3
  JSStringCreateWithCharacters@Base 4:4.5.3
  JSStringCreateWithUTF8CString@Base 4:4.5.3
  JSStringGetCharactersPtr@Base 4:4.5.3
@@ -56,6 +59,7 @@ libQtWebKit.so.4 libqt4-webkit #MINVER#
  JSStringIsEqualToUTF8CString@Base 4:4.5.3
  JSStringRelease@Base 4:4.5.3
  JSStringRetain@Base 4:4.5.3
+ JSValueCreateJSONString@Base 4:4.7.0~beta1
  JSValueGetType@Base 4:4.5.3
  JSValueIsBoolean@Base 4:4.5.3
  JSValueIsEqual@Base 4:4.5.3
@@ -68,6 +72,7 @@ libQtWebKit.so.4 libqt4-webkit #MINVER#
  JSValueIsString@Base 4:4.5.3
  JSValueIsUndefined@Base 4:4.5.3
  JSValueMakeBoolean@Base 4:4.5.3
+ JSValueMakeFromJSONString@Base 4:4.7.0~beta1
  JSValueMakeNull@Base 4:4.5.3
  JSValueMakeNumber@Base 4:4.5.3
  JSValueMakeString@Base 4:4.5.3
@@ -80,29 +85,45 @@ libQtWebKit.so.4 libqt4-webkit #MINVER#
  JSValueUnprotect@Base 4:4.5.3
  _Z10qt_drt_runb@Base 4:4.5.3
  _Z14qWebKitVersionv@Base 4:4.6.1
+ _Z18qt_wrt_setViewModeP8QWebPageRK7QString@Base 4:4.7.0~beta1
  _Z19qWebKitMajorVersionv@Base 4:4.6.1
  _Z19qWebKitMinorVersionv@Base 4:4.6.1
+ _Z19qt_drt_setMediaTypeP9QWebFrameRK7QString@Base 4:4.7.0~beta1
+ _Z20qt_drt_numberOfPagesP9QWebFrameff@Base 4:4.7.0~beta1
  _Z20qt_dump_frame_loaderb@Base 4:4.5.3
  _Z20qt_webpage_groupNameP8QWebPage@Base 4:4.5.3
  _Z21qt_drt_clearFrameNameP9QWebFrame@Base 4:4.6.1
  _Z21qt_drt_pauseAnimationP9QWebFrameRK7QStringdS3_@Base 4:4.6.1
  _Z23qt_networkAccessAllowedb@Base 4:4.6.1
  _Z23qt_webpage_setGroupNameP8QWebPageRK7QString@Base 4:4.5.3
+ _Z24qt_drt_pauseSVGAnimationP9QWebFrameRK7QStringdS3_@Base 4:4.7.0~beta1
+ _Z24qt_drt_webinspector_showP8QWebPage@Base 4:4.7.0~beta1
+ _Z24qt_drt_workerThreadCountv@Base 4:4.7.0~beta1
+ _Z25qt_drt_hasDocumentElementP9QWebFrame@Base 4:4.7.0~beta1
+ _Z25qt_drt_webinspector_closeP8QWebPage@Base 4:4.7.0~beta1
  _Z25qt_dump_editing_callbacksb@Base 4:4.5.3
  _Z25qt_resumeActiveDOMObjectsP9QWebFrame@Base 4:4.6.1
+ _Z26qt_drt_enableCaretBrowsingP8QWebPageb@Base 4:4.7.0~beta1
  _Z26qt_suspendActiveDOMObjectsP9QWebFrame@Base 4:4.6.1
  _Z27qt_dump_set_accepts_editingb@Base 4:4.5.3
  _Z29qt_drt_javaScriptObjectsCountv@Base 4:4.6.1
  _Z31qt_drt_garbageCollector_collectv@Base 4:4.5.3
  _Z31qt_drt_numberOfActiveAnimationsP9QWebFrame@Base 4:4.6.1
+ _Z31qt_drt_pageNumberForElementByIdP9QWebFrameRK7QStringff@Base 4:4.7.0~beta1
  _Z31qt_dump_resource_load_callbacksb@Base 4:4.5.3
  _Z32qt_drt_pauseTransitionOfPropertyP9QWebFrameRK7QStringdS3_@Base 4:4.6.1
+ _Z32qt_drt_setFrameFlatteningEnabledP8QWebPageb@Base 4:4.7.0~beta1
  _Z32qt_drt_whiteListAccessFromOriginRK7QStringS1_S1_b@Base 4:4.6.1
  _Z33qt_drt_counterValueForElementByIdP9QWebFrameRK7QString@Base 4:4.6.1
  _Z33qt_drt_overwritePluginDirectoriesv@Base 4:4.6.1
+ _Z33qt_drt_webinspector_executeScriptP8QWebPagelRK7QString@Base 4:4.7.0~beta1
  _Z34qt_drt_resetOriginAccessWhiteListsv@Base 4:4.6.1
- _Z35qtwebkit_webframe_scrollRecursivelyP9QWebFrameii@Base 4:4.6.1
+ _Z34qt_drt_setTimelineProfilingEnabledP8QWebPageb@Base 4:4.7.0~beta1
+#MISSING: 4:4.7.0~beta1# _Z35qtwebkit_webframe_scrollRecursivelyP9QWebFrameii@Base 4:4.6.1
+ _Z35qtwebkit_webframe_scrollRecursivelyP9QWebFrameiiRK6QPoint@Base 4:4.7.0~beta1
+ _Z36qt_drt_evaluateScriptInIsolatedWorldP9QWebFrameiRK7QString@Base 4:4.7.0~beta1
  _Z36qt_drt_setJavaScriptProfilingEnabledP9QWebFrameb@Base 4:4.5.3
+ _Z47qt_drt_setDomainRelaxationForbiddenForURLSchemebRK7QString@Base 4:4.7.0~beta1
  _Z48qt_drt_garbageCollector_collectOnAlternateThreadb@Base 4:4.6.1
  _ZN11QWebElement11encloseWithERK7QString@Base 4:4.6.1
  _ZN11QWebElement11encloseWithERKS_@Base 4:4.6.1
@@ -175,6 +196,7 @@ libQtWebKit.so.4 libqt4-webkit #MINVER#
  _ZN12QWebSettings14globalSettingsEv@Base 4:4.5.3
  _ZN12QWebSettings14resetAttributeENS_12WebAttributeE@Base 4:4.5.3
  _ZN12QWebSettings15resetFontFamilyENS_10FontFamilyE@Base 4:4.5.3
+ _ZN12QWebSettings15setInspectorUrlERK4QUrl@Base 4:4.7.0~beta1
  _ZN12QWebSettings16iconDatabasePathEv@Base 4:4.5.3
  _ZN12QWebSettings17clearIconDatabaseEv@Base 4:4.5.3
  _ZN12QWebSettings17clearMemoryCachesEv@Base 4:4.6.1
@@ -200,6 +222,7 @@ libQtWebKit.so.4 libqt4-webkit #MINVER#
  _ZN12QWebSettingsC2Ev@Base 4:4.5.3
  _ZN12QWebSettingsD1Ev@Base 4:4.5.3
  _ZN12QWebSettingsD2Ev@Base 4:4.5.3
+ _ZN13QWebInspector10closeEventEP11QCloseEvent@Base 4:4.7.0~beta1
  _ZN13QWebInspector11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN13QWebInspector11qt_metacastEPKc@Base 4:4.6.1
  _ZN13QWebInspector11resizeEventEP12QResizeEvent@Base 4:4.6.1
@@ -267,7 +290,9 @@ libQtWebKit.so.4 libqt4-webkit #MINVER#
  _ZN16QGraphicsWebView17mouseReleaseEventEP24QGraphicsSceneMouseEvent@Base 4:4.6.1
  _ZN16QGraphicsWebView17triggerPageActionEN8QWebPage9WebActionEb@Base 4:4.6.1
  _ZN16QGraphicsWebView18focusNextPrevChildEb@Base 4:4.6.1
+ _ZN16QGraphicsWebView20setResizesToContentsEb@Base 4:4.7.0~beta1
  _ZN16QGraphicsWebView21mouseDoubleClickEventEP24QGraphicsSceneMouseEvent@Base 4:4.6.1
+ _ZN16QGraphicsWebView26setTiledBackingStoreFrozenEb@Base 4:4.7.0~beta1
  _ZN16QGraphicsWebView4backEv@Base 4:4.6.1
  _ZN16QGraphicsWebView4loadERK15QNetworkRequestN21QNetworkAccessManager9OperationERK10QByteArray@Base 4:4.6.1
  _ZN16QGraphicsWebView4loadERK4QUrl@Base 4:4.6.1
@@ -351,10 +376,11 @@ libQtWebKit.so.4 libqt4-webkit #MINVER#
  _ZN21QWebElementCollectionD1Ev@Base 4:4.6.1
  _ZN21QWebElementCollectionD2Ev@Base 4:4.6.1
  _ZN21QWebElementCollectionaSERKS_@Base 4:4.6.1
- (subst)_ZN3WTF10fastCallocE{size_t}{size_t}@Base 4:4.6.1
- (subst)_ZN3WTF10fastMallocE{size_t}@Base 4:4.6.1
- (subst)_ZN3WTF11fastReallocEPv{size_t}@Base 4:4.6.1
- _ZN3WTF8fastFreeEPv@Base 4:4.6.1
+#MISSING: 4:4.7.0~beta1# (subst)_ZN3WTF10fastCallocE{size_t}{size_t}@Base 4:4.6.1
+#MISSING: 4:4.7.0~beta1# (subst)_ZN3WTF10fastMallocE{size_t}@Base 4:4.6.1
+#MISSING: 4:4.7.0~beta1# (subst)_ZN3WTF11fastReallocEPv{size_t}@Base 4:4.6.1
+#MISSING: 4:4.7.0~beta1# _ZN3WTF8fastFreeEPv@Base 4:4.6.1
+ (optional=templinst)_ZN8QVariant9fromValueI11QWebElementEES_RKT_@Base 4:4.7.0~beta1
  (optional=templinst)_ZN8QVariant9fromValueI5QListIP7QObjectEEES_RKT_@Base 4:4.5.3
  (optional=templinst)_ZN8QVariant9fromValueI5QListIiEEES_RKT_@Base 4:4.5.3
  _ZN8QWebPage10chooseFileEP9QWebFrameRK7QString@Base 4:4.5.3
@@ -470,11 +496,13 @@ libQtWebKit.so.4 libqt4-webkit #MINVER#
  _ZN9QWebFrame10urlChangedERK4QUrl@Base 4:4.5.3
  _ZN9QWebFrame11iconChangedEv@Base 4:4.5.3
  _ZN9QWebFrame11loadStartedEv@Base 4:4.6.1
+ _ZN9QWebFrame11pageChangedEv@Base 4:4.7.0~beta1
  _ZN9QWebFrame11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN9QWebFrame11qt_metacastEPKc@Base 4:4.5.3
  _ZN9QWebFrame12loadFinishedEb@Base 4:4.6.1
  _ZN9QWebFrame12titleChangedERK7QString@Base 4:4.5.3
  (subst)_ZN9QWebFrame13setZoomFactorE{qreal}@Base 4:4.5.3
+ _ZN9QWebFrame14scrollToAnchorERK7QString@Base 4:4.7.0~beta1
  _ZN9QWebFrame15provisionalLoadEv@Base 4:4.5.3
  _ZN9QWebFrame16staticMetaObjectE@Base 4:4.5.3
  _ZN9QWebFrame17setScrollBarValueEN2Qt11OrientationEi@Base 4:4.5.3
@@ -554,6 +582,7 @@ libQtWebKit.so.4 libqt4-webkit #MINVER#
  _ZNK12QWebDatabase6originEv@Base 4:4.5.3
  _ZNK12QWebDatabase8fileNameEv@Base 4:4.5.3
  _ZNK12QWebSettings10fontFamilyENS_10FontFamilyE@Base 4:4.5.3
+ _ZNK12QWebSettings12inspectorUrlEv@Base 4:4.7.0~beta1
  _ZNK12QWebSettings13testAttributeENS_12WebAttributeE@Base 4:4.5.3
  _ZNK12QWebSettings16localStoragePathEv@Base 4:4.6.1
  _ZNK12QWebSettings17userStyleSheetUrlEv@Base 4:4.5.3
@@ -583,6 +612,8 @@ libQtWebKit.so.4 libqt4-webkit #MINVER#
  _ZNK16QGraphicsWebView10pageActionEN8QWebPage9WebActionE@Base 4:4.6.1
  _ZNK16QGraphicsWebView10zoomFactorEv@Base 4:4.6.1
  _ZNK16QGraphicsWebView16inputMethodQueryEN2Qt16InputMethodQueryE@Base 4:4.6.1
+ _ZNK16QGraphicsWebView17resizesToContentsEv@Base 4:4.7.0~beta1
+ _ZNK16QGraphicsWebView25isTiledBackingStoreFrozenEv@Base 4:4.7.0~beta1
  _ZNK16QGraphicsWebView3urlEv@Base 4:4.6.1
  _ZNK16QGraphicsWebView4iconEv@Base 4:4.6.1
  _ZNK16QGraphicsWebView4pageEv@Base 4:4.6.1
