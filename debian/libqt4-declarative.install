@@ -1,3 +1,11 @@
 usr/bin/qml
 usr/lib/libQtDeclarative.so.*
+usr/lib/qt4/imports/Qt/labs/particles/libparticles.so
+usr/lib/qt4/imports/Qt/labs/particles/qmldir
+usr/lib/qt4/imports/Qt/multimedia/libmultimedia.so
+usr/lib/qt4/imports/Qt/multimedia/qmldir
+usr/lib/qt4/imports/Qt/widgets/libwidgets.so
+usr/lib/qt4/imports/Qt/widgets/qmldir
+usr/lib/qt4/imports/org/webkit/libwebkitqmlplugin.so
+usr/lib/qt4/imports/org/webkit/qmldir
 usr/lib/qt4/plugins/designer/libqdeclarativeview.so
