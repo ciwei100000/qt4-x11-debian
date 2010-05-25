@@ -1,1 +1,2 @@
 usr/lib/libQtMediaServices.so.*
+usr/lib/qt4/plugins/mediaservices/libqgstengine.so
