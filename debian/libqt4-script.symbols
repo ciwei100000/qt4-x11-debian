@@ -279,7 +279,6 @@ libQtScript.so.4 libqt4-script #MINVER#
  _ZN24QScriptSyntaxCheckResultaSERKS_@Base 4:4.5.3
  (optional=private|arch=!amd64 !ia64 !kfreebsd-amd64)_ZN25QScriptEngineAgentPrivate11atStatementERKN5QTJSC17DebuggerCallFrameEiii@Base 4:4.6.1
  _ZN25QScriptEngineAgentPrivate11atStatementERKN5QTJSC17DebuggerCallFrameEli@Base 4:4.7.0~beta1
-#MISSING: 4:4.7.0~beta1# (optional=private|arch=amd64 ia64 kfreebsd-amd64)_ZN25QScriptEngineAgentPrivate11atStatementERKN5QTJSC17DebuggerCallFrameElii@Base 4:4.6.1
  (optional=private|arch=!amd64 !ia64 !kfreebsd-amd64)_ZN25QScriptEngineAgentPrivate11returnEventERKN5QTJSC17DebuggerCallFrameEii@Base 4:4.6.1
  (optional=private|arch=amd64 ia64 kfreebsd-amd64)_ZN25QScriptEngineAgentPrivate11returnEventERKN5QTJSC17DebuggerCallFrameEli@Base 4:4.6.1
  (optional=private|arch=!amd64 !ia64 !kfreebsd-amd64)_ZN25QScriptEngineAgentPrivate12evaluateStopERKN5QTJSC7JSValueEi@Base 4:4.6.1
@@ -292,7 +291,6 @@ libQtScript.so.4 libqt4-script #MINVER#
  (optional=private|arch=amd64 ia64 kfreebsd-amd64)_ZN25QScriptEngineAgentPrivate14exceptionThrowERKN5QTJSC17DebuggerCallFrameElb@Base 4:4.6.1
  (optional=private|arch=!amd64 !ia64 !kfreebsd-amd64)_ZN25QScriptEngineAgentPrivate18didReachBreakpointERKN5QTJSC17DebuggerCallFrameEiii@Base 4:4.6.1
  _ZN25QScriptEngineAgentPrivate18didReachBreakpointERKN5QTJSC17DebuggerCallFrameEli@Base 4:4.7.0~beta1
-#MISSING: 4:4.7.0~beta1# (optional=private|arch=amd64 ia64 kfreebsd-amd64)_ZN25QScriptEngineAgentPrivate18didReachBreakpointERKN5QTJSC17DebuggerCallFrameElii@Base 4:4.6.1
  (optional=private)_ZN25QScriptEngineAgentPrivate6attachEv@Base 4:4.6.1
  (optional=private)_ZN25QScriptEngineAgentPrivate6detachEv@Base 4:4.6.1
  _ZN28QScriptClassPropertyIteratorC1ERK12QScriptValue@Base 4:4.5.3

@@ -1965,7 +1965,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN12QLineControl12processEventEP6QEvent@Base 4:4.6.1
  _ZN12QLineControl12setSelectionEii@Base 4:4.6.1
  _ZN12QLineControl12updateNeededERK5QRect@Base 4:4.6.1
-#MISSING: 4:4.7.0~beta1# _ZN12QLineControl13cursorForwardEbi@Base 4:4.6.1
  _ZN12QLineControl14internalDeleteEb@Base 4:4.6.1
  _ZN12QLineControl14internalInsertERK7QString@Base 4:4.6.1
  _ZN12QLineControl14parseInputMaskERK7QString@Base 4:4.6.1
@@ -1976,11 +1975,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN12QLineControl16selectionChangedEv@Base 4:4.6.1
  _ZN12QLineControl16staticMetaObjectE@Base 4:4.6.1
  _ZN12QLineControl17_q_deleteSelectedEv@Base 4:4.6.1
-#MISSING: 4:4.7.0~beta1# _ZN12QLineControl17cursorWordForwardEb@Base 4:4.6.1
  _ZN12QLineControl17processMouseEventEP11QMouseEvent@Base 4:4.6.1
  _ZN12QLineControl17resetInputContextEv@Base 4:4.6.1
  _ZN12QLineControl17updateDisplayTextEb@Base 4:4.6.2
-#MISSING: 4:4.7.0~beta1# _ZN12QLineControl18cursorWordBackwardEb@Base 4:4.6.1
  _ZN12QLineControl18displayTextChangedERK7QString@Base 4:4.6.1
  _ZN12QLineControl18removeSelectedTextEv@Base 4:4.6.1
  _ZN12QLineControl19_q_clipboardChangedEv@Base 4:4.6.1
@@ -1991,13 +1988,11 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN12QLineControl25emitCursorPositionChangedEv@Base 4:4.6.1
  _ZN12QLineControl25updatePasswordEchoEditingEb@Base 4:4.6.1
  _ZN12QLineControl3delEv@Base 4:4.6.1
-#MISSING: 4:4.7.0~beta1# _ZN12QLineControl3endEb@Base 4:4.6.1
  _ZN12QLineControl4drawEP8QPainterRK6QPointRK5QRecti@Base 4:4.6.1
  _ZN12QLineControl4initERK7QString@Base 4:4.6.1
  _ZN12QLineControl5clearEv@Base 4:4.6.1
  _ZN12QLineControl5fixupEv@Base 4:4.6.1
  _ZN12QLineControl5pasteEN10QClipboard4ModeE@Base 4:4.7.0~beta1
-#MISSING: 4:4.7.0~beta1# _ZN12QLineControl5pasteEv@Base 4:4.6.1
  _ZN12QLineControl6insertERK7QString@Base 4:4.6.1
  _ZN12QLineControl8acceptedEv@Base 4:4.6.1
  _ZN12QLineControl8completeEi@Base 4:4.6.1
@@ -5125,7 +5120,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN20QGraphicsItemPrivate12setPosHelperERK7QPointF@Base 4:4.6.1
  _ZN20QGraphicsItemPrivate13clearSubFocusEP13QGraphicsItem@Base 4:4.6.1
  _ZN20QGraphicsItemPrivate14children_countEP24QDeclarativeListPropertyI15QGraphicsObjectE@Base 4:4.7.0~beta1
-#MISSING: 4:4.7.0~beta1# _ZN20QGraphicsItemPrivate14setFocusHelperEN2Qt11FocusReasonEb@Base 4:4.6.1
  _ZN20QGraphicsItemPrivate14setFocusHelperEN2Qt11FocusReasonEbb@Base 4:4.7.0~beta1
  _ZN20QGraphicsItemPrivate15children_appendEP24QDeclarativeListPropertyI15QGraphicsObjectEPS1_@Base 4:4.7.0~beta1
  _ZN20QGraphicsItemPrivate15resetFocusProxyEv@Base 4:4.6.1
