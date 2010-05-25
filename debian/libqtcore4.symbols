@@ -1648,9 +1648,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN16QCoreApplicationD2Ev@Base 4:4.5.3
  _ZN16QDeclarativeData13parentChangedE@Base 4:4.7.0~beta1
  _ZN16QDeclarativeData9destroyedE@Base 4:4.7.0~beta1
-#MISSING: 4:4.7.0~beta1# _ZN16QDeclarativeDataD0Ev@Base 4:4.6.1
-#MISSING: 4:4.7.0~beta1# _ZN16QDeclarativeDataD1Ev@Base 4:4.6.1
-#MISSING: 4:4.7.0~beta1# _ZN16QDeclarativeDataD2Ev@Base 4:4.6.1
  _ZN16QEventTransition11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN16QEventTransition11qt_metacastEPKc@Base 4:4.6.1
  _ZN16QEventTransition12onTransitionEP6QEvent@Base 4:4.6.1
@@ -4372,7 +4369,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTI15QPauseAnimation@Base 4:4.6.1
  _ZTI15QSocketNotifier@Base 4:4.5.3
  _ZTI16QCoreApplication@Base 4:4.5.3
-#MISSING: 4:4.7.0~beta1# _ZTI16QDeclarativeData@Base 4:4.6.1
  _ZTI16QEventTransition@Base 4:4.6.1
  _ZTI16QIODevicePrivate@Base 4:4.5.3
  _ZTI16QTextCodecPlugin@Base 4:4.5.3
@@ -4428,7 +4424,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTIN12QtConcurrent9ExceptionE@Base 4:4.5.3
  _ZTIN13QStateMachine11SignalEventE@Base 4:4.6.1
  _ZTIN13QStateMachine12WrappedEventE@Base 4:4.6.1
-#MISSING: 4:4.7.0~beta1# _ZTIZN7QObjectD1EvE17AutotestException@Base 4:4.6.1
  _ZTS10QEventLoop@Base 4:4.5.3
  _ZTS10QTextCodec@Base 4:4.5.3
  _ZTS11QChildEvent@Base 4:4.5.3
@@ -4459,7 +4454,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTS15QPauseAnimation@Base 4:4.6.1
  _ZTS15QSocketNotifier@Base 4:4.5.3
  _ZTS16QCoreApplication@Base 4:4.5.3
-#MISSING: 4:4.7.0~beta1# _ZTS16QDeclarativeData@Base 4:4.6.1
  _ZTS16QEventTransition@Base 4:4.6.1
  _ZTS16QIODevicePrivate@Base 4:4.5.3
  _ZTS16QTextCodecPlugin@Base 4:4.5.3
@@ -4515,7 +4509,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTSN12QtConcurrent9ExceptionE@Base 4:4.5.3
  _ZTSN13QStateMachine11SignalEventE@Base 4:4.6.1
  _ZTSN13QStateMachine12WrappedEventE@Base 4:4.6.1
-#MISSING: 4:4.7.0~beta1# _ZTSZN7QObjectD1EvE17AutotestException@Base 4:4.6.1
  _ZTV10QEventLoop@Base 4:4.5.3
  _ZTV10QTextCodec@Base 4:4.5.3
  _ZTV11QChildEvent@Base 4:4.5.3
@@ -4546,7 +4539,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTV15QPauseAnimation@Base 4:4.6.1
  _ZTV15QSocketNotifier@Base 4:4.5.3
  _ZTV16QCoreApplication@Base 4:4.5.3
-#MISSING: 4:4.7.0~beta1# _ZTV16QDeclarativeData@Base 4:4.6.1
  _ZTV16QEventTransition@Base 4:4.6.1
  _ZTV16QIODevicePrivate@Base 4:4.5.3
  _ZTV16QTextCodecPlugin@Base 4:4.5.3
@@ -4602,7 +4594,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTVN12QtConcurrent9ExceptionE@Base 4:4.5.3
  _ZTVN13QStateMachine11SignalEventE@Base 4:4.6.1
  _ZTVN13QStateMachine12WrappedEventE@Base 4:4.6.1
-#MISSING: 4:4.7.0~beta1# _ZTVZN7QObjectD1EvE17AutotestException@Base 4:4.6.1
  _ZanRK9QBitArrayS1_@Base 4:4.5.3
  _ZeoRK9QBitArrayS1_@Base 4:4.5.3
  _ZeqRK10QStringRefS1_@Base 4:4.5.3

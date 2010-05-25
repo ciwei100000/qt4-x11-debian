@@ -250,7 +250,6 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN16QGLShaderProgramD2Ev@Base 4:4.6.1
  _ZN17QGL2PaintEngineEx10drawPixmapERK6QRectFRK7QPixmapS2_@Base 4:4.6.1
  _ZN17QGL2PaintEngineEx10penChangedEv@Base 4:4.6.1
-#MISSING: 4:4.7.0~beta1# _ZN17QGL2PaintEngineEx11drawPixmapsEPKN12QDrawPixmaps4DataEiRK7QPixmap6QFlagsINS0_11DrawingHintEE@Base 4:4.6.1
  _ZN17QGL2PaintEngineEx11drawTextureERK6QRectFjRK5QSizeS2_@Base 4:4.6.1
  _ZN17QGL2PaintEngineEx12brushChangedEv@Base 4:4.6.1
  _ZN17QGL2PaintEngineEx12drawTextItemERK7QPointFRK9QTextItem@Base 4:4.6.1

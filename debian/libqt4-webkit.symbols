@@ -1,7 +1,6 @@
 # SymbolsHelper-Confirmed: 4:4.7.0~beta1 amd64
 libQtWebKit.so.4 libqt4-webkit #MINVER#
 * Build-Depends-Package: libqt4-dev
-#MISSING: 4:4.7.0~beta1# JSCheckScriptSyntax@Base 4:4.5.3
  JSClassCreate@Base 4:4.5.3
  JSClassRelease@Base 4:4.5.3
  JSClassRetain@Base 4:4.5.3
@@ -11,8 +10,6 @@ libQtWebKit.so.4 libqt4-webkit #MINVER#
  JSContextGroupCreate@Base 4:4.5.3
  JSContextGroupRelease@Base 4:4.5.3
  JSContextGroupRetain@Base 4:4.5.3
-#MISSING: 4:4.7.0~beta1# JSEvaluateScript@Base 4:4.5.3
-#MISSING: 4:4.7.0~beta1# JSGarbageCollect@Base 4:4.5.3
  JSGlobalContextCreate@Base 4:4.5.3
  JSGlobalContextCreateInGroup@Base 4:4.5.3
  JSGlobalContextRelease@Base 4:4.5.3
@@ -48,7 +45,6 @@ libQtWebKit.so.4 libqt4-webkit #MINVER#
  JSPropertyNameArrayGetNameAtIndex@Base 4:4.5.3
  JSPropertyNameArrayRelease@Base 4:4.5.3
  JSPropertyNameArrayRetain@Base 4:4.5.3
-#MISSING: 4:4.7.0~beta1# JSReportExtraMemoryCost@Base 4:4.5.3
  JSStringCreateWithCharacters@Base 4:4.5.3
  JSStringCreateWithUTF8CString@Base 4:4.5.3
  JSStringGetCharactersPtr@Base 4:4.5.3
@@ -119,7 +115,6 @@ libQtWebKit.so.4 libqt4-webkit #MINVER#
  _Z33qt_drt_webinspector_executeScriptP8QWebPagelRK7QString@Base 4:4.7.0~beta1
  _Z34qt_drt_resetOriginAccessWhiteListsv@Base 4:4.6.1
  _Z34qt_drt_setTimelineProfilingEnabledP8QWebPageb@Base 4:4.7.0~beta1
-#MISSING: 4:4.7.0~beta1# _Z35qtwebkit_webframe_scrollRecursivelyP9QWebFrameii@Base 4:4.6.1
  _Z35qtwebkit_webframe_scrollRecursivelyP9QWebFrameiiRK6QPoint@Base 4:4.7.0~beta1
  _Z36qt_drt_evaluateScriptInIsolatedWorldP9QWebFrameiRK7QString@Base 4:4.7.0~beta1
  _Z36qt_drt_setJavaScriptProfilingEnabledP9QWebFrameb@Base 4:4.5.3
@@ -376,10 +371,6 @@ libQtWebKit.so.4 libqt4-webkit #MINVER#
  _ZN21QWebElementCollectionD1Ev@Base 4:4.6.1
  _ZN21QWebElementCollectionD2Ev@Base 4:4.6.1
  _ZN21QWebElementCollectionaSERKS_@Base 4:4.6.1
-#MISSING: 4:4.7.0~beta1# (subst)_ZN3WTF10fastCallocE{size_t}{size_t}@Base 4:4.6.1
-#MISSING: 4:4.7.0~beta1# (subst)_ZN3WTF10fastMallocE{size_t}@Base 4:4.6.1
-#MISSING: 4:4.7.0~beta1# (subst)_ZN3WTF11fastReallocEPv{size_t}@Base 4:4.6.1
-#MISSING: 4:4.7.0~beta1# _ZN3WTF8fastFreeEPv@Base 4:4.6.1
  (optional=templinst)_ZN8QVariant9fromValueI11QWebElementEES_RKT_@Base 4:4.7.0~beta1
  (optional=templinst)_ZN8QVariant9fromValueI5QListIP7QObjectEEES_RKT_@Base 4:4.5.3
  (optional=templinst)_ZN8QVariant9fromValueI5QListIiEEES_RKT_@Base 4:4.5.3

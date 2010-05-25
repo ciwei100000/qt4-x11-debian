@@ -5,7 +5,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _Z10qt_x11InfoPK12QPaintDevice@Base 4:4.5.3
  _Z11qFadeEffectP7QWidgeti@Base 4:4.5.3
  _Z11qt_image_idRK6QImage@Base 4:4.5.3
-#MISSING: 4:4.7.0~beta1# _Z12qDrawPixmapsP8QPainterPKN12QDrawPixmaps4DataEiRK7QPixmap6QFlagsINS1_11DrawingHintEE@Base 4:4.6.1
  _Z12qt_accHotKeyRK7QString@Base 4:4.5.3
  (subst)_Z12qt_blurImageP8QPainterR6QImage{qreal}bbi@Base 4:4.6.2
  (subst)_Z12qt_blurImageR6QImage{qreal}bi@Base 4:4.6.2
@@ -2359,7 +2358,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN12QTextControl5clearEv@Base 4:4.5.3
  _ZN12QTextControl5eventEP6QEvent@Base 4:4.5.3
  _ZN12QTextControl5pasteEN10QClipboard4ModeE@Base 4:4.7.0~beta1
-#MISSING: 4:4.7.0~beta1# _ZN12QTextControl5pasteEv@Base 4:4.5.3
  _ZN12QTextControl6appendERK7QString@Base 4:4.5.3
  _ZN12QTextControl7setHtmlERK7QString@Base 4:4.5.3
  _ZN12QTextControl8setFocusEbN2Qt11FocusReasonE@Base 4:4.5.3
@@ -3135,7 +3133,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN14QPaintEngineEx10drawPointsEPK7QPointFi@Base 4:4.5.3
  _ZN14QPaintEngineEx11drawEllipseERK5QRect@Base 4:4.5.3
  _ZN14QPaintEngineEx11drawEllipseERK6QRectF@Base 4:4.5.3
-#MISSING: 4:4.7.0~beta1# _ZN14QPaintEngineEx11drawPixmapsEPKN12QDrawPixmaps4DataEiRK7QPixmap6QFlagsINS0_11DrawingHintEE@Base 4:4.6.1
  _ZN14QPaintEngineEx11drawPolygonEPK6QPointiN12QPaintEngine15PolygonDrawModeE@Base 4:4.5.3
  _ZN14QPaintEngineEx11drawPolygonEPK7QPointFiN12QPaintEngine15PolygonDrawModeE@Base 4:4.5.3
  _ZN14QPaintEngineEx11updateStateERK17QPaintEngineState@Base 4:4.5.3
@@ -4087,7 +4084,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN16QPageSetupDialogC2EP8QPrinterP7QWidget@Base 4:4.5.3
  _ZN16QPainterReplayer14setupTransformEP8QPainter@Base 4:4.6.1
  _ZN16QPainterReplayer15processCommandsERK12QPaintBufferP8QPainterii@Base 4:4.7.0~beta1
-#MISSING: 4:4.7.0~beta1# _ZN16QPainterReplayer4drawERK12QPaintBufferP8QPainteri@Base 4:4.6.1
  _ZN16QPainterReplayer7processERK19QPaintBufferCommand@Base 4:4.6.1
  _ZN16QRegExpValidator11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN16QRegExpValidator11qt_metacastEPKc@Base 4:4.5.3
@@ -4646,7 +4642,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN18QTextBlockUserDataD1Ev@Base 4:4.5.3
  _ZN18QTextBlockUserDataD2Ev@Base 4:4.5.3
  _ZN18QTextureGlyphCache8populateEP11QFontEngineiPKjPK11QFixedPoint@Base 4:4.7.0~beta1
-#MISSING: 4:4.7.0~beta1# _ZN18QTextureGlyphCache8populateERK12QTextItemIntRK15QVarLengthArrayIjLi256EERKS3_I11QFixedPointLi256EE@Base 4:4.5.3
  _ZN18QX11EmbedContainer10paintEventEP11QPaintEvent@Base 4:4.5.3
  _ZN18QX11EmbedContainer11embedClientEm@Base 4:4.5.3
  _ZN18QX11EmbedContainer11eventFilterEP7QObjectP6QEvent@Base 4:4.5.3
