@@ -1,4 +1,4 @@
-qt4-x11 (4:4.7.0~beta1-1) UNRELEASED; urgency=low
+qt4-x11 (4:4.7.0~beta1-1) experimental; urgency=low
 
   * New upstream release.
     - QtAssistant client library removal (libqt4-assistant).
@@ -22,7 +22,7 @@ qt4-x11 (4:4.7.0~beta1-1) UNRELEASED; urgency=low
     - add libgstreamer0.10-dev, libgstreamer-plugins-base0.10-dev,
       libpulse-dev and libxv-dev build dependencies.
     - add libqt4-declarative, libqt4-mediaservices,
-      libqt4-declarative-$PLUGINS packages.
+      libqt4-declarative-$PLUGINS and qt4-qmlviewer packages.
     - remove libqt4-assistant package.
   * Update debian/rules:
     - add -importdir configure option.
