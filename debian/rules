@@ -98,7 +98,7 @@ endif
 	            -plugin-sql-tds \
 	            -system-sqlite \
 	            -xmlpatterns \
-	            -multimedia \
+	            -no-multimedia \
 	            -audio-backend \
 	            -phonon \
 	            -no-phonon-backend \
