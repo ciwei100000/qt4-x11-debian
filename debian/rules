@@ -99,6 +99,7 @@ endif
 	            -system-sqlite \
 	            -xmlpatterns \
 	            -no-multimedia \
+	            -no-mediaservices \
 	            -audio-backend \
 	            -phonon \
 	            -no-phonon-backend \
