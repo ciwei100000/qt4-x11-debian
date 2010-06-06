@@ -1,5 +1,8 @@
 qt4-x11 (4:4.6.2-6) UNRELEASED; urgency=low
 
+  * Expand 96_webkit_no_gc_sections.diff to cover mips(el) as well. Hopefully,
+    this will make linker less memory demanding and solve out-of-memory
+    condition on buildds.
 
  -- Modestas Vainius <modax@debian.org>  Sun, 06 Jun 2010 03:16:11 +0300
 

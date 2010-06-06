@@ -1,11 +1,11 @@
 Description: Don't link QtWebkit with --gc-sections on powerpc and s390
- This works around a binutils bug that results in a segfault on powerpc
- and an internal link error on s390.
+ This works around a binutils bug that results in a segfault on powerpc,
+ an internal link error on s390, and OOM condition on mipsel.
 Author: Steve Langasek <steve.langasek@ubuntu.com>
 Author: Modestas Vainius <modax@debian.org>
 Origin: vendor
 Forwarded: no
-Last-Update: 2010-04-11 (s390 added)
+Last-Update: 2010-05-31 (mipsel added)
 
 --- a/src/3rdparty/webkit/WebCore/WebCore.pro
 +++ b/src/3rdparty/webkit/WebCore/WebCore.pro
@@ -14,7 +14,7 @@ Last-Update: 2010-04-11 (s390 added)
  
  unix:!mac:*-g++*:QMAKE_CXXFLAGS += -ffunction-sections -fdata-sections 
 -unix:!mac:*-g++*:QMAKE_LFLAGS += -Wl,--gc-sections
-+unix:!mac:*-g++*:!equals(QT_ARCH, powerpc):!equals(QT_ARCH, s390):QMAKE_LFLAGS += -Wl,--gc-sections
++unix:!mac:*-g++*:!equals(QT_ARCH, powerpc):!equals(QT_ARCH, s390):!equals(QT_ARCH, mips):QMAKE_LFLAGS += -Wl,--gc-sections
  
  CONFIG(release):!CONFIG(QTDIR_build) {
      contains(QT_CONFIG, reduce_exports):CONFIG += hide_symbols
