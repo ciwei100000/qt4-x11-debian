@@ -1,0 +1,24 @@
+Description: decrease failure rate of QProcess (#561203) on hppa ~100+ times
+ The patch adds a usleep() of 1000 before fork() in QProcess on hppa. This hack
+ seems to bring down likelihood of failure caused by #561203 from ~ 1/6 to
+~1/1000 when run in a row. Hopefully, this will make failures rare enough
+ not to cause FTBFSes.
+ Degradation in performance should not be very significant and is acceptable.
+Author: Modestas Vainius <modax@debian.org>
+Forwarded: not-needed
+Bug-Debian: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=561203
+Origin: vendor
+Last-Update: 2010-06-06
+
+--- a/src/corelib/io/qprocess_unix.cpp
++++ b/src/corelib/io/qprocess_unix.cpp
+@@ -505,6 +505,9 @@ static char **_q_dupEnvironment(const QH
+ // under QNX RTOS we have to use vfork() when multithreading
+ inline pid_t qt_fork()
+ {
++#if defined(__linux__) && defined(__hppa__)
++    usleep(1000);
++#endif
+ #if defined(Q_OS_QNX)
+     return vfork();
+ #else

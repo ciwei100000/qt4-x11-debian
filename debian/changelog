@@ -3,6 +3,11 @@ qt4-x11 (4:4.6.2-6) UNRELEASED; urgency=low
   * Expand 96_webkit_no_gc_sections.diff to cover mips(el) as well. Hopefully,
     this will make linker less memory demanding and solve out-of-memory
     condition on buildds.
+  * Add usleep(1000) before fork() in QProcess on hppa in order to decrease
+    failure rate caused by #561203. Hopefully, probablity of the failure
+    becomes so low that packages do not FBTFS anymore. This hack is just an
+    ugly but very needed workaround for a common manifestation of the bug in
+    QProcess (patch 99_hppa_bug561203_decrease_failure_rate.diff).
 
  -- Modestas Vainius <modax@debian.org>  Sun, 06 Jun 2010 03:16:11 +0300
 
