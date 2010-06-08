@@ -1,10 +1,5 @@
 # upstream patches
-0001_qpixmap_load_no_modify_referenced_copies.diff
-0002_qmake_qfileinfo_absolutepath.diff
-0003_s390_fix_atomic_ops_related_crashes.diff
 0004_problem_displaying_half_width_character.diff
-0005_always_redraw_the_complete_control.diff
-0006_expand_indicator_would_not_be_displayed.diff
 
 # qt-copy patches
 0180-window-role.diff
@@ -23,7 +18,7 @@
 08_configure_quilt_compat.diff
 09_qmake_lflags_as-needed.diff
 10_config_tests_fixes.diff
-11_build_translations.diff
+#11_build_translations.diff
 12_add_nostrip_for_debug_packages.diff
 15_fix_qmake_makefile_generation.diff
 16_hide_std_symbols_on_qtwebkit.diff
@@ -46,5 +41,4 @@
 92_armel_gcc43_valist_compat.diff
 95_sparc_platform_definition.diff
 96_webkit_no_gc_sections.diff
-97_alpha_ftbfs_qatomic_alpha_h_types.diff
-98_alpha_ftbfs_wtf_platform_support.diff
+99_hppa_bug561203_decrease_failure_rate.diff
