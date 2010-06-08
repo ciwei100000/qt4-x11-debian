@@ -20,7 +20,6 @@ qt4-x11 (4:4.6.3-1) unstable; urgency=low
     - 0005_always_redraw_the_complete_control.diff - stolen upstream 
     - 0006_expand_indicator_would_not_be_displayed.diff - stolen upstream 
   * Remove Debian patches:
-    - 11_build_translations.diff - disabled
     - 97_alpha_ftbfs_qatomic_alpha_h_types.diff - merged upstream
     - 98_alpha_ftbfs_wtf_platform_support.diff - merged upstream
   * Refresh Debian patches:
