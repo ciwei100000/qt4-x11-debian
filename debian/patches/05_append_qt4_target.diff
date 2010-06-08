@@ -57,7 +57,7 @@ author: Fathi Boudra <fabo@debian.org>
      if [ "$VERBOSE" = "yes" ]; then
 --- a/configure
 +++ b/configure
-@@ -4304,7 +4304,7 @@ END {
+@@ -4294,7 +4294,7 @@ END {
  }
  
  # build qmake
@@ -66,7 +66,7 @@ author: Fathi Boudra <fabo@debian.org>
      echo "Creating qmake. Please wait..."
  
      OLD_QCONFIG_H=
-@@ -7216,8 +7216,8 @@ QMAKE_ABSOLUTE_SOURCE_ROOT = \$\$QT_SOUR
+@@ -7206,8 +7206,8 @@ QMAKE_ABSOLUTE_SOURCE_ROOT = \$\$QT_SOUR
  QMAKE_MOC_SRC    = \$\$QT_BUILD_TREE/src/moc
  
  #local paths that cannot be queried from the QT_INSTALL_* properties while building QTDIR
@@ -77,7 +77,7 @@ author: Fathi Boudra <fabo@debian.org>
  QMAKE_UIC3       = \$\$QT_BUILD_TREE/bin/uic3
  QMAKE_RCC        = \$\$QT_BUILD_TREE/bin/rcc
  QMAKE_QDBUSXML2CPP = \$\$QT_BUILD_TREE/bin/qdbusxml2cpp
-@@ -7602,11 +7602,11 @@ EXEC=""
+@@ -7588,11 +7588,11 @@ EXEC=""
  #-------------------------------------------------------------------------------
  
  echo "Finding project files. Please wait..."
@@ -91,15 +91,15 @@ author: Fathi Boudra <fabo@debian.org>
  fi
  
  # .projects      -> projects to process
-@@ -7785,7 +7785,7 @@ for file in .projects .projects.3; do
-             echo "  for $a\c"
-         fi
+@@ -7767,7 +7767,7 @@ for file in .projects .projects.3; do
+         QMAKE_SPEC_ARGS="-spec $SPEC"
+         echo $ECHO_N "  for $a$ECHO_C"
  
 -        QMAKE="$outpath/bin/qmake"
 +        QMAKE="$outpath/bin/qmake-qt4"
  	QMAKE_ARGS="$QMAKE_SWITCHES $QMAKE_SPEC_ARGS"
          if [ "$file" = ".projects.3" ]; then
-             if echo '\c' | grep '\c' >/dev/null; then
+             echo " (fast)"
 --- a/projects.pro
 +++ b/projects.pro
 @@ -142,7 +142,7 @@ qmake.path=$$[QT_INSTALL_BINS]
@@ -113,7 +113,7 @@ author: Fathi Boudra <fabo@debian.org>
  
 --- a/qmake/Makefile.unix
 +++ b/qmake/Makefile.unix
-@@ -70,17 +70,17 @@ CPPFLAGS = -I. -Igenerators -Igenerators
+@@ -75,17 +75,17 @@ CPPFLAGS = -I. -Igenerators -Igenerators
  
  CXXFLAGS = @QMAKE_CXXFLAGS@ $(CPPFLAGS)
  
@@ -221,22 +221,22 @@ author: Fathi Boudra <fabo@debian.org>
      return ($$result)
  }
  
--LUPDATE = $$QT_BUILD_TREE/bin/lupdate
-+LUPDATE = $$QT_BUILD_TREE/bin/lupdate-qt4
- win32 {
-     LUPDATE ~= s,/,$$QMAKE_DIR_SEP,
-     LUPDATE = $${LUPDATE}.exe
+-qtPrepareTool(LUPDATE, lupdate)
++qtPrepareTool(LUPDATE, lupdate-qt4)
+ LUPDATE += -locations relative -no-ui-lines
+ 
+ ###### Qt Libraries
 --- a/translations/translations.pro
 +++ b/translations/translations.pro
 @@ -1,6 +1,6 @@
  TRANSLATIONS = $$files(*.ts)
  
--LRELEASE = $$QT_BUILD_TREE/bin/lrelease
-+LRELEASE = $$QT_BUILD_TREE/bin/lrelease-qt4
- win32 {
-     LRELEASE ~= s,/,$$QMAKE_DIR_SEP,
-     LRELEASE = $${LRELEASE}.exe
-@@ -18,7 +18,7 @@ updateqm.input = TRANSLATIONS
+-qtPrepareTool(LRELEASE, lrelease)
++qtPrepareTool(LRELEASE, lrelease-qt4)
+ 
+ contains(TEMPLATE_PREFIX, vc):vcproj = 1
+ 
+@@ -14,7 +14,7 @@ updateqm.input = TRANSLATIONS
  updateqm.output = ${QMAKE_FILE_BASE}.qm
  isEmpty(vcproj):updateqm.variable_out = PRE_TARGETDEPS
  updateqm.commands = $$LRELEASE ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_OUT}
@@ -245,3 +245,23 @@ author: Fathi Boudra <fabo@debian.org>
  updateqm.name = LRELEASE ${QMAKE_FILE_IN}
  updateqm.CONFIG += no_link
  QMAKE_EXTRA_COMPILERS += updateqm
+--- a/mkspecs/features/moc.prf
++++ b/mkspecs/features/moc.prf
+@@ -1,6 +1,6 @@
+ 
+ #global defaults
+-qtPrepareTool(QMAKE_MOC, moc)
++qtPrepareTool(QMAKE_MOC, moc-qt4)
+ isEmpty(MOC_DIR):MOC_DIR = .
+ isEmpty(QMAKE_H_MOD_MOC):QMAKE_H_MOD_MOC = moc_
+ isEmpty(QMAKE_EXT_CPP_MOC):QMAKE_EXT_CPP_MOC = .moc
+--- a/mkspecs/features/uic.prf
++++ b/mkspecs/features/uic.prf
+@@ -1,6 +1,6 @@
+ defined(qtPrepareTool)|load(qt_functions) ### Qt 5: see default_pre.prf
+ qtPrepareTool(QMAKE_UIC3, uic3)
+-qtPrepareTool(QMAKE_UIC, uic)
++qtPrepareTool(QMAKE_UIC, uic-qt4)
+ 
+ isEmpty(UI_DIR):UI_DIR = .
+ isEmpty(UI_SOURCES_DIR):UI_SOURCES_DIR = $$UI_DIR
