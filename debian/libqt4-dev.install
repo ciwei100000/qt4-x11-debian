@@ -2399,6 +2399,7 @@ usr/include/qt4/QtMultimedia/QAbstractAudioInput
 usr/include/qt4/QtMultimedia/QAbstractAudioOutput
 usr/include/qt4/QtMultimedia/QAbstractVideoBuffer
 usr/include/qt4/QtMultimedia/QAbstractVideoSurface
+usr/include/qt4/QtMultimedia/QAudio
 usr/include/qt4/QtMultimedia/QAudioDeviceInfo
 usr/include/qt4/QtMultimedia/QAudioEngineFactoryInterface
 usr/include/qt4/QtMultimedia/QAudioEnginePlugin
