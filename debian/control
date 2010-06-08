@@ -216,15 +216,15 @@ Description: Qt 4 SVG module
  Scalable Vector Graphics (SVG) is a language for describing two-dimensional
  graphics and graphical applications in XML.
 
-Package: libqt4-webkit
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Qt 4 WebKit module
- Qt is a cross-platform C++ application framework. Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- QtWebKit provides a Web browser engine that makes it easy to embed content
- from the World Wide Web into your Qt application.
+#Package: libqt4-webkit
+#Architecture: any
+#Depends: ${shlibs:Depends}, ${misc:Depends}
+#Description: Qt 4 WebKit module
+# Qt is a cross-platform C++ application framework. Qt's primary feature
+# is its rich set of widgets that provide standard GUI functionality.
+# .
+# QtWebKit provides a Web browser engine that makes it easy to embed content
+# from the World Wide Web into your Qt application.
 
 Package: libqt4-xml
 Architecture: any
@@ -353,14 +353,14 @@ Description: Qt 4 widgets QML plugin
  .
  This package contains the widgets QML plugin for QtDeclarative.
 
-Package: libqt4-declarative-webkitqmlplugin
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Qt 4 WebKit QML plugin
- Qt is a cross-platform C++ application framework. Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- This package contains the WebKit QML plugin for QtDeclarative.
+#Package: libqt4-declarative-webkitqmlplugin
+#Architecture: any
+#Depends: ${shlibs:Depends}, ${misc:Depends}
+#Description: Qt 4 WebKit QML plugin
+# Qt is a cross-platform C++ application framework. Qt's primary feature
+# is its rich set of widgets that provide standard GUI functionality.
+# .
+# This package contains the WebKit QML plugin for QtDeclarative.
 
 Package: libqt4-dev
 Architecture: any
@@ -368,7 +368,7 @@ Section: libdevel
 Depends: ${shlibs:Depends}, ${misc:Depends}, libqtcore4 (= ${binary:Version}),
  libqt4-network (= ${binary:Version}), libqt4-dbus (= ${binary:Version}),
  libqtgui4 (= ${binary:Version}), libqt4-svg (= ${binary:Version}),
- libqt4-webkit (= ${binary:Version}), libqt4-xml (= ${binary:Version}),
+ libqt4-xml (= ${binary:Version}),
  libqt4-sql (= ${binary:Version}), libqt4-script (= ${binary:Version}),
  libqt4-scripttools (= ${binary:Version}), libqt4-xmlpatterns (= ${binary:Version}),
  libqt4-qt3support (= ${binary:Version}), libqt4-designer (= ${binary:Version}),
@@ -413,17 +413,17 @@ Description: Qt 4 library debugging symbols
  .
  This package contains the debugging symbols for the Qt 4 libraries.
 
-Package: libqt4-webkit-dbg
-Priority: extra
-Architecture: any
-Section: debug
-Depends: ${shlibs:Depends}, ${misc:Depends},
- libqt4-webkit (= ${binary:Version})
-Description: Qt 4 WebKit library debugging symbols
- Qt is a cross-platform C++ application framework. Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- This package contains the debugging symbols for the Qt 4 WebKit library.
+#Package: libqt4-webkit-dbg
+#Priority: extra
+#Architecture: any
+#Section: debug
+#Depends: ${shlibs:Depends}, ${misc:Depends},
+# libqt4-webkit (= ${binary:Version})
+#Description: Qt 4 WebKit library debugging symbols
+# Qt is a cross-platform C++ application framework. Qt's primary feature
+# is its rich set of widgets that provide standard GUI functionality.
+# .
+# This package contains the debugging symbols for the Qt 4 WebKit library.
 
 Package: libqt4-xmlpatterns-dbg
 Priority: extra

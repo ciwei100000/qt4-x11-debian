@@ -104,7 +104,7 @@ endif
 	            -phonon \
 	            -no-phonon-backend \
 	            -svg \
-	            -webkit \
+	            -no-webkit \
 	            -script \
 	            -scripttools \
 	            -platform $(platform_arg) \

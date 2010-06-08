@@ -1,10 +1,11 @@
 qt4-x11 (4:4.7.0~beta1-2) UNRELEASED; urgency=low
 
   * NOT RELEASED YET.
-  * Remove Qt Multimedia amd Qt MediaServices packages.
+  * Remove Qt Multimedia, Qt MediaServices and Qt WebKit packages.
   * Update debian/rules:
     - replace -multimedia by -no-multimedia configure option.
     - add -no-mediaservices configure option.
+    - replace -webkit by -no-webkit configure option.
 
  -- Fathi Boudra <fabo@debian.org>  Thu, 03 Jun 2010 18:04:03 +0300
 
