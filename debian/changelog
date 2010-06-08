@@ -1,5 +1,6 @@
-qt4-x11 (4:4.6.2-6) UNRELEASED; urgency=low
+qt4-x11 (4:4.6.3-1) unstable; urgency=low
 
+  * New upstream release.
   * Expand 96_webkit_no_gc_sections.diff to cover mips(el) as well. Hopefully,
     this will make linker less memory demanding and solve out-of-memory
     condition on buildds.
@@ -9,7 +10,7 @@ qt4-x11 (4:4.6.2-6) UNRELEASED; urgency=low
     ugly but very needed workaround for a common manifestation of the bug in
     QProcess (patch 99_hppa_bug561203_decrease_failure_rate.diff).
 
- -- Modestas Vainius <modax@debian.org>  Sun, 06 Jun 2010 03:16:11 +0300
+ -- Modestas Vainius <modax@debian.org>  Tue, 08 Jun 2010 09:39:56 +0300
 
 qt4-x11 (4:4.6.2-5) unstable; urgency=low
 
