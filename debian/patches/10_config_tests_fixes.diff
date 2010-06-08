@@ -12,7 +12,7 @@ Author: Fathi Boudra <fabo@debian.org>
 +LIBS += -lfbclient
 --- a/src/sql/drivers/drivers.pri
 +++ b/src/sql/drivers/drivers.pri
-@@ -93,7 +93,7 @@ contains(sql-drivers, ibase) {
+@@ -94,7 +94,7 @@ contains(sql-drivers, ibase) {
      HEADERS += drivers/ibase/qsql_ibase.h
      SOURCES += drivers/ibase/qsql_ibase.cpp
      

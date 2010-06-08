@@ -52,7 +52,7 @@ Trolltech task ID : 168283 (status: "fixed" for Qt 4.4.0, but effectively refuse
                                      Sender *sender);
 --- a/src/gui/kernel/qwidget_p.h
 +++ b/src/gui/kernel/qwidget_p.h
-@@ -693,6 +693,7 @@ public:
+@@ -696,6 +696,7 @@ public:
      static QWidget *keyboardGrabber;
  
      void setWindowRole();
@@ -62,7 +62,7 @@ Trolltech task ID : 168283 (status: "fixed" for Qt 4.4.0, but effectively refuse
      void x11UpdateIsOpaque();
 --- a/src/gui/kernel/qwidget_x11.cpp
 +++ b/src/gui/kernel/qwidget_x11.cpp
-@@ -825,13 +825,17 @@ void QWidgetPrivate::create_sys(WId wind
+@@ -824,13 +824,17 @@ void QWidgetPrivate::create_sys(WId wind
          data.fstrut_dirty = 1;
  
          // declare the widget's window role
@@ -86,7 +86,7 @@ Trolltech task ID : 168283 (status: "fixed" for Qt 4.4.0, but effectively refuse
          }
  
          // set client leader property
-@@ -2917,6 +2921,17 @@ void QWidgetPrivate::setWindowRole()
+@@ -2916,6 +2920,17 @@ void QWidgetPrivate::setWindowRole()
      XChangeProperty(X11->display, q->internalWinId(),
                      ATOM(WM_WINDOW_ROLE), XA_STRING, 8, PropModeReplace,
                      (unsigned char *)windowRole.constData(), windowRole.length());
