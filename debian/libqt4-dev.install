@@ -340,7 +340,6 @@ usr/include/qt4/Qt/qgraphicssceneevent.h
 usr/include/qt4/Qt/qgraphicssvgitem.h
 usr/include/qt4/Qt/qgraphicstransform.h
 usr/include/qt4/Qt/qgraphicsview.h
-usr/include/qt4/Qt/qgraphicswebview.h
 usr/include/qt4/Qt/qgraphicswidget.h
 usr/include/qt4/Qt/qgridlayout.h
 usr/include/qt4/Qt/qgroupbox.h
