@@ -356,8 +356,8 @@ Depends: ${shlibs:Depends}, ${misc:Depends}, libqtcore4 (= ${binary:Version}),
  libqt4-help (= ${binary:Version}), libqt4-test (= ${binary:Version}),
  libqt4-declarative (= ${binary:Version}), qt4-qmake (= ${binary:Version})
 Recommends: libqt4-opengl-dev (= ${binary:Version})
-Conflicts: qt3-dev-tools (<= 3:3.3.4-7), libqtwebkit-dev
-Replaces: libqtwebkit-dev, libqt4-opengl-dev (<< 4.4.0-2)
+Conflicts: qt3-dev-tools (<= 3:3.3.4-7), libqtwebkit-dev (<< 4.4.0~rc1-4)
+Replaces: libqtwebkit-dev (<< 4.4.0~rc1-4), libqt4-opengl-dev (<< 4.4.0-2)
 Suggests: qt4-dev-tools, qt4-doc, libmysqlclient-dev, libsqlite0-dev, libsqlite3-dev, libpq-dev, unixodbc-dev, firebird2.1-dev
 Description: Qt 4 development files
  Qt is a cross-platform C++ application framework. Qt's primary feature
