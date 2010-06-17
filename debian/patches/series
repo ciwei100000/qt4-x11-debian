@@ -1,5 +1,6 @@
 # upstream patches
 0004_problem_displaying_half_width_character.diff
+0005_fix_detection_of_headers_files.diff
 
 # qt-copy patches
 0180-window-role.diff

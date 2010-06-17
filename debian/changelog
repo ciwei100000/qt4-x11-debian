@@ -1,3 +1,14 @@
+qt4-x11 (4:4.6.3-2) UNRELEASED; urgency=low
+
+  * Add upstream patch:
+    - 0005_fix_detection_of_headers_files.diff
+      Disable the include generation iff a dot which is not followed by [hH]
+      is found after the last path separator. This implies that dots in
+      directory names are now ignored, and that files without an extension are
+      always considered headers (e.g., STL headers and Qt forwarding headers).
+
+ -- Fathi Boudra <fabo@debian.org>  Thu, 17 Jun 2010 09:03:32 +0300
+
 qt4-x11 (4:4.6.3-1) unstable; urgency=low
 
   * New upstream release.
