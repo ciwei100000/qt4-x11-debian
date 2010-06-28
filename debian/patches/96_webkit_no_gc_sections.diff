@@ -9,7 +9,7 @@ Last-Update: 2010-04-11 (s390 added)
 
 --- a/src/3rdparty/webkit/WebCore/WebCore.pro
 +++ b/src/3rdparty/webkit/WebCore/WebCore.pro
-@@ -80,7 +80,7 @@ unix {
+@@ -90,7 +90,7 @@ unix {
  }
  
  unix:!mac:*-g++*:QMAKE_CXXFLAGS += -ffunction-sections -fdata-sections 

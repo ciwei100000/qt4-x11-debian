@@ -15,7 +15,7 @@
 08_configure_quilt_compat.diff
 09_qmake_lflags_as-needed.diff
 10_config_tests_fixes.diff
-11_build_translations.diff
+# disabled for snapshot 11_build_translations.diff
 12_add_nostrip_for_debug_packages.diff
 15_fix_qmake_makefile_generation.diff
 16_hide_std_symbols_on_qtwebkit.diff
@@ -31,9 +31,7 @@
 70_hppa_ldcw_fix.diff
 71_hppa_unaligned_access_fix_458133.diff
 80_hurd_max_path.diff
-81_hurd_architecture.diff
 89_powerpc_opts.diff
 91_s390_use_gstabs.diff
 92_armel_gcc43_valist_compat.diff
 96_webkit_no_gc_sections.diff
-97_alpha_ftbfs_qatomic_alpha_h_types.diff

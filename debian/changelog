@@ -2,6 +2,9 @@ qt4-x11 (4:4.7.0~beta1+git3529+59c5857-1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET.
   * Remove Qt Multimedia, Qt MediaServices and Qt WebKit packages.
+  * Remove Debian patches:
+    - 81_hurd_architecture.diff - merged upstream.
+    - 97_alpha_ftbfs_qatomic_alpha_h_types.diff - merged upstream.
   * Update debian/rules:
     - replace -multimedia by -no-multimedia configure option.
     - add -no-mediaservices configure option.

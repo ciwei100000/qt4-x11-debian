@@ -4,10 +4,10 @@ Author: Sune Vuorela <debian@pusling.com>
 
 --- a/src/3rdparty/webkit/WebKit.pri
 +++ b/src/3rdparty/webkit/WebKit.pri
-@@ -49,6 +49,7 @@ CONFIG(release, debug|release) {
- 
- BASE_DIR = $$PWD
- INCLUDEPATH += $$OUTPUT_DIR/include/QtWebKit
+@@ -54,6 +54,7 @@ symbian {
+ } else {
+     INCLUDEPATH += $$OUTPUT_DIR/include/QtWebKit
+ }
 +QMAKE_LFLAGS += -Wl,--version-script,$$BASE_DIR/symbols.filter
  
  CONFIG -= warn_on

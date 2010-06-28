@@ -21,7 +21,7 @@ Trolltech task ID : 168283 (status: "fixed" for Qt 4.4.0, but effectively refuse
 
 --- a/src/corelib/kernel/qobject.cpp
 +++ b/src/corelib/kernel/qobject.cpp
-@@ -1120,8 +1120,16 @@ void QObject::setObjectName(const QStrin
+@@ -1095,8 +1095,16 @@ void QObject::setObjectName(const QStrin
  {
      Q_D(QObject);
      d->objectName = name;
@@ -48,11 +48,11 @@ Trolltech task ID : 168283 (status: "fixed" for Qt 4.4.0, but effectively refuse
 +    virtual void checkWindowRole();
 +#endif
  
-     static Sender *setCurrentSender(QObject *receiver,
+     static inline Sender *setCurrentSender(QObject *receiver,
                                      Sender *sender);
 --- a/src/gui/kernel/qwidget_p.h
 +++ b/src/gui/kernel/qwidget_p.h
-@@ -699,6 +699,7 @@ public:
+@@ -756,6 +756,7 @@ public:
      static QWidget *keyboardGrabber;
  
      void setWindowRole();
@@ -86,7 +86,7 @@ Trolltech task ID : 168283 (status: "fixed" for Qt 4.4.0, but effectively refuse
          }
  
          // set client leader property
-@@ -2938,6 +2942,17 @@ void QWidgetPrivate::setWindowRole()
+@@ -2939,6 +2943,17 @@ void QWidgetPrivate::setWindowRole()
      XChangeProperty(X11->display, q->internalWinId(),
                      ATOM(WM_WINDOW_ROLE), XA_STRING, 8, PropModeReplace,
                      (unsigned char *)windowRole.constData(), windowRole.length());

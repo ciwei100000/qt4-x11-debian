@@ -3,7 +3,7 @@ Author: Fathi Boudra <fabo@debian.org>
 
 --- a/demos/qtdemo/menumanager.cpp
 +++ b/demos/qtdemo/menumanager.cpp
-@@ -286,7 +286,7 @@ void MenuManager::showDocInAssistant(con
+@@ -297,7 +297,7 @@ void MenuManager::showDocInAssistant(con
      if (this->assistantProcess.state() != QProcess::Running){
          QString app = QLibraryInfo::location(QLibraryInfo::BinariesPath) + QDir::separator();
  #if !defined(Q_OS_MAC)

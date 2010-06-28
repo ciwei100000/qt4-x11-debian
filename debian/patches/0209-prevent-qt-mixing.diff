@@ -28,5 +28,5 @@ bugs.kde.org number : none
 +// in some Q*Private class
 +enum { QObjectPrivateVersion = QT_VERSION + 0x1000000 };
  
- class Q_CORE_EXPORT QDeclarativeData
+ class Q_CORE_EXPORT QAbstractDeclarativeData
  {
