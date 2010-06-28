@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.0~beta1 amd64
+# SymbolsHelper-Confirmed: 4:4.7.0~beta1+git3529+59c5857 amd64
 libQtCLucene.so.4 libqtcore4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN12QCLuceneHits2idEi@Base 4:4.5.3
@@ -874,6 +874,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _Z9qstrnicmpPKcS0_j@Base 4:4.5.3
  _Z9qt_assertPKcS0_i@Base 4:4.5.3
  _ZN10QByteArray10fromBase64ERKS_@Base 4:4.5.3
+ _ZN10QByteArray10setRawDataEPKcj@Base 4:4.7.0~beta1+git3529+59c5857
  _ZN10QByteArray11fromRawDataEPKci@Base 4:4.5.3
  _ZN10QByteArray11shared_nullE@Base 4:4.5.3
  _ZN10QByteArray12shared_emptyE@Base 4:4.5.3
@@ -1459,9 +1460,9 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN14QObjectPrivate14setDeleteWatchEPS_Pi@Base 4:4.5.3
  _ZN14QObjectPrivate15checkWindowRoleEv@Base 4:4.5.3
  _ZN14QObjectPrivate16resetDeleteWatchEPS_Pii@Base 4:4.5.3
- _ZN14QObjectPrivate16setCurrentSenderEP7QObjectPNS_6SenderE@Base 4:4.5.3
+#MISSING: 4:4.7.0~beta1+git3529+59c5857# _ZN14QObjectPrivate16setCurrentSenderEP7QObjectPNS_6SenderE@Base 4:4.5.3
  _ZN14QObjectPrivate16setParent_helperEP7QObject@Base 4:4.5.3
- _ZN14QObjectPrivate18resetCurrentSenderEP7QObjectPNS_6SenderES3_@Base 4:4.5.3
+#MISSING: 4:4.7.0~beta1+git3529+59c5857# _ZN14QObjectPrivate18resetCurrentSenderEP7QObjectPNS_6SenderES3_@Base 4:4.5.3
  _ZN14QObjectPrivate19_q_reregisterTimersEPv@Base 4:4.5.3
  _ZN14QObjectPrivate19moveToThread_helperEv@Base 4:4.5.3
  _ZN14QObjectPrivate20cleanConnectionListsEv@Base 4:4.5.3
@@ -1646,8 +1647,8 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN16QCoreApplicationD0Ev@Base 4:4.5.3
  _ZN16QCoreApplicationD1Ev@Base 4:4.5.3
  _ZN16QCoreApplicationD2Ev@Base 4:4.5.3
- _ZN16QDeclarativeData13parentChangedE@Base 4:4.7.0~beta1
- _ZN16QDeclarativeData9destroyedE@Base 4:4.7.0~beta1
+#MISSING: 4:4.7.0~beta1+git3529+59c5857# _ZN16QDeclarativeData13parentChangedE@Base 4:4.7.0~beta1
+#MISSING: 4:4.7.0~beta1+git3529+59c5857# _ZN16QDeclarativeData9destroyedE@Base 4:4.7.0~beta1
  _ZN16QEventTransition11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN16QEventTransition11qt_metacastEPKc@Base 4:4.6.1
  _ZN16QEventTransition12onTransitionEP6QEvent@Base 4:4.6.1
@@ -1668,6 +1669,8 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN16QEventTransitionD1Ev@Base 4:4.6.1
  _ZN16QEventTransitionD2Ev@Base 4:4.6.1
  _ZN16QIODevicePrivate13putCharHelperEc@Base 4:4.5.3
+ _ZN16QIODevicePrivate4peekEPcx@Base 4:4.7.0~beta1+git3529+59c5857
+ _ZN16QIODevicePrivate4peekEx@Base 4:4.7.0~beta1+git3529+59c5857
  _ZN16QIODevicePrivateC1Ev@Base 4:4.5.3
  _ZN16QIODevicePrivateC2Ev@Base 4:4.5.3
  _ZN16QIODevicePrivateD0Ev@Base 4:4.5.3
@@ -2261,6 +2264,8 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN23QParallelAnimationGroupD0Ev@Base 4:4.6.1
  _ZN23QParallelAnimationGroupD1Ev@Base 4:4.6.1
  _ZN23QParallelAnimationGroupD2Ev@Base 4:4.6.1
+ _ZN24QAbstractDeclarativeData13parentChangedE@Base 4:4.7.0~beta1+git3529+59c5857
+ _ZN24QAbstractDeclarativeData9destroyedE@Base 4:4.7.0~beta1+git3529+59c5857
  _ZN24QAbstractEventDispatcher10startingUpEv@Base 4:4.5.3
  _ZN24QAbstractEventDispatcher11closingDownEv@Base 4:4.5.3
  _ZN24QAbstractEventDispatcher11filterEventEPv@Base 4:4.5.3
@@ -2754,6 +2759,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN7QRegExpD2Ev@Base 4:4.5.3
  _ZN7QRegExpaSERKS_@Base 4:4.5.3
  _ZN7QString10fromLatin1EPKci@Base 4:4.5.3
+ _ZN7QString10setRawDataEPK5QChari@Base 4:4.7.0~beta1+git3529+59c5857
  _ZN7QString10setUnicodeEPK5QChari@Base 4:4.5.3
  _ZN7QString11fromRawDataEPK5QChari@Base 4:4.5.3
  _ZN7QString11shared_nullE@Base 4:4.5.3
@@ -3993,6 +3999,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK7QLocale12negativeSignEv@Base 4:4.5.3
  _ZNK7QLocale12positiveSignEv@Base 4:4.5.3
  _ZNK7QLocale13numberOptionsEv@Base 4:4.5.3
+ _ZNK7QLocale13textDirectionEv@Base 4:4.7.0~beta1+git3529+59c5857
  _ZNK7QLocale14dateTimeFormatENS_10FormatTypeE@Base 4:4.5.3
  _ZNK7QLocale14groupSeparatorEv@Base 4:4.5.3
  _ZNK7QLocale17measurementSystemEv@Base 4:4.5.3
@@ -4073,6 +4080,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK7QString12ascii_helperEv@Base 4:4.5.3
  _ZNK7QString12toCaseFoldedEv@Base 4:4.5.3
  _ZNK7QString12toWCharArrayEPw@Base 4:4.5.3
+ _ZNK7QString13isRightToLeftEv@Base 4:4.7.0~beta1+git3529+59c5857
  _ZNK7QString13latin1_helperEv@Base 4:4.5.3
  _ZNK7QString13leftJustifiedEi5QCharb@Base 4:4.5.3
  _ZNK7QString14rightJustifiedEi5QCharb@Base 4:4.5.3
@@ -4210,6 +4218,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK9QDateTime7addDaysEi@Base 4:4.5.3
  _ZNK9QDateTime7addSecsEi@Base 4:4.5.3
  _ZNK9QDateTime7isValidEv@Base 4:4.5.3
+ _ZNK9QDateTime7msecsToERKS_@Base 4:4.7.0~beta1+git3529+59c5857
  _ZNK9QDateTime8addMSecsEx@Base 4:4.5.3
  _ZNK9QDateTime8addYearsEi@Base 4:4.5.3
  _ZNK9QDateTime8timeSpecEv@Base 4:4.5.3

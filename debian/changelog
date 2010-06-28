@@ -15,6 +15,7 @@ qt4-x11 (4:4.7.0~beta1+git3529+59c5857-1) UNRELEASED; urgency=low
     - replace -webkit by -no-webkit configure option.
     - remove leftover directories in override_dh_auto_install target.
   * Update installed files.
+  * Update symbols files.
 
  -- Fathi Boudra <fabo@debian.org>  Mon, 28 Jun 2010 14:41:40 +0300
 
