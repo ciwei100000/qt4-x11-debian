@@ -1556,7 +1556,8 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN23QDeclarativeItemPrivate16resources_appendEP24QDeclarativeListPropertyI7QObjectEPS1_@Base 4:4.7.0~beta1
  _ZN23QDeclarativeItemPrivate16transformChangedEv@Base 4:4.7.0~beta1+git3529+59c5857
  _ZN23QDeclarativeItemPrivate16transform_appendEP24QDeclarativeListPropertyI18QGraphicsTransformEPS1_@Base 4:4.7.0~beta1
- _ZN23QDeclarativeItemPrivate17setConsistentTimeEi@Base 4:4.7.0~beta1
+#MISSING: 4:4.7.0~beta1+git3529+59c5857# _ZN23QDeclarativeItemPrivate17setConsistentTimeEi@Base 4:4.7.0~beta1
+ _ZN23QDeclarativeItemPrivate17setConsistentTimeEx@Base 4:4.7.0~beta1+git3529+59c5857
  _ZN23QDeclarativeItemPrivate24removeItemChangeListenerEP30QDeclarativeItemChangeListener6QFlagsINS_10ChangeTypeEE@Base 4:4.7.0~beta1
  _ZN23QDeclarativeItemPrivate4dataEv@Base 4:4.7.0~beta1+git3529+59c5857
  _ZN23QDeclarativeItemPrivate5startER13QElapsedTimer@Base 4:4.7.0~beta1+git3529+59c5857
