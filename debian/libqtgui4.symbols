@@ -5209,7 +5209,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN20QGraphicsViewPrivate10centerViewEN13QGraphicsView14ViewportAnchorE@Base 4:4.7.0~beta1
  _ZN20QGraphicsViewPrivate10updateRectERK5QRect@Base 4:4.7.0~beta1
  _ZN20QGraphicsViewPrivate12updateRegionERK6QRectFRK10QTransform@Base 4:4.7.0~beta1+git3529+59c5857
-#MISSING: 4:4.7.0~beta1+git3529+59c5857# _ZN20QGraphicsViewPrivate12updateRegionERK7QRegion@Base 4:4.7.0~beta1
  _ZN20QGraphicsViewPrivate12updateScrollEv@Base 4:4.7.0~beta1
  _ZN20QGraphicsViewPrivate13setUpdateClipEP13QGraphicsItem@Base 4:4.7.0~beta1+git3529+59c5857
  _ZN20QGraphicsViewPrivate15storeMouseEventEP11QMouseEvent@Base 4:4.7.0~beta1
@@ -6477,9 +6476,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN7QActionD1Ev@Base 4:4.5.3
  _ZN7QActionD2Ev@Base 4:4.5.3
  _ZN7QBezier10fromPointsERK7QPointFS2_S2_S2_@Base 4:4.5.3
-#MISSING: 4:4.7.0~beta1+git3529+59c5857# _ZN7QBezier17findIntersectionsERKS_S1_@Base 4:4.5.3
-#MISSING: 4:4.7.0~beta1+git3529+59c5857# (subst)_ZN7QBezier17findIntersectionsERKS_S1_P7QVectorI5QPairI{qreal}{qreal}EE@Base 4:4.5.3
-#MISSING: 4:4.7.0~beta1+git3529+59c5857# _ZN7QBezier20splitAtIntersectionsERS_@Base 4:4.5.3
  _ZN7QBitmap8fromDataERK5QSizePKhN6QImage6FormatE@Base 4:4.5.3
  _ZN7QBitmap9fromImageERK6QImage6QFlagsIN2Qt19ImageConversionFlagEE@Base 4:4.5.3
  _ZN7QBitmapC1ERK5QSize@Base 4:4.5.3
@@ -10939,12 +10935,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK7QAction9whatsThisEv@Base 4:4.5.3
  (subst)_ZNK7QBezier10addIfCloseEP{qreal}{qreal}@Base 4:4.5.3
  _ZNK7QBezier11getSubRangeEdd@Base 4:4.7.0~beta1
-#MISSING: 4:4.7.0~beta1+git3529+59c5857# _ZNK7QBezier12addToPolygonEP9QPolygonF@Base 4:4.5.3
  _ZNK7QBezier12addToPolygonEP9QPolygonFd@Base 4:4.7.0~beta1+git3529+59c5857
  (subst)_ZNK7QBezier16bezierOnIntervalE{qreal}{qreal}@Base 4:4.5.3
-#MISSING: 4:4.7.0~beta1+git3529+59c5857# _ZNK7QBezier17addToPolygonMixedEP9QPolygonF@Base 4:4.5.3
  (subst)_ZNK7QBezier17stationaryYPointsER{qreal}S0_@Base 4:4.5.3
-#MISSING: 4:4.7.0~beta1+git3529+59c5857# _ZNK7QBezier21addToPolygonIterativeEP9QPolygonF@Base 4:4.5.3
  _ZNK7QBezier5mapByERK10QTransform@Base 4:4.7.0~beta1
  (subst)_ZNK7QBezier5tForYE{qreal}{qreal}{qreal}@Base 4:4.5.3
  _ZNK7QBezier6boundsEv@Base 4:4.5.3
@@ -10952,7 +10945,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (subst)_ZNK7QBezier7shiftedEPS_i{qreal}f@Base 4:4.5.3
  (subst)_ZNK7QBezier9tAtLengthE{qreal}@Base 4:4.5.3
  _ZNK7QBezier9toPolygonEd@Base 4:4.7.0~beta1+git3529+59c5857
-#MISSING: 4:4.7.0~beta1+git3529+59c5857# _ZNK7QBezier9toPolygonEv@Base 4:4.5.3
  _ZNK7QBitmap11transformedERK10QTransform@Base 4:4.5.3
  _ZNK7QBitmap11transformedERK7QMatrix@Base 4:4.5.3
  _ZNK7QBitmapcv8QVariantEv@Base 4:4.5.3

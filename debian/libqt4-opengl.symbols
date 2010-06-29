@@ -279,9 +279,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN17QGL2PaintEngineExD1Ev@Base 4:4.6.1
  _ZN17QGL2PaintEngineExD2Ev@Base 4:4.6.1
  _ZN17QGLGraphicsSystemC1Eb@Base 4:4.7.0~beta1+git3529+59c5857
-#MISSING: 4:4.7.0~beta1+git3529+59c5857# _ZN17QGLGraphicsSystemC1Ev@Base 4:4.5.3
  _ZN17QGLGraphicsSystemC2Eb@Base 4:4.7.0~beta1+git3529+59c5857
-#MISSING: 4:4.7.0~beta1+git3529+59c5857# _ZN17QGLGraphicsSystemC2Ev@Base 4:4.5.3
  _ZN17QGLGraphicsSystemD0Ev@Base 4:4.5.3
  _ZN17QGLGraphicsSystemD1Ev@Base 4:4.5.3
  _ZN18QGLContextResource5valueEPK10QGLContext@Base 4:4.7.0~beta1
