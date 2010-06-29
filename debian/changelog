@@ -10,6 +10,8 @@ qt4-x11 (4:4.7.0~beta1+git3529+59c5857-1) UNRELEASED; urgency=low
     - remove libqt4-declarative-widgets package.
     - add libqt4-declarative-folderlistmodel package.
     - add libqt4-declarative-gestures package.
+    - add libqt4-webkit dummy transitional package for the libqtwebkit4
+      package.
   * Update debian/rules:
     - replace -multimedia by -no-multimedia configure option.
     - replace -webkit by -no-webkit configure option.

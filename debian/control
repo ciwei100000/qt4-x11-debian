@@ -216,6 +216,42 @@ Description: Qt 4 SVG module
  Scalable Vector Graphics (SVG) is a language for describing two-dimensional
  graphics and graphical applications in XML.
 
+Package: libqt4-webkit
+Architecture: any
+Depends: ${misc:Depends}, libqtwebkit4 (>= 2.0~)
+Description: transitional package for Qt 4 WebKit module
+ Qt is a cross-platform C++ application framework.  Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This is a dummy transitional package to enable installation of other Debian
+ packages linked against Qt WebKit 4.4 - 4.6 releases previously shipped from
+ Qt source in Debian.
+
+Package: libqtgui4
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, fontconfig
+Recommends: qt4-qtconfig
+Conflicts: libqt4-designer (<< 4.4.0~beta1-1)
+Replaces: libqt4-core (<< 4.0.1-3), libqt4-gui (<< 4.4.0),
+ qt4-designer (<< 4.1.4), libqt4-designer (<< 4.4.0~beta1-1)
+Description: Qt 4 GUI module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtGui module extends QtCore with GUI functionality.
+
+Package: libqt4-gui
+Architecture: any
+Depends: ${misc:Depends}, libqtgui4 (= ${binary:Version}), libqt4-svg (= ${binary:Version}), libqt4-opengl (= ${binary:Version}),
+ libqt4-designer (= ${binary:Version})
+Description: transitional package for Qt 4 GUI runtime libraries
+ Qt is a cross-platform C++ application framework.  Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This is a dummy transitional package depending on the Qt 4 GUI library
+ packages which the package of the same name used to provide in Qt 4.3.4
+ and earlier Debian packages of Qt 4.
+
 Package: libqt4-xml
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
