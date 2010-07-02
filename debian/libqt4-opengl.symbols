@@ -1,7 +1,8 @@
-# SymbolsHelper-Confirmed: 4:4.7.0~beta1+git3529+59c5857 amd64
+# SymbolsHelper-Confirmed: 4:4.7.0~beta1+git3839+e720c26 amd64
 libQtOpenGL.so.4 libqt4-opengl #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z18qt_gl_library_namev@Base 4:4.5.3
+ _Z18qt_gl_share_widgetv@Base 4:4.7.0~beta1+git3839+e720c26
  _Z19qt_qgl_paint_enginev@Base 4:4.6.1
  _Z22qt_gl_transfer_contextPK10QGLContext@Base 4:4.6.2
  _Z22qt_set_gl_library_nameRK7QString@Base 4:4.5.3
@@ -59,8 +60,21 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  (arch=!armel)_ZN12QDashStroker5beginEPv@Base 4:4.5.3
  (arch=!armel)_ZN12QDashStrokerD0Ev@Base 4:4.5.3
  (arch=!armel)_ZN12QDashStrokerD1Ev@Base 4:4.5.3
- _ZN12QMutexLockerD1Ev@Base 4:4.7.0~beta1+git3529+59c5857
+ _ZN12QMutexLockerD1Ev@Base 4:4.7.0~beta1+git3839+e720c26
  _ZN12QWriteLockerD1Ev@Base 4:4.7.0~beta1
+ _ZN13QGLPixmapData21useFramebufferObjectsEv@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN13QGLPixmapData4copyEPK11QPixmapDataRK5QRect@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN13QGLPixmapData4fillERK6QColor@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN13QGLPixmapData6resizeEii@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN13QGLPixmapData6scrollEiiRK5QRect@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN13QGLPixmapData8fromDataEPKhjPKc6QFlagsIN2Qt19ImageConversionFlagEE@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN13QGLPixmapData8fromFileERK7QStringPKc6QFlagsIN2Qt19ImageConversionFlagEE@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN13QGLPixmapData9fromImageERK6QImage6QFlagsIN2Qt19ImageConversionFlagEE@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN13QGLPixmapDataC1EN11QPixmapData9PixelTypeE@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN13QGLPixmapDataC2EN11QPixmapData9PixelTypeE@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN13QGLPixmapDataD0Ev@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN13QGLPixmapDataD1Ev@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN13QGLPixmapDataD2Ev@Base 4:4.7.0~beta1+git3839+e720c26
  (optional=external|arch=armel hppa sparc)_ZN13QPainterStateC2ERKS_@Base 4:4.6.2
  _ZN14QGLPaintDevice10beginPaintEv@Base 4:4.6.1
  _ZN14QGLPaintDevice18ensureActiveTargetEv@Base 4:4.6.1
@@ -249,6 +263,25 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN16QGLShaderProgramD0Ev@Base 4:4.6.1
  _ZN16QGLShaderProgramD1Ev@Base 4:4.6.1
  _ZN16QGLShaderProgramD2Ev@Base 4:4.6.1
+ _ZN16QGLWindowSurface10beginPaintERK7QRegion@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN16QGLWindowSurface11paintDeviceEv@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN16QGLWindowSurface11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN16QGLWindowSurface11qt_metacastEPKc@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN16QGLWindowSurface11setGeometryERK5QRect@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN16QGLWindowSurface12hijackWindowEP7QWidget@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN16QGLWindowSurface13surfaceFormatE@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN16QGLWindowSurface14updateGeometryEv@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN16QGLWindowSurface16staticMetaObjectE@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN16QGLWindowSurface5flushEP7QWidgetRK7QRegionRK6QPoint@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN16QGLWindowSurface6bufferEPK7QWidget@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN16QGLWindowSurface6scrollERK7QRegionii@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN16QGLWindowSurface7deletedEP7QObject@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN16QGLWindowSurface8endPaintERK7QRegion@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN16QGLWindowSurfaceC1EP7QWidget@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN16QGLWindowSurfaceC2EP7QWidget@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN16QGLWindowSurfaceD0Ev@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN16QGLWindowSurfaceD1Ev@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN16QGLWindowSurfaceD2Ev@Base 4:4.7.0~beta1+git3839+e720c26
  _ZN17QGL2PaintEngineEx10drawPixmapERK6QRectFRK7QPixmapS2_@Base 4:4.6.1
  _ZN17QGL2PaintEngineEx10penChangedEv@Base 4:4.6.1
  _ZN17QGL2PaintEngineEx11drawTextureERK6QRectFjRK5QSizeS2_@Base 4:4.6.1
@@ -278,8 +311,9 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN17QGL2PaintEngineExD0Ev@Base 4:4.6.1
  _ZN17QGL2PaintEngineExD1Ev@Base 4:4.6.1
  _ZN17QGL2PaintEngineExD2Ev@Base 4:4.6.1
- _ZN17QGLGraphicsSystemC1Eb@Base 4:4.7.0~beta1+git3529+59c5857
- _ZN17QGLGraphicsSystemC2Eb@Base 4:4.7.0~beta1+git3529+59c5857
+ _ZN17QGLContextPrivate14extensionFuncsEPK10QGLContext@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN17QGLGraphicsSystemC1Eb@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN17QGLGraphicsSystemC2Eb@Base 4:4.7.0~beta1+git3839+e720c26
  _ZN17QGLGraphicsSystemD0Ev@Base 4:4.5.3
  _ZN17QGLGraphicsSystemD1Ev@Base 4:4.5.3
  _ZN18QGLContextResource5valueEPK10QGLContext@Base 4:4.7.0~beta1
@@ -303,7 +337,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN20QGLCustomShaderStageD0Ev@Base 4:4.6.1
  _ZN20QGLCustomShaderStageD1Ev@Base 4:4.6.1
  _ZN20QGLCustomShaderStageD2Ev@Base 4:4.6.1
- _ZN20QGLFramebufferObject11bindDefaultEv@Base 4:4.7.0~beta1+git3529+59c5857
+ _ZN20QGLFramebufferObject11bindDefaultEv@Base 4:4.7.0~beta1+git3839+e720c26
  _ZN20QGLFramebufferObject11drawTextureERK6QRectFjj@Base 4:4.5.3
  _ZN20QGLFramebufferObject11drawTextureERK7QPointFjj@Base 4:4.5.3
  _ZN20QGLFramebufferObject15blitFramebufferEPS_RK5QRectS0_S3_jj@Base 4:4.6.1
@@ -327,17 +361,17 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN20QGLFramebufferObjectD1Ev@Base 4:4.5.3
  _ZN20QGLFramebufferObjectD2Ev@Base 4:4.5.3
  _ZN20QGLShareContextScopeD1Ev@Base 4:4.6.1
- _ZN20QGLTextureGlyphCache11fillTextureERKN18QTextureGlyphCache5CoordEj@Base 4:4.7.0~beta1+git3529+59c5857
- _ZN20QGLTextureGlyphCache11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1+git3529+59c5857
- _ZN20QGLTextureGlyphCache11qt_metacastEPKc@Base 4:4.7.0~beta1+git3529+59c5857
- _ZN20QGLTextureGlyphCache16staticMetaObjectE@Base 4:4.7.0~beta1+git3529+59c5857
- _ZN20QGLTextureGlyphCache17createTextureDataEii@Base 4:4.7.0~beta1+git3529+59c5857
- _ZN20QGLTextureGlyphCache17resizeTextureDataEii@Base 4:4.7.0~beta1+git3529+59c5857
- _ZN20QGLTextureGlyphCacheC1EP10QGLContextN21QFontEngineGlyphCache4TypeERK10QTransform@Base 4:4.7.0~beta1+git3529+59c5857
- _ZN20QGLTextureGlyphCacheC2EP10QGLContextN21QFontEngineGlyphCache4TypeERK10QTransform@Base 4:4.7.0~beta1+git3529+59c5857
- _ZN20QGLTextureGlyphCacheD0Ev@Base 4:4.7.0~beta1+git3529+59c5857
- _ZN20QGLTextureGlyphCacheD1Ev@Base 4:4.7.0~beta1+git3529+59c5857
- _ZN20QGLTextureGlyphCacheD2Ev@Base 4:4.7.0~beta1+git3529+59c5857
+ _ZN20QGLTextureGlyphCache11fillTextureERKN18QTextureGlyphCache5CoordEj@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN20QGLTextureGlyphCache11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN20QGLTextureGlyphCache11qt_metacastEPKc@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN20QGLTextureGlyphCache16staticMetaObjectE@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN20QGLTextureGlyphCache17createTextureDataEii@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN20QGLTextureGlyphCache17resizeTextureDataEii@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN20QGLTextureGlyphCacheC1EP10QGLContextN21QFontEngineGlyphCache4TypeERK10QTransform@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN20QGLTextureGlyphCacheC2EP10QGLContextN21QFontEngineGlyphCache4TypeERK10QTransform@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN20QGLTextureGlyphCacheD0Ev@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN20QGLTextureGlyphCacheD1Ev@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN20QGLTextureGlyphCacheD2Ev@Base 4:4.7.0~beta1+git3839+e720c26
  _ZN21QGraphicsShaderEffect11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN21QGraphicsShaderEffect11qt_metacastEPKc@Base 4:4.6.1
  _ZN21QGraphicsShaderEffect11setUniformsEP16QGLShaderProgram@Base 4:4.6.1
@@ -379,7 +413,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN22QGLSharedResourceGuardD2Ev@Base 4:4.6.1
  _ZN22QGraphicsEffectPrivateD0Ev@Base 4:4.6.1
  _ZN22QGraphicsEffectPrivateD1Ev@Base 4:4.6.1
- _ZN23QImageTextureGlyphCacheD2Ev@Base 4:4.7.0~beta1+git3529+59c5857
+ _ZN23QImageTextureGlyphCacheD2Ev@Base 4:4.7.0~beta1+git3839+e720c26
  _ZN26QGLFramebufferObjectFormat10setSamplesEi@Base 4:4.6.1
  _ZN26QGLFramebufferObjectFormat13setAttachmentEN20QGLFramebufferObject10AttachmentE@Base 4:4.6.1
  _ZN26QGLFramebufferObjectFormat16setTextureTargetEj@Base 4:4.6.1
@@ -400,25 +434,25 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN7QStringC1ERK13QLatin1String@Base 4:4.5.3
  _ZN7QStringD1Ev@Base 4:4.5.3
  _ZN8QPolygonD1Ev@Base 4:4.5.3
- _ZN9QBitArrayD1Ev@Base 4:4.7.0~beta1+git3529+59c5857
+ _ZN9QBitArrayD1Ev@Base 4:4.7.0~beta1+git3839+e720c26
  _ZN9QGLBuffer15setUsagePatternENS_12UsagePatternE@Base 4:4.7.0~beta1
  _ZN9QGLBuffer3mapENS_6AccessE@Base 4:4.7.0~beta1
  _ZN9QGLBuffer4readEiPvi@Base 4:4.7.0~beta1
  _ZN9QGLBuffer5unmapEv@Base 4:4.7.0~beta1
  _ZN9QGLBuffer5writeEiPKvi@Base 4:4.7.0~beta1
  _ZN9QGLBuffer6createEv@Base 4:4.7.0~beta1
- _ZN9QGLBuffer7destroyEv@Base 4:4.7.0~beta1+git3529+59c5857
+ _ZN9QGLBuffer7destroyEv@Base 4:4.7.0~beta1+git3839+e720c26
  _ZN9QGLBuffer7releaseENS_4TypeE@Base 4:4.7.0~beta1
  _ZN9QGLBuffer8allocateEPKvi@Base 4:4.7.0~beta1
  _ZN9QGLBufferC1ENS_4TypeE@Base 4:4.7.0~beta1
- _ZN9QGLBufferC1ERKS_@Base 4:4.7.0~beta1+git3529+59c5857
- _ZN9QGLBufferC1Ev@Base 4:4.7.0~beta1+git3529+59c5857
+ _ZN9QGLBufferC1ERKS_@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN9QGLBufferC1Ev@Base 4:4.7.0~beta1+git3839+e720c26
  _ZN9QGLBufferC2ENS_4TypeE@Base 4:4.7.0~beta1
- _ZN9QGLBufferC2ERKS_@Base 4:4.7.0~beta1+git3529+59c5857
- _ZN9QGLBufferC2Ev@Base 4:4.7.0~beta1+git3529+59c5857
+ _ZN9QGLBufferC2ERKS_@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZN9QGLBufferC2Ev@Base 4:4.7.0~beta1+git3839+e720c26
  _ZN9QGLBufferD1Ev@Base 4:4.7.0~beta1
  _ZN9QGLBufferD2Ev@Base 4:4.7.0~beta1
- _ZN9QGLBufferaSERKS_@Base 4:4.7.0~beta1+git3529+59c5857
+ _ZN9QGLBufferaSERKS_@Base 4:4.7.0~beta1+git3839+e720c26
  _ZN9QGLFormat10setOverlayEb@Base 4:4.5.3
  _ZN9QGLFormat10setProfileENS_20OpenGLContextProfileE@Base 4:4.7.0~beta1
  _ZN9QGLFormat10setSamplesEi@Base 4:4.5.3
@@ -548,10 +582,23 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZNK11QGLColormap4sizeEv@Base 4:4.5.3
  _ZNK11QGLColormap7isEmptyEv@Base 4:4.5.3
  _ZNK11QGLColormap8entryRgbEi@Base 4:4.5.3
- _ZNK11QPixmapData11runtimeDataEv@Base 4:4.7.0~beta1+git3529+59c5857
+ _ZNK11QPixmapData11runtimeDataEv@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZNK13QGLPixmapData11paintEngineEv@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZNK13QGLPixmapData13ensureCreatedEv@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZNK13QGLPixmapData14isValidContextEPK10QGLContext@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZNK13QGLPixmapData15hasAlphaChannelEv@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZNK13QGLPixmapData21copyBackFromRenderFboEb@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZNK13QGLPixmapData26createCompatiblePixmapDataEv@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZNK13QGLPixmapData4bindEb@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZNK13QGLPixmapData6metricEN12QPaintDevice17PaintDeviceMetricE@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZNK13QGLPixmapData7isValidEv@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZNK13QGLPixmapData7textureEv@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZNK13QGLPixmapData7toImageEv@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZNK13QGLPixmapData8glDeviceEv@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZNK13QGLPixmapData9fillImageERK6QColor@Base 4:4.7.0~beta1+git3839+e720c26
  _ZNK14QGLPaintDevice14alphaRequestedEv@Base 4:4.7.0~beta1
  _ZNK14QGLPaintDevice6formatEv@Base 4:4.6.1
- _ZNK14QGLPaintDevice6metricEN12QPaintDevice17PaintDeviceMetricE@Base 4:4.7.0~beta1+git3529+59c5857
+ _ZNK14QGLPaintDevice6metricEN12QPaintDevice17PaintDeviceMetricE@Base 4:4.7.0~beta1+git3839+e720c26
  _ZNK14QGLPaintDevice7devTypeEv@Base 4:4.6.1
  _ZNK14QGLPixelBuffer11paintEngineEv@Base 4:4.5.3
  _ZNK14QGLPixelBuffer20updateDynamicTextureEj@Base 4:4.5.3
@@ -580,13 +627,15 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZNK16QGLShaderProgram7shadersEv@Base 4:4.6.1
  _ZNK16QGLShaderProgram8isLinkedEv@Base 4:4.6.1
  _ZNK16QGLShaderProgram9programIdEv@Base 4:4.6.1
+ _ZNK16QGLWindowSurface10metaObjectEv@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZNK16QGLWindowSurface7contextEv@Base 4:4.7.0~beta1+git3839+e720c26
  _ZNK17QGL2PaintEngineEx11createStateEP13QPainterState@Base 4:4.6.1
- _ZNK17QGL2PaintEngineEx22isNativePaintingActiveEv@Base 4:4.7.0~beta1+git3529+59c5857
+ _ZNK17QGL2PaintEngineEx22isNativePaintingActiveEv@Base 4:4.7.0~beta1+git3839+e720c26
  _ZNK17QGL2PaintEngineEx4typeEv@Base 4:4.6.1
  _ZNK17QGLGraphicsSystem16createPixmapDataEN11QPixmapData9PixelTypeE@Base 4:4.5.3
  _ZNK17QGLGraphicsSystem19createWindowSurfaceEP7QWidget@Base 4:4.5.3
  _ZNK18QTextureGlyphCache11glyphMarginEv@Base 4:4.6.1
- _ZNK18QTextureGlyphCache12glyphPaddingEv@Base 4:4.7.0~beta1+git3529+59c5857
+ _ZNK18QTextureGlyphCache12glyphPaddingEv@Base 4:4.7.0~beta1+git3839+e720c26
  _ZNK20QGLCustomShaderStage6sourceEv@Base 4:4.6.1
  _ZNK20QGLFramebufferObject10attachmentEv@Base 4:4.5.3
  _ZNK20QGLFramebufferObject11paintEngineEv@Base 4:4.5.3
@@ -599,9 +648,9 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZNK20QGLFramebufferObject7isValidEv@Base 4:4.5.3
  _ZNK20QGLFramebufferObject7textureEv@Base 4:4.5.3
  _ZNK20QGLFramebufferObject7toImageEv@Base 4:4.5.3
- _ZNK20QGLTextureGlyphCache10metaObjectEv@Base 4:4.7.0~beta1+git3529+59c5857
- _ZNK20QGLTextureGlyphCache11glyphMarginEv@Base 4:4.7.0~beta1+git3529+59c5857
- _ZNK20QGLTextureGlyphCache12glyphPaddingEv@Base 4:4.7.0~beta1+git3529+59c5857
+ _ZNK20QGLTextureGlyphCache10metaObjectEv@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZNK20QGLTextureGlyphCache11glyphMarginEv@Base 4:4.7.0~beta1+git3839+e720c26
+ _ZNK20QGLTextureGlyphCache12glyphPaddingEv@Base 4:4.7.0~beta1+git3839+e720c26
  _ZNK21QGraphicsShaderEffect10metaObjectEv@Base 4:4.6.1
  _ZNK21QGraphicsShaderEffect19pixelShaderFragmentEv@Base 4:4.6.1
  _ZNK22QGLEngineShaderManager10metaObjectEv@Base 4:4.6.1
@@ -652,17 +701,18 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZNK9QGLWidget9isSharingEv@Base 4:4.5.3
  _ZTI10QGLContext@Base 4:4.5.3
  (arch=!armel)_ZTI12QDashStroker@Base 4:4.5.3
+ _ZTI13QGLPixmapData@Base 4:4.7.0~beta1+git3839+e720c26
  _ZTI14QGLPaintDevice@Base 4:4.6.1
  _ZTI14QGLPixelBuffer@Base 4:4.5.3
  _ZTI14QGLSignalProxy@Base 4:4.6.1
- _ZTI15QGraphicsSystem@Base 4:4.5.3
  _ZTI16QGLShaderProgram@Base 4:4.6.1
+ _ZTI16QGLWindowSurface@Base 4:4.7.0~beta1+git3839+e720c26
  _ZTI17QGL2PaintEngineEx@Base 4:4.6.1
  _ZTI17QGLGraphicsSystem@Base 4:4.5.3
  _ZTI18QTextureGlyphCache@Base 4:4.6.1
  _ZTI20QGLCustomShaderStage@Base 4:4.6.1
  _ZTI20QGLFramebufferObject@Base 4:4.5.3
- _ZTI20QGLTextureGlyphCache@Base 4:4.7.0~beta1+git3529+59c5857
+ _ZTI20QGLTextureGlyphCache@Base 4:4.7.0~beta1+git3839+e720c26
  _ZTI21QGraphicsShaderEffect@Base 4:4.6.1
  _ZTI22QGLEngineShaderManager@Base 4:4.6.1
  _ZTI22QGraphicsEffectPrivate@Base 4:4.6.1
@@ -670,17 +720,18 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZTI9QGLWidget@Base 4:4.5.3
  _ZTS10QGLContext@Base 4:4.5.3
  (arch=!armel)_ZTS12QDashStroker@Base 4:4.5.3
+ _ZTS13QGLPixmapData@Base 4:4.7.0~beta1+git3839+e720c26
  _ZTS14QGLPaintDevice@Base 4:4.6.1
  _ZTS14QGLPixelBuffer@Base 4:4.5.3
  _ZTS14QGLSignalProxy@Base 4:4.6.1
- _ZTS15QGraphicsSystem@Base 4:4.5.3
  _ZTS16QGLShaderProgram@Base 4:4.6.1
+ _ZTS16QGLWindowSurface@Base 4:4.7.0~beta1+git3839+e720c26
  _ZTS17QGL2PaintEngineEx@Base 4:4.6.1
  _ZTS17QGLGraphicsSystem@Base 4:4.5.3
  _ZTS18QTextureGlyphCache@Base 4:4.6.1
  _ZTS20QGLCustomShaderStage@Base 4:4.6.1
  _ZTS20QGLFramebufferObject@Base 4:4.5.3
- _ZTS20QGLTextureGlyphCache@Base 4:4.7.0~beta1+git3529+59c5857
+ _ZTS20QGLTextureGlyphCache@Base 4:4.7.0~beta1+git3839+e720c26
  _ZTS21QGraphicsShaderEffect@Base 4:4.6.1
  _ZTS22QGLEngineShaderManager@Base 4:4.6.1
  _ZTS22QGraphicsEffectPrivate@Base 4:4.6.1
@@ -688,30 +739,39 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZTS9QGLWidget@Base 4:4.5.3
  _ZTV10QGLContext@Base 4:4.5.3
  (arch=!armel)_ZTV12QDashStroker@Base 4:4.5.3
+ _ZTV13QGLPixmapData@Base 4:4.7.0~beta1+git3839+e720c26
  _ZTV14QGLPaintDevice@Base 4:4.6.1
  _ZTV14QGLPixelBuffer@Base 4:4.5.3
  _ZTV14QGLSignalProxy@Base 4:4.6.1
- _ZTV15QGraphicsSystem@Base 4:4.5.3
  _ZTV16QGLShaderProgram@Base 4:4.6.1
+ _ZTV16QGLWindowSurface@Base 4:4.7.0~beta1+git3839+e720c26
  _ZTV17QGL2PaintEngineEx@Base 4:4.6.1
  _ZTV17QGLGraphicsSystem@Base 4:4.5.3
  _ZTV18QTextureGlyphCache@Base 4:4.6.1
  _ZTV20QGLCustomShaderStage@Base 4:4.6.1
  _ZTV20QGLFramebufferObject@Base 4:4.5.3
- _ZTV20QGLTextureGlyphCache@Base 4:4.7.0~beta1+git3529+59c5857
+ _ZTV20QGLTextureGlyphCache@Base 4:4.7.0~beta1+git3839+e720c26
  _ZTV21QGraphicsShaderEffect@Base 4:4.6.1
  _ZTV22QGLEngineShaderManager@Base 4:4.6.1
  _ZTV22QGraphicsEffectPrivate@Base 4:4.6.1
  _ZTV9QGLShader@Base 4:4.6.1
  _ZTV9QGLWidget@Base 4:4.5.3
  _ZeqRK9QGLFormatS1_@Base 4:4.5.3
- _Zls6QDebugRK9QGLFormat@Base 4:4.7.0~beta1+git3529+59c5857
+ _Zls6QDebugRK9QGLFormat@Base 4:4.7.0~beta1+git3839+e720c26
  _ZneRK9QGLFormatS1_@Base 4:4.5.3
- (c++)"non-virtual thunk to QGLTextureGlyphCache::createTextureData(int, int)@Base" 4:4.7.0~beta1+git3529+59c5857
- (c++)"non-virtual thunk to QGLTextureGlyphCache::fillTexture(QTextureGlyphCache::Coord const&, unsigned int)@Base" 4:4.7.0~beta1+git3529+59c5857
- (c++)"non-virtual thunk to QGLTextureGlyphCache::glyphMargin() const@Base" 4:4.7.0~beta1+git3529+59c5857
- (c++)"non-virtual thunk to QGLTextureGlyphCache::glyphPadding() const@Base" 4:4.7.0~beta1+git3529+59c5857
- (c++)"non-virtual thunk to QGLTextureGlyphCache::resizeTextureData(int, int)@Base" 4:4.7.0~beta1+git3529+59c5857
- (c++)"non-virtual thunk to QGLTextureGlyphCache::~QGLTextureGlyphCache()@Base" 4:4.7.0~beta1+git3529+59c5857
+ (c++)"non-virtual thunk to QGLTextureGlyphCache::createTextureData(int, int)@Base" 4:4.7.0~beta1+git3839+e720c26
+ (c++)"non-virtual thunk to QGLTextureGlyphCache::fillTexture(QTextureGlyphCache::Coord const&, unsigned int)@Base" 4:4.7.0~beta1+git3839+e720c26
+ (c++)"non-virtual thunk to QGLTextureGlyphCache::glyphMargin() const@Base" 4:4.7.0~beta1+git3839+e720c26
+ (c++)"non-virtual thunk to QGLTextureGlyphCache::glyphPadding() const@Base" 4:4.7.0~beta1+git3839+e720c26
+ (c++)"non-virtual thunk to QGLTextureGlyphCache::resizeTextureData(int, int)@Base" 4:4.7.0~beta1+git3839+e720c26
+ (c++)"non-virtual thunk to QGLTextureGlyphCache::~QGLTextureGlyphCache()@Base" 4:4.7.0~beta1+git3839+e720c26
  (c++)"non-virtual thunk to QGLWidget::paintEngine() const@Base" 4:4.5.3
  (c++)"non-virtual thunk to QGLWidget::~QGLWidget()@Base" 4:4.5.3
+ (c++)"non-virtual thunk to QGLWindowSurface::beginPaint(QRegion const&)@Base" 4:4.7.0~beta1+git3839+e720c26
+ (c++)"non-virtual thunk to QGLWindowSurface::buffer(QWidget const*)@Base" 4:4.7.0~beta1+git3839+e720c26
+ (c++)"non-virtual thunk to QGLWindowSurface::endPaint(QRegion const&)@Base" 4:4.7.0~beta1+git3839+e720c26
+ (c++)"non-virtual thunk to QGLWindowSurface::flush(QWidget*, QRegion const&, QPoint const&)@Base" 4:4.7.0~beta1+git3839+e720c26
+ (c++)"non-virtual thunk to QGLWindowSurface::paintDevice()@Base" 4:4.7.0~beta1+git3839+e720c26
+ (c++)"non-virtual thunk to QGLWindowSurface::scroll(QRegion const&, int, int)@Base" 4:4.7.0~beta1+git3839+e720c26
+ (c++)"non-virtual thunk to QGLWindowSurface::setGeometry(QRect const&)@Base" 4:4.7.0~beta1+git3839+e720c26
+ (c++)"non-virtual thunk to QGLWindowSurface::~QGLWindowSurface()@Base" 4:4.7.0~beta1+git3839+e720c26

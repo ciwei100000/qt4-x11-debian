@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.0~beta1+git3529+59c5857 amd64
+# SymbolsHelper-Confirmed: 4:4.7.0~beta1+git3839+e720c26 amd64
 libQtNetwork.so.4 libqt4-network #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z19qt_qhostinfo_lookupRK7QStringP7QObjectPKcPbPi@Base 4:4.7.0~beta1
@@ -80,7 +80,7 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN10QTcpServer16staticMetaObjectE@Base 4:4.5.3
  _ZN10QTcpServer18incomingConnectionEi@Base 4:4.5.3
  _ZN10QTcpServer19setSocketDescriptorEi@Base 4:4.5.3
- _ZN10QTcpServer20addPendingConnectionEP10QTcpSocket@Base 4:4.7.0~beta1+git3529+59c5857
+ _ZN10QTcpServer20addPendingConnectionEP10QTcpSocket@Base 4:4.7.0~beta1+git3839+e720c26
  _ZN10QTcpServer20waitForNewConnectionEiPb@Base 4:4.5.3
  _ZN10QTcpServer21nextPendingConnectionEv@Base 4:4.5.3
  _ZN10QTcpServer24setMaxPendingConnectionsEi@Base 4:4.5.3
@@ -600,7 +600,7 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN35QNetworkConfigurationManagerPrivate11pollEnginesEv@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivate11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivate11qt_metacastEPKc@Base 4:4.7.0~beta1
- _ZN35QNetworkConfigurationManagerPrivate12capabilitiesEv@Base 4:4.7.0~beta1+git3529+59c5857
+ _ZN35QNetworkConfigurationManagerPrivate12capabilitiesEv@Base 4:4.7.0~beta1+git3839+e720c26
  _ZN35QNetworkConfigurationManagerPrivate12startPollingEv@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivate13enablePollingEv@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivate14disablePollingEv@Base 4:4.7.0~beta1
