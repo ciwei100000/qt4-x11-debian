@@ -3,7 +3,7 @@ It breaks qmake projects search.
 
 --- a/configure
 +++ b/configure
-@@ -8184,7 +8184,7 @@ fi
+@@ -8187,7 +8187,7 @@ fi
  # .projects.3    -> the rest
  rm -f .projects .projects.1 .projects.2 .projects.3
  
