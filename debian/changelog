@@ -1,4 +1,4 @@
-qt4-x11 (4:4.7.0~beta1+git3529+59c5857-1) UNRELEASED; urgency=low
+qt4-x11 (4:4.7.0~beta1+git3833+1636e03-1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET.
   * Remove Qt Multimedia, Qt MediaServices and Qt WebKit packages.
