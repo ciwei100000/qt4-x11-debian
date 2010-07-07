@@ -1,6 +1,5 @@
-qt4-x11 (4:4.7.0~beta1+git3839+e720c26-1) UNRELEASED; urgency=low
+qt4-x11 (4:4.7.0~beta1+git3839+e720c26-1) experimental; urgency=low
 
-  * NOT RELEASED YET.
   * New upstream snapshot.
   * Remove Qt Multimedia, Qt MediaServices and Qt WebKit packages.
   * Remove Debian patches:
