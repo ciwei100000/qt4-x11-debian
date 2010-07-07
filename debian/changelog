@@ -6,6 +6,7 @@ qt4-x11 (4:4.6.3-2) UNRELEASED; urgency=low
       is found after the last path separator. This implies that dots in
       directory names are now ignored, and that files without an extension are
       always considered headers (e.g., STL headers and Qt forwarding headers).
+    - 0006_device_context_leak.diff
 
  -- Fathi Boudra <fabo@debian.org>  Thu, 17 Jun 2010 09:03:32 +0300
 

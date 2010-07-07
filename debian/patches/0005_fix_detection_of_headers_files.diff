@@ -15,8 +15,6 @@ Reviewed-by: Oswald Buddenhagen <oswald.buddenhagen@nokia.com>
  src/tools/moc/main.cpp |    7 +++----
  1 files changed, 3 insertions(+), 4 deletions(-)
 
-diff --git a/src/tools/moc/main.cpp b/src/tools/moc/main.cpp
-index ebe1834..4997690 100644
 --- a/src/tools/moc/main.cpp
 +++ b/src/tools/moc/main.cpp
 @@ -359,11 +359,10 @@ int runMoc(int _argc, char **_argv)
@@ -34,6 +32,3 @@ index ebe1834..4997690 100644
      }
      if (moc.includeFiles.isEmpty()) {
          if (moc.includePath.isEmpty()) {
--- 
-1.6.1
-
