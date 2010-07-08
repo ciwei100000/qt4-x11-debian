@@ -1,6 +1,6 @@
-qt4-x11 (4:4.7.0~beta1+git3839+e720c26-1) experimental; urgency=low
+qt4-x11 (4:4.7.0~beta2-1) experimental; urgency=low
 
-  * New upstream snapshot.
+  * New upstream release.
   * Remove Qt Multimedia, Qt MediaServices and Qt WebKit packages.
   * Remove Debian patches:
     - 81_hurd_architecture.diff - merged upstream.
@@ -19,7 +19,7 @@ qt4-x11 (4:4.7.0~beta1+git3839+e720c26-1) experimental; urgency=low
   * Update installed files.
   * Update symbols files.
 
- -- Fathi Boudra <fabo@debian.org>  Mon, 28 Jun 2010 14:41:40 +0300
+ -- Fathi Boudra <fabo@debian.org>  Thu, 08 Jul 2010 16:59:50 +0300
 
 qt4-x11 (4:4.7.0~beta1-1) experimental; urgency=low
 

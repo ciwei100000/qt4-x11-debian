@@ -15,7 +15,7 @@
 08_configure_quilt_compat.diff
 09_qmake_lflags_as-needed.diff
 10_config_tests_fixes.diff
-# disabled for snapshot 11_build_translations.diff
+11_build_translations.diff
 12_add_nostrip_for_debug_packages.diff
 15_fix_qmake_makefile_generation.diff
 16_hide_std_symbols_on_qtwebkit.diff
