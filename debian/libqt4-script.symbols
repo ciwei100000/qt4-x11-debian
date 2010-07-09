@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.0~beta1+git3839+e720c26 amd64
+# SymbolsHelper-Confirmed: 4:4.7.0~beta2 amd64
 libQtScript.so.4 libqt4-script #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z14qScriptConnectP7QObjectPKcRK12QScriptValueS5_@Base 4:4.5.3
@@ -217,8 +217,6 @@ libQtScript.so.4 libqt4-script #MINVER#
  _ZN23QScriptDeclarativeClass20PersistentIdentifierD1Ev@Base 4:4.6.1
  _ZN23QScriptDeclarativeClass20PersistentIdentifierD2Ev@Base 4:4.6.1
  _ZN23QScriptDeclarativeClass20PersistentIdentifieraSERKS0_@Base 4:4.6.1
- _ZN23QScriptDeclarativeClass20newStaticScopeObjectEP13QScriptEngine@Base 4:4.7.0~beta1+git3839+e720c26
- _ZN23QScriptDeclarativeClass20newStaticScopeObjectEP13QScriptEngineiPK7QStringPK12QScriptValuePK6QFlagsINS5_12PropertyFlagEE@Base 4:4.7.0~beta1+git3839+e720c26
  _ZN23QScriptDeclarativeClass26createPersistentIdentifierERK7QString@Base 4:4.6.1
  _ZN23QScriptDeclarativeClass26createPersistentIdentifierERKPv@Base 4:4.6.1
  _ZN23QScriptDeclarativeClass4callEPNS_6ObjectEP14QScriptContext@Base 4:4.7.0~beta1
@@ -302,7 +300,6 @@ libQtScript.so.4 libqt4-script #MINVER#
  _ZN28QScriptClassPropertyIteratorD0Ev@Base 4:4.5.3
  _ZN28QScriptClassPropertyIteratorD1Ev@Base 4:4.5.3
  _ZN28QScriptClassPropertyIteratorD2Ev@Base 4:4.5.3
- _ZN9QHashData8willGrowEv@Base 4:4.7.0~beta1+git3839+e720c26
  _ZNK11QScriptable10thisObjectEv@Base 4:4.5.3
  _ZNK11QScriptable13argumentCountEv@Base 4:4.5.3
  _ZNK11QScriptable6engineEv@Base 4:4.5.3
