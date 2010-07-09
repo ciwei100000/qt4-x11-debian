@@ -5,7 +5,7 @@ Use case: Qt sources comes from git and we need to build them.
 
 --- /dev/null
 +++ b/tools/assistant/translations/qt_help.pro
-@@ -0,0 +1,52 @@
+@@ -0,0 +1,53 @@
 +# Include those manually as they do not contain any directory specification
 +
 +SOURCES += ../lib/qhelpcollectionhandler.cpp \
@@ -49,18 +49,19 @@ Use case: Qt sources comes from git and we need to build them.
 +
 +TR_DIR = $$PWD/../../../translations
 +TRANSLATIONS = \
++    $$TR_DIR/qt_help_cs.ts \
 +    $$TR_DIR/qt_help_da.ts \
 +    $$TR_DIR/qt_help_de.ts \
++    $$TR_DIR/qt_help_hu.ts \
 +    $$TR_DIR/qt_help_ja.ts \
 +    $$TR_DIR/qt_help_pl.ts \
 +    $$TR_DIR/qt_help_ru.ts \
 +    $$TR_DIR/qt_help_zh_CN.ts \
-+    $$TR_DIR/qt_help_zh_TW.ts
-+
-+error("This is a dummy profile to be used for translations ONLY.")
++    $$TR_DIR/qt_help_zh_TW.ts \
++    $$TR_DIR/qt_help_fr.ts
 --- /dev/null
 +++ b/tools/assistant/translations/translations.pro
-@@ -0,0 +1,51 @@
+@@ -0,0 +1,54 @@
 +# Include those manually as they do not contain any directory specification
 +
 +FORMS += ../tools/assistant/filternamedialog.ui \
@@ -105,8 +106,11 @@ Use case: Qt sources comes from git and we need to build them.
 +
 +TR_DIR = $$PWD/../../../translations
 +TRANSLATIONS = \
++    $$TR_DIR/assistant_cs.ts \
 +    $$TR_DIR/assistant_da.ts \
 +    $$TR_DIR/assistant_de.ts \
++    $$TR_DIR/assistant_fr.ts \
++    $$TR_DIR/assistant_hu.ts \
 +    $$TR_DIR/assistant_ja.ts \
 +    $$TR_DIR/assistant_pl.ts \
 +    $$TR_DIR/assistant_ru.ts \
@@ -199,7 +203,6 @@ Use case: Qt sources comes from git and we need to build them.
 +           $$APP_DIR/main.cpp \
 +           $$APP_DIR/mainwindow.cpp \
 +           $$APP_DIR/newform.cpp \
-+           $$APP_DIR/plugindialog.cpp \
 +           $$APP_DIR/preferencesdialog.cpp \
 +           $$APP_DIR/qdesigner_actions.cpp \
 +           $$APP_DIR/qdesigner_appearanceoptions.cpp \
@@ -217,7 +220,6 @@ Use case: Qt sources comes from git and we need to build them.
 +           $$APP_DIR/designer_enums.h \
 +           $$APP_DIR/mainwindow.h \
 +           $$APP_DIR/newform.h \
-+           $$APP_DIR/plugindialog.h \
 +           $$APP_DIR/preferencesdialog.h \
 +           $$APP_DIR/qdesigner_actions.h \
 +           $$APP_DIR/qdesigner_appearanceoptions.h \
@@ -231,8 +233,7 @@ Use case: Qt sources comes from git and we need to build them.
 +           $$APP_DIR/saveformastemplate.h \
 +           $$APP_DIR/versiondialog.h
 +
-+FORMS +=   $$APP_DIR/plugindialog.ui \
-+           $$APP_DIR/preferencesdialog.ui \
++FORMS +=   $$APP_DIR/preferencesdialog.ui \
 +           $$APP_DIR/qdesigner_appearanceoptions.ui \
 +           $$APP_DIR/saveformastemplate.ui
 +
@@ -249,7 +250,10 @@ Use case: Qt sources comes from git and we need to build them.
 +
 +TR_DIR = $$PWD/../../../translations
 +TRANSLATIONS = \
++    $$TR_DIR/designer_cs.ts \
 +    $$TR_DIR/designer_de.ts \
++    $$TR_DIR/designer_fr.ts \
++    $$TR_DIR/designer_hu.ts \
 +    $$TR_DIR/designer_ja.ts \
 +    $$TR_DIR/designer_pl.ts \
 +    $$TR_DIR/designer_ru.ts \
