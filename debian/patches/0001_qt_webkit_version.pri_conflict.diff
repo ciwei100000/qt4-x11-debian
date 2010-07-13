@@ -1,0 +1,14 @@
+Description: qt_webkit_version.pri is installed inconditionaly.
+             the file conficts when Qt WebKit is standalone.
+Author: Simon Hausmann <simon.hausmann@nokia.com>
+
+--- a/projects.pro
++++ b/projects.pro
+@@ -164,6 +164,7 @@ unix {
+    DEFAULT_QMAKESPEC = $$QMAKESPEC
+    DEFAULT_QMAKESPEC ~= s,^.*mkspecs/,,g
+    mkspecs.commands += $(DEL_FILE) $(INSTALL_ROOT)$$mkspecs.path/default; $(SYMLINK) $$DEFAULT_QMAKESPEC $(INSTALL_ROOT)$$mkspecs.path/default
++   !contains(QT_CONFIG, webkit): mkspecs.commands += $(DEL_FILE) $(INSTALL_ROOT)$$mkspecs.path/modules/qt_webkit_version.pri
+ }
+ win32:!equals(QT_BUILD_TREE, $$QT_SOURCE_TREE) {
+     # When shadow building on Windows, the default mkspec only exists in the build tree.
