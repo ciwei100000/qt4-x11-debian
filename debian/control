@@ -385,7 +385,6 @@ Depends: ${shlibs:Depends}, ${misc:Depends}, libqtcore4 (= ${binary:Version}),
  libqt4-help (= ${binary:Version}), libqt4-test (= ${binary:Version}),
  libqt4-declarative (= ${binary:Version}), qt4-qmake (= ${binary:Version})
 Recommends: libqt4-opengl-dev (= ${binary:Version})
-Conflicts: qt3-dev-tools
 Breaks: libqtwebkit-dev (<< 2.0~), libqt4-opengl-dev (<< 4.4.0-2)
 Replaces: libqtwebkit-dev (<< 2.0~), libqt4-opengl-dev (<< 4.4.0-2)
 Suggests: qt4-dev-tools, qt4-doc, libmysqlclient-dev, libsqlite0-dev, libsqlite3-dev, libpq-dev, unixodbc-dev, firebird2.1-dev
@@ -470,7 +469,6 @@ Package: qt4-dev-tools
 Architecture: any
 Section: devel
 Depends: ${shlibs:Depends}, ${misc:Depends}, libqt4-sql-sqlite
-Conflicts: qt3-assistant, qt3-designer qt3-linguist, qt3-dev-tools-embedded
 Breaks: libqt4-core (<< 4.4.0~beta1-1)
 Replaces: libqt4-core (<< 4.4.0~beta1-1)
 Recommends: libqt4-dev, qt4-doc, qt4-designer
@@ -508,7 +506,6 @@ Package: qt4-qtconfig
 Architecture: any
 Section: x11
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Conflicts: qt3-qtconfig
 Breaks: libqt4-gui (<< 4.1.0), libqt4-core (<< 4.4.0~beta1-1)
 Replaces: libqt4-gui (<< 4.1.0), libqt4-core (<< 4.4.0~beta1-1)
 Description: Qt 4 configuration tool

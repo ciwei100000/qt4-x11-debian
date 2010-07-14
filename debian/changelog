@@ -4,7 +4,7 @@ qt4-x11 (4:4.7.0~beta2-3) UNRELEASED; urgency=low
     latest version which this conflict is supposed to cover is 0~svn29752-1.
   * Add Breaks (or turn Conflicts into Breaks) next to Replaces as recommended
     by policy 3.9.0.
-  * Make conflicts against old qt-x11-free (Qt3) packages versionless.
+  * Remove conflicts against old (predating etch) qt-x11-free (Qt3) packages.
 
  -- Modestas Vainius <modax@debian.org>  Tue, 13 Jul 2010 21:45:54 +0300
 
