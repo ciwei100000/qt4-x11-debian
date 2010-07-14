@@ -26,6 +26,9 @@ qt4-x11 (4:4.7.1-1) UNRELEASED; urgency=low
     - 04_launch_uic-qt4.diff
     - 05_append_qt4_target.diff
 
+  [ Didier Raboud ]
+  * Cherry-pick "Fix qdbus manpage install. It is misplaced." from unstable.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 06 Oct 2010 14:55:15 +0200
 
 qt4-x11 (4:4.7.0~rc1-1) experimental; urgency=low
