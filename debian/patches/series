@@ -1,6 +1,3 @@
-# upstream patches
-0001_qt_webkit_version.pri_conflict.diff
-
 # qt-copy patches
 0180-window-role.diff
 0195-compositing-properties.diff

@@ -1,8 +1,8 @@
 qt4-x11 (4:4.7.0~beta2-2) experimental; urgency=low
 
   [ Fathi Boudra ]
-  * Add 0001_qt_webkit_version.pri_conflict.diff:
-    Fix qt_webkit_version.pri conflict, installed inconditionaly.
+  * Remove qt_webkit_version.pri file, installed inconditionaly.
+    It conflicts with qt_webkit_version.pri shipped in Qt WebKit.
 
   [ Modestas Vainius ]
   * Make libqt4-dev conflict with libqtwebkit-dev less broad: (<< 2.0~). The

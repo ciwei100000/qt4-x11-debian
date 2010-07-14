@@ -240,6 +240,9 @@ override_dh_auto_install:
 	install -D -p -m0644 debian/desktop/qtconfig.png \
 		debian/qt4-qtconfig/usr/share/pixmaps/qtconfig.png
 
+	# QTBUG-12159 workaround
+	rm -f debian/tmp//usr/share/qt4/mkspecs/modules/qt_webkit_version.pri
+
 	# Remove phonon development files
 	rm -f debian/tmp/usr/lib/libphonon.la
 	rm -f debian/tmp/usr/lib/libphonon.prl
