@@ -40,9 +40,8 @@ Description: transitional package for Qt 4 core non-GUI runtime libraries
  Qt is a cross-platform C++ application framework.  Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
- This is a dummy transitional package to enable installation of other Debian
- packages linked against Qt 4.3 or earlier Qt 4 releases previously shipped
- in Debian.
+ This is a dummy transitional package to enable installation of other packages
+ linked against Qt 4.3 or earlier Qt 4 releases previously shipped.
 
 Package: libqtgui4
 Architecture: any
@@ -68,7 +67,7 @@ Description: transitional package for Qt 4 GUI runtime libraries
  .
  This is a dummy transitional package depending on the Qt 4 GUI library
  packages which the package of the same name used to provide in Qt 4.3.4
- and earlier Debian packages of Qt 4.
+ and earlier packages of Qt 4.
 
 Package: libqt4-network
 Architecture: any
@@ -227,9 +226,8 @@ Description: transitional package for Qt 4 WebKit module
  Qt is a cross-platform C++ application framework.  Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
- This is a dummy transitional package to enable installation of other Debian
- packages linked against Qt WebKit 4.4 - 4.6 releases previously shipped from
- Qt source in Debian.
+ This is a dummy transitional package to enable installation of other packages
+ linked against Qt WebKit 4.4 - 4.6 releases previously shipped from Qt source.
 
 Package: libqt4-xml
 Architecture: any
