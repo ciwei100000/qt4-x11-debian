@@ -3,6 +3,7 @@ qt4-x11 (4:4.7.0~beta2-3) UNRELEASED; urgency=low
   * Update debian/control:
     - remove references to Debian in package descriptions
       (derivatives friendly).
+    - add libqtwebkit-dev to libqt4-dev package.
 
  -- Fathi Boudra <fabo@debian.org>  Tue, 20 Jul 2010 16:55:20 +0300
 

@@ -382,7 +382,7 @@ Depends: ${shlibs:Depends}, ${misc:Depends}, libqtcore4 (= ${binary:Version}),
  libqt4-qt3support (= ${binary:Version}), libqt4-designer (= ${binary:Version}),
  libqt4-help (= ${binary:Version}), libqt4-test (= ${binary:Version}),
  libqt4-declarative (= ${binary:Version}), qt4-qmake (= ${binary:Version})
-Recommends: libqt4-opengl-dev (= ${binary:Version})
+Recommends: libqt4-opengl-dev (= ${binary:Version}), libqtwebkit-dev (>= 2.0~)
 Breaks: libqtwebkit-dev (<< 2.0~), libqt4-opengl-dev (<< 4.4.0-2)
 Replaces: libqtwebkit-dev (<< 2.0~), libqt4-opengl-dev (<< 4.4.0-2)
 Suggests: qt4-dev-tools, qt4-doc, libmysqlclient-dev, libsqlite0-dev, libsqlite3-dev, libpq-dev, unixodbc-dev, firebird2.1-dev
