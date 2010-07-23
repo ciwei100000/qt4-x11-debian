@@ -1,5 +1,7 @@
 qt4-x11 (4:4.7.0~beta2-3) UNRELEASED; urgency=low
 
+  * Add 0001_add_webkit_qt_config.patch to load modules .pri files.
+    Fix the detection of Qt WebKit when shipped standalone.
   * Update debian/control:
     - remove references to Debian in package descriptions
       (derivatives friendly).
