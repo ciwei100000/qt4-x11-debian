@@ -1,12 +1,13 @@
 Description: when Qt is built with -no-webkit and Qt WebKit is used
              Qt applications cannot found webkit as they rely on qmake. 
-             This patch modify qconfig.pri to load modules .pri files.
+             Make it possible for Qt modules to extend QT_CONFIG.
+             This is done by reading the module files from within qconfig.pri.
 Author: Simon Hausmann <simon.hausmann@nokia.com>
 Author: Fathi Boudra <fathi.boudra@nokia.com>
 
 --- a/configure
 +++ b/configure
-@@ -7651,6 +7651,9 @@ QT_LIBINFIX = $QT_LIBINFIX
+@@ -7648,6 +7648,9 @@ QT_LIBINFIX = $QT_LIBINFIX
  QT_NAMESPACE = $QT_NAMESPACE
  QT_NAMESPACE_MAC_CRC = $QT_NAMESPACE_MAC_CRC
  
@@ -26,3 +27,14 @@ Author: Fathi Boudra <fathi.boudra@nokia.com>
  QT_WEBKIT_VERSION = 4.7.0
  QT_WEBKIT_MAJOR_VERSION = 4
  QT_WEBKIT_MINOR_VERSION = 7
+--- a/tools/configure/configureapp.cpp
++++ b/tools/configure/configureapp.cpp
+@@ -2925,6 +2925,8 @@ void Configure::generateCachefile()
+             configStream << "#namespaces" << endl << "QT_NAMESPACE = " << dictionary["QT_NAMESPACE"] << endl;
+         }
+ 
++        configStream << "#modules" << endl << "for(mod,$$list($$files($$[QMAKE_MKSPECS]/modules/qt_*.pri))):include($$mod)" << endl;
++
+         configStream.flush();
+         configFile.close();
+     }
