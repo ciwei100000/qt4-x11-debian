@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.0~beta2 amd64
+# SymbolsHelper-Confirmed: 4:4.7.0~rc1 amd64
 libQtNetwork.so.4 libqt4-network #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z19qt_qhostinfo_lookupRK7QStringP7QObjectPKcPbPi@Base 4:4.7.0~beta1
@@ -270,6 +270,7 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN14QAuthenticator11setPasswordERK7QString@Base 4:4.5.3
  _ZN14QAuthenticator6detachEv@Base 4:4.5.3
  _ZN14QAuthenticator7setUserERK7QString@Base 4:4.5.3
+ _ZN14QAuthenticator9setOptionERK7QStringRK8QVariant@Base 4:4.7.0~rc1
  _ZN14QAuthenticatorC1ERKS_@Base 4:4.5.3
  _ZN14QAuthenticatorC1Ev@Base 4:4.5.3
  _ZN14QAuthenticatorC2ERKS_@Base 4:4.5.3
@@ -890,6 +891,8 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZNK14QAuthenticator4userEv@Base 4:4.5.3
  _ZNK14QAuthenticator5realmEv@Base 4:4.5.3
  _ZNK14QAuthenticator6isNullEv@Base 4:4.5.3
+ _ZNK14QAuthenticator6optionERK7QString@Base 4:4.7.0~rc1
+ _ZNK14QAuthenticator7optionsEv@Base 4:4.7.0~rc1
  _ZNK14QAuthenticator8passwordEv@Base 4:4.5.3
  _ZNK14QAuthenticatoreqERKS_@Base 4:4.5.3
  _ZNK14QNetworkCookie10isHttpOnlyEv@Base 4:4.5.3
@@ -1026,7 +1029,9 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZNK21QNetworkCacheMetaData7isValidEv@Base 4:4.5.3
  _ZNK21QNetworkCacheMetaDataeqERKS_@Base 4:4.5.3
  _ZNK21QNetworkConfiguration10bearerNameEv@Base 4:4.7.0~beta1
+ _ZNK21QNetworkConfiguration10bearerTypeEv@Base 4:4.7.0~rc1
  _ZNK21QNetworkConfiguration10identifierEv@Base 4:4.7.0~beta1
+ _ZNK21QNetworkConfiguration14bearerTypeNameEv@Base 4:4.7.0~rc1
  _ZNK21QNetworkConfiguration18isRoamingAvailableEv@Base 4:4.7.0~beta1
  _ZNK21QNetworkConfiguration4nameEv@Base 4:4.7.0~beta1
  _ZNK21QNetworkConfiguration4typeEv@Base 4:4.7.0~beta1

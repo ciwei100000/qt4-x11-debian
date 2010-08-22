@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.0~beta2 amd64
+# SymbolsHelper-Confirmed: 4:4.7.0~rc1 amd64
 libQtGui.so.4 libqtgui4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qDrawArrowP8QPainterN2Qt9ArrowTypeENS1_8GUIStyleEbiiiiRK8QPaletteb@Base 4:4.5.3
@@ -178,6 +178,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN10QHideEventD0Ev@Base 4:4.5.3
  _ZN10QHideEventD1Ev@Base 4:4.5.3
  _ZN10QHideEventD2Ev@Base 4:4.5.3
+ _ZN10QImageData14convertInPlaceEN6QImage6FormatE6QFlagsIN2Qt19ImageConversionFlagEE@Base 4:4.7.0~rc1
  _ZN10QImageData6createEPhiiiN6QImage6FormatEb@Base 4:4.6.1
  _ZN10QImageData6createERK5QSizeN6QImage6FormatEi@Base 4:4.6.1
  _ZN10QImageDataC1Ev@Base 4:4.6.1
@@ -679,6 +680,22 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN11QDockWidgetD0Ev@Base 4:4.5.3
  _ZN11QDockWidgetD1Ev@Base 4:4.5.3
  _ZN11QDockWidgetD2Ev@Base 4:4.5.3
+ _ZN11QEglContext11doneCurrentEv@Base 4:4.7.0~rc1
+ _ZN11QEglContext11makeCurrentEPv@Base 4:4.7.0~rc1
+ _ZN11QEglContext11swapBuffersEPv@Base 4:4.7.0~rc1
+ _ZN11QEglContext12chooseConfigERK14QEglPropertiesN4QEgl16PixelFormatMatchE@Base 4:4.7.0~rc1
+ _ZN11QEglContext13createContextEPS_PK14QEglProperties@Base 4:4.7.0~rc1
+ _ZN11QEglContext13createSurfaceEP12QPaintDevicePK14QEglProperties@Base 4:4.7.0~rc1
+ _ZN11QEglContext14currentContextEN4QEgl3APIE@Base 4:4.7.0~rc1
+ _ZN11QEglContext14destroyContextEv@Base 4:4.7.0~rc1
+ _ZN11QEglContext14destroySurfaceEPv@Base 4:4.7.0~rc1
+ _ZN11QEglContext15lazyDoneCurrentEv@Base 4:4.7.0~rc1
+ _ZN11QEglContext17setCurrentContextEN4QEgl3APIEPS_@Base 4:4.7.0~rc1
+ _ZN11QEglContext21swapBuffersRegion2NOKEPvPK7QRegion@Base 4:4.7.0~rc1
+ _ZN11QEglContextC1Ev@Base 4:4.7.0~rc1
+ _ZN11QEglContextC2Ev@Base 4:4.7.0~rc1
+ _ZN11QEglContextD1Ev@Base 4:4.7.0~rc1
+ _ZN11QEglContextD2Ev@Base 4:4.7.0~rc1
  _ZN11QFileDialog10selectFileERK7QString@Base 4:4.5.3
  _ZN11QFileDialog10setFiltersERK11QStringList@Base 4:4.5.3
  _ZN11QFileDialog10setHistoryERK11QStringList@Base 4:4.5.3
@@ -1173,6 +1190,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN11QPanGesture9setOffsetERK7QPointF@Base 4:4.6.1
  _ZN11QPanGestureC1EP7QObject@Base 4:4.6.1
  _ZN11QPanGestureC2EP7QObject@Base 4:4.6.1
+ _ZN11QPixmapData15fromImageReaderEP12QImageReader6QFlagsIN2Qt19ImageConversionFlagEE@Base 4:4.7.0~rc1
  _ZN11QPixmapData15setAlphaChannelERK7QPixmap@Base 4:4.5.3
  _ZN11QPixmapData15setSerialNumberEi@Base 4:4.5.3
  _ZN11QPixmapData4copyEPKS_RK5QRect@Base 4:4.5.3
@@ -3012,6 +3030,18 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN14QDragMoveEventD0Ev@Base 4:4.5.3
  _ZN14QDragMoveEventD1Ev@Base 4:4.5.3
  _ZN14QDragMoveEventD2Ev@Base 4:4.5.3
+ _ZN14QEglProperties11removeValueEi@Base 4:4.7.0~rc1
+ _ZN14QEglProperties13setDeviceTypeEi@Base 4:4.7.0~rc1
+ _ZN14QEglProperties14setPixelFormatEN6QImage6FormatE@Base 4:4.7.0~rc1
+ _ZN14QEglProperties15setVisualFormatEPK8QX11Info@Base 4:4.7.0~rc1
+ _ZN14QEglProperties17setRenderableTypeEN4QEgl3APIE@Base 4:4.7.0~rc1
+ _ZN14QEglProperties19reduceConfigurationEv@Base 4:4.7.0~rc1
+ _ZN14QEglProperties20setPaintDeviceFormatEP12QPaintDevice@Base 4:4.7.0~rc1
+ _ZN14QEglProperties8setValueEii@Base 4:4.7.0~rc1
+ _ZN14QEglPropertiesC1EPv@Base 4:4.7.0~rc1
+ _ZN14QEglPropertiesC1Ev@Base 4:4.7.0~rc1
+ _ZN14QEglPropertiesC2EPv@Base 4:4.7.0~rc1
+ _ZN14QEglPropertiesC2Ev@Base 4:4.7.0~rc1
  _ZN14QFileOpenEventC1ERK4QUrl@Base 4:4.6.1
  _ZN14QFileOpenEventC1ERK7QString@Base 4:4.5.3
  _ZN14QFileOpenEventC2ERK4QUrl@Base 4:4.6.1
@@ -3023,6 +3053,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN14QGraphicsScale11qt_metacastEPKc@Base 4:4.6.1
  _ZN14QGraphicsScale12scaleChangedEv@Base 4:4.6.1
  _ZN14QGraphicsScale13originChangedEv@Base 4:4.6.1
+ _ZN14QGraphicsScale13xScaleChangedEv@Base 4:4.7.0~rc1
+ _ZN14QGraphicsScale13yScaleChangedEv@Base 4:4.7.0~rc1
+ _ZN14QGraphicsScale13zScaleChangedEv@Base 4:4.7.0~rc1
  _ZN14QGraphicsScale16staticMetaObjectE@Base 4:4.6.1
  _ZN14QGraphicsScale9setOriginERK9QVector3D@Base 4:4.6.1
  (subst)_ZN14QGraphicsScale9setXScaleE{qreal}@Base 4:4.6.2
@@ -3625,6 +3658,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN15QGraphicsObjectC1ER20QGraphicsItemPrivateP13QGraphicsItemP14QGraphicsScene@Base 4:4.6.1
  _ZN15QGraphicsObjectC2EP13QGraphicsItem@Base 4:4.6.1
  _ZN15QGraphicsObjectC2ER20QGraphicsItemPrivateP13QGraphicsItemP14QGraphicsScene@Base 4:4.6.1
+ _ZN15QGraphicsSystem16createPixmapDataEP11QPixmapData@Base 4:4.7.0~rc1
  _ZN15QGraphicsSystem23createDefaultPixmapDataEN11QPixmapData9PixelTypeE@Base 4:4.5.3
  _ZN15QGraphicsSystemD0Ev@Base 4:4.5.3
  _ZN15QGraphicsSystemD1Ev@Base 4:4.5.3
@@ -4462,12 +4496,16 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN17QPixmapBlurFilterD0Ev@Base 4:4.6.1
  _ZN17QPixmapBlurFilterD1Ev@Base 4:4.6.1
  _ZN17QPixmapBlurFilterD2Ev@Base 4:4.6.1
+ _ZN17QRasterPixmapData15fromImageReaderEP12QImageReader6QFlagsIN2Qt19ImageConversionFlagEE@Base 4:4.7.0~rc1
  _ZN17QRasterPixmapData15setAlphaChannelERK7QPixmap@Base 4:4.5.3
+ _ZN17QRasterPixmapData20createPixmapForImageER6QImage6QFlagsIN2Qt19ImageConversionFlagEEb@Base 4:4.7.0~rc1
+ _ZN17QRasterPixmapData4copyEPK11QPixmapDataRK5QRect@Base 4:4.7.0~rc1
  _ZN17QRasterPixmapData4fillERK6QColor@Base 4:4.5.3
  _ZN17QRasterPixmapData6bufferEv@Base 4:4.5.3
  _ZN17QRasterPixmapData6resizeEii@Base 4:4.5.3
  _ZN17QRasterPixmapData6scrollEiiRK5QRect@Base 4:4.6.1
  _ZN17QRasterPixmapData7setMaskERK7QBitmap@Base 4:4.5.3
+ _ZN17QRasterPixmapData8fromDataEPKhjPKc6QFlagsIN2Qt19ImageConversionFlagEE@Base 4:4.7.0~rc1
  _ZN17QRasterPixmapData9fromImageERK6QImage6QFlagsIN2Qt19ImageConversionFlagEE@Base 4:4.5.3
  _ZN17QRasterPixmapDataC1EN11QPixmapData9PixelTypeE@Base 4:4.5.3
  _ZN17QRasterPixmapDataC2EN11QPixmapData9PixelTypeE@Base 4:4.5.3
@@ -4567,6 +4605,22 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN18QItemEditorFactoryD0Ev@Base 4:4.5.3
  _ZN18QItemEditorFactoryD1Ev@Base 4:4.5.3
  _ZN18QItemEditorFactoryD2Ev@Base 4:4.5.3
+ _ZN18QRuntimePixmapData12readBackInfoEv@Base 4:4.7.0~rc1
+ _ZN18QRuntimePixmapData15setAlphaChannelERK7QPixmap@Base 4:4.7.0~rc1
+ _ZN18QRuntimePixmapData4copyEPK11QPixmapDataRK5QRect@Base 4:4.7.0~rc1
+ _ZN18QRuntimePixmapData4fillERK6QColor@Base 4:4.7.0~rc1
+ _ZN18QRuntimePixmapData6bufferEv@Base 4:4.7.0~rc1
+ _ZN18QRuntimePixmapData6resizeEii@Base 4:4.7.0~rc1
+ _ZN18QRuntimePixmapData6scrollEiiRK5QRect@Base 4:4.7.0~rc1
+ _ZN18QRuntimePixmapData7setMaskERK7QBitmap@Base 4:4.7.0~rc1
+ _ZN18QRuntimePixmapData8fromDataEPKhjPKc6QFlagsIN2Qt19ImageConversionFlagEE@Base 4:4.7.0~rc1
+ _ZN18QRuntimePixmapData8fromFileERK7QStringPKc6QFlagsIN2Qt19ImageConversionFlagEE@Base 4:4.7.0~rc1
+ _ZN18QRuntimePixmapData9fromImageERK6QImage6QFlagsIN2Qt19ImageConversionFlagEE@Base 4:4.7.0~rc1
+ _ZN18QRuntimePixmapDataC1EPK22QRuntimeGraphicsSystemN11QPixmapData9PixelTypeE@Base 4:4.7.0~rc1
+ _ZN18QRuntimePixmapDataC2EPK22QRuntimeGraphicsSystemN11QPixmapData9PixelTypeE@Base 4:4.7.0~rc1
+ _ZN18QRuntimePixmapDataD0Ev@Base 4:4.7.0~rc1
+ _ZN18QRuntimePixmapDataD1Ev@Base 4:4.7.0~rc1
+ _ZN18QRuntimePixmapDataD2Ev@Base 4:4.7.0~rc1
  _ZN18QStandardItemModel10insertRowsEiiRK11QModelIndex@Base 4:4.5.3
  _ZN18QStandardItemModel10removeRowsEiiRK11QModelIndex@Base 4:4.5.3
  _ZN18QStandardItemModel10takeColumnEi@Base 4:4.5.3
@@ -5137,6 +5191,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN20QGraphicsItemPrivate18updateAncestorFlagEN13QGraphicsItem16GraphicsItemFlagENS_12AncestorFlagEbb@Base 4:4.6.1
  _ZN20QGraphicsItemPrivate19setParentItemHelperEP13QGraphicsItemPK8QVariantS4_@Base 4:4.6.2
  _ZN20QGraphicsItemPrivate19updateAncestorFlagsEv@Base 4:4.6.2
+ _ZN20QGraphicsItemPrivate20focusScopeItemChangeEb@Base 4:4.7.0~rc1
  _ZN20QGraphicsItemPrivate20removeExtraItemCacheEv@Base 4:4.6.1
  _ZN20QGraphicsItemPrivate23appendGraphicsTransformEP18QGraphicsTransform@Base 4:4.6.1
  _ZN20QGraphicsItemPrivate24prependGraphicsTransformEP18QGraphicsTransform@Base 4:4.7.0~beta1
@@ -5935,6 +5990,21 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN4QCss6ParserC1Ev@Base 4:4.5.3
  _ZN4QCss6ParserC2ERK7QStringb@Base 4:4.5.3
  _ZN4QCss6ParserC2Ev@Base 4:4.5.3
+ _ZN4QEgl10extensionsEv@Base 4:4.7.0~rc1
+ _ZN4QEgl11errorStringEi@Base 4:4.7.0~rc1
+ _ZN4QEgl12chooseConfigEPK14QEglPropertiesNS_16PixelFormatMatchE@Base 4:4.7.0~rc1
+ _ZN4QEgl12hasExtensionEPKc@Base 4:4.7.0~rc1
+ _ZN4QEgl12nativePixmapEP7QPixmap@Base 4:4.7.0~rc1
+ _ZN4QEgl12nativeWindowEP7QWidget@Base 4:4.7.0~rc1
+ _ZN4QEgl13createSurfaceEP12QPaintDevicePvPK14QEglProperties@Base 4:4.7.0~rc1
+ _ZN4QEgl13defaultConfigEiNS_3APIE6QFlagsINS_12ConfigOptionEE@Base 4:4.7.0~rc1
+ _ZN4QEgl13nativeDisplayEv@Base 4:4.7.0~rc1
+ _ZN4QEgl14dumpAllConfigsEv@Base 4:4.7.0~rc1
+ _ZN4QEgl17eglCreateImageKHREPvS0_jS0_PKi@Base 4:4.7.0~rc1
+ _ZN4QEgl18eglDestroyImageKHREPvS0_@Base 4:4.7.0~rc1
+ _ZN4QEgl21getCompatibleVisualIdEPv@Base 4:4.7.0~rc1
+ _ZN4QEgl24eglSwapBuffersRegion2NOKEPvS0_iPKi@Base 4:4.7.0~rc1
+ _ZN4QEgl7displayEv@Base 4:4.7.0~rc1
  _ZN4QPen10isDetachedEv@Base 4:4.5.3
  _ZN4QPen11setCapStyleEN2Qt11PenCapStyleE@Base 4:4.5.3
  _ZN4QPen11setCosmeticEb@Base 4:4.5.3
@@ -6614,6 +6684,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN7QPixmap12x11SetScreenEi@Base 4:4.5.3
  _ZN7QPixmap13fromX11PixmapEmNS_9ShareModeE@Base 4:4.5.3
  _ZN7QPixmap13resize_helperERK5QSize@Base 4:4.5.3
+ _ZN7QPixmap15fromImageReaderEP12QImageReader6QFlagsIN2Qt19ImageConversionFlagEE@Base 4:4.7.0~rc1
  _ZN7QPixmap15setAlphaChannelERKS_@Base 4:4.5.3
  _ZN7QPixmap16convertFromImageERK6QImage6QFlagsIN2Qt19ImageConversionFlagEE@Base 4:4.7.0~beta1
  _ZN7QPixmap16convertFromImageERK6QImageNS_9ColorModeE@Base 4:4.5.3
@@ -8342,6 +8413,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK11QDockWidget16toggleViewActionEv@Base 4:4.5.3
  _ZNK11QDockWidget6widgetEv@Base 4:4.5.3
  _ZNK11QDockWidget8featuresEv@Base 4:4.5.3
+ _ZNK11QEglContext12configAttribEi@Base 4:4.7.0~rc1
+ _ZNK11QEglContext7isValidEv@Base 4:4.7.0~rc1
+ _ZNK11QEglContext9isCurrentEv@Base 4:4.7.0~rc1
  _ZNK11QFileDialog10acceptModeEv@Base 4:4.5.3
  _ZNK11QFileDialog10isReadOnlyEv@Base 4:4.5.3
  _ZNK11QFileDialog10metaObjectEv@Base 4:4.5.3
@@ -8561,6 +8635,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK11QPixmapData12alphaChannelEv@Base 4:4.5.3
  _ZNK11QPixmapData26createCompatiblePixmapDataEv@Base 4:4.6.1
  _ZNK11QPixmapData4maskEv@Base 4:4.5.3
+ _ZNK11QPixmapData7toImageERK5QRect@Base 4:4.7.0~rc1
  _ZNK11QProxyModel10headerDataEiN2Qt11OrientationEi@Base 4:4.5.3
  _ZNK11QProxyModel10metaObjectEv@Base 4:4.5.3
  _ZNK11QProxyModel11columnCountERK11QModelIndex@Base 4:4.5.3
@@ -9564,6 +9639,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK14QDoubleSpinBox8decimalsEv@Base 4:4.5.3
  _ZNK14QDoubleSpinBox8validateER7QStringRi@Base 4:4.5.3
  _ZNK14QDoubleSpinBox9cleanTextEv@Base 4:4.5.3
+ _ZNK14QEglProperties5valueEi@Base 4:4.7.0~rc1
+ _ZNK14QEglProperties8toStringEv@Base 4:4.7.0~rc1
  _ZNK14QFileOpenEvent3urlEv@Base 4:4.6.1
  _ZNK14QGraphicsScale10metaObjectEv@Base 4:4.6.1
  _ZNK14QGraphicsScale6originEv@Base 4:4.6.1
@@ -9701,9 +9778,13 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK14QX11PixmapData12alphaChannelEv@Base 4:4.5.3
  _ZNK14QX11PixmapData14mask_to_bitmapEi@Base 4:4.5.3
  _ZNK14QX11PixmapData15hasAlphaChannelEv@Base 4:4.5.3
+ _ZNK14QX11PixmapData20takeQImageFromXImageERK14QXImageWrapper@Base 4:4.7.0~rc1
+ _ZNK14QX11PixmapData23canTakeQImageFromXImageERK14QXImageWrapper@Base 4:4.7.0~rc1
  _ZNK14QX11PixmapData26createCompatiblePixmapDataEv@Base 4:4.6.1
  _ZNK14QX11PixmapData4maskEv@Base 4:4.5.3
  _ZNK14QX11PixmapData6metricEN12QPaintDevice17PaintDeviceMetricE@Base 4:4.5.3
+ _ZNK14QX11PixmapData7toImageERK14QXImageWrapperRK5QRect@Base 4:4.7.0~rc1
+ _ZNK14QX11PixmapData7toImageERK5QRect@Base 4:4.7.0~rc1
  _ZNK14QX11PixmapData7toImageEv@Base 4:4.5.3
  _ZNK15QAbstractButton10autoRepeatEv@Base 4:4.5.3
  _ZNK15QAbstractButton10metaObjectEv@Base 4:4.5.3
@@ -10143,6 +10224,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK17QRasterPixmapData15hasAlphaChannelEv@Base 4:4.5.3
  _ZNK17QRasterPixmapData26createCompatiblePixmapDataEv@Base 4:4.6.1
  _ZNK17QRasterPixmapData6metricEN12QPaintDevice17PaintDeviceMetricE@Base 4:4.5.3
+ _ZNK17QRasterPixmapData7toImageERK5QRect@Base 4:4.7.0~rc1
  _ZNK17QRasterPixmapData7toImageEv@Base 4:4.5.3
  _ZNK17QTextInlineObject11formatIndexEv@Base 4:4.5.3
  _ZNK17QTextInlineObject12textPositionEv@Base 4:4.5.3
@@ -10166,6 +10248,16 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK18QGuiPlatformPlugin10metaObjectEv@Base 4:4.6.1
  _ZNK18QItemEditorFactory12createEditorEN8QVariant4TypeEP7QWidget@Base 4:4.5.3
  _ZNK18QItemEditorFactory17valuePropertyNameEN8QVariant4TypeE@Base 4:4.5.3
+ _ZNK18QRuntimePixmapData11memoryUsageEv@Base 4:4.7.0~rc1
+ _ZNK18QRuntimePixmapData11paintEngineEv@Base 4:4.7.0~rc1
+ _ZNK18QRuntimePixmapData11runtimeDataEv@Base 4:4.7.0~rc1
+ _ZNK18QRuntimePixmapData11transformedERK10QTransformN2Qt18TransformationModeE@Base 4:4.7.0~rc1
+ _ZNK18QRuntimePixmapData12alphaChannelEv@Base 4:4.7.0~rc1
+ _ZNK18QRuntimePixmapData15hasAlphaChannelEv@Base 4:4.7.0~rc1
+ _ZNK18QRuntimePixmapData26createCompatiblePixmapDataEv@Base 4:4.7.0~rc1
+ _ZNK18QRuntimePixmapData4maskEv@Base 4:4.7.0~rc1
+ _ZNK18QRuntimePixmapData6metricEN12QPaintDevice17PaintDeviceMetricE@Base 4:4.7.0~rc1
+ _ZNK18QRuntimePixmapData7toImageEv@Base 4:4.7.0~rc1
  _ZNK18QStandardItemModel10headerDataEiN2Qt11OrientationEi@Base 4:4.5.3
  _ZNK18QStandardItemModel10metaObjectEv@Base 4:4.5.3
  _ZNK18QStandardItemModel11columnCountERK11QModelIndex@Base 4:4.5.3
@@ -11932,6 +12024,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTI18QGraphicsTransform@Base 4:4.6.1
  _ZTI18QGuiPlatformPlugin@Base 4:4.6.1
  _ZTI18QItemEditorFactory@Base 4:4.5.3
+ _ZTI18QRuntimePixmapData@Base 4:4.7.0~rc1
  _ZTI18QStandardItemModel@Base 4:4.5.3
  _ZTI18QSyntaxHighlighter@Base 4:4.5.3
  _ZTI18QTapAndHoldGesture@Base 4:4.6.1
@@ -12257,6 +12350,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTS18QGraphicsTransform@Base 4:4.6.1
  _ZTS18QGuiPlatformPlugin@Base 4:4.6.1
  _ZTS18QItemEditorFactory@Base 4:4.5.3
+ _ZTS18QRuntimePixmapData@Base 4:4.7.0~rc1
  _ZTS18QStandardItemModel@Base 4:4.5.3
  _ZTS18QSyntaxHighlighter@Base 4:4.5.3
  _ZTS18QTapAndHoldGesture@Base 4:4.6.1
@@ -12580,6 +12674,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV18QGraphicsTransform@Base 4:4.6.1
  _ZTV18QGuiPlatformPlugin@Base 4:4.6.1
  _ZTV18QItemEditorFactory@Base 4:4.5.3
+ _ZTV18QRuntimePixmapData@Base 4:4.7.0~rc1
  _ZTV18QStandardItemModel@Base 4:4.5.3
  _ZTV18QSyntaxHighlighter@Base 4:4.5.3
  _ZTV18QTapAndHoldGesture@Base 4:4.6.1

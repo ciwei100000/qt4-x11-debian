@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.0~beta2 amd64
+# SymbolsHelper-Confirmed: 4:4.7.0~rc1 amd64
 libQtCLucene.so.4 libqtcore4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN12QCLuceneHits2idEi@Base 4:4.5.3
@@ -1665,6 +1665,8 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN16QEventTransitionD1Ev@Base 4:4.6.1
  _ZN16QEventTransitionD2Ev@Base 4:4.6.1
  _ZN16QIODevicePrivate13putCharHelperEc@Base 4:4.5.3
+ _ZN16QIODevicePrivate4peekEPcx@Base 4:4.7.0~rc1
+ _ZN16QIODevicePrivate4peekEx@Base 4:4.7.0~rc1
  _ZN16QIODevicePrivateC1Ev@Base 4:4.5.3
  _ZN16QIODevicePrivateC2Ev@Base 4:4.5.3
  _ZN16QIODevicePrivateD0Ev@Base 4:4.5.3

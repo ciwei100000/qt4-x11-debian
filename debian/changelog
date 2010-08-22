@@ -7,6 +7,7 @@ qt4-x11 (4:4.7.0~rc1-1) UNRELEASED; urgency=low
     - add libqt4-openvg package.
   * Refresh patches.
   * Update installed files.
+  * Update symbols files.
 
  -- Fathi Boudra <fabo@debian.org>  Sun, 22 Aug 2010 12:18:20 +0300
 
