@@ -253,8 +253,8 @@ qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/plugins/com/no
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/plugins/com/nokia/TimeExample/minute.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/positioners/add.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/positioners/del.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/text/edit/pics/endHandle.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/text/edit/pics/startHandle.png
+qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/text/textselection/pics/endHandle.png
+qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/text/textselection/pics/startHandle.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/toys/clocks/content/background.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/toys/clocks/content/center.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/toys/clocks/content/clock-night.png
@@ -284,7 +284,7 @@ qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/flipable/content/back.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/progressbar/content/background.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/scrollbar/pics/niagara_falls.jpg
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/searchbox/images/edit-clear-locationbar-rtl.png
+qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/searchbox/images/clear.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/searchbox/images/lineedit-bg-focus.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/searchbox/images/lineedit-bg.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/spinner/content/spinner-bg.png
