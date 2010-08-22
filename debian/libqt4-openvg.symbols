@@ -208,7 +208,6 @@ libQtOpenVG.so.4 libqt4-openvg #MINVER#
  _ZTV25QVGEGLWindowSurfaceDirect@Base 4:4.7.0~rc1
  _ZTV26QVGEGLWindowSurfacePrivate@Base 4:4.7.0~rc1
  _ZTV26QVGEGLWindowSurfaceVGImage@Base 4:4.7.0~rc1
- _ZThn16_N16QVGWindowSurfaceD0Ev@Base 4:4.7.0~rc1
- _ZThn16_N16QVGWindowSurfaceD1Ev@Base 4:4.7.0~rc1
- _ZThn16_NK16QVGWindowSurface11paintEngineEv@Base 4:4.7.0~rc1
- _ZThn16_NK16QVGWindowSurface6metricEN12QPaintDevice17PaintDeviceMetricE@Base 4:4.7.0~rc1
+ (c++)"non-virtual thunk to QVGWindowSurface::metric(QPaintDevice::PaintDeviceMetric) const@Base" 4:4.7.0~rc1
+ (c++)"non-virtual thunk to QVGWindowSurface::paintEngine() const@Base" 4:4.7.0~rc1
+ (c++)"non-virtual thunk to QVGWindowSurface::~QVGWindowSurface()@Base" 4:4.7.0~rc1
