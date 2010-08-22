@@ -304,6 +304,16 @@ Description: Qt 4 help module
  The QtHelp module provides classes for integrating online documentation in
  applications.
 
+Package: libqt4-assistant
+Architecture: any
+Depends: ${misc:Depends}, libqtassistantclient4 (>= 4.6.3)
+Description: transitional package for Qt 4 assistant module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This is a dummy transitional package to enable installation of other packages
+ linked against Qt 4 assistant module previously shipped from Qt source.
+
 Package: libqt4-test
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
@@ -434,6 +444,18 @@ Description: Qt 4 library debugging symbols
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains the debugging symbols for the Qt 4 libraries.
+
+Package: libqt4-webkit-dbg
+Priority: extra
+Architecture: any
+Section: debug
+Depends: ${misc:Depends}, libqtwebkit4-dbg (>= 2.0~)
+Description: transitional package for Qt 4 WebKit debugging symbols
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This is a dummy transitional package and can be safely removed after
+ libqtwebkit4-dbg is installed.
 
 Package: libqt4-xmlpatterns-dbg
 Priority: extra

@@ -5,6 +5,7 @@ qt4-x11 (4:4.7.0~rc1-1) UNRELEASED; urgency=low
     - bump Standards-Version to 3.9.1 (no changes needed).
     - add libopenvg1-mesa-dev build dependency.
     - add libqt4-openvg package.
+    - add libqt4-assistant and libqt4-webkit-dbg dummy transitional packages.
   * Update debian/rules:
     - add -openvg configure option.
   * Refresh patches.
