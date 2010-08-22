@@ -7,7 +7,7 @@ Author: Fathi Boudra <fathi.boudra@nokia.com>
 
 --- a/configure
 +++ b/configure
-@@ -7648,6 +7648,9 @@ QT_LIBINFIX = $QT_LIBINFIX
+@@ -7719,6 +7719,9 @@ QT_LIBINFIX = $QT_LIBINFIX
  QT_NAMESPACE = $QT_NAMESPACE
  QT_NAMESPACE_MAC_CRC = $QT_NAMESPACE_MAC_CRC
  
