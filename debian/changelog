@@ -1,6 +1,8 @@
-qt4-x11 (4:4.7.0~rc1-1) UNRELEASED; urgency=low
+qt4-x11 (4:4.7.0~rc1-1) experimental; urgency=low
 
   * New upstream release.
+  * Remove 0001_add_webkit_qt_config.patch in favor of
+    0001_webkit_self_injection_into_qt_configuration.patch.
   * Update debian/control:
     - bump Standards-Version to 3.9.1 (no changes needed).
     - add libopenvg1-mesa-dev build dependency.
@@ -12,7 +14,7 @@ qt4-x11 (4:4.7.0~rc1-1) UNRELEASED; urgency=low
   * Update installed files.
   * Update symbols files.
 
- -- Fathi Boudra <fabo@debian.org>  Sun, 22 Aug 2010 12:18:20 +0300
+ -- Fathi Boudra <fabo@debian.org>  Thu, 26 Aug 2010 19:54:00 +0300
 
 qt4-x11 (4:4.7.0~beta2-3) experimental; urgency=low
 

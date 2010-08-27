@@ -1,5 +1,5 @@
 # upstream patches
-0001_add_webkit_qt_config.patch
+0001_webkit_self_injection_into_qt_configuration.patch
 
 # qt-copy patches
 0180-window-role.diff
