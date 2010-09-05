@@ -9,7 +9,8 @@ Build-Depends: debhelper (>= 7.4.13), quilt, pkg-kde-tools (>= 0.6.4), flex, sha
  libaudio-dev, libcups2-dev, libdbus-1-dev, libfreetype6-dev,
  libgl1-mesa-dev | libgl-dev, libglib2.0-dev, libglu1-mesa-dev | libglu-dev,
  libgstreamer0.10-dev, libgstreamer-plugins-base0.10-dev, libgtk2.0-dev,
- libice-dev, unixodbc-dev, libjpeg-dev, libmng-dev, libmysqlclient-dev, libopenvg1-mesa-dev,
+ libice-dev, unixodbc-dev, libjpeg-dev, libmng-dev, libmysqlclient-dev,
+# libopenvg1-mesa-dev,
  libpam0g-dev, libpng12-dev, libpq-dev, libreadline-dev, libsm-dev,
  libsqlite0-dev, libsqlite3-dev, libtiff4-dev, libx11-dev, libxcursor-dev,
  libxext-dev, libxft-dev, libxi-dev, libxinerama-dev, libxmu-dev,
@@ -343,17 +344,17 @@ Description: Qt 4 Phonon module
  is built from the phonon source package. Therefore it's only useful when
  bootstraping new architectures or rebuilding the whole archive from scratch.
 
-Package: libqt4-openvg
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Qt 4 OpenVG module
- Qt is a cross-platform C++ application framework. Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- The QtOpenVG module is a plugin that provides support for OpenVG painting.
- .
- OpenVG is a standard API from the Khronos Group for accelerated 2D vector
- graphics that is appearing in an increasing number of embedded devices.
+#Package: libqt4-openvg
+#Architecture: any
+#Depends: ${shlibs:Depends}, ${misc:Depends}
+#Description: Qt 4 OpenVG module
+# Qt is a cross-platform C++ application framework. Qt's primary feature
+# is its rich set of widgets that provide standard GUI functionality.
+# .
+# The QtOpenVG module is a plugin that provides support for OpenVG painting.
+# .
+# OpenVG is a standard API from the Khronos Group for accelerated 2D vector
+# graphics that is appearing in an increasing number of embedded devices.
 
 Package: libqt4-declarative
 Architecture: any
@@ -397,8 +398,9 @@ Architecture: any
 Section: libdevel
 Depends: ${shlibs:Depends}, ${misc:Depends}, libqtcore4 (= ${binary:Version}),
  libqt4-network (= ${binary:Version}), libqt4-dbus (= ${binary:Version}),
- libqtgui4 (= ${binary:Version}), libqt4-svg (= ${binary:Version}),
- libqt4-xml (= ${binary:Version}),
+ libqtgui4 (= ${binary:Version}),
+# libqt4-openvg (= ${binary:Version}),
+ libqt4-svg (= ${binary:Version}), libqt4-xml (= ${binary:Version}),
  libqt4-sql (= ${binary:Version}), libqt4-script (= ${binary:Version}),
  libqt4-scripttools (= ${binary:Version}), libqt4-xmlpatterns (= ${binary:Version}),
  libqt4-qt3support (= ${binary:Version}), libqt4-designer (= ${binary:Version}),

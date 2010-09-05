@@ -119,7 +119,7 @@ endif
 	            -verbose \
 	            -gtkstyle \
 	            -system-nas-sound \
-	            -openvg \
+	            -no-openvg \
 	            -lfontconfig \
 	            -I/usr/include/freetype2 \
 	            -qvfb \

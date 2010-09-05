@@ -14,7 +14,7 @@ usr/include/qt4/Qt/QtDeclarative
 usr/include/qt4/Qt/QtGui
 usr/include/qt4/Qt/QtHelp
 usr/include/qt4/Qt/QtNetwork
-usr/include/qt4/Qt/QtOpenVG
+#usr/include/qt4/Qt/QtOpenVG
 usr/include/qt4/Qt/QtScript
 usr/include/qt4/Qt/QtScriptTools
 usr/include/qt4/Qt/QtSql
@@ -701,7 +701,7 @@ usr/include/qt4/Qt/qvector2d.h
 usr/include/qt4/Qt/qvector3d.h
 usr/include/qt4/Qt/qvector4d.h
 usr/include/qt4/Qt/qvfbhdr.h
-usr/include/qt4/Qt/qvg.h
+#usr/include/qt4/Qt/qvg.h
 usr/include/qt4/Qt/qwaitcondition.h
 usr/include/qt4/Qt/qwhatsthis.h
 usr/include/qt4/Qt/qwidget.h
@@ -2522,8 +2522,8 @@ usr/include/qt4/QtNetwork/qtcpserver.h
 usr/include/qt4/QtNetwork/qtcpsocket.h
 usr/include/qt4/QtNetwork/qudpsocket.h
 usr/include/qt4/QtNetwork/qurlinfo.h
-usr/include/qt4/QtOpenVG/QtOpenVG
-usr/include/qt4/QtOpenVG/qvg.h
+#usr/include/qt4/QtOpenVG/QtOpenVG
+#usr/include/qt4/QtOpenVG/qvg.h
 usr/include/qt4/QtScript/QScriptClass
 usr/include/qt4/QtScript/QScriptClassPropertyIterator
 usr/include/qt4/QtScript/QScriptContext
@@ -2777,8 +2777,8 @@ usr/lib/libQtHelp.prl
 usr/lib/libQtHelp.so
 usr/lib/libQtNetwork.prl
 usr/lib/libQtNetwork.so
-usr/lib/libQtOpenVG.prl
-usr/lib/libQtOpenVG.so
+#usr/lib/libQtOpenVG.prl
+#usr/lib/libQtOpenVG.so
 usr/lib/libQtScript.prl
 usr/lib/libQtScript.so
 usr/lib/libQtScriptTools.prl
@@ -2805,7 +2805,7 @@ usr/lib/pkgconfig/QtDesignerComponents.pc
 usr/lib/pkgconfig/QtGui.pc
 usr/lib/pkgconfig/QtHelp.pc
 usr/lib/pkgconfig/QtNetwork.pc
-usr/lib/pkgconfig/QtOpenVG.pc
+#usr/lib/pkgconfig/QtOpenVG.pc
 usr/lib/pkgconfig/QtScript.pc
 usr/lib/pkgconfig/QtScriptTools.pc
 usr/lib/pkgconfig/QtSql.pc
