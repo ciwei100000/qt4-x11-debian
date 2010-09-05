@@ -3,6 +3,14 @@ qt4-x11 (4:4.7.0~rc1-1) experimental; urgency=low
   * New upstream release.
   * Remove 0001_add_webkit_qt_config.patch in favor of
     0001_webkit_self_injection_into_qt_configuration.patch.
+  * Add patches:
+    - 0002_fix_qstatictext_with_opengl1_engine.patch
+      OpenGL1 paint engine transforms text coordinates itself and
+      does not require QStaticText to use device coordinates.
+    - 0003_add_three_new_style-hints_to_qfont.patch
+      Add three new style-hints to QFont to match CSS generic font families.
+    - 0004_fix_qstatictext_copy_constructor.patch
+      Fix QStaticText copy constructor to also copy text option property.
   * Update debian/control:
     - bump Standards-Version to 3.9.1 (no changes needed).
     - add libqt4-assistant and libqt4-webkit-dbg dummy transitional packages.

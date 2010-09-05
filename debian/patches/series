@@ -1,5 +1,8 @@
 # upstream patches
 0001_webkit_self_injection_into_qt_configuration.patch
+0002_fix_qstatictext_with_opengl1_engine.patch
+0003_add_three_new_style-hints_to_qfont.patch
+0004_fix_qstatictext_copy_constructor.patch
 
 # qt-copy patches
 0180-window-role.diff
