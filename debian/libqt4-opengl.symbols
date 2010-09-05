@@ -6,7 +6,6 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _Z19qt_qgl_paint_enginev@Base 4:4.6.1
  _Z22qt_gl_transfer_contextPK10QGLContext@Base 4:4.6.2
  _Z22qt_set_gl_library_nameRK7QString@Base 4:4.5.3
- _Z33qt_resolve_eglimage_gl_extensionsP10QGLContext@Base 4:4.7.0~rc1
  _Z6qDebugv@Base 4:4.5.3
  _Z8qWarningv@Base 4:4.6.1
  _ZN10QByteArrayD1Ev@Base 4:4.5.3
@@ -21,6 +20,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN10QGLContext11drawTextureERK6QRectFjj@Base 4:4.5.3
  _ZN10QGLContext11drawTextureERK7QPointFjj@Base 4:4.5.3
  _ZN10QGLContext11makeCurrentEv@Base 4:4.5.3
+ _ZN10QGLContext12chooseVisualEv@Base 4:4.7.0~rc1
  _ZN10QGLContext13chooseContextEPKS_@Base 4:4.5.3
  _ZN10QGLContext13deleteTextureEj@Base 4:4.5.3
  _ZN10QGLContext14currentContextEv@Base 4:4.5.3
@@ -34,6 +34,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN10QGLContext8setValidEb@Base 4:4.5.3
  _ZN10QGLContext9setDeviceEP12QPaintDevice@Base 4:4.5.3
  _ZN10QGLContext9setFormatERK9QGLFormat@Base 4:4.5.3
+ _ZN10QGLContext9tryVisualERK9QGLFormati@Base 4:4.7.0~rc1
  _ZN10QGLContextC1ERK9QGLFormat@Base 4:4.5.3
  _ZN10QGLContextC1ERK9QGLFormatP12QPaintDevice@Base 4:4.5.3
  _ZN10QGLContextC2ERK9QGLFormat@Base 4:4.5.3
