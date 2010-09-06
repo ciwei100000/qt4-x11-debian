@@ -1,4 +1,4 @@
-qt4-x11 (4:4.6.3-2) UNRELEASED; urgency=low
+qt4-x11 (4:4.6.3-2) unstable; urgency=low
 
   [ Fathi Boudra ]
   * Add upstream patch:
@@ -8,16 +8,19 @@ qt4-x11 (4:4.6.3-2) UNRELEASED; urgency=low
       directory names are now ignored, and that files without an extension are
       always considered headers (e.g., STL headers and Qt forwarding headers).
       (Closes: #586166)
+    - 0007_qsslsocket_improve_error_handling_CVE-2010-2621.patch
+      Improve error handling in QSslSocket. (Closes: #587711)
   * Fix qdbus manpage install. It is misplaced. (Closes: #588985)
 
   [ Modestas Vainius ]
   * Fix debian/control Vcs fields to point to the new location.
 
   [ Sune Vuorela ]
-  * Steal patch from upstream to make webkit not crash when loading adobe
-    flash plugin. This is related to a change in flashplugin.
+  * Steal 0006_webkit_propriotary_flash_init_gtk_first patch from upstream
+    to make webkit not crash when loading adobe flash plugin.
+    This is related to a change in flashplugin.
 
- -- Fathi Boudra <fabo@debian.org>  Thu, 17 Jun 2010 09:03:32 +0300
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 06 Sep 2010 09:03:32 +0300
 
 qt4-x11 (4:4.6.3-1) unstable; urgency=low
 
