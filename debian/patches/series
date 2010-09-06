@@ -1,6 +1,7 @@
 # upstream patches
 0004_problem_displaying_half_width_character.diff
 0005_fix_detection_of_headers_files.diff
+0006_webkit_propriotary_flash_init_gtk_first.diff
 
 # qt-copy patches
 0180-window-role.diff
