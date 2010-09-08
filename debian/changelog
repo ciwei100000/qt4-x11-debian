@@ -1,3 +1,13 @@
+qt4-x11 (4:4.7.0-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+  * Remove patches:
+    - 0002_fix_qstatictext_with_opengl1_engine.patch - stolen upstream
+    - 0003_add_three_new_style-hints_to_qfont.patch - stolen upstream
+    - 0004_fix_qstatictext_copy_constructor.patch - stolen upstream
+
+ -- Fathi Boudra <fabo@debian.org>  Wed, 08 Sep 2010 14:10:23 +0300
+
 qt4-x11 (4:4.7.0~rc1-1) experimental; urgency=low
 
   * New upstream release.
