@@ -1,9 +1,10 @@
-author: Marc Dequènes <duck@duckcorp.org>
-debian bug: 485931 530308
-qt bug: QTBUG-6960
-
-fix a POSIX incompatibility (as programs should not rely on having PATH_MAX
-defined on all systems) and causes FTBFS on Hurd.
+Author: Marc Dequènes <duck@duckcorp.org>
+Bug-Debian: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=485931
+Bug-Debian: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=530308
+Bug: http://bugreports.qt.nokia.com/browse/QTBUG-6960
+Description: PATH_MAX fix
+ Fix a POSIX incompatibility (as programs should not rely on having PATH_MAX
+ defined on all systems) and causes FTBFS on Hurd.
 
 --- a/src/3rdparty/clucene/src/CLucene/config/compiler.h
 +++ b/src/3rdparty/clucene/src/CLucene/config/compiler.h
