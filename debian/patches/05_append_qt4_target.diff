@@ -57,7 +57,7 @@ author: Fathi Boudra <fabo@debian.org>
      if [ "$VERBOSE" = "yes" ]; then
 --- a/configure
 +++ b/configure
-@@ -4474,7 +4474,7 @@ END {
+@@ -4582,7 +4582,7 @@ END {
  }
  
  # build qmake
@@ -66,7 +66,7 @@ author: Fathi Boudra <fabo@debian.org>
      echo "Creating qmake. Please wait..."
  
      OLD_QCONFIG_H=
-@@ -7759,8 +7759,8 @@ QMAKE_ABSOLUTE_SOURCE_ROOT = \$\$QT_SOUR
+@@ -8000,8 +8000,8 @@ QMAKE_ABSOLUTE_SOURCE_ROOT = \$\$QT_SOUR
  QMAKE_MOC_SRC    = \$\$QT_BUILD_TREE/src/moc
  
  #local paths that cannot be queried from the QT_INSTALL_* properties while building QTDIR
@@ -77,7 +77,7 @@ author: Fathi Boudra <fabo@debian.org>
  QMAKE_UIC3       = \$\$QT_BUILD_TREE/bin/uic3
  QMAKE_RCC        = \$\$QT_BUILD_TREE/bin/rcc
  QMAKE_QDBUSXML2CPP = \$\$QT_BUILD_TREE/bin/qdbusxml2cpp
-@@ -8150,11 +8150,11 @@ EXEC=""
+@@ -8397,11 +8397,11 @@ EXEC=""
  #-------------------------------------------------------------------------------
  
  echo "Finding project files. Please wait..."
@@ -91,7 +91,7 @@ author: Fathi Boudra <fabo@debian.org>
  fi
  
  # .projects      -> projects to process
-@@ -8331,7 +8331,7 @@ for file in .projects .projects.3; do
+@@ -8580,7 +8580,7 @@ for file in .projects .projects.3; do
          QMAKE_SPEC_ARGS="-spec $SPEC"
          echo $ECHO_N "  for $a$ECHO_C"
  
@@ -174,7 +174,7 @@ author: Fathi Boudra <fabo@debian.org>
 --- a/tools/assistant/tools/assistant/assistant.pro
 +++ b/tools/assistant/tools/assistant/assistant.pro
 @@ -1,7 +1,7 @@
- include($$QT_SOURCE_TREE/tools/shared/fontpanel/fontpanel.pri)
+ include(../../../shared/fontpanel/fontpanel.pri)
  TEMPLATE = app
  LANGUAGE = C++
 -TARGET = assistant
@@ -191,8 +191,8 @@ author: Fathi Boudra <fabo@debian.org>
 -TARGET = designer
 +TARGET = designer-qt4
  
- include($$QT_SOURCE_TREE/tools/shared/fontpanel/fontpanel.pri)
- include($$QT_SOURCE_TREE/tools/shared/qttoolbardialog/qttoolbardialog.pri)
+ include(../../../shared/fontpanel/fontpanel.pri)
+ include(../../../shared/qttoolbardialog/qttoolbardialog.pri)
 --- a/tools/linguist/linguist/linguist.pro
 +++ b/tools/linguist/linguist/linguist.pro
 @@ -69,7 +69,7 @@ HEADERS += \
@@ -217,15 +217,13 @@ author: Fathi Boudra <fabo@debian.org>
  target.path=$$[QT_INSTALL_BINS]
 --- a/translations/translations.pri
 +++ b/translations/translations.pri
-@@ -8,7 +8,7 @@ defineReplace(prependAll) {
-     return ($$result)
- }
- 
+@@ -1,5 +1,5 @@
+ qtPrepareTool(LCONVERT, lconvert)
 -qtPrepareTool(LUPDATE, lupdate)
 +qtPrepareTool(LUPDATE, lupdate-qt4)
  LUPDATE += -locations relative -no-ui-lines
  
- ###### Qt Libraries
+ TS_TARGETS =
 --- a/translations/translations.pro
 +++ b/translations/translations.pro
 @@ -1,6 +1,6 @@

@@ -5,7 +5,7 @@ This patch enable them.
 
 --- a/src/3rdparty/webkit/WebCore/WebCore.pro
 +++ b/src/3rdparty/webkit/WebCore/WebCore.pro
-@@ -2943,8 +2943,6 @@ HEADERS += $$WEBKIT_API_HEADERS
+@@ -2954,8 +2954,6 @@ HEADERS += $$WEBKIT_API_HEADERS
  
  CONFIG(QTDIR_build) {
      # Remove the following 2 lines if you want debug information in WebCore

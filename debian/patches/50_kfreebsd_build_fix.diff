@@ -26,24 +26,6 @@ Fixes FTBFS on GNU/kFreeBSD by creating new Q_OS_GLIBC.
  #elif defined(__DGUX__)
  #  define Q_OS_DGUX
  #elif defined(__QNXNTO__)
---- a/src/corelib/plugin/qlibrary.cpp
-+++ b/src/corelib/plugin/qlibrary.cpp
-@@ -295,13 +295,13 @@ static bool qt_parse_pattern(const char
- 
- #if defined(Q_OS_UNIX) && !defined(Q_OS_MAC) && !defined(Q_OS_SYMBIAN) && !defined(QT_NO_PLUGIN_CHECK)
- 
--#if defined(Q_OS_FREEBSD) || defined(Q_OS_LINUX)
-+#if defined(Q_OS_FREEBSD) || defined(Q_OS_GLIBC)
- #  define USE_MMAP
- QT_BEGIN_INCLUDE_NAMESPACE
- #  include <sys/types.h>
- #  include <sys/mman.h>
- QT_END_INCLUDE_NAMESPACE
--#endif // Q_OS_FREEBSD || Q_OS_LINUX
-+#endif // Q_OS_FREEBSD || Q_OS_GLIBC
- 
- static long qt_find_pattern(const char *s, ulong s_len,
-                              const char *pattern, ulong p_len)
 --- a/src/corelib/tools/qlocale.cpp
 +++ b/src/corelib/tools/qlocale.cpp
 @@ -77,7 +77,7 @@ QT_END_NAMESPACE

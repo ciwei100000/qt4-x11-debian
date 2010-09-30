@@ -3,7 +3,7 @@ Author: Sune Vuorela <debian@pusling.com>
 
 --- a/qmake/generators/makefile.cpp
 +++ b/qmake/generators/makefile.cpp
-@@ -2403,7 +2403,7 @@ MakefileGenerator::writeSubTargets(QText
+@@ -2433,7 +2433,7 @@ MakefileGenerator::writeSubTargets(QText
  
          QString mkfile = subtarget->makefile;
          if(!in_directory.isEmpty())
