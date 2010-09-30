@@ -2,6 +2,7 @@ qt4-x11 (4:4.7.0-1) UNRELEASED; urgency=low
 
   * New upstream release.
   * Remove patches:
+    - 0001_webkit_self_injection_into_qt_configuration.patch - stolen upstream
     - 0002_fix_qstatictext_with_opengl1_engine.patch - stolen upstream
     - 0003_add_three_new_style-hints_to_qfont.patch - stolen upstream
     - 0004_fix_qstatictext_copy_constructor.patch - stolen upstream
