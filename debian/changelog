@@ -17,8 +17,16 @@ qt4-x11 (4:4.7.1-1) UNRELEASED; urgency=low
     - 22_use___GLIBC__.diff: use __GLIBC__ instead of Q_OS_LINUX for GLIBC
       functions
     - 50_kfreebsd_Q_OS.diff: define Q_OS_FREEBSD_KERNEL for kFreeBSD
+  * Add a new patch 01_debian_append_qt4_suffix.diff, which contains all the
+    changes for appending the -qt4 suffix to various tools; it is the result
+    of the merge of the following patches (which are removed, as obsolete):
+    - 01_qmake_for_debian.diff
+    - 02_launch_assistant-qt4.diff
+    - 03_launch_moc-qt4.diff
+    - 04_launch_uic-qt4.diff
+    - 05_append_qt4_target.diff
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 06 Oct 2010 13:03:12 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 06 Oct 2010 14:55:15 +0200
 
 qt4-x11 (4:4.7.0~rc1-1) experimental; urgency=low
 

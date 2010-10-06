@@ -1,4 +1,11 @@
-author: Fathi Boudra <fabo@debian.org>
+Author: Brian Nelson <pyro@debian.org>
+Author: Fathi Boudra <fabo@debian.org>
+Description: Append a -qt4 suffix to qmake, moc, uic, assistant.
+ To allow co-installation of the development tools of Qt4 with the Qt3 ones,
+ we append a -qt4 suffix to the executable names of the qmake, moc, uic,
+ and assistant tools.
+Last-Update: 2010-10-06
+Forwarded: not-needed
 
 --- a/config.tests/unix/compile.test
 +++ b/config.tests/unix/compile.test
@@ -57,7 +64,7 @@ author: Fathi Boudra <fabo@debian.org>
      if [ "$VERBOSE" = "yes" ]; then
 --- a/configure
 +++ b/configure
-@@ -4582,7 +4582,7 @@ END {
+@@ -4474,7 +4474,7 @@ END {
  }
  
  # build qmake
@@ -66,7 +73,7 @@ author: Fathi Boudra <fabo@debian.org>
      echo "Creating qmake. Please wait..."
  
      OLD_QCONFIG_H=
-@@ -8000,8 +8000,8 @@ QMAKE_ABSOLUTE_SOURCE_ROOT = \$\$QT_SOUR
+@@ -7759,8 +7759,8 @@ QMAKE_ABSOLUTE_SOURCE_ROOT = \$\$QT_SOUR
  QMAKE_MOC_SRC    = \$\$QT_BUILD_TREE/src/moc
  
  #local paths that cannot be queried from the QT_INSTALL_* properties while building QTDIR
@@ -77,7 +84,7 @@ author: Fathi Boudra <fabo@debian.org>
  QMAKE_UIC3       = \$\$QT_BUILD_TREE/bin/uic3
  QMAKE_RCC        = \$\$QT_BUILD_TREE/bin/rcc
  QMAKE_QDBUSXML2CPP = \$\$QT_BUILD_TREE/bin/qdbusxml2cpp
-@@ -8397,11 +8397,11 @@ EXEC=""
+@@ -8150,11 +8150,11 @@ EXEC=""
  #-------------------------------------------------------------------------------
  
  echo "Finding project files. Please wait..."
@@ -91,7 +98,7 @@ author: Fathi Boudra <fabo@debian.org>
  fi
  
  # .projects      -> projects to process
-@@ -8580,7 +8580,7 @@ for file in .projects .projects.3; do
+@@ -8331,7 +8331,7 @@ for file in .projects .projects.3; do
          QMAKE_SPEC_ARGS="-spec $SPEC"
          echo $ECHO_N "  for $a$ECHO_C"
  
@@ -174,7 +181,7 @@ author: Fathi Boudra <fabo@debian.org>
 --- a/tools/assistant/tools/assistant/assistant.pro
 +++ b/tools/assistant/tools/assistant/assistant.pro
 @@ -1,7 +1,7 @@
- include(../../../shared/fontpanel/fontpanel.pri)
+ include($$QT_SOURCE_TREE/tools/shared/fontpanel/fontpanel.pri)
  TEMPLATE = app
  LANGUAGE = C++
 -TARGET = assistant
@@ -191,8 +198,8 @@ author: Fathi Boudra <fabo@debian.org>
 -TARGET = designer
 +TARGET = designer-qt4
  
- include(../../../shared/fontpanel/fontpanel.pri)
- include(../../../shared/qttoolbardialog/qttoolbardialog.pri)
+ include($$QT_SOURCE_TREE/tools/shared/fontpanel/fontpanel.pri)
+ include($$QT_SOURCE_TREE/tools/shared/qttoolbardialog/qttoolbardialog.pri)
 --- a/tools/linguist/linguist/linguist.pro
 +++ b/tools/linguist/linguist/linguist.pro
 @@ -69,7 +69,7 @@ HEADERS += \
@@ -217,13 +224,15 @@ author: Fathi Boudra <fabo@debian.org>
  target.path=$$[QT_INSTALL_BINS]
 --- a/translations/translations.pri
 +++ b/translations/translations.pri
-@@ -1,5 +1,5 @@
- qtPrepareTool(LCONVERT, lconvert)
+@@ -8,7 +8,7 @@ defineReplace(prependAll) {
+     return ($$result)
+ }
+ 
 -qtPrepareTool(LUPDATE, lupdate)
 +qtPrepareTool(LUPDATE, lupdate-qt4)
  LUPDATE += -locations relative -no-ui-lines
  
- TS_TARGETS =
+ ###### Qt Libraries
 --- a/translations/translations.pro
 +++ b/translations/translations.pro
 @@ -1,6 +1,6 @@
@@ -263,3 +272,60 @@ author: Fathi Boudra <fabo@debian.org>
  
  isEmpty(UI_DIR):UI_DIR = .
  isEmpty(UI_SOURCES_DIR):UI_SOURCES_DIR = $$UI_DIR
+--- a/mkspecs/common/linux.conf
++++ b/mkspecs/common/linux.conf
+@@ -35,8 +35,8 @@ QMAKE_LIBS_OPENGL_ES2 = -lGLESv2
+ QMAKE_LIBS_OPENVG     = -lOpenVG
+ QMAKE_LIBS_THREAD     = -lpthread
+ 
+-QMAKE_MOC             = $$[QT_INSTALL_BINS]/moc
+-QMAKE_UIC             = $$[QT_INSTALL_BINS]/uic
++QMAKE_MOC             = $$[QT_INSTALL_BINS]/moc-qt4
++QMAKE_UIC             = $$[QT_INSTALL_BINS]/uic-qt4
+ 
+ QMAKE_AR              = ar cqs
+ QMAKE_OBJCOPY         = objcopy
+--- a/demos/qtdemo/menumanager.cpp
++++ b/demos/qtdemo/menumanager.cpp
+@@ -297,7 +297,7 @@ void MenuManager::showDocInAssistant(con
+     if (this->assistantProcess.state() != QProcess::Running){
+         QString app = QLibraryInfo::location(QLibraryInfo::BinariesPath) + QDir::separator();
+ #if !defined(Q_OS_MAC)
+-        app += QLatin1String("assistant");
++        app += QLatin1String("assistant-qt4");
+ #else
+         app += QLatin1String("Assistant.app/Contents/MacOS/Assistant");
+ #endif
+--- a/tools/designer/src/designer/assistantclient.cpp
++++ b/tools/designer/src/designer/assistantclient.cpp
+@@ -114,7 +114,7 @@ QString AssistantClient::binary()
+ {
+     QString app = QLibraryInfo::location(QLibraryInfo::BinariesPath) + QDir::separator();
+ #if !defined(Q_OS_MAC)
+-    app += QLatin1String("assistant");
++    app += QLatin1String("assistant-qt4");
+ #else
+     app += QLatin1String("Assistant.app/Contents/MacOS/Assistant");    
+ #endif
+--- a/tools/designer/src/lib/shared/qdesigner_utils.cpp
++++ b/tools/designer/src/lib/shared/qdesigner_utils.cpp
+@@ -668,7 +668,7 @@ namespace qdesigner_internal
+         binary += QDir::separator();
+         switch (mode) {
+         case UIC_GenerateCode:
+-            binary += QLatin1String("uic");
++            binary += QLatin1String("uic-qt4");
+             break;
+         case UIC_ConvertV3:
+             binary += QLatin1String("uic3");
+--- a/tools/qdbus/qdbuscpp2xml/qdbuscpp2xml.cpp
++++ b/tools/qdbus/qdbuscpp2xml/qdbuscpp2xml.cpp
+@@ -396,7 +396,7 @@ int main(int argc, char **argv)
+         else {
+             // run moc on this file
+             QProcess proc;
+-            proc.start(QLibraryInfo::location(QLibraryInfo::BinariesPath) + QLatin1String("/moc"), QStringList() << QFile::decodeName(argv[i]), QIODevice::ReadOnly | QIODevice::Text);
++            proc.start(QLibraryInfo::location(QLibraryInfo::BinariesPath) + QLatin1String("/moc-qt4"), QStringList() << QFile::decodeName(argv[i]), QIODevice::ReadOnly | QIODevice::Text);
+ 
+             if (!proc.waitForStarted()) {
+                 fprintf(stderr, PROGRAMNAME ": could not execute moc! Aborting.\n");
