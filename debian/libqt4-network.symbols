@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.0~rc1 amd64
+# SymbolsHelper-Confirmed: 4:4.7.1 amd64
 libQtNetwork.so.4 libqt4-network #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z19qt_qhostinfo_lookupRK7QStringP7QObjectPKcPbPi@Base 4:4.7.0~beta1
@@ -718,6 +718,7 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN7QSslKeyD1Ev@Base 4:4.5.3
  _ZN7QSslKeyD2Ev@Base 4:4.5.3
  _ZN7QSslKeyaSERKS_@Base 4:4.5.3
+ _ZN7QString5clearEv@Base 4:4.7.1
  _ZN8QUrlInfo10setSymLinkEb@Base 4:4.5.3
  _ZN8QUrlInfo11greaterThanERKS_S1_i@Base 4:4.5.3
  _ZN8QUrlInfo11setLastReadERK9QDateTime@Base 4:4.5.3
@@ -1028,7 +1029,6 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZNK21QNetworkCacheMetaData3urlEv@Base 4:4.5.3
  _ZNK21QNetworkCacheMetaData7isValidEv@Base 4:4.5.3
  _ZNK21QNetworkCacheMetaDataeqERKS_@Base 4:4.5.3
- _ZNK21QNetworkConfiguration10bearerNameEv@Base 4:4.7.0~beta1
  _ZNK21QNetworkConfiguration10bearerTypeEv@Base 4:4.7.0~rc1
  _ZNK21QNetworkConfiguration10identifierEv@Base 4:4.7.0~beta1
  _ZNK21QNetworkConfiguration14bearerTypeNameEv@Base 4:4.7.0~rc1

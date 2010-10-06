@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.0~rc1 amd64
+# SymbolsHelper-Confirmed: 4:4.7.1 amd64
 libQtCLucene.so.4 libqtcore4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN12QCLuceneHits2idEi@Base 4:4.5.3
@@ -3534,6 +3534,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK14QAbstractState7machineEv@Base 4:4.6.1
  _ZNK14QFactoryLoader10metaObjectEv@Base 4:4.5.3
  _ZNK14QFactoryLoader4keysEv@Base 4:4.5.3
+ _ZNK14QFactoryLoader7libraryERK7QString@Base 4:4.7.1
  _ZNK14QFactoryLoader8instanceERK7QString@Base 4:4.5.3
  _ZNK14QLocalePrivate13validateCharsERK7QStringNS_10NumberModeEP10QByteArrayi@Base 4:4.5.3
  _ZNK14QLocalePrivate14doubleToStringEdiNS_10DoubleFormEij@Base 4:4.5.3

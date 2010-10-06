@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.0~rc1 amd64
+# SymbolsHelper-Confirmed: 4:4.7.1 amd64
 libQtGui.so.4 libqtgui4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qDrawArrowP8QPainterN2Qt9ArrowTypeENS1_8GUIStyleEbiiiiRK8QPaletteb@Base 4:4.5.3
@@ -56,6 +56,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _Z21qt_x11_enforce_cursorP7QWidget@Base 4:4.5.3
  (subst)_Z22qt_find_ellipse_coordsRK6QRectF{qreal}{qreal}P7QPointFS3_@Base 4:4.5.3
  _Z22qt_paint_device_metricPK12QPaintDeviceNS_17PaintDeviceMetricE@Base 4:4.6.1
+ _Z23qt_removeX11EventFilterPFbP7_XEventE@Base 4:4.7.1
+ _Z24qt_installX11EventFilterPFbP7_XEventE@Base 4:4.7.1
  _Z24qt_qscrollbarStyleOptionP10QScrollBar@Base 4:4.5.3
  _Z24qt_x11ft_convert_patternP10_FcPatternP10QByteArrayPiPb@Base 4:4.5.3
  _Z25qt_translateRawTouchEventP7QWidgetN11QTouchEvent10DeviceTypeERK5QListINS1_10TouchPointEE@Base 4:4.6.1
@@ -63,6 +65,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _Z30qt_x11_wait_for_window_managerP7QWidget@Base 4:4.5.3
  _Z31qt_x11_set_fallback_font_familyiRK7QString@Base 4:4.5.3
  _Z31qt_x11_set_global_double_bufferb@Base 4:4.5.3
+ _Z32qt_convert_rgb888_to_rgb32_ssse3PjPKhi@Base 4:4.7.1
  _Z33qt_x11_apply_settings_in_all_appsv@Base 4:4.5.3
  _Z6bitBltP12QPaintDeviceRK6QPointPKS_RK5QRectb@Base 4:4.5.3
  _Z6bitBltP12QPaintDeviceiiPK6QImageiiiii@Base 4:4.5.3
@@ -783,6 +786,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN11QFontEngine16alphaMapForGlyphEjRK10QTransform@Base 4:4.5.3
  _ZN11QFontEngine16getGlyphBearingsEjPdS0_@Base 4:4.7.0~beta1
  _ZN11QFontEngine16getUnscaledGlyphEjP12QPainterPathP15glyph_metrics_t@Base 4:4.5.3
+ _ZN11QFontEngine16lastRightBearingERK12QGlyphLayoutb@Base 4:4.7.1
  _ZN11QFontEngine16loadKerningPairsE6QFixed@Base 4:4.5.3
  _ZN11QFontEngine16tightBoundingBoxERK12QGlyphLayout@Base 4:4.5.3
  _ZN11QFontEngine17getGlyphPositionsERK12QGlyphLayoutRK10QTransform6QFlagsIN9QTextItem10RenderFlagEER15QVarLengthArrayIjLi256EERSA_I11QFixedPointLi256EE@Base 4:4.5.3
@@ -4666,10 +4670,12 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN18QSyntaxHighlighterD0Ev@Base 4:4.5.3
  _ZN18QSyntaxHighlighterD1Ev@Base 4:4.5.3
  _ZN18QSyntaxHighlighterD2Ev@Base 4:4.5.3
+ _ZN18QTapAndHoldGesture10setTimeoutEi@Base 4:4.7.1
  _ZN18QTapAndHoldGesture11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN18QTapAndHoldGesture11qt_metacastEPKc@Base 4:4.6.1
  _ZN18QTapAndHoldGesture11setPositionERK7QPointF@Base 4:4.6.1
  _ZN18QTapAndHoldGesture16staticMetaObjectE@Base 4:4.6.1
+ _ZN18QTapAndHoldGesture7timeoutEv@Base 4:4.7.1
  _ZN18QTapAndHoldGestureC1EP7QObject@Base 4:4.6.1
  _ZN18QTapAndHoldGestureC2EP7QObject@Base 4:4.6.1
  _ZN18QTextBlockUserDataD0Ev@Base 4:4.5.3
@@ -4817,6 +4823,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN19QApplicationPrivate19app_compile_versionE@Base 4:4.5.3
  _ZN19QApplicationPrivate19hidden_focus_widgetE@Base 4:4.5.3
  _ZN19QApplicationPrivate19keyboard_input_timeE@Base 4:4.5.3
+ _ZN19QApplicationPrivate19qmljsDebugArgumentsE@Base 4:4.7.1
  _ZN19QApplicationPrivate20emitLastWindowClosedEv@Base 4:4.5.3
  _ZN19QApplicationPrivate20graphics_system_nameE@Base 4:4.5.3
  _ZN19QApplicationPrivate20initializeMultitouchEv@Base 4:4.6.1
@@ -5149,6 +5156,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN20QGraphicsItemPrivate12resolveDepthEv@Base 4:4.6.1
  _ZN20QGraphicsItemPrivate12setPosHelperERK7QPointF@Base 4:4.6.1
  _ZN20QGraphicsItemPrivate13clearSubFocusEP13QGraphicsItem@Base 4:4.6.1
+ _ZN20QGraphicsItemPrivate14children_clearEP24QDeclarativeListPropertyI15QGraphicsObjectE@Base 4:4.7.1
  _ZN20QGraphicsItemPrivate14children_countEP24QDeclarativeListPropertyI15QGraphicsObjectE@Base 4:4.7.0~beta1
  _ZN20QGraphicsItemPrivate14setFocusHelperEN2Qt11FocusReasonEbb@Base 4:4.7.0~beta1
  _ZN20QGraphicsItemPrivate15children_appendEP24QDeclarativeListPropertyI15QGraphicsObjectEPS1_@Base 4:4.7.0~beta1
@@ -5168,7 +5176,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN20QGraphicsItemPrivate23appendGraphicsTransformEP18QGraphicsTransform@Base 4:4.6.1
  _ZN20QGraphicsItemPrivate24prependGraphicsTransformEP18QGraphicsTransform@Base 4:4.7.0~beta1
  _ZN20QGraphicsItemPrivate25movableAncestorIsSelectedEPK13QGraphicsItem@Base 4:4.6.1
- _ZN20QGraphicsItemPrivate26childrenBoundingRectHelperEP10QTransformP6QRectF@Base 4:4.6.1
+ _ZN20QGraphicsItemPrivate26childrenBoundingRectHelperEP10QTransformP6QRectFP13QGraphicsItem@Base 4:4.7.1
  _ZN20QGraphicsItemPrivate26invalidateDepthRecursivelyEv@Base 4:4.6.1
  _ZN20QGraphicsItemPrivate28ensureSequentialSiblingIndexEv@Base 4:4.6.1
  _ZN20QGraphicsItemPrivate29ensureSceneTransformRecursiveEPP13QGraphicsItem@Base 4:4.6.1
@@ -10200,7 +10208,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK18QGuiPlatformPlugin10metaObjectEv@Base 4:4.6.1
  _ZNK18QItemEditorFactory12createEditorEN8QVariant4TypeEP7QWidget@Base 4:4.5.3
  _ZNK18QItemEditorFactory17valuePropertyNameEN8QVariant4TypeE@Base 4:4.5.3
- _ZNK18QRuntimePixmapData11memoryUsageEv@Base 4:4.7.0~rc1
  _ZNK18QRuntimePixmapData11paintEngineEv@Base 4:4.7.0~rc1
  _ZNK18QRuntimePixmapData11runtimeDataEv@Base 4:4.7.0~rc1
  _ZNK18QRuntimePixmapData11transformedERK10QTransformN2Qt18TransformationModeE@Base 4:4.7.0~rc1
@@ -10412,8 +10419,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK20QGraphicsItemPrivate19genericMapFromSceneERK7QPointFPK7QWidget@Base 4:4.6.1
  _ZNK20QGraphicsItemPrivate19maybeExtraItemCacheEv@Base 4:4.6.1
  _ZNK20QGraphicsItemPrivate20discardUpdateRequestEbbb@Base 4:4.6.1
+ _ZNK20QGraphicsItemPrivate21effectiveBoundingRectEP13QGraphicsItem@Base 4:4.7.1
  _ZNK20QGraphicsItemPrivate21effectiveBoundingRectERK6QRectF@Base 4:4.6.1
- _ZNK20QGraphicsItemPrivate21effectiveBoundingRectEv@Base 4:4.6.1
  _ZNK20QGraphicsItemPrivate22inputMethodQueryHelperEN2Qt16InputMethodQueryE@Base 4:4.6.1
  _ZNK20QGraphicsItemPrivate24combineTransformToParentEP10QTransformPKS0_@Base 4:4.6.1
  _ZNK20QGraphicsItemPrivate26combineTransformFromParentEP10QTransformPKS0_@Base 4:4.6.1
