@@ -1,3 +1,12 @@
+qt4-x11 (4:4.6.3-3) unstable; urgency=low
+
+  * Update debian/control: add missing Replaces libqt4-dev (<< 4:4.6.3-2) to
+    libqt4-dbus package.
+  * Update debian/rules: replace -dbus configure option by -dbus-linked to link
+    against dbus library instead of dlopen it. (Closes: #599224)
+
+ -- Fathi Boudra <fabo@debian.org>  Wed, 06 Oct 2010 12:57:17 +0300
+
 qt4-x11 (4:4.6.3-2) unstable; urgency=low
 
   [ Fathi Boudra ]
