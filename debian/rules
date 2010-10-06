@@ -114,7 +114,7 @@ endif
 	            -system-libjpeg \
 	            -no-rpath \
 	            -optimized-qmake \
-	            -dbus \
+	            -dbus-linked \
 	            -no-separate-debug-info \
 	            -verbose \
 	            -gtkstyle \
