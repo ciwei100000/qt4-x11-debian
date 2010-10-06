@@ -23,10 +23,11 @@
 18_enable_qt3support_qtwebkit_debug_info.diff
 20_install_qvfb.diff
 21_qt_ia32_library_path.diff
+22_use___GLIBC__.diff
 30_webkit_unaligned_access.diff
 40_alpha_ice.diff
 41_disable_opengl_visibility.diff
-50_kfreebsd_build_fix.diff
+50_kfreebsd_Q_OS.diff
 51_kfreebsd_strnstr_build_fix.diff
 70_hppa_ldcw_fix.diff
 71_hppa_unaligned_access_fix_458133.diff
