@@ -1,6 +1,8 @@
 qt4-x11 (4:4.7.1-1) UNRELEASED; urgency=low
 
   * New upstream release.
+
+  [ Fathi Boudra ]
   * Remove patches:
     - 0001_webkit_self_injection_into_qt_configuration.patch - stolen upstream
     - 0002_fix_qstatictext_with_opengl1_engine.patch - stolen upstream
@@ -10,7 +12,13 @@ qt4-x11 (4:4.7.1-1) UNRELEASED; urgency=low
   * Update installed files.
   * Update symbols files.
 
- -- Fathi Boudra <fabo@debian.org>  Wed, 08 Sep 2010 14:10:23 +0300
+  [ Pino Toscano ]
+  * Rework and replace patch 50_kfreebsd_build_fix.diff with two new patches:
+    - 22_use___GLIBC__.diff: use __GLIBC__ instead of Q_OS_LINUX for GLIBC
+      functions
+    - 50_kfreebsd_Q_OS.diff: define Q_OS_FREEBSD_KERNEL for kFreeBSD
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 06 Oct 2010 13:03:12 +0200
 
 qt4-x11 (4:4.7.0~rc1-1) experimental; urgency=low
 
