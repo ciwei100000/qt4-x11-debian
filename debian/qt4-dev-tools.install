@@ -20,6 +20,8 @@ usr/share/qt4/translations/assistant_hu.qm
 usr/share/qt4/translations/assistant_ja.qm
 usr/share/qt4/translations/assistant_pl.qm
 usr/share/qt4/translations/assistant_ru.qm
+usr/share/qt4/translations/assistant_sl.qm
+usr/share/qt4/translations/assistant_uk.qm
 usr/share/qt4/translations/assistant_zh_CN.qm
 usr/share/qt4/translations/assistant_zh_TW.qm
 usr/share/qt4/translations/linguist_cs.qm
@@ -29,10 +31,15 @@ usr/share/qt4/translations/linguist_hu.qm
 usr/share/qt4/translations/linguist_ja.qm
 usr/share/qt4/translations/linguist_pl.qm
 usr/share/qt4/translations/linguist_ru.qm
+usr/share/qt4/translations/linguist_sl.qm
+usr/share/qt4/translations/linguist_uk.qm
 usr/share/qt4/translations/linguist_zh_CN.qm
 usr/share/qt4/translations/linguist_zh_TW.qm
 usr/share/qt4/translations/qvfb_hu.qm
+usr/share/qt4/translations/qvfb_ja.qm
 usr/share/qt4/translations/qvfb_pl.qm
 usr/share/qt4/translations/qvfb_ru.qm
+usr/share/qt4/translations/qvfb_sl.qm
+usr/share/qt4/translations/qvfb_uk.qm
 usr/share/qt4/translations/qvfb_zh_CN.qm
 usr/share/qt4/translations/qvfb_zh_TW.qm
