@@ -14,7 +14,7 @@ a real problem yet.
 
 --- a/src/3rdparty/webkit/JavaScriptCore/wtf/FastMalloc.cpp
 +++ b/src/3rdparty/webkit/JavaScriptCore/wtf/FastMalloc.cpp
-@@ -2336,13 +2336,13 @@ static TCMalloc_Central_FreeListPadded c
+@@ -2336,13 +2336,13 @@
  
  // Page-level allocator
  static SpinLock pageheap_lock = SPINLOCK_INITIALIZER;
@@ -32,7 +32,7 @@ a real problem yet.
  
 --- a/src/3rdparty/webkit/JavaScriptCore/wtf/ListHashSet.h
 +++ b/src/3rdparty/webkit/JavaScriptCore/wtf/ListHashSet.h
-@@ -127,7 +127,7 @@ namespace WTF {
+@@ -127,7 +127,7 @@
              : m_freeList(pool())
              , m_isDoneWithInitialFreeList(false)
          { 
@@ -41,7 +41,7 @@ a real problem yet.
          }
  
          Node* allocate()
-@@ -171,7 +171,7 @@ namespace WTF {
+@@ -171,7 +171,7 @@
          }
  
      private:
@@ -50,7 +50,7 @@ a real problem yet.
          Node* pastPool() { return pool() + m_poolSize; }
  
          bool inPool(Node* node)
-@@ -182,10 +182,7 @@ namespace WTF {
+@@ -182,10 +182,7 @@
          Node* m_freeList;
          bool m_isDoneWithInitialFreeList;
          static const size_t m_poolSize = inlineCapacity;
@@ -64,20 +64,18 @@ a real problem yet.
      template<typename ValueArg, size_t inlineCapacity> struct ListHashSetNode {
 --- a/src/3rdparty/webkit/WebCore/platform/text/AtomicString.cpp
 +++ b/src/3rdparty/webkit/WebCore/platform/text/AtomicString.cpp
-@@ -103,9 +103,9 @@ static inline bool equal(StringImpl* str
-     if (string->length() != length)
-         return false;
+@@ -105,7 +105,7 @@
  
-+#if CPU(ARM) || CPU(SH4) || CPU(SPARC)
      // FIXME: perhaps we should have a more abstract macro that indicates when
      // going 4 bytes at a time is unsafe
 -#if CPU(ARM) || CPU(SH4)
++#if CPU(ARM) || CPU(SH4) || CPU(SPARC)
      const UChar* stringCharacters = string->characters();
      for (unsigned i = 0; i != length; ++i) {
          if (*stringCharacters++ != *characters++)
 --- a/src/3rdparty/webkit/WebCore/platform/text/StringHash.h
 +++ b/src/3rdparty/webkit/WebCore/platform/text/StringHash.h
-@@ -54,13 +54,13 @@ namespace WebCore {
+@@ -54,13 +54,13 @@
  
              // FIXME: perhaps we should have a more abstract macro that indicates when
              // going 4 bytes at a time is unsafe
