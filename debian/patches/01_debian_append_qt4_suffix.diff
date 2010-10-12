@@ -1,9 +1,9 @@
 Author: Brian Nelson <pyro@debian.org>
 Author: Fathi Boudra <fabo@debian.org>
-Description: Append a -qt4 suffix to qmake, moc, uic, assistant.
+Description: Append a -qt4 suffix to some tools.
  To allow co-installation of the development tools of Qt4 with the Qt3 ones,
- we append a -qt4 suffix to the executable names of the qmake, moc, uic,
- and assistant tools.
+ we append a -qt4 suffix to the executable names of some development tools:
+ assistant, designer, linguist, lrelease, lupdate, moc, qmake, qtconfig, uic.
 Last-Update: 2010-10-06
 Forwarded: not-needed
 
