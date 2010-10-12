@@ -14,7 +14,7 @@ a real problem yet.
 
 --- a/src/3rdparty/webkit/JavaScriptCore/wtf/FastMalloc.cpp
 +++ b/src/3rdparty/webkit/JavaScriptCore/wtf/FastMalloc.cpp
-@@ -2336,13 +2336,13 @@
+@@ -2336,13 +2336,13 @@ static TCMalloc_Central_FreeListPadded c
  
  // Page-level allocator
  static SpinLock pageheap_lock = SPINLOCK_INITIALIZER;
@@ -32,7 +32,7 @@ a real problem yet.
  
 --- a/src/3rdparty/webkit/JavaScriptCore/wtf/ListHashSet.h
 +++ b/src/3rdparty/webkit/JavaScriptCore/wtf/ListHashSet.h
-@@ -127,7 +127,7 @@
+@@ -127,7 +127,7 @@ namespace WTF {
              : m_freeList(pool())
              , m_isDoneWithInitialFreeList(false)
          { 
@@ -41,7 +41,7 @@ a real problem yet.
          }
  
          Node* allocate()
-@@ -171,7 +171,7 @@
+@@ -171,7 +171,7 @@ namespace WTF {
          }
  
      private:
@@ -50,7 +50,7 @@ a real problem yet.
          Node* pastPool() { return pool() + m_poolSize; }
  
          bool inPool(Node* node)
-@@ -182,10 +182,7 @@
+@@ -182,10 +182,7 @@ namespace WTF {
          Node* m_freeList;
          bool m_isDoneWithInitialFreeList;
          static const size_t m_poolSize = inlineCapacity;
@@ -64,7 +64,7 @@ a real problem yet.
      template<typename ValueArg, size_t inlineCapacity> struct ListHashSetNode {
 --- a/src/3rdparty/webkit/WebCore/platform/text/AtomicString.cpp
 +++ b/src/3rdparty/webkit/WebCore/platform/text/AtomicString.cpp
-@@ -105,7 +105,7 @@
+@@ -105,7 +105,7 @@ static inline bool equal(StringImpl* str
  
      // FIXME: perhaps we should have a more abstract macro that indicates when
      // going 4 bytes at a time is unsafe
@@ -75,7 +75,7 @@ a real problem yet.
          if (*stringCharacters++ != *characters++)
 --- a/src/3rdparty/webkit/WebCore/platform/text/StringHash.h
 +++ b/src/3rdparty/webkit/WebCore/platform/text/StringHash.h
-@@ -54,13 +54,13 @@
+@@ -54,13 +54,13 @@ namespace WebCore {
  
              // FIXME: perhaps we should have a more abstract macro that indicates when
              // going 4 bytes at a time is unsafe
