@@ -1,4 +1,4 @@
-qt4-x11 (4:4.6.3-3) UNRELEASED; urgency=low
+qt4-x11 (4:4.6.3-4) UNRELEASED; urgency=low
 
   [ Pino Toscano ]
   * Update debian/control:
