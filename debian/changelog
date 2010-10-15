@@ -11,6 +11,9 @@ qt4-x11 (4:4.6.3-4) UNRELEASED; urgency=low
   * Confirm 4.6.3 symbol files on the rest (!amd64) of arches. All symbols
     affected are optional. Also remove old stale MISSING symbols in the
     process.
+  * Backport 22_fix_disappearing_cursor.diff patch from 4.7.1 to fix a bug
+    with mouse cursor disappearing randomly on various widgets (QTreeView,
+    QListView etc.).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 12 Oct 2010 17:04:43 +0200
 
