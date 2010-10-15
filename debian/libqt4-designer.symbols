@@ -767,7 +767,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN18qdesigner_internal11ActionModel20resourceImageDroppedERK7QStringP7QAction@Base 4:4.5.3
  _ZN18qdesigner_internal11ActionModel6removeEi@Base 4:4.5.3
  _ZN18qdesigner_internal11ActionModel6updateEi@Base 4:4.5.3
-#MISSING: 4:4.6.3# _ZN18qdesigner_internal11ActionModel8setItemsEP28QDesignerFormEditorInterfaceP7QActionR5QListIP13QStandardItemE@Base 4:4.5.3
  _ZN18qdesigner_internal11ActionModel8setItemsEP28QDesignerFormEditorInterfaceP7QActionRK5QIconR5QListIP13QStandardItemE@Base 4:4.6.3
  _ZN18qdesigner_internal11ActionModel9addActionEP7QAction@Base 4:4.5.3
  _ZN18qdesigner_internal11ActionModelC1EP7QWidget@Base 4:4.5.3

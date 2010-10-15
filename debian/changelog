@@ -7,6 +7,11 @@ qt4-x11 (4:4.6.3-3) UNRELEASED; urgency=low
     - drop suggestion of a browser from qt4-doc, as it does not contain any
       HTML documentation.
 
+  [ Modestas Vainius ]
+  * Confirm 4.6.3 symbol files on the rest (!amd64) of arches. All symbols
+    affected are optional. Also remove old stale MISSING symbols in the
+    process.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 12 Oct 2010 17:04:43 +0200
 
 qt4-x11 (4:4.6.3-3) unstable; urgency=low

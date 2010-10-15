@@ -102,7 +102,6 @@ libQtWebKit.so.4 libqt4-webkit #MINVER#
  _Z33qt_drt_counterValueForElementByIdP9QWebFrameRK7QString@Base 4:4.6.1
  _Z33qt_drt_overwritePluginDirectoriesv@Base 4:4.6.1
  _Z34qt_drt_resetOriginAccessWhiteListsv@Base 4:4.6.1
-#MISSING: 4:4.6.3# _Z35qtwebkit_webframe_scrollRecursivelyP9QWebFrameii@Base 4:4.6.1
  _Z35qtwebkit_webframe_scrollRecursivelyP9QWebFrameiiRK6QPoint@Base 4:4.6.3
  _Z36qt_drt_setJavaScriptProfilingEnabledP9QWebFrameb@Base 4:4.5.3
  _Z48qt_drt_garbageCollector_collectOnAlternateThreadb@Base 4:4.6.1
