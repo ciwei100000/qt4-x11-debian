@@ -1,4 +1,4 @@
-qt4-x11 (4:4.6.3-4) UNRELEASED; urgency=high
+qt4-x11 (4:4.6.3-4) unstable; urgency=high
 
   [ Pino Toscano ]
   * Update debian/control:
@@ -19,7 +19,7 @@ qt4-x11 (4:4.6.3-4) UNRELEASED; urgency=high
     compatibility with symbol files. (Closes: #586831)
   * Urgency=high due to RC bug fix.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 12 Oct 2010 17:04:43 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 16 Oct 2010 04:05:32 +0300
 
 qt4-x11 (4:4.6.3-3) unstable; urgency=low
 
