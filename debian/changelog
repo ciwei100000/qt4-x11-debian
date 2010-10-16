@@ -1,4 +1,4 @@
-qt4-x11 (4:4.6.3-4) UNRELEASED; urgency=low
+qt4-x11 (4:4.6.3-4) UNRELEASED; urgency=high
 
   [ Pino Toscano ]
   * Update debian/control:
@@ -17,6 +17,7 @@ qt4-x11 (4:4.6.3-4) UNRELEASED; urgency=low
   * Add 23_permit_plugins_built_with_future_qt.diff patch to permit loading
     plugins built with future version of Qt. This should restore full
     compatibility with symbol files. (Closes: #586831)
+  * Urgency=high due to RC bug fix.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 12 Oct 2010 17:04:43 +0200
 
