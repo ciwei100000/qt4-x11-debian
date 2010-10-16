@@ -30,6 +30,7 @@
 20_install_qvfb.diff
 21_qt_ia32_library_path.diff
 22_fix_disappearing_cursor.diff
+23_permit_plugins_built_with_future_qt.diff
 30_webkit_unaligned_access.diff
 40_alpha_ice.diff
 41_disable_opengl_visibility.diff

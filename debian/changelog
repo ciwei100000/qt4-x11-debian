@@ -14,6 +14,9 @@ qt4-x11 (4:4.6.3-4) UNRELEASED; urgency=low
   * Backport 22_fix_disappearing_cursor.diff patch from 4.7.1 to fix a bug
     with mouse cursor disappearing randomly on various widgets (QTreeView,
     QListView etc.).
+  * Add 23_permit_plugins_built_with_future_qt.diff patch to permit loading
+    plugins built with future version of Qt. This should restore full
+    compatibility with symbol files. (Closes: #586831)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 12 Oct 2010 17:04:43 +0200
 
