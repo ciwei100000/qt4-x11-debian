@@ -2450,7 +2450,6 @@ usr/include/qt4/QtHelp/qhelpindexwidget.h
 usr/include/qt4/QtHelp/qhelpsearchengine.h
 usr/include/qt4/QtHelp/qhelpsearchquerywidget.h
 usr/include/qt4/QtHelp/qhelpsearchresultwidget.h
-usr/include/qt4/QtMultimedia/QAudio
 usr/include/qt4/QtNetwork/QAbstractNetworkCache
 usr/include/qt4/QtNetwork/QAbstractSocket
 usr/include/qt4/QtNetwork/QAuthenticator
