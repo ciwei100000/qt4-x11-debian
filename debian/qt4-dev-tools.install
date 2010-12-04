@@ -13,7 +13,6 @@ usr/bin/xmlpatterns
 usr/bin/xmlpatternsvalidator
 usr/share/qt4/phrasebooks/*
 usr/share/qt4/translations/assistant_cs.qm
-usr/share/qt4/translations/assistant_cs.qm
 usr/share/qt4/translations/assistant_da.qm
 usr/share/qt4/translations/assistant_de.qm
 usr/share/qt4/translations/assistant_fr.qm
