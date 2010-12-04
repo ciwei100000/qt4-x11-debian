@@ -261,7 +261,7 @@ override_dh_auto_install:
 	\) -print0 | xargs -0 rm -rf
 
 override_dh_install:
-	dh_install --list-missing --sourcedir=debian/tmp
+	dh_install --list-missing
 
 override_dh_installdocs:
 	dh_installdocs --all LGPL_EXCEPTION.txt

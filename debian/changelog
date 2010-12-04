@@ -48,6 +48,8 @@ qt4-x11 (4:4.7.1-0r1) UNRELEASED; urgency=low
     - 09_qmake_lflags_as-needed.diff - configure script supports LDFLAGS
       nowadays. Drop the patch and export appropriate LDFLAGS in debian/rules
       instead.
+  * Do not pass --sourcedir=debian/tmp to dh_install anymore. Not needed for
+    compat level 7 or higher.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 06 Oct 2010 14:55:15 +0200
 
