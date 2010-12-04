@@ -26,12 +26,11 @@ qt4-x11 (4:4.7.1-1) UNRELEASED; urgency=low
     - 04_launch_uic-qt4.diff
     - 05_append_qt4_target.diff
 
-  [ Didier Raboud ]
-  * Cherry-pick "Fix qdbus manpage install. It is misplaced." from unstable.
-
   [ Modestas Vainius ]
   * Merge revisions from 4:4.6.3-1 to 4:4.6.3-4:
-    - refresh 23_permit_plugins_built_with_future_qt.diff patch.
+    - refresh 23_permit_plugins_built_with_future_qt.diff patch;
+    - bump libqt4-dbus Replaces/Breaks against libqt4-dev to << 4:4.7.1 because
+      4:4.7.0~rc1-1 still has dbus.1 manpage misplaced.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 06 Oct 2010 14:55:15 +0200
 
