@@ -10,6 +10,8 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _Z7qmlInfoPK7QObjectRK5QListI17QDeclarativeErrorE@Base 4:4.7.0~beta2
  _Z8qWarningv@Base 4:4.7.0~beta1
  _Z9qmlEnginePK7QObject@Base 4:4.7.0~beta1
+ (arch=armel sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.7.0~rc1
+ (arch=armel sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.7.0~rc1
  _ZN15QDeclarativePen10penChangedEv@Base 4:4.7.0~beta1
  _ZN15QDeclarativePen11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1
  _ZN15QDeclarativePen11qt_metacastEPKc@Base 4:4.7.0~beta1
@@ -63,18 +65,18 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN16QDeclarativeItem15keyReleaseEventEP9QKeyEvent@Base 4:4.7.0~beta1
  _ZN16QDeclarativeItem16forceActiveFocusEv@Base 4:4.7.0~rc1
  _ZN16QDeclarativeItem16inputMethodEventEP17QInputMethodEvent@Base 4:4.7.0~beta1
- _ZN16QDeclarativeItem16setImplicitWidthEd@Base 4:4.7.0~beta1
+ (subst)_ZN16QDeclarativeItem16setImplicitWidthE{qreal}@Base 4:4.7.0~beta1
  _ZN16QDeclarativeItem16setKeepMouseGrabEb@Base 4:4.7.0~beta1
  _ZN16QDeclarativeItem16staticMetaObjectE@Base 4:4.7.0~beta1
  _ZN16QDeclarativeItem17componentCompleteEv@Base 4:4.7.0~beta1
- _ZN16QDeclarativeItem17setBaselineOffsetEd@Base 4:4.7.0~beta1
- _ZN16QDeclarativeItem17setImplicitHeightEd@Base 4:4.7.0~beta1
+ (subst)_ZN16QDeclarativeItem17setBaselineOffsetE{qreal}@Base 4:4.7.0~beta1
+ (subst)_ZN16QDeclarativeItem17setImplicitHeightE{qreal}@Base 4:4.7.0~beta1
  _ZN16QDeclarativeItem18activeFocusChangedEb@Base 4:4.7.0~rc1
  _ZN16QDeclarativeItem18keyPressPreHandlerEP9QKeyEvent@Base 4:4.7.0~beta2
  _ZN16QDeclarativeItem18setTransformOriginENS_15TransformOriginE@Base 4:4.7.0~beta1
  _ZN16QDeclarativeItem19childrenRectChangedERK6QRectF@Base 4:4.7.0~beta1
  _ZN16QDeclarativeItem20keyReleasePreHandlerEP9QKeyEvent@Base 4:4.7.0~beta2
- _ZN16QDeclarativeItem21baselineOffsetChangedEd@Base 4:4.7.0~beta1
+ (subst)_ZN16QDeclarativeItem21baselineOffsetChangedE{qreal}@Base 4:4.7.0~beta1
  _ZN16QDeclarativeItem21inputMethodPreHandlerEP17QInputMethodEvent@Base 4:4.7.0~beta2
  _ZN16QDeclarativeItem22transformOriginChangedENS_15TransformOriginE@Base 4:4.7.0~beta1
  _ZN16QDeclarativeItem5eventEP6QEvent@Base 4:4.7.0~beta1
@@ -82,8 +84,8 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN16QDeclarativeItem7setClipEb@Base 4:4.7.0~beta1
  _ZN16QDeclarativeItem7setSizeERK6QSizeF@Base 4:4.7.0~beta1
  _ZN16QDeclarativeItem8setFocusEb@Base 4:4.7.0~beta1
- _ZN16QDeclarativeItem8setWidthEd@Base 4:4.7.0~beta1
- _ZN16QDeclarativeItem9setHeightEd@Base 4:4.7.0~beta1
+ (subst)_ZN16QDeclarativeItem8setWidthE{qreal}@Base 4:4.7.0~beta1
+ (subst)_ZN16QDeclarativeItem9setHeightE{qreal}@Base 4:4.7.0~beta1
  _ZN16QDeclarativeItem9setSmoothEb@Base 4:4.7.0~beta1
  _ZN16QDeclarativeItem9transformEv@Base 4:4.7.0~beta1
  _ZN16QDeclarativeItemC1EPS_@Base 4:4.7.0~beta1
@@ -303,7 +305,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN18QMetaObjectBuilderD2Ev@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors10classBeginEv@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors10resetRightEv@Base 4:4.7.0~beta1
- _ZN19QDeclarativeAnchors10setMarginsEd@Base 4:4.7.0~beta1
+ (subst)_ZN19QDeclarativeAnchors10setMarginsE{qreal}@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors10topChangedEv@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors11fillChangedEv@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors11leftChangedEv@Base 4:4.7.0~beta1
@@ -313,21 +315,21 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN19QDeclarativeAnchors11setBaselineERK22QDeclarativeAnchorLine@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors11setCenterInEP15QGraphicsObject@Base 4:4.7.0~beta2
  _ZN19QDeclarativeAnchors12rightChangedEv@Base 4:4.7.0~beta1
- _ZN19QDeclarativeAnchors12setTopMarginEd@Base 4:4.7.0~beta1
+ (subst)_ZN19QDeclarativeAnchors12setTopMarginE{qreal}@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors13bottomChangedEv@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors13resetBaselineEv@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors13resetCenterInEv@Base 4:4.7.0~beta1
- _ZN19QDeclarativeAnchors13setLeftMarginEd@Base 4:4.7.0~beta1
+ (subst)_ZN19QDeclarativeAnchors13setLeftMarginE{qreal}@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors14marginsChangedEv@Base 4:4.7.0~beta1
- _ZN19QDeclarativeAnchors14setRightMarginEd@Base 4:4.7.0~beta1
+ (subst)_ZN19QDeclarativeAnchors14setRightMarginE{qreal}@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors15baselineChangedEv@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors15centerInChangedEv@Base 4:4.7.0~beta1
- _ZN19QDeclarativeAnchors15setBottomMarginEd@Base 4:4.7.0~beta1
+ (subst)_ZN19QDeclarativeAnchors15setBottomMarginE{qreal}@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors16staticMetaObjectE@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors16topMarginChangedEv@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors17componentCompleteEv@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors17leftMarginChangedEv@Base 4:4.7.0~beta1
- _ZN19QDeclarativeAnchors17setBaselineOffsetEd@Base 4:4.7.0~beta1
+ (subst)_ZN19QDeclarativeAnchors17setBaselineOffsetE{qreal}@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors17setVerticalCenterERK22QDeclarativeAnchorLine@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors18rightMarginChangedEv@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors19bottomMarginChangedEv@Base 4:4.7.0~beta1
@@ -337,8 +339,8 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN19QDeclarativeAnchors21resetHorizontalCenterEv@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors21verticalCenterChangedEv@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors23horizontalCenterChangedEv@Base 4:4.7.0~beta1
- _ZN19QDeclarativeAnchors23setVerticalCenterOffsetEd@Base 4:4.7.0~beta1
- _ZN19QDeclarativeAnchors25setHorizontalCenterOffsetEd@Base 4:4.7.0~beta1
+ (subst)_ZN19QDeclarativeAnchors23setVerticalCenterOffsetE{qreal}@Base 4:4.7.0~beta1
+ (subst)_ZN19QDeclarativeAnchors25setHorizontalCenterOffsetE{qreal}@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors27verticalCenterOffsetChangedEv@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors29horizontalCenterOffsetChangedEv@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors6setTopERK22QDeclarativeAnchorLine@Base 4:4.7.0~beta1
@@ -497,7 +499,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN21QDeclarativeComponent12createObjectEP7QObject@Base 4:4.7.0~beta2
  _ZN21QDeclarativeComponent13statusChangedENS_6StatusE@Base 4:4.7.0~beta1
  _ZN21QDeclarativeComponent14completeCreateEv@Base 4:4.7.0~beta1
- _ZN21QDeclarativeComponent15progressChangedEd@Base 4:4.7.0~beta1
+ (subst)_ZN21QDeclarativeComponent15progressChangedE{qreal}@Base 4:4.7.0~beta1
  _ZN21QDeclarativeComponent16staticMetaObjectE@Base 4:4.7.0~beta1
  _ZN21QDeclarativeComponent21qmlAttachedPropertiesEP7QObject@Base 4:4.7.0~beta1
  _ZN21QDeclarativeComponent6createEP19QDeclarativeContext@Base 4:4.7.0~beta1
@@ -566,7 +568,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN21QDeclarativeRectangle8doUpdateEv@Base 4:4.7.0~beta1
  _ZN21QDeclarativeRectangle8drawRectER8QPainter@Base 4:4.7.0~beta1
  _ZN21QDeclarativeRectangle8setColorERK6QColor@Base 4:4.7.0~beta1
- _ZN21QDeclarativeRectangle9setRadiusEd@Base 4:4.7.0~beta1
+ (subst)_ZN21QDeclarativeRectangle9setRadiusE{qreal}@Base 4:4.7.0~beta1
  _ZN21QDeclarativeRectangleC1EP16QDeclarativeItem@Base 4:4.7.0~beta1
  _ZN21QDeclarativeRectangleC2EP16QDeclarativeItem@Base 4:4.7.0~beta1
  _ZN21QDeclarativeScaleGrid11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1
@@ -736,9 +738,9 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN23QDeclarativeItemPrivate7elapsedER13QElapsedTimer@Base 4:4.7.0~beta2
  _ZN23QDeclarativeItemPrivate7restartER13QElapsedTimer@Base 4:4.7.0~beta2
  _ZN23QDeclarativeItemPrivate8setStateERK7QString@Base 4:4.7.0~beta2
- _ZN23QDeclarativeItemPrivate8setWidthEd@Base 4:4.7.0~beta1
+ (subst)_ZN23QDeclarativeItemPrivate8setWidthE{qreal}@Base 4:4.7.0~beta1
  _ZN23QDeclarativeItemPrivate9resourcesEv@Base 4:4.7.0~beta2
- _ZN23QDeclarativeItemPrivate9setHeightEd@Base 4:4.7.0~beta1
+ (subst)_ZN23QDeclarativeItemPrivate9setHeightE{qreal}@Base 4:4.7.0~beta1
  _ZN23QDeclarativePropertyMap11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1
  _ZN23QDeclarativePropertyMap11qt_metacastEPKc@Base 4:4.7.0~beta1
  _ZN23QDeclarativePropertyMap12valueChangedERK7QStringRK8QVariant@Base 4:4.7.0~beta1
@@ -1099,7 +1101,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZNK16QDeclarativeItem10parentItemEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeItem10widthValidEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeItem11heightValidEv@Base 4:4.7.0~beta1
- _ZNK16QDeclarativeItem11mapFromItemERK12QScriptValuedd@Base 4:4.7.0~beta1
+ (subst)_ZNK16QDeclarativeItem11mapFromItemERK12QScriptValue{qreal}{qreal}@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeItem12boundingRectEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeItem13implicitWidthEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeItem13keepMouseGrabEv@Base 4:4.7.0~beta1
@@ -1113,9 +1115,9 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZNK16QDeclarativeItem5widthEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeItem6heightEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeItem6smoothEv@Base 4:4.7.0~beta1
- _ZNK16QDeclarativeItem7childAtEdd@Base 4:4.7.0~beta2
+ (subst)_ZNK16QDeclarativeItem7childAtE{qreal}{qreal}@Base 4:4.7.0~beta2
  _ZNK16QDeclarativeItem8hasFocusEv@Base 4:4.7.0~beta1
- _ZNK16QDeclarativeItem9mapToItemERK12QScriptValuedd@Base 4:4.7.0~beta1
+ (subst)_ZNK16QDeclarativeItem9mapToItemERK12QScriptValue{qreal}{qreal}@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeText10metaObjectEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeText10styleColorEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeText10textFormatEv@Base 4:4.7.0~beta1
@@ -1152,7 +1154,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZNK16QDeclarativeType26attachedPropertiesFunctionEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeType28propertyValueInterceptorCastEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeType5indexEv@Base 4:4.7.0~beta1
- _ZNK16QDeclarativeType6createEPP7QObjectPPvm@Base 4:4.7.0~beta1
+ (subst)_ZNK16QDeclarativeType6createEPP7QObjectPPv{size_t}@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeType6createEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeType6typeIdEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeType8typeNameEv@Base 4:4.7.0~beta1

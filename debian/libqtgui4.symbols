@@ -1304,7 +1304,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN11QSpacerItem10changeSizeEiiN11QSizePolicy6PolicyES1_@Base 4:4.5.3
  _ZN11QSpacerItem10spacerItemEv@Base 4:4.5.3
  _ZN11QSpacerItem11setGeometryERK5QRect@Base 4:4.5.3
- _ZN11QStaticText12setTextWidthEd@Base 4:4.7.0~beta1
+ (subst)_ZN11QStaticText12setTextWidthE{qreal}@Base 4:4.7.0~beta1
  _ZN11QStaticText13setTextFormatEN2Qt10TextFormatE@Base 4:4.7.0~beta1
  _ZN11QStaticText13setTextOptionERK11QTextOption@Base 4:4.7.0~beta2
  _ZN11QStaticText18setPerformanceHintENS_15PerformanceHintE@Base 4:4.7.0~beta1
@@ -5186,8 +5186,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN20QGraphicsItemPrivate42invalidateParentGraphicsEffectsRecursivelyEv@Base 4:4.6.2
  _ZN20QGraphicsItemPrivate44updateChildWithGraphicsEffectFlagRecursivelyEv@Base 4:4.6.2
  _ZN20QGraphicsItemPrivate8addChildEP13QGraphicsItem@Base 4:4.6.1
- _ZN20QGraphicsItemPrivate8setWidthEd@Base 4:4.7.0~beta1
- _ZN20QGraphicsItemPrivate9setHeightEd@Base 4:4.7.0~beta1
+ (subst)_ZN20QGraphicsItemPrivate8setWidthE{qreal}@Base 4:4.7.0~beta1
+ (subst)_ZN20QGraphicsItemPrivate9setHeightE{qreal}@Base 4:4.7.0~beta1
  _ZN20QGraphicsPolygonItem10setPolygonERK9QPolygonF@Base 4:4.5.3
  _ZN20QGraphicsPolygonItem11setFillRuleEN2Qt8FillRuleE@Base 4:4.5.3
  _ZN20QGraphicsPolygonItem12setExtensionEN13QGraphicsItem9ExtensionERK8QVariant@Base 4:4.5.3
@@ -7135,7 +7135,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN8QPainter13setClipRegionERK7QRegionN2Qt13ClipOperationE@Base 4:4.5.3
  _ZN8QPainter13setRedirectedEPK12QPaintDevicePS0_RK6QPoint@Base 4:4.5.3
  _ZN8QPainter13setRenderHintENS_10RenderHintEb@Base 4:4.5.3
- _ZN8QPainter14PixmapFragment6createERK7QPointFRK6QRectFdddd@Base 4:4.7.0~beta1
+ (subst)_ZN8QPainter14PixmapFragment6createERK7QPointFRK6QRectF{qreal}{qreal}{qreal}{qreal}@Base 4:4.7.0~beta1
  _ZN8QPainter14drawStaticTextERK7QPointFRK11QStaticText@Base 4:4.7.0~beta1
  _ZN8QPainter14resetTransformEv@Base 4:4.5.3
  _ZN8QPainter14setBrushOriginERK7QPointF@Base 4:4.5.3
@@ -9015,7 +9015,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK12QLineControl11stripStringERK7QString@Base 4:4.6.1
  _ZNK12QLineControl12isValidInputE5QCharS0_@Base 4:4.6.1
  _ZNK12QLineControl18hasAcceptableInputERK7QString@Base 4:4.6.1
- (optional=private|arch=armel hppa sparc)_ZNK12QLineControl18textAfterSelectionEv@Base 4:4.6.2
+#MISSING: 4:4.7.0~rc1# (optional=private|arch=armel hppa sparc)_ZNK12QLineControl18textAfterSelectionEv@Base 4:4.6.2
  _ZNK12QLineControl4copyEN10QClipboard4ModeE@Base 4:4.6.1
  _ZNK12QLineControl6xToPosEiN9QTextLine14CursorPositionE@Base 4:4.6.1
  _ZNK12QPaintBuffer11paintEngineEv@Base 4:4.6.1
@@ -10982,8 +10982,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK7QAction9statusTipEv@Base 4:4.5.3
  _ZNK7QAction9whatsThisEv@Base 4:4.5.3
  (subst)_ZNK7QBezier10addIfCloseEP{qreal}{qreal}@Base 4:4.5.3
- _ZNK7QBezier11getSubRangeEdd@Base 4:4.7.0~beta1
- _ZNK7QBezier12addToPolygonEP9QPolygonFd@Base 4:4.7.0~beta2
+ (subst)_ZNK7QBezier11getSubRangeE{qreal}{qreal}@Base 4:4.7.0~beta1
+ (subst)_ZNK7QBezier12addToPolygonEP9QPolygonF{qreal}@Base 4:4.7.0~beta2
  (subst)_ZNK7QBezier16bezierOnIntervalE{qreal}{qreal}@Base 4:4.5.3
  (subst)_ZNK7QBezier17stationaryYPointsER{qreal}S0_@Base 4:4.5.3
  _ZNK7QBezier5mapByERK10QTransform@Base 4:4.7.0~beta1
@@ -10992,7 +10992,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (subst)_ZNK7QBezier6lengthE{qreal}@Base 4:4.5.3
  (subst)_ZNK7QBezier7shiftedEPS_i{qreal}f@Base 4:4.5.3
  (subst)_ZNK7QBezier9tAtLengthE{qreal}@Base 4:4.5.3
- _ZNK7QBezier9toPolygonEd@Base 4:4.7.0~beta2
+ (subst)_ZNK7QBezier9toPolygonE{qreal}@Base 4:4.7.0~beta2
  _ZNK7QBitmap11transformedERK10QTransform@Base 4:4.5.3
  _ZNK7QBitmap11transformedERK7QMatrix@Base 4:4.5.3
  _ZNK7QBitmapcv8QVariantEv@Base 4:4.5.3
