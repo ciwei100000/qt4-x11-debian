@@ -3,7 +3,7 @@ Section: libs
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Fathi Boudra <fabo@debian.org>, Ana Beatriz Guerrero Lopez <ana@debian.org>, Modestas Vainius <modax@debian.org>, Sune Vuorela <debian@pusling.com>,
-Build-Depends: debhelper (>= 7.4.13), quilt, pkg-kde-tools (>= 0.6.4), flex, sharutils,
+Build-Depends: debhelper (>= 7.4.13), pkg-kde-tools (>= 0.6.4), flex, sharutils,
  firebird2.1-dev [amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sparc],
  libasound2-dev [!kfreebsd-amd64 !kfreebsd-i386 !hurd-i386],
  libaudio-dev, libcups2-dev, libdbus-1-dev, libfreetype6-dev,
