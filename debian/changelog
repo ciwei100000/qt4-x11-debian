@@ -45,6 +45,9 @@ qt4-x11 (4:4.7.1-0r1) UNRELEASED; urgency=low
       names already;
     - 0209-prevent-qt-mixing.diff - should be dropped;
     - 0216-allow-isystem-for-headers.diff - mac only skip it;
+    - 09_qmake_lflags_as-needed.diff - configure script supports LDFLAGS
+      nowadays. Drop the patch and export appropriate LDFLAGS in debian/rules
+      instead.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 06 Oct 2010 14:55:15 +0200
 
