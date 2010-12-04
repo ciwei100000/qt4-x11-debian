@@ -8,7 +8,7 @@ Forwarded: no
 
 --- a/src/3rdparty/webkit/WebKit.pri
 +++ b/src/3rdparty/webkit/WebKit.pri
-@@ -43,6 +43,13 @@ CONFIG(release, debug|release) {
+@@ -47,6 +47,13 @@ CONFIG(release, debug|release) {
      DEFINES += NDEBUG
  }
  
@@ -20,5 +20,5 @@ Forwarded: no
 +
 +
  BASE_DIR = $$PWD
- INCLUDEPATH += $$PWD/WebKit/qt/Api
- QMAKE_LFLAGS += -Wl,--version-script,$$BASE_DIR/symbols.filter
+ 
+ symbian {

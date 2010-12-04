@@ -1,3 +1,144 @@
+qt4-x11 (4:4.7.1-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+
+  [ Fathi Boudra ]
+  * Remove patches:
+    - 0001_webkit_self_injection_into_qt_configuration.patch - stolen upstream
+    - 0002_fix_qstatictext_with_opengl1_engine.patch - stolen upstream
+    - 0003_add_three_new_style-hints_to_qfont.patch - stolen upstream
+    - 0004_fix_qstatictext_copy_constructor.patch - stolen upstream
+  * Refresh patches.
+  * Update installed files.
+  * Update symbols files.
+
+  [ Pino Toscano ]
+  * Rework and replace patch 50_kfreebsd_build_fix.diff with two new patches:
+    - 22_use___GLIBC__.diff: use __GLIBC__ instead of Q_OS_LINUX for GLIBC
+      functions
+    - 50_kfreebsd_Q_OS.diff: define Q_OS_FREEBSD_KERNEL for kFreeBSD
+  * Add a new patch 01_debian_append_qt4_suffix.diff, which contains all the
+    changes for appending the -qt4 suffix to various tools; it is the result
+    of the merge of the following patches (which are removed, as obsolete):
+    - 01_qmake_for_debian.diff
+    - 02_launch_assistant-qt4.diff
+    - 03_launch_moc-qt4.diff
+    - 04_launch_uic-qt4.diff
+    - 05_append_qt4_target.diff
+
+  [ Didier Raboud ]
+  * Cherry-pick "Fix qdbus manpage install. It is misplaced." from unstable.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 06 Oct 2010 14:55:15 +0200
+
+qt4-x11 (4:4.7.0~rc1-1) experimental; urgency=low
+
+  * New upstream release.
+  * Remove 0001_add_webkit_qt_config.patch in favor of
+    0001_webkit_self_injection_into_qt_configuration.patch.
+  * Add patches:
+    - 0002_fix_qstatictext_with_opengl1_engine.patch
+      OpenGL1 paint engine transforms text coordinates itself and
+      does not require QStaticText to use device coordinates.
+    - 0003_add_three_new_style-hints_to_qfont.patch
+      Add three new style-hints to QFont to match CSS generic font families.
+    - 0004_fix_qstatictext_copy_constructor.patch
+      Fix QStaticText copy constructor to also copy text option property.
+  * Update debian/control:
+    - bump Standards-Version to 3.9.1 (no changes needed).
+    - add libqt4-assistant and libqt4-webkit-dbg dummy transitional packages.
+  * Update debian/rules:
+    - add -no-openvg configure option.
+  * Refresh patches.
+  * Update installed files.
+  * Update symbols files.
+
+ -- Fathi Boudra <fabo@debian.org>  Thu, 26 Aug 2010 19:54:00 +0300
+
+qt4-x11 (4:4.7.0~beta2-3) experimental; urgency=low
+
+  * Add 0001_add_webkit_qt_config.patch to load modules .pri files.
+    Fix the detection of Qt WebKit when shipped standalone.
+  * Update debian/control:
+    - remove references to Debian in package descriptions
+      (derivatives friendly).
+    - add libqtwebkit-dev to libqt4-dev package.
+    - remove libpulse-dev build dependency. It's used to build Phonon.
+
+ -- Fathi Boudra <fabo@debian.org>  Tue, 20 Jul 2010 16:55:20 +0300
+
+qt4-x11 (4:4.7.0~beta2-2) experimental; urgency=low
+
+  [ Fathi Boudra ]
+  * Remove qt_webkit_version.pri file, installed inconditionaly.
+    It conflicts with qt_webkit_version.pri shipped in Qt WebKit.
+
+  [ Modestas Vainius ]
+  * Make libqt4-dev conflict with libqtwebkit-dev less broad: (<< 2.0~). The
+    latest version which this conflict is supposed to cover is 0~svn29752-1.
+  * Add Breaks (or turn Conflicts into Breaks) next to Replaces as recommended
+    by policy 3.9.0.
+  * Remove conflicts against old (predating etch) qt-x11-free (Qt3) packages.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 13 Jul 2010 16:20:28 +0300
+
+qt4-x11 (4:4.7.0~beta2-1) experimental; urgency=low
+
+  * New upstream release.
+  * Remove Qt Multimedia, Qt MediaServices and Qt WebKit packages.
+  * Remove Debian patches:
+    - 81_hurd_architecture.diff - merged upstream.
+    - 97_alpha_ftbfs_qatomic_alpha_h_types.diff - merged upstream.
+  * Update debian/control:
+    - bump Standards-Version to 3.9.0.
+    - remove libqt4-declarative-widgets package.
+    - add libqt4-declarative-folderlistmodel package.
+    - add libqt4-declarative-gestures package.
+    - add libqt4-webkit dummy transitional package for the libqtwebkit4
+      package.
+  * Update debian/rules:
+    - replace -multimedia by -no-multimedia configure option.
+    - replace -webkit by -no-webkit configure option.
+    - remove leftover directories in override_dh_auto_install target.
+  * Update installed files.
+  * Update symbols files.
+  * Update debian/copyright: include files licensed under a BSD-style license.
+
+ -- Fathi Boudra <fabo@debian.org>  Thu, 08 Jul 2010 16:59:50 +0300
+
+qt4-x11 (4:4.7.0~beta1-1) experimental; urgency=low
+
+  * New upstream release.
+    - QtAssistant client library removal (libqt4-assistant).
+    - legacy Qt Assistant removal (assistant_adp).
+    - new QtDeclarative module (libqt4-declarative).
+    - new QtMediaServices module (libqt4-mediaservices).
+  * Remove upstream patches:
+    - 0001_qpixmap_load_no_modify_referenced_copies.diff - stolen upstream
+    - 0002_qmake_qfileinfo_absolutepath.diff - stolen upstream
+    - 0003_s390_fix_atomic_ops_related_crashes.diff - stolen upstream
+    - 0004_problem_displaying_half_width_character.diff - stolen upstream
+    - 0005_always_redraw_the_complete_control.diff - stolen upstream
+    - 0006_expand_indicator_would_not_be_displayed.diff - stolen upstream
+  * Remove Debian patches:
+    - 82_hurd_SA_SIGINFO.diff - merged upstream
+    - 95_sparc_platform_definition.diff - merged upstream
+    - 98_alpha_ftbfs_wtf_platform_support.diff - stolen upstream
+  * Refresh Debian patches:
+    - 30_webkit_unaligned_access.diff - partially merged upstream
+  * Update debian/control:
+    - add libgstreamer0.10-dev, libgstreamer-plugins-base0.10-dev,
+      libpulse-dev and libxv-dev build dependencies.
+    - add libqt4-declarative, libqt4-mediaservices,
+      libqt4-declarative-$PLUGINS and qt4-qmlviewer packages.
+    - remove libqt4-assistant package.
+  * Update debian/rules:
+    - add -importdir configure option.
+  * Update installed files.
+  * Update symbols files.
+
+ -- Fathi Boudra <fabo@debian.org>  Fri, 21 May 2010 10:31:22 +0300
+
 qt4-x11 (4:4.6.3-4) unstable; urgency=high
 
   [ Pino Toscano ]

@@ -2,9 +2,9 @@ temporary fix because of alpha, has to be dropped as soon as gcc's bug is fixed.
 
 --- a/src/opengl/opengl.pro
 +++ b/src/opengl/opengl.pro
-@@ -35,6 +35,7 @@ SOURCES	+= qgl.cpp \
-            qglextensions.cpp \
+@@ -37,6 +37,7 @@ SOURCES	+= qgl.cpp \
             qglpaintdevice.cpp \
+            qglbuffer.cpp \
  
 +QMAKE_CXXFLAGS_HIDESYMS -= -fvisibility-inlines-hidden
  

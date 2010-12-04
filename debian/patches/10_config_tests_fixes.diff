@@ -1,6 +1,8 @@
 Description: Various config.test fixes.
              Build ibase sql plugin against firebird.
+             Add gstreamer include path.
 Author: Fathi Boudra <fabo@debian.org>
+Last-Update: 2010-05-24
 
 --- a/config.tests/unix/ibase/ibase.pro
 +++ b/config.tests/unix/ibase/ibase.pro
@@ -10,28 +12,17 @@ Author: Fathi Boudra <fabo@debian.org>
  mac:CONFIG -= app_bundle
 -LIBS += -lgds
 +LIBS += -lfbclient
---- a/src/sql/drivers/drivers.pri
-+++ b/src/sql/drivers/drivers.pri
-@@ -94,7 +94,7 @@ contains(sql-drivers, ibase) {
-     HEADERS += drivers/ibase/qsql_ibase.h
-     SOURCES += drivers/ibase/qsql_ibase.cpp
-     
--    unix:LIBS *= -lgds  
-+    unix:LIBS *= -lfbclient
-     
-     win32 {
-         !win32-borland:LIBS *= -lgds32_ms
---- a/src/plugins/sqldrivers/ibase/ibase.pro
-+++ b/src/plugins/sqldrivers/ibase/ibase.pro
-@@ -4,7 +4,7 @@ HEADERS		= ../../../sql/drivers/ibase/qs
- SOURCES		= main.cpp \
- 		  ../../../sql/drivers/ibase/qsql_ibase.cpp
+--- a/src/sql/drivers/ibase/qsql_ibase.pri
++++ b/src/sql/drivers/ibase/qsql_ibase.pri
+@@ -2,7 +2,7 @@ HEADERS += $$PWD/qsql_ibase.h
+ SOURCES += $$PWD/qsql_ibase.cpp
  
--unix:!contains( LIBS, .*gds.* ):!contains( LIBS, .*libfb.* ):LIBS    *= -lgds
-+unix:!contains( LIBS, .*gds.* ):!contains( LIBS, .*libfb.* ):LIBS    *= -lfbclient
- 
- win32:!contains( LIBS, .*gds.* ):!contains( LIBS, .*fbclient.* ) {
- 	!win32-borland:LIBS *= -lgds32_ms
+ unix {
+-    !contains(LIBS, .*gds.*):!contains(LIBS, .*libfb.*):LIBS += -lgds
++    !contains(LIBS, .*gds.*):!contains(LIBS, .*libfb.*):LIBS += -lfbclient
+ } else {
+     !contains(LIBS, .*gds.*):!contains(LIBS, .*fbclient.*) {
+         win32-borland:LIBS += gds32.lib
 --- a/config.tests/unix/sqlite/sqlite.pro
 +++ b/config.tests/unix/sqlite/sqlite.pro
 @@ -1,3 +1,4 @@
@@ -39,3 +30,10 @@ Author: Fathi Boudra <fabo@debian.org>
  CONFIG -= qt dylib
  mac:CONFIG -= app_bundle
 +LIBS += -ldl
+--- a/config.tests/unix/gstreamer/gstreamer.pro
++++ b/config.tests/unix/gstreamer/gstreamer.pro
+@@ -1,3 +1,4 @@
+ SOURCES = gstreamer.cpp
+ CONFIG -= qt
+ LIBS += -lgstinterfaces-0.10 -lgstvideo-0.10 -lgstbase-0.10
++INCLUDEPATH += /usr/include/gstreamer-0.10

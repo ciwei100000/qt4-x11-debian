@@ -1,9 +1,3 @@
-# upstream patches
-0004_problem_displaying_half_width_character.diff
-0005_fix_detection_of_headers_files.diff
-0006_webkit_propriotary_flash_init_gtk_first.diff
-0007_qsslsocket_improve_error_handling_CVE-2010-2621.patch
-
 # qt-copy patches
 0180-window-role.diff
 0195-compositing-properties.diff
@@ -12,11 +6,7 @@
 0225-invalidate-tabbar-geometry-on-refresh.patch
 
 # debian patches
-01_qmake_for_debian.diff
-02_launch_assistant-qt4.diff
-03_launch_moc-qt4.diff
-04_launch_uic-qt4.diff
-05_append_qt4_target.diff
+01_debian_append_qt4_suffix.diff
 07_trust_dpkg-arch_over_uname-m.diff
 08_configure_quilt_compat.diff
 09_qmake_lflags_as-needed.diff
@@ -29,21 +19,18 @@
 18_enable_qt3support_qtwebkit_debug_info.diff
 20_install_qvfb.diff
 21_qt_ia32_library_path.diff
-22_fix_disappearing_cursor.diff
+22_use___GLIBC__.diff
 23_permit_plugins_built_with_future_qt.diff
 30_webkit_unaligned_access.diff
 40_alpha_ice.diff
 41_disable_opengl_visibility.diff
-50_kfreebsd_build_fix.diff
+50_kfreebsd_Q_OS.diff
 51_kfreebsd_strnstr_build_fix.diff
 70_hppa_ldcw_fix.diff
 71_hppa_unaligned_access_fix_458133.diff
 80_hurd_max_path.diff
-81_hurd_architecture.diff
-82_hurd_SA_SIGINFO.diff
 89_powerpc_opts.diff
 91_s390_use_gstabs.diff
 92_armel_gcc43_valist_compat.diff
-95_sparc_platform_definition.diff
 96_webkit_no_gc_sections.diff
 99_hppa_bug561203_decrease_failure_rate.diff

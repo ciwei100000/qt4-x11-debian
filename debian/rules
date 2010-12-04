@@ -83,6 +83,7 @@ endif
 	            -headerdir "/usr/include/qt4" \
 	            -datadir "/usr/share/qt4" \
 	            -plugindir "/usr/lib/qt4/plugins" \
+	            -importdir "/usr/lib/qt4/imports" \
 	            -translationdir "/usr/share/qt4/translations" \
 	            -sysconfdir "/etc/xdg" \
 	            -demosdir "/usr/lib/qt4/demos" \
@@ -97,12 +98,12 @@ endif
 	            -plugin-sql-tds \
 	            -system-sqlite \
 	            -xmlpatterns \
-	            -multimedia \
+	            -no-multimedia \
 	            -audio-backend \
 	            -phonon \
 	            -no-phonon-backend \
 	            -svg \
-	            -webkit \
+	            -no-webkit \
 	            -script \
 	            -scripttools \
 	            -platform $(platform_arg) \
@@ -118,6 +119,7 @@ endif
 	            -verbose \
 	            -gtkstyle \
 	            -system-nas-sound \
+	            -no-openvg \
 	            -lfontconfig \
 	            -I/usr/include/freetype2 \
 	            -qvfb \
@@ -239,12 +241,23 @@ override_dh_auto_install:
 	install -D -p -m0644 debian/desktop/qtconfig.png \
 		debian/qt4-qtconfig/usr/share/pixmaps/qtconfig.png
 
+	# QTBUG-12159 workaround
+	rm -f debian/tmp//usr/share/qt4/mkspecs/modules/qt_webkit_version.pri
+
 	# Remove phonon development files
 	rm -f debian/tmp/usr/lib/libphonon.la
 	rm -f debian/tmp/usr/lib/libphonon.prl
 	rm -f debian/tmp/usr/lib/libphonon.so
 	rm -f debian/tmp/usr/lib/pkgconfig/phonon.pc
 	rm -rf debian/tmp/usr/include/qt4/phonon
+
+	# Remove leftover directories
+	find $(CURDIR)/debian/tmp/usr/lib/qt4 -depth -type d \( -false \
+	  -o -name .moc\* \
+	  -o -name .obj\* \
+	  -o -name .pch \
+	  -o -name .rcc \
+	\) -print0 | xargs -0 rm -rf
 
 override_dh_install:
 	dh_install --list-missing --sourcedir=debian/tmp

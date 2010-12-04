@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.6.3 amd64
+# SymbolsHelper-Confirmed: 4:4.7.1 amd64
 libQtCLucene.so.4 libqtcore4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN12QCLuceneHits2idEi@Base 4:4.5.3
@@ -770,6 +770,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _Z13qErrnoWarningiPKcz@Base 4:4.5.3
  _Z13qFlagLocationPKc@Base 4:4.5.3
  _Z13uppercasebaseR11QTextStream@Base 4:4.5.3
+ _Z14qDecodeDataUrlRK4QUrl@Base 4:4.7.0~beta1
  (subst)_Z14qMallocAligned{size_t}{size_t}@Base 4:4.6.1
  _Z14qSystemWarningPKci@Base 4:4.5.3
  _Z14qt_safe_selectiP6fd_setS0_S0_PK7timeval@Base 4:4.6.1
@@ -786,6 +787,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _Z16qInstallPathLibsv@Base 4:4.5.3
  _Z16qt_check_pointerPKci@Base 4:4.5.3
  _Z17qt_message_output9QtMsgTypePKc@Base 4:4.5.3
+ _Z18qDetectCPUFeaturesv@Base 4:4.7.0~beta1
  _Z18qGetCharAttributesPKtjPK13HB_ScriptItemjP17HB_CharAttributes@Base 4:4.5.3
  _Z18qInstallMsgHandlerPFv9QtMsgTypePKcE@Base 4:4.5.3
  _Z18qRemovePostRoutinePFvvE@Base 4:4.5.3
@@ -872,6 +874,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _Z9qstrnicmpPKcS0_j@Base 4:4.5.3
  _Z9qt_assertPKcS0_i@Base 4:4.5.3
  _ZN10QByteArray10fromBase64ERKS_@Base 4:4.5.3
+ _ZN10QByteArray10setRawDataEPKcj@Base 4:4.7.0~beta2
  _ZN10QByteArray11fromRawDataEPKci@Base 4:4.5.3
  _ZN10QByteArray11shared_nullE@Base 4:4.5.3
  _ZN10QByteArray12shared_emptyE@Base 4:4.5.3
@@ -911,6 +914,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN10QByteArray7replaceEcRKS_@Base 4:4.5.3
  _ZN10QByteArray7replaceEcc@Base 4:4.5.3
  _ZN10QByteArray7replaceEiiPKc@Base 4:4.5.3
+ _ZN10QByteArray7replaceEiiPKci@Base 4:4.7.0~beta1
  _ZN10QByteArray7replaceEiiRKS_@Base 4:4.5.3
  _ZN10QByteArray8truncateEi@Base 4:4.5.3
  _ZN10QByteArrayC1EPKc@Base 4:4.5.3
@@ -1197,11 +1201,15 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN12QTextDecoder9toUnicodeEP7QStringPKci@Base 4:4.5.3
  _ZN12QTextDecoder9toUnicodeEPKci@Base 4:4.5.3
  _ZN12QTextDecoder9toUnicodeERK10QByteArray@Base 4:4.5.3
+ _ZN12QTextDecoderC1EPK10QTextCodec6QFlagsINS0_14ConversionFlagEE@Base 4:4.7.0~beta1
+ _ZN12QTextDecoderC2EPK10QTextCodec6QFlagsINS0_14ConversionFlagEE@Base 4:4.7.0~beta1
  _ZN12QTextDecoderD1Ev@Base 4:4.5.3
  _ZN12QTextDecoderD2Ev@Base 4:4.5.3
  _ZN12QTextEncoder11fromUnicodeEPK5QChari@Base 4:4.5.3
  _ZN12QTextEncoder11fromUnicodeERK7QString@Base 4:4.5.3
  _ZN12QTextEncoder11fromUnicodeERK7QStringRi@Base 4:4.5.3
+ _ZN12QTextEncoderC1EPK10QTextCodec6QFlagsINS0_14ConversionFlagEE@Base 4:4.7.0~beta1
+ _ZN12QTextEncoderC2EPK10QTextCodec6QFlagsINS0_14ConversionFlagEE@Base 4:4.7.0~beta1
  _ZN12QTextEncoderD1Ev@Base 4:4.5.3
  _ZN12QTextEncoderD2Ev@Base 4:4.5.3
  _ZN12QtConcurrent15ResultStoreBase10addResultsEiPKvii@Base 4:4.5.3
@@ -1248,6 +1256,11 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN12QtConcurrent8internal14ExceptionStore12setExceptionERKNS_9ExceptionE@Base 4:4.5.3
  _ZN12QtConcurrent8internal14ExceptionStore22throwPossibleExceptionEv@Base 4:4.5.3
  _ZN12QtConcurrent8internal14ExceptionStore9exceptionEv@Base 4:4.5.3
+ _ZN13QElapsedTimer10invalidateEv@Base 4:4.7.0~beta1
+ _ZN13QElapsedTimer11isMonotonicEv@Base 4:4.7.0~beta1
+ _ZN13QElapsedTimer5startEv@Base 4:4.7.0~beta1
+ _ZN13QElapsedTimer7restartEv@Base 4:4.7.0~beta1
+ _ZN13QElapsedTimer9clockTypeEv@Base 4:4.7.0~beta1
  _ZN13QFSFileEngine11currentPathERK7QString@Base 4:4.5.3
  _ZN13QFSFileEngine11setFileNameERK7QString@Base 4:4.5.3
  _ZN13QFSFileEngine12endEntryListEv@Base 4:4.5.3
@@ -1447,9 +1460,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN14QObjectPrivate14setDeleteWatchEPS_Pi@Base 4:4.5.3
  _ZN14QObjectPrivate15checkWindowRoleEv@Base 4:4.5.3
  _ZN14QObjectPrivate16resetDeleteWatchEPS_Pii@Base 4:4.5.3
- _ZN14QObjectPrivate16setCurrentSenderEP7QObjectPNS_6SenderE@Base 4:4.5.3
  _ZN14QObjectPrivate16setParent_helperEP7QObject@Base 4:4.5.3
- _ZN14QObjectPrivate18resetCurrentSenderEP7QObjectPNS_6SenderES3_@Base 4:4.5.3
  _ZN14QObjectPrivate19_q_reregisterTimersEPv@Base 4:4.5.3
  _ZN14QObjectPrivate19moveToThread_helperEv@Base 4:4.5.3
  _ZN14QObjectPrivate20cleanConnectionListsEv@Base 4:4.5.3
@@ -1634,9 +1645,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN16QCoreApplicationD0Ev@Base 4:4.5.3
  _ZN16QCoreApplicationD1Ev@Base 4:4.5.3
  _ZN16QCoreApplicationD2Ev@Base 4:4.5.3
- _ZN16QDeclarativeDataD0Ev@Base 4:4.6.1
- _ZN16QDeclarativeDataD1Ev@Base 4:4.6.1
- _ZN16QDeclarativeDataD2Ev@Base 4:4.6.1
  _ZN16QEventTransition11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN16QEventTransition11qt_metacastEPKc@Base 4:4.6.1
  _ZN16QEventTransition12onTransitionEP6QEvent@Base 4:4.6.1
@@ -1657,6 +1665,8 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN16QEventTransitionD1Ev@Base 4:4.6.1
  _ZN16QEventTransitionD2Ev@Base 4:4.6.1
  _ZN16QIODevicePrivate13putCharHelperEc@Base 4:4.5.3
+ _ZN16QIODevicePrivate4peekEPcx@Base 4:4.7.0~rc1
+ _ZN16QIODevicePrivate4peekEx@Base 4:4.7.0~rc1
  _ZN16QIODevicePrivateC1Ev@Base 4:4.5.3
  _ZN16QIODevicePrivateC2Ev@Base 4:4.5.3
  _ZN16QIODevicePrivateD0Ev@Base 4:4.5.3
@@ -2250,6 +2260,8 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN23QParallelAnimationGroupD0Ev@Base 4:4.6.1
  _ZN23QParallelAnimationGroupD1Ev@Base 4:4.6.1
  _ZN23QParallelAnimationGroupD2Ev@Base 4:4.6.1
+ _ZN24QAbstractDeclarativeData13parentChangedE@Base 4:4.7.0~beta2
+ _ZN24QAbstractDeclarativeData9destroyedE@Base 4:4.7.0~beta2
  _ZN24QAbstractEventDispatcher10startingUpEv@Base 4:4.5.3
  _ZN24QAbstractEventDispatcher11closingDownEv@Base 4:4.5.3
  _ZN24QAbstractEventDispatcher11filterEventEPv@Base 4:4.5.3
@@ -2743,6 +2755,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN7QRegExpD2Ev@Base 4:4.5.3
  _ZN7QRegExpaSERKS_@Base 4:4.5.3
  _ZN7QString10fromLatin1EPKci@Base 4:4.5.3
+ _ZN7QString10setRawDataEPK5QChari@Base 4:4.7.0~beta2
  _ZN7QString10setUnicodeEPK5QChari@Base 4:4.5.3
  _ZN7QString11fromRawDataEPK5QChari@Base 4:4.5.3
  _ZN7QString11shared_nullE@Base 4:4.5.3
@@ -2810,10 +2823,12 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN7QString9fromAsciiEPKci@Base 4:4.5.3
  _ZN7QString9fromUtf16EPKti@Base 4:4.5.3
  _ZN7QStringC1E5QChar@Base 4:4.5.3
+ _ZN7QStringC1EPK5QChar@Base 4:4.7.0~beta1
  _ZN7QStringC1EPK5QChari@Base 4:4.5.3
  _ZN7QStringC1Ei5QChar@Base 4:4.5.3
  _ZN7QStringC1EiN2Qt14InitializationE@Base 4:4.6.1
  _ZN7QStringC2E5QChar@Base 4:4.5.3
+ _ZN7QStringC2EPK5QChar@Base 4:4.7.0~beta1
  _ZN7QStringC2EPK5QChari@Base 4:4.5.3
  _ZN7QStringC2Ei5QChar@Base 4:4.5.3
  _ZN7QStringC2EiN2Qt14InitializationE@Base 4:4.6.1
@@ -2947,6 +2962,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN8QVariantC1ER11QDataStream@Base 4:4.5.3
  _ZN8QVariantC1ERK10QByteArray@Base 4:4.5.3
  _ZN8QVariantC1ERK11QStringList@Base 4:4.5.3
+ _ZN8QVariantC1ERK12QEasingCurve@Base 4:4.7.0~beta1
  _ZN8QVariantC1ERK13QLatin1String@Base 4:4.5.3
  _ZN8QVariantC1ERK4QMapI7QStringS_E@Base 4:4.5.3
  _ZN8QVariantC1ERK4QUrl@Base 4:4.5.3
@@ -2983,6 +2999,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN8QVariantC2ER11QDataStream@Base 4:4.5.3
  _ZN8QVariantC2ERK10QByteArray@Base 4:4.5.3
  _ZN8QVariantC2ERK11QStringList@Base 4:4.5.3
+ _ZN8QVariantC2ERK12QEasingCurve@Base 4:4.7.0~beta1
  _ZN8QVariantC2ERK13QLatin1String@Base 4:4.5.3
  _ZN8QVariantC2ERK4QMapI7QStringS_E@Base 4:4.5.3
  _ZN8QVariantC2ERK4QUrl@Base 4:4.5.3
@@ -3029,6 +3046,10 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN9QDateTime11setTimeSpecEN2Qt8TimeSpecE@Base 4:4.5.3
  _ZN9QDateTime12setUtcOffsetEi@Base 4:4.5.3
  _ZN9QDateTime15currentDateTimeEv@Base 4:4.5.3
+ _ZN9QDateTime18currentDateTimeUtcEv@Base 4:4.7.0~beta1
+ _ZN9QDateTime18setMSecsSinceEpochEx@Base 4:4.7.0~beta1
+ _ZN9QDateTime19fromMSecsSinceEpochEx@Base 4:4.7.0~beta1
+ _ZN9QDateTime22currentMSecsSinceEpochEv@Base 4:4.7.0~beta1
  _ZN9QDateTime6detachEv@Base 4:4.5.3
  _ZN9QDateTime7setDateERK5QDate@Base 4:4.5.3
  _ZN9QDateTime7setTimeERK5QTime@Base 4:4.5.3
@@ -3121,11 +3142,14 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN9QInternal16registerCallbackENS_8CallbackEPFbPPvE@Base 4:4.5.3
  _ZN9QInternal17activateCallbacksENS_8CallbackEPPv@Base 4:4.5.3
  _ZN9QInternal18unregisterCallbackENS_8CallbackEPFbPPvE@Base 4:4.5.3
+ _ZN9QListData11detach_growEPii@Base 4:4.7.0~beta1
  _ZN9QListData11shared_nullE@Base 4:4.5.3
  _ZN9QListData4moveEii@Base 4:4.5.3
  _ZN9QListData5eraseEPPv@Base 4:4.5.3
  _ZN9QListData6appendERKS_@Base 4:4.5.3
+ _ZN9QListData6appendEi@Base 4:4.7.0~beta1
  _ZN9QListData6appendEv@Base 4:4.5.3
+ _ZN9QListData6detachEi@Base 4:4.7.0~beta1
  _ZN9QListData6detachEv@Base 4:4.5.3
  _ZN9QListData6insertEi@Base 4:4.5.3
  _ZN9QListData6removeEi@Base 4:4.5.3
@@ -3138,7 +3162,9 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN9QMetaType12isRegisteredEi@Base 4:4.5.3
  _ZN9QMetaType12registerTypeEPKcPFvPvEPFS2_PKvE@Base 4:4.5.3
  _ZN9QMetaType14unregisterTypeEPKc@Base 4:4.5.3
+ _ZN9QMetaType15registerTypedefEPKci@Base 4:4.7.0~beta1
  _ZN9QMetaType23registerStreamOperatorsEPKcPFvR11QDataStreamPKvEPFvS3_PvE@Base 4:4.5.3
+ _ZN9QMetaType23registerStreamOperatorsEiPFvR11QDataStreamPKvEPFvS1_PvE@Base 4:4.7.0~beta1
  _ZN9QMetaType4loadER11QDataStreamiPv@Base 4:4.5.3
  _ZN9QMetaType4saveER11QDataStreamiPKv@Base 4:4.5.3
  _ZN9QMetaType4typeEPKc@Base 4:4.5.3
@@ -3310,7 +3336,9 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK10QStringRef8toStringEv@Base 4:4.5.3
  _ZNK10QTextCodec11fromUnicodeERK7QString@Base 4:4.5.3
  _ZNK10QTextCodec11fromUnicodeERK7QStringRi@Base 4:4.5.3
+ _ZNK10QTextCodec11makeDecoderE6QFlagsINS_14ConversionFlagEE@Base 4:4.7.0~beta1
  _ZNK10QTextCodec11makeDecoderEv@Base 4:4.5.3
+ _ZNK10QTextCodec11makeEncoderE6QFlagsINS_14ConversionFlagEE@Base 4:4.7.0~beta1
  _ZNK10QTextCodec11makeEncoderEv@Base 4:4.5.3
  _ZNK10QTextCodec7aliasesEv@Base 4:4.5.3
  _ZNK10QTextCodec9canEncodeE5QChar@Base 4:4.5.3
@@ -3420,6 +3448,12 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK12QtConcurrent8internal14ExceptionStore9hasThrownEv@Base 4:4.5.3
  _ZNK12QtConcurrent9Exception5cloneEv@Base 4:4.5.3
  _ZNK12QtConcurrent9Exception5raiseEv@Base 4:4.5.3
+ _ZNK13QElapsedTimer10hasExpiredEx@Base 4:4.7.0~beta1
+ _ZNK13QElapsedTimer19msecsSinceReferenceEv@Base 4:4.7.0~beta1
+ _ZNK13QElapsedTimer6secsToERKS_@Base 4:4.7.0~beta1
+ _ZNK13QElapsedTimer7elapsedEv@Base 4:4.7.0~beta1
+ _ZNK13QElapsedTimer7isValidEv@Base 4:4.7.0~beta1
+ _ZNK13QElapsedTimer7msecsToERKS_@Base 4:4.7.0~beta1
  _ZNK13QFSFileEngine12isSequentialEv@Base 4:4.5.3
  _ZNK13QFSFileEngine13caseSensitiveEv@Base 4:4.5.3
  _ZNK13QFSFileEngine14isRelativePathEv@Base 4:4.5.3
@@ -3500,6 +3534,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK14QAbstractState7machineEv@Base 4:4.6.1
  _ZNK14QFactoryLoader10metaObjectEv@Base 4:4.5.3
  _ZNK14QFactoryLoader4keysEv@Base 4:4.5.3
+ _ZNK14QFactoryLoader7libraryERK7QString@Base 4:4.7.1
  _ZNK14QFactoryLoader8instanceERK7QString@Base 4:4.5.3
  _ZNK14QLocalePrivate13validateCharsERK7QStringNS_10NumberModeEP10QByteArrayi@Base 4:4.5.3
  _ZNK14QLocalePrivate14doubleToStringEdiNS_10DoubleFormEij@Base 4:4.5.3
@@ -3939,6 +3974,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK6QRectForERKS_@Base 4:4.5.3
  _ZNK6QState10errorStateEv@Base 4:4.6.1
  _ZNK6QState10metaObjectEv@Base 4:4.6.1
+ _ZNK6QState11transitionsEv@Base 4:4.7.0~beta1
  _ZNK6QState12initialStateEv@Base 4:4.6.1
  _ZNK6QState9childModeEv@Base 4:4.6.1
  _ZNK6QTimer10metaObjectEv@Base 4:4.5.3
@@ -3960,6 +3996,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK7QLocale12negativeSignEv@Base 4:4.5.3
  _ZNK7QLocale12positiveSignEv@Base 4:4.5.3
  _ZNK7QLocale13numberOptionsEv@Base 4:4.5.3
+ _ZNK7QLocale13textDirectionEv@Base 4:4.7.0~beta2
  _ZNK7QLocale14dateTimeFormatENS_10FormatTypeE@Base 4:4.5.3
  _ZNK7QLocale14groupSeparatorEv@Base 4:4.5.3
  _ZNK7QLocale17measurementSystemEv@Base 4:4.5.3
@@ -4040,6 +4077,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK7QString12ascii_helperEv@Base 4:4.5.3
  _ZNK7QString12toCaseFoldedEv@Base 4:4.5.3
  _ZNK7QString12toWCharArrayEPw@Base 4:4.5.3
+ _ZNK7QString13isRightToLeftEv@Base 4:4.7.0~beta2
  _ZNK7QString13latin1_helperEv@Base 4:4.5.3
  _ZNK7QString13leftJustifiedEi5QCharb@Base 4:4.5.3
  _ZNK7QString14rightJustifiedEi5QCharb@Base 4:4.5.3
@@ -4133,6 +4171,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK8QVariant11toByteArrayEv@Base 4:4.5.3
  _ZNK8QVariant11toULongLongEPb@Base 4:4.5.3
  _ZNK8QVariant12toStringListEv@Base 4:4.5.3
+ _ZNK8QVariant13toEasingCurveEv@Base 4:4.7.0~beta1
  _ZNK8QVariant3cmpERKS_@Base 4:4.5.3
  _ZNK8QVariant4saveER11QDataStream@Base 4:4.5.3
  _ZNK8QVariant4typeEv@Base 4:4.5.3
@@ -4167,6 +4206,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK9QBitArray5countEb@Base 4:4.5.3
  _ZNK9QBitArraycoEv@Base 4:4.5.3
  _ZNK9QDateTime10toTimeSpecEN2Qt8TimeSpecE@Base 4:4.5.3
+ _ZNK9QDateTime17toMSecsSinceEpochEv@Base 4:4.7.0~beta1
  _ZNK9QDateTime4dateEv@Base 4:4.5.3
  _ZNK9QDateTime4timeEv@Base 4:4.5.3
  _ZNK9QDateTime6daysToERKS_@Base 4:4.5.3
@@ -4175,6 +4215,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK9QDateTime7addDaysEi@Base 4:4.5.3
  _ZNK9QDateTime7addSecsEi@Base 4:4.5.3
  _ZNK9QDateTime7isValidEv@Base 4:4.5.3
+ _ZNK9QDateTime7msecsToERKS_@Base 4:4.7.0~beta2
  _ZNK9QDateTime8addMSecsEx@Base 4:4.5.3
  _ZNK9QDateTime8addYearsEi@Base 4:4.5.3
  _ZNK9QDateTime8timeSpecEv@Base 4:4.5.3
@@ -4334,7 +4375,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTI15QPauseAnimation@Base 4:4.6.1
  _ZTI15QSocketNotifier@Base 4:4.5.3
  _ZTI16QCoreApplication@Base 4:4.5.3
- _ZTI16QDeclarativeData@Base 4:4.6.1
  _ZTI16QEventTransition@Base 4:4.6.1
  _ZTI16QIODevicePrivate@Base 4:4.5.3
  _ZTI16QTextCodecPlugin@Base 4:4.5.3
@@ -4390,7 +4430,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTIN12QtConcurrent9ExceptionE@Base 4:4.5.3
  _ZTIN13QStateMachine11SignalEventE@Base 4:4.6.1
  _ZTIN13QStateMachine12WrappedEventE@Base 4:4.6.1
- _ZTIZN7QObjectD1EvE17AutotestException@Base 4:4.6.1
  _ZTS10QEventLoop@Base 4:4.5.3
  _ZTS10QTextCodec@Base 4:4.5.3
  _ZTS11QChildEvent@Base 4:4.5.3
@@ -4421,7 +4460,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTS15QPauseAnimation@Base 4:4.6.1
  _ZTS15QSocketNotifier@Base 4:4.5.3
  _ZTS16QCoreApplication@Base 4:4.5.3
- _ZTS16QDeclarativeData@Base 4:4.6.1
  _ZTS16QEventTransition@Base 4:4.6.1
  _ZTS16QIODevicePrivate@Base 4:4.5.3
  _ZTS16QTextCodecPlugin@Base 4:4.5.3
@@ -4477,7 +4515,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTSN12QtConcurrent9ExceptionE@Base 4:4.5.3
  _ZTSN13QStateMachine11SignalEventE@Base 4:4.6.1
  _ZTSN13QStateMachine12WrappedEventE@Base 4:4.6.1
- _ZTSZN7QObjectD1EvE17AutotestException@Base 4:4.6.1
  _ZTV10QEventLoop@Base 4:4.5.3
  _ZTV10QTextCodec@Base 4:4.5.3
  _ZTV11QChildEvent@Base 4:4.5.3
@@ -4508,7 +4545,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTV15QPauseAnimation@Base 4:4.6.1
  _ZTV15QSocketNotifier@Base 4:4.5.3
  _ZTV16QCoreApplication@Base 4:4.5.3
- _ZTV16QDeclarativeData@Base 4:4.6.1
  _ZTV16QEventTransition@Base 4:4.6.1
  _ZTV16QIODevicePrivate@Base 4:4.5.3
  _ZTV16QTextCodecPlugin@Base 4:4.5.3
@@ -4564,7 +4600,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTVN12QtConcurrent9ExceptionE@Base 4:4.5.3
  _ZTVN13QStateMachine11SignalEventE@Base 4:4.6.1
  _ZTVN13QStateMachine12WrappedEventE@Base 4:4.6.1
- _ZTVZN7QObjectD1EvE17AutotestException@Base 4:4.6.1
  _ZanRK9QBitArrayS1_@Base 4:4.5.3
  _ZeoRK9QBitArrayS1_@Base 4:4.5.3
  _ZeqRK10QStringRefS1_@Base 4:4.5.3
@@ -4595,6 +4630,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _Zls6QDebugRK9QDateTime@Base 4:4.5.3
  _ZlsR11QDataStreamN8QVariant4TypeE@Base 4:4.5.3
  _ZlsR11QDataStreamRK10QByteArray@Base 4:4.5.3
+ _ZlsR11QDataStreamRK12QEasingCurve@Base 4:4.7.0~beta1
  _ZlsR11QDataStreamRK4QUrl@Base 4:4.5.3
  _ZlsR11QDataStreamRK5QChar@Base 4:4.5.3
  _ZlsR11QDataStreamRK5QDate@Base 4:4.5.3
@@ -4615,8 +4651,10 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZlsR11QDataStreamRK9QBitArray@Base 4:4.5.3
  _ZlsR11QDataStreamRK9QDateTime@Base 4:4.5.3
  _ZltRK10QStringRefS1_@Base 4:4.5.3
+ _ZltRK13QElapsedTimerS1_@Base 4:4.7.0~beta1
  _ZorRK9QBitArrayS1_@Base 4:4.5.3
  _ZrsR11QDataStreamR10QByteArray@Base 4:4.5.3
+ _ZrsR11QDataStreamR12QEasingCurve@Base 4:4.7.0~beta1
  _ZrsR11QDataStreamR4QUrl@Base 4:4.5.3
  _ZrsR11QDataStreamR5QChar@Base 4:4.5.3
  _ZrsR11QDataStreamR5QDate@Base 4:4.5.3

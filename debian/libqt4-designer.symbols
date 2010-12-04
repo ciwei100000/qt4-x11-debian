@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.6.3 amd64
+# SymbolsHelper-Confirmed: 4:4.7.0~beta1 amd64
 libQtDesigner.so.4 libqt4-designer #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z20domPropertyToVariantP20QAbstractFormBuilderPK11QMetaObjectPK11DomProperty@Base 4:4.5.3
@@ -829,6 +829,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN18qdesigner_internal12FilterWidget11checkButtonERK7QString@Base 4:4.5.3
  _ZN18qdesigner_internal12FilterWidget11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN18qdesigner_internal12FilterWidget11qt_metacastEPKc@Base 4:4.5.3
+ _ZN18qdesigner_internal12FilterWidget11resizeEventEP12QResizeEvent@Base 4:4.7.0~beta1
  _ZN18qdesigner_internal12FilterWidget13filterChangedERK7QString@Base 4:4.5.3
  _ZN18qdesigner_internal12FilterWidget14setRefuseFocusEb@Base 4:4.5.3
  _ZN18qdesigner_internal12FilterWidget16staticMetaObjectE@Base 4:4.5.3
@@ -837,12 +838,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN18qdesigner_internal12FilterWidgetC2EP7QWidgetNS0_10LayoutModeE@Base 4:4.5.3
  _ZN18qdesigner_internal12HintLineEdit11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN18qdesigner_internal12HintLineEdit11qt_metacastEPKc@Base 4:4.5.3
- _ZN18qdesigner_internal12HintLineEdit11setHintTextERK7QString@Base 4:4.5.3
  _ZN18qdesigner_internal12HintLineEdit12focusInEventEP11QFocusEvent@Base 4:4.5.3
- _ZN18qdesigner_internal12HintLineEdit12hideHintTextEv@Base 4:4.5.3
- _ZN18qdesigner_internal12HintLineEdit12setTextColorERK6QColorPS1_@Base 4:4.5.3
- _ZN18qdesigner_internal12HintLineEdit12showHintTextEb@Base 4:4.5.3
- _ZN18qdesigner_internal12HintLineEdit13focusOutEventEP11QFocusEvent@Base 4:4.5.3
  _ZN18qdesigner_internal12HintLineEdit14setRefuseFocusEb@Base 4:4.5.3
  _ZN18qdesigner_internal12HintLineEdit15mousePressEventEP11QMouseEvent@Base 4:4.5.3
  _ZN18qdesigner_internal12HintLineEdit16staticMetaObjectE@Base 4:4.5.3
@@ -1101,6 +1097,15 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN18qdesigner_internal14PreviewManagerD0Ev@Base 4:4.5.3
  _ZN18qdesigner_internal14PreviewManagerD1Ev@Base 4:4.5.3
  _ZN18qdesigner_internal14PreviewManagerD2Ev@Base 4:4.5.3
+ _ZN18qdesigner_internal14PropertyHelper10applyValueEP28QDesignerFormWindowInterfaceRK8QVariant5QPairIS3_bE@Base 4:4.7.0~beta1
+ _ZN18qdesigner_internal14PropertyHelper12updateObjectEP28QDesignerFormWindowInterfaceRK8QVariantS5_@Base 4:4.7.0~beta1
+ _ZN18qdesigner_internal14PropertyHelper15restoreOldValueEP28QDesignerFormWindowInterface@Base 4:4.7.0~beta1
+ _ZN18qdesigner_internal14PropertyHelper19restoreDefaultValueEP28QDesignerFormWindowInterface@Base 4:4.7.0~beta1
+ _ZN18qdesigner_internal14PropertyHelper20triggerActionChangedEP7QAction@Base 4:4.7.0~beta1
+ _ZN18qdesigner_internal14PropertyHelper21checkApplyWidgetValueEP28QDesignerFormWindowInterfaceP7QWidgetNS_15SpecialPropertyER8QVariant@Base 4:4.7.0~beta1
+ _ZN18qdesigner_internal14PropertyHelper8setValueEP28QDesignerFormWindowInterfaceRK8QVariantbj@Base 4:4.7.0~beta1
+ _ZN18qdesigner_internal14PropertyHelperC1EP7QObjectNS_15SpecialPropertyEP31QDesignerPropertySheetExtensioni@Base 4:4.7.0~beta1
+ _ZN18qdesigner_internal14PropertyHelperC2EP7QObjectNS_15SpecialPropertyEP31QDesignerPropertySheetExtensioni@Base 4:4.7.0~beta1
  _ZN18qdesigner_internal14QLayoutSupport10findItemAtEP11QGridLayoutii@Base 4:4.5.3
  _ZN18qdesigner_internal14QLayoutSupport11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN18qdesigner_internal14QLayoutSupport11qt_metacastEPKc@Base 4:4.5.3
@@ -1390,14 +1395,15 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN18qdesigner_internal18RaiseWidgetCommand4initEP7QWidget@Base 4:4.5.3
  _ZN18qdesigner_internal18RaiseWidgetCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  _ZN18qdesigner_internal18RaiseWidgetCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
+ _ZN18qdesigner_internal18SetPropertyCommand10mergeValueERK8QVariant@Base 4:4.7.0~beta1
  _ZN18qdesigner_internal18SetPropertyCommand14setDescriptionEv@Base 4:4.5.3
  _ZN18qdesigner_internal18SetPropertyCommand15subPropertyMaskERK8QVariantP7QObject@Base 4:4.5.3
  _ZN18qdesigner_internal18SetPropertyCommand4initEP7QObjectRK7QStringRK8QVariant@Base 4:4.5.3
  _ZN18qdesigner_internal18SetPropertyCommand4initERK5QListIP7QObjectERK7QStringRK8QVariantS3_b@Base 4:4.5.3
  _ZN18qdesigner_internal18SetPropertyCommand4redoEv@Base 4:4.5.3
  _ZN18qdesigner_internal18SetPropertyCommand9mergeWithEPK12QUndoCommand@Base 4:4.5.3
- _ZN18qdesigner_internal18SetPropertyCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
- _ZN18qdesigner_internal18SetPropertyCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
+ _ZN18qdesigner_internal18SetPropertyCommandC1EP28QDesignerFormWindowInterfaceP12QUndoCommand@Base 4:4.7.0~beta1
+ _ZN18qdesigner_internal18SetPropertyCommandC2EP28QDesignerFormWindowInterfaceP12QUndoCommand@Base 4:4.7.0~beta1
  _ZN18qdesigner_internal18TextPropertyEditor11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN18qdesigner_internal18TextPropertyEditor11qt_metacastEPKc@Base 4:4.5.3
  _ZN18qdesigner_internal18TextPropertyEditor11resizeEventEP12QResizeEvent@Base 4:4.5.3
@@ -1511,8 +1517,8 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN18qdesigner_internal19PropertyListCommand6updateEj@Base 4:4.5.3
  _ZN18qdesigner_internal19PropertyListCommand8initListERK5QListIP7QObjectERK7QStringS3_@Base 4:4.5.3
  _ZN18qdesigner_internal19PropertyListCommand8setValueE8QVariantbj@Base 4:4.5.3
- _ZN18qdesigner_internal19PropertyListCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
- _ZN18qdesigner_internal19PropertyListCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
+ _ZN18qdesigner_internal19PropertyListCommandC1EP28QDesignerFormWindowInterfaceP12QUndoCommand@Base 4:4.7.0~beta1
+ _ZN18qdesigner_internal19PropertyListCommandC2EP28QDesignerFormWindowInterfaceP12QUndoCommand@Base 4:4.7.0~beta1
  _ZN18qdesigner_internal19QDesignerWidgetItem11eventFilterEP7QObjectP6QEvent@Base 4:4.5.3
  _ZN18qdesigner_internal19QDesignerWidgetItem11isContainerEPK28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  _ZN18qdesigner_internal19QDesignerWidgetItem11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -1818,6 +1824,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN18qdesigner_internal23QDesignerPropertyEditor19slotPropertyChangedERK7QStringRK8QVariant@Base 4:4.5.3
  _ZN18qdesigner_internal23QDesignerPropertyEditor20propertyValueChangedERK7QStringRK8QVariantb@Base 4:4.5.3
  _ZN18qdesigner_internal23QDesignerPropertyEditor21removeDynamicPropertyERK7QString@Base 4:4.5.3
+ _ZN18qdesigner_internal23QDesignerPropertyEditor24emitPropertyValueChangedERK7QStringRK8QVariantb@Base 4:4.7.0~beta1
  _ZN18qdesigner_internal23QDesignerPropertyEditor26textPropertyValidationModeEP28QDesignerFormEditorInterfacePK7QObjectRK7QStringb@Base 4:4.5.3
  _ZN18qdesigner_internal23QDesignerPropertyEditorC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE@Base 4:4.5.3
  _ZN18qdesigner_internal23QDesignerPropertyEditorC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE@Base 4:4.5.3
@@ -1962,8 +1969,8 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN18qdesigner_internal26QDesignerFormWindowCommand21selectUnmanagedObjectEP7QObject@Base 4:4.5.3
  _ZN18qdesigner_internal26QDesignerFormWindowCommand4redoEv@Base 4:4.5.3
  _ZN18qdesigner_internal26QDesignerFormWindowCommand4undoEv@Base 4:4.5.3
- _ZN18qdesigner_internal26QDesignerFormWindowCommandC1ERK7QStringP28QDesignerFormWindowInterface@Base 4:4.5.3
- _ZN18qdesigner_internal26QDesignerFormWindowCommandC2ERK7QStringP28QDesignerFormWindowInterface@Base 4:4.5.3
+ _ZN18qdesigner_internal26QDesignerFormWindowCommandC1ERK7QStringP28QDesignerFormWindowInterfaceP12QUndoCommand@Base 4:4.7.0~beta1
+ _ZN18qdesigner_internal26QDesignerFormWindowCommandC2ERK7QStringP28QDesignerFormWindowInterfaceP12QUndoCommand@Base 4:4.7.0~beta1
  _ZN18qdesigner_internal26QDesignerFormWindowManager11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN18qdesigner_internal26QDesignerFormWindowManager11qt_metacastEPKc@Base 4:4.5.3
  _ZN18qdesigner_internal26QDesignerFormWindowManager12aboutPluginsEv@Base 4:4.5.3
@@ -3116,9 +3123,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZNK18qdesigner_internal12FilterWidget4textEv@Base 4:4.5.3
  _ZNK18qdesigner_internal12HintLineEdit10metaObjectEv@Base 4:4.5.3
  _ZNK18qdesigner_internal12HintLineEdit11refuseFocusEv@Base 4:4.5.3
- _ZNK18qdesigner_internal12HintLineEdit17isShowingHintTextEv@Base 4:4.5.3
- _ZNK18qdesigner_internal12HintLineEdit8hintTextEv@Base 4:4.5.3
- _ZNK18qdesigner_internal12HintLineEdit9typedTextEv@Base 4:4.5.3
  _ZNK18qdesigner_internal12IconSelector10metaObjectEv@Base 4:4.5.3
  _ZNK18qdesigner_internal12IconSelector4iconEv@Base 4:4.5.3
  _ZNK18qdesigner_internal12ListContents14createTreeItemEPNS_17DesignerIconCacheE@Base 4:4.5.3
@@ -3195,6 +3199,11 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZNK18qdesigner_internal14PreviewManager12previewCountEv@Base 4:4.5.3
  _ZNK18qdesigner_internal14PreviewManager18previewWindowFlagsEPK7QWidget@Base 4:4.5.3
  _ZNK18qdesigner_internal14PreviewManager25createDeviceSkinContainerEPK28QDesignerFormWindowInterface@Base 4:4.5.3
+ _ZNK18qdesigner_internal14PropertyHelper10updateMaskEv@Base 4:4.7.0~beta1
+ _ZNK18qdesigner_internal14PropertyHelper11integrationEP28QDesignerFormWindowInterface@Base 4:4.7.0~beta1
+ _ZNK18qdesigner_internal14PropertyHelper16findDefaultValueEP28QDesignerFormWindowInterface@Base 4:4.7.0~beta1
+ _ZNK18qdesigner_internal14PropertyHelper22ensureUniqueObjectNameEP28QDesignerFormWindowInterfaceP7QObject@Base 4:4.7.0~beta1
+ _ZNK18qdesigner_internal14PropertyHelper8canMergeERKS0_@Base 4:4.7.0~beta1
  _ZNK18qdesigner_internal14QLayoutSupport10findItemAtERK6QPoint@Base 4:4.5.3
  _ZNK18qdesigner_internal14QLayoutSupport10gridLayoutEv@Base 4:4.5.3
  _ZNK18qdesigner_internal14QLayoutSupport10metaObjectEv@Base 4:4.5.3
@@ -3294,10 +3303,11 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZNK18qdesigner_internal19DesignerPixmapCache10metaObjectEv@Base 4:4.5.3
  _ZNK18qdesigner_internal19DesignerPixmapCache6pixmapERKNS_24PropertySheetPixmapValueE@Base 4:4.5.3
  _ZNK18qdesigner_internal19PropertyListCommand12propertyNameEv@Base 4:4.5.3
- _ZNK18qdesigner_internal19PropertyListCommand13canMergeListsERK5QListINS_14PropertyHelperEE@Base 4:4.5.3
+ _ZNK18qdesigner_internal19PropertyListCommand13canMergeListsERK5QListI14QSharedPointerINS_14PropertyHelperEEE@Base 4:4.7.0~beta1
  _ZNK18qdesigner_internal19PropertyListCommand15specialPropertyEv@Base 4:4.5.3
  _ZNK18qdesigner_internal19PropertyListCommand19PropertyDescription5debugEv@Base 4:4.5.3
  _ZNK18qdesigner_internal19PropertyListCommand19PropertyDescription6equalsERKS1_@Base 4:4.5.3
+ _ZNK18qdesigner_internal19PropertyListCommand20createPropertyHelperEP7QObjectNS_15SpecialPropertyEP31QDesignerPropertySheetExtensioni@Base 4:4.7.0~beta1
  _ZNK18qdesigner_internal19PropertyListCommand6objectEi@Base 4:4.5.3
  _ZNK18qdesigner_internal19PropertyListCommand8oldValueEi@Base 4:4.5.3
  _ZNK18qdesigner_internal19QDesignerWidgetItem10metaObjectEv@Base 4:4.5.3
@@ -3714,6 +3724,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZTIN18qdesigner_internal14FormLayoutMenuE@Base 4:4.5.3
  _ZTIN18qdesigner_internal14FormWindowBaseE@Base 4:4.5.3
  _ZTIN18qdesigner_internal14PreviewManagerE@Base 4:4.5.3
+ _ZTIN18qdesigner_internal14PropertyHelperE@Base 4:4.7.0~beta1
  _ZTIN18qdesigner_internal14QLayoutSupportE@Base 4:4.5.3
  _ZTIN18qdesigner_internal14ToolBoxCommandE@Base 4:4.5.3
  _ZTIN18qdesigner_internal14WidgetDataBaseE@Base 4:4.5.3
@@ -3894,6 +3905,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZTSN18qdesigner_internal14FormLayoutMenuE@Base 4:4.5.3
  _ZTSN18qdesigner_internal14FormWindowBaseE@Base 4:4.5.3
  _ZTSN18qdesigner_internal14PreviewManagerE@Base 4:4.5.3
+ _ZTSN18qdesigner_internal14PropertyHelperE@Base 4:4.7.0~beta1
  _ZTSN18qdesigner_internal14QLayoutSupportE@Base 4:4.5.3
  _ZTSN18qdesigner_internal14ToolBoxCommandE@Base 4:4.5.3
  _ZTSN18qdesigner_internal14WidgetDataBaseE@Base 4:4.5.3
@@ -4074,6 +4086,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZTVN18qdesigner_internal14FormLayoutMenuE@Base 4:4.5.3
  _ZTVN18qdesigner_internal14FormWindowBaseE@Base 4:4.5.3
  _ZTVN18qdesigner_internal14PreviewManagerE@Base 4:4.5.3
+ _ZTVN18qdesigner_internal14PropertyHelperE@Base 4:4.7.0~beta1
  _ZTVN18qdesigner_internal14QLayoutSupportE@Base 4:4.5.3
  _ZTVN18qdesigner_internal14ToolBoxCommandE@Base 4:4.5.3
  _ZTVN18qdesigner_internal14WidgetDataBaseE@Base 4:4.5.3

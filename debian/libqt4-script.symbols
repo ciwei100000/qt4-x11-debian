@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.6.3 alpha armel hppa i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips powerpc s390 sparc
+# SymbolsHelper-Confirmed: 4:4.7.0~rc1 amd64
 libQtScript.so.4 libqt4-script #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z14qScriptConnectP7QObjectPKcRK12QScriptValueS5_@Base 4:4.5.3
@@ -98,6 +98,7 @@ libQtScript.so.4 libqt4-script #MINVER#
  _ZN13QScriptEngine22signalHandlerExceptionERK12QScriptValue@Base 4:4.5.3
  _ZN13QScriptEngine24setProcessEventsIntervalEi@Base 4:4.5.3
  _ZN13QScriptEngine26installTranslatorFunctionsERK12QScriptValue@Base 4:4.5.3
+ _ZN13QScriptEngine26reportAdditionalMemoryCostEi@Base 4:4.7.0~beta1
  _ZN13QScriptEngine6createEiPKv@Base 4:4.5.3
  _ZN13QScriptEngine7convertERK12QScriptValueiPv@Base 4:4.5.3
  _ZN13QScriptEngine7newDateERK9QDateTime@Base 4:4.5.3
@@ -200,10 +201,14 @@ libQtScript.so.4 libqt4-script #MINVER#
  _ZN23QScriptDeclarativeClass11scriptClassERK12QScriptValue@Base 4:4.6.1
  _ZN23QScriptDeclarativeClass11setPropertyEPNS_6ObjectERKPvRK12QScriptValue@Base 4:4.6.1
  _ZN23QScriptDeclarativeClass12toArrayIndexERKPvPb@Base 4:4.6.1
+ _ZN23QScriptDeclarativeClass13functionValueERK12QScriptValueRKPv@Base 4:4.7.0~beta1
  _ZN23QScriptDeclarativeClass13propertyFlagsEPNS_6ObjectERKPv@Base 4:4.6.1
  _ZN23QScriptDeclarativeClass13propertyNamesEPNS_6ObjectE@Base 4:4.6.1
+ _ZN23QScriptDeclarativeClass13propertyValueERK12QScriptValueRKPv@Base 4:4.7.0~beta1
  _ZN23QScriptDeclarativeClass13queryPropertyEPNS_6ObjectERKPv6QFlagsIN12QScriptClass9QueryFlagEE@Base 4:4.6.1
+ _ZN23QScriptDeclarativeClass14newObjectValueEP13QScriptEnginePS_PNS_6ObjectE@Base 4:4.7.0~beta1
  _ZN23QScriptDeclarativeClass15scopeChainValueEP14QScriptContexti@Base 4:4.6.1
+ _ZN23QScriptDeclarativeClass15setSupportsCallEb@Base 4:4.7.0~beta1
  _ZN23QScriptDeclarativeClass16pushCleanContextEP13QScriptEngine@Base 4:4.6.1
  _ZN23QScriptDeclarativeClass20PersistentIdentifierC1ERKS0_@Base 4:4.6.1
  _ZN23QScriptDeclarativeClass20PersistentIdentifierC1Ev@Base 4:4.6.1
@@ -212,9 +217,47 @@ libQtScript.so.4 libqt4-script #MINVER#
  _ZN23QScriptDeclarativeClass20PersistentIdentifierD1Ev@Base 4:4.6.1
  _ZN23QScriptDeclarativeClass20PersistentIdentifierD2Ev@Base 4:4.6.1
  _ZN23QScriptDeclarativeClass20PersistentIdentifieraSERKS0_@Base 4:4.6.1
+ _ZN23QScriptDeclarativeClass20newStaticScopeObjectEP13QScriptEngine@Base 4:4.7.0~rc1
+ _ZN23QScriptDeclarativeClass20newStaticScopeObjectEP13QScriptEngineiPK7QStringPK12QScriptValuePK6QFlagsINS5_12PropertyFlagEE@Base 4:4.7.0~rc1
  _ZN23QScriptDeclarativeClass26createPersistentIdentifierERK7QString@Base 4:4.6.1
  _ZN23QScriptDeclarativeClass26createPersistentIdentifierERKPv@Base 4:4.6.1
+ _ZN23QScriptDeclarativeClass4callEPNS_6ObjectEP14QScriptContext@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC1EP13QScriptEngineRK12QScriptValue@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC1EP13QScriptEngineRK7QString@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC1EP13QScriptEngineb@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC1EP13QScriptEngined@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC1EP13QScriptEnginef@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC1EP13QScriptEnginei@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC1EP13QScriptEnginej@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC1EP14QScriptContextRK12QScriptValue@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC1EP14QScriptContextRK7QString@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC1EP14QScriptContextb@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC1EP14QScriptContextd@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC1EP14QScriptContextf@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC1EP14QScriptContexti@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC1EP14QScriptContextj@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC1ERKS0_@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC1Ev@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC2EP13QScriptEngineRK12QScriptValue@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC2EP13QScriptEngineRK7QString@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC2EP13QScriptEngineb@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC2EP13QScriptEngined@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC2EP13QScriptEnginef@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC2EP13QScriptEnginei@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC2EP13QScriptEnginej@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC2EP14QScriptContextRK12QScriptValue@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC2EP14QScriptContextRK7QString@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC2EP14QScriptContextb@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC2EP14QScriptContextd@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC2EP14QScriptContextf@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC2EP14QScriptContexti@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC2EP14QScriptContextj@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC2ERKS0_@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueC2Ev@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueD1Ev@Base 4:4.7.0~beta1
+ _ZN23QScriptDeclarativeClass5ValueD2Ev@Base 4:4.7.0~beta1
  _ZN23QScriptDeclarativeClass6objectERK12QScriptValue@Base 4:4.6.1
+ _ZN23QScriptDeclarativeClass7compareEPNS_6ObjectES1_@Base 4:4.7.0~beta1
  _ZN23QScriptDeclarativeClass8functionERK12QScriptValueRKPv@Base 4:4.6.1
  _ZN23QScriptDeclarativeClass8propertyEPNS_6ObjectERKPv@Base 4:4.6.1
  _ZN23QScriptDeclarativeClass8propertyERK12QScriptValueRKPv@Base 4:4.6.1
@@ -237,7 +280,7 @@ libQtScript.so.4 libqt4-script #MINVER#
  _ZN24QScriptSyntaxCheckResultD2Ev@Base 4:4.5.3
  _ZN24QScriptSyntaxCheckResultaSERKS_@Base 4:4.5.3
  (optional=private|arch=!alpha !amd64 !ia64 !kfreebsd-amd64)_ZN25QScriptEngineAgentPrivate11atStatementERKN5QTJSC17DebuggerCallFrameEiii@Base 4:4.6.1
- (optional=private|arch=alpha amd64 ia64 kfreebsd-amd64)_ZN25QScriptEngineAgentPrivate11atStatementERKN5QTJSC17DebuggerCallFrameElii@Base 4:4.6.1
+ (optional=private)_ZN25QScriptEngineAgentPrivate11atStatementERKN5QTJSC17DebuggerCallFrameEli@Base 4:4.7.0~beta1
  (optional=private|arch=!alpha !amd64 !ia64 !kfreebsd-amd64)_ZN25QScriptEngineAgentPrivate11returnEventERKN5QTJSC17DebuggerCallFrameEii@Base 4:4.6.1
  (optional=private|arch=alpha amd64 ia64 kfreebsd-amd64)_ZN25QScriptEngineAgentPrivate11returnEventERKN5QTJSC17DebuggerCallFrameEli@Base 4:4.6.1
  (optional=private|arch=!alpha !amd64 !ia64 !kfreebsd-amd64)_ZN25QScriptEngineAgentPrivate12evaluateStopERKN5QTJSC7JSValueEi@Base 4:4.6.1
@@ -249,7 +292,7 @@ libQtScript.so.4 libqt4-script #MINVER#
  (optional=private|arch=!alpha !amd64 !ia64 !kfreebsd-amd64)_ZN25QScriptEngineAgentPrivate14exceptionThrowERKN5QTJSC17DebuggerCallFrameEib@Base 4:4.6.1
  (optional=private|arch=alpha amd64 ia64 kfreebsd-amd64)_ZN25QScriptEngineAgentPrivate14exceptionThrowERKN5QTJSC17DebuggerCallFrameElb@Base 4:4.6.1
  (optional=private|arch=!alpha !amd64 !ia64 !kfreebsd-amd64)_ZN25QScriptEngineAgentPrivate18didReachBreakpointERKN5QTJSC17DebuggerCallFrameEiii@Base 4:4.6.1
- (optional=private|arch=alpha amd64 ia64 kfreebsd-amd64)_ZN25QScriptEngineAgentPrivate18didReachBreakpointERKN5QTJSC17DebuggerCallFrameElii@Base 4:4.6.1
+ (optional=private)_ZN25QScriptEngineAgentPrivate18didReachBreakpointERKN5QTJSC17DebuggerCallFrameEli@Base 4:4.7.0~beta1
  (optional=private)_ZN25QScriptEngineAgentPrivate6attachEv@Base 4:4.6.1
  (optional=private)_ZN25QScriptEngineAgentPrivate6detachEv@Base 4:4.6.1
  _ZN28QScriptClassPropertyIteratorC1ERK12QScriptValue@Base 4:4.5.3
@@ -259,6 +302,7 @@ libQtScript.so.4 libqt4-script #MINVER#
  _ZN28QScriptClassPropertyIteratorD0Ev@Base 4:4.5.3
  _ZN28QScriptClassPropertyIteratorD1Ev@Base 4:4.5.3
  _ZN28QScriptClassPropertyIteratorD2Ev@Base 4:4.5.3
+ _ZN9QHashData8willGrowEv@Base 4:4.7.0~rc1
  _ZNK11QScriptable10thisObjectEv@Base 4:4.5.3
  _ZNK11QScriptable13argumentCountEv@Base 4:4.5.3
  _ZNK11QScriptable6engineEv@Base 4:4.5.3
@@ -377,6 +421,8 @@ libQtScript.so.4 libqt4-script #MINVER#
  _ZNK20QScriptValueIterator7hasNextEv@Base 4:4.5.3
  _ZNK22QScriptExtensionPlugin10metaObjectEv@Base 4:4.5.3
  _ZNK22QScriptExtensionPlugin12setupPackageERK7QStringP13QScriptEngine@Base 4:4.5.3
+ _ZNK23QScriptDeclarativeClass12supportsCallEv@Base 4:4.7.0~beta1
+ _ZNK23QScriptDeclarativeClass5Value13toScriptValueEP13QScriptEngine@Base 4:4.7.0~beta1
  _ZNK23QScriptDeclarativeClass6engineEv@Base 4:4.6.1
  _ZNK23QScriptDeclarativeClass7contextEv@Base 4:4.6.1
  _ZNK23QScriptDeclarativeClass9isQObjectEv@Base 4:4.6.1

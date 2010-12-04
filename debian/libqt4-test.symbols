@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.6.3 alpha armel hppa i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips powerpc s390 sparc
+# SymbolsHelper-Confirmed: 4:4.7.0~beta1 amd64
 libQtTest.so.4 libqt4-test #MINVER#
 * Build-Depends-Package: libqt4-dev
  (optional=external|arch=armel sparc)_Z6qDebugv@Base 4:4.6.2
@@ -6,6 +6,7 @@ libQtTest.so.4 libqt4-test #MINVER#
  _ZN14QTestEventLoop11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN14QTestEventLoop11qt_metacastEPKc@Base 4:4.5.3
  _ZN14QTestEventLoop16staticMetaObjectE@Base 4:4.5.3
+ (arch=sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.6.2
  _ZN5QTest10asciiToKeyEc@Base 4:4.5.3
  _ZN5QTest10keyToAsciiEN2Qt3KeyE@Base 4:4.5.3
  _ZN5QTest10testObjectEv@Base 4:4.5.3
@@ -22,6 +23,7 @@ libQtTest.so.4 libqt4-test #MINVER#
  _ZN5QTest17currentTestFailedEv@Base 4:4.5.3
  _ZN5QTest17defaultKeyVerboseEv@Base 4:4.5.3
  _ZN5QTest17defaultMouseDelayEv@Base 4:4.5.3
+ _ZN5QTest18setBenchmarkResultEdNS_16QBenchmarkMetricE@Base 4:4.7.0~beta1
  _ZN5QTest19currentTestFunctionEv@Base 4:4.5.3
  _ZN5QTest19toHexRepresentationEPKci@Base 4:4.5.3
  _ZN5QTest21compare_string_helperEPKcS1_S1_S1_S1_i@Base 4:4.5.3

@@ -3,7 +3,7 @@ Author: Fathi Boudra <fabo@debian.org>
 
 --- a/tools/tools.pro
 +++ b/tools/tools.pro
-@@ -34,5 +34,7 @@ embedded: SUBDIRS += makeqpf
+@@ -41,6 +41,8 @@ embedded: SUBDIRS += makeqpf
  
  !wince*:!cross_compile:SUBDIRS += qdoc3
  
@@ -11,3 +11,4 @@ Author: Fathi Boudra <fabo@debian.org>
 +
  CONFIG+=ordered
  QTDIR_build:REQUIRES = "contains(QT_CONFIG, full-config)"
+ 

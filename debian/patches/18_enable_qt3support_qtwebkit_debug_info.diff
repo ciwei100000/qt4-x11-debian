@@ -5,15 +5,15 @@ This patch enable them.
 
 --- a/src/3rdparty/webkit/WebCore/WebCore.pro
 +++ b/src/3rdparty/webkit/WebCore/WebCore.pro
-@@ -3399,8 +3399,6 @@ HEADERS += $$WEBKIT_API_HEADERS
- CONFIG(QTDIR_build):isEqual(QT_MAJOR_VERSION, 4):greaterThan(QT_MINOR_VERSION, 4) {
-     # start with 4.5
+@@ -2954,8 +2954,6 @@ HEADERS += $$WEBKIT_API_HEADERS
+ 
+ CONFIG(QTDIR_build) {
      # Remove the following 2 lines if you want debug information in WebCore
 -    CONFIG -= separate_debug_info
 -    CONFIG += no_debug_info
  }
  
- !win32-g++:win32:contains(QMAKE_HOST.arch, x86_64):{
+ win32:!win32-g++*:contains(QMAKE_HOST.arch, x86_64):{
 --- a/src/qt3support/qt3support.pro
 +++ b/src/qt3support/qt3support.pro
 @@ -34,6 +34,3 @@ MOCDIR = .moc
