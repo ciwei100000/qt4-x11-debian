@@ -30,7 +30,12 @@ qt4-x11 (4:4.7.1-0r1) UNRELEASED; urgency=low
   * Merge revisions from 4:4.6.3-1 to 4:4.6.3-4:
     - refresh 23_permit_plugins_built_with_future_qt.diff patch;
     - bump libqt4-dbus Replaces/Breaks against libqt4-dev to << 4:4.7.1 because
-      4:4.7.0~rc1-1 still has dbus.1 manpage misplaced.
+      4:4.7.0~rc1-1 still has dbus.1 manpage misplaced;
+    - remove merged patches which were backported from upstream:
+      - 0005_fix_detection_of_headers_files.diff
+      - 0006_webkit_propriotary_flash_init_gtk_first.diff
+      - 0007_qsslsocket_improve_error_handling_CVE-2010-2621.patch
+      - 22_fix_disappearing_cursor.diff
   * Bump debian/compat to 7. This source package uses dh v7.
   * Confirm symbol files for 4.7.0~rc1 on alpha armel hurd-i386 i386 ia64
     kfreebsd-amd64 kfreebsd-i386 mipsel powerpc sparc (based on experimental
