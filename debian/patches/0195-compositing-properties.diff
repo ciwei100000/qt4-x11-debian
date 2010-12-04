@@ -48,8 +48,8 @@ bugs.kde.org number : none
 -        data.fstrut_dirty = 1;
  
          // declare the widget's window role
-         QByteArray windowRole;
-@@ -841,10 +854,6 @@ void QWidgetPrivate::create_sys(WId wind
+         if (QTLWExtra *topData = maybeTopData()) {
+@@ -837,10 +850,6 @@ void QWidgetPrivate::create_sys(WId wind
          XChangeProperty(dpy, id, ATOM(WM_CLIENT_LEADER),
                          XA_WINDOW, 32, PropModeReplace,
                          (unsigned char *)&X11->wm_client_leader, 1);
