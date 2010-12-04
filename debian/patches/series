@@ -1,8 +1,5 @@
 # qt-copy patches
-0180-window-role.diff
 0195-compositing-properties.diff
-0209-prevent-qt-mixing.diff
-0216-allow-isystem-for-headers.diff
 0225-invalidate-tabbar-geometry-on-refresh.patch
 
 # debian patches
