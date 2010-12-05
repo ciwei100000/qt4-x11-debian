@@ -1458,7 +1458,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN14QObjectPrivate13addConnectionEiPNS_10ConnectionE@Base 4:4.5.3
  _ZN14QObjectPrivate14deleteChildrenEv@Base 4:4.5.3
  _ZN14QObjectPrivate14setDeleteWatchEPS_Pi@Base 4:4.5.3
- _ZN14QObjectPrivate15checkWindowRoleEv@Base 4:4.5.3
  _ZN14QObjectPrivate16resetDeleteWatchEPS_Pii@Base 4:4.5.3
  _ZN14QObjectPrivate16setParent_helperEP7QObject@Base 4:4.5.3
  _ZN14QObjectPrivate19_q_reregisterTimersEPv@Base 4:4.5.3

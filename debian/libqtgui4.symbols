@@ -3333,7 +3333,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN14QWidgetPrivate14show_recursiveEv@Base 4:4.5.3
  _ZN14QWidgetPrivate14stackUnder_sysEP7QWidget@Base 4:4.5.3
  _ZN14QWidgetPrivate14updateIsOpaqueEv@Base 4:4.5.3
- _ZN14QWidgetPrivate15checkWindowRoleEv@Base 4:4.5.3
  _ZN14QWidgetPrivate15instanceCounterE@Base 4:4.5.3
  _ZN14QWidgetPrivate15keyboardGrabberE@Base 4:4.5.3
  _ZN14QWidgetPrivate15prepareToRenderERK7QRegion6QFlagsIN7QWidget10RenderFlagEE@Base 4:4.5.3
@@ -4823,13 +4822,13 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN19QApplicationPrivate19app_compile_versionE@Base 4:4.5.3
  _ZN19QApplicationPrivate19hidden_focus_widgetE@Base 4:4.5.3
  _ZN19QApplicationPrivate19keyboard_input_timeE@Base 4:4.5.3
- _ZN19QApplicationPrivate19qmljsDebugArgumentsE@Base 4:4.7.1
  _ZN19QApplicationPrivate20emitLastWindowClosedEv@Base 4:4.5.3
  _ZN19QApplicationPrivate20graphics_system_nameE@Base 4:4.5.3
  _ZN19QApplicationPrivate20initializeMultitouchEv@Base 4:4.6.1
  _ZN19QApplicationPrivate21cleanupMultitouch_sysEv@Base 4:4.6.1
  _ZN19QApplicationPrivate21createEventDispatcherEv@Base 4:4.5.3
  _ZN19QApplicationPrivate21obey_desktop_settingsE@Base 4:4.5.3
+ _ZN19QApplicationPrivate21qmljs_debug_argumentsE@Base 4:4.7.1
  _ZN19QApplicationPrivate22quitOnLastWindowClosedE@Base 4:4.5.3
  _ZN19QApplicationPrivate22reset_instance_pointerEv@Base 4:4.5.3
  _ZN19QApplicationPrivate22translateRawTouchEventEP7QWidgetN11QTouchEvent10DeviceTypeERK5QListINS2_10TouchPointEE@Base 4:4.6.1
@@ -4839,6 +4838,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN19QApplicationPrivate23sendSyntheticEnterLeaveEP7QWidget@Base 4:4.5.3
  _ZN19QApplicationPrivate24initializeMultitouch_sysEv@Base 4:4.6.1
  _ZN19QApplicationPrivate25focusNextPrevChild_helperEP7QWidgetb@Base 4:4.5.3
+ _ZN19QApplicationPrivate25qmljsDebugArgumentsStringEv@Base 4:4.7.1
  _ZN19QApplicationPrivate26updateTouchPointsForWidgetEP7QWidgetP11QTouchEvent@Base 4:4.6.1
  _ZN19QApplicationPrivate27initializeWidgetPaletteHashEv@Base 4:4.5.3
  _ZN19QApplicationPrivate31giveFocusAccordingToFocusPolicyEP7QWidgetN2Qt11FocusPolicyENS2_11FocusReasonE@Base 4:4.6.1

@@ -52,6 +52,7 @@ qt4-x11 (4:4.7.1-0r1) UNRELEASED; urgency=low
     compat level 7 or higher.
   * Remove quilt from Build-Depends. It's no longer needed for source format
     3.0 (quilt).
+  * Confirm symbol files for official 4.7.1 on amd64.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 06 Oct 2010 14:55:15 +0200
 
