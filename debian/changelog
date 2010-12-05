@@ -1,6 +1,6 @@
 qt4-x11 (4:4.7.1-0r1) UNRELEASED; urgency=low
 
-  * New upstream release.
+  * New upstream release. (Closes: #605364)
 
   [ Fathi Boudra ]
   * Remove patches:
