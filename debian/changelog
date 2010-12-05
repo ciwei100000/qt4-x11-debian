@@ -27,6 +27,8 @@ qt4-x11 (4:4.7.1-1) UNRELEASED; urgency=low
     - 05_append_qt4_target.diff
   * Demote qt4-qtconfig from recommend to suggest of libqtgui4.
     (Closes: #599635)
+  * Remove sharutils from Build-Depends, as there is no more need to uudecode
+    binaries at install time.
 
   [ Modestas Vainius ]
   * Merge revisions from 4:4.6.3-1 to 4:4.6.3-4:
@@ -65,7 +67,7 @@ qt4-x11 (4:4.7.1-1) UNRELEASED; urgency=low
     potential buffer overrun in ALSA QAudioInput implementation. Thanks to
     Gregor Herrmann for heads up. (Closes: #603052)
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Dec 2010 15:21:44 +0100
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Dec 2010 15:34:27 +0100
 
 qt4-x11 (4:4.7.0~rc1-1) experimental; urgency=low
 
