@@ -1,3 +1,6 @@
+# upstream patches
+0001_backport_e3f1268_alsa_buffer_overrun.diff
+
 # qt-copy patches
 0195-compositing-properties.diff
 0225-invalidate-tabbar-geometry-on-refresh.patch

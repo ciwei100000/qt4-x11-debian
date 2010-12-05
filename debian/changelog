@@ -59,6 +59,9 @@ qt4-x11 (4:4.7.1-0r1) UNRELEASED; urgency=low
   * Fix formatting error in the qmake-qt4.1 manpage at line 83.
   * Use dh_auto_* wrappers in place of $(MAKE) within debian/rules in order to
     get automatic handling of parallel building settings for these calls.
+  * Backport patch 0001_backport_e3f1268_alsa_buffer_overrun.diff to fix
+    potential buffer overrun in ALSA QAudioInput implementation. Thanks to
+    Gregor Herrmann for heads up. (Closes: #603052)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 06 Oct 2010 14:55:15 +0200
 
