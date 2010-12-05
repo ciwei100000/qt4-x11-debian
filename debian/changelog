@@ -1,4 +1,4 @@
-qt4-x11 (4:4.7.1-0r1) UNRELEASED; urgency=low
+qt4-x11 (4:4.7.1-1) experimental; urgency=low
 
   * New upstream release. (Closes: #605364)
 
@@ -63,7 +63,7 @@ qt4-x11 (4:4.7.1-0r1) UNRELEASED; urgency=low
     potential buffer overrun in ALSA QAudioInput implementation. Thanks to
     Gregor Herrmann for heads up. (Closes: #603052)
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 06 Oct 2010 14:55:15 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Dec 2010 12:36:49 +0200
 
 qt4-x11 (4:4.7.0~rc1-1) experimental; urgency=low
 
