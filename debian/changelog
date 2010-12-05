@@ -56,6 +56,7 @@ qt4-x11 (4:4.7.1-0r1) UNRELEASED; urgency=low
   * 4.7.1 tarball ships with bogus executable bits on some data files in
     mkspecs, docs, examples and demos subdirs. Remove those -x bits when files
     are installed to debian/tmp.
+  * Fix formatting error in the qmake-qt4.1 manpage at line 83.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 06 Oct 2010 14:55:15 +0200
 
