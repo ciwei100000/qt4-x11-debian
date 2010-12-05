@@ -129,9 +129,9 @@ endif
 override_dh_auto_build:
 	dh_auto_build
 	# Build documentations
-	$(MAKE) docs
+	dh_auto_build -Smakefile -- docs
 	# Build translations
-	$(MAKE) ts
+	dh_auto_build -Smakefile -- ts
 	# Workaround: It's a known qmake limitation.
 	# It can't generate install rules for files that don't exist yet like docs.
 	./config.status
@@ -207,7 +207,7 @@ override_dh_auto_clean:
 	rm -f debian/stamp-makefile-build-tools
 
 override_dh_auto_install:
-	$(MAKE) install INSTALL_ROOT=$(CURDIR)/debian/tmp/
+	dh_auto_install -Smakefile -- INSTALL_ROOT=$(CURDIR)/debian/tmp/
 
 	# Fix wrong path in pkgconfig files
 	find $(CURDIR)/debian/tmp/usr/lib/pkgconfig -type f -name '*.pc' \
