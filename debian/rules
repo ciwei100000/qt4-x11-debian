@@ -73,8 +73,9 @@ endif
 	rm -rf mkspecs/glibc-g++
 	cp -a mkspecs/linux-g++ mkspecs/glibc-g++
 
-	# Generate include
-	rm -rf include && QTDIR="." perl bin/syncqt
+	# Remove include directory. Then ./configure will take care of calling
+	# syncqt and regenerating it.
+	rm -rf include
 
 	./configure -confirm-license \
 	            -prefix "/usr" \

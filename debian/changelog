@@ -66,6 +66,12 @@ qt4-x11 (4:4.7.1-1) UNRELEASED; urgency=low
   * Backport patch 0001_backport_e3f1268_alsa_buffer_overrun.diff to fix
     potential buffer overrun in ALSA QAudioInput implementation. Thanks to
     Gregor Herrmann for heads up. (Closes: #603052)
+  * Patch bin/synqt to generate sane timestamp for symlinks of non existing
+    headers. This is needed to avoid timestamp screw up for QtConfig
+    header-symlink file.
+    Patch 02_syncqt_sane_timestamp_for_nonexisting_headers.diff.
+  * Do not run syncqt before ./configure in debian/rules. Simply remove include
+    directory forcing ./configure to run syncqt for us.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Dec 2010 15:34:27 +0100
 
