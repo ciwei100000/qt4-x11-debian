@@ -1,4 +1,4 @@
-qt4-x11 (4:4.7.1-1) UNRELEASED; urgency=low
+qt4-x11 (4:4.7.1-1) experimental; urgency=low
 
   * New upstream release. (Closes: #605364)
 
@@ -73,7 +73,7 @@ qt4-x11 (4:4.7.1-1) UNRELEASED; urgency=low
   * Do not run syncqt before ./configure in debian/rules. Simply remove include
     directory forcing ./configure to run syncqt for us.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Dec 2010 15:34:27 +0100
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Dec 2010 19:50:11 +0200
 
 qt4-x11 (4:4.7.0~rc1-1) experimental; urgency=low
 
