@@ -1,4 +1,2 @@
 usr/lib/libQtNetwork.so.*
-usr/lib/qt4/plugins/bearer/libqconnmanbearer.so
-usr/lib/qt4/plugins/bearer/libqgenericbearer.so
-usr/lib/qt4/plugins/bearer/libqnmbearer.so
+usr/lib/qt4/plugins/bearer
