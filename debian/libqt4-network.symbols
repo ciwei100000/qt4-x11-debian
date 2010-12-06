@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.1 amd64
+# SymbolsHelper-Confirmed: 4:4.7.1 alpha amd64 armel i386 ia64 mipsel powerpc sparc
 libQtNetwork.so.4 libqt4-network #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z19qt_qhostinfo_lookupRK7QStringP7QObjectPKcPbPi@Base 4:4.6.3
@@ -339,6 +339,7 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN15QAbstractSocketD1Ev@Base 4:4.5.3
  _ZN15QAbstractSocketD2Ev@Base 4:4.5.3
  (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
+ (optional=external|arch=sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.7.1
  _ZN15QNetworkRequest11setPriorityENS_8PriorityE@Base 4:4.7.0~beta1
  _ZN15QNetworkRequest12setAttributeENS_9AttributeERK8QVariant@Base 4:4.5.3
  _ZN15QNetworkRequest12setRawHeaderERK10QByteArrayS2_@Base 4:4.5.3

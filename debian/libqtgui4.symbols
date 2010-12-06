@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.1 amd64
+# SymbolsHelper-Confirmed: 4:4.7.1 alpha amd64 armel i386 ia64 mipsel powerpc sparc
 libQtGui.so.4 libqtgui4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qDrawArrowP8QPainterN2Qt9ArrowTypeENS1_8GUIStyleEbiiiiRK8QPaletteb@Base 4:4.5.3
@@ -65,7 +65,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _Z30qt_x11_wait_for_window_managerP7QWidget@Base 4:4.5.3
  _Z31qt_x11_set_fallback_font_familyiRK7QString@Base 4:4.5.3
  _Z31qt_x11_set_global_double_bufferb@Base 4:4.5.3
- _Z32qt_convert_rgb888_to_rgb32_ssse3PjPKhi@Base 4:4.7.1
+ (arch=any-amd64 any-i386)_Z32qt_convert_rgb888_to_rgb32_ssse3PjPKhi@Base 4:4.7.1
  _Z33qt_x11_apply_settings_in_all_appsv@Base 4:4.5.3
  _Z6bitBltP12QPaintDeviceRK6QPointPKS_RK5QRectb@Base 4:4.5.3
  _Z6bitBltP12QPaintDeviceiiPK6QImageiiiii@Base 4:4.5.3

@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.1 amd64
+# SymbolsHelper-Confirmed: 4:4.7.1 alpha amd64 armel i386 ia64 mipsel powerpc sparc
 libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _Z10qmlContextPK7QObject@Base 4:4.7.0~beta1
  _Z18qmlExecuteDeferredP7QObject@Base 4:4.7.0~beta1
@@ -698,7 +698,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN23QDeclarativeDebugClientD2Ev@Base 4:4.7.1
  _ZN23QDeclarativeDebugHelper15enableDebuggingEv@Base 4:4.7.1
  _ZN23QDeclarativeDebugHelper15getScriptEngineEP18QDeclarativeEngine@Base 4:4.7.1
- _ZN23QDeclarativeDebugHelper26setAnimationSlowDownFactorEd@Base 4:4.7.1
+ (subst)_ZN23QDeclarativeDebugHelper26setAnimationSlowDownFactorE{qreal}@Base 4:4.7.1
  _ZN23QDeclarativeDomDocument4loadEP18QDeclarativeEngineRK10QByteArrayRK4QUrl@Base 4:4.7.0~beta1
  _ZN23QDeclarativeDomDocumentC1ERKS_@Base 4:4.7.0~beta1
  _ZN23QDeclarativeDomDocumentC1Ev@Base 4:4.7.0~beta1

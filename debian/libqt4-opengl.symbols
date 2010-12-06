@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.1 amd64
+# SymbolsHelper-Confirmed: 4:4.7.1 alpha amd64 armel i386 ia64 mipsel powerpc sparc
 libQtOpenGL.so.4 libqt4-opengl #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z18qt_gl_library_namev@Base 4:4.5.3
@@ -57,7 +57,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN11QGLColormapD1Ev@Base 4:4.5.3
  _ZN11QGLColormapD2Ev@Base 4:4.5.3
  _ZN11QGLColormapaSERKS_@Base 4:4.5.3
- (arch=!amd64)_ZN11QReadLockerD1Ev@Base 4:4.7.0~rc1
+ (optional=external|arch=!alpha !amd64 !i386 !ia64 !mipsel !powerpc)_ZN11QReadLockerD1Ev@Base 4:4.7.0~rc1
  (arch=!armel)_ZN12QDashStroker3endEv@Base 4:4.5.3
  (arch=!armel)_ZN12QDashStroker5beginEPv@Base 4:4.5.3
  (arch=!armel)_ZN12QDashStrokerD0Ev@Base 4:4.5.3
@@ -327,7 +327,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN18QGLContextResourceD2Ev@Base 4:4.6.3
  _ZN18QTextureGlyphCacheD0Ev@Base 4:4.6.1
  _ZN18QTextureGlyphCacheD1Ev@Base 4:4.6.1
- (arch=amd64)_ZN18QTextureGlyphCacheD2Ev@Base 4:4.7.0~rc1
+ (optional=external|arch=alpha amd64 i386 ia64 mipsel powerpc)_ZN18QTextureGlyphCacheD2Ev@Base 4:4.7.1
  _ZN20QGLCustomShaderStage11setInactiveEv@Base 4:4.6.1
  _ZN20QGLCustomShaderStage11setUniformsEP16QGLShaderProgram@Base 4:4.6.1
  _ZN20QGLCustomShaderStage12setOnPainterEP8QPainter@Base 4:4.6.1
