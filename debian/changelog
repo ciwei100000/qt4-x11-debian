@@ -3,7 +3,7 @@ qt4-x11 (4:4.7.1-2) UNRELEASED; urgency=low
   [ Pino Toscano ]
   * libqt4-network.install: specify the single directory with bearer plugins,
     instead of the single plugins; this avoids build failures due to few
-    bearers being compiled for Linux only.
+    bearers being compiled for Linux only. (Closes: #606063)
   * Update debian/control:
     - Add qt4-qmlviewer as suggestion for libqt4-declarative and qt4-demos.
 
