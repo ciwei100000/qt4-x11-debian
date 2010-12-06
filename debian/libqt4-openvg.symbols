@@ -1,5 +1,6 @@
 # SymbolsHelper-Confirmed: 4:4.7.0~rc1 amd64
 libQtOpenVG.so.4 libqt4-openvg #MINVER#
+* Build-Depends-Package: libqt4-dev
  _Z16qPixmapToVGImageRK7QPixmap@Base 4:4.7.0~rc1
  _Z20qt_vg_create_contextP12QPaintDevicei@Base 4:4.7.0~rc1
  _Z20qt_vg_shared_surfacev@Base 4:4.7.0~rc1
