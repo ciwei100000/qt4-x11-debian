@@ -1,5 +1,6 @@
 # upstream patches
 0001_backport_e3f1268_alsa_buffer_overrun.diff
+0002_backport_6ae84f1_fix_QTextEdit_selectAll_crash.diff
 
 # qt-copy patches
 0195-compositing-properties.diff
