@@ -1,4 +1,4 @@
-qt4-x11 (4:4.7.1-2) UNRELEASED; urgency=low
+qt4-x11 (4:4.7.1-2) experimental; urgency=low
 
   [ Pino Toscano ]
   * libqt4-network.install: specify the single directory with bearer plugins,
@@ -19,7 +19,7 @@ qt4-x11 (4:4.7.1-2) UNRELEASED; urgency=low
     that fixes a crash when using the backspace key under
     various circumstances. (Closes: #606405)
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 06 Dec 2010 01:13:50 +0100
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 18 Dec 2010 18:54:28 +0200
 
 qt4-x11 (4:4.7.1-1) experimental; urgency=low
 
