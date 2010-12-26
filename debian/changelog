@@ -1,6 +1,7 @@
 qt4-x11 (4:4.7.1-3) UNRELEASED; urgency=low
 
   * Confirm symbol files on hurd-i386, kfreebsd-amd64, kfreebsd-i386, mips.
+  * Clean up #MISSING symbols because they didn't reappear on any arch.
 
  -- Modestas Vainius <modax@debian.org>  Sun, 26 Dec 2010 14:04:46 +0200
 

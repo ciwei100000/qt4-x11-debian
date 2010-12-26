@@ -429,7 +429,6 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN26QGLFramebufferObjectFormatD2Ev@Base 4:4.6.1
  _ZN26QGLFramebufferObjectFormataSERKS_@Base 4:4.6.1
  _ZN3QGL23setPreferredPaintEngineEN12QPaintEngine4TypeE@Base 4:4.6.1
-#MISSING: 4:4.7.0~rc1# (optional=external|arch=hppa sparc)_ZN6QDebugC1E9QtMsgType@Base 4:4.6.2
  _ZN6QDebugD1Ev@Base 4:4.5.3
  _ZN6QDebuglsEPKc@Base 4:4.5.3
  _ZN6QDebuglsERK7QString@Base 4:4.6.1
