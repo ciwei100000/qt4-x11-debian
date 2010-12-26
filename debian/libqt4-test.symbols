@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.1 alpha amd64 armel i386 ia64 mipsel powerpc sparc
+# SymbolsHelper-Confirmed: 4:4.7.1 alpha amd64 armel hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc sparc
 libQtTest.so.4 libqt4-test #MINVER#
 * Build-Depends-Package: libqt4-dev
 #MISSING: 4:4.7.0~rc1# (optional=external|arch=armel sparc)_Z6qDebugv@Base 4:4.6.2
