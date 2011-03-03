@@ -13,13 +13,11 @@ Reviewed-by: Eskil
  src/gui/text/qtextcursor.cpp |    3 +++
  1 files changed, 3 insertions(+), 0 deletions(-)
 
-diff --git a/src/gui/text/qtextcursor.cpp b/src/gui/text/qtextcursor.cpp
-index 769ab2f..f73cc4b 100644
 --- a/src/gui/text/qtextcursor.cpp
 +++ b/src/gui/text/qtextcursor.cpp
-@@ -363,6 +363,9 @@ bool QTextCursorPrivate::movePosition(QTextCursor::MoveOperation op, QTextCursor
-     bool adjustX = true;
-     QTextBlock blockIt = block();
+@@ -366,6 +366,9 @@ bool QTextCursorPrivate::movePosition(QT
+     if (!blockIt.isValid())
+         return false;
  
 +    if (!blockIt.isValid())
 +        return false;
@@ -27,6 +25,3 @@ index 769ab2f..f73cc4b 100644
      if (op >= QTextCursor::Left && op <= QTextCursor::WordRight
          && blockIt.textDirection() == Qt::RightToLeft) {
          if (op == QTextCursor::Left)
--- 
-1.6.1
-

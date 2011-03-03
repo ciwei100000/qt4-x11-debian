@@ -6,7 +6,7 @@ Author: Steve Langasek <vorlon@debian.org>
 
 --- a/src/corelib/global/qlibraryinfo.cpp
 +++ b/src/corelib/global/qlibraryinfo.cpp
-@@ -85,12 +85,7 @@ class QLibraryInfoPrivate
+@@ -89,12 +89,7 @@ class QLibraryInfoPrivate
  {
  public:
      static QSettings *findConfiguration();
@@ -20,7 +20,7 @@ Author: Steve Langasek <vorlon@debian.org>
      static QSettings *configuration()
      {
          QLibrarySettings *ls = qt_library_settings();
-@@ -98,6 +93,13 @@ public:
+@@ -102,6 +97,13 @@ public:
      }
  };
  

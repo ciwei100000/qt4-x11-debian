@@ -6,7 +6,7 @@ Author: Bo Thorsen <bo@sonofthor.dk>
 
 --- a/src/corelib/global/qlibraryinfo.cpp
 +++ b/src/corelib/global/qlibraryinfo.cpp
-@@ -64,6 +64,10 @@ QT_END_NAMESPACE
+@@ -68,6 +68,10 @@ QT_END_NAMESPACE
  
  #include "qconfig.cpp"
  
@@ -17,7 +17,7 @@ Author: Bo Thorsen <bo@sonofthor.dk>
  QT_BEGIN_NAMESPACE
  
  extern void qDumpCPUFeatures(); // in qsimd.cpp
-@@ -213,6 +217,22 @@ QLibraryInfo::buildKey()
+@@ -217,6 +221,22 @@ QLibraryInfo::buildKey()
      return QString::fromLatin1(QT_BUILD_KEY);
  }
  
@@ -40,7 +40,7 @@ Author: Bo Thorsen <bo@sonofthor.dk>
  /*!
      \since 4.6
      Returns the installation date for this build of Qt. The install date will
-@@ -441,7 +461,7 @@ QLibraryInfo::location(LibraryLocation l
+@@ -453,7 +473,7 @@ QLibraryInfo::location(LibraryLocation l
          if (loc == PrefixPath) {
              // we make the prefix path absolute to the executable's directory
  #ifdef BOOTSTRAPPING
@@ -49,7 +49,7 @@ Author: Bo Thorsen <bo@sonofthor.dk>
  #else
              if (QCoreApplication::instance()) {
  #ifdef Q_OS_MAC
-@@ -450,21 +470,21 @@ QLibraryInfo::location(LibraryLocation l
+@@ -462,21 +482,21 @@ QLibraryInfo::location(LibraryLocation l
                      QCFType<CFURLRef> urlRef = CFBundleCopyBundleURL(bundleRef);
                      if (urlRef) {
                          QCFString path = CFURLCopyFileSystemPath(urlRef, kCFURLPOSIXPathStyle);

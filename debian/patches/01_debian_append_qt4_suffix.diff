@@ -4,7 +4,7 @@ Description: Append a -qt4 suffix to some tools.
  To allow co-installation of the development tools of Qt4 with the Qt3 ones,
  we append a -qt4 suffix to the executable names of some development tools:
  assistant, designer, linguist, lrelease, lupdate, moc, qmake, qtconfig, uic.
-Last-Update: 2010-10-06
+Last-Update: 2011-03-03
 Forwarded: not-needed
 
 --- a/config.tests/unix/compile.test
@@ -64,7 +64,7 @@ Forwarded: not-needed
      if [ "$VERBOSE" = "yes" ]; then
 --- a/configure
 +++ b/configure
-@@ -4574,7 +4574,7 @@ END {
+@@ -4596,7 +4596,7 @@ END {
  }
  
  # build qmake
@@ -73,7 +73,7 @@ Forwarded: not-needed
      echo "Creating qmake. Please wait..."
  
      OLD_QCONFIG_H=
-@@ -7992,8 +7992,8 @@ QMAKE_ABSOLUTE_SOURCE_ROOT = \$\$QT_SOUR
+@@ -8033,8 +8033,8 @@ QMAKE_ABSOLUTE_SOURCE_ROOT = \$\$QT_SOUR
  QMAKE_MOC_SRC    = \$\$QT_BUILD_TREE/src/moc
  
  #local paths that cannot be queried from the QT_INSTALL_* properties while building QTDIR
@@ -84,21 +84,21 @@ Forwarded: not-needed
  QMAKE_UIC3       = \$\$QT_BUILD_TREE/bin/uic3
  QMAKE_RCC        = \$\$QT_BUILD_TREE/bin/rcc
  QMAKE_QDBUSXML2CPP = \$\$QT_BUILD_TREE/bin/qdbusxml2cpp
-@@ -8389,11 +8389,11 @@ EXEC=""
- #-------------------------------------------------------------------------------
+@@ -8435,11 +8435,11 @@ EXEC=""
  
  echo "Finding project files. Please wait..."
--"$outpath/bin/qmake" -prl -r "${relpath}/projects.pro"
-+"$outpath/bin/qmake-qt4" -prl -r "${relpath}/projects.pro"
- if [ -f "${relpath}/projects.pro" ]; then
-     mkfile="${outpath}/Makefile"
-     [ -f "$mkfile" ] && chmod +w "$mkfile"
--    QTDIR="$outpath" "$outpath/bin/qmake" -spec "$XQMAKESPEC" "${relpath}/projects.pro" -o "$mkfile"
-+    QTDIR="$outpath" "$outpath/bin/qmake-qt4" -spec "$XQMAKESPEC" "${relpath}/projects.pro" -o "$mkfile"
+ if [ "$CFG_NOPROCESS" != "yes" ]; then
+-    "$outpath/bin/qmake" -prl -r "${relpath}/projects.pro"
++    "$outpath/bin/qmake-qt4" -prl -r "${relpath}/projects.pro"
+     if [ -f "${relpath}/projects.pro" ]; then
+         mkfile="${outpath}/Makefile"
+         [ -f "$mkfile" ] && chmod +w "$mkfile"
+-        QTDIR="$outpath" "$outpath/bin/qmake" -spec "$XQMAKESPEC" "${relpath}/projects.pro" -o "$mkfile"
++        QTDIR="$outpath" "$outpath/bin/qmake-qt4" -spec "$XQMAKESPEC" "${relpath}/projects.pro" -o "$mkfile"
+     fi
  fi
  
- # .projects      -> projects to process
-@@ -8572,7 +8572,7 @@ for file in .projects .projects.3; do
+@@ -8626,7 +8626,7 @@ for file in .projects .projects.3; do
          QMAKE_SPEC_ARGS="-spec $SPEC"
          echo $ECHO_N "  for $a$ECHO_C"
  
