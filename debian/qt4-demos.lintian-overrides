@@ -34,8 +34,8 @@ qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/flickr/mobile/ima
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/flickr/mobile/images/stripes.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/flickr/mobile/images/titlebar.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/flickr/mobile/images/toolbutton.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/minehunt/MinehuntCore/pics/No-Ones-Laughing-3.jpg
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/minehunt/MinehuntCore/pics/back.png
+qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/minehunt/MinehuntCore/pics/background.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/minehunt/MinehuntCore/pics/bomb-color.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/minehunt/MinehuntCore/pics/bomb.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/minehunt/MinehuntCore/pics/face-sad.png
@@ -44,6 +44,7 @@ qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/minehunt/Minehunt
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/minehunt/MinehuntCore/pics/flag-color.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/minehunt/MinehuntCore/pics/flag.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/minehunt/MinehuntCore/pics/front.png
+qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/minehunt/MinehuntCore/pics/quit.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/minehunt/MinehuntCore/pics/star.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/photoviewer/PhotoViewerCore/images/box-shadow.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/photoviewer/PhotoViewerCore/images/busy.png
@@ -64,6 +65,7 @@ qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/snake/content/pic
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/snake/content/pics/blueStone.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/snake/content/pics/cookie.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/snake/content/pics/head.png
+qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/snake/content/pics/pause.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/snake/content/pics/redStar.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/snake/content/pics/redStone.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/snake/content/pics/skull.png
@@ -75,6 +77,7 @@ qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/snake/content/pic
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/twitter/TwitterCore/images/gloss.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/twitter/TwitterCore/images/lineedit.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/twitter/TwitterCore/images/loading.png
+qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/twitter/TwitterCore/images/quit.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/twitter/TwitterCore/images/stripes.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/twitter/TwitterCore/images/titlebar.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/demos/declarative/twitter/TwitterCore/images/toolbutton.png
@@ -236,7 +239,8 @@ qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/animation/basi
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/animation/basics/images/shadow.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/animation/basics/images/star.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/animation/basics/images/sun.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/animation/states/user.png
+qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/animation/easing/content/quit.png
+qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/animation/states/qt-logo.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/cppextensions/plugins/com/nokia/TimeExample/center.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/cppextensions/plugins/com/nokia/TimeExample/clock.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/cppextensions/plugins/com/nokia/TimeExample/hour.png
@@ -244,7 +248,7 @@ qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/cppextensions/
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/imageelements/borderimage/content/bw.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/imageelements/borderimage/content/colors.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/imageelements/borderimage/content/shadow.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/imageelements/image/face-smile.png
+qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/imageelements/image/qt-logo.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/keyinteraction/focus/Core/images/arrow.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/keyinteraction/focus/Core/images/qt-logo.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/plugins/com/nokia/TimeExample/center.png
@@ -261,6 +265,7 @@ qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/toys/clocks/co
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/toys/clocks/content/clock.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/toys/clocks/content/hour.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/toys/clocks/content/minute.png
+qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/toys/clocks/content/quit.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/toys/clocks/content/second.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/toys/corkboards/cork.jpg
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/toys/corkboards/note-yellow.png
@@ -279,6 +284,7 @@ qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/dialcontrol/content/needle.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/dialcontrol/content/needle_shadow.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/dialcontrol/content/overlay.png
+qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/dialcontrol/content/quit.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/flipable/content/5_heart.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/flipable/content/9_club.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/flipable/content/back.png
@@ -535,7 +541,6 @@ qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/mainwindows/sdi/images/new
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/mainwindows/sdi/images/open.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/mainwindows/sdi/images/paste.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/mainwindows/sdi/images/save.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/multitouch/pinchzoom/images/cheese.jpg
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/network/qftp/images/cdtoparent.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/network/qftp/images/dir.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/network/qftp/images/file.png
@@ -577,6 +582,7 @@ qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/sql/drilldown/logo.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/sql/masterdetail/images/icon.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/sql/masterdetail/images/image.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/tools/undoframework/images/cross.png
+qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/touch/pinchzoom/images/cheese.jpg
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/widgets/icons/images/designer.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/widgets/icons/images/find_disabled.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/widgets/icons/images/find_normal.png
