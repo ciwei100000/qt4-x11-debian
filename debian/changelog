@@ -13,6 +13,7 @@ qt4-x11 (4:4.7.2-1) UNRELEASED; urgency=low
     - 0002_backport_6ae84f1_fix_QTextEdit_selectAll_crash.diff - stolen
       upstream.
     - 22_use___GLIBC__.diff - merged upstream.
+  * Update symbols files.
 
  -- Fathi Boudra <fabo@debian.org>  Thu, 03 Mar 2011 20:58:36 +0200
 

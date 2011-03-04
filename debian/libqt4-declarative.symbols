@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.1 alpha amd64 armel i386 ia64 mipsel powerpc sparc
+# SymbolsHelper-Confirmed: 4:4.7.2 amd64
 libQtDeclarative.so.4 libqt4-declarative #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qmlContextPK7QObject@Base 4:4.7.0~beta1
@@ -11,6 +11,8 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _Z7qmlInfoPK7QObjectRK5QListI17QDeclarativeErrorE@Base 4:4.7.0~beta2
  _Z8qWarningv@Base 4:4.7.0~beta1
  _Z9qmlEnginePK7QObject@Base 4:4.7.0~beta1
+ _ZN12QDashStroker3endEv@Base 4:4.7.2
+ _ZN12QDashStroker5beginEPv@Base 4:4.7.2
  (arch=armel sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.7.0~rc1
  (arch=armel sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.7.0~rc1
  _ZN15QDeclarativePen10penChangedEv@Base 4:4.7.0~beta1
@@ -384,7 +386,6 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN19QDeclarativeBinding10setEnabledEb6QFlagsIN27QDeclarativePropertyPrivate9WriteFlagEE@Base 4:4.7.0~beta1
  _ZN19QDeclarativeBinding11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1
  _ZN19QDeclarativeBinding11qt_metacastEPKc@Base 4:4.7.0~beta1
- _ZN19QDeclarativeBinding13propertyIndexEv@Base 4:4.7.0~beta1
  _ZN19QDeclarativeBinding16staticMetaObjectE@Base 4:4.7.0~beta1
  _ZN19QDeclarativeBinding6updateE6QFlagsIN27QDeclarativePropertyPrivate9WriteFlagEE@Base 4:4.7.0~beta1
  _ZN19QDeclarativeBinding9setTargetERK20QDeclarativeProperty@Base 4:4.7.0~beta1
@@ -700,6 +701,16 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN23QDeclarativeDebugHelper15enableDebuggingEv@Base 4:4.7.1
  _ZN23QDeclarativeDebugHelper15getScriptEngineEP18QDeclarativeEngine@Base 4:4.7.1
  (subst)_ZN23QDeclarativeDebugHelper26setAnimationSlowDownFactorE{qreal}@Base 4:4.7.1
+ _ZN23QDeclarativeDebugServer10addServiceEP24QDeclarativeDebugService@Base 4:4.7.2
+ _ZN23QDeclarativeDebugServer11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.2
+ _ZN23QDeclarativeDebugServer11qt_metacastEPKc@Base 4:4.7.2
+ _ZN23QDeclarativeDebugServer11sendMessageEP24QDeclarativeDebugServiceRK10QByteArray@Base 4:4.7.2
+ _ZN23QDeclarativeDebugServer13removeServiceEP24QDeclarativeDebugService@Base 4:4.7.2
+ _ZN23QDeclarativeDebugServer14receiveMessageERK10QByteArray@Base 4:4.7.2
+ _ZN23QDeclarativeDebugServer16staticMetaObjectE@Base 4:4.7.2
+ _ZN23QDeclarativeDebugServer8instanceEv@Base 4:4.7.2
+ _ZN23QDeclarativeDebugServerC1Ev@Base 4:4.7.2
+ _ZN23QDeclarativeDebugServerC2Ev@Base 4:4.7.2
  _ZN23QDeclarativeDomDocument4loadEP18QDeclarativeEngineRK10QByteArrayRK4QUrl@Base 4:4.7.0~beta1
  _ZN23QDeclarativeDomDocumentC1ERKS_@Base 4:4.7.0~beta1
  _ZN23QDeclarativeDomDocumentC1Ev@Base 4:4.7.0~beta1
@@ -905,7 +916,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN26QDeclarativeStateOperationC1ER14QObjectPrivateP7QObject@Base 4:4.7.0~beta1
  _ZN26QDeclarativeStateOperationC2ER14QObjectPrivateP7QObject@Base 4:4.7.0~beta1
  _ZN27QDeclarativeAbstractBinding10setEnabledEb6QFlagsIN27QDeclarativePropertyPrivate9WriteFlagEE@Base 4:4.7.0~beta1
- _ZN27QDeclarativeAbstractBinding11addToObjectEP7QObject@Base 4:4.7.0~beta1
+ _ZN27QDeclarativeAbstractBinding11addToObjectEP7QObjecti@Base 4:4.7.2
  _ZN27QDeclarativeAbstractBinding11weakPointerEv@Base 4:4.7.1
  _ZN27QDeclarativeAbstractBinding16removeFromObjectEv@Base 4:4.7.0~beta1
  _ZN27QDeclarativeAbstractBinding5clearEv@Base 4:4.7.0~beta1
@@ -979,18 +990,23 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN27QDeclarativePropertyPrivate12initPropertyEP7QObjectRK7QString@Base 4:4.7.0~beta1
  _ZN27QDeclarativePropertyPrivate12savePropertyEPK11QMetaObjecti@Base 4:4.7.0~beta1
  _ZN27QDeclarativePropertyPrivate13saveValueTypeEPK11QMetaObjectiS2_i@Base 4:4.7.0~beta1
+ _ZN27QDeclarativePropertyPrivate15findAliasTargetEP7QObjectiPS1_Pi@Base 4:4.7.2
  _ZN27QDeclarativePropertyPrivate16findSignalByNameEPK11QMetaObjectRK10QByteArray@Base 4:4.7.0~beta2
  _ZN27QDeclarativePropertyPrivate16signalExpressionERK20QDeclarativeProperty@Base 4:4.7.0~beta1
  _ZN27QDeclarativePropertyPrivate17readValuePropertyEv@Base 4:4.7.0~beta1
  _ZN27QDeclarativePropertyPrivate17writeEnumPropertyERK13QMetaPropertyiP7QObjectRK8QVarianti@Base 4:4.7.0~beta1
+ _ZN27QDeclarativePropertyPrivate18setBindingNoEnableEP7QObjectiiP27QDeclarativeAbstractBinding@Base 4:4.7.2
  _ZN27QDeclarativePropertyPrivate18valueTypeCoreIndexERK20QDeclarativeProperty@Base 4:4.7.0~beta1
  _ZN27QDeclarativePropertyPrivate18writeValuePropertyERK8QVariant6QFlagsINS_9WriteFlagEE@Base 4:4.7.0~beta1
  _ZN27QDeclarativePropertyPrivate19setSignalExpressionERK20QDeclarativePropertyP22QDeclarativeExpression@Base 4:4.7.0~beta1
  _ZN27QDeclarativePropertyPrivate20rawMetaObjectForTypeEP25QDeclarativeEnginePrivatei@Base 4:4.7.0~beta1
+ _ZN27QDeclarativePropertyPrivate21metaObjectForPropertyEPK11QMetaObjecti@Base 4:4.7.2
  _ZN27QDeclarativePropertyPrivate5equalEPK11QMetaObjectS2_@Base 4:4.7.0~beta1
  _ZN27QDeclarativePropertyPrivate5writeEP7QObjectRKN25QDeclarativePropertyCache4DataERK8QVariantP23QDeclarativeContextData6QFlagsINS_9WriteFlagEE@Base 4:4.7.0~beta1
  _ZN27QDeclarativePropertyPrivate5writeERK20QDeclarativePropertyRK8QVariant6QFlagsINS_9WriteFlagEE@Base 4:4.7.0~beta1
+ _ZN27QDeclarativePropertyPrivate7bindingEP7QObjectii@Base 4:4.7.2
  _ZN27QDeclarativePropertyPrivate7bindingERK20QDeclarativeProperty@Base 4:4.7.0~beta1
+ _ZN27QDeclarativePropertyPrivate7connectEPK7QObjectiS2_iiPi@Base 4:4.7.2
  _ZN27QDeclarativePropertyPrivate7restoreERK10QByteArrayP7QObjectP23QDeclarativeContextData@Base 4:4.7.0~beta1
  _ZN28QDeclarativeCustomParserNodeC1ERKS_@Base 4:4.7.0~beta1
  _ZN28QDeclarativeCustomParserNodeC1Ev@Base 4:4.7.0~beta1
@@ -1188,6 +1204,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN7QPacketD2Ev@Base 4:4.7.0~beta1
  _ZN9QHashData8willGrowEv@Base 4:4.7.0~beta1
  _ZN9QHashData9hasShrunkEv@Base 4:4.7.0~beta1
+ _ZNK12QPaintDevice7devTypeEv@Base 4:4.7.2
  _ZNK15QDeclarativePen10metaObjectEv@Base 4:4.7.0~beta1
  _ZNK15QPacketProtocol10metaObjectEv@Base 4:4.7.0~beta1
  _ZNK15QPacketProtocol16packetsAvailableEv@Base 4:4.7.0~beta1
@@ -1481,7 +1498,6 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZNK21QDeclarativeListModel10metaObjectEv@Base 4:4.7.0~beta1
  _ZNK21QDeclarativeListModel14inWorkerThreadEv@Base 4:4.7.1
  _ZNK21QDeclarativeListModel3getEi@Base 4:4.7.0~beta1
- _ZNK21QDeclarativeListModel4dataEiRK5QListIiE@Base 4:4.7.0~beta1
  _ZNK21QDeclarativeListModel4dataEii@Base 4:4.7.0~beta1
  _ZNK21QDeclarativeListModel5countEv@Base 4:4.7.0~beta1
  _ZNK21QDeclarativeListModel5rolesEv@Base 4:4.7.0~beta1
@@ -1522,6 +1538,10 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZNK23QDeclarativeDebugClient10metaObjectEv@Base 4:4.7.0~beta1
  _ZNK23QDeclarativeDebugClient4nameEv@Base 4:4.7.0~beta1
  _ZNK23QDeclarativeDebugClient6statusEv@Base 4:4.7.1
+ _ZNK23QDeclarativeDebugServer10metaObjectEv@Base 4:4.7.2
+ _ZNK23QDeclarativeDebugServer12serviceNamesEv@Base 4:4.7.2
+ _ZNK23QDeclarativeDebugServer18hasDebuggingClientEv@Base 4:4.7.2
+ _ZNK23QDeclarativeDebugServer8servicesEv@Base 4:4.7.2
  _ZNK23QDeclarativeDomDocument10rootObjectEv@Base 4:4.7.0~beta1
  _ZNK23QDeclarativeDomDocument6errorsEv@Base 4:4.7.0~beta1
  _ZNK23QDeclarativeDomDocument7importsEv@Base 4:4.7.0~beta1
@@ -1592,6 +1612,8 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZNK26QDeclarativeStateOperation10metaObjectEv@Base 4:4.7.0~beta1
  _ZNK26QDeclarativeStateOperation5stateEv@Base 4:4.7.1
  _ZNK27QDeclarativeAbstractBinding10expressionEv@Base 4:4.7.0~beta1
+ _ZNK27QDeclarativeAbstractBinding13propertyIndexEv@Base 4:4.7.2
+ _ZNK27QDeclarativeAbstractBinding6objectEv@Base 4:4.7.2
  _ZNK27QDeclarativeDebugConnection10metaObjectEv@Base 4:4.7.0~beta1
  _ZNK27QDeclarativeDebugConnection11isConnectedEv@Base 4:4.7.0~beta1
  _ZNK27QDeclarativeDomValueBinding7bindingEv@Base 4:4.7.0~beta1
@@ -1678,11 +1700,13 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZNK36QDeclarativeDomValueValueInterceptor6objectEv@Base 4:4.7.0~beta1
  _ZNK38QDeclarativeDebugObjectExpressionWatch10expressionEv@Base 4:4.7.0~beta1
  _ZNK38QDeclarativeDebugObjectExpressionWatch10metaObjectEv@Base 4:4.7.0~beta1
+ _ZNK7QPacket4dataEv@Base 4:4.7.2
  _ZNK7QPacket7isEmptyEv@Base 4:4.7.0~beta1
  (optional=templinst)_ZNK8QVariant5valueI6QColorEET_v@Base 4:4.7.0~beta2
  (optional=templinst)_ZNK8QVariant5valueIP13QGraphicsItemEET_v@Base 4:4.7.0~rc1
  _ZTI11QMetaObject@Base 4:4.7.0~beta1
  _ZTI11QSharedData@Base 4:4.7.0~beta1
+ _ZTI12QDashStroker@Base 4:4.7.2
  _ZTI15QDeclarativePen@Base 4:4.7.0~beta1
  _ZTI15QPacketAutoSend@Base 4:4.7.0~beta1
  _ZTI15QPacketProtocol@Base 4:4.7.0~beta1
@@ -1710,6 +1734,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZTI22QDeclarativeStateGroup@Base 4:4.7.0~beta1
  _ZTI22QDeclarativeTransition@Base 4:4.7.0~beta1
  _ZTI23QDeclarativeDebugClient@Base 4:4.7.0~beta1
+ _ZTI23QDeclarativeDebugServer@Base 4:4.7.2
  _ZTI23QDeclarativeEngineDebug@Base 4:4.7.0~beta1
  _ZTI23QDeclarativeItemPrivate@Base 4:4.7.0~beta1
  _ZTI23QDeclarativePropertyMap@Base 4:4.7.0~beta1
@@ -1743,6 +1768,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZTIN23QScriptDeclarativeClass6ObjectE@Base 4:4.7.0~beta1
  _ZTS11QMetaObject@Base 4:4.7.0~beta1
  _ZTS11QSharedData@Base 4:4.7.0~beta1
+ _ZTS12QDashStroker@Base 4:4.7.2
  _ZTS15QDeclarativePen@Base 4:4.7.0~beta1
  _ZTS15QPacketAutoSend@Base 4:4.7.0~beta1
  _ZTS15QPacketProtocol@Base 4:4.7.0~beta1
@@ -1770,6 +1796,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZTS22QDeclarativeStateGroup@Base 4:4.7.0~beta1
  _ZTS22QDeclarativeTransition@Base 4:4.7.0~beta1
  _ZTS23QDeclarativeDebugClient@Base 4:4.7.0~beta1
+ _ZTS23QDeclarativeDebugServer@Base 4:4.7.2
  _ZTS23QDeclarativeEngineDebug@Base 4:4.7.0~beta1
  _ZTS23QDeclarativeItemPrivate@Base 4:4.7.0~beta1
  _ZTS23QDeclarativePropertyMap@Base 4:4.7.0~beta1
@@ -1801,6 +1828,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZTS39QDeclarativeNetworkAccessManagerFactory@Base 4:4.7.0~beta1
  _ZTS7QPacket@Base 4:4.7.0~beta1
  _ZTSN23QScriptDeclarativeClass6ObjectE@Base 4:4.7.0~beta1
+ _ZTV12QDashStroker@Base 4:4.7.2
  _ZTV15QDeclarativePen@Base 4:4.7.0~beta1
  _ZTV15QPacketAutoSend@Base 4:4.7.0~beta1
  _ZTV15QPacketProtocol@Base 4:4.7.0~beta1
@@ -1828,6 +1856,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZTV22QDeclarativeStateGroup@Base 4:4.7.0~beta1
  _ZTV22QDeclarativeTransition@Base 4:4.7.0~beta1
  _ZTV23QDeclarativeDebugClient@Base 4:4.7.0~beta1
+ _ZTV23QDeclarativeDebugServer@Base 4:4.7.2
  _ZTV23QDeclarativeEngineDebug@Base 4:4.7.0~beta1
  _ZTV23QDeclarativeItemPrivate@Base 4:4.7.0~beta1
  _ZTV23QDeclarativePropertyMap@Base 4:4.7.0~beta1
@@ -1876,7 +1905,6 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  (c++)"non-virtual thunk to QDeclarativeBehavior::write(QVariant const&)@Base" 4:4.7.0~beta1
  (c++)"non-virtual thunk to QDeclarativeBehavior::~QDeclarativeBehavior()@Base" 4:4.7.0~beta1
  (c++)"non-virtual thunk to QDeclarativeBinding::expression() const@Base" 4:4.7.0~beta1
- (c++)"non-virtual thunk to QDeclarativeBinding::propertyIndex()@Base" 4:4.7.0~beta1
  (c++)"non-virtual thunk to QDeclarativeBinding::setEnabled(bool, QFlags<QDeclarativePropertyPrivate::WriteFlag>)@Base" 4:4.7.0~beta1
  (c++)"non-virtual thunk to QDeclarativeBinding::update(QFlags<QDeclarativePropertyPrivate::WriteFlag>)@Base" 4:4.7.0~beta1
  (c++)"non-virtual thunk to QDeclarativeBinding::~QDeclarativeBinding()@Base" 4:4.7.0~beta1

@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.1 alpha amd64 armel hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc sparc
+# SymbolsHelper-Confirmed: 4:4.7.2 amd64
 libQtOpenGL.so.4 libqt4-opengl #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z18qt_gl_library_namev@Base 4:4.5.3
@@ -7,7 +7,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _Z22qt_gl_transfer_contextPK10QGLContext@Base 4:4.6.2
  _Z22qt_set_gl_library_nameRK7QString@Base 4:4.5.3
  _Z26qt_destroy_gl_share_widgetv@Base 4:4.7.1
- _Z6qDebugv@Base 4:4.5.3
+ _Z33qt_resolve_eglimage_gl_extensionsP10QGLContext@Base 4:4.7.2
  _Z8qWarningv@Base 4:4.6.1
  _ZN10QByteArrayD1Ev@Base 4:4.5.3
  _ZN10QGLContext10areSharingEPKS_S1_@Base 4:4.6.1
@@ -21,7 +21,6 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN10QGLContext11drawTextureERK6QRectFjj@Base 4:4.5.3
  _ZN10QGLContext11drawTextureERK7QPointFjj@Base 4:4.5.3
  _ZN10QGLContext11makeCurrentEv@Base 4:4.5.3
- _ZN10QGLContext12chooseVisualEv@Base 4:4.7.0~rc1
  _ZN10QGLContext13chooseContextEPKS_@Base 4:4.5.3
  _ZN10QGLContext13deleteTextureEj@Base 4:4.5.3
  _ZN10QGLContext14currentContextEv@Base 4:4.5.3
@@ -35,7 +34,6 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN10QGLContext8setValidEb@Base 4:4.5.3
  _ZN10QGLContext9setDeviceEP12QPaintDevice@Base 4:4.5.3
  _ZN10QGLContext9setFormatERK9QGLFormat@Base 4:4.5.3
- _ZN10QGLContext9tryVisualERK9QGLFormati@Base 4:4.7.0~rc1
  _ZN10QGLContextC1ERK9QGLFormat@Base 4:4.5.3
  _ZN10QGLContextC1ERK9QGLFormatP12QPaintDevice@Base 4:4.5.3
  _ZN10QGLContextC2ERK9QGLFormat@Base 4:4.5.3
@@ -270,9 +268,11 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN16QGLWindowSurface11qt_metacastEPKc@Base 4:4.7.0~rc1
  _ZN16QGLWindowSurface11setGeometryERK5QRect@Base 4:4.7.0~rc1
  _ZN16QGLWindowSurface12hijackWindowEP7QWidget@Base 4:4.7.0~rc1
+ _ZN16QGLWindowSurface12swapBehaviorE@Base 4:4.7.2
  _ZN16QGLWindowSurface13surfaceFormatE@Base 4:4.7.0~rc1
  _ZN16QGLWindowSurface14updateGeometryEv@Base 4:4.7.0~rc1
  _ZN16QGLWindowSurface16staticMetaObjectE@Base 4:4.7.0~rc1
+ _ZN16QGLWindowSurface26initializeOffscreenTextureERK5QSize@Base 4:4.7.2
  _ZN16QGLWindowSurface5flushEP7QWidgetRK7QRegionRK6QPoint@Base 4:4.7.0~rc1
  _ZN16QGLWindowSurface6bufferEPK7QWidget@Base 4:4.7.0~rc1
  _ZN16QGLWindowSurface6scrollERK7QRegionii@Base 4:4.7.0~rc1
@@ -327,7 +327,6 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN18QGLContextResourceD2Ev@Base 4:4.6.3
  _ZN18QTextureGlyphCacheD0Ev@Base 4:4.6.1
  _ZN18QTextureGlyphCacheD1Ev@Base 4:4.6.1
- (optional=external|arch=!armel !sparc)_ZN18QTextureGlyphCacheD2Ev@Base 4:4.7.1
  _ZN20QGLCustomShaderStage11setInactiveEv@Base 4:4.6.1
  _ZN20QGLCustomShaderStage11setUniformsEP16QGLShaderProgram@Base 4:4.6.1
  _ZN20QGLCustomShaderStage12setOnPainterEP8QPainter@Base 4:4.6.1
@@ -363,12 +362,14 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN20QGLFramebufferObjectD1Ev@Base 4:4.5.3
  _ZN20QGLFramebufferObjectD2Ev@Base 4:4.5.3
  _ZN20QGLShareContextScopeD1Ev@Base 4:4.6.1
+ _ZN20QGLTextureGlyphCache10setContextEP10QGLContext@Base 4:4.7.2
  _ZN20QGLTextureGlyphCache11fillTextureERKN18QTextureGlyphCache5CoordEj@Base 4:4.7.0~beta2
  _ZN20QGLTextureGlyphCache11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta2
  _ZN20QGLTextureGlyphCache11qt_metacastEPKc@Base 4:4.7.0~beta2
  _ZN20QGLTextureGlyphCache16staticMetaObjectE@Base 4:4.7.0~beta2
  _ZN20QGLTextureGlyphCache17createTextureDataEii@Base 4:4.7.0~beta2
  _ZN20QGLTextureGlyphCache17resizeTextureDataEii@Base 4:4.7.0~beta2
+ _ZN20QGLTextureGlyphCache5clearEv@Base 4:4.7.2
  _ZN20QGLTextureGlyphCacheC1EP10QGLContextN21QFontEngineGlyphCache4TypeERK10QTransform@Base 4:4.7.0~beta2
  _ZN20QGLTextureGlyphCacheC2EP10QGLContextN21QFontEngineGlyphCache4TypeERK10QTransform@Base 4:4.7.0~beta2
  _ZN20QGLTextureGlyphCacheD0Ev@Base 4:4.7.0~beta2
@@ -429,6 +430,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN26QGLFramebufferObjectFormatD2Ev@Base 4:4.6.1
  _ZN26QGLFramebufferObjectFormataSERKS_@Base 4:4.6.1
  _ZN3QGL23setPreferredPaintEngineEN12QPaintEngine4TypeE@Base 4:4.6.1
+ _ZN6QDebugC1E9QtMsgType@Base 4:4.7.2
  _ZN6QDebugD1Ev@Base 4:4.5.3
  _ZN6QDebuglsEPKc@Base 4:4.5.3
  _ZN6QDebuglsERK7QString@Base 4:4.6.1
