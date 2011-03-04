@@ -1,6 +1,4 @@
 # upstream patches
-0001_backport_e3f1268_alsa_buffer_overrun.diff
-0002_backport_6ae84f1_fix_QTextEdit_selectAll_crash.diff
 
 # qt-copy patches
 0195-compositing-properties.diff
@@ -20,7 +18,6 @@
 18_enable_qt3support_qtwebkit_debug_info.diff
 20_install_qvfb.diff
 21_qt_ia32_library_path.diff
-22_use___GLIBC__.diff
 23_permit_plugins_built_with_future_qt.diff
 30_webkit_unaligned_access.diff
 40_alpha_ice.diff
