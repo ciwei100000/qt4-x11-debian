@@ -12,6 +12,7 @@ qt4-x11 (4:4.7.2-1) UNRELEASED; urgency=low
     - 0001_backport_e3f1268_alsa_buffer_overrun.diff - stolen upstream.
     - 0002_backport_6ae84f1_fix_QTextEdit_selectAll_crash.diff - stolen
       upstream.
+    - 17_add_postgresql_8.3_support.diff - fixed upstream.
     - 22_use___GLIBC__.diff - merged upstream.
   * Update symbols files.
 
