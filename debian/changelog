@@ -26,6 +26,7 @@ qt4-x11 (4:4.7.2-1) UNRELEASED; urgency=low
   [ Pino Toscano ]
   * Add a -qt4 suffix for the shipped icons of assistant, designer, linguist,
     and qtconfig.
+  * Rename qt4config.desktop to qtconfig-qt4.desktop.
 
  -- Fathi Boudra <fabo@debian.org>  Thu, 03 Mar 2011 20:58:36 +0200
 
