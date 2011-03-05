@@ -240,8 +240,8 @@ override_dh_auto_install:
 	install -D -p -m0644 debian/desktop/linguist.png \
 		debian/qt4-dev-tools/usr/share/pixmaps/linguist-qt4.png
 
-	install -D -p -m0644 debian/desktop/qt4config.desktop \
-		debian/qt4-qtconfig/usr/share/applications/qt4config.desktop
+	install -D -p -m0644 debian/desktop/qtconfig-qt4.desktop \
+		debian/qt4-qtconfig/usr/share/applications/qtconfig-qt4.desktop
 	install -D -p -m0644 debian/desktop/qtconfig.png \
 		debian/qt4-qtconfig/usr/share/pixmaps/qtconfig-qt4.png
 
