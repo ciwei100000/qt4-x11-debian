@@ -23,6 +23,10 @@ qt4-x11 (4:4.7.2-1) UNRELEASED; urgency=low
     - Suggests/Recommends QML plugin packages to libqt4-declarative and
       qt4-demos packages. (Closes: #597900)
 
+  [ Pino Toscano ]
+  * Add a -qt4 suffix for the shipped icons of assistant, designer, linguist,
+    and qtconfig.
+
  -- Fathi Boudra <fabo@debian.org>  Thu, 03 Mar 2011 20:58:36 +0200
 
 qt4-x11 (4:4.7.1-2) experimental; urgency=low

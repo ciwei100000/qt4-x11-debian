@@ -70,7 +70,7 @@ GenericName[zh_TW]=界面設計師
 GenericName[zu]=Umakhi Womxhumanisi
 X-KDE-StartupNotify=true
 MimeType=application/x-designer;
-Icon=designer
+Icon=designer-qt4
 Terminal=false
 Type=Application
 

@@ -229,21 +229,21 @@ override_dh_auto_install:
 	install -D -p -m0644 debian/desktop/designer-qt4.desktop \
 		debian/qt4-designer/usr/share/applications/designer-qt4.desktop
 	install -D -p -m0644 debian/desktop/designer.png \
-		debian/qt4-designer/usr/share/pixmaps/designer.png
+		debian/qt4-designer/usr/share/pixmaps/designer-qt4.png
 
 	install -D -p -m0644 debian/desktop/assistant-qt4.desktop \
 		debian/qt4-dev-tools/usr/share/applications/assistant-qt4.desktop
 	install -D -p -m0644 debian/desktop/linguist-qt4.desktop \
 		debian/qt4-dev-tools/usr/share/applications/linguist-qt4.desktop
 	install -D -p -m0644 debian/desktop/assistant.png \
-		debian/qt4-dev-tools/usr/share/pixmaps/assistant.png
+		debian/qt4-dev-tools/usr/share/pixmaps/assistant-qt4.png
 	install -D -p -m0644 debian/desktop/linguist.png \
-		debian/qt4-dev-tools/usr/share/pixmaps/linguist.png
+		debian/qt4-dev-tools/usr/share/pixmaps/linguist-qt4.png
 
 	install -D -p -m0644 debian/desktop/qt4config.desktop \
 		debian/qt4-qtconfig/usr/share/applications/qt4config.desktop
 	install -D -p -m0644 debian/desktop/qtconfig.png \
-		debian/qt4-qtconfig/usr/share/pixmaps/qtconfig.png
+		debian/qt4-qtconfig/usr/share/pixmaps/qtconfig-qt4.png
 
 	# QTBUG-12159 workaround
 	rm -f debian/tmp//usr/share/qt4/mkspecs/modules/qt_webkit_version.pri
