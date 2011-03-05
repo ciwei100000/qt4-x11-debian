@@ -15,8 +15,10 @@ qt4-x11 (4:4.7.2-1) UNRELEASED; urgency=low
     - 17_add_postgresql_8.3_support.diff - fixed upstream.
     - 22_use___GLIBC__.diff - merged upstream.
   * Update symbols files.
-  * Remove catalan translation, obsolete and should have been contributed
-    upstream.
+  * Update debian/rules:
+    - remove catalan translation, obsolete and should have been contributed
+      upstream.
+    - pass -opengl desktop and -no-egl configure options. (Closes: #616391)
   * Update debian/control:
     - Suggests/Recommends QML plugin packages to libqt4-declarative and
       qt4-demos packages. (Closes: #597900)

@@ -122,6 +122,8 @@ endif
 	            -gtkstyle \
 	            -system-nas-sound \
 	            -no-openvg \
+	            -opengl desktop \
+	            -no-egl \
 	            -lfontconfig \
 	            -I/usr/include/freetype2 \
 	            -qvfb \
