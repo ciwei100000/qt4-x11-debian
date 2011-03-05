@@ -154,8 +154,11 @@ override_dh_auto_clean:
 	# Misc. directories
 	rm -rf \
 	  doc-build/ \
+	  doc/html/ \
+	  doc/qch/ \
 	  examples/tools/plugandpaint/plugins/ \
 	  examples/tools/styleplugin/styles/ \
+	  include/ \
 	  lib/ \
 	  mkspecs/glibc-g++/ \
 	  plugins/ \
@@ -181,7 +184,7 @@ override_dh_auto_clean:
 
 	# Leftover files and all symlinks
 	find \( -false \
-	  -o -type f -name \*.a \
+	  -o -name \*.a \
 	  -o -name Makefile.Debug \
 	  -o -name Makefile.Release \
 	  -o -name \*.o \
@@ -189,18 +192,19 @@ override_dh_auto_clean:
 	  -o -name \*.so \
 	  -o -name \*.so.debug \
 	  -o -type l \
-	\) -delete
+	\) -print0 | xargs -0 rm -rf
 
 	# Delete all Makefiles, excluding some from src/3rdparty
 	find $(CURDIR) -name Makefile \
 	  ! -path $(CURDIR)/src/3rdparty/Makefile \
 	  ! -path $(CURDIR)/src/3rdparty/freetype/\* \
 	  ! -path $(CURDIR)/src/3rdparty/zlib/\* \
-	-delete
+	  ! -path $(CURDIR)/src/3rdparty/ptmalloc/Makefile \
+	-print0 | xargs -0 rm -rf
 
 	# Any remaining executables
-	find $(CURDIR) -type f -executable -exec file -i '{}' \; | grep \
-	  -e application/x-executable \
+	find $(CURDIR) -type f -perm /u+x,g+x,o+x -exec file -i '{}' \; \
+	| grep -e application/x-executable \
 	| cut -d ':' -f 1 | xargs rm -f
 
 	# Generated on build
@@ -264,7 +268,7 @@ override_dh_auto_install:
 	# Remove bogus exec bits from some data files in mkspecs, docs, examples
 	# and demos
 	find debian/tmp/usr/share/qt4/ debian/tmp/usr/lib/qt4/ \
-		-executable -type f \
+		-perm /u+x,g+x,o+x -type f \
 		-regex '.*\.\(app\|conf\|cpp\|h\|js\|php\|png\|pro\|xml\|xsl\)$$' \
 		-exec chmod a-x {} \;
 
