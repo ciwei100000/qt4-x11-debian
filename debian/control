@@ -360,7 +360,8 @@ Description: Qt 4 Phonon module
 Package: libqt4-declarative
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Suggests: qt4-qmlviewer
+Suggests: qt4-qmlviewer, libqt4-declarative-folderlistmodel,
+ libqt4-declarative-gestures, libqt4-declarative-particles
 Description: Qt 4 Declarative module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -555,7 +556,8 @@ Package: qt4-demos
 Architecture: any
 Section: x11
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Recommends: qt4-doc (= ${source:Version}), qt4-dev-tools (= ${source:Version})
+Recommends: qt4-doc (= ${source:Version}), qt4-dev-tools (= ${source:Version}),
+ libqt4-declarative-gestures, libqt4-declarative-particles
 Suggests: qt4-qmlviewer
 Description: Qt 4 examples and demos
  Qt is a cross-platform C++ application framework. Qt's primary feature

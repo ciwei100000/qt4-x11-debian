@@ -17,6 +17,9 @@ qt4-x11 (4:4.7.2-1) UNRELEASED; urgency=low
   * Update symbols files.
   * Remove catalan translation, obsolete and should have been contributed
     upstream.
+  * Update debian/control:
+    - Suggests/Recommends QML plugin packages to libqt4-declarative and
+      qt4-demos packages. (Closes: #597900)
 
  -- Fathi Boudra <fabo@debian.org>  Thu, 03 Mar 2011 20:58:36 +0200
 
