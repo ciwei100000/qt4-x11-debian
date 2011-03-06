@@ -14,6 +14,9 @@ qt4-x11 (4:4.7.2-1) UNRELEASED; urgency=low
       upstream.
     - 17_add_postgresql_8.3_support.diff - fixed upstream.
     - 22_use___GLIBC__.diff - merged upstream.
+  * Add patches:
+    - buildable_appchooser_states_demos.patch - images files aren't shipped
+      (Closes: #616500)
   * Update symbols files.
   * Update debian/rules:
     - remove catalan translation, obsolete and should have been contributed

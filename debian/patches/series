@@ -5,6 +5,7 @@
 0225-invalidate-tabbar-geometry-on-refresh.patch
 
 # debian patches
+buildable_appchooser_states_demos.patch
 01_debian_append_qt4_suffix.diff
 02_syncqt_sane_timestamp_for_nonexisting_headers.diff
 07_trust_dpkg-arch_over_uname-m.diff
