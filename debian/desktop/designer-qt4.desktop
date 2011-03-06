@@ -6,6 +6,7 @@ GenericName=Interface Designer
 GenericName[af]=Koppelvlak Ontwerper
 GenericName[ar]=أداة لتصميم واجهة البرامج
 GenericName[az]=Ara Üz Tərtibçisi
+GenericName[bg]=Дизайнер на интерфейси
 GenericName[bn]=ইন্টারফেস পরিকল্পনা
 GenericName[bs]=Qt alat za dizajniranje interfejsa
 GenericName[ca]=Dissenyador d'interfícies
@@ -30,6 +31,7 @@ GenericName[hu]=Felülettervező
 GenericName[is]=Viðmótshönnun
 GenericName[it]=Disegnatore di interfacce
 GenericName[ja]=インターフェースデザイナー
+GenericName[km]=កម្មវិធី​រចនា​ចំណុច​ប្រទាក់
 GenericName[ko]=인터페이스 디자이너
 GenericName[lo]=ເຄື່ອງມືອອກແບບສ່ວນຕິດຕໍ່ຜູ້ໃຊ້
 GenericName[lt]=Sąsajos redaktorius
@@ -70,19 +72,17 @@ GenericName[zh_TW]=界面設計師
 GenericName[zu]=Umakhi Womxhumanisi
 X-KDE-StartupNotify=true
 MimeType=application/x-designer;
-Icon=designer
+Icon=designer-qt4
 Terminal=false
 Type=Application
 
 
 
-GenericName[bg]=Дизайнер на интерфейси
 Name[el]=Σχεδιαστής Qt 4
 Name[hu]=Qt 4 Tervező
 Name[it]=Progettazione Qt 4
 Name[ja]=Qt 4デザイナ
 Name[km]=កម្មវិធី​រចនា Qt 4
-GenericName[km]=កម្មវិធី​រចនា​ចំណុច​ប្រទាក់
 Name[nl]=Qt 4 ontwerper
 Name[pa]=Qt 4 ਡਿਜ਼ਾਇਨਰ
 Name[pl]=Projektowanie interfejsów w Qt 4
