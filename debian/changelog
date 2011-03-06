@@ -15,6 +15,8 @@ qt4-x11 (4:4.7.2-1) UNRELEASED; urgency=low
     - 17_add_postgresql_8.3_support.diff - fixed upstream.
     - 22_use___GLIBC__.diff - merged upstream.
   * Add patches:
+    - qtdebug_syslog.patch - send Q_ASSERT, qDebug, qWarning and qFatal
+      messages to syslog.
     - buildable_appchooser_states_demos.patch - images files aren't shipped
       (Closes: #616500)
   * Update symbols files.
