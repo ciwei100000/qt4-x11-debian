@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.6.2 amd64 armel hppa i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips powerpc s390 sparc
+# SymbolsHelper-Confirmed: 4:4.7.2 amd64
 libQt3Support.so.4 libqt4-qt3support #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z16qt_tryAccelEventP7QWidgetP9QKeyEvent@Base 4:4.5.3
@@ -718,8 +718,8 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN10Q3TitleBarD0Ev@Base 4:4.5.3
  _ZN10Q3TitleBarD1Ev@Base 4:4.5.3
  _ZN10Q3TitleBarD2Ev@Base 4:4.5.3
- _ZN10QByteArray4dataEv@Base 4:4.5.3
  _ZN10QByteArrayC1Ei@Base 4:4.5.3
+ _ZN10QByteArrayC2Ei@Base 4:4.7.2
  _ZN11Q3ColorDrag11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN11Q3ColorDrag11qt_metacastEPKc@Base 4:4.5.3
  _ZN11Q3ColorDrag16staticMetaObjectE@Base 4:4.5.3
@@ -1619,6 +1619,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN12Q3TextStreamrsERs@Base 4:4.5.3
  _ZN12Q3TextStreamrsERt@Base 4:4.5.3
  _ZN12Q3TextString16appendParagraphsEP15Q3TextParagraphS1_@Base 4:4.5.3
+ _ZN12Q3TextString18nextCursorPositionEi@Base 4:4.7.2
  _ZN12Q3TextString5clearEv@Base 4:4.5.3
  _ZN12Q3TextString6insertEiP16Q3TextStringCharb@Base 4:4.5.3
  _ZN12Q3TextString6insertEiPK5QChariP12Q3TextFormat@Base 4:4.5.3
@@ -2428,7 +2429,6 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN15Q3TextParagraph4showEv@Base 4:4.5.3
  _ZN15Q3TextParagraph4undoEP12Q3TextCursor@Base 4:4.5.3
  _ZN15Q3TextParagraph5paintER8QPainterRK8QPaletteP12Q3TextCursorbiiii@Base 4:4.5.3
- _ZN15Q3TextParagraph6appendERK7QStringb@Base 4:4.5.3
  _ZN15Q3TextParagraph6formatEib@Base 4:4.5.3
  _ZN15Q3TextParagraph6indentEPiS0_@Base 4:4.5.3
  _ZN15Q3TextParagraph6insertEiPK5QChari@Base 4:4.5.3
@@ -2834,6 +2834,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN20Q3TextCommandHistory5clearEv@Base 4:4.5.3
  _ZN20Q3TextCommandHistoryD0Ev@Base 4:4.5.3
  _ZN20Q3TextCommandHistoryD1Ev@Base 4:4.5.3
+ _ZN20Q3TextCommandHistoryD2Ev@Base 4:4.7.2
  _ZN20Q3TextHorizontalLine15adjustToPainterEP8QPainter@Base 4:4.5.3
  _ZN20Q3TextHorizontalLine4drawEP8QPainteriiiiiiRK8QPaletteb@Base 4:4.5.3
  _ZN20Q3TextHorizontalLineC1EP14Q3TextDocumentRK4QMapI7QStringS3_ERKS3_R19Q3MimeSourceFactory@Base 4:4.5.3
@@ -3545,7 +3546,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN8Q3HeaderD2Ev@Base 4:4.5.3
  _ZN8Q3Membuf11scanNewlineEP10QByteArray@Base 4:4.5.3
  _ZN8Q3Membuf12consumeBytesEmPc@Base 4:4.5.3
- _ZN8Q3Membuf7readAllEv@Base 4:4.5.3
+ _ZN8Q3Membuf6appendEP10QByteArray@Base 4:4.7.2
  _ZN8Q3Membuf7ungetchEi@Base 4:4.5.3
  _ZN8Q3MembufC1Ev@Base 4:4.5.3
  _ZN8Q3MembufC2Ev@Base 4:4.5.3
@@ -4332,7 +4333,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZNK12Q3TextFormat7descentEv@Base 4:4.5.3
  _ZNK12Q3TextFormat7leadingEv@Base 4:4.5.3
  _ZNK12Q3TextString5widthEi@Base 4:4.5.3
- (optional=private|arch=armel hppa sparc)_ZNK12Q3TextString8toStringEv@Base 4:4.6.2
+ (optional=private|arch=amd64 armel hppa sparc)_ZNK12Q3TextString8toStringEv@Base 4:4.6.2
  _ZNK12Q3TextString9checkBidiEv@Base 4:4.5.3
  _ZNK12QPaintDevice7devTypeEv@Base 4:4.5.3
  _ZNK13Q3ActionGroup10metaObjectEv@Base 4:4.5.3
@@ -4573,7 +4574,6 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZNK15Q3TextParagraph16formatCollectionEv@Base 4:4.5.3
  _ZNK15Q3TextParagraph16lineHeightOfCharEiPiS0_@Base 4:4.5.3
  _ZNK15Q3TextParagraph21writeStyleInformationER11QDataStream@Base 4:4.5.3
- _ZNK15Q3TextParagraph2atEi@Base 4:4.5.3
  _ZNK15Q3TextParagraph5lineYEi@Base 4:4.5.3
  _ZNK15Q3TextParagraph5linesEv@Base 4:4.5.3
  _ZNK15Q3TextParagraph7leftGapEv@Base 4:4.5.3
@@ -4773,7 +4773,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZNK5Q3Urlcv7QStringEv@Base 4:4.5.3
  _ZNK5Q3UrleqERK7QString@Base 4:4.5.3
  _ZNK5Q3UrleqERKS_@Base 4:4.5.3
- _ZNK5QRect6centerEv@Base 4:4.5.3
+ _ZNK5QRect6unitedERKS_@Base 4:4.7.2
  _ZNK6Q3Grid10metaObjectEv@Base 4:4.5.3
  _ZNK6Q3Grid8sizeHintEv@Base 4:4.5.3
  _ZNK6Q3HBox10metaObjectEv@Base 4:4.5.3
@@ -4857,7 +4857,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZNK7Q3Table9rowHeightEi@Base 4:4.5.3
  _ZNK7Q3Table9selectionEi@Base 4:4.5.3
  _ZNK7Q3Table9tableSizeEv@Base 4:4.5.3
- _ZNK7QWidget10colorGroupEv@Base 4:4.5.3
+ _ZNK7QWidget9isEnabledEv@Base 4:4.7.2
  _ZNK8Q3Action10metaObjectEv@Base 4:4.5.3
  _ZNK8Q3Action14isToggleActionEv@Base 4:4.5.3
  _ZNK8Q3Action4isOnEv@Base 4:4.5.3
