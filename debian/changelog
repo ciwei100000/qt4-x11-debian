@@ -7,8 +7,10 @@ qt4-x11 (4:4.7.2-2) unstable; urgency=low
 
   [ Sune Vuorela ]
   * Use gcc4.5 on s390 (Closes: #606079)
+  * Make qt4-dev-tools conflict with qt3-dev-tools-embedded (due to
+    qvfb). Closes: 617579
 
- -- Sune Vuorela <sune@debian.org>  Sat, 19 Mar 2011 13:12:51 +0100
+ -- Sune Vuorela <sune@debian.org>  Sat, 19 Mar 2011 18:00:06 +0100
 
 qt4-x11 (4:4.7.2-1) unstable; urgency=low
 

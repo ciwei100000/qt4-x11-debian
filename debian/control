@@ -511,6 +511,7 @@ Breaks: libqt4-core (<< 4.4.0~beta1-1)
 Replaces: libqt4-core (<< 4.4.0~beta1-1)
 Recommends: libqt4-dev, qt4-doc, qt4-designer
 Suggests: qt4-doc-html
+Conflicts: qt3-dev-tools-embedded
 Description: Qt 4 development tools
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
