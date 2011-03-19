@@ -1,0 +1,15 @@
+Description: Add armv6 uname entry for armhf
+---
+
+--- a/configure	2011-03-10 15:25:58.000000000 +0200
++++ b/configure	2011-03-11 10:40:13.837312856 +0200
+@@ -182,6 +182,9 @@
+ 	armel)
+ 		UNAME_MACHINE="armv5tel"
+ 	;;
++	armhf)
++		UNAME_MACHINE="armv6"
++	;;
+ 	hppa)
+ 		UNAME_MACHINE="parisc64"
+ 	;;

@@ -31,5 +31,8 @@ buildable_appchooser_states_demos.patch
 89_powerpc_opts.diff
 91_s390_use_gstabs.diff
 92_armel_gcc43_valist_compat.diff
+x-0003-Use-GCC-intrinsics-for-armv6-atomic-operations.patch
+94_armv6_uname_entry.diff
+95_neon_flags.patch
 96_webkit_no_gc_sections.diff
 99_hppa_bug561203_decrease_failure_rate.diff
