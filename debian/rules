@@ -71,6 +71,10 @@ ifeq ($(DEB_HOST_ARCH),hppa)
 		exit 5 ; \
 	fi
 endif
+ifeq ($(DEB_HOST_ARCH),s390)
+	export CC=gcc-4.5
+	export CXX=gcc-4.5
+endif
 
 	# Create mkspecs/glibc-g++ from mkspecs/linux-g++, needed by GNU/kFreeBSD
 	# we cannot use directly linux-g++ due to src/corelib/io/io.pri

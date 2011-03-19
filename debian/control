@@ -15,7 +15,8 @@ Build-Depends: debhelper (>= 7.4.13), pkg-kde-tools (>= 0.6.4), flex,
  libsqlite0-dev, libsqlite3-dev, libtiff4-dev, libx11-dev, libxcursor-dev,
  libxext-dev, libxft-dev, libxi-dev, libxinerama-dev, libxmu-dev,
  libxrandr-dev, libxrender-dev, libxslt1-dev, libxt-dev, libxtst-dev,
- libxv-dev, zlib1g-dev, freetds-dev
+ libxv-dev, zlib1g-dev, freetds-dev,
+ gcc-4.5 [s390], g++-4.5 [s390]
 Standards-Version: 3.9.1
 Homepage: http://www.qtsoftware.com
 Vcs-Git: git://git.debian.org/pkg-kde/qt/qt4-x11.git

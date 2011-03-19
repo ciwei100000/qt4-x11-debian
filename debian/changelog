@@ -5,6 +5,9 @@ qt4-x11 (4:4.7.2-2) unstable; urgency=low
     backport from Ubuntu:
     * http://launchpadlibrarian.net/66374974/x-0003-Use-GCC-intrinsics-for-armv6-atomic-operations.patch
 
+  [ Sune Vuorela ]
+  * Use gcc4.5 on s390 (Closes: #606079)
+
  -- Sune Vuorela <sune@debian.org>  Sat, 19 Mar 2011 13:12:51 +0100
 
 qt4-x11 (4:4.7.2-1) unstable; urgency=low
