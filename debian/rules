@@ -62,8 +62,8 @@ ifeq ($(DEB_HOST_ARCH),hppa)
 	mkdir -p debian/hppa-tmp
 	echo "Testing whether getdents kernel bug is present on this buildd - see #433768"
 	gcc -o debian/hppa-tmp/hppa-test-program debian/readdir-hppa-test.c
-	cd $(CURDIR)/doc/html && $(CURDIR)/debian/hppa-tmp/hppa-test-program | sort > $(CURDIR)/debian/hppa-tmp/readdir_r-out
-	cd $(CURDIR)/doc/html && ls -a | sort > $(CURDIR)/debian/hppa-tmp/ls-a-out
+	cd $(CURDIR)/doc/src/images && $(CURDIR)/debian/hppa-tmp/hppa-test-program | sort > $(CURDIR)/debian/hppa-tmp/readdir_r-out
+	cd $(CURDIR)/doc/src/images && ls -a | sort > $(CURDIR)/debian/hppa-tmp/ls-a-out
 	@if ! diff -q $(CURDIR)/debian/hppa-tmp/readdir_r-out $(CURDIR)/debian/hppa-tmp/ls-a-out ; \
 		then \
 		echo "Kernel bug present. This will misbuild qt4 if proceeding. Failing" ; \
