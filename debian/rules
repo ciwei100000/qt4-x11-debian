@@ -11,6 +11,11 @@ export LD_LIBRARY_PATH := $(QTDIR)/lib:$(LD_LIBRARY_PATH)
 # workaround to use qhelpgenerator.
 export QT_PLUGIN_PATH := $(QTDIR)/plugins
 
+ifeq ($(DEB_HOST_ARCH),s390)
+export CC=gcc-4.5
+export CXX=g++-4.5
+endif
+
 pkgs_dbg := $(shell dh_listpackages | grep dbg | sed -e '/libqt4-dbg/d; s|-dbg||')
 # Library package list for override_dh_makeshlibs, excludes libqt4-phonon
 pkgs_lib := $(filter-out %-dev %-dbg libqt4-phonon,$(filter lib%,$(shell dh_listpackages)))
@@ -70,10 +75,6 @@ ifeq ($(DEB_HOST_ARCH),hppa)
 		echo "Please update kernel and test again" ; \
 		exit 5 ; \
 	fi
-endif
-ifeq ($(DEB_HOST_ARCH),s390)
-	export CC=gcc-4.5
-	export CXX=g++-4.5
 endif
 
 	# Create mkspecs/glibc-g++ from mkspecs/linux-g++, needed by GNU/kFreeBSD
