@@ -1,4 +1,4 @@
-qt4-x11 (4:4.7.2-3) UNRELEASED; urgency=low
+qt4-x11 (4:4.7.2-3) unstable; urgency=low
 
   [ Pino Toscano ]
   * Change the directory used for the hppa readdir test from doc/html (which
