@@ -3,6 +3,8 @@
 0005_fix_detection_of_headers_files.diff
 0006_webkit_propriotary_flash_init_gtk_first.diff
 0007_qsslsocket_improve_error_handling_CVE-2010-2621.patch
+ssl_certificate_large_sn.diff
+blacklist_fraudulent_comodo_certificates.diff
 
 # qt-copy patches
 0180-window-role.diff

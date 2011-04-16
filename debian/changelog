@@ -1,6 +1,9 @@
 qt4-x11 (4:4.6.3-4+squeeze1) UNRELEASED; urgency=low
 
-  * 
+  * Blacklist a set of fraudulent ssl certificates; to perform this
+    blacklisting we need these patches:
+    - blacklist_fraudulent_comodo_certificates.diff
+    - ssl_certificate_large_sn.diff
 
  -- José Manuel Santamaría Lema <panfaust@gmail.com>  Fri, 15 Apr 2011 19:13:13 +0200
 
