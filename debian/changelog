@@ -4,6 +4,9 @@ qt4-x11 (4:4.6.3-4+squeeze1) UNRELEASED; urgency=low
     blacklisting we need these patches:
     - blacklist_fraudulent_comodo_certificates.diff
     - ssl_certificate_large_sn.diff
+  * Fix CVE-2010-3170 (browser wildcard cerficate validation weakness) with
+    cve_2010_3170_ssl_certificates_wildcard.diff. This problem affects the Arora
+    web browser.
 
  -- José Manuel Santamaría Lema <panfaust@gmail.com>  Fri, 15 Apr 2011 19:13:13 +0200
 
