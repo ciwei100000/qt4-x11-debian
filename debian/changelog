@@ -12,6 +12,9 @@ qt4-x11 (4:4.7.2-4) UNRELEASED; urgency=low
     - rules: enable the ibase plugin only if the libqt4-sql-ibase package is
       enabled for the current architecture (this allows to get rid of an
       hardcoded list of architectures in rules).
+    - control: synchronize the list of architectures of libqt4-sql-ibase
+      to be the same as the one of the firebird2.1-dev build dependency.
+      This should make libqt4-sql-ibase available to few more architectures.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 15 Apr 2011 22:42:35 +0200
 

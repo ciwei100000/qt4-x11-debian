@@ -126,7 +126,7 @@ Description: Qt 4 script tools module
 Package: libqt4-sql
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Recommends: libqt4-sql-mysql | libqt4-sql-odbc | libqt4-sql-psql | libqt4-sql-sqlite | libqt4-sql-sqlite2 | libqt4-sql-ibase [i386 kfreebsd-i386 kfreebsd-amd64 amd64 sparc powerpc]
+Recommends: libqt4-sql-mysql | libqt4-sql-odbc | libqt4-sql-psql | libqt4-sql-sqlite | libqt4-sql-sqlite2 | libqt4-sql-ibase [amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sparc]
 Suggests: libqt4-dev
 Description: Qt 4 SQL module
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -139,7 +139,7 @@ Description: Qt 4 SQL module
  libqt4-dev package.
 
 Package: libqt4-sql-ibase
-Architecture: i386 kfreebsd-i386 kfreebsd-amd64 amd64 sparc powerpc
+Architecture: amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sparc
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Suggests: libqt4-dev
 Description: Qt 4 InterBase/FireBird database driver
