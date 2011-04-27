@@ -7,6 +7,12 @@ qt4-x11 (4:4.7.2-4) UNRELEASED; urgency=low
     cve_2010_3170_ssl_certificates_wildcard.diff. This problem affects the Arora
     web browser.
 
+  [ Pino Toscano ]
+  * FireBird/ibase:
+    - rules: enable the ibase plugin only if the libqt4-sql-ibase package is
+      enabled for the current architecture (this allows to get rid of an
+      hardcoded list of architectures in rules).
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 15 Apr 2011 22:42:35 +0200
 
 qt4-x11 (4:4.7.2-3) unstable; urgency=low

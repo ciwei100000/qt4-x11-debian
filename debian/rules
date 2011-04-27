@@ -29,8 +29,7 @@ shlibs_version := $(shell dpkg-parsechangelog | sed -n 's/^Version: //p' | cut -
 # Qt upstream release
 libqt4phonon_shlibs := libphonon4 (>= 4:4.6.0) | libqt4-phonon (= $(current_version))
 
-ibase_architectures := i386 kfreebsd-i386 kfreebsd-amd64 knetbsd-i386 netbsd-i386 amd64 sparc powerpc
-ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(ibase_architectures)))
+ifneq (,$(filter %-sql-ibase,$(shell dh_listpackages)))
 	extra_configure_opts += -plugin-sql-ibase
 else
 	extra_configure_opts += -no-sql-ibase
