@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Fathi Boudra <fabo@debian.org>, Ana Beatriz Guerrero Lopez <ana@debian.org>, Modestas Vainius <modax@debian.org>, Sune Vuorela <debian@pusling.com>,
 Build-Depends: debhelper (>= 7.4.13), pkg-kde-tools (>= 0.6.4), flex,
- firebird2.1-dev [amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sparc],
+ firebird2.1-dev [amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sh4 sparc],
  libasound2-dev [!kfreebsd-amd64 !kfreebsd-i386 !hurd-i386],
  libaudio-dev, libcups2-dev, libdbus-1-dev, libfreetype6-dev,
  libgl1-mesa-dev | libgl-dev, libglib2.0-dev, libglu1-mesa-dev | libglu-dev,
@@ -126,7 +126,7 @@ Description: Qt 4 script tools module
 Package: libqt4-sql
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Recommends: libqt4-sql-mysql | libqt4-sql-odbc | libqt4-sql-psql | libqt4-sql-sqlite | libqt4-sql-sqlite2 | libqt4-sql-ibase [amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sparc]
+Recommends: libqt4-sql-mysql | libqt4-sql-odbc | libqt4-sql-psql | libqt4-sql-sqlite | libqt4-sql-sqlite2 | libqt4-sql-ibase [amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sh4 sparc]
 Suggests: libqt4-dev
 Description: Qt 4 SQL module
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -139,7 +139,7 @@ Description: Qt 4 SQL module
  libqt4-dev package.
 
 Package: libqt4-sql-ibase
-Architecture: amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sparc
+Architecture: amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sh4 sparc
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Suggests: libqt4-dev
 Description: Qt 4 InterBase/FireBird database driver
