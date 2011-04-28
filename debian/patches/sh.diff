@@ -1,0 +1,22 @@
+Author: Pino Toscano <pino@kde.org>
+Description: Identify SuperH correctly.
+Bug-Debian: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=623281
+Forwarded: no
+Origin: vendor
+Last-Update: 2011-04-27
+
+--- a/configure
++++ b/configure
+@@ -3053,6 +3053,12 @@
+             ;;
+         esac
+         ;;
++    *:*:sh4)
++        if [ "$OPT_VERBOSE" = "yes" ]; then
++            echo "    Renesas SuperH 4"
++        fi
++        CFG_HOST_ARCH=sh
++        ;;
+     *:*:*)
+         if [ "$OPT_VERBOSE" = "yes" ]; then
+             echo "    Trying '$UNAME_MACHINE'..."

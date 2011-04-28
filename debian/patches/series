@@ -38,3 +38,4 @@ x-0003-Use-GCC-intrinsics-for-armv6-atomic-operations.patch
 96_webkit_no_gc_sections.diff
 99_hppa_bug561203_decrease_failure_rate.diff
 powerpcspe.diff
+sh.diff
