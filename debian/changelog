@@ -23,6 +23,9 @@ qt4-x11 (4:4.7.2-4) UNRELEASED; urgency=low
   * Update debian/control:
     - qt4-dev-tools: suggest qt-assistant-compat instead of qt4-dev-tools,
       as the former now contains the old assistant with uses HTML documentation.
+  * debian/qt4-qmake.links:
+    - stop forcing the "default" symlink of the mkspecs to linux-g++, just let
+      Qt create it according to the platform.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 15 Apr 2011 22:42:35 +0200
 
