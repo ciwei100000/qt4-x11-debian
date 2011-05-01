@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.2 amd64
+# SymbolsHelper-Confirmed: 4:4.7.2 amd64 armel ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sparc
 libQtSql.so.4 libqt4-sql #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN10QSqlDriver11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -159,7 +159,7 @@ libQtSql.so.4 libqt4-sql #MINVER#
  _ZN14QSqlTableModelD1Ev@Base 4:4.5.3
  _ZN14QSqlTableModelD2Ev@Base 4:4.5.3
  (optional=external|arch=sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (optional=external|arch=armel sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
+ (optional=external|arch=sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN16QSqlCachedResult10fetchFirstEv@Base 4:4.5.3
  _ZN16QSqlCachedResult11clearValuesEv@Base 4:4.5.3
  _ZN16QSqlCachedResult12virtual_hookEiPv@Base 4:4.6.1
@@ -203,6 +203,7 @@ libQtSql.so.4 libqt4-sql #MINVER#
  _ZN24QSqlRelationalTableModelD0Ev@Base 4:4.5.3
  _ZN24QSqlRelationalTableModelD1Ev@Base 4:4.5.3
  _ZN24QSqlRelationalTableModelD2Ev@Base 4:4.5.3
+ (arch=ia64 mips mipsel sparc)_ZN7QString5clearEv@Base 4:4.7.2
  _ZN9QSqlError13setDriverTextERK7QString@Base 4:4.5.3
  _ZN9QSqlError15setDatabaseTextERK7QString@Base 4:4.5.3
  _ZN9QSqlError7setTypeENS_9ErrorTypeE@Base 4:4.5.3

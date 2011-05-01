@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.2 amd64
+# SymbolsHelper-Confirmed: 4:4.7.2 amd64 armel ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sparc
 libQtDesigner.so.4 libqt4-designer #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z20domPropertyToVariantP20QAbstractFormBuilderPK11QMetaObjectPK11DomProperty@Base 4:4.5.3
@@ -489,8 +489,8 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN15DomResourceIconC2Ev@Base 4:4.5.3
  _ZN15DomResourceIconD1Ev@Base 4:4.5.3
  _ZN15DomResourceIconD2Ev@Base 4:4.5.3
- (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
+ (optional=external|arch=hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
+ (optional=external|arch=hppa sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN15QDesignerDialog10paintEventEP11QPaintEvent@Base 4:4.5.3
  _ZN15QDesignerDialog11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN15QDesignerDialog11qt_metacastEPKc@Base 4:4.5.3
@@ -2961,6 +2961,8 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN9DomWidgetC2Ev@Base 4:4.5.3
  _ZN9DomWidgetD1Ev@Base 4:4.5.3
  _ZN9DomWidgetD2Ev@Base 4:4.5.3
+ (arch=ia64 mips mipsel sparc)_ZN9QHashData8willGrowEv@Base 4:4.7.2
+ (arch=ia64 mips mipsel sparc)_ZN9QHashData9hasShrunkEv@Base 4:4.7.2
  _ZNK10DomInclude5writeER16QXmlStreamWriterRK7QString@Base 4:4.5.3
  _ZNK10DomPalette5writeER16QXmlStreamWriterRK7QString@Base 4:4.5.3
  _ZNK11DomDateTime5writeER16QXmlStreamWriterRK7QString@Base 4:4.5.3
@@ -3627,7 +3629,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZNK7DomRect5writeER16QXmlStreamWriterRK7QString@Base 4:4.5.3
  _ZNK7DomSize5writeER16QXmlStreamWriterRK7QString@Base 4:4.5.3
  _ZNK7DomTime5writeER16QXmlStreamWriterRK7QString@Base 4:4.5.3
- _ZNK7QString3argEiiiRK5QChar@Base 4:4.7.2
+ (arch=!ia64 !mips !mipsel !sparc)_ZNK7QString3argEiiiRK5QChar@Base 4:4.7.2
  _ZNK8DomBrush5writeER16QXmlStreamWriterRK7QString@Base 4:4.5.3
  _ZNK8DomColor5writeER16QXmlStreamWriterRK7QString@Base 4:4.5.3
  _ZNK8DomImage5writeER16QXmlStreamWriterRK7QString@Base 4:4.5.3
@@ -4281,8 +4283,8 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (c++)"non-virtual thunk to qdesigner_internal::ZoomProxyWidget::itemChange(QGraphicsItem::GraphicsItemChange, QVariant const&)@Base" 4:4.5.3
 libQtDesignerComponents.so.4 libqt4-designer #MINVER#
 * Build-Depends-Package: libqt4-dev
- (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (optional=external|arch=armel hppa sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
+ (optional=external|arch=hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
+ (optional=external|arch=hppa sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN19QDesignerComponents14createTaskMenuEP28QDesignerFormEditorInterfaceP7QObject@Base 4:4.5.3
  _ZN19QDesignerComponents15createWidgetBoxEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  _ZN19QDesignerComponents16createFormEditorEP7QObject@Base 4:4.5.3
@@ -4293,7 +4295,9 @@ libQtDesignerComponents.so.4 libqt4-designer #MINVER#
  _ZN19QDesignerComponents20createResourceEditorEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  _ZN19QDesignerComponents21createObjectInspectorEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  _ZN19QDesignerComponents22createSignalSlotEditorEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
- (optional=external|arch=armel)_ZN9QHashData8willGrowEv@Base 4:4.7.1
+ (arch=ia64 mips mipsel sparc)_ZN7QString5clearEv@Base 4:4.7.2
+#MISSING: 4:4.7.2# (optional=external|arch=armel)_ZN9QHashData8willGrowEv@Base 4:4.7.1
+ (arch=ia64 mips mipsel sparc)_ZN9QHashData9hasShrunkEv@Base 4:4.7.2
  _ZTI22QItemEditorCreatorBase@Base 4:4.5.3
  _ZTS22QItemEditorCreatorBase@Base 4:4.5.3
  _ZTV22QItemEditorCreatorBase@Base 4:4.5.3
