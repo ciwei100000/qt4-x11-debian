@@ -1,4 +1,4 @@
-qt4-x11 (4:4.7.2-4) UNRELEASED; urgency=low
+qt4-x11 (4:4.7.2-4) unstable; urgency=low
 
   [ José Manuel Santamaría Lema ]
   * Blacklist a set of fraudulent ssl certificates with the patch
@@ -34,7 +34,7 @@ qt4-x11 (4:4.7.2-4) UNRELEASED; urgency=low
   * Update symbol files for all debian arches.
   * Update symbol files for gcc 4.6 on amd64.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 15 Apr 2011 22:42:35 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 02 May 2011 01:18:05 +0300
 
 qt4-x11 (4:4.7.2-3) unstable; urgency=low
 
