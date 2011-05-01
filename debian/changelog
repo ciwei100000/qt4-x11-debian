@@ -27,6 +27,11 @@ qt4-x11 (4:4.7.2-4) UNRELEASED; urgency=low
     - stop forcing the "default" symlink of the mkspecs to linux-g++, just let
       Qt create it according to the platform.
 
+  [ Modestas Vainius ]
+  * Add patch kfreebsd_monotonic_clock.diff which fixes monotonic clock
+    detection on kFreeBSD. This should unbreak QProcess::waitForFinished().
+    (Closes: #624679)
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 15 Apr 2011 22:42:35 +0200
 
 qt4-x11 (4:4.7.2-3) unstable; urgency=low

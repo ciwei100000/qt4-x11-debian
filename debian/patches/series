@@ -39,3 +39,4 @@ x-0003-Use-GCC-intrinsics-for-armv6-atomic-operations.patch
 99_hppa_bug561203_decrease_failure_rate.diff
 powerpcspe.diff
 sh.diff
+kfreebsd_monotonic_clock.diff
