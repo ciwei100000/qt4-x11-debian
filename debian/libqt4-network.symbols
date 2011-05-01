@@ -4,8 +4,8 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _Z19qt_qhostinfo_lookupRK7QStringP7QObjectPKcPbPi@Base 4:4.6.3
  _Z35qNetworkConfigurationManagerPrivatev@Base 4:4.7.0~beta1
  _Z5qHashRK12QHostAddress@Base 4:4.5.3
- (arch=ia64 mips mipsel sparc)_Z8qWarningv@Base 4:4.7.2
- (arch=ia64 mips mipsel sparc)_ZN10QByteArray4dataEv@Base 4:4.7.2
+ (optional=external|arch=ia64 mips mipsel sparc)_Z8qWarningv@Base 4:4.7.2
+ (optional=external)_ZN10QByteArray4dataEv@Base 4:4.7.2
  _ZN10QSslCipherC1ERK7QStringN4QSsl11SslProtocolE@Base 4:4.5.3
  _ZN10QSslCipherC1ERKS_@Base 4:4.5.3
  _ZN10QSslCipherC1Ev@Base 4:4.5.3
@@ -775,7 +775,6 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN9QSslErrorD2Ev@Base 4:4.5.3
  _ZN9QSslErroraSERKS_@Base 4:4.5.3
  (arch=!ia64 !mips !mipsel !sparc)_ZNK10QByteArray8containsEPKc@Base 4:4.7.2
- (arch=!ia64 !mips !mipsel !sparc)_ZNK10QByteArray8containsEc@Base 4:4.7.2
  _ZNK10QSslCipher13supportedBitsEv@Base 4:4.5.3
  _ZNK10QSslCipher14protocolStringEv@Base 4:4.5.3
  _ZNK10QSslCipher16encryptionMethodEv@Base 4:4.5.3

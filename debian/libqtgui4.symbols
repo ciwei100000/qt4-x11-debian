@@ -31,7 +31,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _Z14qDrawShadeRectP8QPainteriiiiRK8QPalettebiiPK6QBrush@Base 4:4.5.3
  _Z14qDrawWinButtonP8QPainterRK5QRectRK8QPalettebPK6QBrush@Base 4:4.5.3
  _Z14qDrawWinButtonP8QPainteriiiiRK8QPalettebPK6QBrush@Base 4:4.5.3
- (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_Z14qFromBigEndianIjET_PKh@Base 4:4.7.2
  _Z14qt_accStripAmpRK7QString@Base 4:4.5.3
  _Z14qt_defaultDpiXv@Base 4:4.5.3
  _Z14qt_defaultDpiYv@Base 4:4.5.3
@@ -6182,7 +6181,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN5QMenuD0Ev@Base 4:4.5.3
  _ZN5QMenuD1Ev@Base 4:4.5.3
  _ZN5QMenuD2Ev@Base 4:4.5.3
- (arch=!ia64 !mips !mipsel !sparc)_ZN5QRectaNERKS_@Base 4:4.7.2
  _ZN6QBrush10setTextureERK7QPixmap@Base 4:4.5.3
  _ZN6QBrush12setTransformERK10QTransform@Base 4:4.5.3
  _ZN6QBrush15setTextureImageERK6QImage@Base 4:4.5.3
@@ -10826,7 +10824,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (subst)_ZNK6QColor7getRgbFEP{qreal}S0_S0_S0_@Base 4:4.5.3
  _ZNK6QColor7hslHueFEv@Base 4:4.6.1
  _ZNK6QColor7hsvHueFEv@Base 4:4.6.1
- (arch=!ia64 !mips !mipsel !sparc)_ZNK6QColor7lighterEi@Base 4:4.7.2
  _ZNK6QColor7magentaEv@Base 4:4.5.3
  _ZNK6QColor7yellowFEv@Base 4:4.5.3
  _ZNK6QColor8magentaFEv@Base 4:4.5.3
@@ -10944,7 +10941,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK6QMovie9cacheModeEv@Base 4:4.5.3
  _ZNK6QMovie9frameRectEv@Base 4:4.5.3
  _ZNK6QMovie9loopCountEv@Base 4:4.5.3
- (arch=ia64 mips mipsel sparc)_ZNK6QRectF6toRectEv@Base 4:4.7.2
+ (optional=external)_ZNK6QRectF6toRectEv@Base 4:4.7.2
  _ZNK6QSound10isFinishedEv@Base 4:4.5.3
  _ZNK6QSound10metaObjectEv@Base 4:4.5.3
  _ZNK6QSound14loopsRemainingEv@Base 4:4.5.3
@@ -11182,14 +11179,10 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK7QWidget12contentsRectEv@Base 4:4.5.3
  _ZNK7QWidget12isAncestorOfEPKS_@Base 4:4.5.3
  _ZNK7QWidget12isFullScreenEv@Base 4:4.5.3
- (arch=!ia64 !mips !mipsel !sparc)_ZNK7QWidget12maximumWidthEv@Base 4:4.7.2
- (arch=!ia64 !mips !mipsel !sparc)_ZNK7QWidget12minimumWidthEv@Base 4:4.7.2
  _ZNK7QWidget12saveGeometryEv@Base 4:4.5.3
  _ZNK7QWidget13frameGeometryEv@Base 4:4.5.3
  _ZNK7QWidget13mapFromGlobalERK6QPoint@Base 4:4.5.3
  _ZNK7QWidget13mapFromParentERK6QPoint@Base 4:4.5.3
- (arch=!ia64 !mips !mipsel !sparc)_ZNK7QWidget13maximumHeightEv@Base 4:4.7.2
- (arch=!ia64 !mips !mipsel !sparc)_ZNK7QWidget13minimumHeightEv@Base 4:4.7.2
  _ZNK7QWidget13sizeIncrementEv@Base 4:4.5.3
  _ZNK7QWidget13visibleRegionEv@Base 4:4.5.3
  _ZNK7QWidget13windowOpacityEv@Base 4:4.5.3
@@ -11211,7 +11204,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK7QWidget15contentsMarginsEv@Base 4:4.6.1
  _ZNK7QWidget15layoutDirectionEv@Base 4:4.5.3
  _ZNK7QWidget15minimumSizeHintEv@Base 4:4.5.3
- (arch=!ia64 !mips !mipsel !sparc)_ZNK7QWidget16hasMouseTrackingEv@Base 4:4.7.2
  _ZNK7QWidget16inputMethodHintsEv@Base 4:4.6.1
  _ZNK7QWidget16inputMethodQueryEN2Qt16InputMethodQueryE@Base 4:4.5.3
  _ZNK7QWidget16isWindowModifiedEv@Base 4:4.5.3
@@ -11250,8 +11242,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK7QWidget8hasFocusEv@Base 4:4.5.3
  _ZNK7QWidget8sizeHintEv@Base 4:4.5.3
  _ZNK7QWidget9frameSizeEv@Base 4:4.5.3
- (arch=!ia64 !mips !mipsel !sparc)_ZNK7QWidget9isEnabledEv@Base 4:4.7.2
- (arch=!ia64 !mips !mipsel !sparc)_ZNK7QWidget9isVisibleEv@Base 4:4.7.2
  _ZNK7QWidget9statusTipEv@Base 4:4.5.3
  _ZNK7QWidget9whatsThisEv@Base 4:4.5.3
  _ZNK7QWizard10buttonTextENS_12WizardButtonE@Base 4:4.5.3
@@ -11455,12 +11445,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK8QToolBox7indexOfEP7QWidget@Base 4:4.5.3
  _ZNK8QToolBox8itemIconEi@Base 4:4.5.3
  _ZNK8QToolBox8itemTextEi@Base 4:4.5.3
- (optional=templinst|arch=ia64 mips mipsel sparc)_ZNK8QVariant5valueI5QFontEET_v@Base 4:4.7.2
- (optional=templinst|arch=ia64 mips mipsel sparc)_ZNK8QVariant5valueI5QListIS_EEET_v@Base 4:4.7.2
- (optional=templinst|arch=ia64 mips mipsel sparc)_ZNK8QVariant5valueI6QImageEET_v@Base 4:4.7.2
- (optional=templinst|arch=ia64 mips mipsel sparc)_ZNK8QVariant5valueI7QPixmapEET_v@Base 4:4.7.2
- (optional=templinst|arch=ia64 mips mipsel sparc)_ZNK8QVariant5valueI7QRegionEET_v@Base 4:4.7.2
- (optional=templinst|arch=ia64 mips mipsel sparc)_ZNK8QVariant5valueI7QStringEET_v@Base 4:4.7.2
+ (optional=templinst)_ZNK8QVariant5valueI5QFontEET_v@Base 4:4.7.2
+ (optional=templinst)_ZNK8QVariant5valueI6QImageEET_v@Base 4:4.7.2
+ (optional=templinst)_ZNK8QVariant5valueI7QPixmapEET_v@Base 4:4.7.2
  _ZNK8QX11Info10getX11DataEb@Base 4:4.5.3
  _ZNK8QX11Info13defaultVisualEv@Base 4:4.5.3
  _ZNK8QX11Info15defaultColormapEv@Base 4:4.5.3

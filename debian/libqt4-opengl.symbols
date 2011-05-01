@@ -57,17 +57,16 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN11QGLColormapD1Ev@Base 4:4.5.3
  _ZN11QGLColormapD2Ev@Base 4:4.5.3
  _ZN11QGLColormapaSERKS_@Base 4:4.5.3
- (arch=!ia64 !mips !mipsel !sparc)_ZN11QReadLocker6unlockEv@Base 4:4.7.2
  (optional=external|arch=sparc)_ZN11QReadLockerD1Ev@Base 4:4.7.0~rc1
  (arch=!armel)_ZN12QDashStroker3endEv@Base 4:4.5.3
  (arch=!armel)_ZN12QDashStroker5beginEPv@Base 4:4.5.3
  (arch=!armel)_ZN12QDashStrokerD0Ev@Base 4:4.5.3
  (arch=!armel)_ZN12QDashStrokerD1Ev@Base 4:4.5.3
  (arch=amd64 kfreebsd-amd64 kfreebsd-i386 powerpc s390)_ZN12QDashStrokerD2Ev@Base 4:4.7.2
- (arch=!ia64 !mips !mipsel !sparc)_ZN12QMutexLocker6unlockEv@Base 4:4.7.2
- (arch=ia64 mips mipsel sparc)_ZN12QMutexLockerD1Ev@Base 4:4.7.2
- (arch=!ia64 !mips !mipsel !sparc)_ZN12QWriteLocker6unlockEv@Base 4:4.7.2
- (arch=ia64 mips mipsel sparc)_ZN12QWriteLockerD1Ev@Base 4:4.7.2
+ (optional=external)_ZN12QMutexLockerD1Ev@Base 4:4.7.2
+ (optional=external)_ZN12QMutexLockerD2Ev@Base 4:4.7.2
+ (optional=external)_ZN12QWriteLockerD1Ev@Base 4:4.7.2
+ (optional=external)_ZN12QWriteLockerD2Ev@Base 4:4.7.2
  _ZN13QGLPixmapData4copyEPK11QPixmapDataRK5QRect@Base 4:4.7.0~rc1
  _ZN13QGLPixmapData4fillERK6QColor@Base 4:4.7.0~rc1
  _ZN13QGLPixmapData6resizeEii@Base 4:4.7.0~rc1
@@ -445,14 +444,12 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  (arch=ia64 mips mipsel sparc)_ZN6QDebugC1E9QtMsgType@Base 4:4.7.2
  _ZN6QDebugD1Ev@Base 4:4.5.3
  (arch=!ia64 !mips !mipsel !sparc)_ZN6QDebugD2Ev@Base 4:4.7.2
- (arch=ia64 mips mipsel sparc)_ZN6QDebuglsEPKc@Base 4:4.7.2
- (arch=ia64 mips mipsel sparc)_ZN6QDebuglsERK7QString@Base 4:4.7.2
- (arch=!armel)_ZN7QStringC1ERK13QLatin1String@Base 4:4.7.2
- (arch=amd64 kfreebsd-amd64 kfreebsd-i386 powerpc s390)_ZN7QStringC2ERK13QLatin1String@Base 4:4.7.2
  _ZN7QStringD1Ev@Base 4:4.5.3
  (arch=!ia64 !mips !mipsel !sparc)_ZN7QStringD2Ev@Base 4:4.7.2
- (arch=ia64 mips mipsel sparc)_ZN8QPolygonD1Ev@Base 4:4.7.2
- (arch=ia64 mips mipsel sparc)_ZN9QBitArrayD1Ev@Base 4:4.7.2
+ (optional=external)_ZN8QPolygonD1Ev@Base 4:4.7.2
+ (optional=external)_ZN8QPolygonD2Ev@Base 4:4.7.2
+ (optional=external)_ZN9QBitArrayD1Ev@Base 4:4.7.2
+ (optional=external)_ZN9QBitArrayD2Ev@Base 4:4.7.2
  _ZN9QGLBuffer15setUsagePatternENS_12UsagePatternE@Base 4:4.7.0~beta1
  _ZN9QGLBuffer3mapENS_6AccessE@Base 4:4.7.0~beta1
  _ZN9QGLBuffer4bindEv@Base 4:4.7.0~rc1
@@ -582,8 +579,9 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN9QGLWidgetD0Ev@Base 4:4.5.3
  _ZN9QGLWidgetD1Ev@Base 4:4.5.3
  _ZN9QGLWidgetD2Ev@Base 4:4.5.3
- (arch=ia64 mips mipsel sparc)_ZN9QHashData9hasShrunkEv@Base 4:4.7.2
- (arch=ia64 mips mipsel sparc)_ZN9QPolygonFD1Ev@Base 4:4.7.2
+ (optional=external)_ZN9QHashData8willGrowEv@Base 4:4.7.2
+ (optional=external)_ZN9QPolygonFD1Ev@Base 4:4.7.2
+ (optional=external)_ZN9QPolygonFD2Ev@Base 4:4.7.2
  _ZNK10QGLContext10colorIndexERK6QColor@Base 4:4.5.3
  _ZNK10QGLContext11initializedEv@Base 4:4.5.3
  _ZNK10QGLContext11swapBuffersEv@Base 4:4.5.3
