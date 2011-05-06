@@ -11,6 +11,10 @@ qt4-x11 (4:4.7.3-1) UNRELEASED; urgency=low
   * Bump Standards-Version to 3.9.2: no changes needed.
   * Drop blacklist_fraudulent_comodo_certificates.diff patch, upstream.
   * Refresh patches.
+  * Add arm_qbasicatomicint_disable_vol_bitfields.diff patch which disables
+    -fstrict-volatile-bitfields for QBasicAtomicInt::fetchAndStoreOrdered(int)
+    method on arm. This should fix FTBFSes triggered by this inline function.
+    (Closes: #625825)
 
  -- Fathi Boudra <fabo@debian.org>  Wed, 04 May 2011 13:08:38 +0300
 
