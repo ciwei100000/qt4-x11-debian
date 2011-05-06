@@ -28,7 +28,6 @@ buildable_appchooser_states_demos.patch
 70_hppa_ldcw_fix.diff
 71_hppa_unaligned_access_fix_458133.diff
 80_hurd_max_path.diff
-89_powerpc_opts.diff
 92_armel_gcc43_valist_compat.diff
 x-0003-Use-GCC-intrinsics-for-armv6-atomic-operations.patch
 94_armv6_uname_entry.diff
