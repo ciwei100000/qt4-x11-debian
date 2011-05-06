@@ -18,6 +18,8 @@ qt4-x11 (4:4.7.3-1) UNRELEASED; urgency=low
   * Drop 91_s390_use_gstabs.diff patch. It's no longer needed as webkit is not
     built from Qt sources anymore.
   * Drop 89_powerpc_opts.diff patch. No longer needed with gcc 4.4 or later.
+  * Build designer library with -gstabs on powerpc to avoid gcc 4.6 dwarf2 ICE,
+    which makes the package FTBFS (patch powerpc_designer_gstabs.diff).
 
  -- Fathi Boudra <fabo@debian.org>  Wed, 04 May 2011 13:08:38 +0300
 

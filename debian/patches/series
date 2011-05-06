@@ -38,3 +38,4 @@ powerpcspe.diff
 sh.diff
 kfreebsd_monotonic_clock.diff
 arm_qbasicatomicint_disable_vol_bitfields.diff
+powerpc_designer_gstabs.diff
