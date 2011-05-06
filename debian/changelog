@@ -8,6 +8,7 @@ qt4-x11 (4:4.7.3-1) UNRELEASED; urgency=low
   [ Modestas Vainius ]
   * Build with system compiler on s390 (which is 4.6 now). However, in order to
     avoid #606079, build depend >= g++ 4:4.5 on s390.
+  * Bump Standards-Version to 3.9.2: no changes needed.
 
  -- Fathi Boudra <fabo@debian.org>  Wed, 04 May 2011 13:08:38 +0300
 
