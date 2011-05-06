@@ -1,11 +1,9 @@
 ## Description: add some description
 ## Origin/Author: add some origin or author
 ## Bug: bug URL
-Index: qt4-x11-4.7.2/src/gui/gui.pro
-===================================================================
---- qt4-x11-4.7.2.orig/src/gui/gui.pro	2011-03-06 21:41:47.058276259 +0200
-+++ qt4-x11-4.7.2/src/gui/gui.pro	2011-03-06 21:38:16.569232507 +0200
-@@ -65,9 +65,9 @@
+--- a/src/gui/gui.pro
++++ b/src/gui/gui.pro
+@@ -65,9 +65,9 @@ symbian {
  neon:*-g++* {
      DEFINES += QT_HAVE_NEON
      HEADERS += $$NEON_HEADERS
