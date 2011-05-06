@@ -1,5 +1,4 @@
 # upstream patches
-blacklist_fraudulent_comodo_certificates.diff
 
 # qt-copy patches
 0195-compositing-properties.diff
