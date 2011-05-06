@@ -15,6 +15,8 @@ qt4-x11 (4:4.7.3-1) UNRELEASED; urgency=low
     -fstrict-volatile-bitfields for QBasicAtomicInt::fetchAndStoreOrdered(int)
     method on arm. This should fix FTBFSes triggered by this inline function.
     (Closes: #625825)
+  * Drop 91_s390_use_gstabs.diff patch. It's no longer needed as webkit is not
+    built from Qt sources anymore.
 
  -- Fathi Boudra <fabo@debian.org>  Wed, 04 May 2011 13:08:38 +0300
 
