@@ -7,11 +7,9 @@ Subject: [PATCH] Use GCC intrinsics for armv6 atomic operations
  src/corelib/arch/qatomic_armv6.h |  146 +++++++------------------------------
  1 files changed, 28 insertions(+), 118 deletions(-)
 
-diff --git a/src/corelib/arch/qatomic_armv6.h b/src/corelib/arch/qatomic_armv6.h
-index 53f7907..7dfc002 100644
 --- a/src/corelib/arch/qatomic_armv6.h
 +++ b/src/corelib/arch/qatomic_armv6.h
-@@ -104,155 +104,65 @@ Q_INLINE_TEMPLATE bool QBasicAtomicPointer<T>::isFetchAndAddWaitFree()
+@@ -104,155 +104,65 @@ Q_INLINE_TEMPLATE bool QBasicAtomicPoint
  
  inline bool QBasicAtomicInt::ref()
  {
@@ -195,6 +193,3 @@ index 53f7907..7dfc002 100644
  }
  
  #else
--- 
-1.7.0.4
-
