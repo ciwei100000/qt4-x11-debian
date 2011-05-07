@@ -4,6 +4,25 @@ qt4-x11 (4:4.7.3-1) UNRELEASED; urgency=low
   * Remove patches:
     - blacklist_fraudulent_comodo_certificates.diff - stolen upstream
 
+  [ Pino Toscano ]
+  * Build depend on libssl-dev. (Closes: #623596)
+
+  [ Modestas Vainius ]
+  * Build with system compiler on s390 (which is 4.6 now). However, in order to
+    avoid #606079, build depend >= g++ 4:4.5 on s390.
+  * Bump Standards-Version to 3.9.2: no changes needed.
+  * Drop blacklist_fraudulent_comodo_certificates.diff patch, upstream.
+  * Refresh patches.
+  * Add arm_qbasicatomicint_disable_vol_bitfields.diff patch which disables
+    -fstrict-volatile-bitfields for QBasicAtomicInt::fetchAndStoreOrdered(int)
+    method on arm. This should fix FTBFSes triggered by this inline function.
+    (Closes: #625825)
+  * Drop 91_s390_use_gstabs.diff patch. It's no longer needed as webkit is not
+    built from Qt sources anymore.
+  * Drop 89_powerpc_opts.diff patch. No longer needed with gcc 4.4 or later.
+  * Build designer library with -gstabs on powerpc to avoid gcc 4.6 dwarf2 ICE,
+    which makes the package FTBFS (patch powerpc_designer_gstabs.diff).
+
  -- Fathi Boudra <fabo@debian.org>  Wed, 04 May 2011 13:08:38 +0300
 
 qt4-x11 (4:4.7.2-4) unstable; urgency=low
