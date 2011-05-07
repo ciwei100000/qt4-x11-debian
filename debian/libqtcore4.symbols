@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.2 amd64 armel ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sparc
+# SymbolsHelper-Confirmed: 4:4.7.3 amd64
 libQtCLucene.so.4 libqtcore4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN12QCLuceneHits2idEi@Base 4:4.5.3
@@ -444,7 +444,6 @@ libQtCLucene.so.4 libqtcore4 #MINVER#
  _ZNK21QCLuceneMultiSearcher6subDocEi@Base 4:4.5.3
  (optional=templinst|arch=ia64 mips mipsel sparc|subst)_ZNSs4_Rep8_M_cloneERKSaIcE{size_t}@Base 4:4.7.2
  (optional=templinst|arch=ia64 mips mipsel sparc|subst)_ZNSs4_Rep9_S_createE{size_t}{size_t}RKSaIcE@Base 4:4.7.2
- (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_ZNSt10_List_baseIPN6lucene6search6ScorerESaIS3_EE8_M_clearEv@Base 4:4.7.2
  (optional=templinst|arch=armel)_ZNSt12_Vector_baseIPN6lucene6search13BooleanClauseESaIS3_EED1Ev@Base 4:4.7.2
  (optional=templinst|arch=armel)_ZNSt12_Vector_baseIPN6lucene6search13BooleanClauseESaIS3_EED2Ev@Base 4:4.7.2
  (optional=templinst|arch=armel)_ZNSt12_Vector_baseIPwSaIS0_EED1Ev@Base 4:4.7.2
@@ -506,12 +505,11 @@ libQtCLucene.so.4 libqtcore4 #MINVER#
  (optional=templinst)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PhESt10_Select1stIS5_EN6lucene4util7Compare5TCharESaIS5_EE10_M_insert_EPKSt18_Rb_tree_node_baseSG_RKS5_@Base 4:4.5.3
  (optional=templinst|arch=!hppa !ia64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PhESt10_Select1stIS5_EN6lucene4util7Compare5TCharESaIS5_EE16_M_insert_uniqueERKS5_@Base 4:4.5.3
  (optional=templinst)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PhESt10_Select1stIS5_EN6lucene4util7Compare5TCharESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E@Base 4:4.5.3
+ (optional=templinst)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS4_@Base 4:4.7.3
+ (optional=templinst)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE14_M_lower_boundEPSt13_Rb_tree_nodeIS4_ESF_RS3_@Base 4:4.7.3
  (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE16_M_insert_uniqueERKS4_@Base 4:4.7.2
  (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS4_ERKS4_@Base 4:4.7.2
- (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE4findERS3_@Base 4:4.7.2
  (optional=templinst)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 4:4.5.3
- (optional=templinst|arch=!ia64 !mips !mipsel !sparc|subst)_ZNSt8_Rb_treeIPKwSt4pairIKS1_{qreal}ESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE14_M_lower_boundEPSt13_Rb_tree_nodeIS4_ESF_RS3_@Base 4:4.7.2
- (optional=templinst|arch=!ia64 !mips !mipsel !sparc|subst)_ZNSt8_Rb_treeIPKwSt4pairIKS1_{qreal}ESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE4findERS3_@Base 4:4.7.2
  (optional=templinst)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search14FieldCacheImpl25fieldcacheCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE10_M_insert_EPKSt18_Rb_tree_node_baseSL_RKSA_@Base 4:4.5.3
  (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search14FieldCacheImpl25fieldcacheCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE16_M_insert_uniqueERKSA_@Base 4:4.7.2
  (optional=templinst)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search14FieldCacheImpl25fieldcacheCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE8_M_eraseEPSt13_Rb_tree_nodeISA_E@Base 4:4.5.3
