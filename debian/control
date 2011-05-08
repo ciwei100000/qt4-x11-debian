@@ -16,7 +16,7 @@ Build-Depends: debhelper (>= 7.4.13), pkg-kde-tools (>= 0.6.4), flex,
  libxext-dev, libxft-dev, libxi-dev, libxinerama-dev, libxmu-dev,
  libxrandr-dev, libxrender-dev, libxslt1-dev, libxt-dev, libxtst-dev,
  libxv-dev, zlib1g-dev, freetds-dev, libssl-dev,
- g++ (>= 4:4.5) [s390]
+ g++ (>= 4:4.5) [s390], g++-4.6 (>= 4.6.0-7~) [armel]
 Standards-Version: 3.9.2
 Homepage: http://qt.nokia.com/
 Vcs-Git: git://git.debian.org/pkg-kde/qt/qt4-x11.git
@@ -411,7 +411,7 @@ Depends: ${shlibs:Depends}, ${misc:Depends}, libqtcore4 (= ${binary:Version}),
  libqt4-help (= ${binary:Version}), libqt4-test (= ${binary:Version}),
  libqt4-declarative (= ${binary:Version}), qt4-qmake (= ${binary:Version})
 Recommends: libqt4-opengl-dev (= ${binary:Version}), libqtwebkit-dev (>= 2.0~)
-Breaks: libqtwebkit-dev (<< 2.0~), libqt4-opengl-dev (<< 4.4.0-2)
+Breaks: libqtwebkit-dev (<< 2.0~), libqt4-opengl-dev (<< 4.4.0-2), g++-4.6 (<< 4.6.0-7~) [armel]
 Replaces: libqtwebkit-dev (<< 2.0~), libqt4-opengl-dev (<< 4.4.0-2)
 Suggests: qt4-dev-tools, qt4-doc, libmysqlclient-dev, libsqlite0-dev, libsqlite3-dev, libpq-dev, unixodbc-dev, firebird2.1-dev
 Description: Qt 4 development files

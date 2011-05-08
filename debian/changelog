@@ -13,10 +13,8 @@ qt4-x11 (4:4.7.3-1) UNRELEASED; urgency=low
   * Bump Standards-Version to 3.9.2: no changes needed.
   * Drop blacklist_fraudulent_comodo_certificates.diff patch, upstream.
   * Refresh patches.
-  * Add arm_qbasicatomicint_disable_vol_bitfields.diff patch which disables
-    -fstrict-volatile-bitfields for QBasicAtomicInt::fetchAndStoreOrdered(int)
-    method on arm. This should fix FTBFSes triggered by this inline function.
-    (Closes: #625825)
+  * Build depend on g++-4.6 (>= 4.6.0-7~) [armel] and make libqt4-dev break
+    g++-4.6 (<< 4.6.0-7~). (Closes: #625825)
   * Drop 91_s390_use_gstabs.diff patch. It's no longer needed as webkit is not
     built from Qt sources anymore.
   * Drop 89_powerpc_opts.diff patch. No longer needed with gcc 4.4 or later.

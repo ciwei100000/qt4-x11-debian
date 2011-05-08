@@ -37,5 +37,4 @@ x-0003-Use-GCC-intrinsics-for-armv6-atomic-operations.patch
 powerpcspe.diff
 sh.diff
 kfreebsd_monotonic_clock.diff
-arm_qbasicatomicint_disable_vol_bitfields.diff
 powerpc_designer_gstabs.diff
