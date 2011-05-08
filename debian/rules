@@ -117,6 +117,7 @@ endif
 	            -system-libtiff \
 	            -system-libpng \
 	            -system-libjpeg \
+	            -openssl-linked \
 	            -no-rpath \
 	            -optimized-qmake \
 	            -dbus-linked \
