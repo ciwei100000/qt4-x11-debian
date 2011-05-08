@@ -13,7 +13,6 @@ qt4-x11 (4:4.7.3-1) UNRELEASED; urgency=low
     - Make_use_of_the_fast_image_paths.patch
     - Add_support_for_QT_USE_DRAG_DISTANCE_env_var.patch
     - Prevent_recursion_when_creating_window_surface.patch
-  * Update debian/rules: pass -openssl-linked configure option.
 
   [ Pino Toscano ]
   * Build depend on libssl-dev. (Closes: #623596)
