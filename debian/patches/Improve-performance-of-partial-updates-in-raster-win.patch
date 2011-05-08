@@ -1,0 +1,110 @@
+From 30dee4f433d2426ce2dc0bccda8e62683380a1c4 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Samuel=20R=C3=B8dal?= <samuel.rodal@nokia.com>
+Date: Thu, 3 Feb 2011 17:06:15 +0100
+Subject: [PATCH] Improve performance of partial updates in raster window surface on X11.
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+An XSync is needed to prevent the raster engine from writing to the
+shared memory raster backbuffer at the same time the X server reads from
+it. However, instead of doing the sync right after telling X to blit, we
+can do it right before we start writing to it with raster. At this point
+there will on average be less processing heavy X commands in the command
+queue, and we thus spend less time blocking the GUI thread.
+
+Measured frame rate improvement of 20 - 60 % in an update stress testing
+the performance of partial updates.
+
+Idea-from: Olivier Goffart
+Reviewed-by: Bjørn Erik Nilsen
+---
+ src/gui/painting/qwindowsurface_raster.cpp |   29 ++++++++++++++++++++++++++-
+ src/gui/painting/qwindowsurface_raster_p.h |    3 ++
+ 2 files changed, 30 insertions(+), 2 deletions(-)
+
+--- a/src/gui/painting/qwindowsurface_raster.cpp
++++ b/src/gui/painting/qwindowsurface_raster.cpp
+@@ -75,6 +75,9 @@ public:
+ 
+ #ifdef Q_WS_X11
+     GC gc;
++#ifndef QT_NO_MITSHM
++    uint needsSync : 1;
++#endif
+ #ifndef QT_NO_XRENDER
+     uint translucentBackground : 1;
+ #endif
+@@ -91,6 +94,9 @@ QRasterWindowSurface::QRasterWindowSurfa
+     d_ptr->translucentBackground = X11->use_xrender
+         && window->x11Info().depth() == 32;
+ #endif
++#ifndef QT_NO_MITHSM
++    d_ptr->needsSync = false;
++#endif
+ #endif
+     d_ptr->image = 0;
+     d_ptr->inSetGeometry = false;
+@@ -113,8 +119,23 @@ QPaintDevice *QRasterWindowSurface::pain
+     return &d_ptr->image->image;
+ }
+ 
++#if defined(Q_WS_X11) && !defined(QT_NO_MITSHM)
++void QRasterWindowSurface::syncX()
++{
++    // delay writing to the backbuffer until we know for sure X is done reading from it
++    if (d_ptr->needsSync) {
++        XSync(X11->display, false);
++        d_ptr->needsSync = false;
++    }
++}
++#endif
++
+ void QRasterWindowSurface::beginPaint(const QRegion &rgn)
+ {
++#if defined(Q_WS_X11) && !defined(QT_NO_MITSHM)
++    syncX();
++#endif
++
+ #if (defined(Q_WS_X11) && !defined(QT_NO_XRENDER)) || (defined(Q_WS_WIN) && !defined(Q_WS_WINCE))
+     if (!qt_widget_private(window())->isOpaque && window()->testAttribute(Qt::WA_TranslucentBackground)) {
+ #if defined(Q_WS_WIN) && !defined(Q_WS_WINCE)
+@@ -214,13 +235,13 @@ void QRasterWindowSurface::flush(QWidget
+     if (d_ptr->image->xshmpm) {
+         XCopyArea(X11->display, d_ptr->image->xshmpm, widget->handle(), d_ptr->gc,
+                   br.x(), br.y(), br.width(), br.height(), wbr.x(), wbr.y());
+-        XSync(X11->display, False);
++        d_ptr->needsSync = true;
+     } else if (d_ptr->image->xshmimg) {
+         const QImage &src = d->image->image;
+         br = br.intersected(src.rect());
+         XShmPutImage(X11->display, widget->handle(), d_ptr->gc, d_ptr->image->xshmimg,
+                      br.x(), br.y(), wbr.x(), wbr.y(), br.width(), br.height(), False);
+-        XSync(X11->display, False);
++        d_ptr->needsSync = true;
+     } else
+ #endif
+     {
+@@ -347,6 +368,10 @@ bool QRasterWindowSurface::scroll(const
+     if (!d->image || d->image->image.isNull())
+         return false;
+ 
++#if defined(Q_WS_X11) && !defined(QT_NO_MITSHM)
++    syncX();
++#endif
++
+     const QVector<QRect> rects = area.rects();
+     for (int i = 0; i < rects.size(); ++i)
+         qt_scrollRectInImage(d->image->image, rects.at(i), QPoint(dx, dy));
+--- a/src/gui/painting/qwindowsurface_raster_p.h
++++ b/src/gui/painting/qwindowsurface_raster_p.h
+@@ -107,6 +107,9 @@ public:
+     bool scroll(const QRegion &area, int dx, int dy);
+ 
+ private:
++#if defined(Q_WS_X11) && !defined(QT_NO_MITSHM)
++    void syncX();
++#endif
+     void prepareBuffer(QImage::Format format, QWidget *widget);
+     Q_DECLARE_PRIVATE(QRasterWindowSurface)
+     QScopedPointer<QRasterWindowSurfacePrivate> d_ptr;

@@ -1,0 +1,18 @@
+Description: support reading of default value for startDragDistance property
+from QT_USE_DRAG_DISTANCE environment variable.
+See also http://bugreports.qt.nokia.com/browse/QTBUG-12594
+Author: Joonas Tanskanen <joonas.tanskanen@sasken.com>
+--- a/src/gui/kernel/qapplication.cpp
++++ b/src/gui/kernel/qapplication.cpp
+@@ -1013,6 +1013,11 @@ void QApplicationPrivate::initialize()
+     QApplicationPrivate::wheel_scroll_lines = 3;
+ #endif
+ 
++    if(qgetenv("QT_USE_DRAG_DISTANCE").toInt() > 0) {
++        int dragThreshold = qgetenv("QT_USE_DRAG_DISTANCE").toInt();
++        q->setStartDragDistance(dragThreshold);
++    }
++
+     if (qt_is_gui_used)
+         initializeMultitouch();
+ }

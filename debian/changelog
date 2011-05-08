@@ -1,8 +1,18 @@
 qt4-x11 (4:4.7.3-1) UNRELEASED; urgency=low
 
   * New upstream release.
-  * Remove patches:
-    - blacklist_fraudulent_comodo_certificates.diff - stolen upstream
+  * Remove blacklist_fraudulent_comodo_certificates.diff - stolen upstream.
+  * Add patches cherry-picked upstream:
+    - Fix_GL_problems_on_stock_1.4_SGX_drivers.patch
+    - Fixed_missing_text_when_using_static_text_items_in_GL_2_engine.patch
+    - Update_createwindow_in_qgl_x11egl.patch
+    - Improve-performance-of-partial-updates-in-raster-win.patch
+    - Fix_transformIsSimple_in_QGraphicsScene.patch
+    - Micro-optimization_for_QSpanData.patch
+    - Some_Optimizations_for_the_gray_raster.patch
+    - Make_use_of_the_fast_image_paths.patch
+    - Add_support_for_QT_USE_DRAG_DISTANCE_env_var.patch
+    - Prevent_recursion_when_creating_window_surface.patch
 
   [ Pino Toscano ]
   * Build depend on libssl-dev. (Closes: #623596)
@@ -21,7 +31,7 @@ qt4-x11 (4:4.7.3-1) UNRELEASED; urgency=low
   * Build designer library with -gstabs on powerpc to avoid gcc 4.6 dwarf2 ICE,
     which makes the package FTBFS (patch powerpc_designer_gstabs.diff).
 
- -- Fathi Boudra <fabo@debian.org>  Wed, 04 May 2011 13:08:38 +0300
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 04 May 2011 13:08:38 +0300
 
 qt4-x11 (4:4.7.2-4) unstable; urgency=low
 

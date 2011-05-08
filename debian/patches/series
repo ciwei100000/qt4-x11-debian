@@ -1,4 +1,14 @@
 # upstream patches
+Fix_GL_problems_on_stock_1.4_SGX_drivers.patch
+Fixed_missing_text_when_using_static_text_items_in_GL_2_engine.patch
+Update_createwindow_in_qgl_x11egl.patch
+Improve-performance-of-partial-updates-in-raster-win.patch
+Fix_transformIsSimple_in_QGraphicsScene.patch
+Micro-optimization_for_QSpanData.patch
+Some_Optimizations_for_the_gray_raster.patch
+Make_use_of_the_fast_image_paths.patch
+Add_support_for_QT_USE_DRAG_DISTANCE_env_var.patch
+Prevent_recursion_when_creating_window_surface.patch
 
 # qt-copy patches
 0195-compositing-properties.diff

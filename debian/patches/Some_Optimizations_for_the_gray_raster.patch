@@ -1,0 +1,99 @@
+commit 7eb560609cf1fc82f897a9a67c76e42b06823f9b
+Author: Samuel Rødal <samuel.rodal@nokia.com>
+Date:   Thu Nov 18 12:06:41 2010 +0100
+
+    Some optimizations for the gray-raster (raster engine antialiasing).
+    
+    Increase the size of the initial memory pool (it's anyways free'd later
+    on) to improve the performance of the rasterizer and also decrease the
+    chance of re-allocations.
+    
+    Also, by combining gray_record_cell and gray_find_cell into one
+    function, as gray_find_cell is only called from the former, we can skip
+    some unnecessary operations.
+    
+    Measured performance improvements range from 58 % to 154 % for rounded
+    rect filling and stroking.
+    
+    Reviewed-by: Andreas Kling
+
+--- a/src/gui/painting/qgrayraster.c
++++ b/src/gui/painting/qgrayraster.c
+@@ -408,25 +408,31 @@
+   /*                                                                       */
+   /* Record the current cell in the table.                                 */
+   /*                                                                       */
+-  static PCell
+-  gray_find_cell( RAS_ARG )
++  static void
++  gray_record_cell( RAS_ARG )
+   {
+     PCell  *pcell, cell;
+     int     x = ras.ex;
+ 
++    if ( ras.invalid || !( ras.area | ras.cover ) )
++        return;
+ 
+     if ( x > ras.max_ex )
+       x = ras.max_ex;
+ 
+     pcell = &ras.ycells[ras.ey];
++
+     for (;;)
+     {
+       cell = *pcell;
+       if ( cell == NULL || cell->x > x )
+         break;
+ 
+-      if ( cell->x == x )
+-        goto Exit;
++      if ( cell->x == x ) {
++          cell->area  += ras.area;
++          cell->cover += ras.cover;
++          return;
++      }
+ 
+       pcell = &cell->next;
+     }
+@@ -436,28 +442,11 @@
+ 
+     cell        = ras.cells + ras.num_cells++;
+     cell->x     = x;
+-    cell->area  = 0;
+-    cell->cover = 0;
++    cell->area  = ras.area;
++    cell->cover = ras.cover;
+ 
+     cell->next  = *pcell;
+     *pcell      = cell;
+-
+-  Exit:
+-    return cell;
+-  }
+-
+-
+-  static void
+-  gray_record_cell( RAS_ARG )
+-  {
+-    if ( !ras.invalid && ( ras.area | ras.cover ) )
+-    {
+-      PCell  cell = gray_find_cell( RAS_VAR );
+-
+-
+-      cell->area  += ras.area;
+-      cell->cover += ras.cover;
+-    }
+   }
+ 
+ 
+--- a/src/gui/painting/qgrayraster_p.h
++++ b/src/gui/painting/qgrayraster_p.h
+@@ -91,7 +91,7 @@
+ 
+ /* Minimum buffer size for raster object, that accounts
+    for TWorker and TCell sizes.*/
+-#define MINIMUM_POOL_SIZE 4096
++#define MINIMUM_POOL_SIZE 8192
+ 
+   QT_FT_EXPORT_VAR( const QT_FT_Raster_Funcs )  qt_ft_grays_raster;
+ 
