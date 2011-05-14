@@ -1,4 +1,4 @@
-qt4-x11 (4:4.7.3-1) UNRELEASED; urgency=low
+qt4-x11 (4:4.7.3-1) unstable; urgency=low
 
   * New upstream release.
   * Remove blacklist_fraudulent_comodo_certificates.diff - stolen upstream.
