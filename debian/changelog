@@ -340,6 +340,19 @@ qt4-x11 (4:4.7.0~beta1-1) experimental; urgency=low
 
  -- Fathi Boudra <fabo@debian.org>  Fri, 21 May 2010 10:31:22 +0300
 
+qt4-x11 (4:4.6.3-4+squeeze1) stable; urgency=low
+
+  [ José Manuel Santamaría Lema ]
+  * Blacklist a set of fraudulent ssl certificates; to perform this
+    blacklisting we need these patches:
+    - blacklist_fraudulent_comodo_certificates.diff
+    - ssl_certificate_large_sn.diff
+  * Fix CVE-2010-3170 (browser wildcard cerficate validation weakness) with
+    cve_2010_3170_ssl_certificates_wildcard.diff. This problem affects the Arora
+    web browser.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 17 May 2011 00:26:26 +0300
+
 qt4-x11 (4:4.6.3-4) unstable; urgency=high
 
   [ Pino Toscano ]
