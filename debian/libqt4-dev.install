@@ -1,5 +1,3 @@
-usr/bin/lrelease-qt4
-usr/bin/lupdate-qt4
 usr/bin/moc-qt4
 usr/bin/qdbuscpp2xml
 usr/bin/qdbusxml2cpp

@@ -412,7 +412,8 @@ Depends: ${shlibs:Depends}, ${misc:Depends}, libqtcore4 (= ${binary:Version}),
  libqt4-scripttools (= ${binary:Version}), libqt4-xmlpatterns (= ${binary:Version}),
  libqt4-qt3support (= ${binary:Version}), libqt4-designer (= ${binary:Version}),
  libqt4-help (= ${binary:Version}), libqt4-test (= ${binary:Version}),
- libqt4-declarative (= ${binary:Version}), qt4-qmake (= ${binary:Version})
+ libqt4-declarative (= ${binary:Version}), qt4-qmake (= ${binary:Version}),
+ qt4-linguist-tools (= ${binary:Version})
 Recommends: libqt4-opengl-dev (= ${binary:Version}), libqtwebkit-dev (>= 2.0~)
 Breaks: libqtwebkit-dev (<< 2.0~), libqt4-opengl-dev (<< 4.4.0-2), g++-4.6 (<< 4.6.0-7~) [armel]
 Replaces: libqtwebkit-dev (<< 2.0~), libqt4-opengl-dev (<< 4.4.0-2)
@@ -579,6 +580,21 @@ Description: Qt 4 QML viewer
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains Qt 4 QML viewer (qml). It allows to view QML files.
+
+Package: qt4-linguist-tools
+Architecture: any
+Section: devel
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Breaks: libqt4-dev (<< 4.7.3-2)
+Replaces: libqt4-dev (<< 4.7.3-2)
+Description: Qt 4 Linguist tools
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains lupdate and lrelease. lupdate is a command line tool
+ that finds the translatable strings in the specified source, header and
+ Qt Designer interface files, and produces or updates .ts translation files.
+ lrelease is a command line tool that produces QM files out of TS files.
 
 Package: qt4-doc
 Architecture: all
