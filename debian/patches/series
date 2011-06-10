@@ -9,6 +9,7 @@ Some_Optimizations_for_the_gray_raster.patch
 Make_use_of_the_fast_image_paths.patch
 Add_support_for_QT_USE_DRAG_DISTANCE_env_var.patch
 Prevent_recursion_when_creating_window_surface.patch
+Fixed_bug_in_X11_backend_when_creating_translucent_windows.patch
 
 # qt-copy patches
 0195-compositing-properties.diff
