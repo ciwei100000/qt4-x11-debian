@@ -1,4 +1,5 @@
 # upstream patches
+Fix_builds_with_compilers_without_--with-fpu_neon_as_default.patch
 Fix_GL_problems_on_stock_1.4_SGX_drivers.patch
 Fixed_missing_text_when_using_static_text_items_in_GL_2_engine.patch
 Update_createwindow_in_qgl_x11egl.patch
@@ -42,7 +43,6 @@ buildable_appchooser_states_demos.patch
 92_armel_gcc43_valist_compat.diff
 x-0003-Use-GCC-intrinsics-for-armv6-atomic-operations.patch
 94_armv6_uname_entry.diff
-95_neon_flags.patch
 96_webkit_no_gc_sections.diff
 99_hppa_bug561203_decrease_failure_rate.diff
 powerpcspe.diff
