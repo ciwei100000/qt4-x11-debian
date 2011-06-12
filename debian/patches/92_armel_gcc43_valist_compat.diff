@@ -13,6 +13,11 @@ Subject: Restore QtCore ABI compatibility with binaries built with g++ 4.3 on ar
  original symbols.
 Forward: not-needed
 
+---
+ src/corelib/tools/qstring.cpp    |    5 +++++
+ src/corelib/tools/qvsnprintf.cpp |    6 ++++++
+ 2 files changed, 11 insertions(+)
+
 --- a/src/corelib/tools/qstring.cpp
 +++ b/src/corelib/tools/qstring.cpp
 @@ -5517,6 +5517,11 @@ QString &QString::vsprintf(const char* c

@@ -49,4 +49,3 @@ sh.diff
 kfreebsd_monotonic_clock.diff
 powerpc_designer_gstabs.diff
 armv6_Include_explicitly_IT_instructions.patch
-armv6_Add_support_for_ARMv7_atomic_operations.patch

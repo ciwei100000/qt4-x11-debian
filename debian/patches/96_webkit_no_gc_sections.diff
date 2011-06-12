@@ -7,6 +7,10 @@ Origin: vendor
 Forwarded: no
 Last-Update: 2010-05-31 (mipsel added)
 
+---
+ src/3rdparty/webkit/WebCore/WebCore.pro |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
 --- a/src/3rdparty/webkit/WebCore/WebCore.pro
 +++ b/src/3rdparty/webkit/WebCore/WebCore.pro
 @@ -88,7 +88,7 @@ VERSION = $${QT_WEBKIT_MAJOR_VERSION}.$$

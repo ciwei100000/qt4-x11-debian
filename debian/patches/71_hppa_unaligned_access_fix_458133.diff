@@ -2,6 +2,10 @@ author: Bernhard R. Link <brlink@debian.org>
 
 Fix unaligned access on hppa
 
+---
+ src/3rdparty/sha1/sha1.cpp |    8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
 --- a/src/3rdparty/sha1/sha1.cpp
 +++ b/src/3rdparty/sha1/sha1.cpp
 @@ -149,10 +149,10 @@ static inline void sha1ProcessChunk(Sha1

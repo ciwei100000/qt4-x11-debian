@@ -15,6 +15,10 @@ operate without monotonic clock because qt_safe_select() will indicate timeout
 earlier than it is supposed when underlying select() call is interrupted
 (errno=EINTR).
 
+---
+ config.tests/unix/clock-gettime/clock-gettime.pri |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
 --- a/config.tests/unix/clock-gettime/clock-gettime.pri
 +++ b/config.tests/unix/clock-gettime/clock-gettime.pri
 @@ -1,2 +1,2 @@

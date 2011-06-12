@@ -6,6 +6,10 @@ Description: PATH_MAX fix
  Fix a POSIX incompatibility (as programs should not rely on having PATH_MAX
  defined on all systems) and causes FTBFS on Hurd.
 
+---
+ src/3rdparty/clucene/src/CLucene/config/compiler.h |    4 ++++
+ 1 file changed, 4 insertions(+)
+
 --- a/src/3rdparty/clucene/src/CLucene/config/compiler.h
 +++ b/src/3rdparty/clucene/src/CLucene/config/compiler.h
 @@ -136,6 +136,10 @@

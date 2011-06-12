@@ -9,6 +9,10 @@ qconfig.h does not exist when syncqt is run by ./configure. So instead of
 assigning a modification timestamp equal to the epoch (00:00 January 1, 1970
 GMT.) for the symlink, just use current time().
 
+---
+ bin/syncqt |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
 --- a/bin/syncqt
 +++ b/bin/syncqt
 @@ -831,7 +831,7 @@ foreach my $lib (@modules_to_sync) {

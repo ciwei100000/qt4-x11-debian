@@ -2,6 +2,10 @@ author: Sune Vuorela
 qt-bugs@ issue : N180631
 Trolltech task ID : 181882
 
+---
+ configure |   45 ++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 44 insertions(+), 1 deletion(-)
+
 --- a/configure
 +++ b/configure
 @@ -168,7 +168,50 @@ linkerSupportsFlag()

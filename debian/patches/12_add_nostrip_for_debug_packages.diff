@@ -4,6 +4,10 @@ Qt is built in release mode and strip files by default.
 Set CONFIG+=nostrip to avoid the stripping and
 let dh_strip do it to generate debug packages.
 
+---
+ configure |    2 ++
+ 1 file changed, 2 insertions(+)
+
 --- a/configure
 +++ b/configure
 @@ -674,6 +674,8 @@ mkdir -p "$outpath/config.tests"

@@ -3,6 +3,12 @@ author: Fathi Boudra <fabo@debian.org>
 translations fails to build under autobuilders.
 Use case: Qt sources comes from git and we need to build them.
 
+---
+ tools/assistant/translations/qt_help.pro      |   53 +++++++++
+ tools/assistant/translations/translations.pro |   54 +++++++++
+ tools/designer/translations/translations.pro  |  141 ++++++++++++++++++++++++++
+ 3 files changed, 248 insertions(+)
+
 --- /dev/null
 +++ b/tools/assistant/translations/qt_help.pro
 @@ -0,0 +1,53 @@

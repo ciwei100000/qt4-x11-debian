@@ -3,6 +3,11 @@ author: Fathi Boudra <fabo@debian.org>
 On Qt >= 4.5, debug info are disabled for Qt3Support and QtWebkit.
 This patch enable them.
 
+---
+ src/3rdparty/webkit/WebCore/WebCore.pro |    2 --
+ src/qt3support/qt3support.pro           |    3 ---
+ 2 files changed, 5 deletions(-)
+
 --- a/src/3rdparty/webkit/WebCore/WebCore.pro
 +++ b/src/3rdparty/webkit/WebCore/WebCore.pro
 @@ -2952,8 +2952,6 @@ HEADERS += $$WEBKIT_API_HEADERS

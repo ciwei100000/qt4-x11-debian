@@ -4,6 +4,11 @@ Description: Workaround for -fvisibility-inlines-hidden on alpha:
 Bug-Debian: http://bugs.debian.org/368883
 Author: Steve Langasek <vorlon@debian.org>
 
+---
+ src/corelib/global/qlibraryinfo.cpp |   14 ++++++++------
+ src/corelib/tools/qhash.h           |    2 +-
+ 2 files changed, 9 insertions(+), 7 deletions(-)
+
 --- a/src/corelib/global/qlibraryinfo.cpp
 +++ b/src/corelib/global/qlibraryinfo.cpp
 @@ -85,12 +85,7 @@ class QLibraryInfoPrivate

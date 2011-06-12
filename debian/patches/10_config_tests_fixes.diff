@@ -4,6 +4,13 @@ Description: Various config.test fixes.
 Author: Fathi Boudra <fabo@debian.org>
 Last-Update: 2010-05-24
 
+---
+ config.tests/unix/gstreamer/gstreamer.pro |    1 +
+ config.tests/unix/ibase/ibase.pro         |    2 +-
+ config.tests/unix/sqlite/sqlite.pro       |    1 +
+ src/sql/drivers/ibase/qsql_ibase.pri      |    2 +-
+ 4 files changed, 4 insertions(+), 2 deletions(-)
+
 --- a/config.tests/unix/ibase/ibase.pro
 +++ b/config.tests/unix/ibase/ibase.pro
 @@ -1,4 +1,4 @@

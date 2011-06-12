@@ -1,6 +1,10 @@
 Description: Fix qmake makefile generation - should not add double slashes to makefiles.
 Author: Sune Vuorela <debian@pusling.com>
 
+---
+ qmake/generators/makefile.cpp |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
 --- a/qmake/generators/makefile.cpp
 +++ b/qmake/generators/makefile.cpp
 @@ -2444,7 +2444,7 @@ MakefileGenerator::writeSubTargets(QText
