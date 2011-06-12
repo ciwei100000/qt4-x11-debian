@@ -1,11 +1,14 @@
 qt4-x11 (4:4.7.3-2) UNRELEASED; urgency=low
 
-  * Add patch cherry-picked upstream:
+  * Add patches:
     - Fixed_bug_in_X11_backend_when_creating_translucent_windows.patch
     - Fix_builds_with_compilers_without_--with-fpu_neon_as_default.patch
       NEON_SOURCES would be (incorrectly) compiled without -mfpu=neon,
       resulting in build failure. This also moves -mfpu=neon after CXXFLAGS,
-      as CXXFLAGS may contain -mfpu=vfpv3-d16
+      as CXXFLAGS may contain -mfpu=vfpv3-d16.
+    - armv6_Include_explicitly_IT_instructions.patch
+    - armv6_Add_support_for_ARMv7_atomic_operations.patch, instead of GCC
+      intrinsics patch for armhf.
   * Build Qt with GL ES 2 on armel and armhf architectures:
     - debian/control: add libgles2-mesa-dev | libgles2-dev build-dependencies.
     - debian/rules: pass -opengl es2 configure option.

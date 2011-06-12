@@ -41,7 +41,6 @@ buildable_appchooser_states_demos.patch
 71_hppa_unaligned_access_fix_458133.diff
 80_hurd_max_path.diff
 92_armel_gcc43_valist_compat.diff
-x-0003-Use-GCC-intrinsics-for-armv6-atomic-operations.patch
 94_armv6_uname_entry.diff
 96_webkit_no_gc_sections.diff
 99_hppa_bug561203_decrease_failure_rate.diff
@@ -49,3 +48,5 @@ powerpcspe.diff
 sh.diff
 kfreebsd_monotonic_clock.diff
 powerpc_designer_gstabs.diff
+armv6_Include_explicitly_IT_instructions.patch
+armv6_Add_support_for_ARMv7_atomic_operations.patch
