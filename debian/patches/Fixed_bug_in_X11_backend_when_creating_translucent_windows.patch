@@ -9,6 +9,10 @@ Date:   Tue May 3 12:36:08 2011 +0200
     be created for the same QGLWidget, which leads to undefined behaviour on
     some platforms.
 
+---
+ src/gui/kernel/qwidget_x11.cpp |    9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+
 --- a/src/gui/kernel/qwidget_x11.cpp
 +++ b/src/gui/kernel/qwidget_x11.cpp
 @@ -937,8 +937,13 @@ static void qt_x11_recreateWidget(QWidge

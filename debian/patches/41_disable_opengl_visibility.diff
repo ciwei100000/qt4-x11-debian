@@ -1,5 +1,9 @@
 temporary fix because of alpha, has to be dropped as soon as gcc's bug is fixed.
 
+---
+ src/opengl/opengl.pro |    1 +
+ 1 file changed, 1 insertion(+)
+
 --- a/src/opengl/opengl.pro
 +++ b/src/opengl/opengl.pro
 @@ -37,6 +37,7 @@ SOURCES	+= qgl.cpp \

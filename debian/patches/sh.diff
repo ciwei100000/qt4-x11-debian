@@ -5,6 +5,10 @@ Forwarded: no
 Origin: vendor
 Last-Update: 2011-04-27
 
+---
+ configure |    6 ++++++
+ 1 file changed, 6 insertions(+)
+
 --- a/configure
 +++ b/configure
 @@ -3053,6 +3053,12 @@ if [ -z "${CFG_HOST_ARCH}" ]; then

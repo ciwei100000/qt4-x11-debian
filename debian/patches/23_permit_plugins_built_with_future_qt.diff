@@ -21,6 +21,10 @@ from rare user faults or weird system misconfigurations for more flexibility,
 installability and expand of forward binary compatibility beyond the same Qt
 4.x whenever possible.
 
+---
+ src/corelib/plugin/qlibrary.cpp |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
 --- a/src/corelib/plugin/qlibrary.cpp
 +++ b/src/corelib/plugin/qlibrary.cpp
 @@ -737,7 +737,7 @@ bool QLibraryPrivate::isPlugin(QSettings

@@ -12,7 +12,7 @@ Merge-request: 1183
 Reviewed-by: Samuel Rødal <samuel.rodal@nokia.com>
 ---
  src/opengl/qgl_x11egl.cpp |   10 +++++++++-
- 1 files changed, 9 insertions(+), 1 deletions(-)
+ 1 file changed, 9 insertions(+), 1 deletion(-)
 
 --- a/src/opengl/qgl_x11egl.cpp
 +++ b/src/opengl/qgl_x11egl.cpp

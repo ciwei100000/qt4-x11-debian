@@ -16,6 +16,10 @@ Date:   Fri Feb 4 12:39:51 2011 +0100
     Merge-request: 1042
     Reviewed-by: Samuel Rødal <samuel.rodal@nokia.com>
 
+---
+ src/gui/gui.pro |    7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+
 --- a/src/gui/gui.pro
 +++ b/src/gui/gui.pro
 @@ -65,15 +65,14 @@ symbian {

@@ -14,6 +14,10 @@ Date:   Thu Mar 17 18:32:58 2011 +0100
     Merge-request: 1144
     Reviewed-by: Samuel Rødal <samuel.rodal@nokia.com>
 
+---
+ src/opengl/qgl_egl.cpp |   27 +++++++++++++++++++++++++--
+ 1 file changed, 25 insertions(+), 2 deletions(-)
+
 --- a/src/opengl/qgl_egl.cpp
 +++ b/src/opengl/qgl_egl.cpp
 @@ -39,6 +39,7 @@

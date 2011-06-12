@@ -7,6 +7,34 @@ Description: Append a -qt4 suffix to some tools.
 Last-Update: 2011-03-03
 Forwarded: not-needed
 
+---
+ config.tests/unix/compile.test                    |    2 +-
+ config.tests/unix/doubleformat.test               |    2 +-
+ config.tests/unix/endian.test                     |    2 +-
+ config.tests/unix/ptrsize.test                    |    2 +-
+ config.tests/x11/notype.test                      |    2 +-
+ configure                                         |   12 ++++++------
+ demos/qtdemo/menumanager.cpp                      |    2 +-
+ mkspecs/common/linux.conf                         |    4 ++--
+ mkspecs/features/moc.prf                          |    2 +-
+ mkspecs/features/uic.prf                          |    2 +-
+ projects.pro                                      |    2 +-
+ qmake/Makefile.unix                               |    8 ++++----
+ src/tools/moc/moc.pro                             |    2 +-
+ src/tools/uic/uic.pro                             |    2 +-
+ tools/assistant/tools/assistant/assistant.pro     |    2 +-
+ tools/designer/src/designer/assistantclient.cpp   |    2 +-
+ tools/designer/src/designer/designer.pro          |    2 +-
+ tools/designer/src/lib/shared/qdesigner_utils.cpp |    2 +-
+ tools/linguist/linguist/linguist.pro              |    2 +-
+ tools/linguist/lrelease/lrelease.pro              |    2 +-
+ tools/linguist/lupdate/lupdate.pro                |    2 +-
+ tools/qdbus/qdbuscpp2xml/qdbuscpp2xml.cpp         |    2 +-
+ tools/qtconfig/qtconfig.pro                       |    2 +-
+ translations/translations.pri                     |    2 +-
+ translations/translations.pro                     |    4 ++--
+ 25 files changed, 35 insertions(+), 35 deletions(-)
+
 --- a/config.tests/unix/compile.test
 +++ b/config.tests/unix/compile.test
 @@ -68,7 +68,7 @@ test -r Makefile && $MAKE distclean >/de

@@ -1,6 +1,10 @@
 Avoid '.pc' directories created by quilt.
 It breaks qmake projects search.
 
+---
+ configure |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
 --- a/configure
 +++ b/configure
 @@ -8492,7 +8492,7 @@ fi

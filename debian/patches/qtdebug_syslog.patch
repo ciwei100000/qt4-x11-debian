@@ -1,6 +1,11 @@
 Description: send Q_ASSERT, qDebug, qWarning and qFatal messages to syslog
 Forwarded: not-needed
 Author: Thiago Macieira <thiago@kde.org>
+---
+ src/corelib/global/qglobal.cpp          |   24 ++++++++++++++++++++++++
+ src/corelib/kernel/qcoreapplication_p.h |    2 ++
+ 2 files changed, 26 insertions(+)
+
 --- a/src/corelib/global/qglobal.cpp
 +++ b/src/corelib/global/qglobal.cpp
 @@ -50,6 +50,7 @@

@@ -17,6 +17,12 @@ Date:   Tue Feb 1 17:57:10 2011 +0100
     
     Reviewed-by: Eskil Abrahamsen Blomfeldt
 
+---
+ src/opengl/gl2paintengineex/qpaintengineex_opengl2.cpp |   13 ++++++++-----
+ src/opengl/gl2paintengineex/qtextureglyphcache_gl.cpp  |    3 +++
+ src/opengl/gl2paintengineex/qtextureglyphcache_gl_p.h  |    3 +++
+ 3 files changed, 14 insertions(+), 5 deletions(-)
+
 --- a/src/opengl/gl2paintengineex/qpaintengineex_opengl2.cpp
 +++ b/src/opengl/gl2paintengineex/qpaintengineex_opengl2.cpp
 @@ -1489,7 +1489,7 @@ namespace {

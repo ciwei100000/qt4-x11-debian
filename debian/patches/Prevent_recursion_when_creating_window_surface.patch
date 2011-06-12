@@ -11,6 +11,10 @@ Date:   Tue Feb 1 17:59:54 2011 +0100
     
     Reviewed-by: Michael Dominic K
 
+---
+ src/plugins/graphicssystems/meego/qmeegographicssystem.cpp |    8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
 --- a/src/plugins/graphicssystems/meego/qmeegographicssystem.cpp
 +++ b/src/plugins/graphicssystems/meego/qmeegographicssystem.cpp
 @@ -42,6 +42,7 @@

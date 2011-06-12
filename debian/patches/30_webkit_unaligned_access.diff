@@ -12,6 +12,13 @@ Some compiler warnings about alignment remain, but I don't know if they are
 a real problem yet.
 ---
 
+---
+ src/3rdparty/webkit/JavaScriptCore/wtf/FastMalloc.cpp      |    4 ++--
+ src/3rdparty/webkit/JavaScriptCore/wtf/ListHashSet.h       |    9 +++------
+ src/3rdparty/webkit/WebCore/platform/text/AtomicString.cpp |    2 +-
+ src/3rdparty/webkit/WebCore/platform/text/StringHash.h     |    6 +++---
+ 4 files changed, 9 insertions(+), 12 deletions(-)
+
 --- a/src/3rdparty/webkit/JavaScriptCore/wtf/FastMalloc.cpp
 +++ b/src/3rdparty/webkit/JavaScriptCore/wtf/FastMalloc.cpp
 @@ -2336,13 +2336,13 @@ static TCMalloc_Central_FreeListPadded c

@@ -10,6 +10,11 @@ Date:   Mon Nov 1 12:49:41 2010 +0100
     Task-number: QTBUG-14901
     Reviewed-by: Kim
 
+---
+ src/gui/painting/qpaintengine_raster.cpp |   17 ++++++++++++-----
+ src/gui/painting/qpaintengine_raster_p.h |    1 +
+ 2 files changed, 13 insertions(+), 5 deletions(-)
+
 --- a/src/gui/painting/qpaintengine_raster.cpp
 +++ b/src/gui/painting/qpaintengine_raster.cpp
 @@ -2506,7 +2506,7 @@ void QRasterPaintEngine::drawImage(const

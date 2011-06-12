@@ -14,6 +14,10 @@ with preprocessed source if appropriate.
 
 [2] https://buildd.debian.org/status/fetch.php?pkg=qt4-x11&arch=powerpc&ver=4%3A4.7.2-4&stamp=1304320067
 
+---
+ tools/designer/src/components/signalsloteditor/signalsloteditor.pri |    7 +++++++
+ 1 file changed, 7 insertions(+)
+
 --- a/tools/designer/src/components/signalsloteditor/signalsloteditor.pri
 +++ b/tools/designer/src/components/signalsloteditor/signalsloteditor.pri
 @@ -19,3 +19,10 @@ SOURCES += $$PWD/signalslot_utils.cpp \

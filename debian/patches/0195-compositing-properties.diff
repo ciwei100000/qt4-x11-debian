@@ -9,7 +9,7 @@ qt-bugs@ issue : none
 bugs.kde.org number : none
 ---
  src/gui/kernel/qwidget_x11.cpp |   21 +++++++++++++++------
- 1 files changed, 15 insertions(+), 6 deletions(-)
+ 1 file changed, 15 insertions(+), 6 deletions(-)
 
 --- a/src/gui/kernel/qwidget_x11.cpp
 +++ b/src/gui/kernel/qwidget_x11.cpp
