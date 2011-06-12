@@ -64,7 +64,7 @@ Forwarded: not-needed
      if [ "$VERBOSE" = "yes" ]; then
 --- a/configure
 +++ b/configure
-@@ -4596,7 +4596,7 @@ END {
+@@ -4792,7 +4792,7 @@ END {
  }
  
  # build qmake
@@ -73,7 +73,7 @@ Forwarded: not-needed
      echo "Creating qmake. Please wait..."
  
      OLD_QCONFIG_H=
-@@ -8033,8 +8033,8 @@ QMAKE_ABSOLUTE_SOURCE_ROOT = \$\$QT_SOUR
+@@ -8428,8 +8428,8 @@ QMAKE_ABSOLUTE_SOURCE_ROOT = \$\$QT_SOUR
  QMAKE_MOC_SRC    = \$\$QT_BUILD_TREE/src/moc
  
  #local paths that cannot be queried from the QT_INSTALL_* properties while building QTDIR
@@ -84,7 +84,7 @@ Forwarded: not-needed
  QMAKE_UIC3       = \$\$QT_BUILD_TREE/bin/uic3
  QMAKE_RCC        = \$\$QT_BUILD_TREE/bin/rcc
  QMAKE_QDBUSXML2CPP = \$\$QT_BUILD_TREE/bin/qdbusxml2cpp
-@@ -8435,11 +8435,11 @@ EXEC=""
+@@ -8832,11 +8832,11 @@ EXEC=""
  
  echo "Finding project files. Please wait..."
  if [ "$CFG_NOPROCESS" != "yes" ]; then
@@ -98,7 +98,7 @@ Forwarded: not-needed
      fi
  fi
  
-@@ -8626,7 +8626,7 @@ for file in .projects .projects.3; do
+@@ -9023,7 +9023,7 @@ for file in .projects .projects.3; do
          QMAKE_SPEC_ARGS="-spec $SPEC"
          echo $ECHO_N "  for $a$ECHO_C"
  
@@ -109,7 +109,7 @@ Forwarded: not-needed
              echo " (fast)"
 --- a/projects.pro
 +++ b/projects.pro
-@@ -153,7 +153,7 @@ qmake.path=$$[QT_INSTALL_BINS]
+@@ -144,7 +144,7 @@ qmake.path=$$[QT_INSTALL_BINS]
  win32 {
     qmake.files=$$QT_BUILD_TREE/bin/qmake.exe
  } else {
@@ -120,7 +120,7 @@ Forwarded: not-needed
  
 --- a/qmake/Makefile.unix
 +++ b/qmake/Makefile.unix
-@@ -75,17 +75,17 @@ CPPFLAGS = -I. -Igenerators -Igenerators
+@@ -86,17 +86,17 @@ CPPFLAGS = -g -I. -Igenerators -Igenerat
  
  CXXFLAGS = @QMAKE_CXXFLAGS@ $(CPPFLAGS)
  
@@ -213,35 +213,29 @@ Forwarded: not-needed
      static:CONFIG -= global_init_link_order
 --- a/tools/qtconfig/qtconfig.pro
 +++ b/tools/qtconfig/qtconfig.pro
-@@ -22,7 +22,7 @@ FORMS        = mainwindowbase.ui palette
+@@ -19,7 +19,7 @@ FORMS        = mainwindow.ui paletteedit
  RESOURCES    = qtconfig.qrc
  
  PROJECTNAME        = Qt Configuration
--TARGET                = qtconfig
-+TARGET                = qtconfig-qt4
- DESTDIR                = ../../bin
+-TARGET             = qtconfig
++TARGET             = qtconfig-qt4
+ DESTDIR            = ../../bin
  
  target.path=$$[QT_INSTALL_BINS]
---- a/translations/translations.pri
-+++ b/translations/translations.pri
-@@ -1,5 +1,5 @@
+--- a/translations/translations.pro
++++ b/translations/translations.pro
+@@ -1,8 +1,8 @@
+ TRANSLATIONS = $$files(*.ts)
+ 
+-qtPrepareTool(LRELEASE, lrelease)
++qtPrepareTool(LRELEASE, lrelease-qt4)
  qtPrepareTool(LCONVERT, lconvert)
 -qtPrepareTool(LUPDATE, lupdate)
 +qtPrepareTool(LUPDATE, lupdate-qt4)
  LUPDATE += -locations relative -no-ui-lines
  
  TS_TARGETS =
---- a/translations/translations.pro
-+++ b/translations/translations.pro
-@@ -1,6 +1,6 @@
- TRANSLATIONS = $$files(*.ts)
- 
--qtPrepareTool(LRELEASE, lrelease)
-+qtPrepareTool(LRELEASE, lrelease-qt4)
- 
- contains(TEMPLATE_PREFIX, vc):vcproj = 1
- 
-@@ -15,7 +15,7 @@ updateqm.input = TRANSLATIONS
+@@ -96,7 +96,7 @@ updateqm.input = TRANSLATIONS
  updateqm.output = ${QMAKE_FILE_BASE}.qm
  isEmpty(vcproj):updateqm.variable_out = PRE_TARGETDEPS
  updateqm.commands = $$LRELEASE ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_OUT}
@@ -272,9 +266,9 @@ Forwarded: not-needed
  isEmpty(UI_SOURCES_DIR):UI_SOURCES_DIR = $$UI_DIR
 --- a/mkspecs/common/linux.conf
 +++ b/mkspecs/common/linux.conf
-@@ -35,8 +35,8 @@ QMAKE_LIBS_OPENGL_ES2 = -lGLESv2
- QMAKE_LIBS_OPENVG     = -lOpenVG
- QMAKE_LIBS_THREAD     = -lpthread
+@@ -41,8 +41,8 @@ QMAKE_LIBS_WAYLAND =
+ QMAKE_LIBDIR_WAYLAND =
+ QMAKE_DEFINES_WAYLAND =
  
 -QMAKE_MOC             = $$[QT_INSTALL_BINS]/moc
 -QMAKE_UIC             = $$[QT_INSTALL_BINS]/uic
@@ -307,7 +301,7 @@ Forwarded: not-needed
  #endif
 --- a/tools/designer/src/lib/shared/qdesigner_utils.cpp
 +++ b/tools/designer/src/lib/shared/qdesigner_utils.cpp
-@@ -668,7 +668,7 @@ namespace qdesigner_internal
+@@ -782,7 +782,7 @@ namespace qdesigner_internal
          binary += QDir::separator();
          switch (mode) {
          case UIC_GenerateCode:

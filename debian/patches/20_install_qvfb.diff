@@ -3,7 +3,7 @@ Author: Fathi Boudra <fabo@debian.org>
 
 --- a/tools/tools.pro
 +++ b/tools/tools.pro
-@@ -41,6 +41,8 @@ embedded: SUBDIRS += makeqpf
+@@ -44,6 +44,8 @@ embedded: SUBDIRS += makeqpf
  
  !wince*:!cross_compile:SUBDIRS += qdoc3
  

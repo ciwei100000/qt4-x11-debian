@@ -12,7 +12,7 @@ Last-Update: 2010-06-06
 
 --- a/src/corelib/io/qprocess_unix.cpp
 +++ b/src/corelib/io/qprocess_unix.cpp
-@@ -505,6 +505,9 @@ static char **_q_dupEnvironment(const QH
+@@ -524,6 +524,9 @@ static char **_q_dupEnvironment(const QP
  // under QNX RTOS we have to use vfork() when multithreading
  inline pid_t qt_fork()
  {

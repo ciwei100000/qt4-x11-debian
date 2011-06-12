@@ -1,20 +1,20 @@
 # upstream patches
-Fix_builds_with_compilers_without_--with-fpu_neon_as_default.patch
-Fix_GL_problems_on_stock_1.4_SGX_drivers.patch
-Fixed_missing_text_when_using_static_text_items_in_GL_2_engine.patch
-Update_createwindow_in_qgl_x11egl.patch
-Improve-performance-of-partial-updates-in-raster-win.patch
-Fix_transformIsSimple_in_QGraphicsScene.patch
-Micro-optimization_for_QSpanData.patch
-Some_Optimizations_for_the_gray_raster.patch
-Make_use_of_the_fast_image_paths.patch
-Add_support_for_QT_USE_DRAG_DISTANCE_env_var.patch
-Prevent_recursion_when_creating_window_surface.patch
-Fixed_bug_in_X11_backend_when_creating_translucent_windows.patch
+#Fix_builds_with_compilers_without_--with-fpu_neon_as_default.patch
+#Fix_GL_problems_on_stock_1.4_SGX_drivers.patch
+#Fixed_missing_text_when_using_static_text_items_in_GL_2_engine.patch
+#Update_createwindow_in_qgl_x11egl.patch
+#Improve-performance-of-partial-updates-in-raster-win.patch
+#Fix_transformIsSimple_in_QGraphicsScene.patch
+#Micro-optimization_for_QSpanData.patch
+#Some_Optimizations_for_the_gray_raster.patch
+#Make_use_of_the_fast_image_paths.patch
+#Add_support_for_QT_USE_DRAG_DISTANCE_env_var.patch
+#Prevent_recursion_when_creating_window_surface.patch
+#Fixed_bug_in_X11_backend_when_creating_translucent_windows.patch
 
 # qt-copy patches
-0195-compositing-properties.diff
-0225-invalidate-tabbar-geometry-on-refresh.patch
+#0195-compositing-properties.diff
+#0225-invalidate-tabbar-geometry-on-refresh.patch
 
 # debian patches
 qtdebug_syslog.patch
@@ -30,7 +30,7 @@ buildable_appchooser_states_demos.patch
 16_hide_std_symbols_on_qtwebkit.diff
 18_enable_qt3support_qtwebkit_debug_info.diff
 20_install_qvfb.diff
-21_qt_ia32_library_path.diff
+# TODO 21_qt_ia32_library_path.diff
 23_permit_plugins_built_with_future_qt.diff
 30_webkit_unaligned_access.diff
 40_alpha_ice.diff
@@ -41,7 +41,7 @@ buildable_appchooser_states_demos.patch
 71_hppa_unaligned_access_fix_458133.diff
 80_hurd_max_path.diff
 92_armel_gcc43_valist_compat.diff
-x-0003-Use-GCC-intrinsics-for-armv6-atomic-operations.patch
+# TODO x-0003-Use-GCC-intrinsics-for-armv6-atomic-operations.patch
 94_armv6_uname_entry.diff
 96_webkit_no_gc_sections.diff
 99_hppa_bug561203_decrease_failure_rate.diff

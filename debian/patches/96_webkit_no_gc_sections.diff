@@ -9,8 +9,8 @@ Last-Update: 2010-05-31 (mipsel added)
 
 --- a/src/3rdparty/webkit/WebCore/WebCore.pro
 +++ b/src/3rdparty/webkit/WebCore/WebCore.pro
-@@ -90,7 +90,7 @@ unix {
- }
+@@ -88,7 +88,7 @@ VERSION = $${QT_WEBKIT_MAJOR_VERSION}.$$
+ unix|win32-g++*:QMAKE_PKGCONFIG_REQUIRES = QtCore QtGui QtNetwork
  
  unix:!mac:*-g++*:QMAKE_CXXFLAGS += -ffunction-sections -fdata-sections 
 -unix:!mac:*-g++*:QMAKE_LFLAGS += -Wl,--gc-sections
