@@ -1,6 +1,8 @@
 qt4-x11 (4:4.8~alpha+tp-0r1) UNRELEASED; urgency=low
 
   * New upstream release.
+  * Update debian/rules:
+    - remove -qt-gif configure option - removed upstream.
 
  -- Fathi Boudra <fabo@debian.org>  Fri, 10 Jun 2011 09:21:12 +0300
 

@@ -120,7 +120,6 @@ endif
 	            -scripttools \
 	            -platform $(platform_arg) \
 	            -system-zlib \
-	            -qt-gif \
 	            -system-libtiff \
 	            -system-libpng \
 	            -system-libjpeg \
