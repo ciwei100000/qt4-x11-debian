@@ -142,7 +142,7 @@ override_dh_auto_build:
 	# Build documentations
 	dh_auto_build -Smakefile -- docs
 	# Build translations
-	dh_auto_build -Smakefile -- ts
+	dh_auto_build -Smakefile -- -C translations ts-all
 	# Workaround: It's a known qmake limitation.
 	# It can't generate install rules for files that don't exist yet like docs.
 	./config.status
