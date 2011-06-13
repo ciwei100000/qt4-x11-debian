@@ -7,6 +7,7 @@ usr/bin/qdbusviewer
 usr/bin/qdoc3
 usr/bin/qhelpconverter
 usr/bin/qhelpgenerator
+usr/bin/qmlplugindump
 usr/bin/qttracereplay
 usr/bin/qvfb
 usr/bin/xmlpatterns
@@ -18,6 +19,7 @@ usr/share/qt4/translations/assistant_de.qm
 usr/share/qt4/translations/assistant_fr.qm
 usr/share/qt4/translations/assistant_hu.qm
 usr/share/qt4/translations/assistant_ja.qm
+usr/share/qt4/translations/assistant_ko.qm
 usr/share/qt4/translations/assistant_pl.qm
 usr/share/qt4/translations/assistant_ru.qm
 usr/share/qt4/translations/assistant_sl.qm
@@ -29,6 +31,7 @@ usr/share/qt4/translations/linguist_de.qm
 usr/share/qt4/translations/linguist_fr.qm
 usr/share/qt4/translations/linguist_hu.qm
 usr/share/qt4/translations/linguist_ja.qm
+usr/share/qt4/translations/linguist_ko.qm
 usr/share/qt4/translations/linguist_pl.qm
 usr/share/qt4/translations/linguist_ru.qm
 usr/share/qt4/translations/linguist_sl.qm
@@ -37,6 +40,7 @@ usr/share/qt4/translations/linguist_zh_CN.qm
 usr/share/qt4/translations/linguist_zh_TW.qm
 usr/share/qt4/translations/qvfb_hu.qm
 usr/share/qt4/translations/qvfb_ja.qm
+usr/share/qt4/translations/qvfb_ko.qm
 usr/share/qt4/translations/qvfb_pl.qm
 usr/share/qt4/translations/qvfb_ru.qm
 usr/share/qt4/translations/qvfb_sl.qm

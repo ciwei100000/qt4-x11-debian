@@ -1,3 +1,4 @@
 usr/lib/libQtDeclarative.so.*
 usr/lib/qt4/plugins/designer/libqdeclarativeview.so
-usr/lib/qt4/plugins/qmltooling/libtcpserver.so
+usr/lib/qt4/plugins/qmltooling/libdeclarativeobserver.so
+usr/lib/qt4/plugins/qmltooling/libqmldbg_tcp.so
