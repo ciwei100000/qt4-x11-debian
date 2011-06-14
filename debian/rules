@@ -57,7 +57,11 @@ ifeq ($(DEB_HOST_ARCH_OS),linux)
     endif # sparc64
   endif # amd64
 else
+  ifeq ($(DEB_HOST_ARCH_OS),hurd)
+	platform_arg = hurd-g++
+  else
 	platform_arg = glibc-g++
+  endif
 endif
 
 %:

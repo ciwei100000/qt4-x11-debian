@@ -10,6 +10,11 @@ qt4-x11 (4:4.8~alpha+tp-0r1) UNRELEASED; urgency=low
     - use ts-all target. The ts target has been removed.
   * Update installed files: headers, translations, qmlplugindump.
 
+  [ Pino Toscano ]
+  * Use the hurd-g++ mkspec when building on Hurd:
+    - add mkspecs/hurd-g++/qmake.conf in 01_debian_append_qt4_suffix.diff
+    - update the platform_arg in debian/rules
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 10 Jun 2011 09:21:12 +0300
 
 qt4-x11 (4:4.7.3-2) UNRELEASED; urgency=low
