@@ -67,7 +67,7 @@ As an additional permission to the GNU Lesser General Public License version
 2.1, the object code form of a "work that uses the Library" may incorporate
 material from a header file that is part of the Library.  You may distribute
 such object code under terms of your choice, provided that:
-    (i)   the header files of the Library have not been modified; and 
+    (i)   the header files of the Library have not been modified; and
     (ii)  the incorporated material is limited to numerical parameters, data
           structure layouts, accessors, macros, inline functions and
           templates; and
@@ -231,16 +231,16 @@ Copyright for src/testlib/3rdparty/valgrind_p.h:
    1. Redistributions of source code must retain the above copyright
       notice, this list of conditions and the following disclaimer.
 
-   2. The origin of this software must not be misrepresented; you must 
-      not claim that you wrote the original software.  If you use this 
-      software in a product, an acknowledgment in the product 
+   2. The origin of this software must not be misrepresented; you must
+      not claim that you wrote the original software.  If you use this
+      software in a product, an acknowledgment in the product
       documentation would be appreciated but is not required.
 
    3. Altered source versions must be plainly marked as such, and must
       not be misrepresented as being the original software.
 
-   4. The name of the author may not be used to endorse or promote 
-      products derived from this software without specific prior written 
+   4. The name of the author may not be used to endorse or promote
+      products derived from this software without specific prior written
       permission.
 
    THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS
@@ -262,7 +262,7 @@ Copyright for src/testlib/3rdparty/valgrind_p.h:
    the terms of the GNU General Public License, version 2.  See the
    COPYING file in the source distribution for details.
 
-   ---------------------------------------------------------------- 
+   ----------------------------------------------------------------
 
 Copyright for src/testlib/3rdparty/cycle_p.h
 
@@ -312,16 +312,16 @@ Copyright for tests/auto/exceptionsafety_objects/3rdparty/memcheck.h:
    1. Redistributions of source code must retain the above copyright
       notice, this list of conditions and the following disclaimer.
 
-   2. The origin of this software must not be misrepresented; you must 
-      not claim that you wrote the original software.  If you use this 
-      software in a product, an acknowledgment in the product 
+   2. The origin of this software must not be misrepresented; you must
+      not claim that you wrote the original software.  If you use this
+      software in a product, an acknowledgment in the product
       documentation would be appreciated but is not required.
 
    3. Altered source versions must be plainly marked as such, and must
       not be misrepresented as being the original software.
 
-   4. The name of the author may not be used to endorse or promote 
-      products derived from this software without specific prior written 
+   4. The name of the author may not be used to endorse or promote
+      products derived from this software without specific prior written
       permission.
 
    THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS
@@ -343,7 +343,7 @@ Copyright for tests/auto/exceptionsafety_objects/3rdparty/memcheck.h:
    the terms of the GNU General Public License, version 2.  See the
    COPYING file in the source distribution for details.
 
-   ---------------------------------------------------------------- 
+   ----------------------------------------------------------------
 
 Copyright for tests/auto/exceptionsafety_objects/3rdparty/valgrind.h:
 
@@ -369,16 +369,16 @@ Copyright for tests/auto/exceptionsafety_objects/3rdparty/valgrind.h:
    1. Redistributions of source code must retain the above copyright
       notice, this list of conditions and the following disclaimer.
 
-   2. The origin of this software must not be misrepresented; you must 
-      not claim that you wrote the original software.  If you use this 
-      software in a product, an acknowledgment in the product 
+   2. The origin of this software must not be misrepresented; you must
+      not claim that you wrote the original software.  If you use this
+      software in a product, an acknowledgment in the product
       documentation would be appreciated but is not required.
 
    3. Altered source versions must be plainly marked as such, and must
       not be misrepresented as being the original software.
 
-   4. The name of the author may not be used to endorse or promote 
-      products derived from this software without specific prior written 
+   4. The name of the author may not be used to endorse or promote
+      products derived from this software without specific prior written
       permission.
 
    THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS
@@ -400,7 +400,7 @@ Copyright for tests/auto/exceptionsafety_objects/3rdparty/valgrind.h:
    the terms of the GNU General Public License, version 2.  See the
    COPYING file in the source distribution for details.
 
-   ---------------------------------------------------------------- 
+   ----------------------------------------------------------------
 
 Copyright for demos/embedded/fluidlauncher/pictureflow.*:
 
@@ -665,7 +665,7 @@ Copyright for src/3rdparty/libtiff/port/*:
 
     Copyright (c) 1987-1994 The Regents of the University of California.
                             All rights reserved.
- 
+
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions
     are met:
@@ -677,7 +677,7 @@ Copyright for src/3rdparty/libtiff/port/*:
     3. Neither the name of the University nor the names of its contributors
        may be used to endorse or promote products derived from this software
        without specific prior written permission.
- 
+
     THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
     ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
     IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
@@ -706,7 +706,7 @@ Copyright for src/plugins/codecs/jp/*:
     2. Redistributions in binary form must reproduce the above copyright
        notice, this list of conditions and the following disclaimer in the
        documentation and/or other materials provided with the distribution.
- 
+
     THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
     ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
     IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
@@ -721,11 +721,11 @@ Copyright for src/plugins/codecs/jp/*:
 
 Copyright for src/plugins/codecs/kr/*:
 
-    Most of the cp949 code was originally written by Joon-Kyu Park, and is included 
+    Most of the cp949 code was originally written by Joon-Kyu Park, and is included
     in Qt with the author's permission and the grateful thanks of the Qt team.
 
     Copyright (C) 1999-2000 Mizi Research Inc. All rights reserved.
- 
+
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions
     are met:
@@ -734,7 +734,7 @@ Copyright for src/plugins/codecs/kr/*:
     2. Redistributions in binary form must reproduce the above copyright
        notice, this list of conditions and the following disclaimer in the
        documentation and/or other materials provided with the distribution.
- 
+
     THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
     ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
     IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
