@@ -393,7 +393,6 @@ Section: libdevel
 Depends: ${shlibs:Depends}, ${misc:Depends}, libqtcore4 (= ${binary:Version}),
  libqt4-network (= ${binary:Version}), libqt4-dbus (= ${binary:Version}),
  libqtgui4 (= ${binary:Version}),
-# libqt4-openvg (= ${binary:Version}),
  libqt4-svg (= ${binary:Version}), libqt4-xml (= ${binary:Version}),
  libqt4-sql (= ${binary:Version}), libqt4-script (= ${binary:Version}),
  libqt4-scripttools (= ${binary:Version}), libqt4-xmlpatterns (= ${binary:Version}),
