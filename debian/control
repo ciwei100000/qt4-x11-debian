@@ -644,8 +644,8 @@ Package: qt4-linguist-tools
 Architecture: any
 Section: devel
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libqt4-dev (<< 4.7.3-2)
-Replaces: libqt4-dev (<< 4.7.3-2)
+Breaks: libqt4-dev (<< 4:4.7.3-2)
+Replaces: libqt4-dev (<< 4:4.7.3-2)
 Description: Qt 4 Linguist tools
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.

@@ -1,3 +1,9 @@
+qt4-x11 (4:4.7.3-3) UNRELEASED; urgency=low
+
+  * Add missing epoch for qt4-linguist-tools Breaks/Replaces. (Closes: #630917)
+
+ -- Fathi Boudra <fabo@debian.org>  Mon, 20 Jun 2011 15:29:58 +0300
+
 qt4-x11 (4:4.7.3-2) unstable; urgency=low
 
   * Add patches:
