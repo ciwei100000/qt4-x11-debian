@@ -1,4 +1,4 @@
-qt4-x11 (4:4.7.3-2) UNRELEASED; urgency=low
+qt4-x11 (4:4.7.3-2) unstable; urgency=low
 
   * Add patches:
     - Fixed_bug_in_X11_backend_when_creating_translucent_windows.patch
