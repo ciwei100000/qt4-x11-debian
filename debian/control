@@ -508,6 +508,50 @@ Description: Qt 4 library debugging symbols
  .
  This package contains the debugging symbols for the Qt 4 libraries.
 
+Package: libqt4-designer-dbg
+Priority: extra
+Architecture: any
+Section: debug
+Depends: libqt4-designer (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Breaks: libqt4-dbg (<< 4:4.7.3-3)
+Replaces: libqt4-dbg (<< 4:4.7.3-3)
+Description: Qt 4 designer library debugging symbols
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the debugging symbols for the Qt 4 Designer library.
+
+Package: libqt4-qt3support-dbg
+Priority: extra
+Architecture: any
+Section: debug
+Depends: libqt4-qt3support (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Breaks: libqt4-dbg (<< 4:4.7.3-3)
+Replaces: libqt4-dbg (<< 4:4.7.3-3)
+Description: Qt 3 compatibility library for Qt 4 debugging symbols
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the debugging symbols for the Qt 3 compatibility library
+ for Qt 4.
+
+Package: libqt4-script-dbg
+Priority: extra
+Architecture: any
+Section: debug
+Depends: libqt4-script (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
+Breaks: libqt4-dbg (<< 4:4.7.3-3)
+Replaces: libqt4-dbg (<< 4:4.7.3-3)
+Description: Qt 4 script library debugging symbols
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the debugging symbols for the Qt 4 Script library.
+
 Package: libqt4-webkit-dbg
 Priority: extra
 Architecture: any
