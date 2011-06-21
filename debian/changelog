@@ -4,6 +4,7 @@ qt4-x11 (4:4.7.3-3) UNRELEASED; urgency=low
     libqt4-qt3support-dbg and libqt4-script-dbg packages.
   * Add libqt4-dev-private package: ship Qt private headers to build Qt Creator
     QML Designer plugin.
+  * Add rsync build dependency (easy way to preserve relative path names).
   * Add missing epoch for qt4-linguist-tools Breaks/Replaces. (Closes: #630917)
   * Add patches:
     - Take_Xft.hintstyle_by_default_to_match_the_behavior_of_GTK+.patch
