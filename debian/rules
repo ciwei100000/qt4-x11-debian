@@ -225,6 +225,13 @@ override_dh_auto_clean:
 override_dh_auto_install:
 	dh_auto_install -Smakefile -- INSTALL_ROOT=$(CURDIR)/debian/tmp/
 
+	# Ship private headers - ugly hack to build Qt Creator QML Designer
+	mkdir -p debian/tmp/usr/include/qt4
+	cd $(CURDIR)/include && rsync -aR Qt{Core,Declarative,Gui,Script}/private \
+	          ../debian/tmp/usr/include/qt4/
+	cd $(CURDIR) && rsync -aR src/{corelib,declarative,gui,script}/*/*_p.h \
+	          debian/tmp/usr/include/
+
 	# Fix wrong path in pkgconfig files
 	find $(CURDIR)/debian/tmp/usr/lib/pkgconfig -type f -name '*.pc' \
 		-exec perl -pi -e "s, -L$(CURDIR)/?\S+,,g" {} \;
