@@ -11,6 +11,10 @@ qt4-x11 (4:4.7.3-3) UNRELEASED; urgency=low
     - Take_Xft.hintstyle_by_default_to_match_the_behavior_of_GTK+.patch
     - Fix_fontconfig_usage_in_X11_font_database.patch
 
+  [ Pino Toscano ]
+  * Use wildcard architectures:
+    - !kfreebsd-i386 !kfreebsd-amd64 !hurd-i386 -> linux-any
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 20 Jun 2011 15:29:58 +0300
 
 qt4-x11 (4:4.7.3-2) unstable; urgency=low
