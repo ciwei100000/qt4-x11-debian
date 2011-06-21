@@ -2,6 +2,8 @@ qt4-x11 (4:4.7.3-3) UNRELEASED; urgency=low
 
   * Split Qt debug package a bit more: introduce libqt4-designer-dbg,
     libqt4-qt3support-dbg and libqt4-script-dbg packages.
+  * Add libqt4-dev-private package: ship Qt private headers to build Qt Creator
+    QML Designer plugin.
   * Add missing epoch for qt4-linguist-tools Breaks/Replaces. (Closes: #630917)
 
  -- Fathi Boudra <fabo@debian.org>  Mon, 20 Jun 2011 15:29:58 +0300
