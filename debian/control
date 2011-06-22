@@ -592,6 +592,19 @@ Description: Qt 4 XML patterns library debugging symbols
  This package contains the debugging symbols for the Qt 4 XML patterns
  library.
 
+Package: qt4-bin-dbg
+Priority: extra
+Architecture: any
+Section: debug
+Depends: libqt4-dbg (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
+Breaks: libqt4-dbg (<< 4:4.7.3-3)
+Replaces: libqt4-dbg (<< 4:4.7.3-3)
+Description: Qt 4 binaries debugging symbols
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the debugging symbols for the Qt 4 binaries.
+
 Package: qt4-demos-dbg
 Priority: extra
 Architecture: any
