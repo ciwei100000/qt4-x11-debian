@@ -1,4 +1,4 @@
-qt4-x11 (4:4.7.3-3) UNRELEASED; urgency=low
+qt4-x11 (4:4.7.3-3) unstable; urgency=low
 
   [ Fathi Boudra ]
   * Split Qt debug package a bit more: introduce libqt4-designer-dbg,
