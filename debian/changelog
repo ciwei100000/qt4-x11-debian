@@ -1,6 +1,7 @@
-qt4-x11 (4:4.7.3-4) UNRELEASED; urgency=low
+qt4-x11 (4:4.7.3-4) unstable; urgency=low
 
-  * Update Fix_fontconfig_usage_in_X11_font_database.patch
+  * Update Fix_fontconfig_usage_in_X11_font_database.patch to fix crashes in
+    various Qt/KDE applications. (Closes: #631652)
 
  -- Fathi Boudra <fabo@debian.org>  Sat, 25 Jun 2011 21:22:37 +0300
 
