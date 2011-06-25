@@ -1,3 +1,9 @@
+qt4-x11 (4:4.7.3-4) UNRELEASED; urgency=low
+
+  * Update Fix_fontconfig_usage_in_X11_font_database.patch
+
+ -- Fathi Boudra <fabo@debian.org>  Sat, 25 Jun 2011 21:22:37 +0300
+
 qt4-x11 (4:4.7.3-3) unstable; urgency=low
 
   [ Fathi Boudra ]

@@ -27,8 +27,8 @@ Task-number: QTBUG-2148, QTBUG-19947
 Reviewed-by: Eskil
 ---
  src/gui/text/qfontdatabase_x11.cpp |   55 +++++++++++++++----------------------
- src/gui/text/qfontengine_x11.cpp   |   22 ++++----------
- 2 files changed, 29 insertions(+), 48 deletions(-)
+ src/gui/text/qfontengine_x11.cpp   |   28 +++++-------------
+ 2 files changed, 31 insertions(+), 52 deletions(-)
 
 --- a/src/gui/text/qfontdatabase_x11.cpp
 +++ b/src/gui/text/qfontdatabase_x11.cpp
@@ -176,7 +176,7 @@ Reviewed-by: Eskil
      extern QFontDef qt_FcPatternToQFontDef(FcPattern *pattern, const QFontDef &);
      extern FcFontSet *qt_fontSetForPattern(FcPattern *pattern, const QFontDef &request);
  
-@@ -940,22 +935,17 @@ void QFontEngineMultiFT::loadEngine(int
+@@ -940,22 +935,18 @@ void QFontEngineMultiFT::loadEngine(int
      Q_ASSERT(at < engines.size());
      Q_ASSERT(engines.at(at) == 0);
  
@@ -199,6 +199,26 @@ Reviewed-by: Eskil
          QFontCache::instance()->insertEngine(key, fontEngine);
      }
 -    FcPatternDestroy(pattern);
++    FcPatternDestroy(match);
      fontEngine->ref.ref();
      engines[at] = fontEngine;
  }
+@@ -1109,17 +1100,14 @@ QFontEngineX11FT::QFontEngineX11FT(FcPat
+     }
+ #endif
+ 
+-    if (!init(face_id, antialias, defaultFormat)) {
+-        FcPatternDestroy(pattern);
++    if (!init(face_id, antialias, defaultFormat))
+         return;
+-    }
+ 
+     if (!freetype->charset) {
+         FcCharSet *cs;
+         FcPatternGetCharSet (pattern, FC_CHARSET, 0, &cs);
+         freetype->charset = FcCharSetCopy(cs);
+     }
+-    FcPatternDestroy(pattern);
+ }
+ 
+ QFontEngineX11FT::~QFontEngineX11FT()
