@@ -23,6 +23,8 @@ shlibs_version := $(shell dpkg-parsechangelog | sed -n 's/^Version: //p' | cut -
 # libqt4-phonon shlibs. Minimum libphonon4 version may need adjusting for new
 # Qt upstream release
 libqt4phonon_shlibs := libphonon4 (>= 4:4.6.0) | libqt4-phonon (= $(current_version))
+# Distribution vendor
+vendor := $(shell dpkg-vendor --query Vendor)
 
 ifneq (,$(filter %-sql-ibase,$(shell dh_listpackages)))
 	extra_configure_opts += -plugin-sql-ibase
@@ -34,7 +36,11 @@ ifeq ($(DEB_HOST_ARCH),arm)
 	extra_configure_opts += -DQT_QLOCALE_USES_FCVT
 endif
 
-ifeq ($(DEB_HOST_ARCH),armhf)
+armv6_architectures := armhf
+ifeq ($(vendor),Ubuntu)
+	armv6_architectures += armel
+endif
+ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(armv6_architectures)))
 	extra_configure_opts += -arch armv6
 endif
 
