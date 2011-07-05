@@ -3,6 +3,11 @@ qt4-x11 (4:4.7.3-5) UNRELEASED; urgency=low
   [ Fathi Boudra ]
   * Add support for vendor specifics in debian/rules.
 
+  [ Pino Toscano ]
+  * Revert the switch to GL ES 2 on armel and armhf architectures for now,
+    as it is binary incompatible and creates issues with code explicitly
+    using GL API. (Closes: #632602)
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 27 Jun 2011 09:15:29 +0300
 
 qt4-x11 (4:4.7.3-4) unstable; urgency=low
