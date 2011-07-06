@@ -1,4 +1,4 @@
-qt4-x11 (4:4.7.3-5) UNRELEASED; urgency=low
+qt4-x11 (4:4.7.3-5) unstable; urgency=low
 
   [ Fathi Boudra ]
   * Add support for vendor specifics in debian/rules.
@@ -8,7 +8,7 @@ qt4-x11 (4:4.7.3-5) UNRELEASED; urgency=low
     as it is binary incompatible and creates issues with code explicitly
     using GL API. (Closes: #632602)
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 27 Jun 2011 09:15:29 +0300
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 06 Jul 2011 03:42:41 +0300
 
 qt4-x11 (4:4.7.3-4) unstable; urgency=low
 
