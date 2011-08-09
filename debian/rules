@@ -53,15 +53,12 @@ else
 endif
 
 ifeq ($(DEB_HOST_ARCH_OS),linux)
-  ifeq ($(DEB_HOST_ARCH),amd64)
+  architectures_64bits := amd64 sparc64
+  ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(architectures_64bits)))
 	platform_arg = linux-g++-64
   else
-    ifeq ($(DEB_HOST_ARCH),sparc64)
-	platform_arg = linux-g++-64
-    else
 	platform_arg = linux-g++
-    endif # sparc64
-  endif # amd64
+  endif
 else
 	platform_arg = glibc-g++
 endif
