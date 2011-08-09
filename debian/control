@@ -707,7 +707,8 @@ Description: Qt 4 QML viewer
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
- This package contains Qt 4 QML viewer (qml). It allows to view QML files.
+ This package contains Qt 4 QML viewer (qml), which can be used for viewing
+ QML files.
 
 Package: qt4-linguist-tools
 Architecture: any
