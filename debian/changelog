@@ -1,4 +1,4 @@
-qt4-x11 (4:4.7.3-6~0) UNRELEASED; urgency=low
+qt4-x11 (4:4.7.3-6) unstable; urgency=low
 
   [ Pino Toscano ]
   * Add patch Check-if-the-interpolators-have-already-been-deleted.patch
@@ -9,7 +9,7 @@ qt4-x11 (4:4.7.3-6~0) UNRELEASED; urgency=low
   * Compile using the linux-g++-64 mkspec on s390x.
   * Improve wording in description of qt4-qmlviewer.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 09 Aug 2011 11:01:35 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 09 Aug 2011 18:27:34 +0200
 
 qt4-x11 (4:4.7.3-5) unstable; urgency=low
 
