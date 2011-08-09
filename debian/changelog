@@ -6,6 +6,7 @@ qt4-x11 (4:4.7.3-6~0) UNRELEASED; urgency=low
     run. (Closes: #635724)
   * Add patch s390x_jscore.diff to add s390/s390x support in JavaScriptCore.
     (Closes: #636544)
+  * Compile using the linux-g++-64 mkspec on s390x.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 09 Aug 2011 11:01:35 +0200
 
