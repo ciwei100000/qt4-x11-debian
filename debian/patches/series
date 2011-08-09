@@ -13,6 +13,7 @@ Prevent_recursion_when_creating_window_surface.patch
 Fixed_bug_in_X11_backend_when_creating_translucent_windows.patch
 Take_Xft.hintstyle_by_default_to_match_the_behavior_of_GTK+.patch
 Fix_fontconfig_usage_in_X11_font_database.patch
+Check-if-the-interpolators-have-already-been-deleted.patch
 
 # qt-copy patches
 0195-compositing-properties.diff

@@ -1,5 +1,9 @@
 qt4-x11 (4:4.7.3-6~0) UNRELEASED; urgency=low
 
+  [ Pino Toscano ]
+  * Add patch Check-if-the-interpolators-have-already-been-deleted.patch
+    to fix QVariantAnimation::registerInterpolator() crash during global dtors
+    run. (Closes: #635724)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 09 Aug 2011 11:01:35 +0200
 
