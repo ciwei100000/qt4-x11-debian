@@ -1,5 +1,7 @@
 qt4-x11 (4:4.7.3-7) unstable; urgency=low
 
+  [ Pino Toscano ]
+  * Use DEB_HOST_ARCH_BITS to really detect 64bit architectures.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 10 Aug 2011 13:50:10 +0200
 

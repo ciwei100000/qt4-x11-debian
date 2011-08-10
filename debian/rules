@@ -53,8 +53,7 @@ else
 endif
 
 ifeq ($(DEB_HOST_ARCH_OS),linux)
-  architectures_64bits := amd64 sparc64 s390x
-  ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(architectures_64bits)))
+  ifeq ($(DEB_HOST_ARCH_BITS),64)
 	platform_arg = linux-g++-64
   else
 	platform_arg = linux-g++
