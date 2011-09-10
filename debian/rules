@@ -53,7 +53,9 @@ else
 endif
 
 ifeq ($(DEB_HOST_ARCH_OS),linux)
-  ifeq ($(DEB_HOST_ARCH_BITS),64)
+  ifneq (,$(filter $(DEB_HOST_ARCH),alpha ia64))
+	platform_arg = linux-g++
+  else ifeq ($(DEB_HOST_ARCH_BITS),64)
 	platform_arg = linux-g++-64
   else
 	platform_arg = linux-g++
