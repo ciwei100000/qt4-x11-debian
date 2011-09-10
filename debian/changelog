@@ -1,9 +1,9 @@
-qt4-x11 (4:4.7.3-7) UNRELEASED; urgency=low
+qt4-x11 (4:4.7.3-8) UNRELEASED; urgency=low
 
   [ Pino Toscano ]
   * Use the linux-g++ mkspec on alpha and ia64. (Closes: #640981)
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 10 Aug 2011 14:00:11 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 10 Sep 2011 12:34:54 +0200
 
 qt4-x11 (4:4.7.3-7) unstable; urgency=low
 
