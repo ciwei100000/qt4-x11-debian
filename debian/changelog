@@ -3,6 +3,9 @@ qt4-x11 (4:4.7.3-8) UNRELEASED; urgency=low
   [ Pino Toscano ]
   * Use the linux-g++ mkspec on alpha and ia64. (Closes: #640981)
 
+  [ Sune Vuorela ]
+  * Switch to firebird 2.5 given that 2.1 is currently broken.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 10 Sep 2011 12:34:54 +0200
 
 qt4-x11 (4:4.7.3-7) unstable; urgency=low
