@@ -1,4 +1,4 @@
-qt4-x11 (4:4.7.3-8) UNRELEASED; urgency=low
+qt4-x11 (4:4.7.3-8) unstable; urgency=low
 
   [ Pino Toscano ]
   * Use the linux-g++ mkspec on alpha and ia64. (Closes: #640981)
