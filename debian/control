@@ -301,7 +301,7 @@ Description: Qt 4 XML patterns module
 
 Package: libqt4-dbus
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}, qdbus
 Replaces: libqt4-core (<< 4.4.0~beta1-1), libqt4-dev (<< 4:4.7.1)
 Breaks: libqt4-core (<< 4.4.0~beta1-1), libqt4-dev (<< 4:4.7.1)
 Description: Qt 4 D-Bus module
@@ -724,6 +724,19 @@ Description: Qt 4 Linguist tools
  that finds the translatable strings in the specified source, header and
  Qt Designer interface files, and produces or updates .ts translation files.
  lrelease is a command line tool that produces QM files out of TS files.
+
+Package: qdbus
+Architecture: any
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Breaks: libqt4-dbus (<< 4:4.7.4-1)
+Replaces: libqt4-dbus (<< 4:4.7.4-1)
+Description: Qt 4 D-Bus tool
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains qdbus, a command-line tool interface to D-Bus that uses
+ the QtDBus library.
 
 Package: qt4-doc
 Architecture: all
