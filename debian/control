@@ -445,6 +445,7 @@ Depends: ${misc:Depends}, ${shlibs:Depends}
 Suggests: libqt4-declarative-folderlistmodel,
           libqt4-declarative-gestures,
           libqt4-declarative-particles,
+          libqt4-declarative-shaders,
           qt4-qmlviewer
 Description: Qt 4 Declarative module
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -479,6 +480,15 @@ Description: Qt 4 particles QML plugin
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains the particles QML plugin for QtDeclarative.
+
+Package: libqt4-declarative-shaders
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Qt 4 shaders QML plugin
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the shaders QML plugin for QtDeclarative.
 
 Package: libqt4-dev
 Architecture: any
