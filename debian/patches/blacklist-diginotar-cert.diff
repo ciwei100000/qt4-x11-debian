@@ -1,10 +1,13 @@
 Taken from upstream. Will be in post 4.7.4 releases.
 http://qt.nokia.com/files/qt-patches/blacklist-diginotar-certs.diff/at_download/file
-diff --git a/src/network/ssl/qsslcertificate.cpp b/src/network/ssl/qsslcertificate.cpp
-index 328c5c2..1ae98f4 100644
+---
+ src/network/ssl/qsslcertificate.cpp    |   45 +++++++++++++++++++++++++--------
+ src/network/ssl/qsslsocket_openssl.cpp |   16 +++++++----
+ 2 files changed, 45 insertions(+), 16 deletions(-)
+
 --- a/src/network/ssl/qsslcertificate.cpp
 +++ b/src/network/ssl/qsslcertificate.cpp
-@@ -803,22 +803,47 @@ QList<QSslCertificate> QSslCertificatePrivate::certificatesFromDer(const QByteAr
+@@ -803,22 +803,47 @@ QList<QSslCertificate> QSslCertificatePr
  // These certificates are known to be fraudulent and were created during the comodo
  // compromise. See http://www.comodo.com/Comodo-Fraud-Incident-2011-03-23.html
  static const char *certificate_blacklist[] = {
@@ -62,11 +65,9 @@ index 328c5c2..1ae98f4 100644
              return true;
      }
      return false;
-diff --git a/src/network/ssl/qsslsocket_openssl.cpp b/src/network/ssl/qsslsocket_openssl.cpp
-index 141d80a..b8e6c4c 100644
 --- a/src/network/ssl/qsslsocket_openssl.cpp
 +++ b/src/network/ssl/qsslsocket_openssl.cpp
-@@ -1193,12 +1193,16 @@ bool QSslSocketBackendPrivate::startHandshake()
+@@ -1193,12 +1193,16 @@ bool QSslSocketBackendPrivate::startHand
      X509 *x509 = q_SSL_get_peer_certificate(ssl);
      configuration.peerCertificate = QSslCertificatePrivate::QSslCertificate_from_X509(x509);
      q_X509_free(x509);

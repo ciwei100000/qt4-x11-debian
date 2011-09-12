@@ -8,8 +8,8 @@ Author: Joonas Tanskanen <joonas.tanskanen@sasken.com>
 
 --- a/src/gui/kernel/qapplication.cpp
 +++ b/src/gui/kernel/qapplication.cpp
-@@ -1013,6 +1013,11 @@ void QApplicationPrivate::initialize()
-     QApplicationPrivate::wheel_scroll_lines = 3;
+@@ -1021,6 +1021,11 @@ void QApplicationPrivate::initialize()
+     q->setAttribute(Qt::AA_S60DisablePartialScreenInputMode);
  #endif
  
 +    if(qgetenv("QT_USE_DRAG_DISTANCE").toInt() > 0) {

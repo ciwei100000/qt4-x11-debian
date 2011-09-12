@@ -22,7 +22,7 @@ Date:   Fri Feb 4 12:39:51 2011 +0100
 
 --- a/src/gui/gui.pro
 +++ b/src/gui/gui.pro
-@@ -65,15 +65,14 @@ symbian {
+@@ -63,15 +63,14 @@ symbian {
  neon:*-g++* {
      DEFINES += QT_HAVE_NEON
      HEADERS += $$NEON_HEADERS

@@ -14,7 +14,7 @@ Date:   Mon Dec 20 13:04:23 2010 +0100
 
 --- a/src/gui/painting/qpaintengine_raster.cpp
 +++ b/src/gui/painting/qpaintengine_raster.cpp
-@@ -5139,7 +5139,8 @@ void QSpanData::setup(const QBrush &brus
+@@ -5154,7 +5154,8 @@ void QSpanData::setup(const QBrush &brus
      case Qt::SolidPattern: {
          type = Solid;
          QColor c = qbrush_color(brush);

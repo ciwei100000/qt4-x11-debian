@@ -45,7 +45,7 @@ Date:   Mon Nov 1 12:49:41 2010 +0100
              SrcOverBlendFunc func = qBlendFunctions[d->rasterBuffer->format][img.format()];
              if (func) {
                  QPointF pt(r.x() + s->matrix.dx(), r.y() + s->matrix.dy());
-@@ -4289,11 +4288,19 @@ void QRasterPaintEnginePrivate::recalcul
+@@ -4304,11 +4303,19 @@ void QRasterPaintEnginePrivate::recalcul
      QRasterPaintEngineState *s = q->state();
  
      s->flags.fast_images = !(s->renderHints & QPainter::SmoothPixmapTransform)

@@ -92,7 +92,7 @@ Forwarded: not-needed
      if [ "$VERBOSE" = "yes" ]; then
 --- a/configure
 +++ b/configure
-@@ -4596,7 +4596,7 @@ END {
+@@ -4568,7 +4568,7 @@ END {
  }
  
  # build qmake
@@ -101,7 +101,7 @@ Forwarded: not-needed
      echo "Creating qmake. Please wait..."
  
      OLD_QCONFIG_H=
-@@ -8033,8 +8033,8 @@ QMAKE_ABSOLUTE_SOURCE_ROOT = \$\$QT_SOUR
+@@ -7996,8 +7996,8 @@ QMAKE_ABSOLUTE_SOURCE_ROOT = \$\$QT_SOUR
  QMAKE_MOC_SRC    = \$\$QT_BUILD_TREE/src/moc
  
  #local paths that cannot be queried from the QT_INSTALL_* properties while building QTDIR
@@ -112,7 +112,7 @@ Forwarded: not-needed
  QMAKE_UIC3       = \$\$QT_BUILD_TREE/bin/uic3
  QMAKE_RCC        = \$\$QT_BUILD_TREE/bin/rcc
  QMAKE_QDBUSXML2CPP = \$\$QT_BUILD_TREE/bin/qdbusxml2cpp
-@@ -8435,11 +8435,11 @@ EXEC=""
+@@ -8400,11 +8400,11 @@ EXEC=""
  
  echo "Finding project files. Please wait..."
  if [ "$CFG_NOPROCESS" != "yes" ]; then
@@ -126,7 +126,7 @@ Forwarded: not-needed
      fi
  fi
  
-@@ -8626,7 +8626,7 @@ for file in .projects .projects.3; do
+@@ -8591,7 +8591,7 @@ for file in .projects .projects.3; do
          QMAKE_SPEC_ARGS="-spec $SPEC"
          echo $ECHO_N "  for $a$ECHO_C"
  
@@ -137,7 +137,7 @@ Forwarded: not-needed
              echo " (fast)"
 --- a/projects.pro
 +++ b/projects.pro
-@@ -153,7 +153,7 @@ qmake.path=$$[QT_INSTALL_BINS]
+@@ -148,7 +148,7 @@ qmake.path=$$[QT_INSTALL_BINS]
  win32 {
     qmake.files=$$QT_BUILD_TREE/bin/qmake.exe
  } else {

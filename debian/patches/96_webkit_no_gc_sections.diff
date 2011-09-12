@@ -13,7 +13,7 @@ Last-Update: 2010-05-31 (mipsel added)
 
 --- a/src/3rdparty/webkit/WebCore/WebCore.pro
 +++ b/src/3rdparty/webkit/WebCore/WebCore.pro
-@@ -90,7 +90,7 @@ unix {
+@@ -89,7 +89,7 @@ unix {
  }
  
  unix:!mac:*-g++*:QMAKE_CXXFLAGS += -ffunction-sections -fdata-sections 
