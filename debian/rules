@@ -244,7 +244,7 @@ override_dh_auto_install:
 	                          debian/tmp/usr/include/
 
 	# Fix wrong path in pkgconfig files
-	find $(CURDIR)/debian/tmp/usr/lib/pkgconfig -type f -name '*.pc' \
+	find $(CURDIR)/debian/tmp/usr/lib/*/pkgconfig -type f -name '*.pc' \
 		-exec perl -pi -e "s, -L$(CURDIR)/?\S+,,g" {} \;
 	# Fix wrong path in prl files
 	find $(CURDIR)/debian/tmp/usr/lib -type f -name '*.prl' \
@@ -276,10 +276,10 @@ override_dh_auto_install:
 	rm -f debian/tmp//usr/share/qt4/mkspecs/modules/qt_webkit_version.pri
 
 	# Remove phonon development files
-	rm -f debian/tmp/usr/lib/libphonon.la
-	rm -f debian/tmp/usr/lib/libphonon.prl
-	rm -f debian/tmp/usr/lib/libphonon.so
-	rm -f debian/tmp/usr/lib/pkgconfig/phonon.pc
+	rm -f debian/tmp/usr/lib/*/libphonon.la
+	rm -f debian/tmp/usr/lib/*/libphonon.prl
+	rm -f debian/tmp/usr/lib/*/libphonon.so
+	rm -f debian/tmp/usr/lib/*/pkgconfig/phonon.pc
 	rm -rf debian/tmp/usr/include/qt4/phonon
 
 	# Remove leftover directories
