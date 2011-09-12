@@ -1,6 +1,7 @@
 qt4-x11 (4:4.7.4-1) UNRELEASED; urgency=low
 
   * New upstream release.
+  * Add Pino Toscano to Uploaders.
   * Remove patches:
     - Fix_GL_problems_on_stock_1.4_SGX_drivers.patch - stolen upstream.
     - Fixed_missing_text_when_using_static_text_items_in_GL_2_engine.patch -
