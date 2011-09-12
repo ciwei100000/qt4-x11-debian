@@ -1,6 +1,16 @@
 qt4-x11 (4:4.7.4-1) UNRELEASED; urgency=low
 
   * New upstream release.
+  * Remove patches:
+    - Fix_GL_problems_on_stock_1.4_SGX_drivers.patch - stolen upstream.
+    - Fixed_missing_text_when_using_static_text_items_in_GL_2_engine.patch -
+      stolen upstream.
+    - Prevent_recursion_when_creating_window_surface.patch - stolen upstream.
+    - Check-if-the-interpolators-have-already-been-deleted.patch - stolen
+      upstream.
+    - 21_qt_ia32_library_path.diff - interacts incompatibly with the multiarch
+      path resolution and should be obsolete anyway now that multiarch is
+      available: we should drop qt from the next ia32-libs upload.
 
  -- Fathi Boudra <fabo@debian.org>  Mon, 12 Sep 2011 08:52:33 +0300
 
