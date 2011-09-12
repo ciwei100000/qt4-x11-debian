@@ -12,9 +12,14 @@ qt4-x11 (4:4.7.4-1) UNRELEASED; urgency=low
     - 21_qt_ia32_library_path.diff - interacts incompatibly with the multiarch
       path resolution and should be obsolete anyway now that multiarch is
       available: we should drop qt from the next ia32-libs upload.
+  * Add patches:
+    - qt-multiarch-plugin-path-compat.diff - include legacy pre-multiarch
+      plugin path.
   * Break qdbus out into a separate 'qdbus' package and make it a dependency of
     libqt4-dbus, because some things will use this at runtime. It makes
     libqt4-dbus genuinely multiarch-installable.
+  * Update debian/control: mark Qt libraries as Multi-Arch.
+  * Update debian/rules: add DEB_HOST_MULTIARCH support for libdir/plugindir.
 
  -- Fathi Boudra <fabo@debian.org>  Mon, 12 Sep 2011 08:52:33 +0300
 
