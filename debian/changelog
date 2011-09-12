@@ -21,6 +21,8 @@ qt4-x11 (4:4.7.4-1) UNRELEASED; urgency=low
   * Update debian/control: mark Qt libraries as Multi-Arch.
   * Update debian/rules: add DEB_HOST_MULTIARCH support for libdir/plugindir.
   * Update debian/*.install: update paths for multiarch.
+  * Update debian/libqt4-declarative.install: rename libtcpserver.so to
+    libqmldbg_tcp.so.
 
  -- Fathi Boudra <fabo@debian.org>  Mon, 12 Sep 2011 08:52:33 +0300
 
