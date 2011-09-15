@@ -1,6 +1,7 @@
 qt4-x11 (4:4.7.4-1) UNRELEASED; urgency=low
 
   * New upstream release.
+    - QTreeView crash in indexRowSizeHint/itemHeight. (Closes: #632855)
   * Add Pino Toscano to Uploaders.
   * Remove patches:
     - Fix_GL_problems_on_stock_1.4_SGX_drivers.patch - stolen upstream.
