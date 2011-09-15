@@ -19,6 +19,7 @@ qt4-x11 (4:4.7.4-1) UNRELEASED; urgency=low
       (Closes: #641738)
     - openssl_no_ssl2.patch - OpenSSL in Debian dropped the insecure SSLv2
       protocol. (Closes: #640210)
+    - Remove_QtHelp_dependency_on_QtXml.patch - (Closes: #641753)
   * Break qdbus out into a separate 'qdbus' package and make it a dependency of
     libqt4-dbus, because some things will use this at runtime. It makes
     libqt4-dbus genuinely multiarch-installable.
