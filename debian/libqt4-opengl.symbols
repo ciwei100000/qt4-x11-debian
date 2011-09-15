@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.2 amd64 armel ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sparc
+# SymbolsHelper-Confirmed: 4:4.7.4 amd64
 libQtOpenGL.so.4 libqt4-opengl #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z18qt_gl_library_namev@Base 4:4.5.3
@@ -67,6 +67,8 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  (optional=external)_ZN12QMutexLockerD2Ev@Base 4:4.7.2
  (optional=external)_ZN12QWriteLockerD1Ev@Base 4:4.7.2
  (optional=external)_ZN12QWriteLockerD2Ev@Base 4:4.7.2
+ _ZN13QGLPixmapData15fromImageReaderEP12QImageReader6QFlagsIN2Qt19ImageConversionFlagEE@Base 4:4.7.4
+ _ZN13QGLPixmapData20createPixmapForImageER6QImage6QFlagsIN2Qt19ImageConversionFlagEEb@Base 4:4.7.4
  _ZN13QGLPixmapData4copyEPK11QPixmapDataRK5QRect@Base 4:4.7.0~rc1
  _ZN13QGLPixmapData4fillERK6QColor@Base 4:4.7.0~rc1
  _ZN13QGLPixmapData6resizeEii@Base 4:4.7.0~rc1

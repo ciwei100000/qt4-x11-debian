@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.3 amd64
+# SymbolsHelper-Confirmed: 4:4.7.4 amd64
 libQtCLucene.so.4 libqtcore4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN12QCLuceneHits2idEi@Base 4:4.5.3
@@ -448,6 +448,16 @@ libQtCLucene.so.4 libqtcore4 #MINVER#
  (optional=templinst|arch=armel)_ZNSt12_Vector_baseIPN6lucene6search13BooleanClauseESaIS3_EED2Ev@Base 4:4.7.2
  (optional=templinst|arch=armel)_ZNSt12_Vector_baseIPwSaIS0_EED1Ev@Base 4:4.7.2
  (optional=templinst|arch=armel)_ZNSt12_Vector_baseIPwSaIS0_EED2Ev@Base 4:4.7.2
+ (optional=templinst)_ZNSt3mapIPN6lucene5index4TermEPNS1_14DocumentWriter7PostingENS2_7CompareESaISt4pairIKS3_S6_EEED1Ev@Base 4:4.7.4
+ (optional=templinst)_ZNSt3mapIPN6lucene5index4TermEPNS1_14DocumentWriter7PostingENS2_7CompareESaISt4pairIKS3_S6_EEED2Ev@Base 4:4.7.4
+ (optional=templinst)_ZNSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_14FieldCacheAutoENS3_7CompareESaISt4pairIKS4_S6_EEED1Ev@Base 4:4.7.4
+ (optional=templinst)_ZNSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_14FieldCacheAutoENS3_7CompareESaISt4pairIKS4_S6_EEED2Ev@Base 4:4.7.4
+ (optional=templinst)_ZNSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_18ScoreDocComparatorENS3_7CompareESaISt4pairIKS4_S6_EEED1Ev@Base 4:4.7.4
+ (optional=templinst)_ZNSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_18ScoreDocComparatorENS3_7CompareESaISt4pairIKS4_S6_EEED2Ev@Base 4:4.7.4
+ (optional=templinst)_ZNSt4listIPN6lucene5index18CompoundFileWriter15WriterFileEntryESaIS4_EED1Ev@Base 4:4.7.4
+ (optional=templinst)_ZNSt4listIPN6lucene5index18CompoundFileWriter15WriterFileEntryESaIS4_EED2Ev@Base 4:4.7.4
+ (optional=templinst)_ZNSt4listIPN6lucene6search6ScorerESaIS3_EED1Ev@Base 4:4.7.4
+ (optional=templinst)_ZNSt4listIPN6lucene6search6ScorerESaIS3_EED2Ev@Base 4:4.7.4
  (optional=templinst)_ZNSt6vectorIPKwSaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_@Base 4:4.5.3
  (optional=templinst)_ZNSt6vectorIPN6lucene11queryParser10QueryTokenESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_@Base 4:4.5.3
  (optional=templinst)_ZNSt6vectorIPN6lucene5index11IndexReaderESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_@Base 4:4.5.3
@@ -1270,9 +1280,15 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN12QtConcurrent18ResultIteratorBaseC2EN4QMapIiNS_10ResultItemEE14const_iteratorEi@Base 4:4.5.3
  _ZN12QtConcurrent18ResultIteratorBaseC2Ev@Base 4:4.5.3
  _ZN12QtConcurrent18ResultIteratorBaseppEv@Base 4:4.5.3
+ _ZN12QtConcurrent18UnhandledExceptionD0Ev@Base 4:4.7.4
+ _ZN12QtConcurrent18UnhandledExceptionD1Ev@Base 4:4.7.4
+ _ZN12QtConcurrent18UnhandledExceptionD2Ev@Base 4:4.7.4
  _ZN12QtConcurrent8internal14ExceptionStore12setExceptionERKNS_9ExceptionE@Base 4:4.5.3
  _ZN12QtConcurrent8internal14ExceptionStore22throwPossibleExceptionEv@Base 4:4.5.3
  _ZN12QtConcurrent8internal14ExceptionStore9exceptionEv@Base 4:4.5.3
+ _ZN12QtConcurrent9ExceptionD0Ev@Base 4:4.7.4
+ _ZN12QtConcurrent9ExceptionD1Ev@Base 4:4.7.4
+ _ZN12QtConcurrent9ExceptionD2Ev@Base 4:4.7.4
  _ZN13QElapsedTimer10invalidateEv@Base 4:4.7.0~beta1
  _ZN13QElapsedTimer11isMonotonicEv@Base 4:4.7.0~beta1
  _ZN13QElapsedTimer5startEv@Base 4:4.7.0~beta1
@@ -1563,6 +1579,8 @@ libQtCore.so.4 libqtcore4 #MINVER#
  (optional=inline|arch=hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
  (optional=inline|arch=sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN15QDateTimeParser11parseFormatERK7QString@Base 4:4.5.3
+ _ZN15QDateTimeParser9StateNodeD1Ev@Base 4:4.7.4
+ _ZN15QDateTimeParser9StateNodeD2Ev@Base 4:4.7.4
  _ZN15QLinkedListData11shared_nullE@Base 4:4.5.3
  _ZN15QObjectUserDataD0Ev@Base 4:4.5.3
  _ZN15QObjectUserDataD1Ev@Base 4:4.5.3
@@ -1967,6 +1985,9 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN18QFutureWatcherBase9setPausedEb@Base 4:4.5.3
  _ZN18QFutureWatcherBaseC1EP7QObject@Base 4:4.5.3
  _ZN18QFutureWatcherBaseC2EP7QObject@Base 4:4.5.3
+ _ZN18QFutureWatcherBaseD0Ev@Base 4:4.7.4
+ _ZN18QFutureWatcherBaseD1Ev@Base 4:4.7.4
+ _ZN18QFutureWatcherBaseD2Ev@Base 4:4.7.4
  _ZN18QPropertyAnimation11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN18QPropertyAnimation11qt_metacastEPKc@Base 4:4.6.1
  _ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1_@Base 4:4.6.1
@@ -2214,6 +2235,8 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN20QStateMachinePrivateD2Ev@Base 4:4.6.1
  _ZN20QXmlStreamAttributes6appendERK7QStringS2_@Base 4:4.5.3
  _ZN20QXmlStreamAttributes6appendERK7QStringS2_S2_@Base 4:4.5.3
+ _ZN20QXmlStreamAttributesD1Ev@Base 4:4.7.4
+ _ZN20QXmlStreamAttributesD2Ev@Base 4:4.7.4
  _ZN21QAbstractConcatenable16convertFromAsciiEPKciRP5QChar@Base 4:4.6.1
  _ZN21QObjectCleanupHandler11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN21QObjectCleanupHandler11qt_metacastEPKc@Base 4:4.5.3
@@ -2262,6 +2285,9 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN23QEventTransitionPrivate3getEP16QEventTransition@Base 4:4.6.1
  _ZN23QEventTransitionPrivateC1Ev@Base 4:4.6.1
  _ZN23QEventTransitionPrivateC2Ev@Base 4:4.6.1
+ _ZN23QEventTransitionPrivateD0Ev@Base 4:4.7.4
+ _ZN23QEventTransitionPrivateD1Ev@Base 4:4.7.4
+ _ZN23QEventTransitionPrivateD2Ev@Base 4:4.7.4
  _ZN23QParallelAnimationGroup11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN23QParallelAnimationGroup11qt_metacastEPKc@Base 4:4.6.1
  _ZN23QParallelAnimationGroup11updateStateEN18QAbstractAnimation5StateES1_@Base 4:4.6.1
@@ -2315,6 +2341,8 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN24QXmlStreamEntityResolverD1Ev@Base 4:4.5.3
  _ZN24QXmlStreamEntityResolverD2Ev@Base 4:4.5.3
  _ZN25QAbstractItemModelPrivate10Persistent16insertMultiAtEndERK11QModelIndexP25QPersistentModelIndexData@Base 4:4.5.3
+ _ZN25QAbstractItemModelPrivate10PersistentD1Ev@Base 4:4.7.4
+ _ZN25QAbstractItemModelPrivate10PersistentD2Ev@Base 4:4.7.4
  _ZN25QAbstractItemModelPrivate10itemsMovedERK11QModelIndexiiS2_iN2Qt11OrientationE@Base 4:4.6.1
  _ZN25QAbstractItemModelPrivate11rowsRemovedERK11QModelIndexii@Base 4:4.5.3
  _ZN25QAbstractItemModelPrivate12rowsInsertedERK11QModelIndexii@Base 4:4.5.3
@@ -2331,6 +2359,9 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN25QAbstractItemModelPrivate24columnsAboutToBeInsertedERK11QModelIndexii@Base 4:4.5.3
  _ZN25QAbstractItemModelPrivate25removePersistentIndexDataEP25QPersistentModelIndexData@Base 4:4.5.3
  _ZN25QAbstractItemModelPrivate9allowMoveERK11QModelIndexiiS2_iN2Qt11OrientationE@Base 4:4.6.1
+ _ZN25QAbstractItemModelPrivateD0Ev@Base 4:4.7.4
+ _ZN25QAbstractItemModelPrivateD1Ev@Base 4:4.7.4
+ _ZN25QAbstractItemModelPrivateD2Ev@Base 4:4.7.4
  _ZN25QSequentialAnimationGroup11insertPauseEii@Base 4:4.6.1
  _ZN25QSequentialAnimationGroup11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN25QSequentialAnimationGroup11qt_metacastEPKc@Base 4:4.6.1
@@ -2359,6 +2390,12 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN26QAbstractTransitionPrivate3getEP19QAbstractTransition@Base 4:4.6.1
  _ZN26QAbstractTransitionPrivateC1Ev@Base 4:4.6.1
  _ZN26QAbstractTransitionPrivateC2Ev@Base 4:4.6.1
+ _ZN26QAbstractTransitionPrivateD0Ev@Base 4:4.7.4
+ _ZN26QAbstractTransitionPrivateD1Ev@Base 4:4.7.4
+ _ZN26QAbstractTransitionPrivateD2Ev@Base 4:4.7.4
+ _ZN26QTextCodecFactoryInterfaceD0Ev@Base 4:4.7.4
+ _ZN26QTextCodecFactoryInterfaceD1Ev@Base 4:4.7.4
+ _ZN26QTextCodecFactoryInterfaceD2Ev@Base 4:4.7.4
  _ZN27QAbstractFileEngineIterator7setPathERK7QString@Base 4:4.5.3
  _ZN27QAbstractFileEngineIteratorC1E6QFlagsIN4QDir6FilterEERK11QStringList@Base 4:4.5.3
  _ZN27QAbstractFileEngineIteratorC2E6QFlagsIN4QDir6FilterEERK11QStringList@Base 4:4.5.3
@@ -2373,6 +2410,9 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN27QEventDispatcherGlibPrivate31runTimersOnceWithNormalPriorityEv@Base 4:4.6.1
  _ZN27QEventDispatcherGlibPrivateC1EP13_GMainContext@Base 4:4.5.3
  _ZN27QEventDispatcherGlibPrivateC2EP13_GMainContext@Base 4:4.5.3
+ _ZN27QEventDispatcherGlibPrivateD0Ev@Base 4:4.7.4
+ _ZN27QEventDispatcherGlibPrivateD1Ev@Base 4:4.7.4
+ _ZN27QEventDispatcherGlibPrivateD2Ev@Base 4:4.7.4
  _ZN27QEventDispatcherUNIXPrivate8doSelectE6QFlagsIN10QEventLoop17ProcessEventsFlagEEP7timeval@Base 4:4.5.3
  _ZN27QEventDispatcherUNIXPrivateC1Ev@Base 4:4.5.3
  _ZN27QEventDispatcherUNIXPrivateC2Ev@Base 4:4.5.3
@@ -2405,6 +2445,9 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN31QAbstractEventDispatcherPrivate14releaseTimerIdEi@Base 4:4.5.3
  _ZN31QAbstractEventDispatcherPrivate15allocateTimerIdEv@Base 4:4.5.3
  _ZN31QAbstractEventDispatcherPrivate4initEv@Base 4:4.5.3
+ _ZN31QAbstractEventDispatcherPrivateD0Ev@Base 4:4.7.4
+ _ZN31QAbstractEventDispatcherPrivateD1Ev@Base 4:4.7.4
+ _ZN31QAbstractEventDispatcherPrivateD2Ev@Base 4:4.7.4
  _ZN31QNonContiguousByteDeviceFactory4wrapEP24QNonContiguousByteDevice@Base 4:4.6.1
  _ZN31QNonContiguousByteDeviceFactory6createEP10QByteArray@Base 4:4.6.1
  _ZN31QNonContiguousByteDeviceFactory6createEP11QRingBuffer@Base 4:4.6.1
@@ -3374,6 +3417,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK11QMetaMethod3tagEv@Base 4:4.5.3
  _ZNK11QMetaMethod6accessEv@Base 4:4.5.3
  _ZNK11QMetaMethod6invokeEP7QObjectN2Qt14ConnectionTypeE22QGenericReturnArgument16QGenericArgumentS5_S5_S5_S5_S5_S5_S5_S5_S5_@Base 4:4.5.3
+ _ZNK11QMetaMethod8revisionEv@Base 4:4.7.4
  _ZNK11QMetaMethod8typeNameEv@Base 4:4.5.3
  _ZNK11QMetaMethod9signatureEv@Base 4:4.5.3
  _ZNK11QMetaObject10enumeratorEi@Base 4:4.5.3
@@ -3515,6 +3559,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK13QMetaProperty6isUserEPK7QObject@Base 4:4.5.3
  _ZNK13QMetaProperty7isFinalEv@Base 4:4.6.1
  _ZNK13QMetaProperty8isStoredEPK7QObject@Base 4:4.5.3
+ _ZNK13QMetaProperty8revisionEv@Base 4:4.7.4
  _ZNK13QMetaProperty8typeNameEv@Base 4:4.5.3
  _ZNK13QMetaProperty8userTypeEv@Base 4:4.5.3
  _ZNK13QPluginLoader10metaObjectEv@Base 4:4.5.3

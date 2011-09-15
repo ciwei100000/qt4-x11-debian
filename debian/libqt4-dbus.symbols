@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.2 amd64 armel ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sparc
+# SymbolsHelper-Confirmed: 4:4.7.4 amd64
 libQtDBus.so.4 libqt4-dbus #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z14qDBusReplyFillRK12QDBusMessageR10QDBusErrorR8QVariant@Base 4:4.5.3
@@ -15,6 +15,8 @@ libQtDBus.so.4 libqt4-dbus #MINVER#
  _ZN10QDBusErrorC2EPK9DBusError@Base 4:4.5.3
  _ZN10QDBusErrorC2ERK12QDBusMessage@Base 4:4.5.3
  _ZN10QDBusErrorC2ERKS_@Base 4:4.5.3
+ _ZN10QDBusErrorD1Ev@Base 4:4.7.4
+ _ZN10QDBusErrorD2Ev@Base 4:4.7.4
  _ZN10QDBusErroraSERKS_@Base 4:4.5.3
  _ZN11QDBusServer11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN11QDBusServer11qt_metacastEPKc@Base 4:4.5.3
@@ -22,6 +24,9 @@ libQtDBus.so.4 libqt4-dbus #MINVER#
  _ZN11QDBusServer16staticMetaObjectE@Base 4:4.5.3
  _ZN11QDBusServerC1ERK7QStringP7QObject@Base 4:4.5.3
  _ZN11QDBusServerC2ERK7QStringP7QObject@Base 4:4.5.3
+ _ZN11QDBusServerD0Ev@Base 4:4.7.4
+ _ZN11QDBusServerD1Ev@Base 4:4.7.4
+ _ZN11QDBusServerD2Ev@Base 4:4.7.4
  _ZN12QDBusContextC1Ev@Base 4:4.5.3
  _ZN12QDBusContextC2Ev@Base 4:4.5.3
  _ZN12QDBusContextD1Ev@Base 4:4.5.3
@@ -127,10 +132,20 @@ libQtDBus.so.4 libqt4-dbus #MINVER#
  _ZN16QDBusPendingCallD1Ev@Base 4:4.5.3
  _ZN16QDBusPendingCallD2Ev@Base 4:4.5.3
  _ZN16QDBusPendingCallaSERKS_@Base 4:4.5.3
+ _ZN18QDBusIntrospection10ObjectTreeD1Ev@Base 4:4.7.4
+ _ZN18QDBusIntrospection10ObjectTreeD2Ev@Base 4:4.7.4
  _ZN18QDBusIntrospection11parseObjectERK7QStringS2_S2_@Base 4:4.5.3
  _ZN18QDBusIntrospection14parseInterfaceERK7QString@Base 4:4.5.3
  _ZN18QDBusIntrospection15parseInterfacesERK7QString@Base 4:4.5.3
  _ZN18QDBusIntrospection15parseObjectTreeERK7QStringS2_S2_@Base 4:4.5.3
+ _ZN18QDBusIntrospection6ObjectD1Ev@Base 4:4.7.4
+ _ZN18QDBusIntrospection6ObjectD2Ev@Base 4:4.7.4
+ _ZN18QDBusIntrospection8ArgumentD1Ev@Base 4:4.7.4
+ _ZN18QDBusIntrospection8ArgumentD2Ev@Base 4:4.7.4
+ _ZN18QDBusIntrospection8PropertyD1Ev@Base 4:4.7.4
+ _ZN18QDBusIntrospection8PropertyD2Ev@Base 4:4.7.4
+ _ZN18QDBusIntrospection9InterfaceD1Ev@Base 4:4.7.4
+ _ZN18QDBusIntrospection9InterfaceD2Ev@Base 4:4.7.4
  _ZN19QDBusServiceWatcher11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN19QDBusServiceWatcher11qt_metacastEPKc@Base 4:4.6.1
  _ZN19QDBusServiceWatcher12setWatchModeE6QFlagsINS_13WatchModeFlagEE@Base 4:4.6.1
@@ -218,6 +233,9 @@ libQtDBus.so.4 libqt4-dbus #MINVER#
  _ZN26QDBusAbstractInterfaceBase11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN26QDBusAbstractInterfaceBaseC1ER29QDBusAbstractInterfacePrivateP7QObject@Base 4:4.6.1
  _ZN26QDBusAbstractInterfaceBaseC2ER29QDBusAbstractInterfacePrivateP7QObject@Base 4:4.6.1
+ _ZN26QDBusAbstractInterfaceBaseD0Ev@Base 4:4.7.4
+ _ZN26QDBusAbstractInterfaceBaseD1Ev@Base 4:4.7.4
+ _ZN26QDBusAbstractInterfaceBaseD2Ev@Base 4:4.7.4
  _ZN9QDBusUtil14isValidBusNameERK7QString@Base 4:4.5.3
  _ZN9QDBusUtil16argumentToStringERK8QVariant@Base 4:4.5.3
  _ZN9QDBusUtil16isValidErrorNameERK7QString@Base 4:4.5.3
@@ -383,3 +401,4 @@ libQtDBus.so.4 libqt4-dbus #MINVER#
  _ZrsRK13QDBusArgumentR7QPointF@Base 4:4.5.3
  _ZrsRK13QDBusArgumentR8QVariant@Base 4:4.5.3
  _ZrsRK13QDBusArgumentR9QDateTime@Base 4:4.5.3
+ qt_dbus_metaobject_skip_annotations@Base 4:4.7.4

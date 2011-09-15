@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.2 amd64 armel ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sparc
+# SymbolsHelper-Confirmed: 4:4.7.4 amd64
 libQtDeclarative.so.4 libqt4-declarative #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qmlContextPK7QObject@Base 4:4.7.0~beta1
@@ -13,6 +13,9 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _Z9qmlEnginePK7QObject@Base 4:4.7.0~beta1
  (arch=!armel)_ZN12QDashStroker3endEv@Base 4:4.7.2
  (arch=!armel)_ZN12QDashStroker5beginEPv@Base 4:4.7.2
+ _ZN12QDashStrokerD0Ev@Base 4:4.7.4
+ _ZN12QDashStrokerD1Ev@Base 4:4.7.4
+ _ZN12QDashStrokerD2Ev@Base 4:4.7.4
  (arch=sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.7.0~rc1
  (arch=sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.7.0~rc1
  _ZN15QDeclarativePen10penChangedEv@Base 4:4.7.0~beta1
@@ -21,6 +24,12 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN15QDeclarativePen16staticMetaObjectE@Base 4:4.7.0~beta1
  _ZN15QDeclarativePen8setColorERK6QColor@Base 4:4.7.0~beta1
  _ZN15QDeclarativePen8setWidthEi@Base 4:4.7.0~beta1
+ _ZN15QDeclarativePenD0Ev@Base 4:4.7.4
+ _ZN15QDeclarativePenD1Ev@Base 4:4.7.4
+ _ZN15QDeclarativePenD2Ev@Base 4:4.7.4
+ _ZN15QGraphicsObjectD0Ev@Base 4:4.7.4
+ _ZN15QGraphicsObjectD1Ev@Base 4:4.7.4
+ _ZN15QGraphicsObjectD2Ev@Base 4:4.7.4
  _ZN15QPacketAutoSendC1EP15QPacketProtocol@Base 4:4.7.0~beta1
  _ZN15QPacketAutoSendC2EP15QPacketProtocol@Base 4:4.7.0~beta1
  _ZN15QPacketAutoSendD0Ev@Base 4:4.7.0~beta1
@@ -78,8 +87,10 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN16QDeclarativeItem18keyPressPreHandlerEP9QKeyEvent@Base 4:4.7.0~beta2
  _ZN16QDeclarativeItem18setTransformOriginENS_15TransformOriginE@Base 4:4.7.0~beta1
  _ZN16QDeclarativeItem19childrenRectChangedERK6QRectF@Base 4:4.7.0~beta1
+ _ZN16QDeclarativeItem20implicitWidthChangedEv@Base 4:4.7.4
  _ZN16QDeclarativeItem20keyReleasePreHandlerEP9QKeyEvent@Base 4:4.7.0~beta2
  (subst)_ZN16QDeclarativeItem21baselineOffsetChangedE{qreal}@Base 4:4.7.0~beta1
+ _ZN16QDeclarativeItem21implicitHeightChangedEv@Base 4:4.7.4
  _ZN16QDeclarativeItem21inputMethodPreHandlerEP17QInputMethodEvent@Base 4:4.7.0~beta2
  _ZN16QDeclarativeItem22transformOriginChangedENS_15TransformOriginE@Base 4:4.7.0~beta1
  _ZN16QDeclarativeItem5eventEP6QEvent@Base 4:4.7.0~beta1
@@ -101,24 +112,34 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN16QDeclarativeText11fontChangedERK5QFont@Base 4:4.7.0~beta1
  _ZN16QDeclarativeText11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1
  _ZN16QDeclarativeText11qt_metacastEPKc@Base 4:4.7.0~beta1
+ _ZN16QDeclarativeText11resetHAlignEv@Base 4:4.7.4
  _ZN16QDeclarativeText11setWrapModeENS_8WrapModeE@Base 4:4.7.0~beta1
  _ZN16QDeclarativeText11textChangedERK7QString@Base 4:4.7.0~beta1
  _ZN16QDeclarativeText12colorChangedERK6QColor@Base 4:4.7.0~beta1
  _ZN16QDeclarativeText12setElideModeENS_13TextElideModeE@Base 4:4.7.0~beta1
  _ZN16QDeclarativeText12styleChangedENS_9TextStyleE@Base 4:4.7.0~beta1
  _ZN16QDeclarativeText13linkActivatedERK7QString@Base 4:4.7.0~beta1
+ _ZN16QDeclarativeText13setLineHeightEd@Base 4:4.7.4
  _ZN16QDeclarativeText13setStyleColorERK6QColor@Base 4:4.7.0~beta1
  _ZN16QDeclarativeText13setTextFormatENS_10TextFormatE@Base 4:4.7.0~beta1
  _ZN16QDeclarativeText15geometryChangedERK6QRectFS2_@Base 4:4.7.0~beta1
  _ZN16QDeclarativeText15mousePressEventEP24QGraphicsSceneMouseEvent@Base 4:4.7.0~beta1
  _ZN16QDeclarativeText15wrapModeChangedEv@Base 4:4.7.0~beta1
  _ZN16QDeclarativeText16elideModeChangedENS_13TextElideModeE@Base 4:4.7.0~beta1
+ _ZN16QDeclarativeText16lineCountChangedEv@Base 4:4.7.4
  _ZN16QDeclarativeText16staticMetaObjectE@Base 4:4.7.0~beta1
+ _ZN16QDeclarativeText16truncatedChangedEv@Base 4:4.7.4
  _ZN16QDeclarativeText17componentCompleteEv@Base 4:4.7.0~beta1
+ _ZN16QDeclarativeText17lineHeightChangedEd@Base 4:4.7.4
  _ZN16QDeclarativeText17mouseReleaseEventEP24QGraphicsSceneMouseEvent@Base 4:4.7.0~beta1
+ _ZN16QDeclarativeText17setLineHeightModeENS_14LineHeightModeE@Base 4:4.7.4
  _ZN16QDeclarativeText17styleColorChangedERK6QColor@Base 4:4.7.0~beta1
  _ZN16QDeclarativeText17textFormatChangedENS_10TextFormatE@Base 4:4.7.0~beta1
  _ZN16QDeclarativeText18paintedSizeChangedEv@Base 4:4.7.0~beta2
+ _ZN16QDeclarativeText19setMaximumLineCountEi@Base 4:4.7.4
+ _ZN16QDeclarativeText21lineHeightModeChangedENS_14LineHeightModeE@Base 4:4.7.4
+ _ZN16QDeclarativeText21resetMaximumLineCountEv@Base 4:4.7.4
+ _ZN16QDeclarativeText23maximumLineCountChangedEv@Base 4:4.7.4
  _ZN16QDeclarativeText24verticalAlignmentChangedENS_10VAlignmentE@Base 4:4.7.0~beta1
  _ZN16QDeclarativeText26horizontalAlignmentChangedENS_10HAlignmentE@Base 4:4.7.0~beta1
  _ZN16QDeclarativeText5paintEP8QPainterPK24QStyleOptionGraphicsItemP7QWidget@Base 4:4.7.0~beta1
@@ -180,9 +201,9 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN17QDeclarativeState16staticMetaObjectE@Base 4:4.7.0~beta1
  _ZN17QDeclarativeState20addEntryToRevertListERK18QDeclarativeAction@Base 4:4.7.1
  _ZN17QDeclarativeState22addEntriesToRevertListERK5QListI18QDeclarativeActionE@Base 4:4.7.1
- _ZN17QDeclarativeState23changeValueInRevertListEP7QObjectRK10QByteArrayRK8QVariant@Base 4:4.7.1
- _ZN17QDeclarativeState25changeBindingInRevertListEP7QObjectRK10QByteArrayP27QDeclarativeAbstractBinding@Base 4:4.7.1
- _ZN17QDeclarativeState25removeEntryFromRevertListEP7QObjectRK10QByteArray@Base 4:4.7.1
+ _ZN17QDeclarativeState23changeValueInRevertListEP7QObjectRK7QStringRK8QVariant@Base 4:4.7.4
+ _ZN17QDeclarativeState25changeBindingInRevertListEP7QObjectRK7QStringP27QDeclarativeAbstractBinding@Base 4:4.7.4
+ _ZN17QDeclarativeState25removeEntryFromRevertListEP7QObjectRK7QString@Base 4:4.7.4
  _ZN17QDeclarativeState30removeAllEntriesFromRevertListEP7QObject@Base 4:4.7.1
  _ZN17QDeclarativeState5applyEP22QDeclarativeStateGroupP22QDeclarativeTransitionPS_@Base 4:4.7.0~beta1
  _ZN17QDeclarativeState6cancelEv@Base 4:4.7.0~beta1
@@ -218,6 +239,9 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN17QDeclarativeTimer9triggeredEv@Base 4:4.7.1
  _ZN17QDeclarativeTimerC1EP7QObject@Base 4:4.7.1
  _ZN17QDeclarativeTimerC2EP7QObject@Base 4:4.7.1
+ _ZN17QDeclarativeTimerD0Ev@Base 4:4.7.4
+ _ZN17QDeclarativeTimerD1Ev@Base 4:4.7.4
+ _ZN17QDeclarativeTimerD2Ev@Base 4:4.7.4
  _ZN18QDeclarativeAction17deleteFromBindingEv@Base 4:4.7.0~beta1
  _ZN18QDeclarativeActionC1EP7QObjectRK7QStringP19QDeclarativeContextRK8QVariant@Base 4:4.7.0~beta1
  _ZN18QDeclarativeActionC1EP7QObjectRK7QStringRK8QVariant@Base 4:4.7.0~beta1
@@ -225,6 +249,8 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN18QDeclarativeActionC2EP7QObjectRK7QStringP19QDeclarativeContextRK8QVariant@Base 4:4.7.0~beta1
  _ZN18QDeclarativeActionC2EP7QObjectRK7QStringRK8QVariant@Base 4:4.7.0~beta1
  _ZN18QDeclarativeActionC2Ev@Base 4:4.7.0~beta1
+ _ZN18QDeclarativeActionD1Ev@Base 4:4.7.4
+ _ZN18QDeclarativeActionD2Ev@Base 4:4.7.4
  _ZN18QDeclarativeEngine10setBaseUrlERK4QUrl@Base 4:4.7.0~beta1
  _ZN18QDeclarativeEngine11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1
  _ZN18QDeclarativeEngine11qt_metacastEPKc@Base 4:4.7.0~beta1
@@ -264,14 +290,15 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN18QDeclarativeParser7VariantC2EdRK7QString@Base 4:4.7.0~beta1
  _ZN18QDeclarativeParser7VariantC2Ev@Base 4:4.7.0~beta1
  _ZN18QDeclarativeParser7VariantaSERKS0_@Base 4:4.7.0~beta1
+ _ZN18QDeclarativePixmap10flushCacheEv@Base 4:4.7.4
  _ZN18QDeclarativePixmap15connectFinishedEP7QObjectPKc@Base 4:4.7.0~rc1
  _ZN18QDeclarativePixmap15connectFinishedEP7QObjecti@Base 4:4.7.0~rc1
  _ZN18QDeclarativePixmap23connectDownloadProgressEP7QObjectPKc@Base 4:4.7.0~rc1
  _ZN18QDeclarativePixmap23connectDownloadProgressEP7QObjecti@Base 4:4.7.0~rc1
+ _ZN18QDeclarativePixmap4loadEP18QDeclarativeEngineRK4QUrl6QFlagsINS_6OptionEE@Base 4:4.7.4
  _ZN18QDeclarativePixmap4loadEP18QDeclarativeEngineRK4QUrl@Base 4:4.7.0~rc1
+ _ZN18QDeclarativePixmap4loadEP18QDeclarativeEngineRK4QUrlRK5QSize6QFlagsINS_6OptionEE@Base 4:4.7.4
  _ZN18QDeclarativePixmap4loadEP18QDeclarativeEngineRK4QUrlRK5QSize@Base 4:4.7.0~rc1
- _ZN18QDeclarativePixmap4loadEP18QDeclarativeEngineRK4QUrlRK5QSizeb@Base 4:4.7.0~rc1
- _ZN18QDeclarativePixmap4loadEP18QDeclarativeEngineRK4QUrlb@Base 4:4.7.0~rc1
  _ZN18QDeclarativePixmap5clearEP7QObject@Base 4:4.7.0~rc1
  _ZN18QDeclarativePixmap5clearEv@Base 4:4.7.0~rc1
  _ZN18QDeclarativePixmap9setPixmapERK7QPixmap@Base 4:4.7.0~rc1
@@ -371,6 +398,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN19QDeclarativeAnchors6setTopERK22QDeclarativeAnchorLine@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors7setFillEP15QGraphicsObject@Base 4:4.7.0~beta2
  _ZN19QDeclarativeAnchors7setLeftERK22QDeclarativeAnchorLine@Base 4:4.7.0~beta1
+ _ZN19QDeclarativeAnchors8mirroredEv@Base 4:4.7.4
  _ZN19QDeclarativeAnchors8resetTopEv@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors8setRightERK22QDeclarativeAnchorLine@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchors9resetFillEv@Base 4:4.7.0~beta1
@@ -386,13 +414,18 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN19QDeclarativeBinding10setEnabledEb6QFlagsIN27QDeclarativePropertyPrivate9WriteFlagEE@Base 4:4.7.0~beta1
  _ZN19QDeclarativeBinding11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1
  _ZN19QDeclarativeBinding11qt_metacastEPKc@Base 4:4.7.0~beta1
+ _ZN19QDeclarativeBinding13createBindingEiP7QObjectP19QDeclarativeContextRK7QStringiS1_@Base 4:4.7.4
+ _ZN19QDeclarativeBinding16setEvaluateFlagsE6QFlagsINS_12EvaluateFlagEE@Base 4:4.7.4
  _ZN19QDeclarativeBinding16staticMetaObjectE@Base 4:4.7.0~beta1
  _ZN19QDeclarativeBinding6updateE6QFlagsIN27QDeclarativePropertyPrivate9WriteFlagEE@Base 4:4.7.0~beta1
+ _ZN19QDeclarativeBinding7InvalidE@Base 4:4.7.4
  _ZN19QDeclarativeBinding9setTargetERK20QDeclarativeProperty@Base 4:4.7.0~beta1
  _ZN19QDeclarativeBindingC1EPvP20QDeclarativeRefCountP7QObjectP23QDeclarativeContextDataRK7QStringiS4_@Base 4:4.7.0~beta1
+ _ZN19QDeclarativeBindingC1ERK12QScriptValueP7QObjectP23QDeclarativeContextDataS4_@Base 4:4.7.4
  _ZN19QDeclarativeBindingC1ERK7QStringP7QObjectP19QDeclarativeContextS4_@Base 4:4.7.0~beta1
  _ZN19QDeclarativeBindingC1ERK7QStringP7QObjectP23QDeclarativeContextDataS4_@Base 4:4.7.0~beta1
  _ZN19QDeclarativeBindingC2EPvP20QDeclarativeRefCountP7QObjectP23QDeclarativeContextDataRK7QStringiS4_@Base 4:4.7.0~beta1
+ _ZN19QDeclarativeBindingC2ERK12QScriptValueP7QObjectP23QDeclarativeContextDataS4_@Base 4:4.7.4
  _ZN19QDeclarativeBindingC2ERK7QStringP7QObjectP19QDeclarativeContextS4_@Base 4:4.7.0~beta1
  _ZN19QDeclarativeBindingC2ERK7QStringP7QObjectP23QDeclarativeContextDataS4_@Base 4:4.7.0~beta1
  _ZN19QDeclarativeBindingD0Ev@Base 4:4.7.0~beta1
@@ -471,7 +504,9 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN20QDeclarativeMetaType29registerCustomStringConverterEiPF8QVariantRK7QStringE@Base 4:4.7.0~beta1
  _ZN20QDeclarativeMetaType4copyEiPvPKv@Base 4:4.7.0~beta1
  _ZN20QDeclarativeMetaType6isListEi@Base 4:4.7.0~beta1
+ _ZN20QDeclarativeMetaType7canCopyEi@Base 4:4.7.4
  _ZN20QDeclarativeMetaType7qmlTypeEPK11QMetaObject@Base 4:4.7.0~beta1
+ _ZN20QDeclarativeMetaType7qmlTypeEPK11QMetaObjectRK10QByteArrayii@Base 4:4.7.4
  _ZN20QDeclarativeMetaType7qmlTypeERK10QByteArrayii@Base 4:4.7.0~beta1
  _ZN20QDeclarativeMetaType7qmlTypeEi@Base 4:4.7.0~beta1
  _ZN20QDeclarativeMetaType8isModuleERK10QByteArrayii@Base 4:4.7.0~beta1
@@ -504,7 +539,16 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN20QDeclarativePropertyD1Ev@Base 4:4.7.0~beta1
  _ZN20QDeclarativePropertyD2Ev@Base 4:4.7.0~beta1
  _ZN20QDeclarativePropertyaSERKS_@Base 4:4.7.0~beta1
- _ZN20QMetaPropertyBuilder10setDynamicEb@Base 4:4.7.0~beta1
+ _ZN20QDeclarativeRefCount6addrefEv@Base 4:4.7.4
+ _ZN20QDeclarativeRefCount7releaseEv@Base 4:4.7.4
+ _ZN20QDeclarativeRefCountC1Ev@Base 4:4.7.4
+ _ZN20QDeclarativeRefCountC2Ev@Base 4:4.7.4
+ _ZN20QDeclarativeRefCountD0Ev@Base 4:4.7.4
+ _ZN20QDeclarativeRefCountD1Ev@Base 4:4.7.4
+ _ZN20QDeclarativeRefCountD2Ev@Base 4:4.7.4
+ _ZN20QGraphicsViewPrivateD0Ev@Base 4:4.7.4
+ _ZN20QGraphicsViewPrivateD1Ev@Base 4:4.7.4
+ _ZN20QGraphicsViewPrivateD2Ev@Base 4:4.7.4
  _ZN20QMetaPropertyBuilder11setEditableEb@Base 4:4.7.0~beta1
  _ZN20QMetaPropertyBuilder11setReadableEb@Base 4:4.7.0~beta1
  _ZN20QMetaPropertyBuilder11setWritableEb@Base 4:4.7.0~beta1
@@ -517,10 +561,13 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN20QMetaPropertyBuilder18removeNotifySignalEv@Base 4:4.7.0~beta1
  _ZN20QMetaPropertyBuilder7setUserEb@Base 4:4.7.0~beta1
  _ZN20QMetaPropertyBuilder9setStoredEb@Base 4:4.7.0~beta1
+ _ZN20QXmlStreamAttributesD1Ev@Base 4:4.7.4
+ _ZN20QXmlStreamAttributesD2Ev@Base 4:4.7.4
  _ZN21QDeclarativeComponent11beginCreateEP19QDeclarativeContext@Base 4:4.7.0~beta1
  _ZN21QDeclarativeComponent11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1
  _ZN21QDeclarativeComponent11qt_metacastEPKc@Base 4:4.7.0~beta1
  _ZN21QDeclarativeComponent12createObjectEP7QObject@Base 4:4.7.0~beta2
+ _ZN21QDeclarativeComponent12createObjectEP7QObjectRK12QScriptValue@Base 4:4.7.4
  _ZN21QDeclarativeComponent13statusChangedENS_6StatusE@Base 4:4.7.0~beta1
  _ZN21QDeclarativeComponent14completeCreateEv@Base 4:4.7.0~beta1
  (subst)_ZN21QDeclarativeComponent15progressChangedE{qreal}@Base 4:4.7.0~beta1
@@ -561,9 +608,11 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN21QDeclarativeListModel11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1
  _ZN21QDeclarativeListModel11qt_metacastEPKc@Base 4:4.7.0~beta1
  _ZN21QDeclarativeListModel11setPropertyEiRK7QStringRK8QVariant@Base 4:4.7.0~beta1
+ _ZN21QDeclarativeListModel11setPropertyEiRK7QStringRK8QVariantP5QListIiE@Base 4:4.7.4
  _ZN21QDeclarativeListModel12countChangedEv@Base 4:4.7.0~beta1
  _ZN21QDeclarativeListModel16staticMetaObjectE@Base 4:4.7.0~beta1
  _ZN21QDeclarativeListModel3setEiRK12QScriptValue@Base 4:4.7.0~beta1
+ _ZN21QDeclarativeListModel3setEiRK12QScriptValueP5QListIiE@Base 4:4.7.4
  _ZN21QDeclarativeListModel4moveEiii@Base 4:4.7.0~beta1
  _ZN21QDeclarativeListModel4syncEv@Base 4:4.7.0~beta1
  _ZN21QDeclarativeListModel5agentEv@Base 4:4.7.0~beta1
@@ -595,6 +644,9 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  (subst)_ZN21QDeclarativeRectangle9setRadiusE{qreal}@Base 4:4.7.0~beta1
  _ZN21QDeclarativeRectangleC1EP16QDeclarativeItem@Base 4:4.7.0~beta1
  _ZN21QDeclarativeRectangleC2EP16QDeclarativeItem@Base 4:4.7.0~beta1
+ _ZN21QDeclarativeRectangleD0Ev@Base 4:4.7.4
+ _ZN21QDeclarativeRectangleD1Ev@Base 4:4.7.4
+ _ZN21QDeclarativeRectangleD2Ev@Base 4:4.7.4
  _ZN21QDeclarativeScaleGrid11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1
  _ZN21QDeclarativeScaleGrid11qt_metacastEPKc@Base 4:4.7.0~beta1
  _ZN21QDeclarativeScaleGrid13borderChangedEv@Base 4:4.7.0~beta1
@@ -613,6 +665,9 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN21QDeclarativeValueType16staticMetaObjectE@Base 4:4.7.0~beta1
  _ZN21QDeclarativeValueTypeC1EP7QObject@Base 4:4.7.0~beta1
  _ZN21QDeclarativeValueTypeC2EP7QObject@Base 4:4.7.0~beta1
+ _ZN21QDeclarativeValueTypeD0Ev@Base 4:4.7.4
+ _ZN21QDeclarativeValueTypeD1Ev@Base 4:4.7.4
+ _ZN21QDeclarativeValueTypeD2Ev@Base 4:4.7.4
  _ZN22QDeclarativeDebugQuery11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1
  _ZN22QDeclarativeDebugQuery11qt_metacastEPKc@Base 4:4.7.0~beta1
  _ZN22QDeclarativeDebugQuery12stateChangedENS_5StateE@Base 4:4.7.0~beta1
@@ -620,6 +675,9 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN22QDeclarativeDebugQuery8setStateENS_5StateE@Base 4:4.7.0~beta1
  _ZN22QDeclarativeDebugQueryC1EP7QObject@Base 4:4.7.0~beta1
  _ZN22QDeclarativeDebugQueryC2EP7QObject@Base 4:4.7.0~beta1
+ _ZN22QDeclarativeDebugQueryD0Ev@Base 4:4.7.4
+ _ZN22QDeclarativeDebugQueryD1Ev@Base 4:4.7.4
+ _ZN22QDeclarativeDebugQueryD2Ev@Base 4:4.7.4
  _ZN22QDeclarativeDebugWatch11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1
  _ZN22QDeclarativeDebugWatch11qt_metacastEPKc@Base 4:4.7.0~beta1
  _ZN22QDeclarativeDebugWatch12stateChangedENS_5StateE@Base 4:4.7.0~beta1
@@ -641,11 +699,13 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN22QDeclarativeExpression23setNotifyOnValueChangedEb@Base 4:4.7.0~beta1
  _ZN22QDeclarativeExpression8evaluateEPb@Base 4:4.7.0~beta2
  _ZN22QDeclarativeExpressionC1EP19QDeclarativeContextP7QObjectRK7QStringS3_@Base 4:4.7.0~beta2
+ _ZN22QDeclarativeExpressionC1EP23QDeclarativeContextDataP7QObjectRK12QScriptValueR29QDeclarativeExpressionPrivate@Base 4:4.7.4
  _ZN22QDeclarativeExpressionC1EP23QDeclarativeContextDataP7QObjectRK7QString@Base 4:4.7.0~beta2
  _ZN22QDeclarativeExpressionC1EP23QDeclarativeContextDataP7QObjectRK7QStringR29QDeclarativeExpressionPrivate@Base 4:4.7.0~beta2
  _ZN22QDeclarativeExpressionC1EP23QDeclarativeContextDataPvP20QDeclarativeRefCountP7QObjectRK7QStringiR29QDeclarativeExpressionPrivate@Base 4:4.7.0~beta1
  _ZN22QDeclarativeExpressionC1Ev@Base 4:4.7.0~beta1
  _ZN22QDeclarativeExpressionC2EP19QDeclarativeContextP7QObjectRK7QStringS3_@Base 4:4.7.0~beta2
+ _ZN22QDeclarativeExpressionC2EP23QDeclarativeContextDataP7QObjectRK12QScriptValueR29QDeclarativeExpressionPrivate@Base 4:4.7.4
  _ZN22QDeclarativeExpressionC2EP23QDeclarativeContextDataP7QObjectRK7QString@Base 4:4.7.0~beta2
  _ZN22QDeclarativeExpressionC2EP23QDeclarativeContextDataP7QObjectRK7QStringR29QDeclarativeExpressionPrivate@Base 4:4.7.0~beta2
  _ZN22QDeclarativeExpressionC2EP23QDeclarativeContextDataPvP20QDeclarativeRefCountP7QObjectRK7QStringiR29QDeclarativeExpressionPrivate@Base 4:4.7.0~beta1
@@ -687,6 +747,17 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN22QDeclarativeTransitionD0Ev@Base 4:4.7.0~beta1
  _ZN22QDeclarativeTransitionD1Ev@Base 4:4.7.0~beta1
  _ZN22QDeclarativeTransitionD2Ev@Base 4:4.7.0~beta1
+ _ZN23QDeclarativeApplication11eventFilterEP7QObjectP6QEvent@Base 4:4.7.4
+ _ZN23QDeclarativeApplication11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.4
+ _ZN23QDeclarativeApplication11qt_metacastEPKc@Base 4:4.7.4
+ _ZN23QDeclarativeApplication13activeChangedEv@Base 4:4.7.4
+ _ZN23QDeclarativeApplication16staticMetaObjectE@Base 4:4.7.4
+ _ZN23QDeclarativeApplication22layoutDirectionChangedEv@Base 4:4.7.4
+ _ZN23QDeclarativeApplicationC1EP7QObject@Base 4:4.7.4
+ _ZN23QDeclarativeApplicationC2EP7QObject@Base 4:4.7.4
+ _ZN23QDeclarativeApplicationD0Ev@Base 4:4.7.4
+ _ZN23QDeclarativeApplicationD1Ev@Base 4:4.7.4
+ _ZN23QDeclarativeApplicationD2Ev@Base 4:4.7.4
  _ZN23QDeclarativeDebugClient11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1
  _ZN23QDeclarativeDebugClient11qt_metacastEPKc@Base 4:4.7.0~beta1
  _ZN23QDeclarativeDebugClient11sendMessageERK10QByteArray@Base 4:4.7.0~beta1
@@ -711,6 +782,9 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN23QDeclarativeDebugServer8instanceEv@Base 4:4.7.2
  _ZN23QDeclarativeDebugServerC1Ev@Base 4:4.7.2
  _ZN23QDeclarativeDebugServerC2Ev@Base 4:4.7.2
+ _ZN23QDeclarativeDebugServerD0Ev@Base 4:4.7.4
+ _ZN23QDeclarativeDebugServerD1Ev@Base 4:4.7.4
+ _ZN23QDeclarativeDebugServerD2Ev@Base 4:4.7.4
  _ZN23QDeclarativeDomDocument4loadEP18QDeclarativeEngineRK10QByteArrayRK4QUrl@Base 4:4.7.0~beta1
  _ZN23QDeclarativeDomDocumentC1ERKS_@Base 4:4.7.0~beta1
  _ZN23QDeclarativeDomDocumentC1Ev@Base 4:4.7.0~beta1
@@ -747,6 +821,9 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN23QDeclarativeEngineDebug8addWatchERK34QDeclarativeDebugPropertyReferenceP7QObject@Base 4:4.7.0~beta1
  _ZN23QDeclarativeEngineDebugC1EP27QDeclarativeDebugConnectionP7QObject@Base 4:4.7.0~beta1
  _ZN23QDeclarativeEngineDebugC2EP27QDeclarativeDebugConnectionP7QObject@Base 4:4.7.0~beta1
+ _ZN23QDeclarativeEngineDebugD0Ev@Base 4:4.7.4
+ _ZN23QDeclarativeEngineDebugD1Ev@Base 4:4.7.4
+ _ZN23QDeclarativeEngineDebugD2Ev@Base 4:4.7.4
  _ZN23QDeclarativeItemPrivate10data_clearEP24QDeclarativeListPropertyI7QObjectE@Base 4:4.7.1
  _ZN23QDeclarativeItemPrivate10data_countEP24QDeclarativeListPropertyI7QObjectE@Base 4:4.7.1
  _ZN23QDeclarativeItemPrivate10resetWidthEv@Base 4:4.7.0~beta1
@@ -762,12 +839,17 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN23QDeclarativeItemPrivate14parentPropertyEP7QObjectPvP28QDeclarativeNotifierEndpoint@Base 4:4.7.0~beta1
  _ZN23QDeclarativeItemPrivate15resources_clearEP24QDeclarativeListPropertyI7QObjectE@Base 4:4.7.1
  _ZN23QDeclarativeItemPrivate15resources_countEP24QDeclarativeListPropertyI7QObjectE@Base 4:4.7.0~beta1
+ _ZN23QDeclarativeItemPrivate15setLayoutMirrorEb@Base 4:4.7.4
  _ZN23QDeclarativeItemPrivate15transform_clearEP24QDeclarativeListPropertyI18QGraphicsTransformE@Base 4:4.7.0~beta1
  _ZN23QDeclarativeItemPrivate15transform_countEP24QDeclarativeListPropertyI18QGraphicsTransformE@Base 4:4.7.0~beta1
  _ZN23QDeclarativeItemPrivate16resources_appendEP24QDeclarativeListPropertyI7QObjectEPS1_@Base 4:4.7.0~beta1
  _ZN23QDeclarativeItemPrivate16transformChangedEv@Base 4:4.7.0~beta2
  _ZN23QDeclarativeItemPrivate16transform_appendEP24QDeclarativeListPropertyI18QGraphicsTransformEPS1_@Base 4:4.7.0~beta1
  _ZN23QDeclarativeItemPrivate17setConsistentTimeEx@Base 4:4.7.0~beta2
+ _ZN23QDeclarativeItemPrivate19resolveLayoutMirrorEv@Base 4:4.7.4
+ _ZN23QDeclarativeItemPrivate20implicitWidthChangedEv@Base 4:4.7.4
+ _ZN23QDeclarativeItemPrivate21implicitHeightChangedEv@Base 4:4.7.4
+ _ZN23QDeclarativeItemPrivate23setImplicitLayoutMirrorEbb@Base 4:4.7.4
  _ZN23QDeclarativeItemPrivate24removeItemChangeListenerEP30QDeclarativeItemChangeListener6QFlagsINS_10ChangeTypeEE@Base 4:4.7.0~beta1
  _ZN23QDeclarativeItemPrivate4dataEv@Base 4:4.7.0~beta2
  _ZN23QDeclarativeItemPrivate5startER13QElapsedTimer@Base 4:4.7.0~beta2
@@ -780,6 +862,9 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  (subst)_ZN23QDeclarativeItemPrivate8setWidthE{qreal}@Base 4:4.7.0~beta1
  _ZN23QDeclarativeItemPrivate9resourcesEv@Base 4:4.7.0~beta2
  (subst)_ZN23QDeclarativeItemPrivate9setHeightE{qreal}@Base 4:4.7.0~beta1
+ _ZN23QDeclarativeItemPrivateD0Ev@Base 4:4.7.4
+ _ZN23QDeclarativeItemPrivateD1Ev@Base 4:4.7.4
+ _ZN23QDeclarativeItemPrivateD2Ev@Base 4:4.7.4
  _ZN23QDeclarativePropertyMap11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1
  _ZN23QDeclarativePropertyMap11qt_metacastEPKc@Base 4:4.7.0~beta1
  _ZN23QDeclarativePropertyMap12valueChangedERK7QStringRK8QVariant@Base 4:4.7.0~beta1
@@ -793,6 +878,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN23QDeclarativePropertyMapD2Ev@Base 4:4.7.0~beta1
  _ZN23QDeclarativePropertyMapixERK7QString@Base 4:4.7.0~beta1
  _ZN24QDeclarativeCustomParser11clearErrorsEv@Base 4:4.7.0~beta1
+ _ZN24QDeclarativeCustomParser14rewriteBindingERK7QStringRK10QByteArray@Base 4:4.7.4
  _ZN24QDeclarativeCustomParser5errorERK28QDeclarativeCustomParserNodeRK7QString@Base 4:4.7.0~beta1
  _ZN24QDeclarativeCustomParser5errorERK32QDeclarativeCustomParserPropertyRK7QString@Base 4:4.7.0~beta1
  _ZN24QDeclarativeCustomParser5errorERK7QString@Base 4:4.7.0~beta2
@@ -862,6 +948,9 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN25QDeclarativeListReferenceD1Ev@Base 4:4.7.0~beta1
  _ZN25QDeclarativeListReferenceD2Ev@Base 4:4.7.0~beta1
  _ZN25QDeclarativeListReferenceaSERKS_@Base 4:4.7.0~beta1
+ _ZN26QAbstractScrollAreaPrivateD0Ev@Base 4:4.7.4
+ _ZN26QAbstractScrollAreaPrivateD1Ev@Base 4:4.7.4
+ _ZN26QAbstractScrollAreaPrivateD2Ev@Base 4:4.7.4
  _ZN26QDeclarativeBasePositioner10addChangedEv@Base 4:4.7.1
  _ZN26QDeclarativeBasePositioner10itemChangeEN13QGraphicsItem18GraphicsItemChangeERK8QVariant@Base 4:4.7.1
  _ZN26QDeclarativeBasePositioner10setSpacingEi@Base 4:4.7.1
@@ -915,6 +1004,11 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN26QDeclarativeStateOperation8setStateEP17QDeclarativeState@Base 4:4.7.1
  _ZN26QDeclarativeStateOperationC1ER14QObjectPrivateP7QObject@Base 4:4.7.0~beta1
  _ZN26QDeclarativeStateOperationC2ER14QObjectPrivateP7QObject@Base 4:4.7.0~beta1
+ _ZN26QDeclarativeStateOperationD0Ev@Base 4:4.7.4
+ _ZN26QDeclarativeStateOperationD1Ev@Base 4:4.7.4
+ _ZN26QDeclarativeStateOperationD2Ev@Base 4:4.7.4
+ _ZN27QAbstractTextDocumentLayout12PaintContextD1Ev@Base 4:4.7.4
+ _ZN27QAbstractTextDocumentLayout12PaintContextD2Ev@Base 4:4.7.4
  _ZN27QDeclarativeAbstractBinding10setEnabledEb6QFlagsIN27QDeclarativePropertyPrivate9WriteFlagEE@Base 4:4.7.0~beta1
  _ZN27QDeclarativeAbstractBinding11addToObjectEP7QObjecti@Base 4:4.7.2
  _ZN27QDeclarativeAbstractBinding11weakPointerEv@Base 4:4.7.1
@@ -965,14 +1059,14 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN27QDeclarativeGridScaledImageC2ERKS_@Base 4:4.7.0~beta1
  _ZN27QDeclarativeGridScaledImageC2Ev@Base 4:4.7.0~beta1
  _ZN27QDeclarativeGridScaledImageaSERKS_@Base 4:4.7.0~beta1
- _ZN27QDeclarativePropertyChanges11changeValueERK10QByteArrayRK8QVariant@Base 4:4.7.1
+ _ZN27QDeclarativePropertyChanges11changeValueERK7QStringRK8QVariant@Base 4:4.7.4
  _ZN27QDeclarativePropertyChanges11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.1
  _ZN27QDeclarativePropertyChanges11qt_metacastEPKc@Base 4:4.7.1
  _ZN27QDeclarativePropertyChanges13attachToStateEv@Base 4:4.7.1
  _ZN27QDeclarativePropertyChanges13setIsExplicitEb@Base 4:4.7.1
- _ZN27QDeclarativePropertyChanges14removePropertyERK10QByteArray@Base 4:4.7.1
+ _ZN27QDeclarativePropertyChanges14removePropertyERK7QString@Base 4:4.7.4
  _ZN27QDeclarativePropertyChanges15detachFromStateEv@Base 4:4.7.1
- _ZN27QDeclarativePropertyChanges16changeExpressionERK10QByteArrayRK7QString@Base 4:4.7.1
+ _ZN27QDeclarativePropertyChanges16changeExpressionERK7QStringS2_@Base 4:4.7.4
  _ZN27QDeclarativePropertyChanges16staticMetaObjectE@Base 4:4.7.1
  _ZN27QDeclarativePropertyChanges21setRestoreEntryValuesEb@Base 4:4.7.1
  _ZN27QDeclarativePropertyChanges7actionsEv@Base 4:4.7.1
@@ -1008,6 +1102,10 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN27QDeclarativePropertyPrivate7bindingERK20QDeclarativeProperty@Base 4:4.7.0~beta1
  _ZN27QDeclarativePropertyPrivate7connectEPK7QObjectiS2_iiPi@Base 4:4.7.2
  _ZN27QDeclarativePropertyPrivate7restoreERK10QByteArrayP7QObjectP23QDeclarativeContextData@Base 4:4.7.0~beta1
+ _ZN27QDeclarativePropertyPrivate7restoreERKN25QDeclarativePropertyCache4DataERKNS0_13ValueTypeDataEP7QObjectP23QDeclarativeContextData@Base 4:4.7.4
+ _ZN27QDeclarativePropertyPrivateD0Ev@Base 4:4.7.4
+ _ZN27QDeclarativePropertyPrivateD1Ev@Base 4:4.7.4
+ _ZN27QDeclarativePropertyPrivateD2Ev@Base 4:4.7.4
  _ZN28QDeclarativeCustomParserNodeC1ERKS_@Base 4:4.7.0~beta1
  _ZN28QDeclarativeCustomParserNodeC1Ev@Base 4:4.7.0~beta1
  _ZN28QDeclarativeCustomParserNodeC2ERKS_@Base 4:4.7.0~beta1
@@ -1099,6 +1197,9 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN30QDeclarativeDebugPropertyWatch16staticMetaObjectE@Base 4:4.7.0~beta1
  _ZN30QDeclarativeDebugPropertyWatchC1EP7QObject@Base 4:4.7.0~beta1
  _ZN30QDeclarativeDebugPropertyWatchC2EP7QObject@Base 4:4.7.0~beta1
+ _ZN30QDeclarativeDebugPropertyWatchD0Ev@Base 4:4.7.4
+ _ZN30QDeclarativeDebugPropertyWatchD1Ev@Base 4:4.7.4
+ _ZN30QDeclarativeDebugPropertyWatchD2Ev@Base 4:4.7.4
  _ZN30QDeclarativeDomDynamicPropertyC1ERKS_@Base 4:4.7.0~beta1
  _ZN30QDeclarativeDomDynamicPropertyC1Ev@Base 4:4.7.0~beta1
  _ZN30QDeclarativeDomDynamicPropertyC2ERKS_@Base 4:4.7.0~beta1
@@ -1153,11 +1254,15 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN32QDeclarativeDebugObjectReferenceC2ERKS_@Base 4:4.7.0~beta1
  _ZN32QDeclarativeDebugObjectReferenceC2Ei@Base 4:4.7.0~beta1
  _ZN32QDeclarativeDebugObjectReferenceC2Ev@Base 4:4.7.0~beta1
+ _ZN32QDeclarativeDebugObjectReferenceD1Ev@Base 4:4.7.4
+ _ZN32QDeclarativeDebugObjectReferenceD2Ev@Base 4:4.7.4
  _ZN32QDeclarativeDebugObjectReferenceaSERKS_@Base 4:4.7.0~beta1
  _ZN33QDeclarativeDebugContextReferenceC1ERKS_@Base 4:4.7.0~beta1
  _ZN33QDeclarativeDebugContextReferenceC1Ev@Base 4:4.7.0~beta1
  _ZN33QDeclarativeDebugContextReferenceC2ERKS_@Base 4:4.7.0~beta1
  _ZN33QDeclarativeDebugContextReferenceC2Ev@Base 4:4.7.0~beta1
+ _ZN33QDeclarativeDebugContextReferenceD1Ev@Base 4:4.7.4
+ _ZN33QDeclarativeDebugContextReferenceD2Ev@Base 4:4.7.4
  _ZN33QDeclarativeDebugContextReferenceaSERKS_@Base 4:4.7.0~beta1
  _ZN33QDeclarativeDebugRootContextQuery11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1
  _ZN33QDeclarativeDebugRootContextQuery11qt_metacastEPKc@Base 4:4.7.0~beta1
@@ -1171,6 +1276,8 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN34QDeclarativeDebugPropertyReferenceC1Ev@Base 4:4.7.0~beta1
  _ZN34QDeclarativeDebugPropertyReferenceC2ERKS_@Base 4:4.7.0~beta1
  _ZN34QDeclarativeDebugPropertyReferenceC2Ev@Base 4:4.7.0~beta1
+ _ZN34QDeclarativeDebugPropertyReferenceD1Ev@Base 4:4.7.4
+ _ZN34QDeclarativeDebugPropertyReferenceD2Ev@Base 4:4.7.4
  _ZN34QDeclarativeDebugPropertyReferenceaSERKS_@Base 4:4.7.0~beta1
  _ZN36QDeclarativeDomValueValueInterceptorC1ERKS_@Base 4:4.7.0~beta1
  _ZN36QDeclarativeDomValueValueInterceptorC1Ev@Base 4:4.7.0~beta1
@@ -1189,6 +1296,9 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN38QDeclarativeDebugObjectExpressionWatch16staticMetaObjectE@Base 4:4.7.0~beta1
  _ZN38QDeclarativeDebugObjectExpressionWatchC1EP7QObject@Base 4:4.7.0~beta1
  _ZN38QDeclarativeDebugObjectExpressionWatchC2EP7QObject@Base 4:4.7.0~beta1
+ _ZN38QDeclarativeDebugObjectExpressionWatchD0Ev@Base 4:4.7.4
+ _ZN38QDeclarativeDebugObjectExpressionWatchD1Ev@Base 4:4.7.4
+ _ZN38QDeclarativeDebugObjectExpressionWatchD2Ev@Base 4:4.7.4
  _ZN39QDeclarativeNetworkAccessManagerFactoryD0Ev@Base 4:4.7.0~beta1
  _ZN39QDeclarativeNetworkAccessManagerFactoryD1Ev@Base 4:4.7.0~beta1
  _ZN39QDeclarativeNetworkAccessManagerFactoryD2Ev@Base 4:4.7.0~beta1
@@ -1203,6 +1313,8 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN7QPacketD1Ev@Base 4:4.7.0~beta1
  _ZN7QPacketD2Ev@Base 4:4.7.0~beta1
  (arch=armel)_ZN7QString5clearEv@Base 4:4.7.2
+ _ZN9QBitArrayD1Ev@Base 4:4.7.4
+ _ZN9QBitArrayD2Ev@Base 4:4.7.4
  (arch=ia64 mips mipsel sparc)_ZN9QHashData8willGrowEv@Base 4:4.7.2
  (arch=ia64 mips mipsel sparc)_ZN9QHashData9hasShrunkEv@Base 4:4.7.2
  _ZNK12QPaintDevice7devTypeEv@Base 4:4.7.2
@@ -1231,12 +1343,16 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  (subst)_ZNK16QDeclarativeItem7childAtE{qreal}{qreal}@Base 4:4.7.0~beta2
  _ZNK16QDeclarativeItem8hasFocusEv@Base 4:4.7.0~beta1
  (subst)_ZNK16QDeclarativeItem9mapToItemERK12QScriptValue{qreal}{qreal}@Base 4:4.7.0~beta1
+ _ZNK16QDeclarativeText10lineHeightEv@Base 4:4.7.4
  _ZNK16QDeclarativeText10metaObjectEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeText10styleColorEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeText10textFormatEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeText12boundingRectEv@Base 4:4.7.0~rc1
  _ZNK16QDeclarativeText12paintedWidthEv@Base 4:4.7.0~beta2
  _ZNK16QDeclarativeText13paintedHeightEv@Base 4:4.7.0~beta2
+ _ZNK16QDeclarativeText14lineHeightModeEv@Base 4:4.7.4
+ _ZNK16QDeclarativeText15effectiveHAlignEv@Base 4:4.7.4
+ _ZNK16QDeclarativeText16maximumLineCountEv@Base 4:4.7.4
  _ZNK16QDeclarativeText16resourcesLoadingEv@Base 4:4.7.0~beta2
  _ZNK16QDeclarativeText4fontEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeText4textEv@Base 4:4.7.0~beta1
@@ -1246,6 +1362,8 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZNK16QDeclarativeText6vAlignEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeText8wrapModeEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeText9elideModeEv@Base 4:4.7.0~beta1
+ _ZNK16QDeclarativeText9lineCountEv@Base 4:4.7.4
+ _ZNK16QDeclarativeText9truncatedEv@Base 4:4.7.4
  _ZNK16QDeclarativeType10createSizeEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeType10metaObjectEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeType11isCreatableEv@Base 4:4.7.0~beta1
@@ -1261,17 +1379,22 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZNK16QDeclarativeType14isExtendedTypeEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeType16noCreationReasonEv@Base 4:4.7.0~beta2
  _ZNK16QDeclarativeType16parserStatusCastEv@Base 4:4.7.0~beta1
+ _ZNK16QDeclarativeType18availableInVersionERK10QByteArrayii@Base 4:4.7.4
  _ZNK16QDeclarativeType18availableInVersionEii@Base 4:4.7.0~beta1
+ _ZNK16QDeclarativeType18metaObjectRevisionEv@Base 4:4.7.4
  _ZNK16QDeclarativeType20attachedPropertiesIdEv@Base 4:4.7.1
  _ZNK16QDeclarativeType22attachedPropertiesTypeEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeType23propertyValueSourceCastEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeType26attachedPropertiesFunctionEv@Base 4:4.7.0~beta1
+ _ZNK16QDeclarativeType28containsRevisionedAttributesEv@Base 4:4.7.4
  _ZNK16QDeclarativeType28propertyValueInterceptorCastEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeType5indexEv@Base 4:4.7.0~beta1
  (subst)_ZNK16QDeclarativeType6createEPP7QObjectPPv{size_t}@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeType6createEv@Base 4:4.7.0~beta1
+ _ZNK16QDeclarativeType6moduleEv@Base 4:4.7.4
  _ZNK16QDeclarativeType6typeIdEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeType8typeNameEv@Base 4:4.7.0~beta1
+ _ZNK16QDeclarativeType9superTypeEv@Base 4:4.7.4
  _ZNK16QDeclarativeView10metaObjectEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeView10resizeModeEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeView10rootObjectEv@Base 4:4.7.0~beta1
@@ -1300,9 +1423,9 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZNK17QDeclarativeState11operationAtEi@Base 4:4.7.0~beta1
  _ZNK17QDeclarativeState13isStateActiveEv@Base 4:4.7.1
  _ZNK17QDeclarativeState14operationCountEv@Base 4:4.7.0~beta1
- _ZNK17QDeclarativeState17valueInRevertListEP7QObjectRK10QByteArray@Base 4:4.7.1
- _ZNK17QDeclarativeState19bindingInRevertListEP7QObjectRK10QByteArray@Base 4:4.7.1
- _ZNK17QDeclarativeState28containsPropertyInRevertListEP7QObjectRK10QByteArray@Base 4:4.7.1
+ _ZNK17QDeclarativeState17valueInRevertListEP7QObjectRK7QString@Base 4:4.7.4
+ _ZNK17QDeclarativeState19bindingInRevertListEP7QObjectRK7QString@Base 4:4.7.4
+ _ZNK17QDeclarativeState28containsPropertyInRevertListEP7QObjectRK7QString@Base 4:4.7.4
  _ZNK17QDeclarativeState4nameEv@Base 4:4.7.0~beta1
  _ZNK17QDeclarativeState4whenEv@Base 4:4.7.0~beta1
  _ZNK17QDeclarativeState7extendsEv@Base 4:4.7.0~beta1
@@ -1393,6 +1516,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZNK19QDeclarativeAnchors9topMarginEv@Base 4:4.7.0~beta1
  _ZNK19QDeclarativeBinding10expressionEv@Base 4:4.7.0~beta1
  _ZNK19QDeclarativeBinding10metaObjectEv@Base 4:4.7.0~beta1
+ _ZNK19QDeclarativeBinding13evaluateFlagsEv@Base 4:4.7.4
  _ZNK19QDeclarativeBinding7enabledEv@Base 4:4.7.0~beta1
  _ZNK19QDeclarativeBinding8propertyEv@Base 4:4.7.0~beta1
  _ZNK19QDeclarativeContext10metaObjectEv@Base 4:4.7.0~beta1
@@ -1463,7 +1587,6 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZNK20QMetaPropertyBuilder6d_funcEv@Base 4:4.7.0~beta1
  _ZNK20QMetaPropertyBuilder6isUserEv@Base 4:4.7.0~beta1
  _ZNK20QMetaPropertyBuilder8isStoredEv@Base 4:4.7.0~beta1
- _ZNK20QMetaPropertyBuilder9isDynamicEv@Base 4:4.7.0~beta1
  _ZNK21QDeclarativeComponent10metaObjectEv@Base 4:4.7.0~beta1
  _ZNK21QDeclarativeComponent11errorStringEv@Base 4:4.7.0~beta2
  _ZNK21QDeclarativeComponent15creationContextEv@Base 4:4.7.0~beta1
@@ -1536,6 +1659,9 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZNK22QDeclarativeTransition10reversibleEv@Base 4:4.7.0~beta1
  _ZNK22QDeclarativeTransition7toStateEv@Base 4:4.7.0~beta1
  _ZNK22QDeclarativeTransition9fromStateEv@Base 4:4.7.0~beta1
+ _ZNK23QDeclarativeApplication10metaObjectEv@Base 4:4.7.4
+ _ZNK23QDeclarativeApplication15layoutDirectionEv@Base 4:4.7.4
+ _ZNK23QDeclarativeApplication6activeEv@Base 4:4.7.4
  _ZNK23QDeclarativeDebugClient10metaObjectEv@Base 4:4.7.0~beta1
  _ZNK23QDeclarativeDebugClient4nameEv@Base 4:4.7.0~beta1
  _ZNK23QDeclarativeDebugClient6statusEv@Base 4:4.7.1
@@ -1555,6 +1681,8 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZNK23QDeclarativeDomProperty8positionEv@Base 4:4.7.0~beta1
  _ZNK23QDeclarativeEngineDebug10metaObjectEv@Base 4:4.7.0~beta1
  _ZNK23QDeclarativeEngineDebug6statusEv@Base 4:4.7.1
+ _ZNK23QDeclarativeItemPrivate13implicitWidthEv@Base 4:4.7.4
+ _ZNK23QDeclarativeItemPrivate14implicitHeightEv@Base 4:4.7.4
  _ZNK23QDeclarativeItemPrivate14verticalCenterEv@Base 4:4.7.0~beta2
  _ZNK23QDeclarativeItemPrivate16horizontalCenterEv@Base 4:4.7.0~beta2
  _ZNK23QDeclarativeItemPrivate22computeTransformOriginEv@Base 4:4.7.0~beta1
@@ -1626,19 +1754,20 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZNK27QDeclarativeGridScaledImage8gridLeftEv@Base 4:4.7.0~beta1
  _ZNK27QDeclarativeGridScaledImage9gridRightEv@Base 4:4.7.0~beta1
  _ZNK27QDeclarativeGridScaledImage9pixmapUrlEv@Base 4:4.7.0~beta1
- _ZNK27QDeclarativePropertyChanges10expressionERK10QByteArray@Base 4:4.7.1
+ _ZNK27QDeclarativePropertyChanges10expressionERK7QString@Base 4:4.7.4
  _ZNK27QDeclarativePropertyChanges10isExplicitEv@Base 4:4.7.1
  _ZNK27QDeclarativePropertyChanges10metaObjectEv@Base 4:4.7.1
- _ZNK27QDeclarativePropertyChanges13containsValueERK10QByteArray@Base 4:4.7.1
- _ZNK27QDeclarativePropertyChanges16containsPropertyERK10QByteArray@Base 4:4.7.1
- _ZNK27QDeclarativePropertyChanges18containsExpressionERK10QByteArray@Base 4:4.7.1
+ _ZNK27QDeclarativePropertyChanges13containsValueERK7QString@Base 4:4.7.4
+ _ZNK27QDeclarativePropertyChanges16containsPropertyERK7QString@Base 4:4.7.4
+ _ZNK27QDeclarativePropertyChanges18containsExpressionERK7QString@Base 4:4.7.4
  _ZNK27QDeclarativePropertyChanges18restoreEntryValuesEv@Base 4:4.7.1
- _ZNK27QDeclarativePropertyChanges5valueERK10QByteArray@Base 4:4.7.1
+ _ZNK27QDeclarativePropertyChanges5valueERK7QString@Base 4:4.7.4
  _ZNK27QDeclarativePropertyChanges6objectEv@Base 4:4.7.1
- _ZNK27QDeclarativePropertyChanges8propertyERK10QByteArray@Base 4:4.7.1
+ _ZNK27QDeclarativePropertyChanges8propertyERK7QString@Base 4:4.7.4
  _ZNK27QDeclarativePropertyPrivate11isValueTypeEv@Base 4:4.7.0~beta1
  _ZNK27QDeclarativePropertyPrivate12propertyTypeEv@Base 4:4.7.0~beta1
  _ZNK27QDeclarativePropertyPrivate20propertyTypeCategoryEv@Base 4:4.7.0~beta1
+ _ZNK27QDeclarativePropertyPrivate4typeEv@Base 4:4.7.4
  _ZNK28QDeclarativeCustomParserNode10propertiesEv@Base 4:4.7.0~beta1
  _ZNK28QDeclarativeCustomParserNode4nameEv@Base 4:4.7.0~beta1
  _ZNK28QDeclarativeCustomParserNode8locationEv@Base 4:4.7.0~beta1
@@ -1723,6 +1852,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZTI19QDeclarativeContext@Base 4:4.7.0~beta1
  _ZTI19QListModelInterface@Base 4:4.7.0~beta1
  _ZTI20QDeclarativeBehavior@Base 4:4.7.0~beta1
+ _ZTI20QDeclarativeRefCount@Base 4:4.7.4
  _ZTI20QGraphicsViewPrivate@Base 4:4.7.0~beta2
  _ZTI21QDeclarativeComponent@Base 4:4.7.0~beta1
  _ZTI21QDeclarativeListModel@Base 4:4.7.0~beta1
@@ -1734,6 +1864,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZTI22QDeclarativeExpression@Base 4:4.7.0~beta1
  _ZTI22QDeclarativeStateGroup@Base 4:4.7.0~beta1
  _ZTI22QDeclarativeTransition@Base 4:4.7.0~beta1
+ _ZTI23QDeclarativeApplication@Base 4:4.7.4
  _ZTI23QDeclarativeDebugClient@Base 4:4.7.0~beta1
  _ZTI23QDeclarativeDebugServer@Base 4:4.7.2
  _ZTI23QDeclarativeEngineDebug@Base 4:4.7.0~beta1
@@ -1753,6 +1884,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZTI27QDeclarativeDebugConnection@Base 4:4.7.0~beta1
  _ZTI27QDeclarativeExtensionPlugin@Base 4:4.7.0~beta1
  _ZTI27QDeclarativePropertyChanges@Base 4:4.7.1
+ _ZTI27QDeclarativePropertyPrivate@Base 4:4.7.4
  _ZTI28QDeclarativeDebugObjectQuery@Base 4:4.7.0~beta1
  _ZTI29QDeclarativeAbstractAnimation@Base 4:4.7.1
  _ZTI29QDeclarativeDebugEnginesQuery@Base 4:4.7.0~beta1
@@ -1785,6 +1917,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZTS19QDeclarativeContext@Base 4:4.7.0~beta1
  _ZTS19QListModelInterface@Base 4:4.7.0~beta1
  _ZTS20QDeclarativeBehavior@Base 4:4.7.0~beta1
+ _ZTS20QDeclarativeRefCount@Base 4:4.7.4
  _ZTS20QGraphicsViewPrivate@Base 4:4.7.0~beta2
  _ZTS21QDeclarativeComponent@Base 4:4.7.0~beta1
  _ZTS21QDeclarativeListModel@Base 4:4.7.0~beta1
@@ -1796,6 +1929,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZTS22QDeclarativeExpression@Base 4:4.7.0~beta1
  _ZTS22QDeclarativeStateGroup@Base 4:4.7.0~beta1
  _ZTS22QDeclarativeTransition@Base 4:4.7.0~beta1
+ _ZTS23QDeclarativeApplication@Base 4:4.7.4
  _ZTS23QDeclarativeDebugClient@Base 4:4.7.0~beta1
  _ZTS23QDeclarativeDebugServer@Base 4:4.7.2
  _ZTS23QDeclarativeEngineDebug@Base 4:4.7.0~beta1
@@ -1815,6 +1949,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZTS27QDeclarativeDebugConnection@Base 4:4.7.0~beta1
  _ZTS27QDeclarativeExtensionPlugin@Base 4:4.7.0~beta1
  _ZTS27QDeclarativePropertyChanges@Base 4:4.7.1
+ _ZTS27QDeclarativePropertyPrivate@Base 4:4.7.4
  _ZTS28QDeclarativeDebugObjectQuery@Base 4:4.7.0~beta1
  _ZTS29QDeclarativeAbstractAnimation@Base 4:4.7.1
  _ZTS29QDeclarativeDebugEnginesQuery@Base 4:4.7.0~beta1
@@ -1845,6 +1980,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZTV19QDeclarativeContext@Base 4:4.7.0~beta1
  _ZTV19QListModelInterface@Base 4:4.7.0~beta1
  _ZTV20QDeclarativeBehavior@Base 4:4.7.0~beta1
+ _ZTV20QDeclarativeRefCount@Base 4:4.7.4
  _ZTV20QGraphicsViewPrivate@Base 4:4.7.0~beta2
  _ZTV21QDeclarativeComponent@Base 4:4.7.0~beta1
  _ZTV21QDeclarativeListModel@Base 4:4.7.0~beta1
@@ -1856,6 +1992,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZTV22QDeclarativeExpression@Base 4:4.7.0~beta1
  _ZTV22QDeclarativeStateGroup@Base 4:4.7.0~beta1
  _ZTV22QDeclarativeTransition@Base 4:4.7.0~beta1
+ _ZTV23QDeclarativeApplication@Base 4:4.7.4
  _ZTV23QDeclarativeDebugClient@Base 4:4.7.0~beta1
  _ZTV23QDeclarativeDebugServer@Base 4:4.7.2
  _ZTV23QDeclarativeEngineDebug@Base 4:4.7.0~beta1
@@ -1875,6 +2012,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZTV27QDeclarativeDebugConnection@Base 4:4.7.0~beta1
  _ZTV27QDeclarativeExtensionPlugin@Base 4:4.7.0~beta1
  _ZTV27QDeclarativePropertyChanges@Base 4:4.7.1
+ _ZTV27QDeclarativePropertyPrivate@Base 4:4.7.4
  _ZTV28QDeclarativeDebugObjectQuery@Base 4:4.7.0~beta1
  _ZTV29QDeclarativeAbstractAnimation@Base 4:4.7.1
  _ZTV29QDeclarativeDebugEnginesQuery@Base 4:4.7.0~beta1
@@ -1924,6 +2062,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  (c++)"non-virtual thunk to QDeclarativeItem::~QDeclarativeItem()@Base" 4:4.7.0~beta1
  (c++)"non-virtual thunk to QDeclarativeRectangle::boundingRect() const@Base" 4:4.7.0~beta1
  (c++)"non-virtual thunk to QDeclarativeRectangle::paint(QPainter*, QStyleOptionGraphicsItem const*, QWidget*)@Base" 4:4.7.0~beta1
+ (c++)"non-virtual thunk to QDeclarativeRectangle::~QDeclarativeRectangle()@Base" 4:4.7.4
  (c++)"non-virtual thunk to QDeclarativeScriptAction::~QDeclarativeScriptAction()@Base" 4:4.7.1
  (c++)"non-virtual thunk to QDeclarativeStateGroup::classBegin()@Base" 4:4.7.0~beta1
  (c++)"non-virtual thunk to QDeclarativeStateGroup::componentComplete()@Base" 4:4.7.0~beta1
@@ -1936,4 +2075,6 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  (c++)"non-virtual thunk to QDeclarativeText::~QDeclarativeText()@Base" 4:4.7.0~beta1
  (c++)"non-virtual thunk to QDeclarativeTimer::classBegin()@Base" 4:4.7.1
  (c++)"non-virtual thunk to QDeclarativeTimer::componentComplete()@Base" 4:4.7.1
+ (c++)"non-virtual thunk to QDeclarativeTimer::~QDeclarativeTimer()@Base" 4:4.7.4
  (c++)"non-virtual thunk to QDeclarativeView::~QDeclarativeView()@Base" 4:4.7.0~beta1
+ (c++)"non-virtual thunk to QGraphicsObject::~QGraphicsObject()@Base" 4:4.7.4

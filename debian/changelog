@@ -24,6 +24,7 @@ qt4-x11 (4:4.7.4-1) UNRELEASED; urgency=low
   * Update debian/libqt4-declarative.install: rename libtcpserver.so to
     libqmldbg_tcp.so.
   * Add libqt4-declarative-shaders package.
+  * Update symbol files.
 
  -- Fathi Boudra <fabo@debian.org>  Mon, 12 Sep 2011 08:52:33 +0300
 
