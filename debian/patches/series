@@ -52,3 +52,4 @@ armv6_Add_support_for_ARMv7_atomic_operations.patch
 qt-multiarch-plugin-path-compat.diff
 s390x_jscore.diff
 blacklist-diginotar-cert.diff
+openssl_no_ssl2.patch
