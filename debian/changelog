@@ -15,6 +15,8 @@ qt4-x11 (4:4.7.4-1) UNRELEASED; urgency=low
   * Add patches:
     - qt-multiarch-plugin-path-compat.diff - include legacy pre-multiarch
       plugin path.
+    - Check_for_buffer_overflow_in_Lookup_MarkMarkPos_CVE-2011-3193.patch
+      (Closes: #641738)
   * Break qdbus out into a separate 'qdbus' package and make it a dependency of
     libqt4-dbus, because some things will use this at runtime. It makes
     libqt4-dbus genuinely multiarch-installable.
