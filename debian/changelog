@@ -2,6 +2,7 @@ qt4-x11 (4:4.7.4-1) UNRELEASED; urgency=low
 
   * New upstream release.
     - QTreeView crash in indexRowSizeHint/itemHeight. (Closes: #632855)
+    - include fixes for CVE-2011-3193 and CVE-2011-3194. (Closes: #641738)
   * Add Pino Toscano to Uploaders.
   * Remove patches:
     - Fix_GL_problems_on_stock_1.4_SGX_drivers.patch - stolen upstream.
@@ -16,8 +17,6 @@ qt4-x11 (4:4.7.4-1) UNRELEASED; urgency=low
   * Add patches:
     - qt-multiarch-plugin-path-compat.diff - include legacy pre-multiarch
       plugin path.
-    - Check_for_buffer_overflow_in_Lookup_MarkMarkPos_CVE-2011-3193.patch
-      (Closes: #641738)
     - openssl_no_ssl2.patch - OpenSSL in Debian dropped the insecure SSLv2
       protocol. (Closes: #640210)
     - Remove_QtHelp_dependency_on_QtXml.patch - (Closes: #641753)
