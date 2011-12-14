@@ -1,5 +1,7 @@
 qt4-x11 (4:4.7.3-9) UNRELEASED; urgency=low
 
+  [ Pino Toscano ]
+  * Force a non-parallel build on ia64, maybe it fixes the build on this arch.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 14 Dec 2011 14:15:47 +0100
 
