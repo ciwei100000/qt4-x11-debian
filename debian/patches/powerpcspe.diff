@@ -11,7 +11,7 @@ Last-Update: 2011-04-27
 
 --- a/configure
 +++ b/configure
-@@ -3145,7 +3145,7 @@ if [ -z "${CFG_HOST_ARCH}" ]; then
+@@ -2985,7 +2985,7 @@ if [ -z "${CFG_HOST_ARCH}" ]; then
              CFG_HOST_ARCH=x86_64
          fi
          ;;

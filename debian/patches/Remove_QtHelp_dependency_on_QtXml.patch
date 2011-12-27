@@ -1,0 +1,30 @@
+commit 02f55668dada4a23ab84e4d3bda1df8a4984b3ae
+Author: Constantin Makshin <cmakshin@gmail.com>
+Date:   Mon Sep 5 19:43:00 2011 +0200
+
+    Removed the unnecessary dependency of the QtHelp module on the QtXml one
+    
+    Merge-request: 2669
+    Reviewed-by: Oswald Buddenhagen <oswald.buddenhagen@nokia.com>
+
+---
+ mkspecs/features/help.prf   |    2 +-
+ tools/assistant/lib/lib.pro |    1 -
+ 2 files changed, 1 insertion(+), 2 deletions(-)
+
+--- a/mkspecs/features/help.prf
++++ b/mkspecs/features/help.prf
+@@ -1,4 +1,4 @@
+ INCLUDEPATH = $$QMAKE_INCDIR_QT/QtHelp $$INCLUDEPATH
+-QT += xml sql
++QT += sql
+ 
+ qtAddLibrary(QtHelp)
+--- a/tools/assistant/lib/lib.pro
++++ b/tools/assistant/lib/lib.pro
+@@ -1,5 +1,4 @@
+ QT += sql \
+-    xml \
+     network
+ TEMPLATE = lib
+ TARGET = QtHelp

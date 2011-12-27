@@ -7,7 +7,6 @@ usr/bin/qdbusviewer
 usr/bin/qdoc3
 usr/bin/qhelpconverter
 usr/bin/qhelpgenerator
-usr/bin/qmlplugindump
 usr/bin/qttracereplay
 usr/bin/qvfb
 usr/bin/xmlpatterns

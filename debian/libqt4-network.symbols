@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.2 amd64 armel ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sparc
+# SymbolsHelper-Confirmed: 4:4.7.4 amd64
 libQtNetwork.so.4 libqt4-network #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z19qt_qhostinfo_lookupRK7QStringP7QObjectPKcPbPi@Base 4:4.6.3
@@ -457,6 +457,9 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN18QHttpRequestHeaderC2ERK7QStringS2_ii@Base 4:4.5.3
  _ZN18QHttpRequestHeaderC2ERKS_@Base 4:4.5.3
  _ZN18QHttpRequestHeaderC2Ev@Base 4:4.5.3
+ _ZN18QHttpRequestHeaderD0Ev@Base 4:4.7.4
+ _ZN18QHttpRequestHeaderD1Ev@Base 4:4.7.4
+ _ZN18QHttpRequestHeaderD2Ev@Base 4:4.7.4
  _ZN18QHttpRequestHeaderaSERKS_@Base 4:4.5.3
  _ZN18QNetworkProxyQuery11setPeerPortEi@Base 4:4.5.3
  _ZN18QNetworkProxyQuery12setLocalPortEi@Base 4:4.5.3
@@ -495,6 +498,9 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN19QHttpResponseHeaderC2ERKS_@Base 4:4.5.3
  _ZN19QHttpResponseHeaderC2EiRK7QStringii@Base 4:4.5.3
  _ZN19QHttpResponseHeaderC2Ev@Base 4:4.5.3
+ _ZN19QHttpResponseHeaderD0Ev@Base 4:4.7.4
+ _ZN19QHttpResponseHeaderD1Ev@Base 4:4.7.4
+ _ZN19QHttpResponseHeaderD2Ev@Base 4:4.7.4
  _ZN19QHttpResponseHeaderaSERKS_@Base 4:4.5.3
  _ZN20QNetworkAddressEntry10setNetmaskERK12QHostAddress@Base 4:4.5.3
  _ZN20QNetworkAddressEntry12setBroadcastERK12QHostAddress@Base 4:4.5.3
@@ -598,6 +604,10 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN28QNetworkConfigurationManagerD0Ev@Base 4:4.7.0~beta1
  _ZN28QNetworkConfigurationManagerD1Ev@Base 4:4.7.0~beta1
  _ZN28QNetworkConfigurationManagerD2Ev@Base 4:4.7.0~beta1
+ _ZN29QBearerEngineFactoryInterfaceD0Ev@Base 4:4.7.4
+ _ZN29QBearerEngineFactoryInterfaceD1Ev@Base 4:4.7.4
+ _ZN29QBearerEngineFactoryInterfaceD2Ev@Base 4:4.7.4
+ _ZN35QNetworkConfigurationManagerPrivate10initializeEv@Base 4:4.7.4
  _ZN35QNetworkConfigurationManagerPrivate11pollEnginesEv@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivate11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivate11qt_metacastEPKc@Base 4:4.7.0~beta1
@@ -620,6 +630,7 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN35QNetworkConfigurationManagerPrivate27configurationUpdateCompleteEv@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivate31performAsyncConfigurationUpdateEv@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivate5abortEv@Base 4:4.7.0~beta1
+ _ZN35QNetworkConfigurationManagerPrivate7cleanupEv@Base 4:4.7.4
  _ZN35QNetworkConfigurationManagerPrivate7enginesEv@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivate8isOnlineEv@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivateC1Ev@Base 4:4.7.0~beta1

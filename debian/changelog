@@ -1,23 +1,111 @@
-qt4-x11 (4:4.8~alpha+tp-0r1) UNRELEASED; urgency=low
+qt4-x11 (4:4.7.4-1) unstable; urgency=low
 
   * New upstream release.
-
-  [ Fathi Boudra ]
+    - QTreeView crash in indexRowSizeHint/itemHeight. (Closes: #632855)
+    - include fixes for CVE-2011-3193 and CVE-2011-3194. (Closes: #641738)
+  * Add Pino Toscano to Uploaders.
   * Remove patches:
-    - armv6_Add_support_for_ARMv7_atomic_operations.patch - stolen upstream.
+    - Fix_GL_problems_on_stock_1.4_SGX_drivers.patch - stolen upstream.
+    - Fixed_missing_text_when_using_static_text_items_in_GL_2_engine.patch -
+      stolen upstream.
+    - Prevent_recursion_when_creating_window_surface.patch - stolen upstream.
+    - Check-if-the-interpolators-have-already-been-deleted.patch - stolen
+      upstream.
+    - 21_qt_ia32_library_path.diff - interacts incompatibly with the multiarch
+      path resolution and should be obsolete anyway now that multiarch is
+      available: we should drop qt from the next ia32-libs upload.
+  * Add patches:
+    - openssl_no_ssl2.patch - OpenSSL in Debian dropped the insecure SSLv2
+      protocol. (Closes: #640210)
+    - Remove_QtHelp_dependency_on_QtXml.patch - (Closes: #641753)
+  * Break qdbus out into a separate 'qdbus' package and make it a dependency of
+    libqt4-dbus, because some things will use this at runtime. It makes
+    libqt4-dbus genuinely multiarch-installable.
   * Update debian/rules:
-    - remove -qt-gif configure option - removed upstream.
-    - use ts-all target. The ts target has been removed.
-  * Update installed files: headers, translations, qmlplugindump.
+    - add -reduce-relocations configure option.
+  * Update debian/libqt4-declarative.install: rename libtcpserver.so to
+    libqmldbg_tcp.so.
+  * Add libqt4-declarative-shaders package.
+  * Update symbol files.
 
   [ Pino Toscano ]
-  * Use the hurd-g++ mkspec when building on Hurd:
-    - add mkspecs/hurd-g++/qmake.conf in 01_debian_append_qt4_suffix.diff
-    - update the platform_arg in debian/rules
+  * Force a non-parallel build on ia64, maybe it fixes the build on this arch.
+  * Add patch Bug-fix-Allow-QTDIR-to-contain-regex-metacharacters.patch to fix
+    the headers generation if the source path contains special characters
+    (like '+').
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 10 Jun 2011 09:21:12 +0300
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 14 Dec 2011 14:15:47 +0100
 
-qt4-x11 (4:4.7.3-2) UNRELEASED; urgency=low
+qt4-x11 (4:4.7.3-8) unstable; urgency=low
+
+  [ Pino Toscano ]
+  * Use the linux-g++ mkspec on alpha and ia64. (Closes: #640981)
+
+  [ Sune Vuorela ]
+  * Switch to firebird 2.5 given that 2.1 is currently broken.
+  * Add diginotar blacklists patches, taken from upstream.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 10 Sep 2011 12:34:54 +0200
+
+qt4-x11 (4:4.7.3-7) unstable; urgency=low
+
+  [ Pino Toscano ]
+  * Use DEB_HOST_ARCH_BITS to really detect 64bit architectures.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 10 Aug 2011 14:00:11 +0200
+
+qt4-x11 (4:4.7.3-6) unstable; urgency=low
+
+  [ Pino Toscano ]
+  * Add patch Check-if-the-interpolators-have-already-been-deleted.patch
+    to fix QVariantAnimation::registerInterpolator() crash during global dtors
+    run. (Closes: #635724)
+  * Add patch s390x_jscore.diff to add s390/s390x support in JavaScriptCore.
+    (Closes: #636544)
+  * Compile using the linux-g++-64 mkspec on s390x.
+  * Improve wording in description of qt4-qmlviewer.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 09 Aug 2011 18:27:34 +0200
+
+qt4-x11 (4:4.7.3-5) unstable; urgency=low
+
+  [ Fathi Boudra ]
+  * Add support for vendor specifics in debian/rules.
+
+  [ Pino Toscano ]
+  * Revert the switch to GL ES 2 on armel and armhf architectures for now,
+    as it is binary incompatible and creates issues with code explicitly
+    using GL API. (Closes: #632602)
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 06 Jul 2011 03:42:41 +0300
+
+qt4-x11 (4:4.7.3-4) unstable; urgency=low
+
+  * Update Fix_fontconfig_usage_in_X11_font_database.patch to fix crashes in
+    various Qt/KDE applications. (Closes: #631652)
+
+ -- Fathi Boudra <fabo@debian.org>  Sat, 25 Jun 2011 21:22:37 +0300
+
+qt4-x11 (4:4.7.3-3) unstable; urgency=low
+
+  [ Fathi Boudra ]
+  * Split Qt debug package a bit more: introduce libqt4-designer-dbg,
+    libqt4-qt3support-dbg, libqt4-script-dbg and qt4-bin-dbg packages.
+  * Add libqt4-dev-private package: ship Qt private headers to build Qt Creator
+    QML Designer plugin.
+  * Add rsync build dependency (easy way to preserve relative path names).
+  * Add missing epoch for qt4-linguist-tools Breaks/Replaces. (Closes: #630917)
+  * Add patches:
+    - Take_Xft.hintstyle_by_default_to_match_the_behavior_of_GTK+.patch
+    - Fix_fontconfig_usage_in_X11_font_database.patch
+
+  [ Pino Toscano ]
+  * Use wildcard architectures:
+    - !kfreebsd-i386 !kfreebsd-amd64 !hurd-i386 -> linux-any
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 20 Jun 2011 15:29:58 +0300
+
+qt4-x11 (4:4.7.3-2) unstable; urgency=low
 
   * Add patches:
     - Fixed_bug_in_X11_backend_when_creating_translucent_windows.patch

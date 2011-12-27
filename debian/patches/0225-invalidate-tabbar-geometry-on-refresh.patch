@@ -26,7 +26,7 @@ Trolltech task ID : 208349
 bugs.kde.org number : 159014
 ---
  src/gui/widgets/qtabbar.cpp |    2 +-
- 1 files changed, 1 insertions(+), 1 deletions(-)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 
 --- a/src/gui/widgets/qtabbar.cpp
 +++ b/src/gui/widgets/qtabbar.cpp

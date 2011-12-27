@@ -23,6 +23,8 @@ shlibs_version := $(shell dpkg-parsechangelog | sed -n 's/^Version: //p' | cut -
 # libqt4-phonon shlibs. Minimum libphonon4 version may need adjusting for new
 # Qt upstream release
 libqt4phonon_shlibs := libphonon4 (>= 4:4.6.0) | libqt4-phonon (= $(current_version))
+# Distribution vendor
+vendor := $(shell dpkg-vendor --query Vendor)
 
 ifneq (,$(filter %-sql-ibase,$(shell dh_listpackages)))
 	extra_configure_opts += -plugin-sql-ibase
@@ -34,11 +36,15 @@ ifeq ($(DEB_HOST_ARCH),arm)
 	extra_configure_opts += -DQT_QLOCALE_USES_FCVT
 endif
 
-ifeq ($(DEB_HOST_ARCH),armhf)
+armv6_architectures := armhf
+ifeq ($(vendor),Ubuntu)
+	armv6_architectures += armel
+endif
+ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(armv6_architectures)))
 	extra_configure_opts += -arch armv6
 endif
 
-gles2_architectures := armel armhf
+gles2_architectures := none_for_now
 ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(gles2_architectures)))
 	extra_configure_opts += -opengl es2
 else
@@ -47,25 +53,23 @@ else
 endif
 
 ifeq ($(DEB_HOST_ARCH_OS),linux)
-  ifeq ($(DEB_HOST_ARCH),amd64)
-	platform_arg = linux-g++-64
-  else
-    ifeq ($(DEB_HOST_ARCH),sparc64)
-	platform_arg = linux-g++-64
-    else
+  ifneq (,$(filter $(DEB_HOST_ARCH),alpha ia64))
 	platform_arg = linux-g++
-    endif # sparc64
-  endif # amd64
-else
-  ifeq ($(DEB_HOST_ARCH_OS),hurd)
-	platform_arg = hurd-g++
+  else ifeq ($(DEB_HOST_ARCH_BITS),64)
+	platform_arg = linux-g++-64
   else
-	platform_arg = glibc-g++
+	platform_arg = linux-g++
   endif
+else
+	platform_arg = glibc-g++
+endif
+
+ifneq ($(DEB_HOST_ARCH),ia64)
+	extra_dh_opts += --parallel
 endif
 
 %:
-	dh $@ --parallel --with pkgkde_symbolshelper
+	dh $@ $(extra_dh_opts) --with pkgkde_symbolshelper
 
 override_dh_auto_configure:
 	# Test broken hppa kernel with glibc >= 2.5
@@ -125,12 +129,14 @@ endif
 	            -scripttools \
 	            -platform $(platform_arg) \
 	            -system-zlib \
+	            -qt-gif \
 	            -system-libtiff \
 	            -system-libpng \
 	            -system-libjpeg \
 	            -no-rpath \
 	            -optimized-qmake \
 	            -dbus-linked \
+	            -reduce-relocations \
 	            -no-separate-debug-info \
 	            -verbose \
 	            -gtkstyle \
@@ -146,7 +152,7 @@ override_dh_auto_build:
 	# Build documentations
 	dh_auto_build -Smakefile -- docs
 	# Build translations
-	dh_auto_build -Smakefile -- -C translations ts-all
+	dh_auto_build -Smakefile -- ts
 	# Workaround: It's a known qmake limitation.
 	# It can't generate install rules for files that don't exist yet like docs.
 	./config.status
@@ -228,6 +234,18 @@ override_dh_auto_clean:
 override_dh_auto_install:
 	dh_auto_install -Smakefile -- INSTALL_ROOT=$(CURDIR)/debian/tmp/
 
+	# Ship private headers - ugly hack to build Qt Creator QML Designer
+	cd $(CURDIR)/include && rsync -aR QtCore/private \
+	                                  QtDeclarative/private \
+	                                  QtGui/private \
+	                                  QtScript/private \
+	                                  ../debian/tmp/usr/include/qt4/
+	cd $(CURDIR) && rsync -aR src/corelib/*/*_p.h \
+	                          src/declarative/*/*_p.h \
+	                          src/gui/*/*_p.h \
+	                          src/script/*/*_p.h \
+	                          debian/tmp/usr/include/
+
 	# Fix wrong path in pkgconfig files
 	find $(CURDIR)/debian/tmp/usr/lib/pkgconfig -type f -name '*.pc' \
 		-exec perl -pi -e "s, -L$(CURDIR)/?\S+,,g" {} \;
@@ -295,6 +313,9 @@ override_dh_strip:
 	$(foreach pkg,$(pkgs_dbg),dh_strip -p$(pkg) --dbg-package=$(pkg)-dbg;)
 	dh_strip -plibqt4-phonon
 	dh_strip --remaining-packages --dbg-package=libqt4-dbg
+	# Move binaries in qt4-bin-dbg package
+	mkdir -p debian/qt4-bin-dbg/usr/lib/debug/usr
+	mv debian/libqt4-dbg/usr/lib/debug/usr/bin debian/qt4-bin-dbg/usr/lib/debug/usr/
 
 override_dh_makeshlibs:
 	# Specific shlibs version (e.g.: 4:4.5.2)

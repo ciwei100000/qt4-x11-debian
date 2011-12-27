@@ -5,21 +5,21 @@ Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Fathi Boudra <fabo@debian.org>,
            Modestas Vainius <modax@debian.org>,
            Sune Vuorela <debian@pusling.com>,
+           Pino Toscano <pino@debian.org>
 Build-Depends: debhelper (>= 7.4.13),
-               firebird2.1-dev [amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sh4 sparc],
+               firebird2.5-dev [amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sh4 sparc],
                flex,
                freetds-dev,
                g++ (>= 4:4.5) [s390],
                g++-4.6 (>= 4.6.0-7~) [armel],
-               libasound2-dev [!kfreebsd-amd64 !kfreebsd-i386 !hurd-i386],
+               libasound2-dev [linux-any],
                libaudio-dev,
                libcups2-dev,
                libdbus-1-dev,
                libfreetype6-dev,
-               libgl1-mesa-dev | libgl-dev [!armel !armhf],
-               libgles2-mesa-dev [armel armhf] | libgles2-dev [armel armhf],
+               libgl1-mesa-dev,
                libglib2.0-dev,
-               libglu1-mesa-dev | libglu-dev [!armel !armhf],
+               libglu1-mesa-dev,
                libgstreamer-plugins-base0.10-dev,
                libgstreamer0.10-dev,
                libgtk2.0-dev,
@@ -50,6 +50,7 @@ Build-Depends: debhelper (>= 7.4.13),
                libxtst-dev,
                libxv-dev,
                pkg-kde-tools (>= 0.6.4),
+               rsync,
                unixodbc-dev,
                zlib1g-dev
 Standards-Version: 3.9.2
@@ -70,6 +71,8 @@ Description: Qt 4 core module
 
 Package: libqt4-core
 Architecture: any
+Section: oldlibs
+Priority: extra
 Depends: libqt4-dbus (= ${binary:Version}),
          libqt4-network (= ${binary:Version}),
          libqt4-script (= ${binary:Version}),
@@ -105,6 +108,8 @@ Description: Qt 4 GUI module
 
 Package: libqt4-gui
 Architecture: any
+Section: oldlibs
+Priority: extra
 Depends: libqt4-designer (= ${binary:Version}),
          libqt4-opengl (= ${binary:Version}),
          libqt4-svg (= ${binary:Version}),
@@ -270,6 +275,8 @@ Description: Qt 4 SVG module
 
 Package: libqt4-webkit
 Architecture: any
+Section: oldlibs
+Priority: extra
 Depends: libqtwebkit4 (>= 2.0~), ${misc:Depends}
 Description: transitional package for Qt 4 WebKit module
  Qt is a cross-platform C++ application framework.  Qt's primary feature
@@ -301,7 +308,7 @@ Description: Qt 4 XML patterns module
 
 Package: libqt4-dbus
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: qdbus (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Replaces: libqt4-core (<< 4.4.0~beta1-1), libqt4-dev (<< 4:4.7.1)
 Breaks: libqt4-core (<< 4.4.0~beta1-1), libqt4-dev (<< 4:4.7.1)
 Description: Qt 4 D-Bus module
@@ -355,6 +362,8 @@ Description: Qt 4 help module
 
 Package: libqt4-assistant
 Architecture: any
+Section: oldlibs
+Priority: extra
 Depends: libqtassistantclient4 (>= 4.6.3), ${misc:Depends}
 Description: transitional package for Qt 4 assistant module
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -398,6 +407,7 @@ Depends: ${misc:Depends}, ${shlibs:Depends}
 Suggests: libqt4-declarative-folderlistmodel,
           libqt4-declarative-gestures,
           libqt4-declarative-particles,
+          libqt4-declarative-shaders,
           qt4-qmlviewer
 Description: Qt 4 Declarative module
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -432,6 +442,15 @@ Description: Qt 4 particles QML plugin
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains the particles QML plugin for QtDeclarative.
+
+Package: libqt4-declarative-shaders
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Qt 4 shaders QML plugin
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the shaders QML plugin for QtDeclarative.
 
 Package: libqt4-dev
 Architecture: any
@@ -475,11 +494,24 @@ Description: Qt 4 development files
  This package contains the header development files and development programs
  used for building Qt 4 applications.
 
+Package: libqt4-private-dev
+Architecture: any
+Section: libdevel
+Depends: libqt4-dev (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
+Description: Qt 4 private development files
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the private header development files for building some
+ Qt 4 applications like Qt Creator QML Designer plugin.
+ .
+ Use at your own risk.
+
 Package: libqt4-opengl-dev
 Architecture: any
 Section: libdevel
-Depends: libgl1-mesa-dev | libgl-dev,
-         libglu1-mesa-dev | libglu-dev,
+Depends: libgl1-mesa-dev,
+         libglu1-mesa-dev,
          libqt4-dev (= ${binary:Version}),
          libqt4-opengl (= ${binary:Version}),
          ${misc:Depends},
@@ -507,6 +539,50 @@ Description: Qt 4 library debugging symbols
  .
  This package contains the debugging symbols for the Qt 4 libraries.
 
+Package: libqt4-designer-dbg
+Priority: extra
+Architecture: any
+Section: debug
+Depends: libqt4-designer (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Breaks: libqt4-dbg (<< 4:4.7.3-3)
+Replaces: libqt4-dbg (<< 4:4.7.3-3)
+Description: Qt 4 designer library debugging symbols
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the debugging symbols for the Qt 4 Designer library.
+
+Package: libqt4-qt3support-dbg
+Priority: extra
+Architecture: any
+Section: debug
+Depends: libqt4-qt3support (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Breaks: libqt4-dbg (<< 4:4.7.3-3)
+Replaces: libqt4-dbg (<< 4:4.7.3-3)
+Description: Qt 3 compatibility library for Qt 4 debugging symbols
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the debugging symbols for the Qt 3 compatibility library
+ for Qt 4.
+
+Package: libqt4-script-dbg
+Priority: extra
+Architecture: any
+Section: debug
+Depends: libqt4-script (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
+Breaks: libqt4-dbg (<< 4:4.7.3-3)
+Replaces: libqt4-dbg (<< 4:4.7.3-3)
+Description: Qt 4 script library debugging symbols
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the debugging symbols for the Qt 4 Script library.
+
 Package: libqt4-webkit-dbg
 Priority: extra
 Architecture: any
@@ -532,6 +608,19 @@ Description: Qt 4 XML patterns library debugging symbols
  .
  This package contains the debugging symbols for the Qt 4 XML patterns
  library.
+
+Package: qt4-bin-dbg
+Priority: extra
+Architecture: any
+Section: debug
+Depends: libqt4-dbg (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
+Breaks: libqt4-dbg (<< 4:4.7.3-3)
+Replaces: libqt4-dbg (<< 4:4.7.3-3)
+Description: Qt 4 binaries debugging symbols
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the debugging symbols for the Qt 4 binaries.
 
 Package: qt4-demos-dbg
 Priority: extra
@@ -577,8 +666,8 @@ Description: Qt 4 development tools
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains tools used to assist in Qt 4 development, including
- the Qt Assistant, Linguist, D-Bus Viewer, Pixel Tool, Virtual Framebuffer and
- QML Plugin Dump applications.
+ the Qt Assistant, Linguist, D-Bus Viewer, Pixel Tool and Virtual
+ Framebuffer applications.
 
 Package: qt4-qmake
 Architecture: any
@@ -637,14 +726,15 @@ Description: Qt 4 QML viewer
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
- This package contains Qt 4 QML viewer (qml). It allows to view QML files.
+ This package contains Qt 4 QML viewer (qml), which can be used for viewing
+ QML files.
 
 Package: qt4-linguist-tools
 Architecture: any
 Section: devel
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libqt4-dev (<< 4.7.3-2)
-Replaces: libqt4-dev (<< 4.7.3-2)
+Breaks: libqt4-dev (<< 4:4.7.3-2)
+Replaces: libqt4-dev (<< 4:4.7.3-2)
 Description: Qt 4 Linguist tools
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -653,6 +743,18 @@ Description: Qt 4 Linguist tools
  that finds the translatable strings in the specified source, header and
  Qt Designer interface files, and produces or updates .ts translation files.
  lrelease is a command line tool that produces QM files out of TS files.
+
+Package: qdbus
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Breaks: libqt4-dbus (<< 4:4.7.4-1)
+Replaces: libqt4-dbus (<< 4:4.7.4-1)
+Description: Qt 4 D-Bus tool
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains qdbus, a command-line tool interface to D-Bus that uses
+ the QtDBus library.
 
 Package: qt4-doc
 Architecture: all

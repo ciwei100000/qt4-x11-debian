@@ -25,7 +25,7 @@ Author: Thiago Macieira <thiago@kde.org>
  #endif
  
  QT_BEGIN_NAMESPACE
-@@ -2271,6 +2274,27 @@ void qt_message_output(QtMsgType msgType
+@@ -2256,6 +2259,27 @@ void qt_message_output(QtMsgType msgType
  #else
          fprintf(stderr, "%s\n", buf);
          fflush(stderr);
@@ -55,7 +55,7 @@ Author: Thiago Macieira <thiago@kde.org>
  
 --- a/src/corelib/kernel/qcoreapplication_p.h
 +++ b/src/corelib/kernel/qcoreapplication_p.h
-@@ -86,6 +86,8 @@ public:
+@@ -85,6 +85,8 @@ public:
      bool sendThroughObjectEventFilters(QObject *, QEvent *);
      bool notify_helper(QObject *, QEvent *);
  

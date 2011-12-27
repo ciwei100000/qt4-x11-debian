@@ -8,9 +8,13 @@ Date:   Tue Nov 16 12:45:15 2010 +0100
     
     Reviewed-by: bnilsen
 
+---
+ src/gui/graphicsview/qgraphicsscene.cpp |   19 +------------------
+ 1 file changed, 1 insertion(+), 18 deletions(-)
+
 --- a/src/gui/graphicsview/qgraphicsscene.cpp
 +++ b/src/gui/graphicsview/qgraphicsscene.cpp
-@@ -4367,25 +4367,8 @@ static void _q_paintIntoCache(QPixmap *p
+@@ -4369,25 +4369,8 @@ static void _q_paintIntoCache(QPixmap *p
  static inline bool transformIsSimple(const QTransform& transform)
  {
      QTransform::TransformationType type = transform.type();

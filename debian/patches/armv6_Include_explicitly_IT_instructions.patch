@@ -8,7 +8,7 @@ Bug-Ubuntu: https://launchpad.net/bugs/673085
 
 --- a/src/corelib/arch/qatomic_armv6.h
 +++ b/src/corelib/arch/qatomic_armv6.h
-@@ -152,6 +152,7 @@ inline bool QBasicAtomicInt::testAndSetR
+@@ -144,6 +144,7 @@ inline bool QBasicAtomicInt::testAndSetO
      asm volatile("0:\n"
                   "ldrex %[result], [%[_q_value]]\n"
                   "eors %[result], %[result], %[expectedValue]\n"
@@ -16,7 +16,7 @@ Bug-Ubuntu: https://launchpad.net/bugs/673085
                   "strexeq %[result], %[newValue], [%[_q_value]]\n"
                   "teqeq %[result], #1\n"
                   "beq 0b\n"
-@@ -210,6 +211,7 @@ Q_INLINE_TEMPLATE bool QBasicAtomicPoint
+@@ -202,6 +203,7 @@ Q_INLINE_TEMPLATE bool QBasicAtomicPoint
      asm volatile("0:\n"
                   "ldrex %[result], [%[_q_value]]\n"
                   "eors %[result], %[result], %[expectedValue]\n"

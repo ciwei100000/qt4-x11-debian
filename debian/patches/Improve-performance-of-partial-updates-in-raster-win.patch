@@ -19,8 +19,8 @@ the performance of partial updates.
 Idea-from: Olivier Goffart
 Reviewed-by: Bjørn Erik Nilsen
 ---
- src/gui/painting/qwindowsurface_raster.cpp |   29 ++++++++++++++++++++++++++-
- src/gui/painting/qwindowsurface_raster_p.h |    3 ++
+ src/gui/painting/qwindowsurface_raster.cpp |   29 +++++++++++++++++++++++++++--
+ src/gui/painting/qwindowsurface_raster_p.h |    3 +++
  2 files changed, 30 insertions(+), 2 deletions(-)
 
 --- a/src/gui/painting/qwindowsurface_raster.cpp

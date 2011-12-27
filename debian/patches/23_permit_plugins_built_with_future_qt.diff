@@ -27,7 +27,7 @@ installability and expand of forward binary compatibility beyond the same Qt
 
 --- a/src/corelib/plugin/qlibrary.cpp
 +++ b/src/corelib/plugin/qlibrary.cpp
-@@ -826,7 +826,7 @@ bool QLibraryPrivate::isPlugin(QSettings
+@@ -737,7 +737,7 @@ bool QLibraryPrivate::isPlugin(QSettings
  
      pluginState = IsNotAPlugin; // be pessimistic
  

@@ -17,6 +17,11 @@ Date:   Thu Nov 18 12:06:41 2010 +0100
     
     Reviewed-by: Andreas Kling
 
+---
+ src/gui/painting/qgrayraster.c   |   35 ++++++++++++-----------------------
+ src/gui/painting/qgrayraster_p.h |    2 +-
+ 2 files changed, 13 insertions(+), 24 deletions(-)
+
 --- a/src/gui/painting/qgrayraster.c
 +++ b/src/gui/painting/qgrayraster.c
 @@ -408,25 +408,31 @@

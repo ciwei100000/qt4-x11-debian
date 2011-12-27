@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.2 amd64 armel ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sparc
+# SymbolsHelper-Confirmed: 4:4.7.4 amd64
 libQtSvg.so.4 libqt4-svg #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN10QSvgWidget10paintEventEP11QPaintEvent@Base 4:4.5.3
@@ -54,6 +54,9 @@ libQtSvg.so.4 libqt4-svg #MINVER#
  _ZN13QSvgGeneratorD2Ev@Base 4:4.5.3
  (optional=external|arch=sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
  (optional=external|arch=sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
+ _ZN15QGraphicsObjectD0Ev@Base 4:4.7.4
+ _ZN15QGraphicsObjectD1Ev@Base 4:4.7.4
+ _ZN15QGraphicsObjectD2Ev@Base 4:4.7.4
  _ZN16QGraphicsSvgItem11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN16QGraphicsSvgItem11qt_metacastEPKc@Base 4:4.5.3
  _ZN16QGraphicsSvgItem12setElementIdERK7QString@Base 4:4.5.3
@@ -66,6 +69,9 @@ libQtSvg.so.4 libqt4-svg #MINVER#
  _ZN16QGraphicsSvgItemC1ERK7QStringP13QGraphicsItem@Base 4:4.5.3
  _ZN16QGraphicsSvgItemC2EP13QGraphicsItem@Base 4:4.5.3
  _ZN16QGraphicsSvgItemC2ERK7QStringP13QGraphicsItem@Base 4:4.5.3
+ _ZN16QGraphicsSvgItemD0Ev@Base 4:4.7.4
+ _ZN16QGraphicsSvgItemD1Ev@Base 4:4.7.4
+ _ZN16QGraphicsSvgItemD2Ev@Base 4:4.7.4
  _ZN16QSvgTinyDocument10addSvgFontEP8QSvgFont@Base 4:4.5.3
  _ZN16QSvgTinyDocument10setViewBoxERK6QRectF@Base 4:4.5.3
  _ZN16QSvgTinyDocument11setAnimatedEb@Base 4:4.5.3
@@ -89,6 +95,10 @@ libQtSvg.so.4 libqt4-svg #MINVER#
  _ZN16QSvgTinyDocumentD0Ev@Base 4:4.5.3
  _ZN16QSvgTinyDocumentD1Ev@Base 4:4.5.3
  _ZN16QSvgTinyDocumentD2Ev@Base 4:4.5.3
+ _ZN20QXmlStreamAttributesD1Ev@Base 4:4.7.4
+ _ZN20QXmlStreamAttributesD2Ev@Base 4:4.7.4
+ _ZN4QCss6ParserD1Ev@Base 4:4.7.4
+ _ZN4QCss6ParserD2Ev@Base 4:4.7.4
  _ZNK10QSvgWidget10metaObjectEv@Base 4:4.5.3
  _ZNK10QSvgWidget8rendererEv@Base 4:4.5.3
  _ZNK10QSvgWidget8sizeHintEv@Base 4:4.5.3
@@ -146,7 +156,9 @@ libQtSvg.so.4 libqt4-svg #MINVER#
  _ZTV13QSvgGenerator@Base 4:4.5.3
  _ZTV16QGraphicsSvgItem@Base 4:4.5.3
  _ZTV16QSvgTinyDocument@Base 4:4.5.3
+ (c++)"non-virtual thunk to QGraphicsObject::~QGraphicsObject()@Base" 4:4.7.4
  (c++)"non-virtual thunk to QGraphicsSvgItem::boundingRect() const@Base" 4:4.5.3
  (c++)"non-virtual thunk to QGraphicsSvgItem::paint(QPainter*, QStyleOptionGraphicsItem const*, QWidget*)@Base" 4:4.5.3
  (c++)"non-virtual thunk to QGraphicsSvgItem::type() const@Base" 4:4.5.3
+ (c++)"non-virtual thunk to QGraphicsSvgItem::~QGraphicsSvgItem()@Base" 4:4.7.4
  (c++)"non-virtual thunk to QSvgWidget::~QSvgWidget()@Base" 4:4.5.3

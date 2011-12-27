@@ -11,7 +11,7 @@ Last-Update: 2011-04-27
 
 --- a/configure
 +++ b/configure
-@@ -3185,6 +3185,12 @@ if [ -z "${CFG_HOST_ARCH}" ]; then
+@@ -3025,6 +3025,12 @@ if [ -z "${CFG_HOST_ARCH}" ]; then
              ;;
          esac
          ;;
