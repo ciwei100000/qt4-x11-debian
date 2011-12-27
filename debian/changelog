@@ -1,3 +1,9 @@
+qt4-x11 (4:4.8.0-0multiarch1) UNRELEASED; urgency=low
+
+  * New upstream release.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 22 Dec 2011 17:50:13 +0200
+
 qt4-x11 (4:4.7.4-1) unstable; urgency=low
 
   * New upstream release.
