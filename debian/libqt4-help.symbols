@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.4 amd64
+# SymbolsHelper-Confirmed: 4:4.8.0 amd64
 libQtHelp.so.4 libqt4-help #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN11QHelpEngine11indexWidgetEv@Base 4:4.5.3
@@ -180,7 +180,10 @@ libQtHelp.so.4 libqt4-help #MINVER#
  _ZN22QHelpSearchQueryWidget11qt_metacastEPKc@Base 4:4.5.3
  _ZN22QHelpSearchQueryWidget12focusInEventEP11QFocusEvent@Base 4:4.5.3
  _ZN22QHelpSearchQueryWidget16staticMetaObjectE@Base 4:4.5.3
+ _ZN22QHelpSearchQueryWidget20expandExtendedSearchEv@Base 4:4.8.0
+ _ZN22QHelpSearchQueryWidget22collapseExtendedSearchEv@Base 4:4.8.0
  _ZN22QHelpSearchQueryWidget6searchEv@Base 4:4.5.3
+ _ZN22QHelpSearchQueryWidget8setQueryERK5QListI16QHelpSearchQueryE@Base 4:4.8.0
  _ZN22QHelpSearchQueryWidgetC1EP7QWidget@Base 4:4.5.3
  _ZN22QHelpSearchQueryWidgetC2EP7QWidget@Base 4:4.5.3
  _ZN22QHelpSearchQueryWidgetD0Ev@Base 4:4.5.3

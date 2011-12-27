@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.4 amd64
+# SymbolsHelper-Confirmed: 4:4.8.0 amd64
 libQtTest.so.4 libqt4-test #MINVER#
 * Build-Depends-Package: libqt4-dev
  (arch=ia64 mips mipsel sparc)_ZGVZN14QTestEventLoop8instanceEvE8testLoop@Base 4:4.7.2
@@ -81,6 +81,7 @@ libQtTest.so.4 libqt4-test #MINVER#
  _ZN5QTest17currentTestFailedEv@Base 4:4.5.3
  _ZN5QTest17defaultKeyVerboseEv@Base 4:4.5.3
  _ZN5QTest17defaultMouseDelayEv@Base 4:4.5.3
+ _ZN5QTest18printAvailableTagsE@Base 4:4.8.0
  (subst)_ZN5QTest18setBenchmarkResultE{qreal}NS_16QBenchmarkMetricE@Base 4:4.7.0~beta1
  _ZN5QTest19currentTestFunctionEv@Base 4:4.5.3
  _ZN5QTest19toHexRepresentationEPKci@Base 4:4.5.3
@@ -125,6 +126,7 @@ libQtTest.so.4 libqt4-test #MINVER#
  _ZN8QTestLog10setLogModeENS_7LogModeE@Base 4:4.7.4
  _ZN8QTestLog11stopLoggingEv@Base 4:4.7.4
  _ZN8QTestLog12setFlushModeENS_9FlushModeE@Base 4:4.7.4
+ _ZN8QTestLog12startLoggingEj@Base 4:4.8.0
  _ZN8QTestLog12startLoggingEv@Base 4:4.7.4
  _ZN8QTestLog12verboseLevelEv@Base 4:4.7.4
  _ZN8QTestLog14outputFileNameEv@Base 4:4.7.4

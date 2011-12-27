@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.4 amd64
+# SymbolsHelper-Confirmed: 4:4.8.0 amd64
 libQtSql.so.4 libqt4-sql #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN10QSqlDriver11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -190,6 +190,7 @@ libQtSql.so.4 libqt4-sql #MINVER#
  _ZN16QSqlDriverPluginD2Ev@Base 4:4.5.3
  _ZN24QSqlRelationalTableModel11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN24QSqlRelationalTableModel11qt_metacastEPKc@Base 4:4.5.3
+ _ZN24QSqlRelationalTableModel11setJoinModeENS_8JoinModeE@Base 4:4.8.0
  _ZN24QSqlRelationalTableModel11setRelationEiRK12QSqlRelation@Base 4:4.5.3
  _ZN24QSqlRelationalTableModel13removeColumnsEiiRK11QModelIndex@Base 4:4.5.3
  _ZN24QSqlRelationalTableModel16staticMetaObjectE@Base 4:4.5.3

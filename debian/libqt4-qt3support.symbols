@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.4 amd64
+# SymbolsHelper-Confirmed: 4:4.8.0 amd64
 libQt3Support.so.4 libqt4-qt3support #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z16qt_tryAccelEventP7QWidgetP9QKeyEvent@Base 4:4.5.3
@@ -1624,8 +1624,6 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN12Q3TextStreamrsERs@Base 4:4.5.3
  _ZN12Q3TextStreamrsERt@Base 4:4.5.3
  _ZN12Q3TextString16appendParagraphsEP15Q3TextParagraphS1_@Base 4:4.5.3
- (arch=!ia64 !mips !mipsel !sparc)_ZN12Q3TextString18nextCursorPositionEi@Base 4:4.7.2
- (optional=external)_ZN12Q3TextString22previousCursorPositionEi@Base 4:4.7.2
  _ZN12Q3TextString5clearEv@Base 4:4.5.3
  _ZN12Q3TextString6insertEiP16Q3TextStringCharb@Base 4:4.5.3
  _ZN12Q3TextString6insertEiPK5QChariP12Q3TextFormat@Base 4:4.5.3
