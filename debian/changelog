@@ -2,6 +2,11 @@ qt4-x11 (4:4.8.0-0multiarch1) UNRELEASED; urgency=low
 
   * New upstream release.
 
+  [ Pino Toscano ]
+  * Use the hurd-g++ mkspec when building on Hurd:
+    - add mkspecs/hurd-g++/qmake.conf in 01_debian_append_qt4_suffix.diff
+    - update the platform_arg in debian/rules
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 22 Dec 2011 17:50:13 +0200
 
 qt4-x11 (4:4.7.4-1) unstable; urgency=low

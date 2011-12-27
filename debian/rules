@@ -61,7 +61,11 @@ ifeq ($(DEB_HOST_ARCH_OS),linux)
 	platform_arg = linux-g++
   endif
 else
+  ifeq ($(DEB_HOST_ARCH_OS),hurd)
+	platform_arg = hurd-g++
+  else
 	platform_arg = glibc-g++
+  endif
 endif
 
 ifneq ($(DEB_HOST_ARCH),ia64)

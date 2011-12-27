@@ -1,5 +1,6 @@
 Author: Brian Nelson <pyro@debian.org>
 Author: Fathi Boudra <fabo@debian.org>
+Author: Pino Toscano <pino@kde.org>
 Description: Append a -qt4 suffix to some tools.
  To allow co-installation of the development tools of Qt4 with the Qt3 ones,
  we append a -qt4 suffix to the executable names of some development tools:
@@ -18,6 +19,7 @@ Forwarded: not-needed
  mkspecs/common/linux.conf                         |    4 ++--
  mkspecs/features/moc.prf                          |    2 +-
  mkspecs/features/uic.prf                          |    2 +-
+ mkspecs/hurd-g++/qmake.conf                       |    4 ++--
  projects.pro                                      |    2 +-
  qmake/Makefile.unix                               |    8 ++++----
  src/tools/moc/moc.pro                             |    2 +-
@@ -348,3 +350,16 @@ Forwarded: not-needed
  
              if (!proc.waitForStarted()) {
                  fprintf(stderr, PROGRAMNAME ": could not execute moc! Aborting.\n");
+--- a/mkspecs/hurd-g++/qmake.conf
++++ b/mkspecs/hurd-g++/qmake.conf
+@@ -42,8 +42,8 @@ QMAKE_LIBS_OPENGL_ES2 = -lGLESv2
+ QMAKE_LIBS_OPENVG     = -lOpenVG
+ QMAKE_LIBS_THREAD     = -lpthread
+ 
+-QMAKE_MOC             = $$[QT_INSTALL_BINS]/moc
+-QMAKE_UIC             = $$[QT_INSTALL_BINS]/uic
++QMAKE_MOC             = $$[QT_INSTALL_BINS]/moc-qt4
++QMAKE_UIC             = $$[QT_INSTALL_BINS]/uic-qt4
+ 
+ QMAKE_AR              = ar cqs
+ QMAKE_OBJCOPY         = objcopy
