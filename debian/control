@@ -73,6 +73,8 @@ Description: Qt 4 core module
 
 Package: libqt4-core
 Architecture: any
+Section: oldlibs
+Priority: extra
 Depends: libqt4-dbus (= ${binary:Version}),
          libqt4-network (= ${binary:Version}),
          libqt4-script (= ${binary:Version}),
@@ -110,6 +112,8 @@ Description: Qt 4 GUI module
 
 Package: libqt4-gui
 Architecture: any
+Section: oldlibs
+Priority: extra
 Depends: libqt4-designer (= ${binary:Version}),
          libqt4-opengl (= ${binary:Version}),
          libqt4-svg (= ${binary:Version}),
@@ -301,6 +305,8 @@ Description: Qt 4 SVG module
 
 Package: libqt4-webkit
 Architecture: any
+Section: oldlibs
+Priority: extra
 Depends: libqtwebkit4 (>= 2.0~), ${misc:Depends}
 Description: transitional package for Qt 4 WebKit module
  Qt is a cross-platform C++ application framework.  Qt's primary feature
@@ -338,7 +344,7 @@ Package: libqt4-dbus
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends}, ${shlibs:Depends}, qdbus
+Depends: qdbus (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Replaces: libqt4-core (<< 4.4.0~beta1-1), libqt4-dev (<< 4:4.7.1)
 Breaks: libqt4-core (<< 4.4.0~beta1-1), libqt4-dev (<< 4:4.7.1)
 Description: Qt 4 D-Bus module
@@ -398,6 +404,8 @@ Description: Qt 4 help module
 
 Package: libqt4-assistant
 Architecture: any
+Section: oldlibs
+Priority: extra
 Depends: libqtassistantclient4 (>= 4.6.3), ${misc:Depends}
 Description: transitional package for Qt 4 assistant module
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -787,7 +795,7 @@ Description: Qt 4 Linguist tools
 Package: qdbus
 Architecture: any
 Multi-Arch: foreign
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libqt4-dbus (<< 4:4.7.4-1)
 Replaces: libqt4-dbus (<< 4:4.7.4-1)
 Description: Qt 4 D-Bus tool
