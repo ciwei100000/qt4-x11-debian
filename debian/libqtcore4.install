@@ -1,6 +1,6 @@
-usr/lib/*/libQtCLucene.so.*
-usr/lib/*/libQtCore.so.*
-usr/lib/*/qt4/plugins/codecs/*.so
+usr/lib/libQtCLucene.so.*
+usr/lib/libQtCore.so.*
+usr/lib/qt4/plugins/codecs/*.so
 usr/share/qt4/translations/qt_ar.qm
 usr/share/qt4/translations/qt_cs.qm
 usr/share/qt4/translations/qt_da.qm
