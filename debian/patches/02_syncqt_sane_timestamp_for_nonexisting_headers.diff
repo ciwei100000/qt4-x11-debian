@@ -15,7 +15,7 @@ GMT.) for the symlink, just use current time().
 
 --- a/bin/syncqt
 +++ b/bin/syncqt
-@@ -832,7 +832,7 @@ foreach my $lib (@modules_to_sync) {
+@@ -831,7 +831,7 @@ foreach my $lib (@modules_to_sync) {
                              print "SYMBOL: $_\n";
                          }
                      } else {

@@ -11,11 +11,11 @@ Merge-Request: 506
 Reviewed-by: Zeno Albisser
 ---
  bin/syncqt |   17 ++++++++---------
- 1 files changed, 8 insertions(+), 9 deletions(-)
+ 1 file changed, 8 insertions(+), 9 deletions(-)
 
 --- a/bin/syncqt
 +++ b/bin/syncqt
-@@ -75,6 +75,7 @@
+@@ -75,6 +75,7 @@ my @modules_to_sync ;
  $force_relative = 1 if ( -d "/System/Library/Frameworks" );
  my $out_basedir = $basedir;
  $out_basedir =~ s=\\=/=g;
@@ -23,7 +23,7 @@ Reviewed-by: Zeno Albisser
  
  # functions ----------------------------------------------------------
  
-@@ -350,11 +351,9 @@
+@@ -352,11 +353,9 @@ sub syncHeader {
  ######################################################################
  sub fixPaths {
      my ($file, $dir) = @_;
@@ -36,7 +36,7 @@ Reviewed-by: Zeno Albisser
  
      #setup
      my $ret = $file;
-@@ -378,7 +377,7 @@
+@@ -380,7 +379,7 @@ sub fixPaths {
          my $slash = index($file_dir, "/", $i);
          last if($slash == -1);
          my $tmp = substr($file_dir, 0, $slash);
@@ -45,7 +45,7 @@ Reviewed-by: Zeno Albisser
          $match_dir = $tmp;
          $i = $slash;
      }
-@@ -389,7 +388,7 @@
+@@ -391,7 +390,7 @@ sub fixPaths {
          for(my $i = 0; $i < $count; $i++) {
              $dots .= "../";
          }
@@ -54,7 +54,7 @@ Reviewed-by: Zeno Albisser
      }
      $ret =~ s,/+,/,g;
      return $ret;
-@@ -507,13 +506,13 @@
+@@ -509,13 +508,13 @@ sub symlinkFile
  
      if ($isunix) {
          print "symlink created for $file " unless $quiet;
@@ -71,7 +71,7 @@ Reviewed-by: Zeno Albisser
              print " ($file)\n" unless $quiet;
          }
          print "\n" unless $quiet;
-@@ -837,7 +836,7 @@
+@@ -839,7 +838,7 @@ foreach my $lib (@modules_to_sync) {
                              @headers = ( "$out_basedir/include/$lib/$header" );
  
                              # write forwarding headers to include/Qt
