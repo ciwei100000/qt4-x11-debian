@@ -36,3 +36,4 @@ powerpcspe.diff
 sh.diff
 kfreebsd_monotonic_clock.diff
 powerpc_designer_gstabs.diff
+qt-multiarch-plugin-path-compat.diff

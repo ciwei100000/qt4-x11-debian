@@ -21,6 +21,9 @@ qt4-x11 (4:4.8.0-0multiarch1) UNRELEASED; urgency=low
     - blacklist-diginotar-cert.diff
     - Remove_QtHelp_dependency_on_QtXml.patch
   * Drop openssl_no_ssl2.patch - fixed upstream.
+  * Add patches:
+    - qt-multiarch-plugin-path-compat.diff - include legacy pre-multiarch
+      plugin path.
 
   [ Pino Toscano ]
   * Use the hurd-g++ mkspec when building on Hurd:
