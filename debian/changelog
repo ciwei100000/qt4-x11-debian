@@ -1,7 +1,6 @@
 qt4-x11 (4:4.8.0-0multiarch1) UNRELEASED; urgency=low
 
   * New upstream release.
-    - merge request #1023: qvfb builds with libpng >= 1.5. (Closes: 649969)
 
   [ Fathi Boudra ]
   * Drop patches (stolen upstream):
