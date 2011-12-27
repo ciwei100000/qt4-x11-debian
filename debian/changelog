@@ -27,6 +27,7 @@ qt4-x11 (4:4.8.0-0multiarch1) UNRELEASED; urgency=low
   * Update debian/control: mark Qt libraries as Multi-Arch.
   * Update debian/rules:
     - add DEB_HOST_MULTIARCH support for libdir/plugindir.
+    - remove -qt-gif configure option - removed upstream.
 
   [ Pino Toscano ]
   * Use the hurd-g++ mkspec when building on Hurd:
