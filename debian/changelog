@@ -29,6 +29,9 @@ qt4-x11 (4:4.8.0-0multiarch1) UNRELEASED; urgency=low
     - add DEB_HOST_MULTIARCH support for libdir/plugindir.
     - remove -qt-gif configure option - removed upstream.
     - use ts-all target. The ts target has been removed.
+  * Update debian/*.install files:
+    - update paths for multiarch.
+    - headers, translations, qmlplugindump.
 
   [ Pino Toscano ]
   * Use the hurd-g++ mkspec when building on Hurd:

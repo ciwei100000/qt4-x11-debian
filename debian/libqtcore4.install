@@ -1,6 +1,6 @@
-usr/lib/libQtCLucene.so.*
-usr/lib/libQtCore.so.*
-usr/lib/qt4/plugins/codecs/*.so
+usr/lib/*/libQtCLucene.so.*
+usr/lib/*/libQtCore.so.*
+usr/lib/*/qt4/plugins/codecs/*.so
 usr/share/qt4/translations/qt_ar.qm
 usr/share/qt4/translations/qt_cs.qm
 usr/share/qt4/translations/qt_da.qm
@@ -13,6 +13,7 @@ usr/share/qt4/translations/qt_he.qm
 usr/share/qt4/translations/qt_hu.qm
 usr/share/qt4/translations/qt_ja.qm
 usr/share/qt4/translations/qt_ko.qm
+usr/share/qt4/translations/qt_lt.qm
 usr/share/qt4/translations/qt_pl.qm
 usr/share/qt4/translations/qt_pt.qm
 usr/share/qt4/translations/qt_ru.qm
