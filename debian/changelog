@@ -1,4 +1,4 @@
-qt4-x11 (4:4.7.4-1) UNRELEASED; urgency=low
+qt4-x11 (4:4.7.4-1) unstable; urgency=low
 
   * New upstream release.
     - QTreeView crash in indexRowSizeHint/itemHeight. (Closes: #632855)
