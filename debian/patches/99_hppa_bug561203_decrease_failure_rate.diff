@@ -21,7 +21,7 @@ Last-Update: 2011-12-26
      return envp;
  }
  
-+inline debbug_561203()
++inline void debbug_561203()
 +{
 +#if defined(__linux__) && defined(__hppa__)
 +        usleep(1000);
