@@ -24,6 +24,7 @@ qt4-x11 (4:4.8.0-0multiarch1) UNRELEASED; urgency=low
   * Add patches:
     - qt-multiarch-plugin-path-compat.diff - include legacy pre-multiarch
       plugin path.
+  * Update debian/control: mark Qt libraries as Multi-Arch.
 
   [ Pino Toscano ]
   * Use the hurd-g++ mkspec when building on Hurd:
