@@ -138,6 +138,7 @@ endif
 	            -no-rpath \
 	            -optimized-qmake \
 	            -dbus-linked \
+	            -reduce-relocations \
 	            -no-separate-debug-info \
 	            -verbose \
 	            -gtkstyle \
