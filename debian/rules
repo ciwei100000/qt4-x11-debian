@@ -3,6 +3,8 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+
 export QTDIR := $(shell pwd)
 export PATH := $(QTDIR)/bin:$(PATH)
 export LDFLAGS := -Wl,--as-needed
@@ -103,11 +105,11 @@ endif
 	./configure -confirm-license \
 	            -prefix "/usr" \
 	            -bindir "/usr/bin" \
-	            -libdir "/usr/lib" \
+	            -libdir "/usr/lib/$(DEB_HOST_MULTIARCH)" \
 	            -docdir "/usr/share/qt4/doc" \
 	            -headerdir "/usr/include/qt4" \
 	            -datadir "/usr/share/qt4" \
-	            -plugindir "/usr/lib/qt4/plugins" \
+	            -plugindir "/usr/lib/$(DEB_HOST_MULTIARCH)/qt4/plugins" \
 	            -importdir "/usr/lib/qt4/imports" \
 	            -translationdir "/usr/share/qt4/translations" \
 	            -sysconfdir "/etc/xdg" \
