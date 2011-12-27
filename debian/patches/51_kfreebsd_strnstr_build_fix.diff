@@ -4,12 +4,12 @@ Bug: https://bugs.webkit.org/show_bug.cgi?id=33903
 
 ---
  src/3rdparty/javascriptcore/JavaScriptCore/wtf/Platform.h |    2 +-
- src/3rdparty/webkit/JavaScriptCore/wtf/Platform.h         |    2 +-
+ src/3rdparty/webkit/Source/JavaScriptCore/wtf/Platform.h  |    2 +-
  2 files changed, 2 insertions(+), 2 deletions(-)
 
---- a/src/3rdparty/webkit/JavaScriptCore/wtf/Platform.h
-+++ b/src/3rdparty/webkit/JavaScriptCore/wtf/Platform.h
-@@ -370,7 +370,7 @@
+--- a/src/3rdparty/webkit/Source/JavaScriptCore/wtf/Platform.h
++++ b/src/3rdparty/webkit/Source/JavaScriptCore/wtf/Platform.h
+@@ -423,7 +423,7 @@
  #endif
  
  /* OS(LINUX) - Linux */

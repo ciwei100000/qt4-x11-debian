@@ -8,7 +8,7 @@ Author: Joonas Tanskanen <joonas.tanskanen@sasken.com>
 
 --- a/src/gui/kernel/qapplication.cpp
 +++ b/src/gui/kernel/qapplication.cpp
-@@ -1021,6 +1021,11 @@ void QApplicationPrivate::initialize()
+@@ -1027,6 +1027,11 @@ void QApplicationPrivate::initialize()
      q->setAttribute(Qt::AA_S60DisablePartialScreenInputMode);
  #endif
  

@@ -20,7 +20,7 @@ Forward: not-needed
 
 --- a/src/corelib/tools/qstring.cpp
 +++ b/src/corelib/tools/qstring.cpp
-@@ -5466,6 +5466,11 @@ QString &QString::vsprintf(const char* c
+@@ -5554,6 +5554,11 @@ QString &QString::vsprintf(const char* c
      return *this;
  }
  

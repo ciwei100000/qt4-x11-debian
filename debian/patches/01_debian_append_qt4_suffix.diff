@@ -4,7 +4,7 @@ Description: Append a -qt4 suffix to some tools.
  To allow co-installation of the development tools of Qt4 with the Qt3 ones,
  we append a -qt4 suffix to the executable names of some development tools:
  assistant, designer, linguist, lrelease, lupdate, moc, qmake, qtconfig, uic.
-Last-Update: 2011-03-03
+Last-Update: 2011-12-25
 Forwarded: not-needed
 
 ---
@@ -31,9 +31,8 @@ Forwarded: not-needed
  tools/linguist/lupdate/lupdate.pro                |    2 +-
  tools/qdbus/qdbuscpp2xml/qdbuscpp2xml.cpp         |    2 +-
  tools/qtconfig/qtconfig.pro                       |    2 +-
- translations/translations.pri                     |    2 +-
- translations/translations.pro                     |    4 ++--
- 25 files changed, 35 insertions(+), 35 deletions(-)
+ translations/translations.pro                     |    6 +++---
+ 25 files changed, 37 insertions(+), 37 deletions(-)
 
 --- a/config.tests/unix/compile.test
 +++ b/config.tests/unix/compile.test
@@ -92,7 +91,7 @@ Forwarded: not-needed
      if [ "$VERBOSE" = "yes" ]; then
 --- a/configure
 +++ b/configure
-@@ -4568,7 +4568,7 @@ END {
+@@ -4816,7 +4816,7 @@ END {
  }
  
  # build qmake
@@ -101,7 +100,7 @@ Forwarded: not-needed
      echo "Creating qmake. Please wait..."
  
      OLD_QCONFIG_H=
-@@ -7996,8 +7996,8 @@ QMAKE_ABSOLUTE_SOURCE_ROOT = \$\$QT_SOUR
+@@ -8515,8 +8515,8 @@ QMAKE_ABSOLUTE_SOURCE_ROOT = \$\$QT_SOUR
  QMAKE_MOC_SRC    = \$\$QT_BUILD_TREE/src/moc
  
  #local paths that cannot be queried from the QT_INSTALL_* properties while building QTDIR
@@ -112,7 +111,7 @@ Forwarded: not-needed
  QMAKE_UIC3       = \$\$QT_BUILD_TREE/bin/uic3
  QMAKE_RCC        = \$\$QT_BUILD_TREE/bin/rcc
  QMAKE_QDBUSXML2CPP = \$\$QT_BUILD_TREE/bin/qdbusxml2cpp
-@@ -8400,11 +8400,11 @@ EXEC=""
+@@ -8919,11 +8919,11 @@ EXEC=""
  
  echo "Finding project files. Please wait..."
  if [ "$CFG_NOPROCESS" != "yes" ]; then
@@ -126,7 +125,7 @@ Forwarded: not-needed
      fi
  fi
  
-@@ -8591,7 +8591,7 @@ for file in .projects .projects.3; do
+@@ -9114,7 +9114,7 @@ for file in .projects .projects.3; do
          QMAKE_SPEC_ARGS="-spec $SPEC"
          echo $ECHO_N "  for $a$ECHO_C"
  
@@ -137,7 +136,7 @@ Forwarded: not-needed
              echo " (fast)"
 --- a/projects.pro
 +++ b/projects.pro
-@@ -148,7 +148,7 @@ qmake.path=$$[QT_INSTALL_BINS]
+@@ -144,7 +144,7 @@ qmake.path=$$[QT_INSTALL_BINS]
  win32 {
     qmake.files=$$QT_BUILD_TREE/bin/qmake.exe
  } else {
@@ -148,7 +147,7 @@ Forwarded: not-needed
  
 --- a/qmake/Makefile.unix
 +++ b/qmake/Makefile.unix
-@@ -75,17 +75,17 @@ CPPFLAGS = -I. -Igenerators -Igenerators
+@@ -86,17 +86,17 @@ CPPFLAGS = -g -I. -Igenerators -Igenerat
  
  CXXFLAGS = @QMAKE_CXXFLAGS@ $(CPPFLAGS)
  
@@ -241,35 +240,29 @@ Forwarded: not-needed
      static:CONFIG -= global_init_link_order
 --- a/tools/qtconfig/qtconfig.pro
 +++ b/tools/qtconfig/qtconfig.pro
-@@ -22,7 +22,7 @@ FORMS        = mainwindowbase.ui palette
+@@ -19,7 +19,7 @@ FORMS        = mainwindow.ui paletteedit
  RESOURCES    = qtconfig.qrc
  
  PROJECTNAME        = Qt Configuration
--TARGET                = qtconfig
-+TARGET                = qtconfig-qt4
- DESTDIR                = ../../bin
+-TARGET             = qtconfig
++TARGET             = qtconfig-qt4
+ DESTDIR            = ../../bin
  
  target.path=$$[QT_INSTALL_BINS]
---- a/translations/translations.pri
-+++ b/translations/translations.pri
-@@ -1,5 +1,5 @@
+--- a/translations/translations.pro
++++ b/translations/translations.pro
+@@ -1,8 +1,8 @@
+ TRANSLATIONS = $$files(*.ts)
+ 
+-qtPrepareTool(LRELEASE, lrelease)
++qtPrepareTool(LRELEASE, lrelease-qt4)
  qtPrepareTool(LCONVERT, lconvert)
 -qtPrepareTool(LUPDATE, lupdate)
 +qtPrepareTool(LUPDATE, lupdate-qt4)
  LUPDATE += -locations relative -no-ui-lines
  
  TS_TARGETS =
---- a/translations/translations.pro
-+++ b/translations/translations.pro
-@@ -1,6 +1,6 @@
- TRANSLATIONS = $$files(*.ts)
- 
--qtPrepareTool(LRELEASE, lrelease)
-+qtPrepareTool(LRELEASE, lrelease-qt4)
- 
- contains(TEMPLATE_PREFIX, vc):vcproj = 1
- 
-@@ -15,7 +15,7 @@ updateqm.input = TRANSLATIONS
+@@ -96,7 +96,7 @@ updateqm.input = TRANSLATIONS
  updateqm.output = ${QMAKE_FILE_BASE}.qm
  isEmpty(vcproj):updateqm.variable_out = PRE_TARGETDEPS
  updateqm.commands = $$LRELEASE ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_OUT}
@@ -300,9 +293,9 @@ Forwarded: not-needed
  isEmpty(UI_SOURCES_DIR):UI_SOURCES_DIR = $$UI_DIR
 --- a/mkspecs/common/linux.conf
 +++ b/mkspecs/common/linux.conf
-@@ -35,8 +35,8 @@ QMAKE_LIBS_OPENGL_ES2 = -lGLESv2
- QMAKE_LIBS_OPENVG     = -lOpenVG
- QMAKE_LIBS_THREAD     = -lpthread
+@@ -41,8 +41,8 @@ QMAKE_LIBS_WAYLAND =
+ QMAKE_LIBDIR_WAYLAND =
+ QMAKE_DEFINES_WAYLAND =
  
 -QMAKE_MOC             = $$[QT_INSTALL_BINS]/moc
 -QMAKE_UIC             = $$[QT_INSTALL_BINS]/uic
@@ -335,7 +328,7 @@ Forwarded: not-needed
  #endif
 --- a/tools/designer/src/lib/shared/qdesigner_utils.cpp
 +++ b/tools/designer/src/lib/shared/qdesigner_utils.cpp
-@@ -668,7 +668,7 @@ namespace qdesigner_internal
+@@ -782,7 +782,7 @@ namespace qdesigner_internal
          binary += QDir::separator();
          switch (mode) {
          case UIC_GenerateCode:

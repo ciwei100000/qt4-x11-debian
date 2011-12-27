@@ -11,35 +11,12 @@ Fixed some alignment problems on sparc
 Some compiler warnings about alignment remain, but I don't know if they are
 a real problem yet.
 ---
+ src/3rdparty/webkit/Source/JavaScriptCore/wtf/ListHashSet.h |    9 +++------
+ 1 file changed, 3 insertions(+), 6 deletions(-)
 
----
- src/3rdparty/webkit/JavaScriptCore/wtf/FastMalloc.cpp      |    4 ++--
- src/3rdparty/webkit/JavaScriptCore/wtf/ListHashSet.h       |    9 +++------
- src/3rdparty/webkit/WebCore/platform/text/AtomicString.cpp |    2 +-
- src/3rdparty/webkit/WebCore/platform/text/StringHash.h     |    6 +++---
- 4 files changed, 9 insertions(+), 12 deletions(-)
-
---- a/src/3rdparty/webkit/JavaScriptCore/wtf/FastMalloc.cpp
-+++ b/src/3rdparty/webkit/JavaScriptCore/wtf/FastMalloc.cpp
-@@ -2336,13 +2336,13 @@ static TCMalloc_Central_FreeListPadded c
- 
- // Page-level allocator
- static SpinLock pageheap_lock = SPINLOCK_INITIALIZER;
--static void* pageheap_memory[(sizeof(TCMalloc_PageHeap) + sizeof(void*) - 1) / sizeof(void*)];
-+static uint64_t pageheap_memory[(sizeof(TCMalloc_PageHeap) + sizeof(uint64_t) - 1) / sizeof(uint64_t)];
- static bool phinited = false;
- 
- // Avoid extra level of indirection by making "pageheap" be just an alias
- // of pageheap_memory.
- typedef union {
--    void* m_memory;
-+    uint64_t* m_memory;
-     TCMalloc_PageHeap* m_pageHeap;
- } PageHeapUnion;
- 
---- a/src/3rdparty/webkit/JavaScriptCore/wtf/ListHashSet.h
-+++ b/src/3rdparty/webkit/JavaScriptCore/wtf/ListHashSet.h
-@@ -127,7 +127,7 @@ namespace WTF {
+--- a/src/3rdparty/webkit/Source/JavaScriptCore/wtf/ListHashSet.h
++++ b/src/3rdparty/webkit/Source/JavaScriptCore/wtf/ListHashSet.h
+@@ -145,7 +145,7 @@ namespace WTF {
              : m_freeList(pool())
              , m_isDoneWithInitialFreeList(false)
          { 
@@ -48,16 +25,16 @@ a real problem yet.
          }
  
          Node* allocate()
-@@ -171,7 +171,7 @@ namespace WTF {
+@@ -189,7 +189,7 @@ namespace WTF {
          }
  
      private:
--        Node* pool() { return reinterpret_cast<Node*>(m_pool.pool); }
-+        Node* pool() { return reinterpret_cast<Node*>(m_pool); }
+-        Node* pool() { return reinterpret_cast_ptr<Node*>(m_pool.pool); }
++        Node* pool() { return reinterpret_cast_ptr<Node*>(m_pool); }
          Node* pastPool() { return pool() + m_poolSize; }
  
          bool inPool(Node* node)
-@@ -182,10 +182,7 @@ namespace WTF {
+@@ -200,10 +200,7 @@ namespace WTF {
          Node* m_freeList;
          bool m_isDoneWithInitialFreeList;
          static const size_t m_poolSize = inlineCapacity;
@@ -69,33 +46,3 @@ a real problem yet.
      };
  
      template<typename ValueArg, size_t inlineCapacity> struct ListHashSetNode {
---- a/src/3rdparty/webkit/WebCore/platform/text/AtomicString.cpp
-+++ b/src/3rdparty/webkit/WebCore/platform/text/AtomicString.cpp
-@@ -105,7 +105,7 @@ static inline bool equal(StringImpl* str
- 
-     // FIXME: perhaps we should have a more abstract macro that indicates when
-     // going 4 bytes at a time is unsafe
--#if CPU(ARM) || CPU(SH4)
-+#if CPU(ARM) || CPU(SH4) || CPU(SPARC)
-     const UChar* stringCharacters = string->characters();
-     for (unsigned i = 0; i != length; ++i) {
-         if (*stringCharacters++ != *characters++)
---- a/src/3rdparty/webkit/WebCore/platform/text/StringHash.h
-+++ b/src/3rdparty/webkit/WebCore/platform/text/StringHash.h
-@@ -54,13 +54,13 @@ namespace WebCore {
- 
-             // FIXME: perhaps we should have a more abstract macro that indicates when
-             // going 4 bytes at a time is unsafe
--#if CPU(ARM) || CPU(SH4)
-+#if CPU(ARM) || CPU(SH4) || CPU(SPARC)
-             const UChar* aChars = a->characters();
-             const UChar* bChars = b->characters();
--            for (unsigned i = 0; i != aLength; ++i) {
-+            for (unsigned i = 0; i != aLength; ++i)
-                 if (*aChars++ != *bChars++)
-                     return false;
--            }
-+
-             return true;
- #else
-             /* Do it 4-bytes-at-a-time on architectures where it's safe */
