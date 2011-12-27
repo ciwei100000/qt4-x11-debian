@@ -28,6 +28,7 @@ qt4-x11 (4:4.8.0-0multiarch1) UNRELEASED; urgency=low
   * Update debian/control:
     - mark Qt libraries as Multi-Arch.
     - build-depends on firebird-dev package. (Closes: #653378)
+    - suggests libthai0 to libqtcore4. (Closes: #652712)
   * Update debian/rules:
     - add DEB_HOST_MULTIARCH support for libdir/plugindir.
     - remove -qt-gif configure option - removed upstream.
