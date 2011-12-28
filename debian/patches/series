@@ -18,7 +18,7 @@ buildable_appchooser_states_demos.patch
 15_fix_qmake_makefile_generation.diff
 16_hide_std_symbols_on_qtwebkit.diff
 18_enable_qt3support_qtwebkit_debug_info.diff
-# FIXME: 20_install_qvfb.diff
+20_install_qvfb.diff
 23_permit_plugins_built_with_future_qt.diff
 30_webkit_unaligned_access.diff
 40_alpha_ice.diff
@@ -38,3 +38,4 @@ kfreebsd_monotonic_clock.diff
 powerpc_designer_gstabs.diff
 qt-multiarch-plugin-path-compat.diff
 fix_ftbfs_format-security.patch
+fix_qvfb_build.patch

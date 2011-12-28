@@ -24,10 +24,10 @@ qt4-x11 (4:4.8.0-0multiarch1) UNRELEASED; urgency=low
   * Add patches:
     - qt-multiarch-plugin-path-compat.diff - include legacy pre-multiarch
       plugin path.
-    - fix_ftbfs_format-security.patch
-      due to debian/compat bump to 9, Qt is built with -Werror=format-security
-      and trigger an error: format not a string literal and no format
-      arguments.
+    - fix_ftbfs_format-security.patch - due to debian/compat bump to 9, Qt is
+      built with -Werror=format-security and trigger an error: format not a
+      string literal and no format arguments.
+    - fix_qvfb_build.patch - fix qvfb build on Qt 4.8.0
   * Update debian/compat: bump to 9 for multiarch.
   * Update debian/control:
     - mark Qt libraries as Multi-Arch.

@@ -1,4 +1,3 @@
-# FIXME usr/bin/qvfb
 usr/bin/assistant-qt4
 usr/bin/lconvert
 usr/bin/linguist-qt4
@@ -10,6 +9,7 @@ usr/bin/qhelpconverter
 usr/bin/qhelpgenerator
 usr/bin/qmlplugindump
 usr/bin/qttracereplay
+usr/bin/qvfb
 usr/bin/xmlpatterns
 usr/bin/xmlpatternsvalidator
 usr/share/qt4/phrasebooks/*
