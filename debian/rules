@@ -319,8 +319,10 @@ override_dh_strip:
 	dh_strip -plibqt4-phonon
 	dh_strip --remaining-packages --dbg-package=libqt4-dbg
 	# Move binaries in qt4-bin-dbg package
-	mkdir -p debian/qt4-bin-dbg/usr/lib/debug/usr
-	mv debian/libqt4-dbg/usr/lib/debug/usr/bin debian/qt4-bin-dbg/usr/lib/debug/usr/
+	# FIXME: with debhelper compat 9, dh_strip puts separated debug symbols
+	#        in a location based on their build-id.
+	#mkdir -p debian/qt4-bin-dbg/usr/lib/debug/usr
+	#mv debian/libqt4-dbg/usr/lib/debug/usr/bin debian/qt4-bin-dbg/usr/lib/debug/usr/
 
 override_dh_makeshlibs:
 	# Specific shlibs version (e.g.: 4:4.5.2)
