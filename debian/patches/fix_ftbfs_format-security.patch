@@ -1,0 +1,33 @@
+Description: due to debian/compat bump to 9, Qt is built with
+             -Werror=format-security and trigger an error: format not a string
+             literal and no format arguments.
+
+---
+ src/declarative/debugger/qdeclarativedebugserver.cpp |   12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+--- a/src/declarative/debugger/qdeclarativedebugserver.cpp
++++ b/src/declarative/debugger/qdeclarativedebugserver.cpp
+@@ -216,16 +216,16 @@ QDeclarativeDebugServer *QDeclarativeDeb
+                 }
+ 
+             } else {
+-                qWarning(QString::fromAscii("QDeclarativeDebugServer: Ignoring \"-qmljsdebugger=%1\". "
+-                                            "Format is -qmljsdebugger=port:<port>[,block]").arg(
+-                             appD->qmljsDebugArgumentsString()).toAscii().constData());
++	        qWarning() << QString::fromAscii("QDeclarativeDebugServer: Ignoring \"-qmljsdebugger=%1\". "
++                                                 "Format is -qmljsdebugger=port:<port>[,block]").arg(
++                             appD->qmljsDebugArgumentsString()).toAscii().constData();
+             }
+         }
+ #else
+         if (!appD->qmljsDebugArgumentsString().isEmpty()) {
+-            qWarning(QString::fromAscii("QDeclarativeDebugServer: Ignoring \"-qmljsdebugger=%1\". "
+-                                        "QtDeclarative is not configured for debugging.").arg(
+-                         appD->qmljsDebugArgumentsString()).toAscii().constData());
++            qWarning() << QString::fromAscii("QDeclarativeDebugServer: Ignoring \"-qmljsdebugger=%1\". "
++                                             "QtDeclarative is not configured for debugging.").arg(
++                         appD->qmljsDebugArgumentsString()).toAscii().constData();
+         }
+ #endif
+     }

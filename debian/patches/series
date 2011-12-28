@@ -37,3 +37,4 @@ sh.diff
 kfreebsd_monotonic_clock.diff
 powerpc_designer_gstabs.diff
 qt-multiarch-plugin-path-compat.diff
+fix_ftbfs_format-security.patch
