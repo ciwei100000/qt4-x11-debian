@@ -35,6 +35,7 @@ qt4-x11 (4:4.8.0-0multiarch1) UNRELEASED; urgency=low
     - suggests libthai0 to libqtcore4. (Closes: #652712)
     - build-depends on elfutils for mv-qt4-bin-dbg.sh script.
     - build-depends on libicu-dev package.
+    - bump debhelper build-dependency to 8.9.13.
   * Update debian/rules:
     - add DEB_HOST_MULTIARCH support for libdir/plugindir.
     - remove -qt-gif configure option - removed upstream.
