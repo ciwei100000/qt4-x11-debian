@@ -774,6 +774,7 @@ Package: qt4-qmlviewer
 Architecture: any
 Section: devel
 Depends: ${misc:Depends}, ${shlibs:Depends}
+Recommends: imagemagick | gifsicle
 Description: Qt 4 QML viewer
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.

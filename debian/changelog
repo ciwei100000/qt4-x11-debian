@@ -42,6 +42,7 @@ qt4-x11 (4:4.8.0-1) experimental; urgency=low
     - bump debhelper build-dependency to 8.9.13.
     - build-depends on dpkg-dev >= 1.16.1.
     - bump pkg-kde-tools build-dependency to 0.14.2.
+    - recommends imagemagick or gifsicle to qmlviewer.
   * Update debian/rules:
     - add DEB_HOST_MULTIARCH support for libdir/plugindir.
     - remove -qt-gif configure option - removed upstream.
