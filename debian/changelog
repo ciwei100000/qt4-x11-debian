@@ -33,14 +33,19 @@ qt4-x11 (4:4.8.0-0multiarch1) UNRELEASED; urgency=low
     - mark Qt libraries as Multi-Arch.
     - build-depends on firebird-dev package. (Closes: #653378)
     - suggests libthai0 to libqtcore4. (Closes: #652712)
+    - build-depends on elfutils for mv-qt4-bin-dbg.sh script.
   * Update debian/rules:
     - add DEB_HOST_MULTIARCH support for libdir/plugindir.
     - remove -qt-gif configure option - removed upstream.
     - use ts-all target. The ts target has been removed.
+    - call mv-qt4-bin-dbg.sh to move the binaries in qt4-bin-dbg package.
   * Update debian/*.install files:
     - update paths for multiarch.
     - headers, translations, qmlplugindump.
   * Update debian/*.symbol files.
+  * Add mv-qt4-bin-dbg.sh script: with debhelper compat 9, dh_strip puts
+    separated debug symbols in a location based on their build-id. The script
+    moves the debug files for the binaries in the qt4-bin-dbg package.
 
   [ Pino Toscano ]
   * Use the hurd-g++ mkspec when building on Hurd:

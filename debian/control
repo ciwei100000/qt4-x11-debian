@@ -7,6 +7,7 @@ Uploaders: Fathi Boudra <fabo@debian.org>,
            Sune Vuorela <debian@pusling.com>,
            Pino Toscano <pino@debian.org>
 Build-Depends: debhelper (>= 7.4.13),
+               elfutils,
                firebird-dev [amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sh4 sparc],
                flex,
                freetds-dev,
