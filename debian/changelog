@@ -1,4 +1,4 @@
-qt4-x11 (4:4.8.0-0multiarch1) UNRELEASED; urgency=low
+qt4-x11 (4:4.8.0-1) experimental; urgency=low
 
   * New upstream release.
 
