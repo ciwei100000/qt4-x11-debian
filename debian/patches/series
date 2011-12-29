@@ -41,3 +41,4 @@ powerpc_designer_gstabs.diff
 qt-multiarch-plugin-path-compat.diff
 fix_ftbfs_format-security.patch
 fix_qvfb_build.patch
+add_missing_method_for_QBasicAtomicPointer_on_s390.patch
