@@ -39,6 +39,7 @@ qt4-x11 (4:4.8.0-0multiarch1) UNRELEASED; urgency=low
     - remove -qt-gif configure option - removed upstream.
     - use ts-all target. The ts target has been removed.
     - call mv-qt4-bin-dbg.sh to move the binaries in qt4-bin-dbg package.
+    - replace LDFLAGS by DEB_LDFLAGS_MAINT_APPEND usage.
   * Update debian/*.install files:
     - update paths for multiarch.
     - headers, translations, qmlplugindump.
