@@ -49,7 +49,6 @@ qt4-x11 (4:4.8.0-0multiarch1) UNRELEASED; urgency=low
     - call mv-qt4-bin-dbg.sh to move the binaries in qt4-bin-dbg package.
     - replace LDFLAGS by DEB_LDFLAGS_MAINT_APPEND usage.
     - add -icu configure option.
-    - build with -O1 on alpha architecture. (Closes: #648994)
   * Update debian/*.install files:
     - update paths for multiarch.
     - headers, translations, qmlplugindump.
