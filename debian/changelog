@@ -1,3 +1,9 @@
+qt4-x11 (4:4.7.4-2) UNRELEASED; urgency=low
+
+  * .
+
+ -- Fathi Boudra <fabo@debian.org>  Thu, 05 Jan 2012 22:23:02 +0200
+
 qt4-x11 (4:4.7.4-1) unstable; urgency=low
 
   * New upstream release.
