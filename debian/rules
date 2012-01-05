@@ -110,7 +110,7 @@ endif
 	            -headerdir "/usr/include/qt4" \
 	            -datadir "/usr/share/qt4" \
 	            -plugindir "/usr/lib/$(DEB_HOST_MULTIARCH)/qt4/plugins" \
-	            -importdir "/usr/lib/qt4/imports" \
+	            -importdir "/usr/lib/$(DEB_HOST_MULTIARCH)/qt4/imports" \
 	            -translationdir "/usr/share/qt4/translations" \
 	            -sysconfdir "/etc/xdg" \
 	            -demosdir "/usr/lib/qt4/demos" \
