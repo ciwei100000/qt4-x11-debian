@@ -6,6 +6,8 @@ qt4-x11 (4:4.8.0-2) UNRELEASED; urgency=low
   * Use multiarch for importsdir:
     - update debian/libqt4-declarative-*.install files.
     - mark QML plugin packages as Multi-Arch: same.
+  * Re-add patch s390x_jscore.diff to add s390/s390x support in JavaScriptCore.
+    The patch was partly merged in Qt 4.8.
 
  -- Fathi Boudra <fabo@debian.org>  Wed, 04 Jan 2012 22:15:56 +0200
 
