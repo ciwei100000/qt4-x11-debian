@@ -155,13 +155,8 @@ endif
 
 override_dh_auto_build:
 	dh_auto_build
-	# Build documentations
-	dh_auto_build -Smakefile -- docs
 	# Build translations
 	dh_auto_build -Smakefile -- -C translations ts-all
-	# Workaround: It's a known qmake limitation.
-	# It can't generate install rules for files that don't exist yet like docs.
-	./config.status
 
 override_dh_auto_clean:
 	[ ! -f Makefile ] || $(MAKE) confclean distclean
@@ -238,6 +233,15 @@ override_dh_auto_clean:
 	rm -f debian/stamp-makefile-build-tools
 
 override_dh_auto_install:
+ifneq (,$(filter qt4-doc, $(shell dh_listpackages)))
+	# Build documentations
+	dh_auto_build -Smakefile -- docs
+endif
+
+	# Workaround: It's a known qmake limitation.
+	# It can't generate install rules for files that don't exist yet like docs.
+	./config.status
+
 	dh_auto_install -Smakefile -- INSTALL_ROOT=$(CURDIR)/debian/tmp/
 
 	# Ship private headers - ugly hack to build Qt Creator QML Designer
