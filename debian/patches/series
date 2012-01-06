@@ -53,3 +53,4 @@ s390x_jscore.diff
 blacklist-diginotar-cert.diff
 openssl_no_ssl2.patch
 Remove_QtHelp_dependency_on_QtXml.patch
+CVE-2011-3922.patch

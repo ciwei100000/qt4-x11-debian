@@ -1,3 +1,9 @@
+qt4-x11 (4:4.7.4-3) UNRELEASED; urgency=low
+
+  * Add CVE-2011-3922.patch: Stack-buffer-overflow in glyph handling.
+
+ -- Fathi Boudra <fabo@debian.org>  Fri, 06 Jan 2012 21:54:25 +0200
+
 qt4-x11 (4:4.7.4-2) unstable; urgency=low
 
   * Update debian/rules: build documentation in dh_auto_install so it is only
