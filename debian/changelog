@@ -1,4 +1,4 @@
-qt4-x11 (4:4.7.4-2) UNRELEASED; urgency=low
+qt4-x11 (4:4.7.4-2) unstable; urgency=low
 
   * Update debian/rules: build documentation in dh_auto_install so it is only
     built when arch-all packages are generated. (Closes: #653427)
