@@ -34,6 +34,12 @@ else
 	extra_configure_opts += -no-sql-ibase
 endif
 
+ifneq (,$(filter %-sql-sqlite2,$(shell dh_listpackages)))
+	extra_configure_opts += -plugin-sql-sqlite2
+else
+	extra_configure_opts += -no-sql-sqlite2
+endif
+
 ifeq ($(DEB_HOST_ARCH),arm)
 	extra_configure_opts += -DQT_QLOCALE_USES_FCVT
 endif
@@ -46,7 +52,11 @@ ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(armv6_architectures)))
 	extra_configure_opts += -arch armv6
 endif
 
+ifeq ($(vendor),Ubuntu)
+gles2_architectures := armel armhf
+else
 gles2_architectures := none_for_now
+endif
 ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(gles2_architectures)))
 	extra_configure_opts += -opengl es2
 else
@@ -121,7 +131,6 @@ endif
 	            -plugin-sql-odbc \
 	            -plugin-sql-psql \
 	            -plugin-sql-sqlite \
-	            -plugin-sql-sqlite2 \
 	            -plugin-sql-tds \
 	            -system-sqlite \
 	            -xmlpatterns \
@@ -232,6 +241,10 @@ override_dh_auto_clean:
 	rm -f debian/shlibs.local
 	rm -f debian/stamp-makefile-build-tools
 
+ifeq ($(vendor),Ubuntu)
+	rm -rf po
+endif
+
 override_dh_auto_install:
 ifneq (,$(filter qt4-doc, $(shell dh_listpackages)))
 	# Build documentations
@@ -309,6 +322,14 @@ endif
 		-perm /u+x,g+x,o+x -type f \
 		-regex '.*\.\(app\|conf\|cpp\|h\|js\|php\|png\|pro\|xml\|xsl\)$$' \
 		-exec chmod a-x {} \;
+
+ifeq ($(vendor),Ubuntu)
+	# Create .pot file
+	ln -s MessagesQt.sh debian/Messages.sh
+	mkdir po
+	cd debian; qtcopydir=.. podir=../po extract-messages.sh
+	rm -f debian/Message.sh
+endif
 
 override_dh_install:
 	dh_install --list-missing
