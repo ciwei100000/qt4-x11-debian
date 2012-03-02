@@ -529,10 +529,10 @@ Depends: libqt4-dbus (= ${binary:Version}),
          libqt4-xmlpatterns (= ${binary:Version}),
          libqtcore4 (= ${binary:Version}),
          libqtgui4 (= ${binary:Version}),
+         libqt4-dev-bin (= ${binary:Version}),
          qt4-linguist-tools (= ${binary:Version}),
          qt4-qmake (= ${binary:Version}),
-         ${misc:Depends},
-         ${shlibs:Depends}
+         ${misc:Depends}
 Recommends: libqt4-opengl-dev (= ${binary:Version}), libqtwebkit-dev (>= 2.0~)
 Breaks: g++-4.6 (<< 4.6.0-7~) [armel],
         libqt4-opengl-dev (<< 4.4.0-2),
@@ -550,8 +550,22 @@ Description: Qt 4 development files
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
- This package contains the header development files and development programs
- used for building Qt 4 applications.
+ This package contains the header development files used for building Qt 4
+ applications.
+
+Package: libqt4-dev-bin
+Architecture: any
+Multi-Arch: foreign
+Section: devel
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Breaks: libqt4-dev (<< 4:4.8.0-2)
+Replaces: libqt4-dev (<< 4:4.8.0-2)
+Description: Qt 4 development programs
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the development programs used for building Qt 4
+ applications.
 
 Package: libqt4-private-dev
 Architecture: any
@@ -730,6 +744,7 @@ Description: Qt 4 development tools
 
 Package: qt4-qmake
 Architecture: any
+Multi-Arch: foreign
 Section: devel
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libqt4-dev (<< 4.5.0~beta1+snapshot20090114-1)
@@ -791,6 +806,7 @@ Description: Qt 4 QML viewer
 
 Package: qt4-linguist-tools
 Architecture: any
+Multi-Arch: foreign
 Section: devel
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libqt4-dev (<< 4:4.7.3-2)

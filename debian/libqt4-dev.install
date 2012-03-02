@@ -5,13 +5,6 @@
 #usr/lib/libQtOpenVG.prl
 #usr/lib/libQtOpenVG.so
 #usr/lib/pkgconfig/QtOpenVG.pc
-usr/bin/moc-qt4
-usr/bin/qdbuscpp2xml
-usr/bin/qdbusxml2cpp
-usr/bin/qt3to4
-usr/bin/rcc
-usr/bin/uic-qt4
-usr/bin/uic3
 usr/include/qt4/Qt/Qt3Support
 usr/include/qt4/Qt/QtCore
 usr/include/qt4/Qt/QtDBus

@@ -19,6 +19,11 @@ qt4-x11 (4:4.8.1-0r1) UNRELEASED; urgency=low
   * Update symbol files.
   * Add QTBUG-24718_Fix_a_crash_in_cursorToX_when_new_block_is_added.patch,
     cherry-picked from upstream.
+  * Make it possible to install libqt4-dev from a foreign architecture while
+    having all binaries in the native architecture.
+    - Move binaries from libqt4-dev into the new package libqt4-dev-bin.
+    - Mark libqt4-dev-bin, qt4-qmake and qt4-linguist-tools as
+      Multi-Arch: foreign.
 
   [ Didier Raboud ]
   * Merge the 4:4.7.4-3 unstable release: drop fix-format.diff, merged
