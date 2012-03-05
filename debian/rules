@@ -15,9 +15,12 @@ export LD_LIBRARY_PATH := $(QTDIR)/lib:$(LD_LIBRARY_PATH)
 # workaround to use qhelpgenerator.
 export QT_PLUGIN_PATH := $(QTDIR)/plugins
 
+# Packages with own debug package
 pkgs_dbg := $(shell dh_listpackages | grep dbg | sed -e '/libqt4-dbg/d; s|-dbg||')
+# Packages whose debug symbols belong to qt4-bin-dbg
+pkgs_dbgbin := libqt4-dev-bin $(filter-out %-dbg lib% $(pkgs_dbg),$(shell dh_listpackages))
 # Library package list for override_dh_makeshlibs, excludes libqt4-phonon
-pkgs_lib := $(filter-out %-dev %-dbg libqt4-phonon,$(filter lib%,$(shell dh_listpackages)))
+pkgs_lib := $(filter-out %-dev %-dbg libqt4-phonon libqt4-dev-bin,$(filter lib%,$(shell dh_listpackages)))
 # Upstream changelog
 upstream_changes := $(wildcard changes-*)
 # Current debian version (e.g.: 4:4.5.2-1)
@@ -344,11 +347,9 @@ override_dh_installchangelogs:
 
 override_dh_strip:
 	$(foreach pkg,$(pkgs_dbg),dh_strip -p$(pkg) --dbg-package=$(pkg)-dbg;)
+	dh_strip $(foreach pkg,$(pkgs_dbgbin),-p$(pkg)) --dbg-package=qt4-bin-dbg
 	dh_strip -plibqt4-phonon
 	dh_strip --remaining-packages --dbg-package=libqt4-dbg
-	# Move binaries in qt4-bin-dbg package
-	mkdir -p debian/qt4-bin-dbg/usr/lib/debug/usr
-	mv debian/libqt4-dbg/usr/lib/debug/usr/bin debian/qt4-bin-dbg/usr/lib/debug/usr/
 
 override_dh_makeshlibs:
 	# Specific shlibs version (e.g.: 4:4.5.2)

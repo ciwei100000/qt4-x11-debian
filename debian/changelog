@@ -3,9 +3,6 @@ qt4-x11 (4:4.8.1-0r1) UNRELEASED; urgency=low
   * New upstream release.
 
   [ Fathi Boudra ]
-  * Revert debian/compat to 8:
-    - drop mv-qt4-bin-dbg.sh script.
-    - drop elfutils build dependency.
   * Use multiarch for importsdir:
     - update debian/libqt4-declarative-*.install files.
     - mark QML plugin packages as Multi-Arch: same.
@@ -24,6 +21,10 @@ qt4-x11 (4:4.8.1-0r1) UNRELEASED; urgency=low
     - Move binaries from libqt4-dev into the new package libqt4-dev-bin.
     - Mark libqt4-dev-bin, qt4-qmake and qt4-linguist-tools as
       Multi-Arch: foreign.
+  * Add a dh_strip call for qt4-bin-dbg instead of moving the debug files
+    manually.
+    - drop mv-qt4-bin-dbg.sh script.
+    - drop elfutils build dependency.
 
   [ Didier Raboud ]
   * Merge the 4:4.7.4-3 unstable release: drop fix-format.diff, merged
