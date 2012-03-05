@@ -25,6 +25,7 @@ qt4-x11 (4:4.8.1-0r1) UNRELEASED; urgency=low
     manually.
     - drop mv-qt4-bin-dbg.sh script.
     - drop elfutils build dependency.
+  * Bump debhelper build-dependency to 9.
 
   [ Didier Raboud ]
   * Merge the 4:4.7.4-3 unstable release: drop fix-format.diff, merged
