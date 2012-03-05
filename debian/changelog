@@ -4,6 +4,7 @@ qt4-x11 (4:4.7.4-3) UNRELEASED; urgency=low
 
   [ Pino Toscano ]
   * Switch the libpng12-dev build dependency to libpng-dev. (Closes: #662484)
+  * Fix build failure with -Werror=format-security (patch fix-format.diff).
 
  -- Fathi Boudra <fabo@debian.org>  Fri, 06 Jan 2012 21:54:25 +0200
 
