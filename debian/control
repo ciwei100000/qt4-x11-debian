@@ -746,6 +746,7 @@ Description: Qt 4 Linguist tools
 
 Package: qdbus
 Architecture: any
+Section: utils
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libqt4-dbus (<< 4:4.7.4-1)
 Replaces: libqt4-dbus (<< 4:4.7.4-1)
