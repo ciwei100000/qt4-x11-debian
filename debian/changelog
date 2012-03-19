@@ -27,6 +27,9 @@ qt4-x11 (4:4.8.1-0r1) UNRELEASED; urgency=low
     - drop elfutils build dependency.
   * Bump debhelper build-dependency to 9.
   * Fix hyphen-used-as-minus-sign lintian warnings.
+  * Drop the libqt4-phonon package and build with -no-phonon.
+    It's not needed anymore as QtWebKit is built from an own source package and
+    no longer uses phonon anyway.
 
   [ Didier Raboud ]
   * Merge the 4:4.7.4-3 unstable release: drop fix-format.diff, merged
