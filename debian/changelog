@@ -1,4 +1,4 @@
-qt4-x11 (4:4.7.4-3) UNRELEASED; urgency=low
+qt4-x11 (4:4.7.4-3) unstable; urgency=low
 
   * Team upload.
   * Add CVE-2011-3922.patch: Stack-buffer-overflow in glyph handling.
