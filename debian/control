@@ -53,7 +53,7 @@ Build-Depends: debhelper (>= 7.4.13),
                rsync,
                unixodbc-dev,
                zlib1g-dev
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://qt.nokia.com/
 Vcs-Git: git://git.debian.org/pkg-kde/qt/qt4-x11.git
 Vcs-Browser: http://git.debian.org/?p=pkg-kde/qt/qt4-x11.git;a=summary

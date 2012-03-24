@@ -10,6 +10,7 @@ qt4-x11 (4:4.7.4-3) UNRELEASED; urgency=low
     to CFLAGS and CXXFLAGS. (Closes: #657637)
   * Set the proper section (utils) for qdbus; thanks to Jonas Smedegaard.
     (Closes: #663079)
+  * Bump Standards-Version to 3.9.3, no changes required.
 
  -- Fathi Boudra <fabo@debian.org>  Fri, 06 Jan 2012 21:54:25 +0200
 
