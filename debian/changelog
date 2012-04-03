@@ -13,6 +13,9 @@ qt4-x11 (4:4.8.1-1) UNRELEASED; urgency=low
     The patch was partly merged in Qt 4.8.
   * Add CVE-2011-3922.patch: Stack-buffer-overflow in glyph handling.
 
+  [ Felix Geyer ]
+  * Drop fix_ftbfs_format-security.patch, fixed upstream.
+
  -- Fathi Boudra <fabo@debian.org>  Wed, 04 Jan 2012 22:15:56 +0200
 
 qt4-x11 (4:4.8.0-1) experimental; urgency=low
