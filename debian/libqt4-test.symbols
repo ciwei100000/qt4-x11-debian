@@ -1,7 +1,7 @@
-# SymbolsHelper-Confirmed: 4:4.8.0 amd64
+# SymbolsHelper-Confirmed: 4:4.8.0 amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
 libQtTest.so.4 libqt4-test #MINVER#
 * Build-Depends-Package: libqt4-dev
- (arch=ia64 mips mipsel sparc)_ZGVZN14QTestEventLoop8instanceEvE8testLoop@Base 4:4.7.2
+ (arch=ia64)_ZGVZN14QTestEventLoop8instanceEvE8testLoop@Base 4:4.7.2
  _ZN10QTestTable15globalTestTableEv@Base 4:4.7.4
  _ZN10QTestTable16currentTestTableEv@Base 4:4.7.4
  _ZN10QTestTable20clearGlobalTestTableEv@Base 4:4.7.4
@@ -58,7 +58,7 @@ libQtTest.so.4 libqt4-test #MINVER#
  _ZN24QBenchmarkTestMethodData12beginDataRunEv@Base 4:4.7.4
  _ZN24QBenchmarkTestMethodData20adjustIterationCountEi@Base 4:4.7.4
  _ZN24QBenchmarkTestMethodData7currentE@Base 4:4.7.4
- _ZN24QBenchmarkTestMethodData9setResultEdN5QTest16QBenchmarkMetricEb@Base 4:4.7.4
+ (subst)_ZN24QBenchmarkTestMethodData9setResultE{qreal}N5QTest16QBenchmarkMetricEb@Base 4:4.7.4
  _ZN24QBenchmarkTestMethodDataC1Ev@Base 4:4.7.4
  _ZN24QBenchmarkTestMethodDataC2Ev@Base 4:4.7.4
  _ZN24QBenchmarkTestMethodDataD1Ev@Base 4:4.7.4

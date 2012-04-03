@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.0 amd64
+# SymbolsHelper-Confirmed: 4:4.8.0 amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
 libQtGui.so.4 libqtgui4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qDrawArrowP8QPainterN2Qt9ArrowTypeENS1_8GUIStyleEbiiiiRK8QPaletteb@Base 4:4.5.3
@@ -48,7 +48,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _Z17qt_tryModalHelperP7QWidgetPS0_@Base 4:4.5.3
  _Z17qt_widget_privateP7QWidget@Base 4:4.5.3
  _Z17qt_x11_get_pen_gcP8QPainter@Base 4:4.5.3
- _Z18qt_addBitmapToPathddPKhiiiP12QPainterPath@Base 4:4.8.0
+ (subst)_Z18qt_addBitmapToPath{qreal}{qreal}PKhiiiP12QPainterPath@Base 4:4.8.0
  _Z19qtVectorPathForPathRK12QPainterPath@Base 4:4.5.3
  _Z19qt_x11_get_brush_gcP8QPainter@Base 4:4.5.3
  (subst)_Z20qt_scaleForTransformRK10QTransformP{qreal}@Base 4:4.5.3
@@ -70,6 +70,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _Z29qt_draw_decoration_for_glyphsP8QPainterPKjPK11QFixedPointiP11QFontEngineRK5QFontRK15QTextCharFormat@Base 4:4.7.4
  _Z29qt_set_sequence_auto_mnemonicb@Base 4:4.5.3
  _Z30qt_x11_wait_for_window_managerP7QWidget@Base 4:4.5.3
+ (arch=armhf)_Z31qt_convert_rgb888_to_rgb32_neonPjPKhi@Base 4:4.8.0
  _Z31qt_x11_set_fallback_font_familyiRK7QString@Base 4:4.5.3
  _Z31qt_x11_set_global_double_bufferb@Base 4:4.5.3
  _Z32qGamma_correct_back_to_linear_csP6QImage@Base 4:4.8.0
@@ -80,7 +81,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _Z6bitBltP12QPaintDeviceiiPKS_iiiib@Base 4:4.5.3
  _Z6bitBltP6QImageiiPKS_iiii6QFlagsIN2Qt19ImageConversionFlagEE@Base 4:4.5.3
  _Z7copyBltP7QPixmapiiPKS_iiii@Base 4:4.5.3
- (arch=!amd64 !armel !kfreebsd-amd64 !kfreebsd-i386)_Z8qWarningv@Base 4:4.7.2
+ (arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc)_Z8qWarningv@Base 4:4.7.2
  _Z9qDrawItemP8QPainterN2Qt8GUIStyleEiiiiiRK8QPalettebPK7QPixmapRK7QStringiPK6QColor@Base 4:4.5.3
  _Z9qGeomCalcR7QVectorI13QLayoutStructEiiiii@Base 4:4.5.3
  _Z9qItemRectP8QPainterN2Qt8GUIStyleEiiiiibPK7QPixmapRK7QStringi@Base 4:4.5.3
@@ -126,7 +127,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN10QBoxLayoutD0Ev@Base 4:4.5.3
  _ZN10QBoxLayoutD1Ev@Base 4:4.5.3
  _ZN10QBoxLayoutD2Ev@Base 4:4.5.3
- (arch=ia64 mips mipsel sparc)_ZN10QByteArray4dataEv@Base 4:4.7.2
+ (arch=ia64)_ZN10QByteArray4dataEv@Base 4:4.7.2
  _ZN10QClipboard11dataChangedEv@Base 4:4.5.3
  _ZN10QClipboard11emitChangedENS_4ModeE@Base 4:4.5.3
  _ZN10QClipboard11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -3923,24 +3924,24 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN15QProgressDialogD1Ev@Base 4:4.5.3
  _ZN15QProgressDialogD2Ev@Base 4:4.5.3
  _ZN15QRadialGradient13setFocalPointERK7QPointF@Base 4:4.5.3
- _ZN15QRadialGradient14setFocalRadiusEd@Base 4:4.8.0
- _ZN15QRadialGradient15setCenterRadiusEd@Base 4:4.8.0
+ (subst)_ZN15QRadialGradient14setFocalRadiusE{qreal}@Base 4:4.8.0
+ (subst)_ZN15QRadialGradient15setCenterRadiusE{qreal}@Base 4:4.8.0
  _ZN15QRadialGradient9setCenterERK7QPointF@Base 4:4.5.3
  (subst)_ZN15QRadialGradient9setRadiusE{qreal}@Base 4:4.5.3
- _ZN15QRadialGradientC1ERK7QPointFdS2_d@Base 4:4.8.0
  (subst)_ZN15QRadialGradientC1ERK7QPointF{qreal}@Base 4:4.5.3
  (subst)_ZN15QRadialGradientC1ERK7QPointF{qreal}S2_@Base 4:4.5.3
- _ZN15QRadialGradientC1Edddddd@Base 4:4.8.0
+ (subst)_ZN15QRadialGradientC1ERK7QPointF{qreal}S2_{qreal}@Base 4:4.8.0
  _ZN15QRadialGradientC1Ev@Base 4:4.5.3
  (subst)_ZN15QRadialGradientC1E{qreal}{qreal}{qreal}@Base 4:4.5.3
  (subst)_ZN15QRadialGradientC1E{qreal}{qreal}{qreal}{qreal}{qreal}@Base 4:4.5.3
- _ZN15QRadialGradientC2ERK7QPointFdS2_d@Base 4:4.8.0
+ (subst)_ZN15QRadialGradientC1E{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}@Base 4:4.8.0
  (subst)_ZN15QRadialGradientC2ERK7QPointF{qreal}@Base 4:4.5.3
  (subst)_ZN15QRadialGradientC2ERK7QPointF{qreal}S2_@Base 4:4.5.3
- _ZN15QRadialGradientC2Edddddd@Base 4:4.8.0
+ (subst)_ZN15QRadialGradientC2ERK7QPointF{qreal}S2_{qreal}@Base 4:4.8.0
  _ZN15QRadialGradientC2Ev@Base 4:4.5.3
  (subst)_ZN15QRadialGradientC2E{qreal}{qreal}{qreal}@Base 4:4.5.3
  (subst)_ZN15QRadialGradientC2E{qreal}{qreal}{qreal}{qreal}{qreal}@Base 4:4.5.3
+ (subst)_ZN15QRadialGradientC2E{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}@Base 4:4.8.0
  _ZN15QRadialGradientD1Ev@Base 4:4.7.4
  _ZN15QRadialGradientD2Ev@Base 4:4.7.4
  _ZN15QSessionManager11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -4634,6 +4635,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN17QIconEnginePluginD0Ev@Base 4:4.5.3
  _ZN17QIconEnginePluginD1Ev@Base 4:4.5.3
  _ZN17QIconEnginePluginD2Ev@Base 4:4.5.3
+ (arch=armel)_ZN17QImageTextKeyLangC1ERKS_@Base 4:4.8.0
+ (arch=armel)_ZN17QImageTextKeyLangC2ERKS_@Base 4:4.8.0
  _ZN17QImageTextKeyLangD1Ev@Base 4:4.7.4
  _ZN17QImageTextKeyLangD2Ev@Base 4:4.7.4
  _ZN17QInputMethodEvent15setCommitStringERK7QStringii@Base 4:4.5.3
@@ -6769,7 +6772,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN6QLabelD0Ev@Base 4:4.5.3
  _ZN6QLabelD1Ev@Base 4:4.5.3
  _ZN6QLabelD2Ev@Base 4:4.5.3
- (arch=ia64 mips mipsel sparc)_ZN6QLineF9setLengthEd@Base 4:4.7.2
+ (arch=ia64)_ZN6QLineF9setLengthEd@Base 4:4.7.2
  _ZN6QMovie10scaledSizeEv@Base 4:4.5.3
  _ZN6QMovie11jumpToFrameEi@Base 4:4.5.3
  _ZN6QMovie11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -6804,7 +6807,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN6QMovieD0Ev@Base 4:4.5.3
  _ZN6QMovieD1Ev@Base 4:4.5.3
  _ZN6QMovieD2Ev@Base 4:4.5.3
- (arch=hurd-i386 i386 mips mipsel)_ZN6QRectFC1ERK5QRect@Base 4:4.5.3
+ (arch=hurd-i386 i386 kfreebsd-i386 mips mipsel powerpc s390)_ZN6QRectFC1ERK5QRect@Base 4:4.8.0
+ (arch=i386 kfreebsd-i386 mips mipsel powerpc s390)_ZN6QRectFC2ERK5QRect@Base 4:4.8.0
  _ZN6QSound11isAvailableEv@Base 4:4.5.3
  _ZN6QSound11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN6QSound11qt_metacastEPKc@Base 4:4.5.3
@@ -7649,7 +7653,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN8QPictureD1Ev@Base 4:4.5.3
  _ZN8QPictureD2Ev@Base 4:4.5.3
  _ZN8QPictureaSERKS_@Base 4:4.5.3
- (arch=ia64 mips mipsel sparc)_ZN8QPolygon8setPointEiii@Base 4:4.7.2
+ (arch=ia64)_ZN8QPolygon8setPointEiii@Base 4:4.7.2
  _ZN8QPolygon9putPointsEiiPKi@Base 4:4.5.3
  _ZN8QPolygon9putPointsEiiRKS_i@Base 4:4.5.3
  _ZN8QPolygon9putPointsEiiiiz@Base 4:4.5.3
@@ -7701,16 +7705,16 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN8QPrinterD0Ev@Base 4:4.5.3
  _ZN8QPrinterD1Ev@Base 4:4.5.3
  _ZN8QPrinterD2Ev@Base 4:4.5.3
- _ZN8QRawFont12loadFromDataERK10QByteArraydN5QFont17HintingPreferenceE@Base 4:4.8.0
- _ZN8QRawFont12loadFromFileERK7QStringdN5QFont17HintingPreferenceE@Base 4:4.8.0
- _ZN8QRawFont12setPixelSizeEd@Base 4:4.8.0
+ (subst)_ZN8QRawFont12loadFromDataERK10QByteArray{qreal}N5QFont17HintingPreferenceE@Base 4:4.8.0
+ (subst)_ZN8QRawFont12loadFromFileERK7QString{qreal}N5QFont17HintingPreferenceE@Base 4:4.8.0
+ (subst)_ZN8QRawFont12setPixelSizeE{qreal}@Base 4:4.8.0
  _ZN8QRawFont8fromFontERK5QFontN13QFontDatabase13WritingSystemE@Base 4:4.8.0
- _ZN8QRawFontC1ERK10QByteArraydN5QFont17HintingPreferenceE@Base 4:4.8.0
- _ZN8QRawFontC1ERK7QStringdN5QFont17HintingPreferenceE@Base 4:4.8.0
+ (subst)_ZN8QRawFontC1ERK10QByteArray{qreal}N5QFont17HintingPreferenceE@Base 4:4.8.0
+ (subst)_ZN8QRawFontC1ERK7QString{qreal}N5QFont17HintingPreferenceE@Base 4:4.8.0
  _ZN8QRawFontC1ERKS_@Base 4:4.8.0
  _ZN8QRawFontC1Ev@Base 4:4.8.0
- _ZN8QRawFontC2ERK10QByteArraydN5QFont17HintingPreferenceE@Base 4:4.8.0
- _ZN8QRawFontC2ERK7QStringdN5QFont17HintingPreferenceE@Base 4:4.8.0
+ (subst)_ZN8QRawFontC2ERK10QByteArray{qreal}N5QFont17HintingPreferenceE@Base 4:4.8.0
+ (subst)_ZN8QRawFontC2ERK7QString{qreal}N5QFont17HintingPreferenceE@Base 4:4.8.0
  _ZN8QRawFontC2ERKS_@Base 4:4.8.0
  _ZN8QRawFontC2Ev@Base 4:4.8.0
  _ZN8QRawFontD1Ev@Base 4:4.8.0
@@ -7851,7 +7855,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN8QX11InfoD1Ev@Base 4:4.5.3
  _ZN8QX11InfoD2Ev@Base 4:4.5.3
  _ZN8QX11InfoaSERKS_@Base 4:4.5.3
- (arch=ia64 mips mipsel sparc)_ZN9QBitArray6setBitEib@Base 4:4.7.2
+ (arch=ia64)_ZN9QBitArray6setBitEib@Base 4:4.7.2
+ (arch=armel armhf mips mipsel powerpc s390 sparc)_ZN9QBitArrayD1Ev@Base 4:4.8.0
+ (arch=armel armhf mips mipsel powerpc s390 sparc)_ZN9QBitArrayD2Ev@Base 4:4.8.0
  _ZN9QCDEStyle11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN9QCDEStyle11qt_metacastEPKc@Base 4:4.5.3
  _ZN9QCDEStyle16staticMetaObjectE@Base 4:4.5.3
@@ -8077,8 +8083,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN9QGtkStyleD0Ev@Base 4:4.5.3
  _ZN9QGtkStyleD1Ev@Base 4:4.5.3
  _ZN9QGtkStyleD2Ev@Base 4:4.5.3
- (arch=ia64 mips mipsel sparc)_ZN9QHashData8willGrowEv@Base 4:4.7.2
- (arch=ia64 mips mipsel sparc)_ZN9QHashData9hasShrunkEv@Base 4:4.7.2
+ (arch=ia64)_ZN9QHashData8willGrowEv@Base 4:4.7.2
+ (arch=ia64)_ZN9QHashData9hasShrunkEv@Base 4:4.7.2
  _ZN9QKeyEvent22createExtendedKeyEventEN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEEjjjRK7QStringbt@Base 4:4.5.3
  _ZN9QKeyEventC1EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEERK7QStringbt@Base 4:4.5.3
  _ZN9QKeyEventC2EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEERK7QStringbt@Base 4:4.5.3
@@ -8753,7 +8759,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK10QTransform7mapRectERK5QRect@Base 4:4.5.3
  _ZNK10QTransform7mapRectERK6QRectF@Base 4:4.5.3
  _ZNK10QTransform8invertedEPb@Base 4:4.5.3
- (arch=ia64 mips mipsel sparc)_ZNK10QTransform8isAffineEv@Base 4:4.7.2
+ (arch=ia64)_ZNK10QTransform8isAffineEv@Base 4:4.7.2
  _ZNK10QTransform8toAffineEv@Base 4:4.5.3
  _ZNK10QTransformcv8QVariantEv@Base 4:4.5.3
  _ZNK10QTransformeqERKS_@Base 4:4.5.3
@@ -9693,7 +9699,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK13QFontEngineFT12emSquareSizeEv@Base 4:4.5.3
  _ZNK13QFontEngineFT12maxCharWidthEv@Base 4:4.5.3
  _ZNK13QFontEngineFT12stringToCMapEPK5QChariP12QGlyphLayoutPi6QFlagsIN11QTextEngine10ShaperFlagEE@Base 4:4.5.3
- _ZNK13QFontEngineFT13cloneWithSizeEd@Base 4:4.8.0
+ (subst)_ZNK13QFontEngineFT13cloneWithSizeE{qreal}@Base 4:4.8.0
  _ZNK13QFontEngineFT13lineThicknessEv@Base 4:4.5.3
  _ZNK13QFontEngineFT14minLeftBearingEv@Base 4:4.5.3
  _ZNK13QFontEngineFT14recalcAdvancesEP12QGlyphLayout6QFlagsIN11QTextEngine10ShaperFlagEE@Base 4:4.5.3
@@ -10116,7 +10122,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK14QItemSelection8containsERK11QModelIndex@Base 4:4.5.3
  _ZNK14QLayoutPrivate9getMarginEPiiN6QStyle11PixelMetricE@Base 4:4.5.3
  _ZNK14QPaintEngineEx11createStateEP13QPainterState@Base 4:4.5.3
- _ZNK14QPaintEngineEx23supportsTransformationsEdRK10QTransform@Base 4:4.8.0
+ (subst)_ZNK14QPaintEngineEx23supportsTransformationsE{qreal}RK10QTransform@Base 4:4.8.0
  _ZNK14QPlainTextEdit10blockCountEv@Base 4:4.5.3
  _ZNK14QPlainTextEdit10cursorRectERK11QTextCursor@Base 4:4.5.3
  _ZNK14QPlainTextEdit10cursorRectEv@Base 4:4.5.3
@@ -10485,7 +10491,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK16QFileSystemModel8rootPathEv@Base 4:4.5.3
  _ZNK16QFileSystemModel8rowCountERK11QModelIndex@Base 4:4.5.3
  _ZNK16QFileSystemModel9mimeTypesEv@Base 4:4.5.3
- _ZNK16QFontEngineX11FT13cloneWithSizeEd@Base 4:4.8.0
+ (subst)_ZNK16QFontEngineX11FT13cloneWithSizeE{qreal}@Base 4:4.8.0
  _ZNK16QFontEngineX11FT19uploadGlyphToServerEPN13QFontEngineFT9QGlyphSetEjPNS0_5GlyphEP11_XGlyphInfoi@Base 4:4.5.3
  _ZNK16QPageSetupDialog10metaObjectEv@Base 4:4.5.3
  _ZNK16QPageSetupDialog10testOptionENS_21PageSetupDialogOptionE@Base 4:4.5.3
@@ -11311,7 +11317,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK5QMenu7isEmptyEv@Base 4:4.5.3
  _ZNK5QMenu8actionAtERK6QPoint@Base 4:4.5.3
  _ZNK5QMenu8sizeHintEv@Base 4:4.5.3
- (arch=ia64 mips mipsel sparc)_ZNK5QRect6centerEv@Base 4:4.7.2
+ (arch=ia64)_ZNK5QRect6centerEv@Base 4:4.7.2
  _ZNK6QBrush12textureImageEv@Base 4:4.5.3
  _ZNK6QBrush6pixmapEv@Base 4:4.5.3
  _ZNK6QBrush7textureEv@Base 4:4.5.3
@@ -11349,7 +11355,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK6QColor5valueEv@Base 4:4.5.3
  _ZNK6QColor6alphaFEv@Base 4:4.5.3
  _ZNK6QColor6blackFEv@Base 4:4.5.3
- (arch=armel)_ZNK6QColor6darkerEi@Base 4:4.7.2
+#MISSING: 4:4.8.0# (arch=armel)_ZNK6QColor6darkerEi@Base 4:4.7.2
  _ZNK6QColor6getHslEPiS0_S0_S0_@Base 4:4.6.1
  _ZNK6QColor6getHsvEPiS0_S0_S0_@Base 4:4.5.3
  _ZNK6QColor6getRgbEPiS0_S0_S0_@Base 4:4.5.3
@@ -11481,7 +11487,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK6QMovie9cacheModeEv@Base 4:4.5.3
  _ZNK6QMovie9frameRectEv@Base 4:4.5.3
  _ZNK6QMovie9loopCountEv@Base 4:4.5.3
- (optional=external)_ZNK6QRectF6toRectEv@Base 4:4.7.2
+ (optional=external|arch=!armel)_ZNK6QRectF6toRectEv@Base 4:4.7.2
  _ZNK6QSound10isFinishedEv@Base 4:4.5.3
  _ZNK6QSound10metaObjectEv@Base 4:4.5.3
  _ZNK6QSound14loopsRemainingEv@Base 4:4.5.3
@@ -11632,7 +11638,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK7QPixmap9doImageIOEP12QImageWriteri@Base 4:4.5.3
  _ZNK7QPixmap9isQBitmapEv@Base 4:4.5.3
  _ZNK7QPixmapcv8QVariantEv@Base 4:4.5.3
- (arch=ia64 mips mipsel sparc)_ZNK7QPointF7toPointEv@Base 4:4.7.2
+ (arch=ia64)_ZNK7QPointF7toPointEv@Base 4:4.7.2
  _ZNK7QRegion10intersectsERK5QRect@Base 4:4.5.3
  _ZNK7QRegion10intersectsERKS_@Base 4:4.5.3
  _ZNK7QRegion10translatedEii@Base 4:4.5.3
@@ -12013,9 +12019,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK8QToolBox7indexOfEP7QWidget@Base 4:4.5.3
  _ZNK8QToolBox8itemIconEi@Base 4:4.5.3
  _ZNK8QToolBox8itemTextEi@Base 4:4.5.3
- (optional=templinst)_ZNK8QVariant5valueI5QFontEET_v@Base 4:4.7.2
- (optional=templinst)_ZNK8QVariant5valueI6QImageEET_v@Base 4:4.7.2
- (optional=templinst)_ZNK8QVariant5valueI7QPixmapEET_v@Base 4:4.7.2
+ (optional=templinst|arch=amd64 hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 s390x)_ZNK8QVariant5valueI5QFontEET_v@Base 4:4.7.2
+ (optional=templinst|arch=!i386 !kfreebsd-i386 !mips !mipsel !powerpc !s390)_ZNK8QVariant5valueI6QImageEET_v@Base 4:4.7.2
+ (optional=templinst|arch=!i386 !kfreebsd-i386 !mips !mipsel !powerpc !s390)_ZNK8QVariant5valueI7QPixmapEET_v@Base 4:4.7.2
  _ZNK8QX11Info10getX11DataEb@Base 4:4.5.3
  _ZNK8QX11Info13defaultVisualEv@Base 4:4.5.3
  _ZNK8QX11Info15defaultColormapEv@Base 4:4.5.3
@@ -12378,6 +12384,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK9QVector4D16toVector3DAffineEv@Base 4:4.6.1
  _ZNK9QVector4D6lengthEv@Base 4:4.6.1
  _ZNK9QVector4Dcv8QVariantEv@Base 4:4.6.1
+ (optional=templinst|arch=sparc)_ZSt4swapI18QGridLayoutRowInfoEvRT_S2_@Base 4:4.8.0
  _ZTI10QBlittable@Base 4:4.8.0
  _ZTI10QBoxLayout@Base 4:4.5.3
  _ZTI10QClipboard@Base 4:4.5.3

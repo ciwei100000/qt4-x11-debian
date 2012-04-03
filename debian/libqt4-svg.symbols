@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.4 amd64
+# SymbolsHelper-Confirmed: 4:4.8.0 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
 libQtSvg.so.4 libqt4-svg #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN10QSvgWidget10paintEventEP11QPaintEvent@Base 4:4.5.3
@@ -53,7 +53,6 @@ libQtSvg.so.4 libqt4-svg #MINVER#
  _ZN13QSvgGeneratorD1Ev@Base 4:4.5.3
  _ZN13QSvgGeneratorD2Ev@Base 4:4.5.3
  (optional=external|arch=sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (optional=external|arch=sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN15QGraphicsObjectD0Ev@Base 4:4.7.4
  _ZN15QGraphicsObjectD1Ev@Base 4:4.7.4
  _ZN15QGraphicsObjectD2Ev@Base 4:4.7.4

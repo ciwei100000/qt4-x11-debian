@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.0 amd64
+# SymbolsHelper-Confirmed: 4:4.8.0 amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
 libQtHelp.so.4 libqt4-help #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN11QHelpEngine11indexWidgetEv@Base 4:4.5.3
@@ -40,7 +40,6 @@ libQtHelp.so.4 libqt4-help #MINVER#
  _ZN14QHelpGeneratorD0Ev@Base 4:4.5.3
  _ZN14QHelpGeneratorD1Ev@Base 4:4.5.3
  _ZN14QHelpGeneratorD2Ev@Base 4:4.5.3
- (optional=external|arch=hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
  (optional=external|arch=sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN15QHelpEngineCore11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN15QHelpEngineCore11qt_metacastEPKc@Base 4:4.5.3
@@ -109,6 +108,8 @@ libQtHelp.so.4 libqt4-help #MINVER#
  _ZN16QHelpProjectDataD0Ev@Base 4:4.5.3
  _ZN16QHelpProjectDataD1Ev@Base 4:4.5.3
  _ZN16QHelpProjectDataD2Ev@Base 4:4.5.3
+ (arch=mips mipsel powerpc s390 sparc)_ZN16QHelpSearchQueryD1Ev@Base 4:4.8.0
+ (arch=mips mipsel powerpc s390 sparc)_ZN16QHelpSearchQueryD2Ev@Base 4:4.8.0
  _ZN16QStringListModelD0Ev@Base 4:4.7.4
  _ZN16QStringListModelD1Ev@Base 4:4.7.4
  _ZN16QStringListModelD2Ev@Base 4:4.7.4
@@ -162,8 +163,8 @@ libQtHelp.so.4 libqt4-help #MINVER#
  _ZN20QHelpDataContentItemC2EPS_RK7QStringS3_@Base 4:4.5.3
  _ZN20QHelpDataContentItemD1Ev@Base 4:4.5.3
  _ZN20QHelpDataContentItemD2Ev@Base 4:4.5.3
- _ZN20QXmlStreamAttributesD1Ev@Base 4:4.7.4
- _ZN20QXmlStreamAttributesD2Ev@Base 4:4.7.4
+ (arch=!armel !mips !mipsel !sparc)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.7.4
+ (arch=!armel !mips !mipsel !sparc)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.7.4
  _ZN21QHelpDataCustomFilterD1Ev@Base 4:4.7.4
  _ZN21QHelpDataCustomFilterD2Ev@Base 4:4.7.4
  _ZN22QHelpDataFilterSection10addContentEP20QHelpDataContentItem@Base 4:4.5.3

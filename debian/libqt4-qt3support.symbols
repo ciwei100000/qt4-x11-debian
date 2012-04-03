@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.0 amd64
+# SymbolsHelper-Confirmed: 4:4.8.0 amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
 libQt3Support.so.4 libqt4-qt3support #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z16qt_tryAccelEventP7QWidgetP9QKeyEvent@Base 4:4.5.3
@@ -1624,6 +1624,8 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN12Q3TextStreamrsERs@Base 4:4.5.3
  _ZN12Q3TextStreamrsERt@Base 4:4.5.3
  _ZN12Q3TextString16appendParagraphsEP15Q3TextParagraphS1_@Base 4:4.5.3
+ (arch=armel armhf mips mipsel powerpc s390 sparc)_ZN12Q3TextString18nextCursorPositionEi@Base 4:4.8.0
+ (arch=armel armhf mips mipsel powerpc s390 sparc)_ZN12Q3TextString22previousCursorPositionEi@Base 4:4.8.0
  _ZN12Q3TextString5clearEv@Base 4:4.5.3
  _ZN12Q3TextString6insertEiP16Q3TextStringCharb@Base 4:4.5.3
  _ZN12Q3TextString6insertEiPK5QChariP12Q3TextFormat@Base 4:4.5.3
@@ -1639,11 +1641,11 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN12Q3TextStringD0Ev@Base 4:4.5.3
  _ZN12Q3TextStringD1Ev@Base 4:4.5.3
  _ZN12Q3TextStringD2Ev@Base 4:4.5.3
- (arch=!armel)_ZN12QDashStroker3endEv@Base 4:4.5.3
- (arch=!armel)_ZN12QDashStroker5beginEPv@Base 4:4.5.3
- _ZN12QDashStrokerD0Ev@Base 4:4.7.4
- _ZN12QDashStrokerD1Ev@Base 4:4.7.4
- _ZN12QDashStrokerD2Ev@Base 4:4.7.4
+ (arch=!armel !armhf)_ZN12QDashStroker3endEv@Base 4:4.5.3
+ (arch=!armel !armhf)_ZN12QDashStroker5beginEPv@Base 4:4.5.3
+ (arch=!armel !armhf)_ZN12QDashStrokerD0Ev@Base 4:4.7.4
+ (arch=!armel !armhf)_ZN12QDashStrokerD1Ev@Base 4:4.7.4
+ (arch=!armel !armhf)_ZN12QDashStrokerD2Ev@Base 4:4.7.4
  _ZN13Q3ActionGroup10childEventEP11QChildEvent@Base 4:4.5.3
  _ZN13Q3ActionGroup10removeFromEP7QWidget@Base 4:4.5.3
  _ZN13Q3ActionGroup10setEnabledEb@Base 4:4.5.3
@@ -2447,7 +2449,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN15Q3TextParagraph4showEv@Base 4:4.5.3
  _ZN15Q3TextParagraph4undoEP12Q3TextCursor@Base 4:4.5.3
  _ZN15Q3TextParagraph5paintER8QPainterRK8QPaletteP12Q3TextCursorbiiii@Base 4:4.5.3
- (arch=ia64 mips mipsel sparc)_ZN15Q3TextParagraph6appendERK7QStringb@Base 4:4.7.2
+ (arch=ia64)_ZN15Q3TextParagraph6appendERK7QStringb@Base 4:4.7.2
  _ZN15Q3TextParagraph6formatEib@Base 4:4.5.3
  _ZN15Q3TextParagraph6indentEPiS0_@Base 4:4.5.3
  _ZN15Q3TextParagraph6insertEiPK5QChari@Base 4:4.5.3
@@ -2645,6 +2647,8 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN16Q3TextCustomItemD0Ev@Base 4:4.5.3
  _ZN16Q3TextCustomItemD1Ev@Base 4:4.5.3
  _ZN16Q3TextCustomItemD2Ev@Base 4:4.5.3
+ (arch=armel)_ZN16Q3TextStringChar10CustomDataC1Ev@Base 4:4.8.0
+ (arch=armel)_ZN16Q3TextStringChar10CustomDataC2Ev@Base 4:4.8.0
  _ZN16Q3TextStringChar13setCustomItemEP16Q3TextCustomItem@Base 4:4.5.3
  _ZN16Q3TextStringChar14loseCustomItemEv@Base 4:4.5.3
  _ZN16Q3TextStringChar9setAnchorERK7QStringS2_@Base 4:4.5.3
@@ -2775,6 +2779,8 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN18Q3TextStyleCommand9unexecuteEP12Q3TextCursor@Base 4:4.5.3
  _ZN18Q3TextStyleCommandC1EP14Q3TextDocumentiiRK10QByteArray@Base 4:4.5.3
  _ZN18Q3TextStyleCommandC2EP14Q3TextDocumentiiRK10QByteArray@Base 4:4.5.3
+ (arch=armel armhf mips mipsel powerpc s390 sparc)_ZN18QStyleOptionButtonD1Ev@Base 4:4.8.0
+ (arch=armel armhf mips mipsel powerpc s390 sparc)_ZN18QStyleOptionButtonD2Ev@Base 4:4.8.0
  _ZN18QStyleOptionHeaderD1Ev@Base 4:4.7.4
  _ZN18QStyleOptionHeaderD2Ev@Base 4:4.7.4
  _ZN19Q3CanvasPixmapArray11readPixmapsERK7QStringi@Base 4:4.5.3
@@ -2873,7 +2879,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN20Q3TextCommandHistory5clearEv@Base 4:4.5.3
  _ZN20Q3TextCommandHistoryD0Ev@Base 4:4.5.3
  _ZN20Q3TextCommandHistoryD1Ev@Base 4:4.5.3
- (arch=!ia64 !mips !mipsel !sparc)_ZN20Q3TextCommandHistoryD2Ev@Base 4:4.7.2
+ (arch=!ia64)_ZN20Q3TextCommandHistoryD2Ev@Base 4:4.8.0
  _ZN20Q3TextHorizontalLine15adjustToPainterEP8QPainter@Base 4:4.5.3
  _ZN20Q3TextHorizontalLine4drawEP8QPainteriiiiiiRK8QPaletteb@Base 4:4.5.3
  _ZN20Q3TextHorizontalLineC1EP14Q3TextDocumentRK4QMapI7QStringS3_ERKS3_R19Q3MimeSourceFactory@Base 4:4.5.3
@@ -3605,7 +3611,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN8Q3HeaderD2Ev@Base 4:4.5.3
  _ZN8Q3Membuf11scanNewlineEP10QByteArray@Base 4:4.5.3
  _ZN8Q3Membuf12consumeBytesEmPc@Base 4:4.5.3
- (arch=ia64 mips mipsel sparc)_ZN8Q3Membuf7readAllEv@Base 4:4.7.2
+ (arch=ia64)_ZN8Q3Membuf7readAllEv@Base 4:4.7.2
  _ZN8Q3Membuf7ungetchEi@Base 4:4.5.3
  _ZN8Q3MembufC1Ev@Base 4:4.5.3
  _ZN8Q3MembufC2Ev@Base 4:4.5.3
@@ -4390,7 +4396,6 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZNK12Q3TextFormat15minRightBearingEv@Base 4:4.5.3
  _ZNK12Q3TextFormat17makeFormatEndTagsEPS_RK7QString@Base 4:4.5.3
  _ZNK12Q3TextFormat20makeFormatChangeTagsEPS_S0_RK7QStringS3_@Base 4:4.5.3
- (arch=armel)_ZNK12Q3TextFormat4fontEv@Base 4:4.7.2
  _ZNK12Q3TextFormat5widthERK5QChar@Base 4:4.5.3
  _ZNK12Q3TextFormat5widthERK7QStringi@Base 4:4.5.3
  _ZNK12Q3TextFormat6ascentEv@Base 4:4.5.3
@@ -4398,6 +4403,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZNK12Q3TextFormat7descentEv@Base 4:4.5.3
  _ZNK12Q3TextFormat7leadingEv@Base 4:4.5.3
  _ZNK12Q3TextString5widthEi@Base 4:4.5.3
+ (arch=armel)_ZNK12Q3TextString8toStringEv@Base 4:4.8.0
  _ZNK12Q3TextString9checkBidiEv@Base 4:4.5.3
  _ZNK12QPaintDevice7devTypeEv@Base 4:4.5.3
  _ZNK13Q3ActionGroup10metaObjectEv@Base 4:4.5.3
@@ -4638,7 +4644,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZNK15Q3TextParagraph16formatCollectionEv@Base 4:4.5.3
  _ZNK15Q3TextParagraph16lineHeightOfCharEiPiS0_@Base 4:4.5.3
  _ZNK15Q3TextParagraph21writeStyleInformationER11QDataStream@Base 4:4.5.3
- (arch=ia64 mips mipsel sparc)_ZNK15Q3TextParagraph2atEi@Base 4:4.7.2
+ (arch=ia64)_ZNK15Q3TextParagraph2atEi@Base 4:4.7.2
  _ZNK15Q3TextParagraph5lineYEi@Base 4:4.5.3
  _ZNK15Q3TextParagraph5linesEv@Base 4:4.5.3
  _ZNK15Q3TextParagraph7leftGapEv@Base 4:4.5.3
@@ -4837,7 +4843,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZNK5Q3Urlcv7QStringEv@Base 4:4.5.3
  _ZNK5Q3UrleqERK7QString@Base 4:4.5.3
  _ZNK5Q3UrleqERKS_@Base 4:4.5.3
- (arch=ia64 mips mipsel sparc)_ZNK5QRect6centerEv@Base 4:4.7.2
+ (arch=ia64)_ZNK5QRect6centerEv@Base 4:4.7.2
  _ZNK6Q3Grid10metaObjectEv@Base 4:4.5.3
  _ZNK6Q3Grid8sizeHintEv@Base 4:4.5.3
  _ZNK6Q3HBox10metaObjectEv@Base 4:4.5.3
@@ -4921,7 +4927,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZNK7Q3Table9rowHeightEi@Base 4:4.5.3
  _ZNK7Q3Table9selectionEi@Base 4:4.5.3
  _ZNK7Q3Table9tableSizeEv@Base 4:4.5.3
- (arch=ia64 mips mipsel sparc)_ZNK7QWidget10colorGroupEv@Base 4:4.7.2
+ (arch=ia64)_ZNK7QWidget10colorGroupEv@Base 4:4.7.2
  _ZNK8Q3Action10metaObjectEv@Base 4:4.5.3
  _ZNK8Q3Action14isToggleActionEv@Base 4:4.5.3
  _ZNK8Q3Action4isOnEv@Base 4:4.5.3
@@ -5140,7 +5146,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZTI12Q3TextIndent@Base 4:4.5.3
  _ZTI12Q3TextStream@Base 4:4.5.3
  _ZTI12Q3TextString@Base 4:4.5.3
- (arch=!armel)_ZTI12QDashStroker@Base 4:4.5.3
+ (arch=!armel !armhf)_ZTI12QDashStroker@Base 4:4.5.3
  _ZTI13Q3ActionGroup@Base 4:4.5.3
  _ZTI13Q3ButtonGroup@Base 4:4.5.3
  _ZTI13Q3DataBrowser@Base 4:4.5.3
@@ -5288,7 +5294,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZTS12Q3TextIndent@Base 4:4.5.3
  _ZTS12Q3TextStream@Base 4:4.5.3
  _ZTS12Q3TextString@Base 4:4.5.3
- (arch=!armel)_ZTS12QDashStroker@Base 4:4.5.3
+ (arch=!armel !armhf)_ZTS12QDashStroker@Base 4:4.5.3
  _ZTS13Q3ActionGroup@Base 4:4.5.3
  _ZTS13Q3ButtonGroup@Base 4:4.5.3
  _ZTS13Q3DataBrowser@Base 4:4.5.3
@@ -5435,7 +5441,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZTV12Q3TextIndent@Base 4:4.5.3
  _ZTV12Q3TextStream@Base 4:4.5.3
  _ZTV12Q3TextString@Base 4:4.5.3
- (arch=!armel)_ZTV12QDashStroker@Base 4:4.5.3
+ (arch=!armel !armhf)_ZTV12QDashStroker@Base 4:4.5.3
  _ZTV13Q3ActionGroup@Base 4:4.5.3
  _ZTV13Q3ButtonGroup@Base 4:4.5.3
  _ZTV13Q3DataBrowser@Base 4:4.5.3

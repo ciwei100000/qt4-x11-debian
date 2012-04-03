@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.0 amd64
+# SymbolsHelper-Confirmed: 4:4.8.0 amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
 libQtOpenGL.so.4 libqt4-opengl #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z18qt_gl_library_namev@Base 4:4.5.3
@@ -9,9 +9,9 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _Z26qt_destroy_gl_share_widgetv@Base 4:4.7.1
  _Z28qt_resolve_buffer_extensionsP10QGLContext@Base 4:4.8.0
  _Z32qt_resolve_version_2_0_functionsP10QGLContext@Base 4:4.8.0
- (arch=ia64 mips mipsel sparc)_Z8qWarningv@Base 4:4.7.2
+ (arch=ia64)_Z8qWarningv@Base 4:4.7.2
  _ZN10QByteArrayD1Ev@Base 4:4.5.3
- (arch=!ia64 !mips !mipsel !sparc)_ZN10QByteArrayD2Ev@Base 4:4.7.2
+ (arch=!ia64)_ZN10QByteArrayD2Ev@Base 4:4.7.2
  _ZN10QGLContext10areSharingEPKS_S1_@Base 4:4.6.1
  _ZN10QGLContext10currentCtxE@Base 4:4.5.3
  _ZN10QGLContext11bindTextureERK6QImageji6QFlagsINS_10BindOptionEE@Base 4:4.6.1
@@ -45,7 +45,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN10QGLContextD0Ev@Base 4:4.5.3
  _ZN10QGLContextD1Ev@Base 4:4.5.3
  _ZN10QGLContextD2Ev@Base 4:4.5.3
- (arch=ia64 mips mipsel sparc)_ZN10QTransformC1ERKS_@Base 4:4.7.2
+ (arch=ia64)_ZN10QTransformC1ERKS_@Base 4:4.7.2
  _ZN11QGLColormap10setEntriesEiPKji@Base 4:4.5.3
  _ZN11QGLColormap11shared_nullE@Base 4:4.5.3
  _ZN11QGLColormap13detach_helperEv@Base 4:4.5.3
@@ -59,19 +59,19 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN11QGLColormapD1Ev@Base 4:4.5.3
  _ZN11QGLColormapD2Ev@Base 4:4.5.3
  _ZN11QGLColormapaSERKS_@Base 4:4.5.3
- (optional=external|arch=sparc)_ZN11QReadLockerD1Ev@Base 4:4.7.0~rc1
- (arch=!armel)_ZN12QDashStroker3endEv@Base 4:4.5.3
- (arch=!armel)_ZN12QDashStroker5beginEPv@Base 4:4.5.3
- (arch=!armel)_ZN12QDashStrokerD0Ev@Base 4:4.5.3
- (arch=!armel)_ZN12QDashStrokerD1Ev@Base 4:4.5.3
- (arch=amd64 kfreebsd-amd64 kfreebsd-i386 powerpc s390)_ZN12QDashStrokerD2Ev@Base 4:4.7.2
+ (arch=!armel !armhf)_ZN12QDashStroker3endEv@Base 4:4.5.3
+ (arch=!armel !armhf)_ZN12QDashStroker5beginEPv@Base 4:4.5.3
+ (arch=!armel !armhf)_ZN12QDashStrokerD0Ev@Base 4:4.5.3
+ (arch=!armel !armhf)_ZN12QDashStrokerD1Ev@Base 4:4.5.3
+ (arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sparc)_ZN12QDashStrokerD2Ev@Base 4:4.7.2
  _ZN12QGLFunctions21initializeGLFunctionsEPK10QGLContext@Base 4:4.8.0
  _ZN12QGLFunctionsC1EPK10QGLContext@Base 4:4.8.0
  _ZN12QGLFunctionsC1Ev@Base 4:4.8.0
  _ZN12QGLFunctionsC2EPK10QGLContext@Base 4:4.8.0
  _ZN12QGLFunctionsC2Ev@Base 4:4.8.0
- (optional=external)_ZN12QMutexLockerD1Ev@Base 4:4.7.2
- (optional=external)_ZN12QMutexLockerD2Ev@Base 4:4.7.2
+ (arch=mips mipsel sparc)_ZN12QMutexLocker6unlockEv@Base 4:4.8.0
+ (optional=external|arch=!mips !mipsel !sparc)_ZN12QMutexLockerD1Ev@Base 4:4.7.2
+ (optional=external|arch=!mips !mipsel !sparc)_ZN12QMutexLockerD2Ev@Base 4:4.7.2
  (optional=external)_ZN12QWriteLockerD1Ev@Base 4:4.7.2
  (optional=external)_ZN12QWriteLockerD2Ev@Base 4:4.7.2
  _ZN13QGLPixmapData15fromImageReaderEP12QImageReader6QFlagsIN2Qt19ImageConversionFlagEE@Base 4:4.7.4
@@ -88,7 +88,6 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN13QGLPixmapDataD0Ev@Base 4:4.7.0~rc1
  _ZN13QGLPixmapDataD1Ev@Base 4:4.7.0~rc1
  _ZN13QGLPixmapDataD2Ev@Base 4:4.7.0~rc1
- (optional=external|arch=hppa sparc)_ZN13QPainterStateC2ERKS_@Base 4:4.6.2
  _ZN14QGLPaintDevice10beginPaintEv@Base 4:4.6.1
  _ZN14QGLPaintDevice18ensureActiveTargetEv@Base 4:4.6.1
  _ZN14QGLPaintDevice8endPaintEv@Base 4:4.6.1
@@ -123,7 +122,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN14QGLSignalProxy8instanceEv@Base 4:4.6.1
  _ZN14QGLSignalProxyD0Ev@Base 4:4.6.1
  _ZN14QGLSignalProxyD1Ev@Base 4:4.6.1
- (arch=!ia64 !mips !mipsel !sparc)_ZN14QGLSignalProxyD2Ev@Base 4:4.7.2
+ (arch=!ia64)_ZN14QGLSignalProxyD2Ev@Base 4:4.8.0
  _ZN14QPaintEngineEx12pixmapFilterEiPK13QPixmapFilter@Base 4:4.6.1
  _ZN14QPaintEngineEx17endNativePaintingEv@Base 4:4.6.1
  _ZN14QPaintEngineEx19beginNativePaintingEv@Base 4:4.6.1
@@ -335,10 +334,10 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN17QGLGraphicsSystemC2Eb@Base 4:4.7.0~beta2
  _ZN17QGLGraphicsSystemD0Ev@Base 4:4.5.3
  _ZN17QGLGraphicsSystemD1Ev@Base 4:4.5.3
- (arch=!ia64 !mips !mipsel !sparc)_ZN17QGLGraphicsSystemD2Ev@Base 4:4.7.2
+ (arch=!ia64)_ZN17QGLGraphicsSystemD2Ev@Base 4:4.8.0
  _ZN18QTextureGlyphCacheD0Ev@Base 4:4.6.1
  _ZN18QTextureGlyphCacheD1Ev@Base 4:4.6.1
- (arch=!ia64 !mips !mipsel !sparc)_ZN18QTextureGlyphCacheD2Ev@Base 4:4.7.2
+ (arch=!ia64)_ZN18QTextureGlyphCacheD2Ev@Base 4:4.8.0
  _ZN20QGLCustomShaderStage11setInactiveEv@Base 4:4.6.1
  _ZN20QGLCustomShaderStage11setUniformsEP16QGLShaderProgram@Base 4:4.6.1
  _ZN20QGLCustomShaderStage12setOnPainterEP8QPainter@Base 4:4.6.1
@@ -373,7 +372,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN20QGLFramebufferObjectD0Ev@Base 4:4.5.3
  _ZN20QGLFramebufferObjectD1Ev@Base 4:4.5.3
  _ZN20QGLFramebufferObjectD2Ev@Base 4:4.5.3
- (arch=ia64 mips mipsel sparc)_ZN20QGLShareContextScopeD1Ev@Base 4:4.7.2
+ (arch=ia64)_ZN20QGLShareContextScopeD1Ev@Base 4:4.7.2
  _ZN20QGLTextureGlyphCache10setContextEPK10QGLContext@Base 4:4.8.0
  _ZN20QGLTextureGlyphCache11fillTextureERKN18QTextureGlyphCache5CoordEj6QFixed@Base 4:4.8.0
  _ZN20QGLTextureGlyphCache12freeResourceEPv@Base 4:4.8.0
@@ -436,9 +435,9 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN22QGLSharedResourceGuardD2Ev@Base 4:4.6.1
  _ZN22QGraphicsEffectPrivateD0Ev@Base 4:4.6.1
  _ZN22QGraphicsEffectPrivateD1Ev@Base 4:4.6.1
- (arch=!ia64 !mips !mipsel !sparc)_ZN22QGraphicsEffectPrivateD2Ev@Base 4:4.7.2
- (arch=!ia64 !mips !mipsel !sparc)_ZN23QImageTextureGlyphCacheD0Ev@Base 4:4.7.2
- (arch=!ia64 !mips !mipsel !sparc)_ZN23QImageTextureGlyphCacheD1Ev@Base 4:4.7.2
+ (arch=!ia64)_ZN22QGraphicsEffectPrivateD2Ev@Base 4:4.8.0
+ (arch=!ia64)_ZN23QImageTextureGlyphCacheD0Ev@Base 4:4.8.0
+ (arch=!ia64)_ZN23QImageTextureGlyphCacheD1Ev@Base 4:4.8.0
  _ZN23QImageTextureGlyphCacheD2Ev@Base 4:4.7.0~beta2
  _ZN26QGLFramebufferObjectFormat10setSamplesEi@Base 4:4.6.1
  _ZN26QGLFramebufferObjectFormat13setAttachmentEN20QGLFramebufferObject10AttachmentE@Base 4:4.6.1
@@ -464,11 +463,11 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN27QGLContextGroupResourceBaseD1Ev@Base 4:4.8.0
  _ZN27QGLContextGroupResourceBaseD2Ev@Base 4:4.8.0
  _ZN3QGL23setPreferredPaintEngineEN12QPaintEngine4TypeE@Base 4:4.6.1
- (arch=ia64 mips mipsel sparc)_ZN6QDebugC1E9QtMsgType@Base 4:4.7.2
+ (arch=ia64)_ZN6QDebugC1E9QtMsgType@Base 4:4.7.2
  _ZN6QDebugD1Ev@Base 4:4.5.3
- (arch=!ia64 !mips !mipsel !sparc)_ZN6QDebugD2Ev@Base 4:4.7.2
+ (arch=!ia64)_ZN6QDebugD2Ev@Base 4:4.8.0
  _ZN7QStringD1Ev@Base 4:4.5.3
- (arch=!ia64 !mips !mipsel !sparc)_ZN7QStringD2Ev@Base 4:4.7.2
+ (arch=!ia64)_ZN7QStringD2Ev@Base 4:4.8.0
  (optional=external)_ZN8QPolygonD1Ev@Base 4:4.7.2
  (optional=external)_ZN8QPolygonD2Ev@Base 4:4.7.2
  (optional=external)_ZN9QBitArrayD1Ev@Base 4:4.7.2
@@ -677,7 +676,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZNK16QGLWindowSurface8featuresEv@Base 4:4.8.0
  _ZNK17QGL2PaintEngineEx11createStateEP13QPainterState@Base 4:4.6.1
  _ZNK17QGL2PaintEngineEx22isNativePaintingActiveEv@Base 4:4.7.0~beta2
- _ZNK17QGL2PaintEngineEx23supportsTransformationsEdRK10QTransform@Base 4:4.8.0
+ (subst)_ZNK17QGL2PaintEngineEx23supportsTransformationsE{qreal}RK10QTransform@Base 4:4.8.0
  _ZNK17QGL2PaintEngineEx4typeEv@Base 4:4.6.1
  _ZNK17QGLGraphicsSystem16createPixmapDataEN11QPixmapData9PixelTypeE@Base 4:4.5.3
  _ZNK17QGLGraphicsSystem19createWindowSurfaceEP7QWidget@Base 4:4.5.3
@@ -749,7 +748,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZNK9QGLWidget9isSharingEv@Base 4:4.5.3
  _ZTI10QGLContext@Base 4:4.5.3
  _ZTI11QSharedData@Base 4:4.8.0
- (arch=!armel)_ZTI12QDashStroker@Base 4:4.5.3
+ (arch=!armel !armhf)_ZTI12QDashStroker@Base 4:4.5.3
  _ZTI13QGLPixmapData@Base 4:4.7.0~rc1
  _ZTI14QGLPaintDevice@Base 4:4.6.1
  _ZTI14QGLPixelBuffer@Base 4:4.5.3
@@ -770,7 +769,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZTI9QGLWidget@Base 4:4.5.3
  _ZTS10QGLContext@Base 4:4.5.3
  _ZTS11QSharedData@Base 4:4.8.0
- (arch=!armel)_ZTS12QDashStroker@Base 4:4.5.3
+ (arch=!armel !armhf)_ZTS12QDashStroker@Base 4:4.5.3
  _ZTS13QGLPixmapData@Base 4:4.7.0~rc1
  _ZTS14QGLPaintDevice@Base 4:4.6.1
  _ZTS14QGLPixelBuffer@Base 4:4.5.3
@@ -790,7 +789,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZTS9QGLShader@Base 4:4.6.1
  _ZTS9QGLWidget@Base 4:4.5.3
  _ZTV10QGLContext@Base 4:4.5.3
- (arch=!armel)_ZTV12QDashStroker@Base 4:4.5.3
+ (arch=!armel !armhf)_ZTV12QDashStroker@Base 4:4.5.3
  _ZTV13QGLPixmapData@Base 4:4.7.0~rc1
  _ZTV14QGLPaintDevice@Base 4:4.6.1
  _ZTV14QGLPixelBuffer@Base 4:4.5.3
