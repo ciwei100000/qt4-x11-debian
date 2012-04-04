@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.0 amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
+# SymbolsHelper-Confirmed: 4:4.8.1 amd64 i386
 libQtGui.so.4 libqtgui4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qDrawArrowP8QPainterN2Qt9ArrowTypeENS1_8GUIStyleEbiiiiRK8QPaletteb@Base 4:4.5.3
@@ -5078,28 +5078,33 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN19QApplicationPrivateD1Ev@Base 4:4.5.3
  _ZN19QApplicationPrivateD2Ev@Base 4:4.5.3
  _ZN19QBlitterPaintEngine10drawPixmapERK6QRectFRK7QPixmapS2_@Base 4:4.8.0
+ _ZN19QBlitterPaintEngine10drawPixmapERK7QPointFRK7QPixmap@Base 4:4.8.1
+ _ZN19QBlitterPaintEngine10drawPointsEPK6QPointi@Base 4:4.8.1
+ _ZN19QBlitterPaintEngine10drawPointsEPK7QPointFi@Base 4:4.8.1
  _ZN19QBlitterPaintEngine10penChangedEv@Base 4:4.8.0
  _ZN19QBlitterPaintEngine11drawEllipseERK6QRectF@Base 4:4.8.0
+ _ZN19QBlitterPaintEngine11drawPolygonEPK6QPointiN12QPaintEngine15PolygonDrawModeE@Base 4:4.8.1
+ _ZN19QBlitterPaintEngine11drawPolygonEPK7QPointFiN12QPaintEngine15PolygonDrawModeE@Base 4:4.8.1
+ _ZN19QBlitterPaintEngine11fillPolygonEPK7QPointFiN12QPaintEngine15PolygonDrawModeE@Base 4:4.8.1
  _ZN19QBlitterPaintEngine12brushChangedEv@Base 4:4.8.0
  _ZN19QBlitterPaintEngine12drawTextItemERK7QPointFRK9QTextItem@Base 4:4.8.0
  _ZN19QBlitterPaintEngine14opacityChangedEv@Base 4:4.8.0
+ _ZN19QBlitterPaintEngine15drawTiledPixmapERK6QRectFRK7QPixmapRK7QPointF@Base 4:4.8.1
  _ZN19QBlitterPaintEngine16transformChangedEv@Base 4:4.8.0
- _ZN19QBlitterPaintEngine18brushOriginChangedEv@Base 4:4.8.0
  _ZN19QBlitterPaintEngine18clipEnabledChangedEv@Base 4:4.8.0
  _ZN19QBlitterPaintEngine18drawStaticTextItemEP15QStaticTextItem@Base 4:4.8.0
  _ZN19QBlitterPaintEngine18renderHintsChangedEv@Base 4:4.8.0
  _ZN19QBlitterPaintEngine22compositionModeChangedEv@Base 4:4.8.0
  _ZN19QBlitterPaintEngine3endEv@Base 4:4.8.0
- _ZN19QBlitterPaintEngine4clipERK11QVectorPathN2Qt13ClipOperationE@Base 4:4.8.0
- _ZN19QBlitterPaintEngine4clipERK5QRectN2Qt13ClipOperationE@Base 4:4.8.0
- _ZN19QBlitterPaintEngine4clipERK7QRegionN2Qt13ClipOperationE@Base 4:4.8.0
  _ZN19QBlitterPaintEngine4fillERK11QVectorPathRK6QBrush@Base 4:4.8.0
  _ZN19QBlitterPaintEngine5beginEP12QPaintDevice@Base 4:4.8.0
  _ZN19QBlitterPaintEngine6strokeERK11QVectorPathRK4QPen@Base 4:4.8.0
+ _ZN19QBlitterPaintEngine8fillPathERK12QPainterPathP9QSpanData@Base 4:4.8.1
  _ZN19QBlitterPaintEngine8fillRectERK6QRectFRK6QBrush@Base 4:4.8.0
  _ZN19QBlitterPaintEngine8fillRectERK6QRectFRK6QColor@Base 4:4.8.0
  _ZN19QBlitterPaintEngine8setStateEP13QPainterState@Base 4:4.8.0
  _ZN19QBlitterPaintEngine9drawImageERK6QRectFRK6QImageS2_6QFlagsIN2Qt19ImageConversionFlagEE@Base 4:4.8.0
+ _ZN19QBlitterPaintEngine9drawImageERK7QPointFRK6QImage@Base 4:4.8.1
  _ZN19QBlitterPaintEngine9drawRectsEPK5QRecti@Base 4:4.8.0
  _ZN19QBlitterPaintEngine9drawRectsEPK6QRectFi@Base 4:4.8.0
  _ZN19QBlitterPaintEngineC1EP20QBlittablePixmapData@Base 4:4.8.0
@@ -8553,6 +8558,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (subst)_ZN9QVector4DC2ERK9QVector3D{qreal}@Base 4:4.6.2
  _ZNK10QBlittable12capabilitiesEv@Base 4:4.8.0
  _ZNK10QBlittable4sizeEv@Base 4:4.8.0
+ _ZNK10QBlittable8isLockedEv@Base 4:4.8.1
  _ZNK10QBoxLayout10metaObjectEv@Base 4:4.5.3
  _ZNK10QBoxLayout11maximumSizeEv@Base 4:4.5.3
  _ZNK10QBoxLayout11minimumSizeEv@Base 4:4.5.3
@@ -10821,7 +10827,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK19QAccessibleWidgetEx8navigateEN11QAccessible12RelationFlagEiPP20QAccessibleInterface@Base 4:4.5.3
  _ZNK19QApplicationPrivate11inPopupModeEv@Base 4:4.5.3
  _ZNK19QApplicationPrivate7appNameEv@Base 4:4.5.3
- _ZNK19QBlitterPaintEngine11createStateEP13QPainterState@Base 4:4.8.0
  _ZNK19QGraphicsBlurEffect10blurRadiusEv@Base 4:4.6.1
  _ZNK19QGraphicsBlurEffect10metaObjectEv@Base 4:4.6.1
  _ZNK19QGraphicsBlurEffect15boundingRectForERK6QRectF@Base 4:4.6.1
