@@ -30,6 +30,8 @@ qt4-x11 (4:4.8.1-0r1) UNRELEASED; urgency=low
   * Drop the libqt4-phonon package and build with -no-phonon.
     It's not needed anymore as QtWebKit is built from an own source package and
     no longer uses phonon anyway.
+  * Build the documentation in the dh_auto_build-indep target instead of
+    dh_auto_install.
 
   [ Didier Raboud ]
   * Merge the 4:4.7.4-3 unstable release: drop fix-format.diff, merged
