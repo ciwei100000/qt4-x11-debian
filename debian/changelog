@@ -17,6 +17,8 @@ qt4-x11 (4:4.8.1-1) UNRELEASED; urgency=low
   * Drop fix_ftbfs_format-security.patch, fixed upstream.
   * Refresh patches for the new upstream version.
   * Update symbol files.
+  * Add QTBUG-24718_Fix_a_crash_in_cursorToX_when_new_block_is_added.patch,
+    cherry-picked from upstream.
 
  -- Fathi Boudra <fabo@debian.org>  Wed, 04 Jan 2012 22:15:56 +0200
 
