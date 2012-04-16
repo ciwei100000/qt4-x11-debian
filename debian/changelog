@@ -1,3 +1,8 @@
+qt4-x11 (4:4.7.4-4) UNRELEASED; urgency=low
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 17 Apr 2012 01:55:05 +0200
+
 qt4-x11 (4:4.7.4-3) unstable; urgency=low
 
   * Team upload.
