@@ -37,6 +37,7 @@ qt4-x11 (4:4.8.1-0r1) UNRELEASED; urgency=low
     upstream.
 
   [ Pino Toscano ]
+  * Fix build failures with GCC 4.7; patch gcc-4.7.diff. (Closes: #667911)
   * Fix atomic support on sparc64, by Aurelien Jarno (thanks!);
     patch qt_atomic_sparc64.patch. (Closes: #647265)
 
