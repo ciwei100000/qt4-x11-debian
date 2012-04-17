@@ -1,5 +1,7 @@
 qt4-x11 (4:4.7.4-4) UNRELEASED; urgency=low
 
+  [ Pino Toscano ]
+  * Fix build failures with GCC 4.7; patch gcc-4.7.diff. (Closes: #667911)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 17 Apr 2012 01:55:05 +0200
 
