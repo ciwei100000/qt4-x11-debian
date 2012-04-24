@@ -56,3 +56,4 @@ Remove_QtHelp_dependency_on_QtXml.patch
 CVE-2011-3922.patch
 fix-format.diff
 gcc-4.7.diff
+qt_atomic_sparc64.patch
