@@ -20,6 +20,10 @@ qt4-x11 (4:4.8.1-0r1) UNRELEASED; urgency=low
   * Add QTBUG-24718_Fix_a_crash_in_cursorToX_when_new_block_is_added.patch,
     cherry-picked from upstream.
 
+  [ Didier Raboud ]
+  * Merge the 4:4.7.4-3 unstable release: drop fix-format.diff, merged
+    upstream.
+
  -- Fathi Boudra <fabo@debian.org>  Wed, 04 Jan 2012 22:15:56 +0200
 
 qt4-x11 (4:4.8.0-1) experimental; urgency=low
@@ -88,6 +92,23 @@ qt4-x11 (4:4.8.0-1) experimental; urgency=low
     - update the platform_arg in debian/rules
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 22 Dec 2011 17:50:13 +0200
+
+qt4-x11 (4:4.7.4-3) unstable; urgency=low
+
+  * Team upload.
+  * Add CVE-2011-3922.patch: Stack-buffer-overflow in glyph handling.
+
+  [ Pino Toscano ]
+  * Switch the libpng12-dev build dependency to libpng-dev. (Closes: #662484)
+  * Fix build failure with -Werror=format-security (patch fix-format.diff).
+  * Use dpkg-buildflags to set CFLAGS, CXXFLAGS and LDFLAGS and export them;
+    Qt's build system does not support CPPFLAGS, so they are just appended
+    to CFLAGS and CXXFLAGS. (Closes: #657637)
+  * Set the proper section (utils) for qdbus; thanks to Jonas Smedegaard.
+    (Closes: #663079)
+  * Bump Standards-Version to 3.9.3, no changes required.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sat, 24 Mar 2012 19:25:33 -0300
 
 qt4-x11 (4:4.7.4-2) unstable; urgency=low
 

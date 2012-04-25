@@ -30,7 +30,7 @@ Build-Depends: debhelper (>= 8.9.13),
                libmng-dev,
                libmysqlclient-dev,
                libpam0g-dev,
-               libpng12-dev,
+               libpng-dev,
                libpq-dev,
                libreadline-dev,
                libsm-dev,
@@ -55,7 +55,7 @@ Build-Depends: debhelper (>= 8.9.13),
                rsync,
                unixodbc-dev,
                zlib1g-dev
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://qt.nokia.com/
 Vcs-Git: git://git.debian.org/pkg-kde/qt/qt4-x11.git
 Vcs-Browser: http://git.debian.org/?p=pkg-kde/qt/qt4-x11.git;a=summary
@@ -807,6 +807,7 @@ Description: Qt 4 Linguist tools
 Package: qdbus
 Architecture: any
 Multi-Arch: foreign
+Section: utils
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libqt4-dbus (<< 4:4.7.4-1)
 Replaces: libqt4-dbus (<< 4:4.7.4-1)
