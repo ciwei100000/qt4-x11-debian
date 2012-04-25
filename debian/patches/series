@@ -40,6 +40,7 @@ sh.diff
 kfreebsd_monotonic_clock.diff
 powerpc_designer_gstabs.diff
 qt-multiarch-plugin-path-compat.diff
+qt-multiarch-import-path-compat.diff
 fix_qvfb_build.patch
 s390x_jscore.diff
 add_missing_method_for_QBasicAtomicPointer_on_s390.patch
