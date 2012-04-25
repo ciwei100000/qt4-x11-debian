@@ -24,6 +24,10 @@ qt4-x11 (4:4.8.1-0r1) UNRELEASED; urgency=low
   * Merge the 4:4.7.4-3 unstable release: drop fix-format.diff, merged
     upstream.
 
+  [ Pino Toscano ]
+  * Fix atomic support on sparc64, by Aurelien Jarno (thanks!);
+    patch qt_atomic_sparc64.patch. (Closes: #647265)
+
  -- Fathi Boudra <fabo@debian.org>  Wed, 04 Jan 2012 22:15:56 +0200
 
 qt4-x11 (4:4.8.0-1) experimental; urgency=low
