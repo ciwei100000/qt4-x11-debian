@@ -17,3 +17,5 @@
 ./usr/lib/libQtWebKit.la
 ./usr/lib/libQtXml.la
 ./usr/lib/libQtXmlPatterns.la
+./usr/lib/libphonon.la
+./usr/lib/qt4/plugins/phonon_backend/libphonon_gstreamer.so

@@ -19,14 +19,17 @@ export QT_PLUGIN_PATH := $(QTDIR)/plugins
 pkgs_dbg := $(shell dh_listpackages | grep dbg | sed -e '/libqt4-dbg/d; s|-dbg||')
 # Packages whose debug symbols belong to qt4-bin-dbg
 pkgs_dbgbin := libqt4-dev-bin $(filter-out %-dbg lib% $(pkgs_dbg),$(shell dh_listpackages))
-# Library package list for override_dh_makeshlibs
-pkgs_lib := $(filter-out %-dev %-dbg libqt4-dev-bin,$(filter lib%,$(shell dh_listpackages)))
+# Library package list for override_dh_makeshlibs, excludes libqt4-phonon
+pkgs_lib := $(filter-out %-dev %-dbg libqt4-phonon libqt4-dev-bin,$(filter lib%,$(shell dh_listpackages)))
 # Upstream changelog
 upstream_changes := $(wildcard changes-*)
 # Current debian version (e.g.: 4:4.5.2-1)
 current_version := $(shell dpkg-parsechangelog | sed -n 's/^Version: //p')
 # Specific shlibs version (e.g.: 4:4.5.2)
 shlibs_version := $(shell dpkg-parsechangelog | sed -n 's/^Version: //p' | cut -f1 -d '-')
+# libqt4-phonon shlibs. Minimum libphonon4 version may need adjusting for new
+# Qt upstream release
+libqt4phonon_shlibs := libphonon4 (>= 4:4.6.0) | libqt4-phonon (= $(current_version))
 # Distribution vendor
 vendor := $(shell dpkg-vendor --query Vendor)
 
@@ -138,7 +141,7 @@ endif
 	            -xmlpatterns \
 	            -no-multimedia \
 	            -audio-backend \
-	            -no-phonon \
+	            -phonon \
 	            -no-phonon-backend \
 	            -svg \
 	            -no-webkit \
@@ -302,6 +305,13 @@ override_dh_auto_install:
 	# QTBUG-12159 workaround
 	rm -f debian/tmp//usr/share/qt4/mkspecs/modules/qt_webkit_version.pri
 
+	# Remove phonon development files
+	rm -f debian/tmp/usr/lib/*/libphonon.la
+	rm -f debian/tmp/usr/lib/*/libphonon.prl
+	rm -f debian/tmp/usr/lib/*/libphonon.so
+	rm -f debian/tmp/usr/lib/*/pkgconfig/phonon.pc
+	rm -rf debian/tmp/usr/include/qt4/phonon
+
 	# Remove leftover directories
 	find $(CURDIR)/debian/tmp/usr/lib/qt4 -depth -type d \( -false \
 	  -o -name .moc\* \
@@ -337,16 +347,23 @@ override_dh_installchangelogs:
 override_dh_strip:
 	$(foreach pkg,$(pkgs_dbg),dh_strip -p$(pkg) --dbg-package=$(pkg)-dbg;)
 	dh_strip $(foreach pkg,$(pkgs_dbgbin),-p$(pkg)) --dbg-package=qt4-bin-dbg
+	dh_strip -plibqt4-phonon
 	dh_strip --remaining-packages --dbg-package=libqt4-dbg
 
 override_dh_makeshlibs:
 	# Specific shlibs version (e.g.: 4:4.5.2)
 	$(foreach pkg,$(pkgs_lib),dh_makeshlibs -p$(pkg) -V '$(pkg) (>= $(shlibs_version))' -- -c0;)
+	dh_makeshlibs -plibqt4-phonon -V'$(libqt4phonon_shlibs)'
 	# Generate shlibs local files
 	for pkg in $(pkgs_lib); do \
 		if test -e debian/$${pkg}/DEBIAN/shlibs ; then \
 			sed 's/>=[^)]*/= $(current_version)/' debian/$${pkg}/DEBIAN/shlibs >> debian/shlibs.local ;\
 		fi \
 	done
+
+override_dh_shlibdeps:
+	# Exclude phonon deps from libqt4-phonon itself (they get injected there somehow)
+	dh_shlibdeps -plibqt4-phonon -- -xlibphonon4 -xlibqt4-phonon
+	dh_shlibdeps --remaining-packages
 
 .PHONY: override_dh_auto_test
