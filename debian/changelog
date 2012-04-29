@@ -29,7 +29,7 @@ qt4-x11 (4:4.8.1-0r1) UNRELEASED; urgency=low
   * Fix hyphen-used-as-minus-sign lintian warnings.
   * Build the documentation in the dh_auto_build-indep target instead of
     dh_auto_install.
-  * Add qt-multiarch-import-path-compat.diff - include legacy pre-multiarch qml
+  * qt-multiarch-plugin-path-compat.diff: include legacy pre-multiarch qml
     import path.
 
   [ Didier Raboud ]

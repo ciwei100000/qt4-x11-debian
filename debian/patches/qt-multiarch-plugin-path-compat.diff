@@ -1,15 +1,14 @@
-Description: include legacy pre-multiarch plugin path
+Description: include legacy pre-multiarch plugin paths
  A full multiarch system requires an architecture-qualified plugin path for
  Qt, but installed systems may still have plugins (e.g., from other
  distribution packages) in another pre-multiarch directory.  When constructing
  the plugin path, include both the configured plugin path and a plugin path
  with the architecture triplet stripped out.
+ .
+ This applies to the general plugin loading system, and to the QML one.
 Author: Steve Langasek <steve.langasek@ubuntu.com>
-Last-Update: 2011-09-23
-
----
- src/corelib/kernel/qcoreapplication.cpp |   17 +++++++++++++++++
- 1 file changed, 17 insertions(+)
+Author: Felix Geyer <debfx-pkg@fobos.de>
+Last-Update: 2012-04-25
 
 --- a/src/corelib/kernel/qcoreapplication.cpp
 +++ b/src/corelib/kernel/qcoreapplication.cpp
@@ -37,3 +36,28 @@ Last-Update: 2011-09-23
  #endif
  
          // If QCoreApplication is not yet instantiated,
+--- a/src/declarative/qml/qdeclarativeimport.cpp	2012-03-14 15:01:13.000000000 +0100
++++ b/src/declarative/qml/qdeclarativeimport.cpp	2012-04-17 15:13:10.811520930 +0200
+@@ -751,6 +751,22 @@
+         addImportPath(installImportsPath);
+     }
+ #else
++    QStringList dirnames = installImportsPath.split(QLatin1Char('/'), QString::SkipEmptyParts);
++    if (dirnames[0] == QLatin1String("usr") && dirnames[1] == QLatin1String("lib") && dirnames[3] == QLatin1String("qt4"))
++    {
++        QString pathSep("/");
++        QString legacyImportPath = pathSep;
++        int i = 0;
++        for (QStringList::const_iterator it = dirnames.constBegin(); it != dirnames.constEnd(); ++it) {
++            if (++i == 3)
++                continue;
++            legacyImportPath = legacyImportPath + *it + pathSep;
++        }
++        if (QFile::exists(legacyImportPath)) {
++            addImportPath(legacyImportPath);
++        }
++    }
++
+     addImportPath(installImportsPath);
+ #endif
+ 
