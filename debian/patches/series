@@ -43,8 +43,5 @@ qt-multiarch-plugin-path-compat.diff
 fix_qvfb_build.patch
 s390x_jscore.diff
 add_missing_method_for_QBasicAtomicPointer_on_s390.patch
-blacklist-diginotar-cert.diff
-openssl_no_ssl2.patch
-Remove_QtHelp_dependency_on_QtXml.patch
 CVE-2011-3922.patch
 qt_atomic_sparc64.patch
