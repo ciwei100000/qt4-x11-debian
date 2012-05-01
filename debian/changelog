@@ -41,6 +41,7 @@ qt4-x11 (4:4.8.1-0r1) UNRELEASED; urgency=low
   * Fix atomic support on sparc64, by Aurelien Jarno (thanks!);
     patch qt_atomic_sparc64.patch. (Closes: #647265)
   * Remove ${shlibs:Depends} from all the -dbg packages.
+  * Compress qt4-doc-html as XZ.
 
  -- Fathi Boudra <fabo@debian.org>  Wed, 04 Jan 2012 22:15:56 +0200
 
