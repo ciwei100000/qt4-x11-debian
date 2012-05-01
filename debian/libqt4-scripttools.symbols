@@ -1,12 +1,11 @@
-# SymbolsHelper-Confirmed: 4:4.7.4 amd64
+# SymbolsHelper-Confirmed: 4:4.8.0 amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
 libQtScriptTools.so.4 libqt4-scripttools #MINVER#
 * Build-Depends-Package: libqt4-dev
  (optional=external|arch=hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (optional=external|arch=sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN15QLinearGradientD1Ev@Base 4:4.7.4
  _ZN15QLinearGradientD2Ev@Base 4:4.7.4
- _ZN20QXmlStreamAttributesD1Ev@Base 4:4.7.4
- _ZN20QXmlStreamAttributesD2Ev@Base 4:4.7.4
+ (arch=!mips !mipsel)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.7.4
+ (arch=!mips !mipsel)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.7.4
  _ZN21QScriptEngineDebugger11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN21QScriptEngineDebugger11qt_metacastEPKc@Base 4:4.5.3
  _ZN21QScriptEngineDebugger16staticMetaObjectE@Base 4:4.5.3
@@ -27,7 +26,7 @@ libQtScriptTools.so.4 libqt4-scripttools #MINVER#
  _ZN25QAbstractItemModelPrivateD0Ev@Base 4:4.7.4
  _ZN25QAbstractItemModelPrivateD1Ev@Base 4:4.7.4
  _ZN25QAbstractItemModelPrivateD2Ev@Base 4:4.7.4
- (arch=sparc)_ZN9QHashData8willGrowEv@Base 4:4.6.2
+ (optional=templinst)_ZN8QVariant9fromValueI5QPairI5QListIxES3_EEES_RKT_@Base 4:4.8.0
  _ZN9QTextEdit14ExtraSelectionD1Ev@Base 4:4.7.4
  _ZN9QTextEdit14ExtraSelectionD2Ev@Base 4:4.7.4
  _ZNK21QScriptEngineDebugger10metaObjectEv@Base 4:4.5.3

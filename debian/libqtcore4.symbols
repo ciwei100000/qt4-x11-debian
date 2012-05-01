@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.4 amd64
+# SymbolsHelper-Confirmed: 4:4.8.0 amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
 libQtCLucene.so.4 libqtcore4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN12QCLuceneHits2idEi@Base 4:4.5.3
@@ -74,8 +74,6 @@ libQtCLucene.so.4 libqtcore4 #MINVER#
  _ZN14QCLuceneReaderD0Ev@Base 4:4.5.3
  _ZN14QCLuceneReaderD1Ev@Base 4:4.5.3
  _ZN14QCLuceneReaderD2Ev@Base 4:4.5.3
- (optional=external|arch=sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (optional=external|arch=sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN16QCLuceneAnalyzerC1Ev@Base 4:4.5.3
  _ZN16QCLuceneAnalyzerC2Ev@Base 4:4.5.3
  _ZN16QCLuceneAnalyzerD0Ev@Base 4:4.5.3
@@ -442,18 +440,14 @@ libQtCLucene.so.4 libqtcore4 #MINVER#
  _ZNK21QCLuceneMultiSearcher13searcherIndexEi@Base 4:4.5.3
  _ZNK21QCLuceneMultiSearcher6maxDocEv@Base 4:4.5.3
  _ZNK21QCLuceneMultiSearcher6subDocEi@Base 4:4.5.3
- (optional=templinst|arch=ia64 mips mipsel sparc|subst)_ZNSs4_Rep8_M_cloneERKSaIcE{size_t}@Base 4:4.7.2
- (optional=templinst|arch=ia64 mips mipsel sparc|subst)_ZNSs4_Rep9_S_createE{size_t}{size_t}RKSaIcE@Base 4:4.7.2
- (optional=templinst|arch=armel)_ZNSt12_Vector_baseIPN6lucene6search13BooleanClauseESaIS3_EED1Ev@Base 4:4.7.2
- (optional=templinst|arch=armel)_ZNSt12_Vector_baseIPN6lucene6search13BooleanClauseESaIS3_EED2Ev@Base 4:4.7.2
- (optional=templinst|arch=armel)_ZNSt12_Vector_baseIPwSaIS0_EED1Ev@Base 4:4.7.2
- (optional=templinst|arch=armel)_ZNSt12_Vector_baseIPwSaIS0_EED2Ev@Base 4:4.7.2
- (optional=templinst)_ZNSt3mapIPN6lucene5index4TermEPNS1_14DocumentWriter7PostingENS2_7CompareESaISt4pairIKS3_S6_EEED1Ev@Base 4:4.7.4
- (optional=templinst)_ZNSt3mapIPN6lucene5index4TermEPNS1_14DocumentWriter7PostingENS2_7CompareESaISt4pairIKS3_S6_EEED2Ev@Base 4:4.7.4
- (optional=templinst)_ZNSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_14FieldCacheAutoENS3_7CompareESaISt4pairIKS4_S6_EEED1Ev@Base 4:4.7.4
- (optional=templinst)_ZNSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_14FieldCacheAutoENS3_7CompareESaISt4pairIKS4_S6_EEED2Ev@Base 4:4.7.4
- (optional=templinst)_ZNSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_18ScoreDocComparatorENS3_7CompareESaISt4pairIKS4_S6_EEED1Ev@Base 4:4.7.4
- (optional=templinst)_ZNSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_18ScoreDocComparatorENS3_7CompareESaISt4pairIKS4_S6_EEED2Ev@Base 4:4.7.4
+ (optional=templinst|arch=ia64|subst)_ZNSs4_Rep8_M_cloneERKSaIcE{size_t}@Base 4:4.7.2
+ (optional=templinst|arch=ia64|subst)_ZNSs4_Rep9_S_createE{size_t}{size_t}RKSaIcE@Base 4:4.7.2
+ (optional=templinst|arch=!armel !armhf)_ZNSt3mapIPN6lucene5index4TermEPNS1_14DocumentWriter7PostingENS2_7CompareESaISt4pairIKS3_S6_EEED1Ev@Base 4:4.7.4
+ (optional=templinst|arch=!armel !armhf)_ZNSt3mapIPN6lucene5index4TermEPNS1_14DocumentWriter7PostingENS2_7CompareESaISt4pairIKS3_S6_EEED2Ev@Base 4:4.7.4
+ (optional=templinst|arch=!armel !armhf)_ZNSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_14FieldCacheAutoENS3_7CompareESaISt4pairIKS4_S6_EEED1Ev@Base 4:4.7.4
+ (optional=templinst|arch=!armel !armhf)_ZNSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_14FieldCacheAutoENS3_7CompareESaISt4pairIKS4_S6_EEED2Ev@Base 4:4.7.4
+ (optional=templinst|arch=!armel !armhf)_ZNSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_18ScoreDocComparatorENS3_7CompareESaISt4pairIKS4_S6_EEED1Ev@Base 4:4.7.4
+ (optional=templinst|arch=!armel !armhf)_ZNSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_18ScoreDocComparatorENS3_7CompareESaISt4pairIKS4_S6_EEED2Ev@Base 4:4.7.4
  (optional=templinst)_ZNSt4listIPN6lucene5index18CompoundFileWriter15WriterFileEntryESaIS4_EED1Ev@Base 4:4.7.4
  (optional=templinst)_ZNSt4listIPN6lucene5index18CompoundFileWriter15WriterFileEntryESaIS4_EED2Ev@Base 4:4.7.4
  (optional=templinst)_ZNSt4listIPN6lucene6search6ScorerESaIS3_EED1Ev@Base 4:4.7.4
@@ -479,8 +473,8 @@ libQtCLucene.so.4 libqtcore4 #MINVER#
  (optional=templinst)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5index18CompoundFileReader9FileEntryEESt10_Select1stIS8_ENS3_4util7Compare7QstringESaIS8_EE10_M_insert_EPKSt18_Rb_tree_node_baseSI_RKS8_@Base 4:4.5.3
  (optional=templinst|arch=!hppa !ia64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5index18CompoundFileReader9FileEntryEESt10_Select1stIS8_ENS3_4util7Compare7QstringESaIS8_EE16_M_insert_uniqueERKS8_@Base 4:4.5.3
  (optional=templinst)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5index18CompoundFileReader9FileEntryEESt10_Select1stIS8_ENS3_4util7Compare7QstringESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E@Base 4:4.5.3
- (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5store11FSDirectoryEESt10_Select1stIS7_ENS3_4util7Compare7QstringESaIS7_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS7_@Base 4:4.7.2
- (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5store11FSDirectoryEESt10_Select1stIS7_ENS3_4util7Compare7QstringESaIS7_EE16_M_insert_uniqueERKS7_@Base 4:4.7.2
+ (optional=templinst|arch=!ia64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5store11FSDirectoryEESt10_Select1stIS7_ENS3_4util7Compare7QstringESaIS7_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS7_@Base 4:4.7.2
+ (optional=templinst|arch=!ia64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5store11FSDirectoryEESt10_Select1stIS7_ENS3_4util7Compare7QstringESaIS7_EE16_M_insert_uniqueERKS7_@Base 4:4.7.2
  (optional=templinst)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5store11FSDirectoryEESt10_Select1stIS7_ENS3_4util7Compare7QstringESaIS7_EE8_M_eraseEPSt13_Rb_tree_nodeIS7_E@Base 4:4.5.3
  (optional=templinst)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5store7RAMFileEESt10_Select1stIS7_ENS3_4util7Compare7QstringESaIS7_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS7_@Base 4:4.5.3
  (optional=templinst)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5store7RAMFileEESt10_Select1stIS7_ENS3_4util7Compare7QstringESaIS7_EE16_M_insert_uniqueERKS7_@Base 4:4.5.3
@@ -490,15 +484,15 @@ libQtCLucene.so.4 libqtcore4 #MINVER#
  (optional=templinst|arch=!hppa !ia64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PvESt10_Select1stIS4_EN6lucene4util7Compare7QstringESaIS4_EE16_M_insert_uniqueERKS4_@Base 4:4.5.3
  (optional=templinst)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PvESt10_Select1stIS4_EN6lucene4util7Compare7QstringESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 4:4.5.3
  (optional=templinst)_ZNSt8_Rb_treeIPFvPN6lucene5index11IndexReaderEPvESt4pairIKS6_S4_ESt10_Select1stIS9_ENS2_20CloseCallbackCompareESaIS9_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS9_@Base 4:4.5.3
- (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_ZNSt8_Rb_treeIPFvPN6lucene5index11IndexReaderEPvESt4pairIKS6_S4_ESt10_Select1stIS9_ENS2_20CloseCallbackCompareESaIS9_EE16_M_insert_uniqueERKS9_@Base 4:4.7.2
+ (optional=templinst|arch=!ia64)_ZNSt8_Rb_treeIPFvPN6lucene5index11IndexReaderEPvESt4pairIKS6_S4_ESt10_Select1stIS9_ENS2_20CloseCallbackCompareESaIS9_EE16_M_insert_uniqueERKS9_@Base 4:4.7.2
  (optional=templinst)_ZNSt8_Rb_treeIPFvPN6lucene5index11IndexReaderEPvESt4pairIKS6_S4_ESt10_Select1stIS9_ENS2_20CloseCallbackCompareESaIS9_EE8_M_eraseEPSt13_Rb_tree_nodeIS9_E@Base 4:4.5.3
- (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_ZNSt8_Rb_treeIPFvbES1_St9_IdentityIS1_EN6lucene4util7Compare4VoidIS0_EESaIS1_EE10_M_insert_EPKSt18_Rb_tree_node_baseSD_RKS1_@Base 4:4.7.2
- (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_ZNSt8_Rb_treeIPFvbES1_St9_IdentityIS1_EN6lucene4util7Compare4VoidIS0_EESaIS1_EE16_M_insert_uniqueERKS1_@Base 4:4.7.2
+ (optional=templinst|arch=!ia64)_ZNSt8_Rb_treeIPFvbES1_St9_IdentityIS1_EN6lucene4util7Compare4VoidIS0_EESaIS1_EE10_M_insert_EPKSt18_Rb_tree_node_baseSD_RKS1_@Base 4:4.7.2
+ (optional=templinst|arch=!ia64)_ZNSt8_Rb_treeIPFvbES1_St9_IdentityIS1_EN6lucene4util7Compare4VoidIS0_EESaIS1_EE16_M_insert_uniqueERKS1_@Base 4:4.7.2
  (optional=templinst)_ZNSt8_Rb_treeIPFvbES1_St9_IdentityIS1_EN6lucene4util7Compare4VoidIS0_EESaIS1_EE8_M_eraseEPSt13_Rb_tree_nodeIS1_E@Base 4:4.5.3
- (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_ZNSt8_Rb_treeIPKcSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare4CharESaIS4_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS4_@Base 4:4.7.2
- (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_ZNSt8_Rb_treeIPKcSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare4CharESaIS4_EE14_M_lower_boundEPSt13_Rb_tree_nodeIS4_ESF_RS3_@Base 4:4.7.2
- (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_ZNSt8_Rb_treeIPKcSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare4CharESaIS4_EE16_M_insert_uniqueERKS4_@Base 4:4.7.2
- (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_ZNSt8_Rb_treeIPKcSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare4CharESaIS4_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS4_ERKS4_@Base 4:4.7.2
+ (optional=templinst|arch=!ia64)_ZNSt8_Rb_treeIPKcSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare4CharESaIS4_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS4_@Base 4:4.7.2
+ (optional=templinst|arch=!i386 !ia64 !kfreebsd-i386 !mips !mipsel !powerpc !s390 !sparc)_ZNSt8_Rb_treeIPKcSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare4CharESaIS4_EE14_M_lower_boundEPSt13_Rb_tree_nodeIS4_ESF_RS3_@Base 4:4.7.2
+ (optional=templinst|arch=!ia64)_ZNSt8_Rb_treeIPKcSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare4CharESaIS4_EE16_M_insert_uniqueERKS4_@Base 4:4.7.2
+ (optional=templinst|arch=!ia64)_ZNSt8_Rb_treeIPKcSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare4CharESaIS4_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS4_ERKS4_@Base 4:4.7.2
  (optional=templinst)_ZNSt8_Rb_treeIPKcSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare4CharESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 4:4.5.3
  (optional=templinst)_ZNSt8_Rb_treeIPKwS1_St9_IdentityIS1_EN6lucene4util7Compare5TCharESaIS1_EE10_M_insert_EPKSt18_Rb_tree_node_baseSC_RKS1_@Base 4:4.5.3
  (optional=templinst|arch=!hppa !ia64)_ZNSt8_Rb_treeIPKwS1_St9_IdentityIS1_EN6lucene4util7Compare5TCharESaIS1_EE16_M_insert_uniqueERKS1_@Base 4:4.5.3
@@ -516,18 +510,18 @@ libQtCLucene.so.4 libqtcore4 #MINVER#
  (optional=templinst|arch=!hppa !ia64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PhESt10_Select1stIS5_EN6lucene4util7Compare5TCharESaIS5_EE16_M_insert_uniqueERKS5_@Base 4:4.5.3
  (optional=templinst)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PhESt10_Select1stIS5_EN6lucene4util7Compare5TCharESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E@Base 4:4.5.3
  (optional=templinst)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS4_@Base 4:4.7.3
- (optional=templinst)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE14_M_lower_boundEPSt13_Rb_tree_nodeIS4_ESF_RS3_@Base 4:4.7.3
- (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE16_M_insert_uniqueERKS4_@Base 4:4.7.2
- (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS4_ERKS4_@Base 4:4.7.2
+ (optional=templinst|arch=amd64 armel armhf hurd-i386 ia64 kfreebsd-amd64 s390x)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE14_M_lower_boundEPSt13_Rb_tree_nodeIS4_ESF_RS3_@Base 4:4.7.3
+ (optional=templinst|arch=!ia64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE16_M_insert_uniqueERKS4_@Base 4:4.7.2
+ (optional=templinst|arch=!ia64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS4_ERKS4_@Base 4:4.7.2
  (optional=templinst)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 4:4.5.3
  (optional=templinst)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search14FieldCacheImpl25fieldcacheCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE10_M_insert_EPKSt18_Rb_tree_node_baseSL_RKSA_@Base 4:4.5.3
- (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search14FieldCacheImpl25fieldcacheCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE16_M_insert_uniqueERKSA_@Base 4:4.7.2
+ (optional=templinst|arch=!ia64)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search14FieldCacheImpl25fieldcacheCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE16_M_insert_uniqueERKSA_@Base 4:4.7.2
  (optional=templinst)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search14FieldCacheImpl25fieldcacheCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE8_M_eraseEPSt13_Rb_tree_nodeISA_E@Base 4:4.5.3
- (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search19FieldSortedHitQueue23hitqueueCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE10_M_insert_EPKSt18_Rb_tree_node_baseSL_RKSA_@Base 4:4.7.2
- (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search19FieldSortedHitQueue23hitqueueCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE16_M_insert_uniqueERKSA_@Base 4:4.7.2
+ (optional=templinst|arch=!ia64)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search19FieldSortedHitQueue23hitqueueCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE10_M_insert_EPKSt18_Rb_tree_node_baseSL_RKSA_@Base 4:4.7.2
+ (optional=templinst|arch=!ia64)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search19FieldSortedHitQueue23hitqueueCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE16_M_insert_uniqueERKSA_@Base 4:4.7.2
  (optional=templinst)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search19FieldSortedHitQueue23hitqueueCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE8_M_eraseEPSt13_Rb_tree_nodeISA_E@Base 4:4.5.3
  (optional=templinst)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search21AbstractCachingFilter12BitSetHolderEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE10_M_insert_EPKSt18_Rb_tree_node_baseSL_RKSA_@Base 4:4.5.3
- (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search21AbstractCachingFilter12BitSetHolderEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE16_M_insert_uniqueERKSA_@Base 4:4.7.2
+ (optional=templinst|arch=!ia64)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search21AbstractCachingFilter12BitSetHolderEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE16_M_insert_uniqueERKSA_@Base 4:4.7.2
  (optional=templinst)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search21AbstractCachingFilter12BitSetHolderEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE8_M_eraseEPSt13_Rb_tree_nodeISA_E@Base 4:4.5.3
  (optional=templinst)_ZNSt8_Rb_treeIPN6lucene5index4TermESt4pairIKS3_PNS1_14DocumentWriter7PostingEESt10_Select1stIS9_ENS2_7CompareESaIS9_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS9_@Base 4:4.5.3
  (optional=templinst|arch=!hppa !ia64)_ZNSt8_Rb_treeIPN6lucene5index4TermESt4pairIKS3_PNS1_14DocumentWriter7PostingEESt10_Select1stIS9_ENS2_7CompareESaIS9_EE16_M_insert_uniqueERKS9_@Base 4:4.5.3
@@ -546,13 +540,13 @@ libQtCLucene.so.4 libqtcore4 #MINVER#
  (optional=templinst|arch=hurd-i386)_ZNSt8_Rb_treeIiSt4pairIKiPN6lucene5index15SegmentTermEnumEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE8_M_eraseEPSt13_Rb_tree_nodeIS6_E@Base 4:4.5.3
  (optional=templinst|arch=hurd-i386)_ZNSt8_Rb_treeIiSt4pairIKiPN6lucene5index17TermVectorsReaderEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS6_@Base 4:4.5.3
  (optional=templinst|arch=hurd-i386)_ZNSt8_Rb_treeIiSt4pairIKiPN6lucene5index17TermVectorsReaderEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE8_M_eraseEPSt13_Rb_tree_nodeIS6_E@Base 4:4.5.3
- (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene4util15ThreadLocalBaseEESt10_Select1stIS6_ESt4lessImESaIS6_EE15_M_insert_equalERKS6_@Base 4:4.7.2
+ (optional=templinst|arch=!ia64)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene4util15ThreadLocalBaseEESt10_Select1stIS6_ESt4lessImESaIS6_EE15_M_insert_equalERKS6_@Base 4:4.7.2
  (optional=templinst|arch=!hurd-i386)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene4util15ThreadLocalBaseEESt10_Select1stIS6_ESt4lessImESaIS6_EE8_M_eraseEPSt13_Rb_tree_nodeIS6_E@Base 4:4.5.3
  (optional=templinst|arch=!hurd-i386)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene5index15SegmentTermEnumEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS6_@Base 4:4.5.3
- (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene5index15SegmentTermEnumEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE16_M_insert_uniqueERKS6_@Base 4:4.7.2
+ (optional=templinst|arch=!ia64)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene5index15SegmentTermEnumEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE16_M_insert_uniqueERKS6_@Base 4:4.7.2
  (optional=templinst|arch=!hurd-i386)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene5index15SegmentTermEnumEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE8_M_eraseEPSt13_Rb_tree_nodeIS6_E@Base 4:4.5.3
  (optional=templinst|arch=!hurd-i386)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene5index17TermVectorsReaderEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS6_@Base 4:4.5.3
- (optional=templinst|arch=!ia64 !mips !mipsel !sparc)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene5index17TermVectorsReaderEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE16_M_insert_uniqueERKS6_@Base 4:4.7.2
+ (optional=templinst|arch=!ia64)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene5index17TermVectorsReaderEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE16_M_insert_uniqueERKS6_@Base 4:4.7.2
  (optional=templinst|arch=!hurd-i386)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene5index17TermVectorsReaderEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE8_M_eraseEPSt13_Rb_tree_nodeIS6_E@Base 4:4.5.3
  (optional=templinst)_ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_EPKS3_RKS6_@Base 4:4.5.3
  _ZTI12QCLuceneHits@Base 4:4.5.3
@@ -778,10 +772,10 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _Z10qHBNewFacePvPF8HB_ErrorS_jPhPjE@Base 4:4.5.3
  _Z10qShapeItemP14HB_ShaperItem_@Base 4:4.6.1
  (arch=hurd-i386 i386 kfreebsd-i386)_Z10qvsnprintfPcjPKcS_@Base 4:4.5.3
- (arch=armel)_Z10qvsnprintfPcjPKcSt9__va_list@Base 4:4.6.2
+ (arch=armel armhf)_Z10qvsnprintfPcjPKcSt9__va_list@Base 4:4.8.0
  (arch=alpha)_Z10qvsnprintfPcmPKc13__va_list_tag@Base 4:4.5.3
  (arch=amd64 kfreebsd-amd64 powerpc s390|subst)_Z10qvsnprintfPc{size_t}PKcP13__va_list_tag@Base 4:4.5.3
- (arch=armel hppa ia64 mips mipsel sparc|subst)_Z10qvsnprintfPc{size_t}PKcPv@Base 4:4.5.3
+ (arch=armel armhf hppa ia64 mips mipsel sparc|subst)_Z10qvsnprintfPc{size_t}PKcPv@Base 4:4.8.0
  _Z10scientificR11QTextStream@Base 4:4.5.3
  _Z11noforcesignR11QTextStream@Base 4:4.5.3
  _Z11qHBFreeFaceP11HB_FaceRec_@Base 4:4.5.3
@@ -804,8 +798,10 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _Z15lowercasedigitsR11QTextStream@Base 4:4.5.3
  _Z15qAddPostRoutinePFvvE@Base 4:4.5.3
  _Z15qInitResourceIOv@Base 4:4.5.3
+ _Z15qIsEffectiveTLDRK7QString@Base 4:4.8.0
  (subst)_Z15qReallocAlignedPv{size_t}{size_t}{size_t}@Base 4:4.6.1
- (arch=armel)_Z15qt_atomic_yieldPi@Base 4:4.5.3
+ _Z15qTopLevelDomainRK7QString@Base 4:4.8.0
+ (arch=armel armhf)_Z15qt_atomic_yieldPi@Base 4:4.5.3
  _Z15qt_error_stringi@Base 4:4.5.3
  _Z15uppercasedigitsR11QTextStream@Base 4:4.5.3
  _Z16qInstallPathBinsv@Base 4:4.5.3
@@ -864,7 +860,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _Z5rightR11QTextStream@Base 4:4.5.3
  _Z6centerR11QTextStream@Base 4:4.5.3
  _Z6qDebugPKcz@Base 4:4.5.3
- (arch=ia64 mips mipsel sparc)_Z6qDebugv@Base 4:4.7.2
+ (arch=ia64)_Z6qDebugv@Base 4:4.7.2
  _Z6qFatalPKcz@Base 4:4.5.3
  _Z6qIsInfd@Base 4:4.5.3
  _Z6qIsInff@Base 4:4.5.3
@@ -907,7 +903,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN10QByteArray12shared_emptyE@Base 4:4.5.3
  _ZN10QByteArray19fromPercentEncodingERKS_c@Base 4:4.5.3
  _ZN10QByteArray4chopEi@Base 4:4.5.3
- (arch=ia64 mips mipsel sparc)_ZN10QByteArray4dataEv@Base 4:4.7.2
+ (arch=ia64)_ZN10QByteArray4dataEv@Base 4:4.7.2
  _ZN10QByteArray4fillEci@Base 4:4.5.3
  _ZN10QByteArray5clearEv@Base 4:4.5.3
  _ZN10QByteArray6appendEPKc@Base 4:4.5.3
@@ -968,8 +964,8 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN10QEventLoopD0Ev@Base 4:4.5.3
  _ZN10QEventLoopD1Ev@Base 4:4.5.3
  _ZN10QEventLoopD2Ev@Base 4:4.5.3
+ _ZN10QMutexPool11createMutexEi@Base 4:4.8.0
  _ZN10QMutexPool17globalInstanceGetEPKv@Base 4:4.5.3
- _ZN10QMutexPool3getEPKv@Base 4:4.5.3
  _ZN10QMutexPool8instanceEv@Base 4:4.5.3
  _ZN10QMutexPoolC1EN6QMutex13RecursionModeEi@Base 4:4.6.1
  _ZN10QMutexPoolC2EN6QMutex13RecursionModeEi@Base 4:4.6.1
@@ -1151,6 +1147,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN11QTextStreamrsERy@Base 4:4.5.3
  _ZN11QThreadPool11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN11QThreadPool11qt_metacastEPKc@Base 4:4.5.3
+ _ZN11QThreadPool11waitForDoneEi@Base 4:4.8.0
  _ZN11QThreadPool11waitForDoneEv@Base 4:4.5.3
  _ZN11QThreadPool13releaseThreadEv@Base 4:4.5.3
  _ZN11QThreadPool13reserveThreadEv@Base 4:4.5.3
@@ -1174,6 +1171,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN11QTranslator11qt_metacastEPKc@Base 4:4.5.3
  _ZN11QTranslator16staticMetaObjectE@Base 4:4.5.3
  _ZN11QTranslator4loadEPKhi@Base 4:4.5.3
+ _ZN11QTranslator4loadERK7QLocaleRK7QStringS5_S5_S5_@Base 4:4.8.0
  _ZN11QTranslator4loadERK7QStringS2_S2_S2_@Base 4:4.5.3
  _ZN11QTranslatorC1EP7QObject@Base 4:4.5.3
  _ZN11QTranslatorC1EP7QObjectPKc@Base 4:4.5.3
@@ -1225,6 +1223,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN12QLibraryInfo9buildDateEv@Base 4:4.6.1
  _ZN12QLibraryInfoC1Ev@Base 4:4.5.3
  _ZN12QLibraryInfoC2Ev@Base 4:4.5.3
+ _ZN12QSystemError8toStringEv@Base 4:4.8.0
  _ZN12QTextDecoder9toUnicodeEP7QStringPKci@Base 4:4.5.3
  _ZN12QTextDecoder9toUnicodeEPKci@Base 4:4.5.3
  _ZN12QTextDecoder9toUnicodeERK10QByteArray@Base 4:4.5.3
@@ -1304,7 +1303,9 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN13QFSFileEngine4linkERK7QString@Base 4:4.5.3
  _ZN13QFSFileEngine4openE6QFlagsIN9QIODevice12OpenModeFlagEE@Base 4:4.5.3
  _ZN13QFSFileEngine4openE6QFlagsIN9QIODevice12OpenModeFlagEEP8_IO_FILE@Base 4:4.5.3
+ _ZN13QFSFileEngine4openE6QFlagsIN9QIODevice12OpenModeFlagEEP8_IO_FILES0_IN5QFile14FileHandleFlagEE@Base 4:4.8.0
  _ZN13QFSFileEngine4openE6QFlagsIN9QIODevice12OpenModeFlagEEi@Base 4:4.5.3
+ _ZN13QFSFileEngine4openE6QFlagsIN9QIODevice12OpenModeFlagEEiS0_IN5QFile14FileHandleFlagEE@Base 4:4.8.0
  _ZN13QFSFileEngine4readEPcx@Base 4:4.5.3
  _ZN13QFSFileEngine4seekEx@Base 4:4.5.3
  _ZN13QFSFileEngine5closeEv@Base 4:4.5.3
@@ -1366,6 +1367,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN13QPluginLoaderD2Ev@Base 4:4.5.3
  _ZN13QSharedMemory11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN13QSharedMemory11qt_metacastEPKc@Base 4:4.5.3
+ _ZN13QSharedMemory12setNativeKeyERK7QString@Base 4:4.8.0
  _ZN13QSharedMemory16staticMetaObjectE@Base 4:4.5.3
  _ZN13QSharedMemory4dataEv@Base 4:4.5.3
  _ZN13QSharedMemory4lockEv@Base 4:4.5.3
@@ -1444,6 +1446,8 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN13QStateMachineD0Ev@Base 4:4.6.1
  _ZN13QStateMachineD1Ev@Base 4:4.6.1
  _ZN13QStateMachineD2Ev@Base 4:4.6.1
+ _ZN13QSystemLocale24CurrencyToStringArgumentD1Ev@Base 4:4.8.0
+ _ZN13QSystemLocale24CurrencyToStringArgumentD2Ev@Base 4:4.8.0
  _ZN13QSystemLocaleC1Eb@Base 4:4.5.3
  _ZN13QSystemLocaleC1Ev@Base 4:4.5.3
  _ZN13QSystemLocaleC2Eb@Base 4:4.5.3
@@ -1451,7 +1455,25 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN13QSystemLocaleD0Ev@Base 4:4.5.3
  _ZN13QSystemLocaleD1Ev@Base 4:4.5.3
  _ZN13QSystemLocaleD2Ev@Base 4:4.5.3
+ _ZN13QUnifiedTimer10timerEventEP11QTimerEvent@Base 4:4.8.0
+ _ZN13QUnifiedTimer17ensureTimerUpdateEv@Base 4:4.8.0
+ _ZN13QUnifiedTimer17registerAnimationEP18QAbstractAnimationb@Base 4:4.8.0
+ _ZN13QUnifiedTimer17setTimingIntervalEi@Base 4:4.8.0
+ _ZN13QUnifiedTimer19unregisterAnimationEP18QAbstractAnimation@Base 4:4.8.0
+ _ZN13QUnifiedTimer20updateAnimationTimerEv@Base 4:4.8.0
+ _ZN13QUnifiedTimer20updateAnimationsTimeEv@Base 4:4.8.0
+ _ZN13QUnifiedTimer21restartAnimationTimerEv@Base 4:4.8.0
+ _ZN13QUnifiedTimer22installAnimationDriverEP16QAnimationDriver@Base 4:4.8.0
+ _ZN13QUnifiedTimer24registerRunningAnimationEP18QAbstractAnimation@Base 4:4.8.0
+ _ZN13QUnifiedTimer26unregisterRunningAnimationEP18QAbstractAnimation@Base 4:4.8.0
+ _ZN13QUnifiedTimer33closestPauseAnimationTimeToFinishEv@Base 4:4.8.0
+ _ZN13QUnifiedTimer8instanceEb@Base 4:4.8.0
  _ZN13QUnifiedTimer8instanceEv@Base 4:4.6.1
+ _ZN13QUnifiedTimerC1Ev@Base 4:4.8.0
+ _ZN13QUnifiedTimerC2Ev@Base 4:4.8.0
+ _ZN13QUnifiedTimerD0Ev@Base 4:4.8.0
+ _ZN13QUnifiedTimerD1Ev@Base 4:4.8.0
+ _ZN13QUnifiedTimerD2Ev@Base 4:4.8.0
  _ZN14QAbstractState11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN14QAbstractState11qt_metacastEPKc@Base 4:4.6.1
  _ZN14QAbstractState16staticMetaObjectE@Base 4:4.6.1
@@ -1470,18 +1492,27 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN14QFactoryLoader11qt_metacastEPKc@Base 4:4.5.3
  _ZN14QFactoryLoader16staticMetaObjectE@Base 4:4.5.3
  _ZN14QFactoryLoader6updateEv@Base 4:4.5.3
+ _ZN14QFactoryLoader9updateDirERK7QStringR9QSettings@Base 4:4.8.0
  _ZN14QFactoryLoaderC1EPKcRK7QStringN2Qt15CaseSensitivityE@Base 4:4.5.3
  _ZN14QFactoryLoaderC2EPKcRK7QStringN2Qt15CaseSensitivityE@Base 4:4.5.3
  _ZN14QFactoryLoaderD0Ev@Base 4:4.5.3
  _ZN14QFactoryLoaderD1Ev@Base 4:4.5.3
  _ZN14QFactoryLoaderD2Ev@Base 4:4.5.3
+ _ZN14QLocalePrivate10findLocaleEN7QLocale8LanguageENS0_6ScriptENS0_7CountryE@Base 4:4.8.0
+ _ZN14QLocalePrivate12codeToScriptERK7QString@Base 4:4.8.0
+ _ZN14QLocalePrivate13codeToCountryERK7QString@Base 4:4.8.0
+ _ZN14QLocalePrivate14codeToLanguageERK7QString@Base 4:4.8.0
+ _ZN14QLocalePrivate14doubleToStringE5QCharS0_S0_S0_S0_S0_diNS_10DoubleFormEij@Base 4:4.8.0
+ _ZN14QLocalePrivate16longLongToStringE5QCharS0_S0_S0_xiiij@Base 4:4.8.0
  _ZN14QLocalePrivate17bytearrayToDoubleEPKcPbS2_@Base 4:4.5.3
+ _ZN14QLocalePrivate17getLangAndCountryERK7QStringRN7QLocale8LanguageERNS3_6ScriptERNS3_7CountryE@Base 4:4.8.0
  _ZN14QLocalePrivate19bytearrayToLongLongEPKciPbS2_@Base 4:4.5.3
+ _ZN14QLocalePrivate19unsLongLongToStringE5QCharS0_S0_yiiij@Base 4:4.8.0
  _ZN14QLocalePrivate19updateSystemPrivateEv@Base 4:4.5.3
  _ZN14QLocalePrivate22bytearrayToUnsLongLongEPKciPb@Base 4:4.5.3
  _ZN14QMetaCallEvent13placeMetaCallEP7QObject@Base 4:4.5.3
- _ZN14QMetaCallEventC1EiPK7QObjectiiPiPPvP10QSemaphore@Base 4:4.5.3
- _ZN14QMetaCallEventC2EiPK7QObjectiiPiPPvP10QSemaphore@Base 4:4.5.3
+ _ZN14QMetaCallEventC1EttPFvP7QObjectN11QMetaObject4CallEiPPvEPKS0_iiPiS5_P10QSemaphore@Base 4:4.8.0
+ _ZN14QMetaCallEventC2EttPFvP7QObjectN11QMetaObject4CallEiPPvEPKS0_iiPiS5_P10QSemaphore@Base 4:4.8.0
  _ZN14QMetaCallEventD0Ev@Base 4:4.5.3
  _ZN14QMetaCallEventD1Ev@Base 4:4.5.3
  _ZN14QMetaCallEventD2Ev@Base 4:4.5.3
@@ -1490,15 +1521,12 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN14QObjectPrivate11clearGuardsEP7QObject@Base 4:4.5.3
  _ZN14QObjectPrivate13addConnectionEiPNS_10ConnectionE@Base 4:4.5.3
  _ZN14QObjectPrivate14deleteChildrenEv@Base 4:4.5.3
- _ZN14QObjectPrivate14setDeleteWatchEPS_Pi@Base 4:4.5.3
- _ZN14QObjectPrivate16resetDeleteWatchEPS_Pii@Base 4:4.5.3
  _ZN14QObjectPrivate16setParent_helperEP7QObject@Base 4:4.5.3
  _ZN14QObjectPrivate19_q_reregisterTimersEPv@Base 4:4.5.3
  _ZN14QObjectPrivate19moveToThread_helperEv@Base 4:4.5.3
  _ZN14QObjectPrivate20cleanConnectionListsEv@Base 4:4.5.3
  _ZN14QObjectPrivate20setThreadData_helperEP11QThreadDataS1_@Base 4:4.5.3
  _ZN14QObjectPrivate30sendPendingChildInsertedEventsEv@Base 4:4.5.3
- _ZN14QObjectPrivate32removePendingChildInsertedEventsEP7QObject@Base 4:4.5.3
  _ZN14QObjectPrivateC1Ei@Base 4:4.5.3
  _ZN14QObjectPrivateC2Ei@Base 4:4.5.3
  _ZN14QObjectPrivateD0Ev@Base 4:4.5.3
@@ -1617,6 +1645,20 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN15QtSharedPointer23internalSafetyCheckAdd2EPKvPVKv@Base 4:4.6.1
  _ZN15QtSharedPointer25internalSafetyCheckRemoveEPVKv@Base 4:4.5.3
  _ZN15QtSharedPointer26internalSafetyCheckRemove2EPKv@Base 4:4.6.1
+ _ZN16QAnimationDriver11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.8.0
+ _ZN16QAnimationDriver11qt_metacastEPKc@Base 4:4.8.0
+ _ZN16QAnimationDriver16staticMetaObjectE@Base 4:4.8.0
+ _ZN16QAnimationDriver4stopEv@Base 4:4.8.0
+ _ZN16QAnimationDriver5startEv@Base 4:4.8.0
+ _ZN16QAnimationDriver7advanceEv@Base 4:4.8.0
+ _ZN16QAnimationDriver7installEv@Base 4:4.8.0
+ _ZN16QAnimationDriverC1EP7QObject@Base 4:4.8.0
+ _ZN16QAnimationDriverC1ER23QAnimationDriverPrivateP7QObject@Base 4:4.8.0
+ _ZN16QAnimationDriverC2EP7QObject@Base 4:4.8.0
+ _ZN16QAnimationDriverC2ER23QAnimationDriverPrivateP7QObject@Base 4:4.8.0
+ _ZN16QAnimationDriverD0Ev@Base 4:4.8.0
+ _ZN16QAnimationDriverD1Ev@Base 4:4.8.0
+ _ZN16QAnimationDriverD2Ev@Base 4:4.8.0
  _ZN16QCoreApplication10enter_loopEv@Base 4:4.5.3
  _ZN16QCoreApplication10startingUpEv@Base 4:4.5.3
  _ZN16QCoreApplication10unixSignalEi@Base 4:4.5.3
@@ -1674,8 +1716,10 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN16QCoreApplication9translateEPKcS1_S1_NS_8EncodingEi@Base 4:4.5.3
  _ZN16QCoreApplicationC1ER23QCoreApplicationPrivate@Base 4:4.5.3
  _ZN16QCoreApplicationC1ERiPPc@Base 4:4.5.3
+ _ZN16QCoreApplicationC1ERiPPci@Base 4:4.8.0
  _ZN16QCoreApplicationC2ER23QCoreApplicationPrivate@Base 4:4.5.3
  _ZN16QCoreApplicationC2ERiPPc@Base 4:4.5.3
+ _ZN16QCoreApplicationC2ERiPPci@Base 4:4.8.0
  _ZN16QCoreApplicationD0Ev@Base 4:4.5.3
  _ZN16QCoreApplicationD1Ev@Base 4:4.5.3
  _ZN16QCoreApplicationD2Ev@Base 4:4.5.3
@@ -1896,6 +1940,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN18QAbstractItemModel16endRemoveColumnsEv@Base 4:4.5.3
  _ZN18QAbstractItemModel16staticMetaObjectE@Base 4:4.5.3
  _ZN18QAbstractItemModel17headerDataChangedEN2Qt11OrientationEii@Base 4:4.5.3
+ _ZN18QAbstractItemModel17resetInternalDataEv@Base 4:4.8.0
  _ZN18QAbstractItemModel18beginInsertColumnsERK11QModelIndexii@Base 4:4.5.3
  _ZN18QAbstractItemModel18beginRemoveColumnsERK11QModelIndexii@Base 4:4.5.3
  _ZN18QAbstractItemModel18rowsAboutToBeMovedERK11QModelIndexiiS2_i@Base 4:4.6.1
@@ -2067,6 +2112,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN19QProcessEnvironment17systemEnvironmentEv@Base 4:4.6.1
  _ZN19QProcessEnvironment5clearEv@Base 4:4.6.1
  _ZN19QProcessEnvironment6insertERK7QStringS2_@Base 4:4.6.1
+ _ZN19QProcessEnvironment6insertERKS_@Base 4:4.8.0
  _ZN19QProcessEnvironment6removeERK7QString@Base 4:4.6.1
  _ZN19QProcessEnvironmentC1ERKS_@Base 4:4.6.1
  _ZN19QProcessEnvironmentC1Ev@Base 4:4.6.1
@@ -2235,8 +2281,9 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN20QStateMachinePrivateD2Ev@Base 4:4.6.1
  _ZN20QXmlStreamAttributes6appendERK7QStringS2_@Base 4:4.5.3
  _ZN20QXmlStreamAttributes6appendERK7QStringS2_S2_@Base 4:4.5.3
- _ZN20QXmlStreamAttributesD1Ev@Base 4:4.7.4
- _ZN20QXmlStreamAttributesD2Ev@Base 4:4.7.4
+ (arch=!mips !mipsel)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.7.4
+ (arch=!mips !mipsel)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.7.4
+ _ZN21QAbstractConcatenable14convertToAsciiEPK5QChariRPc@Base 4:4.8.0
  _ZN21QAbstractConcatenable16convertFromAsciiEPKciRP5QChar@Base 4:4.6.1
  _ZN21QObjectCleanupHandler11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN21QObjectCleanupHandler11qt_metacastEPKc@Base 4:4.5.3
@@ -2260,23 +2307,29 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN21QPersistentModelIndexD2Ev@Base 4:4.5.3
  _ZN21QPersistentModelIndexaSERK11QModelIndex@Base 4:4.5.3
  _ZN21QPersistentModelIndexaSERKS_@Base 4:4.5.3
+ _ZN23QAnimationDriverPrivateD0Ev@Base 4:4.8.0
+ _ZN23QAnimationDriverPrivateD1Ev@Base 4:4.8.0
+ _ZN23QAnimationDriverPrivateD2Ev@Base 4:4.8.0
  _ZN23QCoreApplicationPrivate10mainThreadEv@Base 4:4.5.3
  _ZN23QCoreApplicationPrivate13checkInstanceEPKc@Base 4:4.5.3
  _ZN23QCoreApplicationPrivate13notify_helperEP7QObjectP6QEvent@Base 4:4.5.3
  _ZN23QCoreApplicationPrivate13theMainThreadE@Base 4:4.5.3
+ _ZN23QCoreApplicationPrivate13trolltechConfEv@Base 4:4.8.0
+ _ZN23QCoreApplicationPrivate13useQt3SupportE@Base 4:4.8.0
  _ZN23QCoreApplicationPrivate14is_app_closingE@Base 4:4.5.3
  _ZN23QCoreApplicationPrivate14is_app_runningE@Base 4:4.5.3
  _ZN23QCoreApplicationPrivate15eventDispatcherE@Base 4:4.5.3
  _ZN23QCoreApplicationPrivate16sendPostedEventsEP7QObjectiP11QThreadData@Base 4:4.5.3
  _ZN23QCoreApplicationPrivate17removePostedEventEP6QEvent@Base 4:4.5.3
+ _ZN23QCoreApplicationPrivate19app_compile_versionE@Base 4:4.8.0
  _ZN23QCoreApplicationPrivate21createEventDispatcherEv@Base 4:4.5.3
  _ZN23QCoreApplicationPrivate21isTranslatorInstalledEP11QTranslator@Base 4:4.5.3
  _ZN23QCoreApplicationPrivate29sendThroughObjectEventFiltersEP7QObjectP6QEvent@Base 4:4.5.3
  _ZN23QCoreApplicationPrivate34sendThroughApplicationEventFiltersEP7QObjectP6QEvent@Base 4:4.5.3
  _ZN23QCoreApplicationPrivate35appendApplicationPathToLibraryPathsEv@Base 4:4.5.3
  _ZN23QCoreApplicationPrivate7attribsE@Base 4:4.5.3
- _ZN23QCoreApplicationPrivateC1ERiPPc@Base 4:4.5.3
- _ZN23QCoreApplicationPrivateC2ERiPPc@Base 4:4.5.3
+ _ZN23QCoreApplicationPrivateC1ERiPPcj@Base 4:4.8.0
+ _ZN23QCoreApplicationPrivateC2ERiPPcj@Base 4:4.8.0
  _ZN23QCoreApplicationPrivateD0Ev@Base 4:4.5.3
  _ZN23QCoreApplicationPrivateD1Ev@Base 4:4.5.3
  _ZN23QCoreApplicationPrivateD2Ev@Base 4:4.5.3
@@ -2449,8 +2502,8 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN31QAbstractEventDispatcherPrivateD1Ev@Base 4:4.7.4
  _ZN31QAbstractEventDispatcherPrivateD2Ev@Base 4:4.7.4
  _ZN31QNonContiguousByteDeviceFactory4wrapEP24QNonContiguousByteDevice@Base 4:4.6.1
+ _ZN31QNonContiguousByteDeviceFactory6createE14QSharedPointerI11QRingBufferE@Base 4:4.8.0
  _ZN31QNonContiguousByteDeviceFactory6createEP10QByteArray@Base 4:4.6.1
- _ZN31QNonContiguousByteDeviceFactory6createEP11QRingBuffer@Base 4:4.6.1
  _ZN31QNonContiguousByteDeviceFactory6createEP9QIODevice@Base 4:4.6.1
  _ZN4QDir10setCurrentERK7QString@Base 4:4.5.3
  _ZN4QDir10setSortingE6QFlagsINS_8SortFlagEE@Base 4:4.5.3
@@ -2561,6 +2614,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN5QChar14unicodeVersionEj@Base 4:4.5.3
  _ZN5QChar14unicodeVersionEt@Base 4:4.5.3
  _ZN5QChar16decompositionTagEj@Base 4:4.5.3
+ _ZN5QChar21currentUnicodeVersionEv@Base 4:4.8.0
  _ZN5QChar7joiningEj@Base 4:4.5.3
  _ZN5QChar7joiningEt@Base 4:4.5.3
  _ZN5QChar7toLowerEj@Base 4:4.5.3
@@ -2616,7 +2670,9 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN5QFile4linkERK7QStringS2_@Base 4:4.5.3
  _ZN5QFile4openE6QFlagsIN9QIODevice12OpenModeFlagEE@Base 4:4.5.3
  _ZN5QFile4openEP8_IO_FILE6QFlagsIN9QIODevice12OpenModeFlagEE@Base 4:4.5.3
+ _ZN5QFile4openEP8_IO_FILE6QFlagsIN9QIODevice12OpenModeFlagEES2_INS_14FileHandleFlagEE@Base 4:4.8.0
  _ZN5QFile4openEi6QFlagsIN9QIODevice12OpenModeFlagEE@Base 4:4.5.3
+ _ZN5QFile4openEi6QFlagsIN9QIODevice12OpenModeFlagEES0_INS_14FileHandleFlagEE@Base 4:4.8.0
  _ZN5QFile4seekEx@Base 4:4.5.3
  _ZN5QFile5closeEv@Base 4:4.5.3
  _ZN5QFile5flushEv@Base 4:4.5.3
@@ -2657,9 +2713,12 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN5QTimeC1Eiiii@Base 4:4.5.3
  _ZN5QTimeC2Eiiii@Base 4:4.5.3
  _ZN5QUuid10createUuidEv@Base 4:4.5.3
+ _ZN5QUuid11fromRfc4122ERK10QByteArray@Base 4:4.8.0
  _ZN5QUuidC1EPKc@Base 4:4.5.3
+ _ZN5QUuidC1ERK10QByteArray@Base 4:4.8.0
  _ZN5QUuidC1ERK7QString@Base 4:4.5.3
  _ZN5QUuidC2EPKc@Base 4:4.5.3
+ _ZN5QUuidC2ERK10QByteArray@Base 4:4.8.0
  _ZN5QUuidC2ERK7QString@Base 4:4.5.3
  _ZN6QEvent16staticMetaObjectE@Base 4:4.6.1
  _ZN6QEvent17registerEventTypeEi@Base 4:4.5.3
@@ -2670,6 +2729,8 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN6QEventD2Ev@Base 4:4.5.3
  (subst)_ZN6QLineF8setAngleE{qreal}@Base 4:4.5.3
  (subst)_ZN6QLineF9fromPolarE{qreal}{qreal}@Base 4:4.5.3
+ _ZN6QMutex12lockInternalEv@Base 4:4.8.0
+ _ZN6QMutex14unlockInternalEv@Base 4:4.8.0
  _ZN6QMutex4lockEv@Base 4:4.5.3
  _ZN6QMutex6unlockEv@Base 4:4.5.3
  _ZN6QMutex7tryLockEi@Base 4:4.5.3
@@ -2744,16 +2805,20 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN7QBufferD1Ev@Base 4:4.5.3
  _ZN7QBufferD2Ev@Base 4:4.5.3
  _ZN7QLocale10setDefaultERKS_@Base 4:4.5.3
+ _ZN7QLocale14scriptToStringENS_6ScriptE@Base 4:4.8.0
  _ZN7QLocale15countryToStringENS_7CountryE@Base 4:4.5.3
+ _ZN7QLocale15matchingLocalesENS_8LanguageENS_6ScriptENS_7CountryE@Base 4:4.8.0
  _ZN7QLocale16languageToStringENS_8LanguageE@Base 4:4.5.3
  _ZN7QLocale16setNumberOptionsE6QFlagsINS_12NumberOptionEE@Base 4:4.5.3
  _ZN7QLocale16staticMetaObjectE@Base 4:4.5.3
  _ZN7QLocale20countriesForLanguageENS_8LanguageE@Base 4:4.5.3
  _ZN7QLocale6systemEv@Base 4:4.5.3
+ _ZN7QLocaleC1ENS_8LanguageENS_6ScriptENS_7CountryE@Base 4:4.8.0
  _ZN7QLocaleC1ENS_8LanguageENS_7CountryE@Base 4:4.5.3
  _ZN7QLocaleC1ERK7QString@Base 4:4.5.3
  _ZN7QLocaleC1ERKS_@Base 4:4.5.3
  _ZN7QLocaleC1Ev@Base 4:4.5.3
+ _ZN7QLocaleC2ENS_8LanguageENS_6ScriptENS_7CountryE@Base 4:4.8.0
  _ZN7QLocaleC2ENS_8LanguageENS_7CountryE@Base 4:4.5.3
  _ZN7QLocaleC2ERK7QString@Base 4:4.5.3
  _ZN7QLocaleC2ERKS_@Base 4:4.5.3
@@ -2761,6 +2826,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN7QLocaleaSERKS_@Base 4:4.5.3
  _ZN7QObject10childEventEP11QChildEvent@Base 4:4.5.3
  _ZN7QObject10disconnectEPKS_PKcS1_S3_@Base 4:4.5.3
+ _ZN7QObject10disconnectEPKS_RK11QMetaMethodS1_S4_@Base 4:4.8.0
  _ZN7QObject10startTimerEi@Base 4:4.5.3
  _ZN7QObject10timerEventEP11QTimerEvent@Base 4:4.5.3
  _ZN7QObject11customEventEP6QEvent@Base 4:4.5.3
@@ -2784,6 +2850,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN7QObject18staticQtMetaObjectE@Base 4:4.5.3
  _ZN7QObject5eventEP6QEvent@Base 4:4.5.3
  _ZN7QObject7connectEPKS_PKcS1_S3_N2Qt14ConnectionTypeE@Base 4:4.5.3
+ _ZN7QObject7connectEPKS_RK11QMetaMethodS1_S4_N2Qt14ConnectionTypeE@Base 4:4.8.0
  _ZN7QObject9destroyedEPS_@Base 4:4.5.3
  _ZN7QObject9killTimerEi@Base 4:4.5.3
  _ZN7QObject9setParentEPS_@Base 4:4.5.3
@@ -2834,6 +2901,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN7QString4freeEPNS_4DataE@Base 4:4.5.3
  _ZN7QString4growEi@Base 4:4.5.3
  _ZN7QString4nullE@Base 4:4.5.3
+ (arch=armel armhf mips mipsel sparc)_ZN7QString5clearEv@Base 4:4.8.0
  _ZN7QString6appendE5QChar@Base 4:4.5.3
  _ZN7QString6appendERK10QStringRef@Base 4:4.5.3
  _ZN7QString6appendERK13QLatin1String@Base 4:4.5.3
@@ -2877,8 +2945,8 @@ libQtCore.so.4 libqtcore4 #MINVER#
  (arch=alpha)_ZN7QString8vsprintfEPKc13__va_list_tag@Base 4:4.5.3
  (arch=amd64 kfreebsd-amd64 powerpc s390)_ZN7QString8vsprintfEPKcP13__va_list_tag@Base 4:4.5.3
  (arch=hurd-i386 i386 kfreebsd-i386)_ZN7QString8vsprintfEPKcPc@Base 4:4.5.3
- (arch=armel hppa ia64 mips mipsel sparc)_ZN7QString8vsprintfEPKcPv@Base 4:4.5.3
- (arch=armel)_ZN7QString8vsprintfEPKcSt9__va_list@Base 4:4.6.2
+ (arch=armel armhf hppa ia64 mips mipsel sparc)_ZN7QString8vsprintfEPKcPv@Base 4:4.5.3
+ (arch=armel armhf)_ZN7QString8vsprintfEPKcSt9__va_list@Base 4:4.6.2
  _ZN7QString9fromAsciiEPKci@Base 4:4.5.3
  _ZN7QString9fromUtf16EPKti@Base 4:4.5.3
  _ZN7QStringC1E5QChar@Base 4:4.5.3
@@ -3131,11 +3199,13 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN9QFileInfo7setFileERK4QDirRK7QString@Base 4:4.5.3
  _ZN9QFileInfo7setFileERK5QFile@Base 4:4.5.3
  _ZN9QFileInfo7setFileERK7QString@Base 4:4.5.3
+ _ZN9QFileInfoC1EP16QFileInfoPrivate@Base 4:4.8.0
  _ZN9QFileInfoC1ERK4QDirRK7QString@Base 4:4.5.3
  _ZN9QFileInfoC1ERK5QFile@Base 4:4.5.3
  _ZN9QFileInfoC1ERK7QString@Base 4:4.5.3
  _ZN9QFileInfoC1ERKS_@Base 4:4.5.3
  _ZN9QFileInfoC1Ev@Base 4:4.5.3
+ _ZN9QFileInfoC2EP16QFileInfoPrivate@Base 4:4.8.0
  _ZN9QFileInfoC2ERK4QDirRK7QString@Base 4:4.5.3
  _ZN9QFileInfoC2ERK5QFile@Base 4:4.5.3
  _ZN9QFileInfoC2ERK7QString@Base 4:4.5.3
@@ -3156,8 +3226,8 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN9QHashData6rehashEi@Base 4:4.5.3
  _ZN9QHashData8freeNodeEPv@Base 4:4.5.3
  _ZN9QHashData8nextNodeEPNS_4NodeE@Base 4:4.5.3
- (arch=ia64 mips mipsel sparc)_ZN9QHashData8willGrowEv@Base 4:4.7.2
- (arch=ia64 mips mipsel sparc)_ZN9QHashData9hasShrunkEv@Base 4:4.7.2
+ (arch=ia64)_ZN9QHashData8willGrowEv@Base 4:4.7.2
+ (arch=ia64)_ZN9QHashData9hasShrunkEv@Base 4:4.7.2
  _ZN9QIODevice11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN9QIODevice11qt_metacastEPKc@Base 4:4.5.3
  _ZN9QIODevice11resetStatusEv@Base 4:4.5.3
@@ -3391,7 +3461,31 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK10QEventLoop10metaObjectEv@Base 4:4.5.3
  _ZNK10QEventLoop9isRunningEv@Base 4:4.5.3
  _ZNK10QSemaphore9availableEv@Base 4:4.5.3
+ _ZNK10QStringRef10startsWithE13QLatin1StringN2Qt15CaseSensitivityE@Base 4:4.8.0
+ _ZNK10QStringRef10startsWithE5QCharN2Qt15CaseSensitivityE@Base 4:4.8.0
+ _ZNK10QStringRef10startsWithERK7QStringN2Qt15CaseSensitivityE@Base 4:4.8.0
+ _ZNK10QStringRef10startsWithERKS_N2Qt15CaseSensitivityE@Base 4:4.8.0
+ _ZNK10QStringRef11lastIndexOfE13QLatin1StringiN2Qt15CaseSensitivityE@Base 4:4.8.0
+ _ZNK10QStringRef11lastIndexOfE5QChariN2Qt15CaseSensitivityE@Base 4:4.8.0
+ _ZNK10QStringRef11lastIndexOfERK7QStringiN2Qt15CaseSensitivityE@Base 4:4.8.0
+ _ZNK10QStringRef11lastIndexOfERKS_iN2Qt15CaseSensitivityE@Base 4:4.8.0
+ _ZNK10QStringRef11toLocal8BitEv@Base 4:4.8.0
+ _ZNK10QStringRef5countE5QCharN2Qt15CaseSensitivityE@Base 4:4.8.0
+ _ZNK10QStringRef5countERK7QStringN2Qt15CaseSensitivityE@Base 4:4.8.0
+ _ZNK10QStringRef5countERKS_N2Qt15CaseSensitivityE@Base 4:4.8.0
+ _ZNK10QStringRef6toUcs4Ev@Base 4:4.8.0
+ _ZNK10QStringRef6toUtf8Ev@Base 4:4.8.0
+ _ZNK10QStringRef7indexOfE13QLatin1StringiN2Qt15CaseSensitivityE@Base 4:4.8.0
+ _ZNK10QStringRef7indexOfE5QChariN2Qt15CaseSensitivityE@Base 4:4.8.0
+ _ZNK10QStringRef7indexOfERK7QStringiN2Qt15CaseSensitivityE@Base 4:4.8.0
+ _ZNK10QStringRef7indexOfERKS_iN2Qt15CaseSensitivityE@Base 4:4.8.0
+ _ZNK10QStringRef7toAsciiEv@Base 4:4.8.0
  _ZNK10QStringRef8appendToEP7QString@Base 4:4.5.3
+ _ZNK10QStringRef8endsWithE13QLatin1StringN2Qt15CaseSensitivityE@Base 4:4.8.0
+ _ZNK10QStringRef8endsWithE5QCharN2Qt15CaseSensitivityE@Base 4:4.8.0
+ _ZNK10QStringRef8endsWithERK7QStringN2Qt15CaseSensitivityE@Base 4:4.8.0
+ _ZNK10QStringRef8endsWithERKS_N2Qt15CaseSensitivityE@Base 4:4.8.0
+ _ZNK10QStringRef8toLatin1Ev@Base 4:4.8.0
  _ZNK10QStringRef8toStringEv@Base 4:4.5.3
  _ZNK10QTextCodec11fromUnicodeERK7QString@Base 4:4.5.3
  _ZNK10QTextCodec11fromUnicodeERK7QStringRi@Base 4:4.5.3
@@ -3444,6 +3538,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK11QMetaObject2trEPKcS1_@Base 4:4.5.3
  _ZNK11QMetaObject2trEPKcS1_i@Base 4:4.5.3
  _ZNK11QMetaObject4castEP7QObject@Base 4:4.5.3
+ _ZNK11QMetaObject4castEPK7QObject@Base 4:4.8.0
  _ZNK11QMetaObject6methodEi@Base 4:4.5.3
  _ZNK11QMetaObject6trUtf8EPKcS1_@Base 4:4.5.3
  _ZNK11QMetaObject6trUtf8EPKcS1_i@Base 4:4.5.3
@@ -3509,6 +3604,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK12QtConcurrent9Exception5cloneEv@Base 4:4.5.3
  _ZNK12QtConcurrent9Exception5raiseEv@Base 4:4.5.3
  _ZNK13QElapsedTimer10hasExpiredEx@Base 4:4.7.0~beta1
+ _ZNK13QElapsedTimer12nsecsElapsedEv@Base 4:4.8.0
  _ZNK13QElapsedTimer19msecsSinceReferenceEv@Base 4:4.7.0~beta1
  _ZNK13QElapsedTimer6secsToERKS_@Base 4:4.7.0~beta1
  _ZNK13QElapsedTimer7elapsedEv@Base 4:4.7.0~beta1
@@ -3575,6 +3671,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK13QSharedMemory4sizeEv@Base 4:4.5.3
  _ZNK13QSharedMemory5errorEv@Base 4:4.5.3
  _ZNK13QSharedMemory9constDataEv@Base 4:4.5.3
+ _ZNK13QSharedMemory9nativeKeyEv@Base 4:4.8.0
  _ZNK13QSignalMapper10metaObjectEv@Base 4:4.5.3
  _ZNK13QSignalMapper7mappingEP7QObject@Base 4:4.5.3
  _ZNK13QSignalMapper7mappingEP7QWidget@Base 4:4.5.3
@@ -3597,6 +3694,9 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK14QFactoryLoader4keysEv@Base 4:4.5.3
  _ZNK14QFactoryLoader7libraryERK7QString@Base 4:4.7.1
  _ZNK14QFactoryLoader8instanceERK7QString@Base 4:4.5.3
+ _ZNK14QLocalePrivate10scriptCodeEv@Base 4:4.8.0
+ _ZNK14QLocalePrivate11countryCodeEv@Base 4:4.8.0
+ _ZNK14QLocalePrivate12languageCodeEv@Base 4:4.8.0
  _ZNK14QLocalePrivate13validateCharsERK7QStringNS_10NumberModeEP10QByteArrayi@Base 4:4.5.3
  _ZNK14QLocalePrivate14doubleToStringEdiNS_10DoubleFormEij@Base 4:4.5.3
  _ZNK14QLocalePrivate14stringToDoubleERK7QStringPbNS_18GroupSeparatorModeE@Base 4:4.5.3
@@ -3607,6 +3707,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK14QLocalePrivate17measurementSystemEv@Base 4:4.5.3
  _ZNK14QLocalePrivate19stringToUnsLongLongERK7QStringiPbNS_18GroupSeparatorModeE@Base 4:4.5.3
  _ZNK14QLocalePrivate19unsLongLongToStringEyiiij@Base 4:4.5.3
+ _ZNK14QLocalePrivate9bcp47NameEv@Base 4:4.8.0
  _ZNK14QMetaClassInfo4nameEv@Base 4:4.5.3
  _ZNK14QMetaClassInfo5valueEv@Base 4:4.5.3
  _ZNK14QObjectPrivate10senderListEv@Base 4:4.5.3
@@ -3658,6 +3759,8 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK15QPauseAnimation10metaObjectEv@Base 4:4.6.1
  _ZNK15QPauseAnimation8durationEv@Base 4:4.6.1
  _ZNK15QSocketNotifier10metaObjectEv@Base 4:4.5.3
+ _ZNK16QAnimationDriver10metaObjectEv@Base 4:4.8.0
+ _ZNK16QAnimationDriver9isRunningEv@Base 4:4.8.0
  _ZNK16QCoreApplication10metaObjectEv@Base 4:4.5.3
  _ZNK16QEventTransition10metaObjectEv@Base 4:4.6.1
  _ZNK16QEventTransition11eventSourceEv@Base 4:4.6.1
@@ -3701,6 +3804,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK16QXmlStreamWriter20autoFormattingIndentEv@Base 4:4.5.3
  _ZNK16QXmlStreamWriter5codecEv@Base 4:4.5.3
  _ZNK16QXmlStreamWriter6deviceEv@Base 4:4.5.3
+ _ZNK16QXmlStreamWriter8hasErrorEv@Base 4:4.8.0
  _ZNK17QByteArrayMatcher7indexInEPKcii@Base 4:4.5.3
  _ZNK17QByteArrayMatcher7indexInERK10QByteArrayi@Base 4:4.5.3
  _ZNK17QSignalTransition10metaObjectEv@Base 4:4.6.1
@@ -3793,6 +3897,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK19QAbstractTransition12targetStatesEv@Base 4:4.6.1
  _ZNK19QAbstractTransition7machineEv@Base 4:4.6.1
  _ZNK19QProcessEnvironment12toStringListEv@Base 4:4.6.1
+ _ZNK19QProcessEnvironment4keysEv@Base 4:4.8.0
  _ZNK19QProcessEnvironment5valueERK7QStringS2_@Base 4:4.6.1
  _ZNK19QProcessEnvironment7isEmptyEv@Base 4:4.6.1
  _ZNK19QProcessEnvironment8containsERK7QString@Base 4:4.6.1
@@ -3908,10 +4013,12 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK4QUrl11encodedPathEv@Base 4:4.5.3
  _ZNK4QUrl11errorStringEv@Base 4:4.5.3
  _ZNK4QUrl11hasFragmentEv@Base 4:4.5.3
+ _ZNK4QUrl11isLocalFileEv@Base 4:4.8.0
  _ZNK4QUrl11toLocalFileEv@Base 4:4.5.3
  _ZNK4QUrl12encodedQueryEv@Base 4:4.5.3
  _ZNK4QUrl12hasQueryItemERK7QString@Base 4:4.5.3
  _ZNK4QUrl14queryItemValueERK7QString@Base 4:4.5.3
+ _ZNK4QUrl14topLevelDomainEv@Base 4:4.8.0
  _ZNK4QUrl15encodedFragmentEv@Base 4:4.5.3
  _ZNK4QUrl15encodedPasswordEv@Base 4:4.5.3
  _ZNK4QUrl15encodedUserNameEv@Base 4:4.5.3
@@ -4012,10 +4119,12 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK5QTime8addMSecsEi@Base 4:4.5.3
  _ZNK5QTime8toStringEN2Qt10DateFormatE@Base 4:4.5.3
  _ZNK5QTime8toStringERK7QString@Base 4:4.5.3
+ _ZNK5QUuid11toByteArrayEv@Base 4:4.8.0
  _ZNK5QUuid6isNullEv@Base 4:4.5.3
  _ZNK5QUuid7variantEv@Base 4:4.5.3
  _ZNK5QUuid7versionEv@Base 4:4.5.3
  _ZNK5QUuid8toStringEv@Base 4:4.5.3
+ _ZNK5QUuid9toRfc4122Ev@Base 4:4.8.0
  _ZNK5QUuidgtERKS_@Base 4:4.5.3
  _ZNK5QUuidltERKS_@Base 4:4.5.3
  _ZNK6QLineF10unitVectorEv@Base 4:4.5.3
@@ -4052,22 +4161,34 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK7QLocale10toDateTimeERK7QStringS2_@Base 4:4.5.3
  _ZNK7QLocale10toLongLongERK7QStringPbi@Base 4:4.5.3
  _ZNK7QLocale11exponentialEv@Base 4:4.5.3
+ _ZNK7QLocale11quoteStringERK10QStringRefNS_14QuotationStyleE@Base 4:4.8.0
+ _ZNK7QLocale11quoteStringERK7QStringNS_14QuotationStyleE@Base 4:4.8.0
  _ZNK7QLocale11toULongLongERK7QStringPbi@Base 4:4.5.3
+ _ZNK7QLocale11uiLanguagesEv@Base 4:4.8.0
  _ZNK7QLocale12decimalPointEv@Base 4:4.5.3
  _ZNK7QLocale12negativeSignEv@Base 4:4.5.3
  _ZNK7QLocale12positiveSignEv@Base 4:4.5.3
  _ZNK7QLocale13numberOptionsEv@Base 4:4.5.3
  _ZNK7QLocale13textDirectionEv@Base 4:4.7.0~beta2
+ _ZNK7QLocale14currencySymbolENS_20CurrencySymbolFormatE@Base 4:4.8.0
  _ZNK7QLocale14dateTimeFormatENS_10FormatTypeE@Base 4:4.5.3
+ _ZNK7QLocale14firstDayOfWeekEv@Base 4:4.8.0
  _ZNK7QLocale14groupSeparatorEv@Base 4:4.5.3
+ _ZNK7QLocale16toCurrencyStringEdRK7QString@Base 4:4.8.0
+ _ZNK7QLocale16toCurrencyStringExRK7QString@Base 4:4.8.0
+ _ZNK7QLocale16toCurrencyStringEyRK7QString@Base 4:4.8.0
  _ZNK7QLocale17measurementSystemEv@Base 4:4.5.3
+ _ZNK7QLocale17nativeCountryNameEv@Base 4:4.8.0
  _ZNK7QLocale17standaloneDayNameEiNS_10FormatTypeE@Base 4:4.5.3
+ _ZNK7QLocale18nativeLanguageNameEv@Base 4:4.8.0
+ _ZNK7QLocale19createSeparatedListERK11QStringList@Base 4:4.8.0
  _ZNK7QLocale19standaloneMonthNameEiNS_10FormatTypeE@Base 4:4.5.3
  _ZNK7QLocale1dEv@Base 4:4.5.3
  _ZNK7QLocale4nameEv@Base 4:4.5.3
  _ZNK7QLocale5toIntERK7QStringPbi@Base 4:4.5.3
  _ZNK7QLocale6amTextEv@Base 4:4.5.3
  _ZNK7QLocale6pmTextEv@Base 4:4.5.3
+ _ZNK7QLocale6scriptEv@Base 4:4.8.0
  _ZNK7QLocale6toDateERK7QStringNS_10FormatTypeE@Base 4:4.5.3
  _ZNK7QLocale6toDateERK7QStringS2_@Base 4:4.5.3
  _ZNK7QLocale6toTimeERK7QStringNS_10FormatTypeE@Base 4:4.5.3
@@ -4077,7 +4198,9 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK7QLocale7dayNameEiNS_10FormatTypeE@Base 4:4.5.3
  _ZNK7QLocale7percentEv@Base 4:4.5.3
  _ZNK7QLocale7toFloatERK7QStringPb@Base 4:4.5.3
+ _ZNK7QLocale7toLowerERK7QString@Base 4:4.8.0
  _ZNK7QLocale7toShortERK7QStringPbi@Base 4:4.5.3
+ _ZNK7QLocale7toUpperERK7QString@Base 4:4.8.0
  _ZNK7QLocale8languageEv@Base 4:4.5.3
  _ZNK7QLocale8toDoubleERK7QStringPb@Base 4:4.5.3
  _ZNK7QLocale8toStringERK5QDateNS_10FormatTypeE@Base 4:4.5.3
@@ -4090,10 +4213,13 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK7QLocale8toStringEx@Base 4:4.5.3
  _ZNK7QLocale8toStringEy@Base 4:4.5.3
  _ZNK7QLocale8toUShortERK7QStringPbi@Base 4:4.5.3
+ _ZNK7QLocale8weekdaysEv@Base 4:4.8.0
+ _ZNK7QLocale9bcp47NameEv@Base 4:4.8.0
  _ZNK7QLocale9monthNameEiNS_10FormatTypeE@Base 4:4.5.3
  _ZNK7QLocale9zeroDigitEv@Base 4:4.5.3
  _ZNK7QObject10metaObjectEv@Base 4:4.5.3
  _ZNK7QObject10objectNameEv@Base 4:4.5.3
+ _ZNK7QObject17senderSignalIndexEv@Base 4:4.8.0
  _ZNK7QObject20dynamicPropertyNamesEv@Base 4:4.5.3
  _ZNK7QObject5childEPKcS1_b@Base 4:4.5.3
  _ZNK7QObject6senderEv@Base 4:4.5.3
@@ -4103,7 +4229,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK7QObject9queryListEPKcS1_bb@Base 4:4.5.3
  _ZNK7QObject9receiversEPKc@Base 4:4.5.3
  _ZNK7QPointF15manhattanLengthEv@Base 4:4.6.1
- (arch=ia64 mips mipsel sparc)_ZNK7QPointF7toPointEv@Base 4:4.7.2
+ (arch=ia64)_ZNK7QPointF7toPointEv@Base 4:4.7.2
  _ZNK7QRegExp10exactMatchERK7QString@Base 4:4.5.3
  _ZNK7QRegExp11errorStringEv@Base 4:4.5.3
  _ZNK7QRegExp11lastIndexInERK7QStringiNS_9CaretModeE@Base 4:4.5.3
@@ -4124,12 +4250,14 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK7QString10normalizedENS_17NormalizationFormE@Base 4:4.5.3
  _ZNK7QString10normalizedENS_17NormalizationFormEN5QChar14UnicodeVersionE@Base 4:4.5.3
  _ZNK7QString10simplifiedEv@Base 4:4.5.3
+ _ZNK7QString10startsWithERK10QStringRefN2Qt15CaseSensitivityE@Base 4:4.8.0
  _ZNK7QString10startsWithERK13QLatin1StringN2Qt15CaseSensitivityE@Base 4:4.5.3
  _ZNK7QString10startsWithERK5QCharN2Qt15CaseSensitivityE@Base 4:4.5.3
  _ZNK7QString10startsWithERKS_N2Qt15CaseSensitivityE@Base 4:4.5.3
  _ZNK7QString10toLongLongEPbi@Base 4:4.5.3
  _ZNK7QString11lastIndexOfE5QChariN2Qt15CaseSensitivityE@Base 4:4.5.3
  _ZNK7QString11lastIndexOfER7QRegExpi@Base 4:4.5.3
+ _ZNK7QString11lastIndexOfERK10QStringRefiN2Qt15CaseSensitivityE@Base 4:4.8.0
  _ZNK7QString11lastIndexOfERK13QLatin1StringiN2Qt15CaseSensitivityE@Base 4:4.5.3
  _ZNK7QString11lastIndexOfERK7QRegExpi@Base 4:4.5.3
  _ZNK7QString11lastIndexOfERKS_iN2Qt15CaseSensitivityE@Base 4:4.5.3
@@ -4153,6 +4281,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK7QString3midEii@Base 4:4.5.3
  _ZNK7QString4leftEi@Base 4:4.5.3
  _ZNK7QString5countE5QCharN2Qt15CaseSensitivityE@Base 4:4.5.3
+ _ZNK7QString5countERK10QStringRefN2Qt15CaseSensitivityE@Base 4:4.8.0
  _ZNK7QString5countERK7QRegExp@Base 4:4.5.3
  _ZNK7QString5countERKS_N2Qt15CaseSensitivityE@Base 4:4.5.3
  _ZNK7QString5rightEi@Base 4:4.5.3
@@ -4171,6 +4300,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK7QString7compareERKS_N2Qt15CaseSensitivityE@Base 4:4.5.3
  _ZNK7QString7indexOfE5QChariN2Qt15CaseSensitivityE@Base 4:4.5.3
  _ZNK7QString7indexOfER7QRegExpi@Base 4:4.5.3
+ _ZNK7QString7indexOfERK10QStringRefiN2Qt15CaseSensitivityE@Base 4:4.8.0
  _ZNK7QString7indexOfERK13QLatin1StringiN2Qt15CaseSensitivityE@Base 4:4.5.3
  _ZNK7QString7indexOfERK7QRegExpi@Base 4:4.5.3
  _ZNK7QString7indexOfERKS_iN2Qt15CaseSensitivityE@Base 4:4.5.3
@@ -4184,6 +4314,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK7QString7toULongEPbi@Base 4:4.5.3
  _ZNK7QString7toUpperEv@Base 4:4.5.3
  _ZNK7QString7trimmedEv@Base 4:4.5.3
+ _ZNK7QString8endsWithERK10QStringRefN2Qt15CaseSensitivityE@Base 4:4.8.0
  _ZNK7QString8endsWithERK13QLatin1StringN2Qt15CaseSensitivityE@Base 4:4.5.3
  _ZNK7QString8endsWithERK5QCharN2Qt15CaseSensitivityE@Base 4:4.5.3
  _ZNK7QString8endsWithERKS_N2Qt15CaseSensitivityE@Base 4:4.5.3
@@ -4425,6 +4556,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTI13QSignalMapper@Base 4:4.5.3
  _ZTI13QStateMachine@Base 4:4.6.1
  _ZTI13QSystemLocale@Base 4:4.5.3
+ _ZTI13QUnifiedTimer@Base 4:4.8.0
  _ZTI14QAbstractState@Base 4:4.6.1
  _ZTI14QFactoryLoader@Base 4:4.5.3
  _ZTI14QMetaCallEvent@Base 4:4.5.3
@@ -4435,6 +4567,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTI15QObjectUserData@Base 4:4.5.3
  _ZTI15QPauseAnimation@Base 4:4.6.1
  _ZTI15QSocketNotifier@Base 4:4.5.3
+ _ZTI16QAnimationDriver@Base 4:4.8.0
  _ZTI16QCoreApplication@Base 4:4.5.3
  _ZTI16QEventTransition@Base 4:4.6.1
  _ZTI16QIODevicePrivate@Base 4:4.5.3
@@ -4456,6 +4589,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTI20QFutureInterfaceBase@Base 4:4.5.3
  _ZTI20QStateMachinePrivate@Base 4:4.6.1
  _ZTI21QObjectCleanupHandler@Base 4:4.5.3
+ _ZTI23QAnimationDriverPrivate@Base 4:4.8.0
  _ZTI23QCoreApplicationPrivate@Base 4:4.5.3
  _ZTI23QEventTransitionPrivate@Base 4:4.6.1
  _ZTI23QParallelAnimationGroup@Base 4:4.6.1
@@ -4510,6 +4644,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTS13QSignalMapper@Base 4:4.5.3
  _ZTS13QStateMachine@Base 4:4.6.1
  _ZTS13QSystemLocale@Base 4:4.5.3
+ _ZTS13QUnifiedTimer@Base 4:4.8.0
  _ZTS14QAbstractState@Base 4:4.6.1
  _ZTS14QFactoryLoader@Base 4:4.5.3
  _ZTS14QMetaCallEvent@Base 4:4.5.3
@@ -4520,6 +4655,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTS15QObjectUserData@Base 4:4.5.3
  _ZTS15QPauseAnimation@Base 4:4.6.1
  _ZTS15QSocketNotifier@Base 4:4.5.3
+ _ZTS16QAnimationDriver@Base 4:4.8.0
  _ZTS16QCoreApplication@Base 4:4.5.3
  _ZTS16QEventTransition@Base 4:4.6.1
  _ZTS16QIODevicePrivate@Base 4:4.5.3
@@ -4541,6 +4677,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTS20QFutureInterfaceBase@Base 4:4.5.3
  _ZTS20QStateMachinePrivate@Base 4:4.6.1
  _ZTS21QObjectCleanupHandler@Base 4:4.5.3
+ _ZTS23QAnimationDriverPrivate@Base 4:4.8.0
  _ZTS23QCoreApplicationPrivate@Base 4:4.5.3
  _ZTS23QEventTransitionPrivate@Base 4:4.6.1
  _ZTS23QParallelAnimationGroup@Base 4:4.6.1
@@ -4595,6 +4732,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTV13QSignalMapper@Base 4:4.5.3
  _ZTV13QStateMachine@Base 4:4.6.1
  _ZTV13QSystemLocale@Base 4:4.5.3
+ _ZTV13QUnifiedTimer@Base 4:4.8.0
  _ZTV14QAbstractState@Base 4:4.6.1
  _ZTV14QFactoryLoader@Base 4:4.5.3
  _ZTV14QMetaCallEvent@Base 4:4.5.3
@@ -4605,6 +4743,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTV15QObjectUserData@Base 4:4.5.3
  _ZTV15QPauseAnimation@Base 4:4.6.1
  _ZTV15QSocketNotifier@Base 4:4.5.3
+ _ZTV16QAnimationDriver@Base 4:4.8.0
  _ZTV16QCoreApplication@Base 4:4.5.3
  _ZTV16QEventTransition@Base 4:4.6.1
  _ZTV16QIODevicePrivate@Base 4:4.5.3
@@ -4626,6 +4765,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTV20QFutureInterfaceBase@Base 4:4.5.3
  _ZTV20QStateMachinePrivate@Base 4:4.6.1
  _ZTV21QObjectCleanupHandler@Base 4:4.5.3
+ _ZTV23QAnimationDriverPrivate@Base 4:4.8.0
  _ZTV23QCoreApplicationPrivate@Base 4:4.5.3
  _ZTV23QEventTransitionPrivate@Base 4:4.6.1
  _ZTV23QParallelAnimationGroup@Base 4:4.6.1
@@ -4740,7 +4880,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  (c++)"non-virtual thunk to QTextCodecPlugin::keys() const@Base" 4:4.5.3
  (c++)"non-virtual thunk to QTextCodecPlugin::~QTextCodecPlugin()@Base" 4:4.5.3
  qMetaTypeGuiHelper@Base 4:4.5.3
- (arch=armel)q_atomic_lock@Base 4:4.5.3
+ (arch=armel armhf)q_atomic_lock@Base 4:4.8.0
  (arch=sparc)q_atomic_lock_int@Base 4:4.5.3
  (arch=sparc)q_atomic_lock_ptr@Base 4:4.5.3
  (arch=sparc)q_atomic_set_int@Base 4:4.5.3

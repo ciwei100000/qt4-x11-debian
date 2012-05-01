@@ -1,9 +1,11 @@
-# SymbolsHelper-Confirmed: 4:4.7.4 amd64
+# SymbolsHelper-Confirmed: 4:4.8.0 amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
 libQtDesigner.so.4 libqt4-designer #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z20domPropertyToVariantP20QAbstractFormBuilderPK11QMetaObjectPK11DomProperty@Base 4:4.5.3
  _Z20domPropertyToVariantPK11DomProperty@Base 4:4.5.3
  _Z20variantToDomPropertyP20QAbstractFormBuilderPK11QMetaObjectRK7QStringRK8QVariant@Base 4:4.5.3
+ (arch=armel)_Z6qDebugv@Base 4:4.8.0
+ (arch=armel armhf mips mipsel s390)_Z8qWarningv@Base 4:4.8.0
  _ZN10DomInclude4readER16QXmlStreamReader@Base 4:4.5.3
  _ZN10DomInclude5clearEb@Base 4:4.5.3
  _ZN10DomIncludeC1Ev@Base 4:4.5.3
@@ -720,8 +722,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN18QDesignerQSettingsD0Ev@Base 4:4.7.4
  _ZN18QDesignerQSettingsD1Ev@Base 4:4.7.4
  _ZN18QDesignerQSettingsD2Ev@Base 4:4.7.4
- _ZN18QStyleOptionButtonD1Ev@Base 4:4.7.4
- _ZN18QStyleOptionButtonD2Ev@Base 4:4.7.4
  _ZN18qdesigner_internal10CodeDialog10slotSaveAsEv@Base 4:4.5.3
  _ZN18qdesigner_internal10CodeDialog11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN18qdesigner_internal10CodeDialog11qt_metacastEPKc@Base 4:4.5.3
@@ -1203,6 +1203,19 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN18qdesigner_internal14WidgetDataBaseD0Ev@Base 4:4.5.3
  _ZN18qdesigner_internal14WidgetDataBaseD1Ev@Base 4:4.5.3
  _ZN18qdesigner_internal14WidgetDataBaseD2Ev@Base 4:4.5.3
+ _ZN18qdesigner_internal15IconThemeEditor11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.8.0
+ _ZN18qdesigner_internal15IconThemeEditor11qt_metacastEPKc@Base 4:4.8.0
+ _ZN18qdesigner_internal15IconThemeEditor11slotChangedERK7QString@Base 4:4.8.0
+ _ZN18qdesigner_internal15IconThemeEditor13updatePreviewERK7QString@Base 4:4.8.0
+ _ZN18qdesigner_internal15IconThemeEditor16staticMetaObjectE@Base 4:4.8.0
+ _ZN18qdesigner_internal15IconThemeEditor5resetEv@Base 4:4.8.0
+ _ZN18qdesigner_internal15IconThemeEditor6editedERK7QString@Base 4:4.8.0
+ _ZN18qdesigner_internal15IconThemeEditor8setThemeERK7QString@Base 4:4.8.0
+ _ZN18qdesigner_internal15IconThemeEditorC1EP7QWidgetb@Base 4:4.8.0
+ _ZN18qdesigner_internal15IconThemeEditorC2EP7QWidgetb@Base 4:4.8.0
+ _ZN18qdesigner_internal15IconThemeEditorD0Ev@Base 4:4.8.0
+ _ZN18qdesigner_internal15IconThemeEditorD1Ev@Base 4:4.8.0
+ _ZN18qdesigner_internal15IconThemeEditorD2Ev@Base 4:4.8.0
  _ZN18qdesigner_internal15InvisibleWidget11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN18qdesigner_internal15InvisibleWidget11qt_metacastEPKc@Base 4:4.5.3
  _ZN18qdesigner_internal15InvisibleWidget16staticMetaObjectE@Base 4:4.5.3
@@ -1259,9 +1272,9 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN18qdesigner_internal16AddActionCommandD1Ev@Base 4:4.7.4
  _ZN18qdesigner_internal16AddActionCommandD2Ev@Base 4:4.7.4
  _ZN18qdesigner_internal16DesignerMetaEnumC1ERK7QStringS3_S3_@Base 4:4.5.3
- _ZN18qdesigner_internal16DesignerMetaEnumC1ERKS0_@Base 4:4.7.4
+ (arch=!armel !armhf !mips !mipsel !s390)_ZN18qdesigner_internal16DesignerMetaEnumC1ERKS0_@Base 4:4.8.0
  _ZN18qdesigner_internal16DesignerMetaEnumC2ERK7QStringS3_S3_@Base 4:4.5.3
- _ZN18qdesigner_internal16DesignerMetaEnumC2ERKS0_@Base 4:4.7.4
+ (arch=!armel !armhf !mips !mipsel !s390)_ZN18qdesigner_internal16DesignerMetaEnumC2ERKS0_@Base 4:4.8.0
  _ZN18qdesigner_internal16DesignerMetaEnumD1Ev@Base 4:4.7.4
  _ZN18qdesigner_internal16DesignerMetaEnumD2Ev@Base 4:4.7.4
  _ZN18qdesigner_internal16LayoutProperties17fromPropertySheetEPK28QDesignerFormEditorInterfaceP7QLayouti@Base 4:4.5.3
@@ -1349,9 +1362,9 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN18qdesigner_internal17DesignerIconCacheD1Ev@Base 4:4.7.4
  _ZN18qdesigner_internal17DesignerIconCacheD2Ev@Base 4:4.7.4
  _ZN18qdesigner_internal17DesignerMetaFlagsC1ERK7QStringS3_S3_@Base 4:4.5.3
- _ZN18qdesigner_internal17DesignerMetaFlagsC1ERKS0_@Base 4:4.7.4
+ (arch=!armel !armhf !mips !mipsel !s390)_ZN18qdesigner_internal17DesignerMetaFlagsC1ERKS0_@Base 4:4.8.0
  _ZN18qdesigner_internal17DesignerMetaFlagsC2ERK7QStringS3_S3_@Base 4:4.5.3
- _ZN18qdesigner_internal17DesignerMetaFlagsC2ERKS0_@Base 4:4.7.4
+ (arch=!armel !armhf !mips !mipsel !s390)_ZN18qdesigner_internal17DesignerMetaFlagsC2ERKS0_@Base 4:4.8.0
  _ZN18qdesigner_internal17DesignerMetaFlagsD1Ev@Base 4:4.7.4
  _ZN18qdesigner_internal17DesignerMetaFlagsD2Ev@Base 4:4.7.4
  _ZN18qdesigner_internal17DockWidgetCommand4initEP11QDockWidget@Base 4:4.5.3
@@ -1422,6 +1435,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN18qdesigner_internal17QDesignerTaskMenu16staticMetaObjectE@Base 4:4.5.3
  _ZN18qdesigner_internal17QDesignerTaskMenu18changeTextPropertyERK7QStringS3_NS0_12PropertyModeEN2Qt10TextFormatE@Base 4:4.5.3
  _ZN18qdesigner_internal17QDesignerTaskMenu18slotNavigateToSlotEv@Base 4:4.5.3
+ _ZN18qdesigner_internal17QDesignerTaskMenu19slotLayoutAlignmentEv@Base 4:4.8.0
  _ZN18qdesigner_internal17QDesignerTaskMenu20containerFakeMethodsEv@Base 4:4.5.3
  _ZN18qdesigner_internal17QDesignerTaskMenu23isSlotNavigationEnabledEPK28QDesignerFormEditorInterface@Base 4:4.5.3
  _ZN18qdesigner_internal17QDesignerTaskMenu9applySizeEP7QAction@Base 4:4.5.3
@@ -1948,28 +1962,34 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN18qdesigner_internal22MoveToolBoxPageCommandD0Ev@Base 4:4.5.3
  _ZN18qdesigner_internal22MoveToolBoxPageCommandD1Ev@Base 4:4.5.3
  _ZN18qdesigner_internal22MoveToolBoxPageCommandD2Ev@Base 4:4.5.3
+ (arch=sparc)_ZN18qdesigner_internal22PropertySheetEnumValueC1ERKS0_@Base 4:4.8.0
  _ZN18qdesigner_internal22PropertySheetEnumValueC1EiRKNS_16DesignerMetaEnumE@Base 4:4.5.3
  _ZN18qdesigner_internal22PropertySheetEnumValueC1Ev@Base 4:4.5.3
+ (arch=sparc)_ZN18qdesigner_internal22PropertySheetEnumValueC2ERKS0_@Base 4:4.8.0
  _ZN18qdesigner_internal22PropertySheetEnumValueC2EiRKNS_16DesignerMetaEnumE@Base 4:4.5.3
  _ZN18qdesigner_internal22PropertySheetEnumValueC2Ev@Base 4:4.5.3
  _ZN18qdesigner_internal22PropertySheetEnumValueD1Ev@Base 4:4.7.4
  _ZN18qdesigner_internal22PropertySheetEnumValueD2Ev@Base 4:4.7.4
- _ZN18qdesigner_internal22PropertySheetFlagValueC1ERKS0_@Base 4:4.7.4
+ (arch=!armel !armhf !mips !mipsel !s390)_ZN18qdesigner_internal22PropertySheetFlagValueC1ERKS0_@Base 4:4.8.0
  _ZN18qdesigner_internal22PropertySheetFlagValueC1EiRKNS_17DesignerMetaFlagsE@Base 4:4.5.3
  _ZN18qdesigner_internal22PropertySheetFlagValueC1Ev@Base 4:4.5.3
- _ZN18qdesigner_internal22PropertySheetFlagValueC2ERKS0_@Base 4:4.7.4
+ (arch=!armel !armhf !mips !mipsel !s390)_ZN18qdesigner_internal22PropertySheetFlagValueC2ERKS0_@Base 4:4.8.0
  _ZN18qdesigner_internal22PropertySheetFlagValueC2EiRKNS_17DesignerMetaFlagsE@Base 4:4.5.3
  _ZN18qdesigner_internal22PropertySheetFlagValueC2Ev@Base 4:4.5.3
  _ZN18qdesigner_internal22PropertySheetFlagValueD1Ev@Base 4:4.7.4
  _ZN18qdesigner_internal22PropertySheetFlagValueD2Ev@Base 4:4.7.4
  _ZN18qdesigner_internal22PropertySheetIconValue6assignERKS0_j@Base 4:4.5.3
+ _ZN18qdesigner_internal22PropertySheetIconValue8setThemeERK7QString@Base 4:4.8.0
  _ZN18qdesigner_internal22PropertySheetIconValue9setPixmapEN5QIcon4ModeENS1_5StateERKNS_24PropertySheetPixmapValueE@Base 4:4.5.3
  _ZN18qdesigner_internal22PropertySheetIconValueC1ERKNS_24PropertySheetPixmapValueE@Base 4:4.5.3
+ _ZN18qdesigner_internal22PropertySheetIconValueC1ERKS0_@Base 4:4.8.0
  _ZN18qdesigner_internal22PropertySheetIconValueC1Ev@Base 4:4.5.3
  _ZN18qdesigner_internal22PropertySheetIconValueC2ERKNS_24PropertySheetPixmapValueE@Base 4:4.5.3
+ _ZN18qdesigner_internal22PropertySheetIconValueC2ERKS0_@Base 4:4.8.0
  _ZN18qdesigner_internal22PropertySheetIconValueC2Ev@Base 4:4.5.3
  _ZN18qdesigner_internal22PropertySheetIconValueD1Ev@Base 4:4.7.4
  _ZN18qdesigner_internal22PropertySheetIconValueD2Ev@Base 4:4.7.4
+ _ZN18qdesigner_internal22PropertySheetIconValueaSERKS0_@Base 4:4.8.0
  _ZN18qdesigner_internal22QDesignerIntrospectionC1Ev@Base 4:4.5.3
  _ZN18qdesigner_internal22QDesignerIntrospectionC2Ev@Base 4:4.5.3
  _ZN18qdesigner_internal22QDesignerIntrospectionD0Ev@Base 4:4.5.3
@@ -2118,7 +2138,9 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN18qdesigner_internal24PropertySheetStringValue17setDisambiguationERK7QString@Base 4:4.5.3
  _ZN18qdesigner_internal24PropertySheetStringValue8setValueERK7QString@Base 4:4.5.3
  _ZN18qdesigner_internal24PropertySheetStringValueC1ERK7QStringbS3_S3_@Base 4:4.5.3
+ (arch=armel)_ZN18qdesigner_internal24PropertySheetStringValueC1ERKS0_@Base 4:4.8.0
  _ZN18qdesigner_internal24PropertySheetStringValueC2ERK7QStringbS3_S3_@Base 4:4.5.3
+ (arch=armel)_ZN18qdesigner_internal24PropertySheetStringValueC2ERKS0_@Base 4:4.8.0
  _ZN18qdesigner_internal24PropertySheetStringValueD1Ev@Base 4:4.7.4
  _ZN18qdesigner_internal24PropertySheetStringValueD2Ev@Base 4:4.7.4
  _ZN18qdesigner_internal24QDesignerObjectInspector11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -2273,8 +2295,10 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN18qdesigner_internal29PropertySheetKeySequenceValue8setValueERK12QKeySequence@Base 4:4.5.3
  _ZN18qdesigner_internal29PropertySheetKeySequenceValueC1ERK12QKeySequencebRK7QStringS6_@Base 4:4.5.3
  _ZN18qdesigner_internal29PropertySheetKeySequenceValueC1ERKN12QKeySequence11StandardKeyEbRK7QStringS7_@Base 4:4.5.3
+ (arch=armel)_ZN18qdesigner_internal29PropertySheetKeySequenceValueC1ERKS0_@Base 4:4.8.0
  _ZN18qdesigner_internal29PropertySheetKeySequenceValueC2ERK12QKeySequencebRK7QStringS6_@Base 4:4.5.3
  _ZN18qdesigner_internal29PropertySheetKeySequenceValueC2ERKN12QKeySequence11StandardKeyEbRK7QStringS7_@Base 4:4.5.3
+ (arch=armel)_ZN18qdesigner_internal29PropertySheetKeySequenceValueC2ERKS0_@Base 4:4.8.0
  _ZN18qdesigner_internal29PropertySheetKeySequenceValueD1Ev@Base 4:4.7.4
  _ZN18qdesigner_internal29PropertySheetKeySequenceValueD2Ev@Base 4:4.7.4
  _ZN18qdesigner_internal30DeleteStackedWidgetPageCommand4initEP14QStackedWidget@Base 4:4.5.3
@@ -2422,6 +2446,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN18qdesigner_internal9SelectionD2Ev@Base 4:4.7.4
  _ZN18qdesigner_internal9emptyIconEv@Base 4:4.5.3
  _ZN18qdesigner_internaleqERKNS_20PreviewConfigurationES2_@Base 4:4.5.3
+ _ZN18qdesigner_internallsE6QDebugRKNS_22PropertySheetIconValueE@Base 4:4.8.0
  _ZN18qdesigner_internalltERKNS_20PreviewConfigurationES2_@Base 4:4.5.3
  _ZN18qdesigner_internalneERKNS_20PreviewConfigurationES2_@Base 4:4.5.3
  _ZN19QDesignerDockWidget11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -2526,8 +2551,8 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN20QDesignerMemberSheetD0Ev@Base 4:4.5.3
  _ZN20QDesignerMemberSheetD1Ev@Base 4:4.5.3
  _ZN20QDesignerMemberSheetD2Ev@Base 4:4.5.3
- _ZN20QXmlStreamAttributesD1Ev@Base 4:4.7.4
- _ZN20QXmlStreamAttributesD2Ev@Base 4:4.7.4
+ (arch=!mips !mipsel)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.7.4
+ (arch=!mips !mipsel)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.7.4
  _ZN20QtResourceViewDialog11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN20QtResourceViewDialog11qt_metacastEPKc@Base 4:4.5.3
  _ZN20QtResourceViewDialog14selectResourceERK7QString@Base 4:4.5.3
@@ -2597,8 +2622,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN22QDesignerPropertySheetD0Ev@Base 4:4.5.3
  _ZN22QDesignerPropertySheetD1Ev@Base 4:4.5.3
  _ZN22QDesignerPropertySheetD2Ev@Base 4:4.5.3
- _ZN22QStyleOptionViewItemV3D1Ev@Base 4:4.7.4
- _ZN22QStyleOptionViewItemV3D2Ev@Base 4:4.7.4
  _ZN23QTabWidgetPropertySheet11setPropertyEiRK8QVariant@Base 4:4.5.3
  _ZN23QTabWidgetPropertySheet13checkPropertyERK7QString@Base 4:4.5.3
  _ZN23QTabWidgetPropertySheet25tabWidgetPropertyFromNameERK7QString@Base 4:4.5.3
@@ -2774,7 +2797,9 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN28QDesignerMetaObjectInterfaceD2Ev@Base 4:4.5.3
  _ZN29QDesignerIntegrationInterface11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN29QDesignerIntegrationInterface11qt_metacastEPKc@Base 4:4.5.3
+ _ZN29QDesignerIntegrationInterface15setHeaderSuffixERK7QString@Base 4:4.8.0
  _ZN29QDesignerIntegrationInterface16staticMetaObjectE@Base 4:4.5.3
+ _ZN29QDesignerIntegrationInterface18setHeaderLowercaseEb@Base 4:4.8.0
  _ZN29QDesignerIntegrationInterfaceC1EP28QDesignerFormEditorInterfaceP7QObject@Base 4:4.5.3
  _ZN29QDesignerIntegrationInterfaceC2EP28QDesignerFormEditorInterfaceP7QObject@Base 4:4.5.3
  _ZN29QDesignerIntegrationInterfaceD0Ev@Base 4:4.7.4
@@ -3187,6 +3212,10 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN8DomSlotsC2Ev@Base 4:4.5.3
  _ZN8DomSlotsD1Ev@Base 4:4.5.3
  _ZN8DomSlotsD2Ev@Base 4:4.5.3
+ (arch=sparc)_ZN8QToolBox7addItemEP7QWidgetRK7QString@Base 4:4.8.0
+ (optional=templinst|arch=!armel !armhf)_ZN8QVariant8setValueIN18qdesigner_internal22PropertySheetEnumValueEEEvRKT_@Base 4:4.8.0
+ (optional=templinst|arch=!armel !armhf !mips !mipsel !s390 !sparc)_ZN8QVariant8setValueIN18qdesigner_internal22PropertySheetFlagValueEEEvRKT_@Base 4:4.8.0
+ (optional=templinst|arch=!armel !mips !mipsel !powerpc !s390)_ZN8QVariant9fromValueIN18qdesigner_internal29PropertySheetKeySequenceValueEEES_RKT_@Base 4:4.8.0
  _ZN9DomAction18setElementPropertyERK5QListIP11DomPropertyE@Base 4:4.5.3
  _ZN9DomAction19setElementAttributeERK5QListIP11DomPropertyE@Base 4:4.5.3
  _ZN9DomAction4readER16QXmlStreamReader@Base 4:4.5.3
@@ -3281,8 +3310,8 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN9DomWidgetD2Ev@Base 4:4.5.3
  _ZN9QGradientD1Ev@Base 4:4.7.4
  _ZN9QGradientD2Ev@Base 4:4.7.4
- (arch=ia64 mips mipsel sparc)_ZN9QHashData8willGrowEv@Base 4:4.7.2
- (arch=ia64 mips mipsel sparc)_ZN9QHashData9hasShrunkEv@Base 4:4.7.2
+ (arch=ia64)_ZN9QHashData8willGrowEv@Base 4:4.7.2
+ (arch=ia64)_ZN9QHashData9hasShrunkEv@Base 4:4.7.2
  _ZNK10DomInclude5writeER16QXmlStreamWriterRK7QString@Base 4:4.5.3
  _ZNK10DomPalette5writeER16QXmlStreamWriterRK7QString@Base 4:4.5.3
  _ZNK11DomDateTime5writeER16QXmlStreamWriterRK7QString@Base 4:4.5.3
@@ -3535,6 +3564,8 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZNK18qdesigner_internal14WidgetDataBase10metaObjectEv@Base 4:4.5.3
  _ZNK18qdesigner_internal14WidgetDataBase13indexOfObjectEP7QObjectb@Base 4:4.5.3
  _ZNK18qdesigner_internal14WidgetDataBase4coreEv@Base 4:4.5.3
+ _ZNK18qdesigner_internal15IconThemeEditor10metaObjectEv@Base 4:4.8.0
+ _ZNK18qdesigner_internal15IconThemeEditor5themeEv@Base 4:4.8.0
  _ZNK18qdesigner_internal15InvisibleWidget10metaObjectEv@Base 4:4.5.3
  _ZNK18qdesigner_internal15QSimpleResource13iconToQrcPathERK5QIcon@Base 4:4.5.3
  _ZNK18qdesigner_internal15QSimpleResource14iconToFilePathERK5QIcon@Base 4:4.5.3
@@ -3661,9 +3692,13 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZNK18qdesigner_internal22LanguageResourceDialog11currentPathEv@Base 4:4.5.3
  _ZNK18qdesigner_internal22PropertySheetIconValue4maskEv@Base 4:4.5.3
  _ZNK18qdesigner_internal22PropertySheetIconValue5pathsEv@Base 4:4.5.3
+ _ZNK18qdesigner_internal22PropertySheetIconValue5themeEv@Base 4:4.8.0
  _ZNK18qdesigner_internal22PropertySheetIconValue6equalsERKS0_@Base 4:4.5.3
  _ZNK18qdesigner_internal22PropertySheetIconValue6pixmapEN5QIcon4ModeENS1_5StateE@Base 4:4.5.3
+ _ZNK18qdesigner_internal22PropertySheetIconValue6themedEv@Base 4:4.8.0
  _ZNK18qdesigner_internal22PropertySheetIconValue7compareERKS0_@Base 4:4.5.3
+ _ZNK18qdesigner_internal22PropertySheetIconValue7isEmptyEv@Base 4:4.8.0
+ _ZNK18qdesigner_internal22PropertySheetIconValue8unthemedEv@Base 4:4.8.0
  _ZNK18qdesigner_internal22PropertySheetIconValueltERKS0_@Base 4:4.5.3
  _ZNK18qdesigner_internal22QDesignerIntrospection10metaObjectEPK7QObject@Base 4:4.5.3
  _ZNK18qdesigner_internal22QDesignerIntrospection24metaObjectForQMetaObjectEPK11QMetaObject@Base 4:4.5.3
@@ -3882,6 +3917,8 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZNK28QDesignerFormWindowInterface10metaObjectEv@Base 4:4.5.3
  _ZNK28QDesignerFormWindowInterface4coreEv@Base 4:4.5.3
  _ZNK29QDesignerIntegrationInterface10metaObjectEv@Base 4:4.5.3
+ _ZNK29QDesignerIntegrationInterface12headerSuffixEv@Base 4:4.8.0
+ _ZNK29QDesignerIntegrationInterface17isHeaderLowercaseEv@Base 4:4.8.0
  _ZNK30DomStringPropertySpecification5writeER16QXmlStreamWriterRK7QString@Base 4:4.6.1
  _ZNK30QDesignerActionEditorInterface10metaObjectEv@Base 4:4.5.3
  _ZNK30QDesignerActionEditorInterface4coreEv@Base 4:4.5.3
@@ -4048,6 +4085,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZTIN18qdesigner_internal14QLayoutSupportE@Base 4:4.5.3
  _ZTIN18qdesigner_internal14ToolBoxCommandE@Base 4:4.5.3
  _ZTIN18qdesigner_internal14WidgetDataBaseE@Base 4:4.5.3
+ _ZTIN18qdesigner_internal15IconThemeEditorE@Base 4:4.8.0
  _ZTIN18qdesigner_internal15InvisibleWidgetE@Base 4:4.5.3
  _ZTIN18qdesigner_internal15QSimpleResourceE@Base 4:4.5.3
  _ZTIN18qdesigner_internal15TabOrderCommandE@Base 4:4.5.3
@@ -4229,6 +4267,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZTSN18qdesigner_internal14QLayoutSupportE@Base 4:4.5.3
  _ZTSN18qdesigner_internal14ToolBoxCommandE@Base 4:4.5.3
  _ZTSN18qdesigner_internal14WidgetDataBaseE@Base 4:4.5.3
+ _ZTSN18qdesigner_internal15IconThemeEditorE@Base 4:4.8.0
  _ZTSN18qdesigner_internal15InvisibleWidgetE@Base 4:4.5.3
  _ZTSN18qdesigner_internal15QSimpleResourceE@Base 4:4.5.3
  _ZTSN18qdesigner_internal15TabOrderCommandE@Base 4:4.5.3
@@ -4410,6 +4449,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZTVN18qdesigner_internal14QLayoutSupportE@Base 4:4.5.3
  _ZTVN18qdesigner_internal14ToolBoxCommandE@Base 4:4.5.3
  _ZTVN18qdesigner_internal14WidgetDataBaseE@Base 4:4.5.3
+ _ZTVN18qdesigner_internal15IconThemeEditorE@Base 4:4.8.0
  _ZTVN18qdesigner_internal15InvisibleWidgetE@Base 4:4.5.3
  _ZTVN18qdesigner_internal15QSimpleResourceE@Base 4:4.5.3
  _ZTVN18qdesigner_internal15TabOrderCommandE@Base 4:4.5.3
@@ -4591,6 +4631,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (c++)"non-virtual thunk to qdesigner_internal::GridPanel::~GridPanel()@Base" 4:4.5.3
  (c++)"non-virtual thunk to qdesigner_internal::HintLineEdit::~HintLineEdit()@Base" 4:4.7.4
  (c++)"non-virtual thunk to qdesigner_internal::IconSelector::~IconSelector()@Base" 4:4.5.3
+ (c++)"non-virtual thunk to qdesigner_internal::IconThemeEditor::~IconThemeEditor()@Base" 4:4.8.0
  (c++)"non-virtual thunk to qdesigner_internal::InvisibleWidget::~InvisibleWidget()@Base" 4:4.7.4
  (c++)"non-virtual thunk to qdesigner_internal::LanguageResourceDialog::~LanguageResourceDialog()@Base" 4:4.5.3
  (c++)"non-virtual thunk to qdesigner_internal::NewFormWidget::~NewFormWidget()@Base" 4:4.5.3
@@ -4640,12 +4681,40 @@ libQtDesignerComponents.so.4 libqt4-designer #MINVER#
  _ZN19QDesignerComponents20createResourceEditorEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  _ZN19QDesignerComponents21createObjectInspectorEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  _ZN19QDesignerComponents22createSignalSlotEditorEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
- _ZN20QXmlStreamAttributesD1Ev@Base 4:4.7.4
- _ZN20QXmlStreamAttributesD2Ev@Base 4:4.7.4
+ (arch=!mips !mipsel)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.7.4
+ (arch=!mips !mipsel)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.7.4
  _ZN22QStyleOptionViewItemV3D1Ev@Base 4:4.7.4
  _ZN22QStyleOptionViewItemV3D2Ev@Base 4:4.7.4
- (arch=ia64 mips mipsel sparc)_ZN7QString5clearEv@Base 4:4.7.2
- (arch=ia64 mips mipsel sparc)_ZN9QHashData9hasShrunkEv@Base 4:4.7.2
+ (arch=ia64)_ZN7QString5clearEv@Base 4:4.7.2
+ (optional=templinst|arch=!armel !armhf)_ZN8QVariant8setValueI4QMapIi5QIconEEEvRKT_@Base 4:4.8.0
+ (optional=templinst|arch=!armel !armhf)_ZN8QVariant8setValueI5QListI5QPairI7QStringjEEEEvRKT_@Base 4:4.8.0
+ (optional=templinst|arch=!mips !mipsel !powerpc !s390)_ZN8QVariant9fromValueIN18qdesigner_internal22PropertySheetIconValueEEES_RKT_@Base 4:4.8.0
+ (optional=templinst|arch=!mips !mipsel !powerpc !s390)_ZN8QVariant9fromValueIN18qdesigner_internal24PropertySheetPixmapValueEEES_RKT_@Base 4:4.8.0
+ (optional=templinst|arch=!mips !mipsel !powerpc !s390)_ZN8QVariant9fromValueIN18qdesigner_internal24PropertySheetStringValueEEES_RKT_@Base 4:4.8.0
+ (optional=templinst|arch=!mips !mipsel !powerpc !s390)_ZN8QVariant9fromValueIN18qdesigner_internal29PropertySheetKeySequenceValueEEES_RKT_@Base 4:4.8.0
+ (arch=mips)_ZN9QHashData8willGrowEv@Base 4:4.8.0
+ (arch=ia64 mips mipsel)_ZN9QHashData9hasShrunkEv@Base 4:4.7.2
+ (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP20QtIntPropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
+ (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP21QtBoolPropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
+ (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP21QtCharPropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
+ (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP21QtDatePropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
+ (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP21QtEnumPropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
+ (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP21QtFlagPropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
+ (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP21QtFontPropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
+ (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP21QtRectPropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
+ (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP21QtSizePropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
+ (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP21QtTimePropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
+ (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP22QtColorPropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
+ (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP22QtPointPropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
+ (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP22QtRectFPropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
+ (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP22QtSizeFPropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
+ (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP23QtCursorPropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
+ (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP23QtDoublePropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
+ (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP23QtLocalePropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
+ (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP23QtPointFPropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
+ (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP25QtDateTimePropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
+ (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP27QtSizePolicyPropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
+ (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP28QtKeySequencePropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
  _ZTI22QItemEditorCreatorBase@Base 4:4.5.3
  _ZTS22QItemEditorCreatorBase@Base 4:4.5.3
  _ZTV22QItemEditorCreatorBase@Base 4:4.5.3

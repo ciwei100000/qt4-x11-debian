@@ -3,6 +3,8 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+
 export QTDIR := $(shell pwd)
 export PATH := $(QTDIR)/bin:$(PATH)
 export CFLAGS := $(shell dpkg-buildflags --get CFLAGS) $(shell dpkg-buildflags --get CPPFLAGS)
@@ -13,9 +15,12 @@ export LD_LIBRARY_PATH := $(QTDIR)/lib:$(LD_LIBRARY_PATH)
 # workaround to use qhelpgenerator.
 export QT_PLUGIN_PATH := $(QTDIR)/plugins
 
+# Packages with own debug package
 pkgs_dbg := $(shell dh_listpackages | grep dbg | sed -e '/libqt4-dbg/d; s|-dbg||')
+# Packages whose debug symbols belong to qt4-bin-dbg
+pkgs_dbgbin := libqt4-dev-bin $(filter-out %-dbg lib% $(pkgs_dbg),$(shell dh_listpackages))
 # Library package list for override_dh_makeshlibs, excludes libqt4-phonon
-pkgs_lib := $(filter-out %-dev %-dbg libqt4-phonon,$(filter lib%,$(shell dh_listpackages)))
+pkgs_lib := $(filter-out %-dev %-dbg libqt4-phonon libqt4-dev-bin,$(filter lib%,$(shell dh_listpackages)))
 # Upstream changelog
 upstream_changes := $(wildcard changes-*)
 # Current debian version (e.g.: 4:4.5.2-1)
@@ -34,6 +39,12 @@ else
 	extra_configure_opts += -no-sql-ibase
 endif
 
+ifneq (,$(filter %-sql-sqlite2,$(shell dh_listpackages)))
+	extra_configure_opts += -plugin-sql-sqlite2
+else
+	extra_configure_opts += -no-sql-sqlite2
+endif
+
 ifeq ($(DEB_HOST_ARCH),arm)
 	extra_configure_opts += -DQT_QLOCALE_USES_FCVT
 endif
@@ -46,7 +57,11 @@ ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(armv6_architectures)))
 	extra_configure_opts += -arch armv6
 endif
 
+ifeq ($(vendor),Ubuntu)
+gles2_architectures := armel armhf
+else
 gles2_architectures := none_for_now
+endif
 ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(gles2_architectures)))
 	extra_configure_opts += -opengl es2
 else
@@ -63,7 +78,11 @@ ifeq ($(DEB_HOST_ARCH_OS),linux)
 	platform_arg = linux-g++
   endif
 else
+  ifeq ($(DEB_HOST_ARCH_OS),hurd)
+	platform_arg = hurd-g++
+  else
 	platform_arg = glibc-g++
+  endif
 endif
 
 ifneq ($(DEB_HOST_ARCH),ia64)
@@ -101,12 +120,12 @@ endif
 	./configure -confirm-license \
 	            -prefix "/usr" \
 	            -bindir "/usr/bin" \
-	            -libdir "/usr/lib" \
+	            -libdir "/usr/lib/$(DEB_HOST_MULTIARCH)" \
 	            -docdir "/usr/share/qt4/doc" \
 	            -headerdir "/usr/include/qt4" \
 	            -datadir "/usr/share/qt4" \
-	            -plugindir "/usr/lib/qt4/plugins" \
-	            -importdir "/usr/lib/qt4/imports" \
+	            -plugindir "/usr/lib/$(DEB_HOST_MULTIARCH)/qt4/plugins" \
+	            -importdir "/usr/lib/$(DEB_HOST_MULTIARCH)/qt4/imports" \
 	            -translationdir "/usr/share/qt4/translations" \
 	            -sysconfdir "/etc/xdg" \
 	            -demosdir "/usr/lib/qt4/demos" \
@@ -117,7 +136,6 @@ endif
 	            -plugin-sql-odbc \
 	            -plugin-sql-psql \
 	            -plugin-sql-sqlite \
-	            -plugin-sql-sqlite2 \
 	            -plugin-sql-tds \
 	            -system-sqlite \
 	            -xmlpatterns \
@@ -131,7 +149,6 @@ endif
 	            -scripttools \
 	            -platform $(platform_arg) \
 	            -system-zlib \
-	            -qt-gif \
 	            -system-libtiff \
 	            -system-libpng \
 	            -system-libjpeg \
@@ -147,12 +164,21 @@ endif
 	            -lfontconfig \
 	            -I/usr/include/freetype2 \
 	            -qvfb \
+	            -icu \
 	            $(extra_configure_opts)
 
 override_dh_auto_build:
 	dh_auto_build
+	# Build documentations
+ifneq (,$(filter qt4-doc, $(shell dh_listpackages)))
+	# Build documentations
+	dh_auto_build -Smakefile -- docs
+endif
 	# Build translations
-	dh_auto_build -Smakefile -- ts
+	dh_auto_build -Smakefile -- -C translations ts-all
+	# Workaround: It's a known qmake limitation.
+	# It can't generate install rules for files that don't exist yet like docs.
+	./config.status
 
 override_dh_auto_clean:
 	[ ! -f Makefile ] || $(MAKE) confclean distclean
@@ -228,16 +254,11 @@ override_dh_auto_clean:
 	rm -f debian/shlibs.local
 	rm -f debian/stamp-makefile-build-tools
 
-override_dh_auto_install:
-ifneq (,$(filter qt4-doc, $(shell dh_listpackages)))
-	# Build documentations
-	dh_auto_build -Smakefile -- docs
+ifeq ($(vendor),Ubuntu)
+	rm -rf po
 endif
 
-	# Workaround: It's a known qmake limitation.
-	# It can't generate install rules for files that don't exist yet like docs.
-	./config.status
-
+override_dh_auto_install:
 	dh_auto_install -Smakefile -- INSTALL_ROOT=$(CURDIR)/debian/tmp/
 
 	# Ship private headers - ugly hack to build Qt Creator QML Designer
@@ -253,7 +274,7 @@ endif
 	                          debian/tmp/usr/include/
 
 	# Fix wrong path in pkgconfig files
-	find $(CURDIR)/debian/tmp/usr/lib/pkgconfig -type f -name '*.pc' \
+	find $(CURDIR)/debian/tmp/usr/lib/*/pkgconfig -type f -name '*.pc' \
 		-exec perl -pi -e "s, -L$(CURDIR)/?\S+,,g" {} \;
 	# Fix wrong path in prl files
 	find $(CURDIR)/debian/tmp/usr/lib -type f -name '*.prl' \
@@ -285,10 +306,10 @@ endif
 	rm -f debian/tmp//usr/share/qt4/mkspecs/modules/qt_webkit_version.pri
 
 	# Remove phonon development files
-	rm -f debian/tmp/usr/lib/libphonon.la
-	rm -f debian/tmp/usr/lib/libphonon.prl
-	rm -f debian/tmp/usr/lib/libphonon.so
-	rm -f debian/tmp/usr/lib/pkgconfig/phonon.pc
+	rm -f debian/tmp/usr/lib/*/libphonon.la
+	rm -f debian/tmp/usr/lib/*/libphonon.prl
+	rm -f debian/tmp/usr/lib/*/libphonon.so
+	rm -f debian/tmp/usr/lib/*/pkgconfig/phonon.pc
 	rm -rf debian/tmp/usr/include/qt4/phonon
 
 	# Remove leftover directories
@@ -306,6 +327,14 @@ endif
 		-regex '.*\.\(app\|conf\|cpp\|h\|js\|php\|png\|pro\|xml\|xsl\)$$' \
 		-exec chmod a-x {} \;
 
+ifeq ($(vendor),Ubuntu)
+	# Create .pot file
+	ln -s MessagesQt.sh debian/Messages.sh
+	mkdir po
+	cd debian; qtcopydir=.. podir=../po extract-messages.sh
+	rm -f debian/Message.sh
+endif
+
 override_dh_install:
 	dh_install --list-missing
 
@@ -317,11 +346,9 @@ override_dh_installchangelogs:
 
 override_dh_strip:
 	$(foreach pkg,$(pkgs_dbg),dh_strip -p$(pkg) --dbg-package=$(pkg)-dbg;)
+	dh_strip $(foreach pkg,$(pkgs_dbgbin),-p$(pkg)) --dbg-package=qt4-bin-dbg
 	dh_strip -plibqt4-phonon
 	dh_strip --remaining-packages --dbg-package=libqt4-dbg
-	# Move binaries in qt4-bin-dbg package
-	mkdir -p debian/qt4-bin-dbg/usr/lib/debug/usr
-	mv debian/libqt4-dbg/usr/lib/debug/usr/bin debian/qt4-bin-dbg/usr/lib/debug/usr/
 
 override_dh_makeshlibs:
 	# Specific shlibs version (e.g.: 4:4.5.2)

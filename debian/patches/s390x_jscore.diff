@@ -6,8 +6,7 @@ Last-Update: 2011-08-03
 
 ---
  src/3rdparty/javascriptcore/JavaScriptCore/wtf/Platform.h |   14 +++++++++++++-
- src/3rdparty/webkit/JavaScriptCore/wtf/Platform.h         |   13 +++++++++++++
- 2 files changed, 26 insertions(+), 1 deletion(-)
+ 1 file changed, 13 insertions(+), 1 deletion(-)
 
 --- a/src/3rdparty/javascriptcore/JavaScriptCore/wtf/Platform.h
 +++ b/src/3rdparty/javascriptcore/JavaScriptCore/wtf/Platform.h
@@ -30,7 +29,7 @@ Last-Update: 2011-08-03
  /* CPU(X86) - i386 / x86 32-bit */
  #if   defined(__i386__) \
      || defined(i386)     \
-@@ -870,7 +882,7 @@
+@@ -884,7 +896,7 @@
  #endif
  
  #if !defined(WTF_USE_JSVALUE64) && !defined(WTF_USE_JSVALUE32) && !defined(WTF_USE_JSVALUE32_64)
@@ -39,32 +38,3 @@ Last-Update: 2011-08-03
  #define WTF_USE_JSVALUE64 1
  #elif CPU(ARM) || CPU(PPC64)
  #define WTF_USE_JSVALUE32 1
---- a/src/3rdparty/webkit/JavaScriptCore/wtf/Platform.h
-+++ b/src/3rdparty/webkit/JavaScriptCore/wtf/Platform.h
-@@ -180,6 +180,18 @@
- #define WTF_CPU_SPARC 1
- #endif
- 
-+/* CPU(S390X) - S390 64-bit */
-+#if defined(__s390x__)
-+#define WTF_CPU_S390X 1
-+#define WTF_CPU_BIG_ENDIAN 1
-+#endif
-+
-+/* CPU(S390) - S390 32-bit */
-+#if defined(__s390__)
-+#define WTF_CPU_S390 1
-+#define WTF_CPU_BIG_ENDIAN 1
-+#endif
-+
- /* CPU(X86) - i386 / x86 32-bit */
- #if   defined(__i386__) \
-     || defined(i386)     \
-@@ -885,6 +897,7 @@
- #if (CPU(X86_64) && (OS(UNIX) || OS(WINDOWS))) \
-     || (CPU(IA64) && !CPU(IA64_32)) \
-     || CPU(ALPHA) \
-+    || CPU(S390X) \
-     || CPU(SPARC64)
- #define WTF_USE_JSVALUE64 1
- #elif CPU(ARM) || CPU(PPC64) || CPU(MIPS)

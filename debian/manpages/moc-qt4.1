@@ -137,7 +137,7 @@ Here is a useful makefile rule if you only use GNU make:
 .in +4
 .nf
 m%.cpp: %.h
-        moc $< -o $@
+        moc $< \-o $@
 .fi
 .in -4
 .PP
@@ -147,7 +147,7 @@ following form:
 .in +4
 .nf
 mNAME.cpp: NAME.h
-        moc $< -o $@
+        moc $< \-o $@
 .fi
 .in -4
 .PP
@@ -170,7 +170,7 @@ a makefile rule like this:
 NAME.o: mNAME.cpp
 
 mNAME.cpp: NAME.cpp
-        moc -i $< -o $@
+        moc -i $< \-o $@
 .fi
 .in -4
 .PP

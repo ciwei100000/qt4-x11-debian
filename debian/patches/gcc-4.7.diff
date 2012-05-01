@@ -3,19 +3,8 @@ Description: Fix build failures with GCC 4.7
  Fix build issues with GCC 4.7, like code wrongly mistaken for operator"".
 Origin: vendor
 Forwarded: no
-Last-Update: 2012-04-17
+Last-Update: 2012-04-29
 
---- a/src/testlib/qxmltestlogger.cpp
-+++ b/src/testlib/qxmltestlogger.cpp
-@@ -119,7 +119,7 @@
-     QTest::qt_asprintf(&buf,
-             "<Environment>\n"
-             "    <QtVersion>%s</QtVersion>\n"
--            "    <QTestVersion>"QTEST_VERSION_STR"</QTestVersion>\n"
-+            "    <QTestVersion>" QTEST_VERSION_STR "</QTestVersion>\n"
-             "</Environment>\n", qVersion());
-     outputString(buf.constData());
- }
 --- a/src/3rdparty/javascriptcore/JavaScriptCore/runtime/JSGlobalObject.h
 +++ b/src/3rdparty/javascriptcore/JavaScriptCore/runtime/JSGlobalObject.h
 @@ -57,9 +57,7 @@
@@ -41,29 +30,3 @@ Last-Update: 2012-04-17
              JSStaticScopeObjectData()
                  : JSVariableObjectData(&symbolTable, &registerStore + 1)
              {
---- a/src/corelib/kernel/qobjectdefs.h
-+++ b/src/corelib/kernel/qobjectdefs.h
-@@ -216,7 +216,7 @@
- #define QTOSTRING_HELPER(s) #s
- #define QTOSTRING(s) QTOSTRING_HELPER(s)
- #ifndef QT_NO_DEBUG
--# define QLOCATION "\0"__FILE__":"QTOSTRING(__LINE__)
-+# define QLOCATION "\0" __FILE__ ":" QTOSTRING(__LINE__)
- # define METHOD(a)   qFlagLocation("0"#a QLOCATION)
- # define SLOT(a)     qFlagLocation("1"#a QLOCATION)
- # define SIGNAL(a)   qFlagLocation("2"#a QLOCATION)
---- a/src/corelib/plugin/qplugin.h
-+++ b/src/corelib/plugin/qplugin.h
-@@ -112,9 +112,9 @@
- #  define Q_PLUGIN_VERIFICATION_DATA \
-     static const char qt_plugin_verification_data[] = \
-       "pattern=""QT_PLUGIN_VERIFICATION_DATA""\n" \
--      "version="QT_VERSION_STR"\n" \
--      "debug="QPLUGIN_DEBUG_STR"\n" \
--      "buildkey="QT_BUILD_KEY;
-+      "version=" QT_VERSION_STR "\n" \
-+      "debug=" QPLUGIN_DEBUG_STR "\n" \
-+      "buildkey=" QT_BUILD_KEY;
- 
- #  if defined (Q_OS_WIN32) && defined(Q_CC_BOR)
- #     define Q_STANDARD_CALL __stdcall

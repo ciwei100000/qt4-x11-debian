@@ -1,11 +1,114 @@
-qt4-x11 (4:4.7.4-4) UNRELEASED; urgency=low
+qt4-x11 (4:4.8.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+  [ Fathi Boudra ]
+  * Use multiarch for importsdir:
+    - update debian/libqt4-declarative-*.install files.
+    - mark QML plugin packages as Multi-Arch: same.
+  * Re-add patch s390x_jscore.diff to add s390/s390x support in JavaScriptCore.
+    The patch was partly merged in Qt 4.8.
+  * Add CVE-2011-3922.patch: Stack-buffer-overflow in glyph handling.
+
+  [ Felix Geyer ]
+  * Drop fix_ftbfs_format-security.patch, fixed upstream.
+  * Refresh patches for the new upstream version.
+  * Update symbol files.
+  * Add QTBUG-24718_Fix_a_crash_in_cursorToX_when_new_block_is_added.patch,
+    cherry-picked from upstream.
+  * Make it possible to install libqt4-dev from a foreign architecture while
+    having all binaries in the native architecture.
+    - Move binaries from libqt4-dev into the new package libqt4-dev-bin.
+    - Mark libqt4-dev-bin, qt4-qmake and qt4-linguist-tools as
+      Multi-Arch: foreign.
+  * Add a dh_strip call for qt4-bin-dbg instead of moving the debug files
+    manually.
+    - drop mv-qt4-bin-dbg.sh script.
+    - drop elfutils build dependency.
+  * Bump debhelper build-dependency to 9.
+  * Fix hyphen-used-as-minus-sign lintian warnings.
+  * Build the documentation in the dh_auto_build-indep target instead of
+    dh_auto_install.
+  * qt-multiarch-plugin-path-compat.diff: include legacy pre-multiarch qml
+    import path.
+
+  [ Didier Raboud ]
+  * Merge the 4:4.7.4-3 unstable release: drop fix-format.diff, merged
+    upstream.
 
   [ Pino Toscano ]
   * Fix build failures with GCC 4.7; patch gcc-4.7.diff. (Closes: #667911)
   * Fix atomic support on sparc64, by Aurelien Jarno (thanks!);
     patch qt_atomic_sparc64.patch. (Closes: #647265)
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 17 Apr 2012 01:55:05 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 01 May 2012 12:15:56 +0300
+
+qt4-x11 (4:4.8.0-1) experimental; urgency=low
+
+  * New upstream release.
+
+  [ Fathi Boudra ]
+  * Drop patches (stolen upstream):
+    - Fix_builds_with_compilers_without_--with-fpu_neon_as_default.patch
+    - Update_createwindow_in_qgl_x11egl.patch
+    - Improve-performance-of-partial-updates-in-raster-win.patch
+    - Fix_transformIsSimple_in_QGraphicsScene.patch
+    - Micro-optimization_for_QSpanData.patch
+    - Some_Optimizations_for_the_gray_raster.patch
+    - Make_use_of_the_fast_image_paths.patch
+    - Fixed_bug_in_X11_backend_when_creating_translucent_windows.patch
+    - Take_Xft.hintstyle_by_default_to_match_the_behavior_of_GTK+.patch
+    - Fix_fontconfig_usage_in_X11_font_database.patch
+    - Bug-fix-Allow-QTDIR-to-contain-regex-metacharacters.patch
+    - armv6_Include_explicitly_IT_instructions.patch
+    - armv6_Add_support_for_ARMv7_atomic_operations.patch
+    - s390x_jscore.diff
+    - blacklist-diginotar-cert.diff
+    - Remove_QtHelp_dependency_on_QtXml.patch
+  * Drop openssl_no_ssl2.patch - fixed upstream.
+  * Add patches:
+    - qt-multiarch-plugin-path-compat.diff - include legacy pre-multiarch
+      plugin path.
+    - fix_ftbfs_format-security.patch - due to debian/compat bump to 9, Qt is
+      built with -Werror=format-security and trigger an error: format not a
+      string literal and no format arguments.
+    - fix_qvfb_build.patch - fix qvfb build on Qt 4.8.0
+    - QTBUG-14724_close_orphaned_file_descriptors_after_printing.patch
+    - QTBUG-21900_Buttons_in_Qt_applications_not_clickable_when_run_under_
+      gnome-shell.patch
+    - add_missing_method_for_QBasicAtomicPointer_on_s390.patch
+  * Update debian/compat: bump to 9 for multiarch.
+  * Update debian/control:
+    - mark Qt libraries as Multi-Arch.
+    - build-depends on firebird-dev package. (Closes: #653378)
+    - suggests libthai0 to libqtcore4. (Closes: #652712)
+    - build-depends on elfutils for mv-qt4-bin-dbg.sh script.
+    - build-depends on libicu-dev package.
+    - bump debhelper build-dependency to 8.9.13.
+    - build-depends on dpkg-dev >= 1.16.1.
+    - bump pkg-kde-tools build-dependency to 0.14.2.
+    - recommends imagemagick or gifsicle to qmlviewer.
+  * Update debian/rules:
+    - add DEB_HOST_MULTIARCH support for libdir/plugindir.
+    - remove -qt-gif configure option - removed upstream.
+    - use ts-all target. The ts target has been removed.
+    - call mv-qt4-bin-dbg.sh to move the binaries in qt4-bin-dbg package.
+    - replace LDFLAGS by DEB_LDFLAGS_MAINT_APPEND usage.
+    - add -icu configure option.
+  * Update debian/*.install files:
+    - update paths for multiarch.
+    - headers, translations, qmlplugindump.
+  * Update debian/*.symbol files.
+  * Add mv-qt4-bin-dbg.sh script: with debhelper compat 9, dh_strip puts
+    separated debug symbols in a location based on their build-id. The script
+    moves the debug files for the binaries in the qt4-bin-dbg package.
+
+  [ Pino Toscano ]
+  * Use the hurd-g++ mkspec when building on Hurd:
+    - add mkspecs/hurd-g++/qmake.conf in 01_debian_append_qt4_suffix.diff
+    - update the platform_arg in debian/rules
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 22 Dec 2011 17:50:13 +0200
 
 qt4-x11 (4:4.7.4-3) unstable; urgency=low
 

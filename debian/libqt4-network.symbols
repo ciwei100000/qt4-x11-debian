@@ -1,10 +1,10 @@
-# SymbolsHelper-Confirmed: 4:4.7.4 amd64
+# SymbolsHelper-Confirmed: 4:4.8.0 amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
 libQtNetwork.so.4 libqt4-network #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z19qt_qhostinfo_lookupRK7QStringP7QObjectPKcPbPi@Base 4:4.6.3
  _Z35qNetworkConfigurationManagerPrivatev@Base 4:4.7.0~beta1
  _Z5qHashRK12QHostAddress@Base 4:4.5.3
- (optional=external|arch=ia64 mips mipsel sparc)_Z8qWarningv@Base 4:4.7.2
+ (optional=external|arch=ia64)_Z8qWarningv@Base 4:4.7.2
  (optional=external)_ZN10QByteArray4dataEv@Base 4:4.7.2
  _ZN10QSslCipherC1ERK7QStringN4QSsl11SslProtocolE@Base 4:4.5.3
  _ZN10QSslCipherC1ERKS_@Base 4:4.5.3
@@ -41,6 +41,7 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN10QSslSocket17setCaCertificatesERK5QListI15QSslCertificateE@Base 4:4.5.3
  _ZN10QSslSocket17setDefaultCiphersERK5QListI10QSslCipherE@Base 4:4.5.3
  _ZN10QSslSocket17setPeerVerifyModeENS_14PeerVerifyModeE@Base 4:4.5.3
+ _ZN10QSslSocket17setPeerVerifyNameERK7QString@Base 4:4.8.0
  _ZN10QSslSocket17setReadBufferSizeEx@Base 4:4.5.3
  _ZN10QSslSocket18setPeerVerifyDepthEi@Base 4:4.5.3
  _ZN10QSslSocket19setLocalCertificateERK15QSslCertificate@Base 4:4.5.3
@@ -107,6 +108,11 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN10QUdpSocket12readDatagramEPcxP12QHostAddressPt@Base 4:4.5.3
  _ZN10QUdpSocket13writeDatagramEPKcxRK12QHostAddresst@Base 4:4.5.3
  _ZN10QUdpSocket16staticMetaObjectE@Base 4:4.5.3
+ _ZN10QUdpSocket18joinMulticastGroupERK12QHostAddress@Base 4:4.8.0
+ _ZN10QUdpSocket18joinMulticastGroupERK12QHostAddressRK17QNetworkInterface@Base 4:4.8.0
+ _ZN10QUdpSocket19leaveMulticastGroupERK12QHostAddress@Base 4:4.8.0
+ _ZN10QUdpSocket19leaveMulticastGroupERK12QHostAddressRK17QNetworkInterface@Base 4:4.8.0
+ _ZN10QUdpSocket21setMulticastInterfaceERK17QNetworkInterface@Base 4:4.8.0
  _ZN10QUdpSocket4bindERK12QHostAddresst6QFlagsINS_8BindFlagEE@Base 4:4.5.3
  _ZN10QUdpSocket4bindERK12QHostAddresst@Base 4:4.5.3
  _ZN10QUdpSocket4bindEt6QFlagsINS_8BindFlagEE@Base 4:4.5.3
@@ -241,6 +247,7 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN13QNetworkReply10setRequestERK15QNetworkRequest@Base 4:4.5.3
  _ZN13QNetworkReply11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN13QNetworkReply11qt_metacastEPKc@Base 4:4.5.3
+ _ZN13QNetworkReply11setFinishedEb@Base 4:4.8.0
  _ZN13QNetworkReply12setAttributeEN15QNetworkRequest9AttributeERK8QVariant@Base 4:4.5.3
  _ZN13QNetworkReply12setOperationEN21QNetworkAccessManager9OperationE@Base 4:4.5.3
  _ZN13QNetworkReply12setRawHeaderERK10QByteArrayS2_@Base 4:4.5.3
@@ -278,6 +285,19 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN14QAuthenticatorD1Ev@Base 4:4.5.3
  _ZN14QAuthenticatorD2Ev@Base 4:4.5.3
  _ZN14QAuthenticatoraSERKS_@Base 4:4.5.3
+ _ZN14QHttpMultiPart11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.8.0
+ _ZN14QHttpMultiPart11qt_metacastEPKc@Base 4:4.8.0
+ _ZN14QHttpMultiPart11setBoundaryERK10QByteArray@Base 4:4.8.0
+ _ZN14QHttpMultiPart14setContentTypeENS_11ContentTypeE@Base 4:4.8.0
+ _ZN14QHttpMultiPart16staticMetaObjectE@Base 4:4.8.0
+ _ZN14QHttpMultiPart6appendERK9QHttpPart@Base 4:4.8.0
+ _ZN14QHttpMultiPartC1ENS_11ContentTypeEP7QObject@Base 4:4.8.0
+ _ZN14QHttpMultiPartC1EP7QObject@Base 4:4.8.0
+ _ZN14QHttpMultiPartC2ENS_11ContentTypeEP7QObject@Base 4:4.8.0
+ _ZN14QHttpMultiPartC2EP7QObject@Base 4:4.8.0
+ _ZN14QHttpMultiPartD0Ev@Base 4:4.8.0
+ _ZN14QHttpMultiPartD1Ev@Base 4:4.8.0
+ _ZN14QHttpMultiPartD2Ev@Base 4:4.8.0
  _ZN14QNetworkCookie11setHttpOnlyEb@Base 4:4.5.3
  _ZN14QNetworkCookie12parseCookiesERK10QByteArray@Base 4:4.5.3
  _ZN14QNetworkCookie17setExpirationDateERK9QDateTime@Base 4:4.5.3
@@ -433,6 +453,7 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN17QNetworkInterfaceaSERKS_@Base 4:4.5.3
  _ZN17QSslConfiguration10setCiphersERK5QListI10QSslCipherE@Base 4:4.5.3
  _ZN17QSslConfiguration11setProtocolEN4QSsl11SslProtocolE@Base 4:4.5.3
+ _ZN17QSslConfiguration12setSslOptionEN4QSsl9SslOptionEb@Base 4:4.8.0
  _ZN17QSslConfiguration13setPrivateKeyERK7QSslKey@Base 4:4.5.3
  _ZN17QSslConfiguration17setCaCertificatesERK5QListI15QSslCertificateE@Base 4:4.5.3
  _ZN17QSslConfiguration17setPeerVerifyModeEN10QSslSocket14PeerVerifyModeE@Base 4:4.5.3
@@ -466,12 +487,19 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN18QNetworkProxyQuery12setQueryTypeENS_9QueryTypeE@Base 4:4.5.3
  _ZN18QNetworkProxyQuery14setProtocolTagERK7QString@Base 4:4.5.3
  _ZN18QNetworkProxyQuery15setPeerHostNameERK7QString@Base 4:4.5.3
+ _ZN18QNetworkProxyQuery23setNetworkConfigurationERK21QNetworkConfiguration@Base 4:4.8.0
  _ZN18QNetworkProxyQuery6setUrlERK4QUrl@Base 4:4.5.3
+ _ZN18QNetworkProxyQueryC1ERK21QNetworkConfigurationRK4QUrlNS_9QueryTypeE@Base 4:4.8.0
+ _ZN18QNetworkProxyQueryC1ERK21QNetworkConfigurationRK7QStringiS5_NS_9QueryTypeE@Base 4:4.8.0
+ _ZN18QNetworkProxyQueryC1ERK21QNetworkConfigurationtRK7QStringNS_9QueryTypeE@Base 4:4.8.0
  _ZN18QNetworkProxyQueryC1ERK4QUrlNS_9QueryTypeE@Base 4:4.5.3
  _ZN18QNetworkProxyQueryC1ERK7QStringiS2_NS_9QueryTypeE@Base 4:4.5.3
  _ZN18QNetworkProxyQueryC1ERKS_@Base 4:4.5.3
  _ZN18QNetworkProxyQueryC1EtRK7QStringNS_9QueryTypeE@Base 4:4.5.3
  _ZN18QNetworkProxyQueryC1Ev@Base 4:4.5.3
+ _ZN18QNetworkProxyQueryC2ERK21QNetworkConfigurationRK4QUrlNS_9QueryTypeE@Base 4:4.8.0
+ _ZN18QNetworkProxyQueryC2ERK21QNetworkConfigurationRK7QStringiS5_NS_9QueryTypeE@Base 4:4.8.0
+ _ZN18QNetworkProxyQueryC2ERK21QNetworkConfigurationtRK7QStringNS_9QueryTypeE@Base 4:4.8.0
  _ZN18QNetworkProxyQueryC2ERK4QUrlNS_9QueryTypeE@Base 4:4.5.3
  _ZN18QNetworkProxyQueryC2ERK7QStringiS2_NS_9QueryTypeE@Base 4:4.5.3
  _ZN18QNetworkProxyQueryC2ERKS_@Base 4:4.5.3
@@ -547,9 +575,11 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN21QNetworkAccessManager24networkAccessibleChangedENS_20NetworkAccessibilityE@Base 4:4.7.0~beta1
  _ZN21QNetworkAccessManager27proxyAuthenticationRequiredERK13QNetworkProxyP14QAuthenticator@Base 4:4.5.3
  _ZN21QNetworkAccessManager3getERK15QNetworkRequest@Base 4:4.5.3
+ _ZN21QNetworkAccessManager3putERK15QNetworkRequestP14QHttpMultiPart@Base 4:4.8.0
  _ZN21QNetworkAccessManager3putERK15QNetworkRequestP9QIODevice@Base 4:4.5.3
  _ZN21QNetworkAccessManager3putERK15QNetworkRequestRK10QByteArray@Base 4:4.5.3
  _ZN21QNetworkAccessManager4headERK15QNetworkRequest@Base 4:4.5.3
+ _ZN21QNetworkAccessManager4postERK15QNetworkRequestP14QHttpMultiPart@Base 4:4.8.0
  _ZN21QNetworkAccessManager4postERK15QNetworkRequestP9QIODevice@Base 4:4.5.3
  _ZN21QNetworkAccessManager4postERK15QNetworkRequestRK10QByteArray@Base 4:4.5.3
  _ZN21QNetworkAccessManager8finishedEP13QNetworkReply@Base 4:4.5.3
@@ -611,12 +641,11 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN35QNetworkConfigurationManagerPrivate11pollEnginesEv@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivate11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivate11qt_metacastEPKc@Base 4:4.7.0~beta1
- _ZN35QNetworkConfigurationManagerPrivate12capabilitiesEv@Base 4:4.7.0~beta2
  _ZN35QNetworkConfigurationManagerPrivate12startPollingEv@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivate13enablePollingEv@Base 4:4.7.0~beta1
+ _ZN35QNetworkConfigurationManagerPrivate14addPostRoutineEv@Base 4:4.8.0
  _ZN35QNetworkConfigurationManagerPrivate14disablePollingEv@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivate16staticMetaObjectE@Base 4:4.7.0~beta1
- _ZN35QNetworkConfigurationManagerPrivate17allConfigurationsE6QFlagsIN21QNetworkConfiguration9StateFlagEE@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivate18configurationAddedE28QExplicitlySharedDataPointerI28QNetworkConfigurationPrivateE@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivate18configurationAddedERK21QNetworkConfiguration@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivate18onlineStateChangedEb@Base 4:4.7.0~beta1
@@ -624,15 +653,10 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN35QNetworkConfigurationManagerPrivate20configurationChangedERK21QNetworkConfiguration@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivate20configurationRemovedE28QExplicitlySharedDataPointerI28QNetworkConfigurationPrivateE@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivate20configurationRemovedERK21QNetworkConfiguration@Base 4:4.7.0~beta1
- _ZN35QNetworkConfigurationManagerPrivate20defaultConfigurationEv@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivate20updateConfigurationsEv@Base 4:4.7.0~beta1
- _ZN35QNetworkConfigurationManagerPrivate27configurationFromIdentifierERK7QString@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivate27configurationUpdateCompleteEv@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivate31performAsyncConfigurationUpdateEv@Base 4:4.7.0~beta1
- _ZN35QNetworkConfigurationManagerPrivate5abortEv@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivate7cleanupEv@Base 4:4.7.4
- _ZN35QNetworkConfigurationManagerPrivate7enginesEv@Base 4:4.7.0~beta1
- _ZN35QNetworkConfigurationManagerPrivate8isOnlineEv@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivateC1Ev@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivateC2Ev@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivateD0Ev@Base 4:4.7.0~beta1
@@ -729,7 +753,7 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN7QSslKeyD1Ev@Base 4:4.5.3
  _ZN7QSslKeyD2Ev@Base 4:4.5.3
  _ZN7QSslKeyaSERKS_@Base 4:4.5.3
- (arch=armel ia64 mips mipsel sparc)_ZN7QString5clearEv@Base 4:4.7.2
+ (arch=ia64)_ZN7QString5clearEv@Base 4:4.7.2
  _ZN8QUrlInfo10setSymLinkEb@Base 4:4.5.3
  _ZN8QUrlInfo11greaterThanERKS_S1_i@Base 4:4.5.3
  _ZN8QUrlInfo11setLastReadERK9QDateTime@Base 4:4.5.3
@@ -774,6 +798,17 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN9QHostInfoD1Ev@Base 4:4.5.3
  _ZN9QHostInfoD2Ev@Base 4:4.5.3
  _ZN9QHostInfoaSERKS_@Base 4:4.5.3
+ _ZN9QHttpPart12setRawHeaderERK10QByteArrayS2_@Base 4:4.8.0
+ _ZN9QHttpPart13setBodyDeviceEP9QIODevice@Base 4:4.8.0
+ _ZN9QHttpPart7setBodyERK10QByteArray@Base 4:4.8.0
+ _ZN9QHttpPart9setHeaderEN15QNetworkRequest12KnownHeadersERK8QVariant@Base 4:4.8.0
+ _ZN9QHttpPartC1ERKS_@Base 4:4.8.0
+ _ZN9QHttpPartC1Ev@Base 4:4.8.0
+ _ZN9QHttpPartC2ERKS_@Base 4:4.8.0
+ _ZN9QHttpPartC2Ev@Base 4:4.8.0
+ _ZN9QHttpPartD1Ev@Base 4:4.8.0
+ _ZN9QHttpPartD2Ev@Base 4:4.8.0
+ _ZN9QHttpPartaSERKS_@Base 4:4.8.0
  _ZN9QSslErrorC1ENS_8SslErrorE@Base 4:4.6.1
  _ZN9QSslErrorC1ENS_8SslErrorERK15QSslCertificate@Base 4:4.5.3
  _ZN9QSslErrorC1ERKS_@Base 4:4.5.3
@@ -785,7 +820,7 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN9QSslErrorD1Ev@Base 4:4.5.3
  _ZN9QSslErrorD2Ev@Base 4:4.5.3
  _ZN9QSslErroraSERKS_@Base 4:4.5.3
- (arch=!ia64 !mips !mipsel !sparc)_ZNK10QByteArray8containsEPKc@Base 4:4.7.2
+ (arch=!i386 !ia64 !kfreebsd-i386 !mips !mipsel !powerpc !s390 !sparc)_ZNK10QByteArray8containsEPKc@Base 4:4.7.2
  _ZNK10QSslCipher13supportedBitsEv@Base 4:4.5.3
  _ZNK10QSslCipher14protocolStringEv@Base 4:4.5.3
  _ZNK10QSslCipher16encryptionMethodEv@Base 4:4.5.3
@@ -805,6 +840,7 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZNK10QSslSocket14bytesAvailableEv@Base 4:4.5.3
  _ZNK10QSslSocket14caCertificatesEv@Base 4:4.5.3
  _ZNK10QSslSocket14peerVerifyModeEv@Base 4:4.5.3
+ _ZNK10QSslSocket14peerVerifyNameEv@Base 4:4.8.0
  _ZNK10QSslSocket15peerCertificateEv@Base 4:4.5.3
  _ZNK10QSslSocket15peerVerifyDepthEv@Base 4:4.5.3
  _ZNK10QSslSocket16localCertificateEv@Base 4:4.5.3
@@ -829,6 +865,7 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZNK10QTcpServer5proxyEv@Base 4:4.5.3
  _ZNK10QTcpSocket10metaObjectEv@Base 4:4.5.3
  _ZNK10QUdpSocket10metaObjectEv@Base 4:4.5.3
+ _ZNK10QUdpSocket18multicastInterfaceEv@Base 4:4.8.0
  _ZNK10QUdpSocket19hasPendingDatagramsEv@Base 4:4.5.3
  _ZNK10QUdpSocket19pendingDatagramSizeEv@Base 4:4.5.3
  _ZNK11QHttpHeader11contentTypeEv@Base 4:4.5.3
@@ -908,6 +945,8 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZNK14QAuthenticator7optionsEv@Base 4:4.7.0~rc1
  _ZNK14QAuthenticator8passwordEv@Base 4:4.5.3
  _ZNK14QAuthenticatoreqERKS_@Base 4:4.5.3
+ _ZNK14QHttpMultiPart10metaObjectEv@Base 4:4.8.0
+ _ZNK14QHttpMultiPart8boundaryEv@Base 4:4.8.0
  _ZNK14QNetworkCookie10isHttpOnlyEv@Base 4:4.5.3
  _ZNK14QNetworkCookie14expirationDateEv@Base 4:4.5.3
  _ZNK14QNetworkCookie15isSessionCookieEv@Base 4:4.5.3
@@ -991,6 +1030,7 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZNK17QNetworkInterface7isValidEv@Base 4:4.5.3
  _ZNK17QSslConfiguration10privateKeyEv@Base 4:4.5.3
  _ZNK17QSslConfiguration13sessionCipherEv@Base 4:4.5.3
+ _ZNK17QSslConfiguration13testSslOptionEN4QSsl9SslOptionE@Base 4:4.8.0
  _ZNK17QSslConfiguration14caCertificatesEv@Base 4:4.5.3
  _ZNK17QSslConfiguration14peerVerifyModeEv@Base 4:4.5.3
  _ZNK17QSslConfiguration15peerCertificateEv@Base 4:4.5.3
@@ -1008,6 +1048,7 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZNK18QHttpRequestHeader8toStringEv@Base 4:4.5.3
  _ZNK18QNetworkProxyQuery11protocolTagEv@Base 4:4.5.3
  _ZNK18QNetworkProxyQuery12peerHostNameEv@Base 4:4.5.3
+ _ZNK18QNetworkProxyQuery20networkConfigurationEv@Base 4:4.8.0
  _ZNK18QNetworkProxyQuery3urlEv@Base 4:4.5.3
  _ZNK18QNetworkProxyQuery8peerPortEv@Base 4:4.5.3
  _ZNK18QNetworkProxyQuery9localPortEv@Base 4:4.5.3
@@ -1060,6 +1101,12 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZNK28QNetworkConfigurationManager27configurationFromIdentifierERK7QString@Base 4:4.7.0~beta1
  _ZNK28QNetworkConfigurationManager8isOnlineEv@Base 4:4.7.0~beta1
  _ZNK35QNetworkConfigurationManagerPrivate10metaObjectEv@Base 4:4.7.0~beta1
+ _ZNK35QNetworkConfigurationManagerPrivate12capabilitiesEv@Base 4:4.8.0
+ _ZNK35QNetworkConfigurationManagerPrivate17allConfigurationsE6QFlagsIN21QNetworkConfiguration9StateFlagEE@Base 4:4.8.0
+ _ZNK35QNetworkConfigurationManagerPrivate20defaultConfigurationEv@Base 4:4.8.0
+ _ZNK35QNetworkConfigurationManagerPrivate27configurationFromIdentifierERK7QString@Base 4:4.8.0
+ _ZNK35QNetworkConfigurationManagerPrivate7enginesEv@Base 4:4.8.0
+ _ZNK35QNetworkConfigurationManagerPrivate8isOnlineEv@Base 4:4.8.0
  _ZNK4QFtp10metaObjectEv@Base 4:4.5.3
  _ZNK4QFtp11errorStringEv@Base 4:4.5.3
  _ZNK4QFtp13currentDeviceEv@Base 4:4.5.3
@@ -1108,6 +1155,7 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZNK9QHostInfo8hostNameEv@Base 4:4.5.3
  _ZNK9QHostInfo8lookupIdEv@Base 4:4.5.3
  _ZNK9QHostInfo9addressesEv@Base 4:4.5.3
+ _ZNK9QHttpParteqERKS_@Base 4:4.8.0
  _ZNK9QSslError11certificateEv@Base 4:4.5.3
  _ZNK9QSslError11errorStringEv@Base 4:4.5.3
  _ZNK9QSslError5errorEv@Base 4:4.5.3
@@ -1122,6 +1170,7 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZTI12QLocalSocket@Base 4:4.5.3
  _ZTI13QBearerEngine@Base 4:4.7.0~beta1
  _ZTI13QNetworkReply@Base 4:4.5.3
+ _ZTI14QHttpMultiPart@Base 4:4.8.0
  _ZTI15QAbstractSocket@Base 4:4.5.3
  _ZTI15QNetworkSession@Base 4:4.7.0~beta1
  _ZTI17QFactoryInterface@Base 4:4.7.0~beta1
@@ -1150,6 +1199,7 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZTS12QLocalSocket@Base 4:4.5.3
  _ZTS13QBearerEngine@Base 4:4.7.0~beta1
  _ZTS13QNetworkReply@Base 4:4.5.3
+ _ZTS14QHttpMultiPart@Base 4:4.8.0
  _ZTS15QAbstractSocket@Base 4:4.5.3
  _ZTS15QNetworkSession@Base 4:4.7.0~beta1
  _ZTS17QFactoryInterface@Base 4:4.7.0~beta1
@@ -1177,6 +1227,7 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZTV12QLocalSocket@Base 4:4.5.3
  _ZTV13QBearerEngine@Base 4:4.7.0~beta1
  _ZTV13QNetworkReply@Base 4:4.5.3
+ _ZTV14QHttpMultiPart@Base 4:4.8.0
  _ZTV15QAbstractSocket@Base 4:4.5.3
  _ZTV15QNetworkSession@Base 4:4.7.0~beta1
  _ZTV17QFactoryInterface@Base 4:4.7.0~beta1

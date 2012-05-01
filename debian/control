@@ -6,8 +6,9 @@ Uploaders: Fathi Boudra <fabo@debian.org>,
            Modestas Vainius <modax@debian.org>,
            Sune Vuorela <debian@pusling.com>,
            Pino Toscano <pino@debian.org>
-Build-Depends: debhelper (>= 7.4.13),
-               firebird2.5-dev [amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sh4 sparc],
+Build-Depends: debhelper (>= 9),
+               dpkg-dev (>= 1.16.1),
+               firebird-dev [amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sh4 sparc],
                flex,
                freetds-dev,
                g++ (>= 4:4.5) [s390],
@@ -24,6 +25,7 @@ Build-Depends: debhelper (>= 7.4.13),
                libgstreamer0.10-dev,
                libgtk2.0-dev,
                libice-dev,
+               libicu-dev,
                libjpeg-dev,
                libmng-dev,
                libmysqlclient-dev,
@@ -49,7 +51,7 @@ Build-Depends: debhelper (>= 7.4.13),
                libxt-dev,
                libxtst-dev,
                libxv-dev,
-               pkg-kde-tools (>= 0.6.4),
+               pkg-kde-tools (>= 0.14.2),
                rsync,
                unixodbc-dev,
                zlib1g-dev
@@ -60,7 +62,10 @@ Vcs-Browser: http://git.debian.org/?p=pkg-kde/qt/qt4-x11.git;a=summary
 
 Package: libqtcore4
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
+Suggests: libthai0
 Replaces: libqt4-core (<< 4.4.0~beta1-1), libqt4-gui (<< 4.4.0~beta1-1)
 Breaks: libqt4-core (<< 4.4.0~beta1-1), libqt4-gui (<< 4.4.0~beta1-1)
 Description: Qt 4 core module
@@ -89,6 +94,8 @@ Description: transitional package for Qt 4 core non-GUI runtime libraries
 
 Package: libqtgui4
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: fontconfig, ${misc:Depends}, ${shlibs:Depends}
 Recommends: libcups2
 Suggests: qt4-qtconfig
@@ -125,6 +132,8 @@ Description: transitional package for Qt 4 GUI runtime libraries
 
 Package: libqt4-network
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libqt4-core (<< 4.4.0~beta1-1)
 Replaces: libqt4-core (<< 4.4.0~beta1-1)
@@ -137,6 +146,8 @@ Description: Qt 4 network module
 
 Package: libqt4-opengl
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libqt4-gui (<< 4.4.0~beta1-1)
 Replaces: libqt4-gui (<< 4.4.0~beta1-1)
@@ -152,6 +163,8 @@ Description: Qt 4 OpenGL module
 
 Package: libqt4-script
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libqt4-core (<< 4.4.0~beta1-1)
 Replaces: libqt4-core (<< 4.4.0~beta1-1)
@@ -163,6 +176,8 @@ Description: Qt 4 script module
 
 Package: libqt4-scripttools
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Qt 4 script tools module
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -176,6 +191,8 @@ Description: Qt 4 script tools module
 
 Package: libqt4-sql
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Recommends: libqt4-sql-mysql | libqt4-sql-odbc | libqt4-sql-psql | libqt4-sql-sqlite | libqt4-sql-sqlite2 | libqt4-sql-ibase [amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sh4 sparc]
 Suggests: libqt4-dev
@@ -191,6 +208,8 @@ Description: Qt 4 SQL module
 
 Package: libqt4-sql-ibase
 Architecture: amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sh4 sparc
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Suggests: libqt4-dev
 Description: Qt 4 InterBase/FireBird database driver
@@ -201,6 +220,8 @@ Description: Qt 4 InterBase/FireBird database driver
 
 Package: libqt4-sql-mysql
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Suggests: libqt4-dev
 Description: Qt 4 MySQL database driver
@@ -211,6 +232,8 @@ Description: Qt 4 MySQL database driver
 
 Package: libqt4-sql-odbc
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Suggests: libqt4-dev
 Description: Qt 4 ODBC database driver
@@ -221,6 +244,8 @@ Description: Qt 4 ODBC database driver
 
 Package: libqt4-sql-psql
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Suggests: libqt4-dev
 Description: Qt 4 PostgreSQL database driver
@@ -231,6 +256,8 @@ Description: Qt 4 PostgreSQL database driver
 
 Package: libqt4-sql-sqlite
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Suggests: libqt4-dev
 Description: Qt 4 SQLite 3 database driver
@@ -241,6 +268,8 @@ Description: Qt 4 SQLite 3 database driver
 
 Package: libqt4-sql-sqlite2
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Suggests: libqt4-dev
 Description: Qt 4 SQLite 2 database driver
@@ -251,6 +280,8 @@ Description: Qt 4 SQLite 2 database driver
 
 Package: libqt4-sql-tds
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Suggests: libqt4-dev
 Description: Qt 4 FreeTDS database driver
@@ -261,6 +292,8 @@ Description: Qt 4 FreeTDS database driver
 
 Package: libqt4-svg
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libqt4-gui (<< 4.4.0~beta1-1)
 Replaces: libqt4-gui (<< 4.4.0~beta1-1)
@@ -287,6 +320,8 @@ Description: transitional package for Qt 4 WebKit module
 
 Package: libqt4-xml
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libqt4-core (<< 4.4.0~beta1-1)
 Replaces: libqt4-core (<< 4.4.0~beta1-1)
@@ -299,6 +334,8 @@ Description: Qt 4 XML module
 
 Package: libqt4-xmlpatterns
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Qt 4 XML patterns module
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -308,6 +345,8 @@ Description: Qt 4 XML patterns module
 
 Package: libqt4-dbus
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: qdbus (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Replaces: libqt4-core (<< 4.4.0~beta1-1), libqt4-dev (<< 4:4.7.1)
 Breaks: libqt4-core (<< 4.4.0~beta1-1), libqt4-dev (<< 4:4.7.1)
@@ -324,6 +363,8 @@ Description: Qt 4 D-Bus module
 
 Package: libqt4-qt3support
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libqt4-gui (<< 4.2.1-1), qt4-designer (<< 4.4.0~beta1-1)
 Replaces: libqt4-gui (<< 4.2.1-1), qt4-designer (<< 4.4.0~beta1-1)
@@ -339,6 +380,8 @@ Description: Qt 3 compatibility library for Qt 4
 
 Package: libqt4-designer
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libqt4-gui (<< 4.4.0~beta1-1)
 Replaces: libqt4-gui (<< 4.4.0~beta1-1)
@@ -352,6 +395,8 @@ Description: Qt 4 designer module
 
 Package: libqt4-help
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Qt 4 help module
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -374,6 +419,8 @@ Description: transitional package for Qt 4 assistant module
 
 Package: libqt4-test
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libqt4-core (<< 4.4.0~beta1-1)
 Replaces: libqt4-core (<< 4.4.0~beta1-1)
@@ -386,6 +433,8 @@ Description: Qt 4 test module
 
 Package: libqt4-phonon
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Conflicts: libphonon4
 Breaks: kdelibs5 (<= 4:4.0.80)
@@ -403,6 +452,8 @@ Description: Qt 4 Phonon module
 
 Package: libqt4-declarative
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Suggests: libqt4-declarative-folderlistmodel,
           libqt4-declarative-gestures,
@@ -418,6 +469,8 @@ Description: Qt 4 Declarative module
 
 Package: libqt4-declarative-folderlistmodel
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Qt 4 folderlistmodel QML plugin
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -427,6 +480,8 @@ Description: Qt 4 folderlistmodel QML plugin
 
 Package: libqt4-declarative-gestures
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Qt 4 gestures QML plugin
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -436,6 +491,8 @@ Description: Qt 4 gestures QML plugin
 
 Package: libqt4-declarative-particles
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Qt 4 particles QML plugin
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -445,6 +502,8 @@ Description: Qt 4 particles QML plugin
 
 Package: libqt4-declarative-shaders
 Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Qt 4 shaders QML plugin
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -470,16 +529,16 @@ Depends: libqt4-dbus (= ${binary:Version}),
          libqt4-xmlpatterns (= ${binary:Version}),
          libqtcore4 (= ${binary:Version}),
          libqtgui4 (= ${binary:Version}),
+         libqt4-dev-bin (= ${binary:Version}),
          qt4-linguist-tools (= ${binary:Version}),
          qt4-qmake (= ${binary:Version}),
-         ${misc:Depends},
-         ${shlibs:Depends}
+         ${misc:Depends}
 Recommends: libqt4-opengl-dev (= ${binary:Version}), libqtwebkit-dev (>= 2.0~)
 Breaks: g++-4.6 (<< 4.6.0-7~) [armel],
         libqt4-opengl-dev (<< 4.4.0-2),
         libqtwebkit-dev (<< 2.0~)
 Replaces: libqt4-opengl-dev (<< 4.4.0-2), libqtwebkit-dev (<< 2.0~)
-Suggests: firebird2.1-dev,
+Suggests: firebird-dev,
           libmysqlclient-dev,
           libpq-dev,
           libsqlite0-dev,
@@ -491,8 +550,22 @@ Description: Qt 4 development files
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
- This package contains the header development files and development programs
- used for building Qt 4 applications.
+ This package contains the header development files used for building Qt 4
+ applications.
+
+Package: libqt4-dev-bin
+Architecture: any
+Multi-Arch: foreign
+Section: devel
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Breaks: libqt4-dev (<< 4:4.8.0-2)
+Replaces: libqt4-dev (<< 4:4.8.0-2)
+Description: Qt 4 development programs
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the development programs used for building Qt 4
+ applications.
 
 Package: libqt4-private-dev
 Architecture: any
@@ -584,9 +657,9 @@ Description: Qt 4 script library debugging symbols
  This package contains the debugging symbols for the Qt 4 Script library.
 
 Package: libqt4-webkit-dbg
-Priority: extra
 Architecture: any
 Section: debug
+Priority: extra
 Depends: libqtwebkit4-dbg (>= 2.0~), ${misc:Depends}
 Description: transitional package for Qt 4 WebKit debugging symbols
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -666,11 +739,12 @@ Description: Qt 4 development tools
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains tools used to assist in Qt 4 development, including
- the Qt Assistant, Linguist, D-Bus Viewer, Pixel Tool and Virtual
- Framebuffer applications.
+ the Qt Assistant, Linguist, D-Bus Viewer, Pixel Tool, Virtual Framebuffer and
+ QML Plugin Dump applications.
 
 Package: qt4-qmake
 Architecture: any
+Multi-Arch: foreign
 Section: devel
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libqt4-dev (<< 4.5.0~beta1+snapshot20090114-1)
@@ -722,6 +796,7 @@ Package: qt4-qmlviewer
 Architecture: any
 Section: devel
 Depends: ${misc:Depends}, ${shlibs:Depends}
+Recommends: imagemagick | gifsicle
 Description: Qt 4 QML viewer
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -731,6 +806,7 @@ Description: Qt 4 QML viewer
 
 Package: qt4-linguist-tools
 Architecture: any
+Multi-Arch: foreign
 Section: devel
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libqt4-dev (<< 4:4.7.3-2)
@@ -746,6 +822,7 @@ Description: Qt 4 Linguist tools
 
 Package: qdbus
 Architecture: any
+Multi-Arch: foreign
 Section: utils
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libqt4-dbus (<< 4:4.7.4-1)

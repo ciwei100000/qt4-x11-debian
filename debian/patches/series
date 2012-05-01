@@ -1,16 +1,8 @@
 # upstream patches
-Fix_builds_with_compilers_without_--with-fpu_neon_as_default.patch
-Update_createwindow_in_qgl_x11egl.patch
-Improve-performance-of-partial-updates-in-raster-win.patch
-Fix_transformIsSimple_in_QGraphicsScene.patch
-Micro-optimization_for_QSpanData.patch
-Some_Optimizations_for_the_gray_raster.patch
-Make_use_of_the_fast_image_paths.patch
 Add_support_for_QT_USE_DRAG_DISTANCE_env_var.patch
-Fixed_bug_in_X11_backend_when_creating_translucent_windows.patch
-Take_Xft.hintstyle_by_default_to_match_the_behavior_of_GTK+.patch
-Fix_fontconfig_usage_in_X11_font_database.patch
-Bug-fix-Allow-QTDIR-to-contain-regex-metacharacters.patch
+QTBUG-14724_close_orphaned_file_descriptors_after_printing.patch
+QTBUG-21900_Buttons_in_Qt_applications_not_clickable_when_run_under_gnome-shell.patch
+QTBUG-24718_Fix_a_crash_in_cursorToX_when_new_block_is_added.patch
 
 # qt-copy patches
 0195-compositing-properties.diff
@@ -47,13 +39,10 @@ powerpcspe.diff
 sh.diff
 kfreebsd_monotonic_clock.diff
 powerpc_designer_gstabs.diff
-armv6_Include_explicitly_IT_instructions.patch
-armv6_Add_support_for_ARMv7_atomic_operations.patch
+qt-multiarch-plugin-path-compat.diff
+fix_qvfb_build.patch
 s390x_jscore.diff
-blacklist-diginotar-cert.diff
-openssl_no_ssl2.patch
-Remove_QtHelp_dependency_on_QtXml.patch
+add_missing_method_for_QBasicAtomicPointer_on_s390.patch
 CVE-2011-3922.patch
-fix-format.diff
-gcc-4.7.diff
 qt_atomic_sparc64.patch
+gcc-4.7.diff
