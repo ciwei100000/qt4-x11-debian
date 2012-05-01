@@ -517,6 +517,7 @@ Section: libdevel
 Depends: libqt4-dbus (= ${binary:Version}),
          libqt4-declarative (= ${binary:Version}),
          libqt4-designer (= ${binary:Version}),
+         libqt4-dev-bin (= ${binary:Version}),
          libqt4-help (= ${binary:Version}),
          libqt4-network (= ${binary:Version}),
          libqt4-qt3support (= ${binary:Version}),
@@ -529,7 +530,6 @@ Depends: libqt4-dbus (= ${binary:Version}),
          libqt4-xmlpatterns (= ${binary:Version}),
          libqtcore4 (= ${binary:Version}),
          libqtgui4 (= ${binary:Version}),
-         libqt4-dev-bin (= ${binary:Version}),
          qt4-linguist-tools (= ${binary:Version}),
          qt4-qmake (= ${binary:Version}),
          ${misc:Depends}
@@ -616,8 +616,7 @@ Package: libqt4-designer-dbg
 Priority: extra
 Architecture: any
 Section: debug
-Depends: libqt4-designer (= ${binary:Version}),
-         ${misc:Depends}
+Depends: libqt4-designer (= ${binary:Version}), ${misc:Depends}
 Breaks: libqt4-dbg (<< 4:4.7.3-3)
 Replaces: libqt4-dbg (<< 4:4.7.3-3)
 Description: Qt 4 designer library debugging symbols
@@ -630,8 +629,7 @@ Package: libqt4-qt3support-dbg
 Priority: extra
 Architecture: any
 Section: debug
-Depends: libqt4-qt3support (= ${binary:Version}),
-         ${misc:Depends}
+Depends: libqt4-qt3support (= ${binary:Version}), ${misc:Depends}
 Breaks: libqt4-dbg (<< 4:4.7.3-3)
 Replaces: libqt4-dbg (<< 4:4.7.3-3)
 Description: Qt 3 compatibility library for Qt 4 debugging symbols
@@ -670,8 +668,7 @@ Package: libqt4-xmlpatterns-dbg
 Priority: extra
 Architecture: any
 Section: debug
-Depends: libqt4-xmlpatterns (= ${binary:Version}),
-         ${misc:Depends}
+Depends: libqt4-xmlpatterns (= ${binary:Version}), ${misc:Depends}
 Description: Qt 4 XML patterns library debugging symbols
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
