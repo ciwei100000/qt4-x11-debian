@@ -10,6 +10,11 @@ Author: Steve Langasek <steve.langasek@ubuntu.com>
 Author: Felix Geyer <debfx-pkg@fobos.de>
 Last-Update: 2012-04-25
 
+---
+ src/corelib/kernel/qcoreapplication.cpp    |   17 +++++++++++++++++
+ src/declarative/qml/qdeclarativeimport.cpp |   16 ++++++++++++++++
+ 2 files changed, 33 insertions(+)
+
 --- a/src/corelib/kernel/qcoreapplication.cpp
 +++ b/src/corelib/kernel/qcoreapplication.cpp
 @@ -2398,6 +2398,23 @@ QStringList QCoreApplication::libraryPat
@@ -36,9 +41,9 @@ Last-Update: 2012-04-25
  #endif
  
          // If QCoreApplication is not yet instantiated,
---- a/src/declarative/qml/qdeclarativeimport.cpp	2012-03-14 15:01:13.000000000 +0100
-+++ b/src/declarative/qml/qdeclarativeimport.cpp	2012-04-17 15:13:10.811520930 +0200
-@@ -751,6 +751,22 @@
+--- a/src/declarative/qml/qdeclarativeimport.cpp
++++ b/src/declarative/qml/qdeclarativeimport.cpp
+@@ -751,6 +751,22 @@ QDeclarativeImportDatabase::QDeclarative
          addImportPath(installImportsPath);
      }
  #else

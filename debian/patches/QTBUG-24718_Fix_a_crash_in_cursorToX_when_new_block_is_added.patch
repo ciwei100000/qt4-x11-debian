@@ -13,11 +13,11 @@ Reviewed-by: Eskil Abrahamsen Blomfeldt <eskil.abrahamsen-blomfeldt@nokia.com>
 Bug: https://bugreports.qt-project.org/browse/QTBUG-24718
 ---
  src/gui/text/qtextlayout.cpp |    4 ++++
- 1 files changed, 4 insertions(+), 0 deletions(-)
+ 1 file changed, 4 insertions(+)
 
 --- a/src/gui/text/qtextlayout.cpp
 +++ b/src/gui/text/qtextlayout.cpp
-@@ -2508,6 +2508,10 @@ qreal QTextLine::cursorToX(int *cursorPos, Edge edge) const
+@@ -2508,6 +2508,10 @@ qreal QTextLine::cursorToX(int *cursorPo
      int pos = *cursorPos;
      int itm;
      const HB_CharAttributes *attributes = eng->attributes();
