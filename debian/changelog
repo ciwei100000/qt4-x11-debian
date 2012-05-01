@@ -40,6 +40,8 @@ qt4-x11 (4:4.8.1-1) unstable; urgency=low
   * Fix build failures with GCC 4.7; patch gcc-4.7.diff. (Closes: #667911)
   * Fix atomic support on sparc64, by Aurelien Jarno (thanks!);
     patch qt_atomic_sparc64.patch. (Closes: #647265)
+  * Remove ${shlibs:Depends} from all the -dbg packages.
+  * Compress qt4-doc-html as XZ.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 01 May 2012 12:15:56 +0300
 
