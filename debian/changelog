@@ -1,5 +1,10 @@
 qt4-x11 (4:4.8.1-2) UNRELEASED; urgency=low
 
+  [ Didier Raboud ]
+  * Add libqt4-dev Breaks against libphonon-dev << 4:4.6.0.0-1+exp1~
+    because otherwise phonon might not be there in its multiarch'ed
+    version, hence might not be detected by the usual cmake Qt modules
+    detectors.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 03 May 2012 21:58:22 +0200
 
