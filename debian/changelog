@@ -6,6 +6,9 @@ qt4-x11 (4:4.8.1-2) UNRELEASED; urgency=low
     version, hence might not be detected by the usual cmake Qt modules
     detectors.
 
+  [ Pino Toscano ]
+  * Change the Homepage to http://qt-project.org/.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 03 May 2012 21:58:22 +0200
 
 qt4-x11 (4:4.8.1-1) unstable; urgency=low
