@@ -46,3 +46,4 @@ add_missing_method_for_QBasicAtomicPointer_on_s390.patch
 CVE-2011-3922.patch
 qt_atomic_sparc64.patch
 gcc-4.7.diff
+qelfreader_fix.diff

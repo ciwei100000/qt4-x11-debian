@@ -8,6 +8,8 @@ qt4-x11 (4:4.8.1-2) UNRELEASED; urgency=low
 
   [ Pino Toscano ]
   * Change the Homepage to http://qt-project.org/.
+  * Add patch qelfreader_fix.diff to fix plugin loading on big endian 64 bit
+    architectures, such as s390x and ppc64.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 03 May 2012 21:58:22 +0200
 

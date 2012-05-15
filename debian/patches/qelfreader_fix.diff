@@ -1,0 +1,32 @@
+Author: Pino Toscano <toscano.pino@tiscali.it>
+Description: QElfParser: fix type of sh_size
+ The type of the sh_size field of a section header is either Elf32_Word or
+ Elf64_Xword, so the type used cannot be qelfword_t (always 32 bits) but
+ qelfoff_t.
+Last-Update: 2012-05-15
+Forwarded: https://codereview.qt-project.org/#change,26252 (for qt5, still not for qt4)
+
+--- a/src/corelib/plugin/qelfparser_p.cpp
++++ b/src/corelib/plugin/qelfparser_p.cpp
+@@ -61,8 +61,8 @@ const char *QElfParser::parseSectionHead
+          + sizeof(qelfaddr_t);  // sh_addr
+     sh->offset = read<qelfoff_t>(data);
+     data += sizeof(qelfoff_t);  // sh_offset
+-    sh->size = read<qelfword_t>(data);
+-    data += sizeof(qelfword_t); // sh_size
++    sh->size = read<qelfoff_t>(data);
++    data += sizeof(qelfoff_t);  // sh_size
+     return data;
+ }
+ 
+--- a/src/corelib/plugin/qelfparser_p.h
++++ b/src/corelib/plugin/qelfparser_p.h
+@@ -80,7 +80,7 @@ public:
+         qelfword_t name;
+         qelfword_t type;
+         qelfoff_t  offset;
+-        qelfword_t size;
++        qelfoff_t  size;
+     };
+ 
+     int m_endian;
