@@ -28,7 +28,7 @@ Trolltech task ID : 181882
 +		UNAME_MACHINE="armv5tel"
 +	;;
 +	hppa)
-+		UNAME_MACHINE="parisc64"
++		UNAME_MACHINE="parisc"
 +	;;
 +	hurd-i386)
 +		UNAME_MACHINE="i686-AT386"
