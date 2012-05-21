@@ -12,6 +12,7 @@ qt4-x11 (4:4.8.1-2) UNRELEASED; urgency=low
     fix plugin loading on big endian 64 bit architectures, such as s390x and
     ppc64; patch QElfParser-fix-type-of-sh_size.patch.
   * 07_trust_dpkg-arch_over_uname-m.diff: fix the hppa case (see bug #672825).
+  * Suggest libicu48 in libqtcore4 for the optional locale functions.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 03 May 2012 21:58:22 +0200
 
