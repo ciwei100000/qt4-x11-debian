@@ -13,6 +13,8 @@ qt4-x11 (4:4.8.1-2) UNRELEASED; urgency=low
     ppc64; patch QElfParser-fix-type-of-sh_size.patch.
   * 07_trust_dpkg-arch_over_uname-m.diff: fix the hppa case (see bug #672825).
   * Suggest libicu48 in libqtcore4 for the optional locale functions.
+  * Disable the warnings about not being able to load ICU libraries;
+    patch no_libicu_message.diff. (together with the above it Closes: #673537)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 03 May 2012 21:58:22 +0200
 
