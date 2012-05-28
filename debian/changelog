@@ -19,6 +19,7 @@ qt4-x11 (4:4.8.1-2) UNRELEASED; urgency=low
     libqt4-script-dbg, libqt4-xmlpatterns-dbg, qt4-bin-dbg, and qt4-demos-dbg.
   * Override the two lintian warnings for dbg-package-missing-depends, since
     they are false positives.
+  * Fix a hypen-as-minus issue in moc-qt4 man page.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 03 May 2012 21:58:22 +0200
 
