@@ -658,7 +658,7 @@ Description: Qt 4 script library debugging symbols
 
 Package: libqt4-webkit-dbg
 Architecture: any
-Section: debug
+Section: oldlibs
 Priority: extra
 Depends: libqtwebkit4-dbg (>= 2.0~), ${misc:Depends}
 Description: transitional package for Qt 4 WebKit debugging symbols
