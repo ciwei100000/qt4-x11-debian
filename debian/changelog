@@ -15,6 +15,8 @@ qt4-x11 (4:4.8.1-2) UNRELEASED; urgency=low
   * Suggest libicu48 in libqtcore4 for the optional locale functions.
   * Disable the warnings about not being able to load ICU libraries;
     patch no_libicu_message.diff. (together with the above it Closes: #673537)
+  * Recommend libqt4-dbg in libqt4-designer-dbg, libqt4-qt3support-dbg,
+    libqt4-script-dbg, libqt4-xmlpatterns-dbg, qt4-bin-dbg, and qt4-demos-dbg.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 03 May 2012 21:58:22 +0200
 
