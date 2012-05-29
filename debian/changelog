@@ -22,6 +22,8 @@ qt4-x11 (4:4.8.1-2) UNRELEASED; urgency=low
   * Fix a hypen-as-minus issue in moc-qt4 man page.
   * Change the section of libqt4-webkit-dbg to oldlibs, since it is a
     transitional package.
+  * Small touches to the descriptions of packages, including specifying some
+    of the tools included in libqt4-dev-bin and qt4-dev-tools.
 
   [ Felix Geyer ]
   * Update watch file to the new URL on qt-project.org.
