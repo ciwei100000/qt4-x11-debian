@@ -15,5 +15,5 @@ Description: Add armv6 uname entry for armhf
 +		UNAME_MACHINE="armv6"
 +	;;
  	hppa)
- 		UNAME_MACHINE="parisc64"
+ 		UNAME_MACHINE="parisc"
  	;;
