@@ -1,7 +1,8 @@
-# SymbolsHelper-Confirmed: 4:4.8.1 amd64 i386
+# SymbolsHelper-Confirmed: 4:4.8.1 amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
 libQtGui.so.4 libqtgui4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qDrawArrowP8QPainterN2Qt9ArrowTypeENS1_8GUIStyleEbiiiiRK8QPaletteb@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !ia64 !kfreebsd-amd64)_Z10qt_memfillIhEvPT_S0_i@Base 4:4.8.1
  _Z10qt_x11InfoPK12QPaintDevice@Base 4:4.5.3
  _Z11qFadeEffectP7QWidgeti@Base 4:4.5.3
  _Z11qt_image_idRK6QImage@Base 4:4.5.3
@@ -81,7 +82,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _Z6bitBltP12QPaintDeviceiiPKS_iiiib@Base 4:4.5.3
  _Z6bitBltP6QImageiiPKS_iiii6QFlagsIN2Qt19ImageConversionFlagEE@Base 4:4.5.3
  _Z7copyBltP7QPixmapiiPKS_iiii@Base 4:4.5.3
- (arch=!amd64 !armel !armhf !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc)_Z8qWarningv@Base 4:4.7.2
+ (optional=external|arch=!amd64 !armel !armhf !hurd-i386 !i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386 !sparc)_Z8qWarningv@Base 4:4.7.2
  _Z9qDrawItemP8QPainterN2Qt8GUIStyleEiiiiiRK8QPalettebPK7QPixmapRK7QStringiPK6QColor@Base 4:4.5.3
  _Z9qGeomCalcR7QVectorI13QLayoutStructEiiiii@Base 4:4.5.3
  _Z9qItemRectP8QPainterN2Qt8GUIStyleEiiiiibPK7QPixmapRK7QStringi@Base 4:4.5.3
@@ -127,7 +128,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN10QBoxLayoutD0Ev@Base 4:4.5.3
  _ZN10QBoxLayoutD1Ev@Base 4:4.5.3
  _ZN10QBoxLayoutD2Ev@Base 4:4.5.3
- (arch=ia64)_ZN10QByteArray4dataEv@Base 4:4.7.2
  _ZN10QClipboard11dataChangedEv@Base 4:4.5.3
  _ZN10QClipboard11emitChangedENS_4ModeE@Base 4:4.5.3
  _ZN10QClipboard11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -6777,7 +6777,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN6QLabelD0Ev@Base 4:4.5.3
  _ZN6QLabelD1Ev@Base 4:4.5.3
  _ZN6QLabelD2Ev@Base 4:4.5.3
- (arch=ia64)_ZN6QLineF9setLengthEd@Base 4:4.7.2
  _ZN6QMovie10scaledSizeEv@Base 4:4.5.3
  _ZN6QMovie11jumpToFrameEi@Base 4:4.5.3
  _ZN6QMovie11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -6813,7 +6812,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN6QMovieD1Ev@Base 4:4.5.3
  _ZN6QMovieD2Ev@Base 4:4.5.3
  (arch=hurd-i386 i386 kfreebsd-i386 mips mipsel powerpc s390)_ZN6QRectFC1ERK5QRect@Base 4:4.8.0
- (arch=i386 kfreebsd-i386 mips mipsel powerpc s390)_ZN6QRectFC2ERK5QRect@Base 4:4.8.0
+ (arch=hurd-i386 i386 kfreebsd-i386 mips mipsel powerpc s390)_ZN6QRectFC2ERK5QRect@Base 4:4.8.1
  _ZN6QSound11isAvailableEv@Base 4:4.5.3
  _ZN6QSound11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN6QSound11qt_metacastEPKc@Base 4:4.5.3
@@ -7658,7 +7657,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN8QPictureD1Ev@Base 4:4.5.3
  _ZN8QPictureD2Ev@Base 4:4.5.3
  _ZN8QPictureaSERKS_@Base 4:4.5.3
- (arch=ia64)_ZN8QPolygon8setPointEiii@Base 4:4.7.2
  _ZN8QPolygon9putPointsEiiPKi@Base 4:4.5.3
  _ZN8QPolygon9putPointsEiiRKS_i@Base 4:4.5.3
  _ZN8QPolygon9putPointsEiiiiz@Base 4:4.5.3
@@ -7860,9 +7858,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN8QX11InfoD1Ev@Base 4:4.5.3
  _ZN8QX11InfoD2Ev@Base 4:4.5.3
  _ZN8QX11InfoaSERKS_@Base 4:4.5.3
- (arch=ia64)_ZN9QBitArray6setBitEib@Base 4:4.7.2
- (arch=armel armhf mips mipsel powerpc s390 sparc)_ZN9QBitArrayD1Ev@Base 4:4.8.0
- (arch=armel armhf mips mipsel powerpc s390 sparc)_ZN9QBitArrayD2Ev@Base 4:4.8.0
+ (optional=external|arch=armel armhf mips mipsel powerpc s390 s390x sparc)_ZN9QBitArrayD1Ev@Base 4:4.8.1
+ (optional=external|arch=armel armhf mips mipsel powerpc s390 s390x sparc)_ZN9QBitArrayD2Ev@Base 4:4.8.1
  _ZN9QCDEStyle11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN9QCDEStyle11qt_metacastEPKc@Base 4:4.5.3
  _ZN9QCDEStyle16staticMetaObjectE@Base 4:4.5.3
@@ -8088,8 +8085,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN9QGtkStyleD0Ev@Base 4:4.5.3
  _ZN9QGtkStyleD1Ev@Base 4:4.5.3
  _ZN9QGtkStyleD2Ev@Base 4:4.5.3
- (arch=ia64)_ZN9QHashData8willGrowEv@Base 4:4.7.2
- (arch=ia64)_ZN9QHashData9hasShrunkEv@Base 4:4.7.2
  _ZN9QKeyEvent22createExtendedKeyEventEN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEEjjjRK7QStringbt@Base 4:4.5.3
  _ZN9QKeyEventC1EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEERK7QStringbt@Base 4:4.5.3
  _ZN9QKeyEventC2EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEERK7QStringbt@Base 4:4.5.3
@@ -8765,7 +8760,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK10QTransform7mapRectERK5QRect@Base 4:4.5.3
  _ZNK10QTransform7mapRectERK6QRectF@Base 4:4.5.3
  _ZNK10QTransform8invertedEPb@Base 4:4.5.3
- (arch=ia64)_ZNK10QTransform8isAffineEv@Base 4:4.7.2
  _ZNK10QTransform8toAffineEv@Base 4:4.5.3
  _ZNK10QTransformcv8QVariantEv@Base 4:4.5.3
  _ZNK10QTransformeqERKS_@Base 4:4.5.3
@@ -11322,7 +11316,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK5QMenu7isEmptyEv@Base 4:4.5.3
  _ZNK5QMenu8actionAtERK6QPoint@Base 4:4.5.3
  _ZNK5QMenu8sizeHintEv@Base 4:4.5.3
- (arch=ia64)_ZNK5QRect6centerEv@Base 4:4.7.2
  _ZNK6QBrush12textureImageEv@Base 4:4.5.3
  _ZNK6QBrush6pixmapEv@Base 4:4.5.3
  _ZNK6QBrush7textureEv@Base 4:4.5.3
@@ -11360,7 +11353,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK6QColor5valueEv@Base 4:4.5.3
  _ZNK6QColor6alphaFEv@Base 4:4.5.3
  _ZNK6QColor6blackFEv@Base 4:4.5.3
-#MISSING: 4:4.8.0# (arch=armel)_ZNK6QColor6darkerEi@Base 4:4.7.2
  _ZNK6QColor6getHslEPiS0_S0_S0_@Base 4:4.6.1
  _ZNK6QColor6getHsvEPiS0_S0_S0_@Base 4:4.5.3
  _ZNK6QColor6getRgbEPiS0_S0_S0_@Base 4:4.5.3
@@ -11492,7 +11484,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK6QMovie9cacheModeEv@Base 4:4.5.3
  _ZNK6QMovie9frameRectEv@Base 4:4.5.3
  _ZNK6QMovie9loopCountEv@Base 4:4.5.3
- (optional=external|arch=!armel)_ZNK6QRectF6toRectEv@Base 4:4.7.2
+ (optional=external|arch=!armel !s390x)_ZNK6QRectF6toRectEv@Base 4:4.7.2
  _ZNK6QSound10isFinishedEv@Base 4:4.5.3
  _ZNK6QSound10metaObjectEv@Base 4:4.5.3
  _ZNK6QSound14loopsRemainingEv@Base 4:4.5.3
@@ -11643,7 +11635,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK7QPixmap9doImageIOEP12QImageWriteri@Base 4:4.5.3
  _ZNK7QPixmap9isQBitmapEv@Base 4:4.5.3
  _ZNK7QPixmapcv8QVariantEv@Base 4:4.5.3
- (arch=ia64)_ZNK7QPointF7toPointEv@Base 4:4.7.2
  _ZNK7QRegion10intersectsERK5QRect@Base 4:4.5.3
  _ZNK7QRegion10intersectsERKS_@Base 4:4.5.3
  _ZNK7QRegion10translatedEii@Base 4:4.5.3
@@ -12025,8 +12016,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK8QToolBox8itemIconEi@Base 4:4.5.3
  _ZNK8QToolBox8itemTextEi@Base 4:4.5.3
  (optional=templinst|arch=amd64 hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 s390x)_ZNK8QVariant5valueI5QFontEET_v@Base 4:4.7.2
- (optional=templinst|arch=!i386 !kfreebsd-i386 !mips !mipsel !powerpc !s390)_ZNK8QVariant5valueI6QImageEET_v@Base 4:4.7.2
- (optional=templinst|arch=!i386 !kfreebsd-i386 !mips !mipsel !powerpc !s390)_ZNK8QVariant5valueI7QPixmapEET_v@Base 4:4.7.2
+ (optional=templinst|arch=!hurd-i386 !i386 !kfreebsd-i386 !mips !mipsel !powerpc !s390 !sparc)_ZNK8QVariant5valueI6QImageEET_v@Base 4:4.7.2
+ (optional=templinst|arch=!hurd-i386 !i386 !kfreebsd-i386 !mips !mipsel !powerpc !s390)_ZNK8QVariant5valueI7QPixmapEET_v@Base 4:4.7.2
  _ZNK8QX11Info10getX11DataEb@Base 4:4.5.3
  _ZNK8QX11Info13defaultVisualEv@Base 4:4.5.3
  _ZNK8QX11Info15defaultColormapEv@Base 4:4.5.3

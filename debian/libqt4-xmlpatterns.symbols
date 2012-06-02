@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.0 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
+# SymbolsHelper-Confirmed: 4:4.8.1 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
 libQtXmlPatterns.so.4 libqt4-xmlpatterns #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z5qHashRK15QSourceLocation@Base 4:4.5.3
@@ -159,7 +159,6 @@ libQtXmlPatterns.so.4 libqt4-xmlpatterns #MINVER#
  _ZN8QXmlNameC2ER12QXmlNamePoolRK7QStringS4_S4_@Base 4:4.5.3
  _ZN8QXmlNameC2Ev@Base 4:4.5.3
  _ZN8QXmlNameaSERKS_@Base 4:4.5.3
- (arch=ia64)_ZN9QHashData8willGrowEv@Base 4:4.7.2
  _ZN9QXmlQuery12bindVariableERK7QStringP9QIODevice@Base 4:4.5.3
  _ZN9QXmlQuery12bindVariableERK7QStringRK8QXmlItem@Base 4:4.5.3
  _ZN9QXmlQuery12bindVariableERK7QStringRKS_@Base 4:4.5.3

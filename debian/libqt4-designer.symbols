@@ -1,11 +1,11 @@
-# SymbolsHelper-Confirmed: 4:4.8.0 amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
+# SymbolsHelper-Confirmed: 4:4.8.1 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
 libQtDesigner.so.4 libqt4-designer #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z20domPropertyToVariantP20QAbstractFormBuilderPK11QMetaObjectPK11DomProperty@Base 4:4.5.3
  _Z20domPropertyToVariantPK11DomProperty@Base 4:4.5.3
  _Z20variantToDomPropertyP20QAbstractFormBuilderPK11QMetaObjectRK7QStringRK8QVariant@Base 4:4.5.3
- (arch=armel)_Z6qDebugv@Base 4:4.8.0
- (arch=armel armhf mips mipsel s390)_Z8qWarningv@Base 4:4.8.0
+ (optional=external|arch=armel)_Z6qDebugv@Base 4:4.8.0
+ (optional=external|arch=armel armhf mips mipsel s390 s390x)_Z8qWarningv@Base 4:4.8.1
  _ZN10DomInclude4readER16QXmlStreamReader@Base 4:4.5.3
  _ZN10DomInclude5clearEb@Base 4:4.5.3
  _ZN10DomIncludeC1Ev@Base 4:4.5.3
@@ -662,8 +662,8 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN17QFormBuilderExtra16CustomWidgetDataC1Ev@Base 4:4.6.1
  _ZN17QFormBuilderExtra16CustomWidgetDataC2EPK15DomCustomWidget@Base 4:4.6.1
  _ZN17QFormBuilderExtra16CustomWidgetDataC2Ev@Base 4:4.6.1
- _ZN17QFormBuilderExtra16CustomWidgetDataD1Ev@Base 4:4.7.4
- _ZN17QFormBuilderExtra16CustomWidgetDataD2Ev@Base 4:4.7.4
+ (arch=!ia64)_ZN17QFormBuilderExtra16CustomWidgetDataD1Ev@Base 4:4.8.1
+ (arch=!ia64)_ZN17QFormBuilderExtra16CustomWidgetDataD2Ev@Base 4:4.8.1
  _ZN17QFormBuilderExtra16boxLayoutStretchEPK10QBoxLayout@Base 4:4.5.3
  _ZN17QFormBuilderExtra16clearTextBuilderEv@Base 4:4.5.3
  _ZN17QFormBuilderExtra16formScriptRunnerEv@Base 4:4.5.3
@@ -1272,9 +1272,9 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN18qdesigner_internal16AddActionCommandD1Ev@Base 4:4.7.4
  _ZN18qdesigner_internal16AddActionCommandD2Ev@Base 4:4.7.4
  _ZN18qdesigner_internal16DesignerMetaEnumC1ERK7QStringS3_S3_@Base 4:4.5.3
- (arch=!armel !armhf !mips !mipsel !s390)_ZN18qdesigner_internal16DesignerMetaEnumC1ERKS0_@Base 4:4.8.0
+ (arch=!armel !armhf !mips !mipsel !s390 !s390x)_ZN18qdesigner_internal16DesignerMetaEnumC1ERKS0_@Base 4:4.8.0
  _ZN18qdesigner_internal16DesignerMetaEnumC2ERK7QStringS3_S3_@Base 4:4.5.3
- (arch=!armel !armhf !mips !mipsel !s390)_ZN18qdesigner_internal16DesignerMetaEnumC2ERKS0_@Base 4:4.8.0
+ (arch=!armel !armhf !mips !mipsel !s390 !s390x)_ZN18qdesigner_internal16DesignerMetaEnumC2ERKS0_@Base 4:4.8.0
  _ZN18qdesigner_internal16DesignerMetaEnumD1Ev@Base 4:4.7.4
  _ZN18qdesigner_internal16DesignerMetaEnumD2Ev@Base 4:4.7.4
  _ZN18qdesigner_internal16LayoutProperties17fromPropertySheetEPK28QDesignerFormEditorInterfaceP7QLayouti@Base 4:4.5.3
@@ -1362,9 +1362,9 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN18qdesigner_internal17DesignerIconCacheD1Ev@Base 4:4.7.4
  _ZN18qdesigner_internal17DesignerIconCacheD2Ev@Base 4:4.7.4
  _ZN18qdesigner_internal17DesignerMetaFlagsC1ERK7QStringS3_S3_@Base 4:4.5.3
- (arch=!armel !armhf !mips !mipsel !s390)_ZN18qdesigner_internal17DesignerMetaFlagsC1ERKS0_@Base 4:4.8.0
+ (arch=!armel !armhf !mips !mipsel !s390 !s390x)_ZN18qdesigner_internal17DesignerMetaFlagsC1ERKS0_@Base 4:4.8.0
  _ZN18qdesigner_internal17DesignerMetaFlagsC2ERK7QStringS3_S3_@Base 4:4.5.3
- (arch=!armel !armhf !mips !mipsel !s390)_ZN18qdesigner_internal17DesignerMetaFlagsC2ERKS0_@Base 4:4.8.0
+ (arch=!armel !armhf !mips !mipsel !s390 !s390x)_ZN18qdesigner_internal17DesignerMetaFlagsC2ERKS0_@Base 4:4.8.0
  _ZN18qdesigner_internal17DesignerMetaFlagsD1Ev@Base 4:4.7.4
  _ZN18qdesigner_internal17DesignerMetaFlagsD2Ev@Base 4:4.7.4
  _ZN18qdesigner_internal17DockWidgetCommand4initEP11QDockWidget@Base 4:4.5.3
@@ -1970,10 +1970,10 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN18qdesigner_internal22PropertySheetEnumValueC2Ev@Base 4:4.5.3
  _ZN18qdesigner_internal22PropertySheetEnumValueD1Ev@Base 4:4.7.4
  _ZN18qdesigner_internal22PropertySheetEnumValueD2Ev@Base 4:4.7.4
- (arch=!armel !armhf !mips !mipsel !s390)_ZN18qdesigner_internal22PropertySheetFlagValueC1ERKS0_@Base 4:4.8.0
+ (arch=!armel !armhf !ia64 !mips !mipsel !s390 !s390x)_ZN18qdesigner_internal22PropertySheetFlagValueC1ERKS0_@Base 4:4.8.0
  _ZN18qdesigner_internal22PropertySheetFlagValueC1EiRKNS_17DesignerMetaFlagsE@Base 4:4.5.3
  _ZN18qdesigner_internal22PropertySheetFlagValueC1Ev@Base 4:4.5.3
- (arch=!armel !armhf !mips !mipsel !s390)_ZN18qdesigner_internal22PropertySheetFlagValueC2ERKS0_@Base 4:4.8.0
+ (arch=!armel !armhf !ia64 !mips !mipsel !s390 !s390x)_ZN18qdesigner_internal22PropertySheetFlagValueC2ERKS0_@Base 4:4.8.0
  _ZN18qdesigner_internal22PropertySheetFlagValueC2EiRKNS_17DesignerMetaFlagsE@Base 4:4.5.3
  _ZN18qdesigner_internal22PropertySheetFlagValueC2Ev@Base 4:4.5.3
  _ZN18qdesigner_internal22PropertySheetFlagValueD1Ev@Base 4:4.7.4
@@ -3214,7 +3214,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN8DomSlotsD2Ev@Base 4:4.5.3
  (arch=sparc)_ZN8QToolBox7addItemEP7QWidgetRK7QString@Base 4:4.8.0
  (optional=templinst|arch=!armel !armhf)_ZN8QVariant8setValueIN18qdesigner_internal22PropertySheetEnumValueEEEvRKT_@Base 4:4.8.0
- (optional=templinst|arch=!armel !armhf !mips !mipsel !s390 !sparc)_ZN8QVariant8setValueIN18qdesigner_internal22PropertySheetFlagValueEEEvRKT_@Base 4:4.8.0
+ (optional=templinst|arch=!armel !armhf !mips !mipsel !s390 !s390x !sparc)_ZN8QVariant8setValueIN18qdesigner_internal22PropertySheetFlagValueEEEvRKT_@Base 4:4.8.0
  (optional=templinst|arch=!armel !mips !mipsel !powerpc !s390)_ZN8QVariant9fromValueIN18qdesigner_internal29PropertySheetKeySequenceValueEEES_RKT_@Base 4:4.8.0
  _ZN9DomAction18setElementPropertyERK5QListIP11DomPropertyE@Base 4:4.5.3
  _ZN9DomAction19setElementAttributeERK5QListIP11DomPropertyE@Base 4:4.5.3
@@ -3310,8 +3310,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN9DomWidgetD2Ev@Base 4:4.5.3
  _ZN9QGradientD1Ev@Base 4:4.7.4
  _ZN9QGradientD2Ev@Base 4:4.7.4
- (arch=ia64)_ZN9QHashData8willGrowEv@Base 4:4.7.2
- (arch=ia64)_ZN9QHashData9hasShrunkEv@Base 4:4.7.2
  _ZNK10DomInclude5writeER16QXmlStreamWriterRK7QString@Base 4:4.5.3
  _ZNK10DomPalette5writeER16QXmlStreamWriterRK7QString@Base 4:4.5.3
  _ZNK11DomDateTime5writeER16QXmlStreamWriterRK7QString@Base 4:4.5.3
@@ -4685,15 +4683,13 @@ libQtDesignerComponents.so.4 libqt4-designer #MINVER#
  (arch=!mips !mipsel)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.7.4
  _ZN22QStyleOptionViewItemV3D1Ev@Base 4:4.7.4
  _ZN22QStyleOptionViewItemV3D2Ev@Base 4:4.7.4
- (arch=ia64)_ZN7QString5clearEv@Base 4:4.7.2
  (optional=templinst|arch=!armel !armhf)_ZN8QVariant8setValueI4QMapIi5QIconEEEvRKT_@Base 4:4.8.0
  (optional=templinst|arch=!armel !armhf)_ZN8QVariant8setValueI5QListI5QPairI7QStringjEEEEvRKT_@Base 4:4.8.0
  (optional=templinst|arch=!mips !mipsel !powerpc !s390)_ZN8QVariant9fromValueIN18qdesigner_internal22PropertySheetIconValueEEES_RKT_@Base 4:4.8.0
  (optional=templinst|arch=!mips !mipsel !powerpc !s390)_ZN8QVariant9fromValueIN18qdesigner_internal24PropertySheetPixmapValueEEES_RKT_@Base 4:4.8.0
  (optional=templinst|arch=!mips !mipsel !powerpc !s390)_ZN8QVariant9fromValueIN18qdesigner_internal24PropertySheetStringValueEEES_RKT_@Base 4:4.8.0
  (optional=templinst|arch=!mips !mipsel !powerpc !s390)_ZN8QVariant9fromValueIN18qdesigner_internal29PropertySheetKeySequenceValueEEES_RKT_@Base 4:4.8.0
- (arch=mips)_ZN9QHashData8willGrowEv@Base 4:4.8.0
- (arch=ia64 mips mipsel)_ZN9QHashData9hasShrunkEv@Base 4:4.7.2
+ (optional=external|arch=mips mipsel)_ZN9QHashData9hasShrunkEv@Base 4:4.7.2
  (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP20QtIntPropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
  (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP21QtBoolPropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
  (optional=templinst|arch=armel)_ZNK7QObject12findChildrenIP21QtCharPropertyManagerEE5QListIT_ERK7QString@Base 4:4.8.0
