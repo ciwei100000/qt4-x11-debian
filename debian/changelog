@@ -28,6 +28,8 @@ qt4-x11 (4:4.8.1-2) UNRELEASED; urgency=low
   [ Felix Geyer ]
   * Update watch file to the new URL on qt-project.org.
 
+  [ Modestas Vainius ]
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 03 May 2012 21:58:22 +0200
 
 qt4-x11 (4:4.8.1-1) unstable; urgency=low
