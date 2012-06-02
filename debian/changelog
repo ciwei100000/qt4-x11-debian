@@ -1,4 +1,6 @@
-qt4-x11 (4:4.8.1-2) UNRELEASED; urgency=low
+qt4-x11 (4:4.8.1-2) unstable; urgency=low
+
+  * Team upload.
 
   [ Didier Raboud ]
   * Add libqt4-dev Breaks against libphonon-dev << 4:4.6.0.0-1+exp1~
@@ -31,7 +33,7 @@ qt4-x11 (4:4.8.1-2) UNRELEASED; urgency=low
   [ Modestas Vainius ]
   * Confirm symbol files on all Debian arches.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 03 May 2012 21:58:22 +0200
+ -- Modestas Vainius <modax@debian.org>  Sat, 02 Jun 2012 16:05:32 +0300
 
 qt4-x11 (4:4.8.1-1) unstable; urgency=low
 
