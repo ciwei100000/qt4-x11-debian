@@ -2,6 +2,11 @@ qt4-x11 (4:4.8.2-0r1) UNRELEASED; urgency=low
 
   * New upstream release.
 
+  * Drop patches, merged/stolen from upstream:
+    - QTBUG-24718_Fix_a_crash_in_cursorToX_when_new_block_is_added.patch
+    - fix_qvfb_build.patch
+    - gcc-4.7.diff
+
  -- Modestas Vainius <modax@debian.org>  Sat, 09 Jun 2012 23:53:49 +0300
 
 qt4-x11 (4:4.8.1-2) unstable; urgency=low
