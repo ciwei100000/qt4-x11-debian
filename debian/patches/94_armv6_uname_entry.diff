@@ -7,7 +7,7 @@ Description: Add armv6 uname entry for armhf
 
 --- a/configure
 +++ b/configure
-@@ -182,6 +182,9 @@ case $DPKG_ARCH in
+@@ -242,6 +242,9 @@ case $DPKG_ARCH in
  	armel)
  		UNAME_MACHINE="armv5tel"
  	;;

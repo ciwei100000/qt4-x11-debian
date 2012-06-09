@@ -17,7 +17,7 @@ Last-Update: 2012-04-25
 
 --- a/src/corelib/kernel/qcoreapplication.cpp
 +++ b/src/corelib/kernel/qcoreapplication.cpp
-@@ -2398,6 +2398,23 @@ QStringList QCoreApplication::libraryPat
+@@ -2437,6 +2437,23 @@ QStringList QCoreApplication::libraryPat
              if (!app_libpaths->contains(installPathPlugins))
                  app_libpaths->append(installPathPlugins);
          }

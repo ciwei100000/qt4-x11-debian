@@ -15,11 +15,9 @@ Reviewed-by: Arvid Picciani <arvid.picciani@nokia.com>
  src/corelib/plugin/qelfparser_p.h   |    2 +-
  2 files changed, 3 insertions(+), 3 deletions(-)
 
-diff --git a/src/corelib/plugin/qelfparser_p.cpp b/src/corelib/plugin/qelfparser_p.cpp
-index cfe9a9d..33fff42 100644
 --- a/src/corelib/plugin/qelfparser_p.cpp
 +++ b/src/corelib/plugin/qelfparser_p.cpp
-@@ -61,8 +61,8 @@ const char *QElfParser::parseSectionHeader(const char *data, ElfSectionHeader *s
+@@ -61,8 +61,8 @@ const char *QElfParser::parseSectionHead
           + sizeof(qelfaddr_t);  // sh_addr
      sh->offset = read<qelfoff_t>(data);
      data += sizeof(qelfoff_t);  // sh_offset
@@ -30,8 +28,6 @@ index cfe9a9d..33fff42 100644
      return data;
  }
  
-diff --git a/src/corelib/plugin/qelfparser_p.h b/src/corelib/plugin/qelfparser_p.h
-index 2f10807..e552cbc 100644
 --- a/src/corelib/plugin/qelfparser_p.h
 +++ b/src/corelib/plugin/qelfparser_p.h
 @@ -80,7 +80,7 @@ public:
@@ -43,6 +39,3 @@ index 2f10807..e552cbc 100644
      };
  
      int m_endian;
--- 
-1.7.10
-
