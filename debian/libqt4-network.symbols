@@ -1,10 +1,10 @@
-# SymbolsHelper-Confirmed: 4:4.8.1 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
+# SymbolsHelper-Confirmed: 4:4.8.1 amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
 libQtNetwork.so.4 libqt4-network #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z19qt_qhostinfo_lookupRK7QStringP7QObjectPKcPbPi@Base 4:4.6.3
  _Z35qNetworkConfigurationManagerPrivatev@Base 4:4.7.0~beta1
  _Z5qHashRK12QHostAddress@Base 4:4.5.3
- (optional=external)_ZN10QByteArray4dataEv@Base 4:4.7.2
+ (optional=external|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN10QByteArray4dataEv@Base 4:4.7.2
  _ZN10QSslCipherC1ERK7QStringN4QSsl11SslProtocolE@Base 4:4.5.3
  _ZN10QSslCipherC1ERKS_@Base 4:4.5.3
  _ZN10QSslCipherC1Ev@Base 4:4.5.3
@@ -818,7 +818,7 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN9QSslErrorD1Ev@Base 4:4.5.3
  _ZN9QSslErrorD2Ev@Base 4:4.5.3
  _ZN9QSslErroraSERKS_@Base 4:4.5.3
- (optional=external|arch=!hurd-i386 !i386 !kfreebsd-i386 !mips !mipsel !powerpc !s390 !s390x !sparc)_ZNK10QByteArray8containsEPKc@Base 4:4.8.1
+ (optional=external|arch=!mips !mipsel !powerpc !s390 !s390x !sparc)_ZNK10QByteArray8containsEPKc@Base 4:4.8.1
  _ZNK10QSslCipher13supportedBitsEv@Base 4:4.5.3
  _ZNK10QSslCipher14protocolStringEv@Base 4:4.5.3
  _ZNK10QSslCipher16encryptionMethodEv@Base 4:4.5.3

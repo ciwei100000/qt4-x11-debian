@@ -2,7 +2,7 @@
 libQtGui.so.4 libqtgui4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qDrawArrowP8QPainterN2Qt9ArrowTypeENS1_8GUIStyleEbiiiiRK8QPaletteb@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !ia64 !kfreebsd-amd64)_Z10qt_memfillIhEvPT_S0_i@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !hurd-i386 !i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386)_Z10qt_memfillIhEvPT_S0_i@Base 4:4.8.1
  _Z10qt_x11InfoPK12QPaintDevice@Base 4:4.5.3
  _Z11qFadeEffectP7QWidgeti@Base 4:4.5.3
  _Z11qt_image_idRK6QImage@Base 4:4.5.3
@@ -507,10 +507,12 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (subst)_ZN10QTransform9setMatrixE{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}@Base 4:4.5.3
  (subst)_ZN10QTransform9translateE{qreal}{qreal}@Base 4:4.5.3
  _ZN10QTransformC1ERK7QMatrix@Base 4:4.5.3
+ (optional=external|arch=hurd-i386 i386 kfreebsd-i386)_ZN10QTransformC1ERKS_@Base 4:4.8.1
  _ZN10QTransformC1Ev@Base 4:4.5.3
  (subst)_ZN10QTransformC1E{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}@Base 4:4.5.3
  (subst)_ZN10QTransformC1E{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}@Base 4:4.5.3
  _ZN10QTransformC2ERK7QMatrix@Base 4:4.5.3
+ (optional=external|arch=hurd-i386 i386 kfreebsd-i386)_ZN10QTransformC2ERKS_@Base 4:4.8.1
  _ZN10QTransformC2Ev@Base 4:4.5.3
  (subst)_ZN10QTransformC2E{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}@Base 4:4.5.3
  (subst)_ZN10QTransformC2E{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}@Base 4:4.5.3
@@ -3692,6 +3694,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN15QClipboardEventD0Ev@Base 4:4.5.3
  _ZN15QClipboardEventD1Ev@Base 4:4.5.3
  _ZN15QClipboardEventD2Ev@Base 4:4.5.3
+ (optional=private|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN15QDateTimeParser9StateNodeD1Ev@Base 4:4.8.1
+ (optional=private|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN15QDateTimeParser9StateNodeD2Ev@Base 4:4.8.1
  _ZN15QDragEnterEventC1ERK6QPoint6QFlagsIN2Qt10DropActionEEPK9QMimeDataS3_INS4_11MouseButtonEES3_INS4_16KeyboardModifierEE@Base 4:4.5.3
  _ZN15QDragEnterEventC2ERK6QPoint6QFlagsIN2Qt10DropActionEEPK9QMimeDataS3_INS4_11MouseButtonEES3_INS4_16KeyboardModifierEE@Base 4:4.5.3
  _ZN15QDragEnterEventD0Ev@Base 4:4.5.3
@@ -3862,6 +3866,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (subst)_ZN15QLinearGradientC2E{qreal}{qreal}{qreal}{qreal}@Base 4:4.5.3
  _ZN15QLinearGradientD1Ev@Base 4:4.7.4
  _ZN15QLinearGradientD2Ev@Base 4:4.7.4
+ (optional=inline|arch=amd64 kfreebsd-amd64)_ZN15QLinearGradientaSERKS_@Base 4:4.8.1
  _ZN15QListWidgetItem4readER11QDataStream@Base 4:4.5.3
  _ZN15QListWidgetItem7setDataEiRK8QVariant@Base 4:4.5.3
  _ZN15QListWidgetItem8setFlagsE6QFlagsIN2Qt8ItemFlagEE@Base 4:4.5.3
@@ -4032,10 +4037,14 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN15QTextCharFormatC1Ev@Base 4:4.5.3
  _ZN15QTextCharFormatC2ERK11QTextFormat@Base 4:4.5.3
  _ZN15QTextCharFormatC2Ev@Base 4:4.5.3
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN15QTextCharFormatD1Ev@Base 4:4.8.1
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN15QTextCharFormatD2Ev@Base 4:4.8.1
  _ZN15QTextListFormatC1ERK11QTextFormat@Base 4:4.5.3
  _ZN15QTextListFormatC1Ev@Base 4:4.5.3
  _ZN15QTextListFormatC2ERK11QTextFormat@Base 4:4.5.3
  _ZN15QTextListFormatC2Ev@Base 4:4.5.3
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN15QTextListFormatD1Ev@Base 4:4.8.1
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN15QTextListFormatD2Ev@Base 4:4.8.1
  _ZN15QTreeWidgetItem11addChildrenERK5QListIPS_E@Base 4:4.5.3
  _ZN15QTreeWidgetItem11insertChildEiPS_@Base 4:4.5.3
  _ZN15QTreeWidgetItem11itemChangedEv@Base 4:4.5.3
@@ -4155,6 +4164,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (subst)_ZN16QConicalGradientC2ERK7QPointF{qreal}@Base 4:4.5.3
  _ZN16QConicalGradientC2Ev@Base 4:4.5.3
  (subst)_ZN16QConicalGradientC2E{qreal}{qreal}{qreal}@Base 4:4.5.3
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN16QConicalGradientD1Ev@Base 4:4.8.1
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN16QConicalGradientD2Ev@Base 4:4.8.1
  _ZN16QCoreApplication20sendSpontaneousEventEP7QObjectP6QEvent@Base 4:4.5.3
  _ZN16QCoreApplication9sendEventEP7QObjectP6QEvent@Base 4:4.5.3
  _ZN16QDesktopServices11displayNameENS_16StandardLocationE@Base 4:4.5.3
@@ -4314,11 +4325,15 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN16QTextBlockFormatC1Ev@Base 4:4.5.3
  _ZN16QTextBlockFormatC2ERK11QTextFormat@Base 4:4.5.3
  _ZN16QTextBlockFormatC2Ev@Base 4:4.5.3
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN16QTextBlockFormatD1Ev@Base 4:4.8.1
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN16QTextBlockFormatD2Ev@Base 4:4.8.1
  (subst)_ZN16QTextFrameFormat9setMarginE{qreal}@Base 4:4.5.3
  _ZN16QTextFrameFormatC1ERK11QTextFormat@Base 4:4.5.3
  _ZN16QTextFrameFormatC1Ev@Base 4:4.5.3
  _ZN16QTextFrameFormatC2ERK11QTextFormat@Base 4:4.5.3
  _ZN16QTextFrameFormatC2Ev@Base 4:4.5.3
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN16QTextFrameFormatD1Ev@Base 4:4.8.1
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN16QTextFrameFormatD2Ev@Base 4:4.8.1
  _ZN16QTextImageFormatC1ERK11QTextFormat@Base 4:4.5.3
  _ZN16QTextImageFormatC1Ev@Base 4:4.5.3
  _ZN16QTextImageFormatC2ERK11QTextFormat@Base 4:4.5.3
@@ -4858,6 +4873,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN18QStyleOptionSliderC1Ev@Base 4:4.5.3
  _ZN18QStyleOptionSliderC2Ei@Base 4:4.5.3
  _ZN18QStyleOptionSliderC2Ev@Base 4:4.5.3
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN18QStyleOptionSliderD1Ev@Base 4:4.8.1
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN18QStyleOptionSliderD2Ev@Base 4:4.8.1
  _ZN18QSyntaxHighlighter11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN18QSyntaxHighlighter11qt_metacastEPKc@Base 4:4.5.3
  _ZN18QSyntaxHighlighter11rehighlightEv@Base 4:4.5.3
@@ -5043,7 +5060,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN19QApplicationPrivate21cleanupMultitouch_sysEv@Base 4:4.6.1
  _ZN19QApplicationPrivate21createEventDispatcherEv@Base 4:4.5.3
  _ZN19QApplicationPrivate21obey_desktop_settingsE@Base 4:4.5.3
- _ZN19QApplicationPrivate21qmljs_debug_argumentsE@Base 4:4.7.1
+ (optional=external|arch=!amd64)_ZN19QApplicationPrivate21qmljs_debug_argumentsE@Base 4:4.8.2
  _ZN19QApplicationPrivate22quitOnLastWindowClosedE@Base 4:4.5.3
  _ZN19QApplicationPrivate22reset_instance_pointerEv@Base 4:4.5.3
  _ZN19QApplicationPrivate22translateRawTouchEventEP7QWidgetN11QTouchEvent10DeviceTypeERK5QListINS2_10TouchPointEE@Base 4:4.6.1
@@ -5053,7 +5070,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN19QApplicationPrivate23sendSyntheticEnterLeaveEP7QWidget@Base 4:4.5.3
  _ZN19QApplicationPrivate24initializeMultitouch_sysEv@Base 4:4.6.1
  _ZN19QApplicationPrivate25focusNextPrevChild_helperEP7QWidgetb@Base 4:4.5.3
- _ZN19QApplicationPrivate25qmljsDebugArgumentsStringEv@Base 4:4.7.1
+ (optional=external|arch=!amd64)_ZN19QApplicationPrivate25qmljsDebugArgumentsStringEv@Base 4:4.8.2
  _ZN19QApplicationPrivate26updateTouchPointsForWidgetEP7QWidgetP11QTouchEvent@Base 4:4.6.1
  _ZN19QApplicationPrivate27initializeWidgetPaletteHashEv@Base 4:4.5.3
  _ZN19QApplicationPrivate31giveFocusAccordingToFocusPolicyEP7QWidgetN2Qt11FocusPolicyENS2_11FocusReasonE@Base 4:4.6.1
@@ -5326,12 +5343,16 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN19QPrintPreviewWidgetD2Ev@Base 4:4.5.3
  _ZN19QStyleOptionComplexC1Eii@Base 4:4.5.3
  _ZN19QStyleOptionComplexC2Eii@Base 4:4.5.3
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN19QStyleOptionComplexD1Ev@Base 4:4.8.1
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN19QStyleOptionComplexD2Ev@Base 4:4.8.1
  _ZN19QStyleOptionFrameV2C1ERK17QStyleOptionFrame@Base 4:4.5.3
  _ZN19QStyleOptionFrameV2C1Ei@Base 4:4.5.3
  _ZN19QStyleOptionFrameV2C1Ev@Base 4:4.5.3
  _ZN19QStyleOptionFrameV2C2ERK17QStyleOptionFrame@Base 4:4.5.3
  _ZN19QStyleOptionFrameV2C2Ei@Base 4:4.5.3
  _ZN19QStyleOptionFrameV2C2Ev@Base 4:4.5.3
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN19QStyleOptionFrameV2D1Ev@Base 4:4.8.1
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN19QStyleOptionFrameV2D2Ev@Base 4:4.8.1
  _ZN19QStyleOptionFrameV2aSERK17QStyleOptionFrame@Base 4:4.5.3
  _ZN19QStyleOptionFrameV3C1ERK17QStyleOptionFrame@Base 4:4.5.3
  _ZN19QStyleOptionFrameV3C1Ei@Base 4:4.5.3
@@ -5344,6 +5365,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN19QStyleOptionSpinBoxC1Ev@Base 4:4.5.3
  _ZN19QStyleOptionSpinBoxC2Ei@Base 4:4.5.3
  _ZN19QStyleOptionSpinBoxC2Ev@Base 4:4.5.3
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN19QStyleOptionSpinBoxD1Ev@Base 4:4.8.1
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN19QStyleOptionSpinBoxD2Ev@Base 4:4.8.1
  _ZN19QStyleOptionToolBarC1Ei@Base 4:4.5.3
  _ZN19QStyleOptionToolBarC1Ev@Base 4:4.5.3
  _ZN19QStyleOptionToolBarC2Ei@Base 4:4.5.3
@@ -5782,6 +5805,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN21QStyleOptionFocusRectC1Ev@Base 4:4.5.3
  _ZN21QStyleOptionFocusRectC2Ei@Base 4:4.5.3
  _ZN21QStyleOptionFocusRectC2Ev@Base 4:4.5.3
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN21QStyleOptionFocusRectD1Ev@Base 4:4.8.1
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN21QStyleOptionFocusRectD2Ev@Base 4:4.8.1
  _ZN21QStyleOptionToolBoxV2C1ERK19QStyleOptionToolBox@Base 4:4.5.3
  _ZN21QStyleOptionToolBoxV2C1Ei@Base 4:4.5.3
  _ZN21QStyleOptionToolBoxV2C1Ev@Base 4:4.5.3
@@ -6137,6 +6162,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN24QStyleOptionTabBarBaseV2C2ERK22QStyleOptionTabBarBase@Base 4:4.5.3
  _ZN24QStyleOptionTabBarBaseV2C2Ei@Base 4:4.5.3
  _ZN24QStyleOptionTabBarBaseV2C2Ev@Base 4:4.5.3
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN24QStyleOptionTabBarBaseV2D1Ev@Base 4:4.8.1
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN24QStyleOptionTabBarBaseV2D2Ev@Base 4:4.8.1
  _ZN24QStyleOptionTabBarBaseV2aSERK22QStyleOptionTabBarBase@Base 4:4.5.3
  _ZN25QAbstractItemModelPrivate10PersistentD1Ev@Base 4:4.7.4
  _ZN25QAbstractItemModelPrivate10PersistentD2Ev@Base 4:4.7.4
@@ -6173,8 +6200,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN25QStyleOptionProgressBarV2C2ERKS_@Base 4:4.5.3
  _ZN25QStyleOptionProgressBarV2C2Ei@Base 4:4.5.3
  _ZN25QStyleOptionProgressBarV2C2Ev@Base 4:4.5.3
- _ZN25QStyleOptionProgressBarV2D1Ev@Base 4:4.7.4
- _ZN25QStyleOptionProgressBarV2D2Ev@Base 4:4.7.4
+ (optional=gcc47|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN25QStyleOptionProgressBarV2D1Ev@Base 4:4.8.1
+ (optional=gcc47|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN25QStyleOptionProgressBarV2D2Ev@Base 4:4.8.1
  _ZN25QStyleOptionProgressBarV2aSERK23QStyleOptionProgressBar@Base 4:4.5.3
  _ZN26QAbstractGraphicsShapeItem6setPenERK4QPen@Base 4:4.5.3
  _ZN26QAbstractGraphicsShapeItem8setBrushERK6QBrush@Base 4:4.5.3
@@ -6274,6 +6301,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN28QStyleOptionTabWidgetFrameV2C2ERK26QStyleOptionTabWidgetFrame@Base 4:4.6.1
  _ZN28QStyleOptionTabWidgetFrameV2C2Ei@Base 4:4.6.1
  _ZN28QStyleOptionTabWidgetFrameV2C2Ev@Base 4:4.6.1
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN28QStyleOptionTabWidgetFrameV2D1Ev@Base 4:4.8.1
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN28QStyleOptionTabWidgetFrameV2D2Ev@Base 4:4.8.1
  _ZN28QStyleOptionTabWidgetFrameV2aSERK26QStyleOptionTabWidgetFrame@Base 4:4.6.1
  _ZN29QIconEngineFactoryInterfaceV2D0Ev@Base 4:4.7.4
  _ZN29QIconEngineFactoryInterfaceV2D1Ev@Base 4:4.7.4
@@ -6323,6 +6352,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN4QCss13StyleSelectorD0Ev@Base 4:4.5.3
  _ZN4QCss13StyleSelectorD1Ev@Base 4:4.5.3
  _ZN4QCss13StyleSelectorD2Ev@Base 4:4.5.3
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN4QCss5ValueD1Ev@Base 4:4.8.1
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN4QCss5ValueD2Ev@Base 4:4.8.1
  _ZN4QCss6Parser10lexemUntilENS_9TokenTypeE@Base 4:4.5.3
  _ZN4QCss6Parser10parseClassEP7QString@Base 4:4.5.3
  _ZN4QCss6Parser10parseMediaEPNS_9MediaRuleE@Base 4:4.5.3
@@ -6811,8 +6842,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN6QMovieD0Ev@Base 4:4.5.3
  _ZN6QMovieD1Ev@Base 4:4.5.3
  _ZN6QMovieD2Ev@Base 4:4.5.3
- (arch=hurd-i386 i386 kfreebsd-i386 mips mipsel powerpc s390)_ZN6QRectFC1ERK5QRect@Base 4:4.8.0
- (arch=hurd-i386 i386 kfreebsd-i386 mips mipsel powerpc s390)_ZN6QRectFC2ERK5QRect@Base 4:4.8.1
+ (optional|arch=mips mipsel powerpc s390)_ZN6QRectFC1ERK5QRect@Base 4:4.8.0
+ (optional|arch=mips mipsel powerpc s390)_ZN6QRectFC2ERK5QRect@Base 4:4.8.1
  _ZN6QSound11isAvailableEv@Base 4:4.5.3
  _ZN6QSound11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN6QSound11qt_metacastEPKc@Base 4:4.5.3
@@ -7141,6 +7172,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN7QSliderD0Ev@Base 4:4.5.3
  _ZN7QSliderD1Ev@Base 4:4.5.3
  _ZN7QSliderD2Ev@Base 4:4.5.3
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN7QString5clearEv@Base 4:4.8.1
  _ZN7QTabBar10paintEventEP11QPaintEvent@Base 4:4.5.3
  _ZN7QTabBar10setMovableEb@Base 4:4.5.3
  _ZN7QTabBar10setTabDataEiRK8QVariant@Base 4:4.5.3
@@ -7858,8 +7890,10 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN8QX11InfoD1Ev@Base 4:4.5.3
  _ZN8QX11InfoD2Ev@Base 4:4.5.3
  _ZN8QX11InfoaSERKS_@Base 4:4.5.3
- (optional=external|arch=armel armhf mips mipsel powerpc s390 s390x sparc)_ZN9QBitArrayD1Ev@Base 4:4.8.1
- (optional=external|arch=armel armhf mips mipsel powerpc s390 s390x sparc)_ZN9QBitArrayD2Ev@Base 4:4.8.1
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN9QBitArray6setBitEi@Base 4:4.8.1
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN9QBitArray8clearBitEi@Base 4:4.8.1
+ (optional=external|arch=amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc)_ZN9QBitArrayD1Ev@Base 4:4.8.1
+ (optional=external|arch=amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc)_ZN9QBitArrayD2Ev@Base 4:4.8.1
  _ZN9QCDEStyle11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN9QCDEStyle11qt_metacastEPKc@Base 4:4.5.3
  _ZN9QCDEStyle16staticMetaObjectE@Base 4:4.5.3
@@ -8085,6 +8119,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN9QGtkStyleD0Ev@Base 4:4.5.3
  _ZN9QGtkStyleD1Ev@Base 4:4.5.3
  _ZN9QGtkStyleD2Ev@Base 4:4.5.3
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN9QHashData8willGrowEv@Base 4:4.8.1
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN9QHashData9hasShrunkEv@Base 4:4.8.1
  _ZN9QKeyEvent22createExtendedKeyEventEN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEEjjjRK7QStringbt@Base 4:4.5.3
  _ZN9QKeyEventC1EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEERK7QStringbt@Base 4:4.5.3
  _ZN9QKeyEventC2EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEERK7QStringbt@Base 4:4.5.3
@@ -10218,6 +10254,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK14QWidgetPrivate22childAtRecursiveHelperERK6QPointbb@Base 4:4.7.0~beta2
  _ZNK14QWidgetPrivate22subtractOpaqueChildrenER7QRegionRK5QRect@Base 4:4.5.3
  _ZNK14QWidgetPrivate22subtractOpaqueSiblingsER7QRegionPbb@Base 4:4.5.3
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZNK14QWidgetPrivate7topDataEv@Base 4:4.8.1
  _ZNK14QWidgetPrivate8clipRectEv@Base 4:4.5.3
  _ZNK14QWindowSurface10grabWidgetEPK7QWidgetRK5QRect@Base 4:4.5.3
  _ZNK14QWindowSurface14staticContentsEv@Base 4:4.5.3
@@ -10522,7 +10559,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK16QTreeViewPrivate16itemAtCoordinateEi@Base 4:4.8.0
  _ZNK16QTreeViewPrivate16itemDecorationAtERK6QPoint@Base 4:4.8.0
  _ZNK16QTreeViewPrivate17coordinateForItemEi@Base 4:4.8.0
- _ZNK16QTreeViewPrivate18calcLogicalIndicesEP7QVectorIiEPS0_IN22QStyleOptionViewItemV416ViewItemPositionEE@Base 4:4.8.0
+ (optional=private|arch=!amd64)_ZNK16QTreeViewPrivate18calcLogicalIndicesEP7QVectorIiEPS0_IN22QStyleOptionViewItemV416ViewItemPositionEE@Base 4:4.8.1
+ (optional=private|arch=amd64)_ZNK16QTreeViewPrivate18calcLogicalIndicesEP7QVectorIiEPS0_IN22QStyleOptionViewItemV416ViewItemPositionEEii@Base 4:4.8.1
  _ZNK16QTreeViewPrivate18hasVisibleChildrenERK11QModelIndex@Base 4:4.8.0
  _ZNK16QTreeViewPrivate18indentationForItemEi@Base 4:4.8.0
  _ZNK16QTreeViewPrivate18itemDecorationRectERK11QModelIndex@Base 4:4.8.0
@@ -11784,6 +11822,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK7QWidget8hasFocusEv@Base 4:4.5.3
  _ZNK7QWidget8sizeHintEv@Base 4:4.5.3
  _ZNK7QWidget9frameSizeEv@Base 4:4.5.3
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZNK7QWidget9isEnabledEv@Base 4:4.8.1
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZNK7QWidget9isVisibleEv@Base 4:4.8.1
  _ZNK7QWidget9statusTipEv@Base 4:4.5.3
  _ZNK7QWidget9whatsThisEv@Base 4:4.5.3
  _ZNK7QWizard10buttonTextENS_12WizardButtonE@Base 4:4.5.3
@@ -12015,9 +12055,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK8QToolBox7indexOfEP7QWidget@Base 4:4.5.3
  _ZNK8QToolBox8itemIconEi@Base 4:4.5.3
  _ZNK8QToolBox8itemTextEi@Base 4:4.5.3
- (optional=templinst|arch=amd64 hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 s390x)_ZNK8QVariant5valueI5QFontEET_v@Base 4:4.7.2
- (optional=templinst|arch=!hurd-i386 !i386 !kfreebsd-i386 !mips !mipsel !powerpc !s390 !sparc)_ZNK8QVariant5valueI6QImageEET_v@Base 4:4.7.2
- (optional=templinst|arch=!hurd-i386 !i386 !kfreebsd-i386 !mips !mipsel !powerpc !s390)_ZNK8QVariant5valueI7QPixmapEET_v@Base 4:4.7.2
+ (optional=templinst|arch=ia64 s390x)_ZNK8QVariant5valueI5QFontEET_v@Base 4:4.7.2
+ (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !s390 !sparc)_ZNK8QVariant5valueI6QImageEET_v@Base 4:4.7.2
+ (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !s390)_ZNK8QVariant5valueI7QPixmapEET_v@Base 4:4.7.2
  _ZNK8QX11Info10getX11DataEb@Base 4:4.5.3
  _ZNK8QX11Info13defaultVisualEv@Base 4:4.5.3
  _ZNK8QX11Info15defaultColormapEv@Base 4:4.5.3

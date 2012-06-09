@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.1 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
+# SymbolsHelper-Confirmed: 4:4.8.1 amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
 libQtOpenGL.so.4 libqt4-opengl #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z18qt_gl_library_namev@Base 4:4.5.3
@@ -67,11 +67,12 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN12QGLFunctionsC1Ev@Base 4:4.8.0
  _ZN12QGLFunctionsC2EPK10QGLContext@Base 4:4.8.0
  _ZN12QGLFunctionsC2Ev@Base 4:4.8.0
- (arch=mips mipsel sparc)_ZN12QMutexLocker6unlockEv@Base 4:4.8.0
- (optional=external|arch=!mips !mipsel !sparc)_ZN12QMutexLockerD1Ev@Base 4:4.7.2
- (optional=external|arch=!mips !mipsel !sparc)_ZN12QMutexLockerD2Ev@Base 4:4.7.2
- (optional=external)_ZN12QWriteLockerD1Ev@Base 4:4.7.2
- (optional=external)_ZN12QWriteLockerD2Ev@Base 4:4.7.2
+ (optional=external|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel sparc)_ZN12QMutexLocker6unlockEv@Base 4:4.8.1
+ (optional=external|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc)_ZN12QMutexLockerD1Ev@Base 4:4.7.2
+ (optional=external|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc)_ZN12QMutexLockerD2Ev@Base 4:4.7.2
+ (optional=external|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN12QWriteLocker6unlockEv@Base 4:4.8.1
+ (optional=external|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN12QWriteLockerD1Ev@Base 4:4.7.2
+ (optional=external|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN12QWriteLockerD2Ev@Base 4:4.7.2
  _ZN13QGLPixmapData15fromImageReaderEP12QImageReader6QFlagsIN2Qt19ImageConversionFlagEE@Base 4:4.7.4
  _ZN13QGLPixmapData20createPixmapForImageER6QImage6QFlagsIN2Qt19ImageConversionFlagEEb@Base 4:4.7.4
  _ZN13QGLPixmapData4copyEPK11QPixmapDataRK5QRect@Base 4:4.7.0~rc1
@@ -460,12 +461,15 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN27QGLContextGroupResourceBaseD1Ev@Base 4:4.8.0
  _ZN27QGLContextGroupResourceBaseD2Ev@Base 4:4.8.0
  _ZN3QGL23setPreferredPaintEngineEN12QPaintEngine4TypeE@Base 4:4.6.1
+ (optional=external|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN6QDebugC1E9QtMsgType@Base 4:4.8.1
+ (optional=external|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN6QDebugC2E9QtMsgType@Base 4:4.8.1
  (optional=external)_ZN6QDebugD1Ev@Base 4:4.5.3
  (optional=external)_ZN6QDebugD2Ev@Base 4:4.8.1
+ (optional=external|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN6QDebuglsEPKc@Base 4:4.8.1
  (optional=external)_ZN7QStringD1Ev@Base 4:4.5.3
  (optional=external)_ZN7QStringD2Ev@Base 4:4.8.1
- (optional=external)_ZN8QPolygonD1Ev@Base 4:4.7.2
- (optional=external)_ZN8QPolygonD2Ev@Base 4:4.7.2
+ (optional=external|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN8QPolygonD1Ev@Base 4:4.7.2
+ (optional=external|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN8QPolygonD2Ev@Base 4:4.7.2
  (optional=external)_ZN9QBitArrayD1Ev@Base 4:4.7.2
  (optional=external)_ZN9QBitArrayD2Ev@Base 4:4.7.2
  _ZN9QGLBuffer15setUsagePatternENS_12UsagePatternE@Base 4:4.7.0~beta1
@@ -597,9 +601,9 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN9QGLWidgetD0Ev@Base 4:4.5.3
  _ZN9QGLWidgetD1Ev@Base 4:4.5.3
  _ZN9QGLWidgetD2Ev@Base 4:4.5.3
- (optional=external)_ZN9QHashData8willGrowEv@Base 4:4.7.2
- (optional=external)_ZN9QPolygonFD1Ev@Base 4:4.7.2
- (optional=external)_ZN9QPolygonFD2Ev@Base 4:4.7.2
+ (optional=external|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN9QHashData8willGrowEv@Base 4:4.7.2
+ (optional=external|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN9QPolygonFD1Ev@Base 4:4.7.2
+ (optional=external|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN9QPolygonFD2Ev@Base 4:4.7.2
  _ZNK10QGLContext10colorIndexERK6QColor@Base 4:4.5.3
  _ZNK10QGLContext11initializedEv@Base 4:4.5.3
  _ZNK10QGLContext11swapBuffersEv@Base 4:4.5.3
