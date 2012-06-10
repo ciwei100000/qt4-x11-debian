@@ -1,4 +1,4 @@
-qt4-x11 (4:4.8.2-0r1) UNRELEASED; urgency=low
+qt4-x11 (4:4.8.2-1) unstable; urgency=low
 
   * New upstream release.
 
@@ -10,7 +10,7 @@ qt4-x11 (4:4.8.2-0r1) UNRELEASED; urgency=low
   * Confirm symbol files on all Debian arches for 4.8.1 and on amd64 for 4.8.2.
   * Mark qdesigner_internal symbols as (optional=internal).
 
- -- Modestas Vainius <modax@debian.org>  Sat, 09 Jun 2012 23:53:49 +0300
+ -- Modestas Vainius <modax@debian.org>  Sun, 10 Jun 2012 12:09:51 +0300
 
 qt4-x11 (4:4.8.1-2) unstable; urgency=low
 
