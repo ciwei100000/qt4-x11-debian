@@ -8,14 +8,14 @@ Forwarded: <no|not-needed|url proving that it has been forwarded>
 Reviewed-By: <name and email of someone who approved the patch>
 Last-Update: 2012-07-20
 
---- qt4-x11-4.8.2.orig/src/corelib/tools/qlocale_unix.cpp
-+++ qt4-x11-4.8.2/src/corelib/tools/qlocale_unix.cpp
+--- a/src/corelib/tools/qlocale_unix.cpp
++++ b/src/corelib/tools/qlocale_unix.cpp
 @@ -52,7 +52,7 @@
  
  QT_BEGIN_NAMESPACE
  
 -static const char *getSystemLocale()
-+static QByteArray *getSystemLocale()
++static QByteArray getSystemLocale()
  {
  #if defined(Q_OS_QNX)
      static char buff[257];
