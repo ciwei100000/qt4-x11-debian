@@ -46,3 +46,4 @@ CVE-2011-3922.patch
 qt_atomic_sparc64.patch
 no_libicu_message.diff
 QTBUG-25324_assistant_segfault_on_start_with_gcc_4.7.patch
+fix_use_after_free_qlocale_unix.patch
