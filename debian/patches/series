@@ -45,3 +45,4 @@ add_missing_method_for_QBasicAtomicPointer_on_s390.patch
 CVE-2011-3922.patch
 qt_atomic_sparc64.patch
 no_libicu_message.diff
+QTBUG-25324_assistant_segfault_on_start_with_gcc_4.7.patch
