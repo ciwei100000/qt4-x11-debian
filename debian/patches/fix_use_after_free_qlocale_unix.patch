@@ -7,7 +7,7 @@ Description: fix use after free in qlocale_unix.cpp
 Author: Julien Cristau <julien.cristau@logilab.fr>
 Bug-Debian: http://bugs.debian.org/681476
 Origin: http://bugs.debian.org/681476
-Forwarded: no
+Forwarded: https://bugreports.qt-project.org/browse/QTBUG-26602
 Reviewed-By: Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
 Last-Update: 2012-07-20
 
