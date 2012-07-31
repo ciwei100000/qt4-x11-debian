@@ -6,6 +6,7 @@ qt4-x11 (4:4.8.2-2) UNRELEASED; urgency=low
   * Add fix_use_after_free_qlocale_unix.patch by Julien Cristau to fix the
     use of a variable after free in src/corelib/tools/qlocale_unix.cpp
     (Closes: #681476).
+  * Update symbols files with build logs from other archs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 20 Jul 2012 12:40:03 -0300
 

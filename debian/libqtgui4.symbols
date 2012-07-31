@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.1 amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
+# SymbolsHelper-Confirmed: 4:4.8.2 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
 libQtGui.so.4 libqtgui4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qDrawArrowP8QPainterN2Qt9ArrowTypeENS1_8GUIStyleEbiiiiRK8QPaletteb@Base 4:4.5.3
@@ -5060,7 +5060,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN19QApplicationPrivate21cleanupMultitouch_sysEv@Base 4:4.6.1
  _ZN19QApplicationPrivate21createEventDispatcherEv@Base 4:4.5.3
  _ZN19QApplicationPrivate21obey_desktop_settingsE@Base 4:4.5.3
- (optional=external|arch=!amd64)_ZN19QApplicationPrivate21qmljs_debug_argumentsE@Base 4:4.8.2
  _ZN19QApplicationPrivate22quitOnLastWindowClosedE@Base 4:4.5.3
  _ZN19QApplicationPrivate22reset_instance_pointerEv@Base 4:4.5.3
  _ZN19QApplicationPrivate22translateRawTouchEventEP7QWidgetN11QTouchEvent10DeviceTypeERK5QListINS2_10TouchPointEE@Base 4:4.6.1
@@ -5070,7 +5069,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN19QApplicationPrivate23sendSyntheticEnterLeaveEP7QWidget@Base 4:4.5.3
  _ZN19QApplicationPrivate24initializeMultitouch_sysEv@Base 4:4.6.1
  _ZN19QApplicationPrivate25focusNextPrevChild_helperEP7QWidgetb@Base 4:4.5.3
- (optional=external|arch=!amd64)_ZN19QApplicationPrivate25qmljsDebugArgumentsStringEv@Base 4:4.8.2
  _ZN19QApplicationPrivate26updateTouchPointsForWidgetEP7QWidgetP11QTouchEvent@Base 4:4.6.1
  _ZN19QApplicationPrivate27initializeWidgetPaletteHashEv@Base 4:4.5.3
  _ZN19QApplicationPrivate31giveFocusAccordingToFocusPolicyEP7QWidgetN2Qt11FocusPolicyENS2_11FocusReasonE@Base 4:4.6.1
@@ -10559,8 +10557,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK16QTreeViewPrivate16itemAtCoordinateEi@Base 4:4.8.0
  _ZNK16QTreeViewPrivate16itemDecorationAtERK6QPoint@Base 4:4.8.0
  _ZNK16QTreeViewPrivate17coordinateForItemEi@Base 4:4.8.0
- (optional=private|arch=!amd64)_ZNK16QTreeViewPrivate18calcLogicalIndicesEP7QVectorIiEPS0_IN22QStyleOptionViewItemV416ViewItemPositionEE@Base 4:4.8.1
- (optional=private|arch=amd64)_ZNK16QTreeViewPrivate18calcLogicalIndicesEP7QVectorIiEPS0_IN22QStyleOptionViewItemV416ViewItemPositionEEii@Base 4:4.8.1
+ (optional=private)_ZNK16QTreeViewPrivate18calcLogicalIndicesEP7QVectorIiEPS0_IN22QStyleOptionViewItemV416ViewItemPositionEEii@Base 4:4.8.1
  _ZNK16QTreeViewPrivate18hasVisibleChildrenERK11QModelIndex@Base 4:4.8.0
  _ZNK16QTreeViewPrivate18indentationForItemEi@Base 4:4.8.0
  _ZNK16QTreeViewPrivate18itemDecorationRectERK11QModelIndex@Base 4:4.8.0
