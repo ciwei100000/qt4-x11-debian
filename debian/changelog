@@ -1,6 +1,6 @@
 qt4-x11 (4:4.8.2-2) UNRELEASED; urgency=low
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Team upload.
   * Add QTBUG-25324_assistant_segfault_on_start_with_gcc_4.7.patch made by
     Than Ngo to solve a segfault during assistant's startup (Closes: #679874).
   * Add fix_use_after_free_qlocale_unix.patch by Julien Cristau to fix the
