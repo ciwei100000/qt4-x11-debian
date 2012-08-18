@@ -12,6 +12,8 @@ qt4-x11 (4:4.8.2+dfsg-1) unstable; urgency=low
     on x86-64 (avoid 32-bit branch offset overflow) (Closes: #684985).
   * Compress all packages using xz compression. It helps the D-I team to fit
     stuff in the first CD.
+  * Close multiarch bugs created by the latest binNMU
+    (Closes: #684556, #684678, #684688, #684867).
 
  -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sat, 18 Aug 2012 16:17:57 -0300
 
