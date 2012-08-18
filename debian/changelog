@@ -8,6 +8,9 @@ qt4-x11 (4:4.8.2+dfsg-1) UNRELEASED; urgency=low
       tarball.
   * Add upstream patch Fix-cursor-truncate-to-include-line-position.patch
     needed for Calligra and katepart.
+  * Add upstream patch
+    Fix-JIT-crash-on-x86-64-avoid-32-bit-branch-offset-o.patch to fix JIT crash
+    on x86-64 (avoid 32-bit branch offset overflow) (Closes: #684985).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 18 Aug 2012 15:14:31 -0300
 
