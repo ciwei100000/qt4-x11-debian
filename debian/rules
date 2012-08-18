@@ -372,4 +372,8 @@ override_dh_builddeb:
 	dh_builddeb $(addprefix -p,$(pkgs_compress_xz)) -- -Zxz
 	dh_builddeb --remaining-packages
 
+prune-nonfree:
+	# Delete zlib's RFCs.
+	find \( -name rfc195* \) -print -delete
+
 .PHONY: override_dh_auto_test
