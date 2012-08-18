@@ -1,3 +1,9 @@
+DFSG-repackaging
+----------------
+
+The source code of Qt is repackaged to get rid of the non-DFSG compliant
+RFCs that are bundled with zlib's source code inside src/3rdparty/zlib/doc/.
+
 Patches to the original source code
 -----------------------------------
 
