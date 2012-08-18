@@ -21,8 +21,6 @@ pkgs_dbg := $(shell dh_listpackages | grep dbg | sed -e '/libqt4-dbg/d; s|-dbg||
 pkgs_dbgbin := libqt4-dev-bin $(filter-out %-dbg lib% $(pkgs_dbg),$(shell dh_listpackages))
 # Library package list for override_dh_makeshlibs, excludes libqt4-phonon
 pkgs_lib := $(filter-out %-dev %-dbg libqt4-phonon libqt4-dev-bin,$(filter lib%,$(shell dh_listpackages)))
-# Packages to compress as XZ
-pkgs_compress_xz := qt4-doc-html
 # Upstream changelog
 upstream_changes := $(wildcard changes-*)
 # Current debian version (e.g.: 4:4.5.2-1)
