@@ -1,6 +1,7 @@
 qt4-x11 (4:4.8.2+dfsg-1) UNRELEASED; urgency=low
 
-
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Add myself to Uploaders.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 18 Aug 2012 15:14:31 -0300
 
