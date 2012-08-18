@@ -6,6 +6,8 @@ qt4-x11 (4:4.8.2+dfsg-1) UNRELEASED; urgency=low
     - Add prune-nonfree to debian/rules to remove them.
     - Add a note on README.source of what we are removing from the original
       tarball.
+  * Add upstream patch Fix-cursor-truncate-to-include-line-position.patch
+    needed for Calligra and katepart.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 18 Aug 2012 15:14:31 -0300
 
