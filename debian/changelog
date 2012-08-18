@@ -15,7 +15,7 @@ qt4-x11 (4:4.8.2+dfsg-1) unstable; urgency=low
   * Close multiarch bugs created by the latest binNMU
     (Closes: #684556, #684678, #684688, #684867).
 
- -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sat, 18 Aug 2012 16:17:57 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sat, 18 Aug 2012 16:36:22 -0300
 
 qt4-x11 (4:4.8.2-2) unstable; urgency=low
 
