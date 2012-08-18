@@ -369,8 +369,7 @@ override_dh_shlibdeps:
 	dh_shlibdeps --remaining-packages
 
 override_dh_builddeb:
-	dh_builddeb $(addprefix -p,$(pkgs_compress_xz)) -- -Zxz
-	dh_builddeb --remaining-packages
+	dh_builddeb -- -Zxz
 
 prune-nonfree:
 	# Delete zlib's RFCs.
