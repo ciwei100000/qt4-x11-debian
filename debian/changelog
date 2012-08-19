@@ -14,6 +14,7 @@ qt4-x11 (4:4.8.2+dfsg-1) unstable; urgency=low
     stuff in the first CD.
   * Close multiarch bugs created by the latest binNMU
     (Closes: #684556, #684678, #684688, #684867).
+  * Update symbols files.
 
  -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sat, 18 Aug 2012 16:36:22 -0300
 
