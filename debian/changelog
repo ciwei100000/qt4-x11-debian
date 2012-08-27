@@ -1,3 +1,9 @@
+qt4-x11 (4:4.8.2+dfsg-2) UNRELEASED; urgency=low
+
+
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 27 Aug 2012 17:22:53 -0300
+
 qt4-x11 (4:4.8.2+dfsg-1) unstable; urgency=low
 
   * Add myself to Uploaders.
