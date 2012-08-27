@@ -1,6 +1,7 @@
 qt4-x11 (4:4.8.2+dfsg-2) UNRELEASED; urgency=low
 
-
+  * Remove Fix-JIT-crash-on-x86-64-avoid-32-bit-branch-offset-o.patch. It seems
+    that causes crashes in an hardware-dependant fashion (Closes: #685524).
 
  -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 27 Aug 2012 17:22:53 -0300
 

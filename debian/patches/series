@@ -4,7 +4,6 @@ QTBUG-14724_close_orphaned_file_descriptors_after_printing.patch
 QTBUG-21900_Buttons_in_Qt_applications_not_clickable_when_run_under_gnome-shell.patch
 QElfParser-fix-type-of-sh_size.patch
 Fix-cursor-truncate-to-include-line-position.patch
-Fix-JIT-crash-on-x86-64-avoid-32-bit-branch-offset-o.patch
 
 # qt-copy patches
 0195-compositing-properties.diff
