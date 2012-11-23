@@ -1,3 +1,9 @@
+qt4-x11 (4:4.8.2+dfsg-3) UNRELEASED; urgency=low
+
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 23 Nov 2012 18:01:31 -0300
+
 qt4-x11 (4:4.8.2+dfsg-2) unstable; urgency=low
 
   * Remove Fix-JIT-crash-on-x86-64-avoid-32-bit-branch-offset-o.patch. It seems
