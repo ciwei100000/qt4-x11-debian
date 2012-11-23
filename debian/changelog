@@ -4,6 +4,8 @@ qt4-x11 (4:4.8.2+dfsg-3) UNRELEASED; urgency=low
   * Apply disable-SSL-compression-by-default.patch. Disables SSL compression
     by default since this appears to be the a likely cause of the currently
     hyped CRIME attack.
+  * Build-conflict against libqtwebkit-dev. Upstream said that this should be
+    the correct way of handling this (Closes: #689265).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 23 Nov 2012 18:01:31 -0300
 
