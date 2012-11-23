@@ -1,9 +1,9 @@
-qt4-x11 (4:4.8.2+dfsg-3) UNRELEASED; urgency=low
+qt4-x11 (4:4.8.2+dfsg-3) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Apply disable-SSL-compression-by-default.patch. Disables SSL compression
     by default since this appears to be the a likely cause of the currently
-    hyped CRIME attack.
+    hyped CRIME attack. Set urgency to medium.
   * Build-conflict against libqtwebkit-dev. Upstream said that this should be
     the correct way of handling this (Closes: #689265).
 
