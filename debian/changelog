@@ -6,6 +6,8 @@ qt4-x11 (4:4.8.2+dfsg-3) UNRELEASED; urgency=medium
     hyped CRIME attack. Set urgency to medium.
   * Build-conflict against libqtwebkit-dev. Upstream said that this should be
     the correct way of handling this (Closes: #689265).
+  * Add fix_jit_crash_on_x86_64.patch, which avoids 32-bit branch offset
+    overflows.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 23 Nov 2012 18:01:31 -0300
 

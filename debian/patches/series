@@ -5,6 +5,7 @@ QTBUG-21900_Buttons_in_Qt_applications_not_clickable_when_run_under_gnome-shell.
 QElfParser-fix-type-of-sh_size.patch
 Fix-cursor-truncate-to-include-line-position.patch
 disable-SSL-compression-by-default.patch
+fix_jit_crash_on_x86_64.patch
 
 # qt-copy patches
 0195-compositing-properties.diff
