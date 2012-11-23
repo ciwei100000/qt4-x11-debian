@@ -7,7 +7,7 @@ qt4-x11 (4:4.8.2+dfsg-3) UNRELEASED; urgency=medium
   * Build-conflict against libqtwebkit-dev. Upstream said that this should be
     the correct way of handling this (Closes: #689265).
   * Add fix_jit_crash_on_x86_64.patch, which avoids 32-bit branch offset
-    overflows.
+    overflows. Taken from upstream.
   * Add add_missing_map_noreserve.patch. The previous patch uncovered a bug
     that happened when memory was reserved in swap. This patch adds a missing
     MAP_NORESERVE and fixes error checking. Taken from upstream.
