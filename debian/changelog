@@ -1,6 +1,5 @@
-qt4-x11 (4:4.8.2+dfsg-3) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.2+dfsg-3) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Apply disable-SSL-compression-by-default.patch. Disables SSL compression
     by default since this appears to be the a likely cause of the currently
     hyped CRIME attack. Set urgency to medium.
@@ -12,7 +11,7 @@ qt4-x11 (4:4.8.2+dfsg-3) UNRELEASED; urgency=medium
     that happened when memory was reserved in swap. This patch adds a missing
     MAP_NORESERVE and fixes error checking. Taken from upstream.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 23 Nov 2012 18:01:31 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 23 Nov 2012 22:09:58 -0300
 
 qt4-x11 (4:4.8.2+dfsg-2) unstable; urgency=low
 
