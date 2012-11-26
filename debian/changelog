@@ -1,9 +1,11 @@
-qt4-x11 (4:4.8.2+dfsg-4) UNRELEASED; urgency=low
+qt4-x11 (4:4.8.2+dfsg-4) unstable; urgency=medium
 
   * Really apply add_missing_map_noreserve.patch. Thanks Sune for noticing :)
     (Closes: #685524).
+  * Release to unstable. Keep urgency medium because of the fix for the CRIME
+    attack.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 26 Nov 2012 14:05:28 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 26 Nov 2012 14:08:14 -0300
 
 qt4-x11 (4:4.8.2+dfsg-3) unstable; urgency=medium
 
