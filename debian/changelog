@@ -1,6 +1,7 @@
 qt4-x11 (4:4.8.2+dfsg-4) UNRELEASED; urgency=low
 
-
+  * Really apply add_missing_map_noreserve.patch. Thanks Sune for noticing :)
+    (Closes: #685524).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 26 Nov 2012 14:05:28 -0300
 
