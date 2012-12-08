@@ -4,6 +4,11 @@ qt4-x11 (4:4.8.2+dfsg-7) UNRELEASED; urgency=low
   * Re-enable parallel building for all the architectures, after
     4:4.8.2+dfsg-5 accidentally disabled it. (Closes: #696961)
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Apply make_rules_for_redirect_stricter.patch taken from upstream to solve
+    a "man in the middle" attack, CVE-2012-5624. Thanks Thijs Kinkhorst
+    (Closes: #695156).
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 30 Dec 2012 00:32:00 +0100
 
 qt4-x11 (4:4.8.2+dfsg-6) unstable; urgency=low

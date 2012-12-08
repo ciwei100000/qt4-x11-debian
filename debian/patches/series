@@ -7,6 +7,7 @@ Fix-cursor-truncate-to-include-line-position.patch
 disable-SSL-compression-by-default.patch
 fix_jit_crash_on_x86_64.patch
 add_missing_map_noreserve.patch
+make_rules_for_redirect_stricter.patch
 
 # qt-copy patches
 0195-compositing-properties.diff
