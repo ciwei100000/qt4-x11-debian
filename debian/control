@@ -349,10 +349,29 @@ Package: libqt4-dbus
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
-Depends: qdbus (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
+Depends: qdbus (= ${binary:Version}), libqtdbus4 (= ${binary:Version})
 Replaces: libqt4-core (<< 4.4.0~beta1-1), libqt4-dev (<< 4:4.7.1)
 Breaks: libqt4-core (<< 4.4.0~beta1-1), libqt4-dev (<< 4:4.7.1)
 Description: Qt 4 D-Bus module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtDBus module is a Unix-only library that you can use to make Inter-Process
+ Communication using the D-Bus protocol.
+ .
+ Applications using the QtDBus module can provide services to other, remote
+ applications by exporting objects, as well as use services exported by those
+ applications by placing calls and accessing properties.
+ .
+ This package depends on qdbus and libqtdbus4 to break their circular dependency
+ and allow easy updates from Squeeze to Wheezy.
+
+Package: libqtdbus4
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Qt 4 D-Bus module library
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
