@@ -8,6 +8,12 @@ qt4-x11 (4:4.8.2+dfsg-7) UNRELEASED; urgency=low
   * Apply make_rules_for_redirect_stricter.patch taken from upstream to solve
     a "man in the middle" attack, CVE-2012-5624. Thanks Thijs Kinkhorst
     (Closes: #695156).
+  * Break the circular dependency between libqt4-dbus and qdbus by adding
+    libqtdbus4 with the contents of libqt4-dbus in it. Then make libqt4-dbus
+    depend on both qdbus and libqtdbus4. The symbols file of libqtdbus4 depends
+    on libqt4-dbus to ensure that a dependency on libqt4-dbus ensures qdbus is
+    installed, also on rebuilt packages. This arrangement is transitional.
+    (Closes: #669278).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 30 Dec 2012 00:32:00 +0100
 
