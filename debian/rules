@@ -85,6 +85,10 @@ else
   endif
 endif
 
+ifeq ($(DEB_HOST_ARCH),ia64)
+	extra_configure_opts += -no-pch
+endif
+
 %:
 	dh $@ --with pkgkde_symbolshelper
 
