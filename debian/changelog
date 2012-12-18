@@ -1,12 +1,13 @@
-qt4-x11 (4:4.8.2+dfsg-6) UNRELEASED; urgency=low
+qt4-x11 (4:4.8.2+dfsg-6) unstable; urgency=low
 
+  [ Debian Qt/KDE Maintainers ]
   * Hopefully fix ia64 FTBFS:
     - Remove add-winvalid.patch. Stephan Schreiber has determined the problem
       with the precompiled headers on ia64. Thanks *a lot* Stephan.
     - Apply the changes suggested by Stephan to avoid using pre compiled
       headers just on ia64.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 17 Dec 2012 21:47:47 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 18 Dec 2012 07:21:48 -0300
 
 qt4-x11 (4:4.8.2+dfsg-5) unstable; urgency=low
 
