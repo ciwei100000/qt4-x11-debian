@@ -1,5 +1,8 @@
 qt4-x11 (4:4.8.2+dfsg-7) UNRELEASED; urgency=low
 
+  [ Pino Toscano ]
+  * Re-enable parallel building for all the architectures, after
+    4:4.8.2+dfsg-5 accidentally disabled it. (Closes: #696961)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 30 Dec 2012 00:32:00 +0100
 

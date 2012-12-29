@@ -90,7 +90,7 @@ ifeq ($(DEB_HOST_ARCH),ia64)
 endif
 
 %:
-	dh $@ --with pkgkde_symbolshelper
+	dh $@ --parallel --with pkgkde_symbolshelper
 
 override_dh_auto_configure:
 	# Test broken hppa kernel with glibc >= 2.5
