@@ -1,6 +1,7 @@
 qt4-x11 (4:4.8.2+dfsg-8) UNRELEASED; urgency=low
 
-
+  * Make libqtdbus4 Break+Replaces libqt4-dbus << 4:4.7.4-6, thus allowing
+    proper installation (Closes: #697147).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 02 Jan 2013 13:50:39 -0300
 
