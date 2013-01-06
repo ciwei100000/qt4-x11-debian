@@ -1,6 +1,6 @@
 qt4-x11 (4:4.8.2+dfsg-9) UNRELEASED; urgency=low
 
-
+  * Fix the Breaks and Replaces version in libqtdbus4 to -7 (Closes: #697507).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 06 Jan 2013 12:10:14 -0300
 
