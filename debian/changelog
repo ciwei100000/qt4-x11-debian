@@ -1,6 +1,6 @@
 qt4-x11 (4:4.8.2+dfsg-9) unstable; urgency=low
 
-  * Fix the Breaks and Replaces version in libqtdbus4 to 4:4.8.2+dfsg-7
+  * Fix the Breaks and Replaces version in libqtdbus4 to 4:4.8.2+dfsg-8
     (Closes: #697507).
 
  -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 06 Jan 2013 12:14:22 -0300
