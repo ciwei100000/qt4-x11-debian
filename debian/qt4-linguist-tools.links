@@ -1,2 +1,2 @@
-usr/bin/lrelease-qt4    usr/share/qt4/bin/lrelease
-usr/bin/lupdate-qt4     usr/share/qt4/bin/lupdate
+usr/lib/*/qt4/bin/lrelease    usr/share/qt4/bin/lrelease
+usr/lib/*/qt4/bin/lupdate     usr/share/qt4/bin/lupdate

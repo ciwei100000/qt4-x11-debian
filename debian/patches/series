@@ -16,7 +16,6 @@ make_rules_for_redirect_stricter.patch
 # debian patches
 qtdebug_syslog.patch
 buildable_appchooser_states_demos.patch
-01_debian_append_qt4_suffix.diff
 02_syncqt_sane_timestamp_for_nonexisting_headers.diff
 07_trust_dpkg-arch_over_uname-m.diff
 08_configure_quilt_compat.diff

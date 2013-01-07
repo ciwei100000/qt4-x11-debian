@@ -119,7 +119,7 @@ endif
 
 	./configure -confirm-license \
 	            -prefix "/usr" \
-	            -bindir "/usr/bin" \
+	            -bindir "/usr/lib/$(DEB_HOST_MULTIARCH)/qt4/bin" \
 	            -libdir "/usr/lib/$(DEB_HOST_MULTIARCH)" \
 	            -docdir "/usr/share/qt4/doc" \
 	            -headerdir "/usr/include/qt4" \
@@ -311,6 +311,12 @@ override_dh_auto_install:
 	rm -f debian/tmp/usr/lib/*/libphonon.so
 	rm -f debian/tmp/usr/lib/*/pkgconfig/phonon.pc
 	rm -rf debian/tmp/usr/include/qt4/phonon
+
+	# Add a configuration for qtchooser
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/qtchooser
+	echo "/usr/lib/$(DEB_HOST_MULTIARCH)/qt4/bin" > $(CURDIR)/debian/tmp/usr/share/qtchooser/qt4.conf
+	echo "/usr/lib/$(DEB_HOST_MULTIARCH)" >> $(CURDIR)/debian/tmp/usr/share/qtchooser/qt4.conf
+	ln -s /usr/share/qtchooser/qt4.conf $(CURDIR)/debian/tmp/usr/share/qtchooser/default.conf
 
 	# Remove leftover directories
 	find $(CURDIR)/debian/tmp/usr/lib/qt4 -depth -type d \( -false \

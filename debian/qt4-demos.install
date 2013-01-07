@@ -1,4 +1,4 @@
-usr/bin/qtdemo
+usr/lib/*/qt4/bin/qtdemo
 usr/lib/*/qt4/plugins/designer/libarthurplugin.so
 usr/lib/*/qt4/plugins/designer/libcontainerextension.so
 usr/lib/*/qt4/plugins/designer/libcustomwidgetplugin.so
