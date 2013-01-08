@@ -3,7 +3,8 @@
 set -e
 
 case "$1" in
-    upgrade|remove|failed-upgrade|deconfigure)
+    upgrade) ;;
+    remove|failed-upgrade|deconfigure)
         update-alternatives --remove qmake "/usr/bin/qmake-qt4"
         ;;
 esac
