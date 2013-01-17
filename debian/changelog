@@ -1,8 +1,25 @@
-qt4-x11 (4:4.8.2+dfsg-10) UNRELEASED; urgency=low
+qt4-x11 (4:4.8.4+dfsg-1) UNRELEASED; urgency=low
 
+  * New upstream release
   * Migrate to use qtchooser for Qt5 co-installation support
+    - Libraries co-installed, executables managed by qtchooser
+    - Packages will need build-dep on qt4-default to build against Qt4
+    - Symlinks left for binaries that had -qt4 via alternatives
+  * Drop patches that have been merged upstream:
+    - QElfParser-fix-type-of-sh_size.patch
+    - Fix-cursor-truncate-to-include-line-position.patch
+    - qt_atomic_sparc64.patch
+    - fix_use_after_free_qlocale_unix.patch
+    - QTBUG-14724_close_orphaned_file_descriptors_after_printing.patch
+    - disable-SSL-compression-by-default.patch
+    - fix_jit_crash_on_x86_64.patch
+    - add_missing_map_noreserve.patch
+    - make_rules_for_redirect_stricter.patch
+  * Refresh patches:
+    - 16_hide_std_symbols_on_qtwebkit.diff
+    - no_libicu_message.diff
 
- -- Timo Jyrinki <timo@debian.org>  Mon, 07 Jan 2013 12:41:04 +0000
+ -- Timo Jyrinki <timo@debian.org>  Thu, 17 Jan 2013 12:23:33 +0000
 
 qt4-x11 (4:4.8.2+dfsg-9) unstable; urgency=low
 
