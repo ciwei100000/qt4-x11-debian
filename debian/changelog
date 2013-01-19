@@ -1,6 +1,5 @@
-qt4-x11 (4:4.8.2+dfsg-10) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.2+dfsg-10) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Add SSL-certificates-blacklist-mis-issued-Turktrust-cert.patch to blacklist
     miss issued certificates from Turktrust.
     - Patch taken from upstream.
@@ -17,7 +16,7 @@ qt4-x11 (4:4.8.2+dfsg-10) UNRELEASED; urgency=medium
     Also Qt does not ship certificate bundles anymore but rather uses the
     system bundle (Closes: #530532).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 18 Jan 2013 15:47:43 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sat, 19 Jan 2013 16:47:57 -0300
 
 qt4-x11 (4:4.8.2+dfsg-9) unstable; urgency=low
 
