@@ -280,6 +280,20 @@ override_dh_auto_install:
 	find $(CURDIR)/debian/tmp/usr/lib -type f -name '*.prl' \
 		-exec sed -i -e "/^QMAKE_PRL_BUILD_DIR/d;s/\(QMAKE_PRL_LIBS =\).*/\1/" {} \;
 
+	# Add symlinks for the -qt4 binaries still used by some
+	cat debian/libqt4-dev-bin.links.in > debian/libqt4-dev-bin.links
+	sed -i 's/MULTIARCH/$(DEB_HOST_MULTIARCH)/' debian/libqt4-dev-bin.links
+	cat debian/qt4-designer.links.in > debian/qt4-designer.links
+	sed -i 's/MULTIARCH/$(DEB_HOST_MULTIARCH)/' debian/qt4-designer.links
+	cat debian/qt4-dev-tools.links.in > debian/qt4-dev-tools.links
+	sed -i 's/MULTIARCH/$(DEB_HOST_MULTIARCH)/' debian/qt4-dev-tools.links
+	cat debian/qt4-linguist-tools.links.in > debian/qt4-linguist-tools.links
+	sed -i 's/MULTIARCH/$(DEB_HOST_MULTIARCH)/' debian/qt4-linguist-tools.links
+	cat debian/qt4-qmake.links.in > debian/qt4-qmake.links
+	sed -i 's/MULTIARCH/$(DEB_HOST_MULTIARCH)/' debian/qt4-qmake.links
+	cat debian/qt4-qtconfig.links.in > debian/qt4-qtconfig.links
+	sed -i 's/MULTIARCH/$(DEB_HOST_MULTIARCH)/' debian/qt4-qtconfig.links
+
 	install -D -p -m0644 debian/collection/qtdemo.qhc \
 		debian/qt4-demos/usr/lib/qt4/demos/qtdemo/qtdemo.qhc
 
