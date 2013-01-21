@@ -9513,6 +9513,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK12QLineControl11clearStringEjj@Base 4:4.6.1
  _ZNK12QLineControl11stripStringERK7QString@Base 4:4.6.1
  _ZNK12QLineControl12isValidInputE5QCharS0_@Base 4:4.6.1
+ _ZNK12QLineControl15isRedoAvailableEv@Base 4:4.8.3
+ _ZNK12QLineControl15isUndoAvailableEv@Base 4:4.8.3
  _ZNK12QLineControl18hasAcceptableInputERK7QString@Base 4:4.6.1
  _ZNK12QLineControl4copyEN10QClipboard4ModeE@Base 4:4.6.1
  _ZNK12QLineControl6xToPosEiN9QTextLine14CursorPositionE@Base 4:4.6.1
