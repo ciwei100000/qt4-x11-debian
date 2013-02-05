@@ -1,10 +1,13 @@
 From 20b26bdb3dd5e46b01b9a7e1ce8342074df3c89c Mon Sep 17 00:00:00 2001
 From: Thiago Macieira <thiago.macieira@intel.com>
+From: Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
 Date: Sat, 22 Dec 2012 08:32:12 -0800
-Subject: [PATCH] Change all shmget calls to user-only memory
-
-Drop the read and write permissions for group and other users in the
-system.
+Description: [PATCH] Change all shmget calls to user-only memory
+ Drop the read and write permissions for group and other users in the
+ system.
+ .
+ The tests/auto/qtipc/qsharedmemory/tst_qsharedmemory.cpp does
+ not exists in the current Debian tarball, so we removed it.
 
 Change-Id: I8fc753f09126651af3fb82df3049050f0b14e876
 (cherry-picked from Qt 5 commit 856f209fb63ae336bfb389a12d2a75fa886dc1c5)
@@ -120,19 +123,6 @@ index bf003eb..46a2f97 100644
  
      image_info->shminfo.shmaddr = image->data = (char*)shmat (image_info->shminfo.shmid, 0, 0);
      image_info->shminfo.readOnly = False;
-diff --git a/tests/auto/qtipc/qsharedmemory/tst_qsharedmemory.cpp b/tests/auto/qtipc/qsharedmemory/tst_qsharedmemory.cpp
-index 9e77af6..e92a030 100644
---- a/tests/auto/qtipc/qsharedmemory/tst_qsharedmemory.cpp
-+++ b/tests/auto/qtipc/qsharedmemory/tst_qsharedmemory.cpp
-@@ -193,7 +193,7 @@ int tst_QSharedMemory::remove(const QString &key)
-         return -3;
-     }
- 
--    int id = shmget(unix_key, 0, 0660);
-+    int id = shmget(unix_key, 0, 0600);
-     if (-1 == id) {
-         qDebug() << "shmget failed";
-         return -4;
 diff --git a/tools/qvfb/qvfbshmem.cpp b/tools/qvfb/qvfbshmem.cpp
 index 7f9671f..84b6ebe 100644
 --- a/tools/qvfb/qvfbshmem.cpp
