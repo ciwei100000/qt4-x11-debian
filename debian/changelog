@@ -1,3 +1,9 @@
+qt4-x11 (4:4.8.2+dfsg-11) UNRELEASED; urgency=low
+
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 05 Feb 2013 18:29:49 -0300
+
 qt4-x11 (4:4.8.2+dfsg-10) unstable; urgency=medium
 
   * Add SSL-certificates-blacklist-mis-issued-Turktrust-cert.patch to blacklist
