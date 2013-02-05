@@ -1,6 +1,9 @@
-qt4-x11 (4:4.8.2+dfsg-11) UNRELEASED; urgency=low
+qt4-x11 (4:4.8.2+dfsg-11) UNRELEASED; urgency=medium
 
-
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Take upstream patch change_all_shmget_calls_to_use_user-only_memory.patch.
+    It changes the shmget calls to get user-only memory, CVE-2013-0254.
+    Set urgency to medium.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 05 Feb 2013 18:29:49 -0300
 
