@@ -1,0 +1,99 @@
+Description: Change all shmget calls to user-only memory
+ Drop the read and write permissions for group and other users in the
+ system.
+ .
+ The tests/auto/qtipc/qsharedmemory/tst_qsharedmemory.cpp does
+ not exists in the current Debian tarball, so we removed it.
+ .
+ This patch has been backported by Lisandro Damián Nicanor Pérez Meyer
+ for Qt 4.6.3.
+
+Origin: backport, commit:856f209fb63ae336bfb389a12d2a75fa886dc1c5
+From: Thiago Macieira <thiago.macieira@intel.com>
+From: Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
+
+
+--- a/src/corelib/kernel/qsharedmemory_unix.cpp
++++ b/src/corelib/kernel/qsharedmemory_unix.cpp
+@@ -199,7 +199,7 @@ bool QSharedMemoryPrivate::create(int si
+     }
+ 
+     // create
+-    if (-1 == shmget(handle(), size, 0666 | IPC_CREAT | IPC_EXCL)) {
++    if (-1 == shmget(handle(), size, 0600 | IPC_CREAT | IPC_EXCL)) {
+         QString function = QLatin1String("QSharedMemory::create");
+         switch (errno) {
+         case EINVAL:
+@@ -223,7 +223,7 @@ bool QSharedMemoryPrivate::attach(QShare
+     if (!handle())
+         return false;
+ 
+-    int id = shmget(handle(), 0, (mode == QSharedMemory::ReadOnly ? 0444 : 0660));
++    int id = shmget(handle(), 0, (mode == QSharedMemory::ReadOnly ? 0400 : 0600));
+     if (-1 == id) {
+         setErrorString(QLatin1String("QSharedMemory::attach (shmget)"));
+         return false;
+@@ -269,7 +269,7 @@ bool QSharedMemoryPrivate::detach()
+     // Get the number of current attachments
+     if (!handle())
+         return false;
+-    int id = shmget(handle(), 0, 0444);
++    int id = shmget(handle(), 0, 0400);
+     unix_key = 0;
+ 
+     struct shmid_ds shmid_ds;
+--- a/src/corelib/kernel/qsystemsemaphore_unix.cpp
++++ b/src/corelib/kernel/qsystemsemaphore_unix.cpp
+@@ -143,10 +143,10 @@ key_t QSystemSemaphorePrivate::handle(QS
+     }
+ 
+     // Get semaphore
+-    semaphore = semget(unix_key, 1, 0666 | IPC_CREAT | IPC_EXCL);
++    semaphore = semget(unix_key, 1, 0600 | IPC_CREAT | IPC_EXCL);
+     if (-1 == semaphore) {
+         if (errno == EEXIST)
+-            semaphore = semget(unix_key, 1, 0666 | IPC_CREAT);
++            semaphore = semget(unix_key, 1, 0600 | IPC_CREAT);
+         if (-1 == semaphore) {
+             setErrorString(QLatin1String("QSystemSemaphore::handle"));
+             cleanHandle();
+--- a/src/gui/image/qnativeimage.cpp
++++ b/src/gui/image/qnativeimage.cpp
+@@ -173,7 +173,7 @@ QNativeImage::QNativeImage(int width, in
+ 
+     bool ok;
+     xshminfo.shmid = shmget(IPC_PRIVATE, xshmimg->bytes_per_line * xshmimg->height,
+-                            IPC_CREAT | 0777);
++                            IPC_CREAT | 0700);
+     ok = xshminfo.shmid != -1;
+     if (ok) {
+         xshmimg->data = (char*)shmat(xshminfo.shmid, 0, 0);
+--- a/tools/qvfb/qvfbshmem.cpp
++++ b/tools/qvfb/qvfbshmem.cpp
+@@ -174,13 +174,13 @@ QShMemViewProtocol::QShMemViewProtocol(i
+     uint data_offset_value = sizeof(QVFbHeader);
+ 
+     int dataSize = bpl * h + data_offset_value;
+-    shmId = shmget(key, dataSize, IPC_CREAT | 0666);
++    shmId = shmget(key, dataSize, IPC_CREAT | 0600);
+     if (shmId != -1)
+ 	data = (unsigned char *)shmat(shmId, 0, 0);
+     else {
+ 	struct shmid_ds shm;
+ 	shmctl(shmId, IPC_RMID, &shm);
+-	shmId = shmget(key, dataSize, IPC_CREAT | 0666);
++	shmId = shmget(key, dataSize, IPC_CREAT | 0600);
+ 	if (shmId == -1) {
+             perror("QShMemViewProtocol::QShMemViewProtocol");
+             qFatal("Cannot get shared memory 0x%08x", key);
+--- a/src/gui/embedded/qwssharedmemory.cpp
++++ b/src/gui/embedded/qwssharedmemory.cpp
+@@ -157,7 +157,7 @@ QWSSharedMemory::QWSSharedMemory (int si
+ 
+ bool QWSSharedMemory::create ()
+ {
+-  shmId = shmget (key, shmSize, IPC_CREAT | 0666);
++  shmId = shmget (key, shmSize, IPC_CREAT | 0600);
+   return (shmId != -1);
+ }
+ 

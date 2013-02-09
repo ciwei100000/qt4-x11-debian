@@ -8,6 +8,7 @@ blacklist_fraudulent_comodo_certificates.diff
 cve_2010_3170_ssl_certificates_wildcard.diff
 
 # qt-copy patches
+change_all_shmget_calls_to_use_user-only_memory.patch
 0180-window-role.diff
 0195-compositing-properties.diff
 0209-prevent-qt-mixing.diff
