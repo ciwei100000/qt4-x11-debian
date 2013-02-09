@@ -1,3 +1,10 @@
+Description: Backport a number of blacklisted SSL certificates.
+ This patch was created by backporting the blacklisted SSL certificates
+ list from Qt 4.8.2.
+Author: Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
+Forwarded: not-needed
+Last-Update: 2013-02-09
+
 --- a/src/network/ssl/qsslcertificate.cpp
 +++ b/src/network/ssl/qsslcertificate.cpp
 @@ -798,15 +798,43 @@ QList<QSslCertificate> QSslCertificatePr
