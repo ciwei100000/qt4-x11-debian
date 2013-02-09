@@ -7,6 +7,7 @@ ssl_certificate_large_sn.diff
 blacklist_fraudulent_comodo_certificates.diff
 cve_2010_3170_ssl_certificates_wildcard.diff
 change_all_shmget_calls_to_use_user-only_memory.patch
+ssl_certificates_blacklist.patch
 
 # qt-copy patches
 0180-window-role.diff
