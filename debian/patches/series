@@ -12,6 +12,7 @@ CVE-2011-3922.patch
 Check_for_buffer_overflow_in_Lookup_MarkMarkPos_CVE-2011-3193.patch
 
 # qt-copy patches
+CVE-2011-3194.patch
 0180-window-role.diff
 0195-compositing-properties.diff
 0209-prevent-qt-mixing.diff
