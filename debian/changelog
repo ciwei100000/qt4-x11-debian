@@ -9,6 +9,7 @@ qt4-x11 (4:4.6.3-4+squeeze2) UNRELEASED; urgency=high
     - (Malaysian) Digicert Sdn. Bhd.
     - Turktrust.
     Patch ssl_certificates_blacklist.patch.
+  * Add CVE-2011-3922.patch: Stack-buffer-overflow in glyph handling.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 09 Feb 2013 13:43:51 -0300
 
