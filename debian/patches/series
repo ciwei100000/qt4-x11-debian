@@ -9,6 +9,7 @@ cve_2010_3170_ssl_certificates_wildcard.diff
 change_all_shmget_calls_to_use_user-only_memory.patch
 ssl_certificates_blacklist.patch
 CVE-2011-3922.patch
+Check_for_buffer_overflow_in_Lookup_MarkMarkPos_CVE-2011-3193.patch
 
 # qt-copy patches
 0180-window-role.diff
