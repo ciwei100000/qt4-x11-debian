@@ -1,5 +1,6 @@
-qt4-x11 (4:4.6.3-4+squeeze2) UNRELEASED; urgency=high
+qt4-x11 (4:4.6.3-4+squeeze2) stable; urgency=high
 
+  * Team upload.
   * Backport upstream patch change_all_shmget_calls_to_use_user-only_memory.patch.
     It changes the shmget calls to get user-only memory, CVE-2013-0254.
     Set urgency to high.
@@ -14,7 +15,7 @@ qt4-x11 (4:4.6.3-4+squeeze2) UNRELEASED; urgency=high
     fixing CVE-2011-3193.
   * Backport CVE-2011-3194.patch to fix CVE-2011-3194.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 09 Feb 2013 13:43:51 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 10 Feb 2013 23:41:41 -0300
 
 qt4-x11 (4:4.6.3-4+squeeze1) stable; urgency=low
 
