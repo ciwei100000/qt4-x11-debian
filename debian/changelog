@@ -32,6 +32,7 @@ qt4-x11 (4:4.8.4+dfsg-1) UNRELEASED; urgency=low
     - 94_armv6_uname_entry.diff
     - powerpcspe.diff
     - sh.diff
+    - qt-multiarch-plugin-path-compat.diff
   * Update symbols
 
  -- Timo Jyrinki <timo@debian.org>  Mon, 21 Jan 2013 08:37:04 +0000
