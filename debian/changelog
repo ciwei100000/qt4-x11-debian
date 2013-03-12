@@ -32,6 +32,7 @@ qt4-x11 (4:4.8.4+dfsg-1) UNRELEASED; urgency=low
     - 94_armv6_uname_entry.diff
     - powerpcspe.diff
     - sh.diff
+    - QTBUG-25324_assistant_segfault_on_start_with_gcc_4.7.patch
     - qt-multiarch-plugin-path-compat.diff
   * Update symbols
 
