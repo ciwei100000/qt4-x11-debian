@@ -28,6 +28,7 @@ qt4-x11 (4:4.8.4+dfsg-1) UNRELEASED; urgency=low
     - 08_configure_quilt_compat.diff
     - 12_add_nostrip_for_debug_packages.diff
     - 23_permit_plugins_built_with_future_qt.diff
+    - 71_hppa_unaligned_access_fix_458133.diff
   * Update symbols
 
  -- Timo Jyrinki <timo@debian.org>  Mon, 21 Jan 2013 08:37:04 +0000
