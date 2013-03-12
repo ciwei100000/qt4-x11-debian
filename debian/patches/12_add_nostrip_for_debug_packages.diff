@@ -10,7 +10,7 @@ let dh_strip do it to generate debug packages.
 
 --- a/configure
 +++ b/configure
-@@ -734,6 +734,8 @@ mkdir -p "$outpath/config.tests"
+@@ -753,6 +753,8 @@ mkdir -p "$outpath/config.tests"
  rm -f "$outpath/config.tests/.qmake.cache"
  cp "$QMAKE_VARS_FILE" "$outpath/config.tests/.qmake.cache"
  
