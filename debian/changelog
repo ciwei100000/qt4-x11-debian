@@ -23,6 +23,7 @@ qt4-x11 (4:4.8.4+dfsg-1) UNRELEASED; urgency=low
       _gnome-shell.patch
     - 0195-compositing-properties.diff
     - qtdebug_syslog.patch
+    - 02_syncqt_sane_timestamp_for_nonexisting_headers.diff
   * Update symbols
 
  -- Timo Jyrinki <timo@debian.org>  Mon, 21 Jan 2013 08:37:04 +0000
