@@ -18,6 +18,7 @@ qt4-x11 (4:4.8.4+dfsg-1) UNRELEASED; urgency=low
   * Refresh patches:
     - 16_hide_std_symbols_on_qtwebkit.diff
     - no_libicu_message.diff
+    - Add_support_for_QT_USE_DRAG_DISTANCE_env_var.patch
   * Update symbols
 
  -- Timo Jyrinki <timo@debian.org>  Mon, 21 Jan 2013 08:37:04 +0000
