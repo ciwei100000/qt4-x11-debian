@@ -19,6 +19,8 @@ qt4-x11 (4:4.8.4+dfsg-1) UNRELEASED; urgency=low
     - 16_hide_std_symbols_on_qtwebkit.diff
     - no_libicu_message.diff
     - Add_support_for_QT_USE_DRAG_DISTANCE_env_var.patch
+    - QTBUG-21900_Buttons_in_Qt_applications_not_clickable_when_run_under\
+      _gnome-shell.patch
   * Update symbols
 
  -- Timo Jyrinki <timo@debian.org>  Mon, 21 Jan 2013 08:37:04 +0000
