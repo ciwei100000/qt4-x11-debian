@@ -25,6 +25,7 @@ qt4-x11 (4:4.8.4+dfsg-1) UNRELEASED; urgency=low
     - qtdebug_syslog.patch
     - 02_syncqt_sane_timestamp_for_nonexisting_headers.diff
     - 07_trust_dpkg-arch_over_uname-m.diff
+    - 08_configure_quilt_compat.diff
   * Update symbols
 
  -- Timo Jyrinki <timo@debian.org>  Mon, 21 Jan 2013 08:37:04 +0000
