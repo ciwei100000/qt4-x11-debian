@@ -1,4 +1,4 @@
-qt4-x11 (4:4.8.4+dfsg-1) UNRELEASED; urgency=low
+qt4-x11 (4:4.8.4+dfsg-1) experimental; urgency=low
 
   [ Timo Jyrinki ]
   * New upstream release
@@ -46,7 +46,7 @@ qt4-x11 (4:4.8.4+dfsg-1) UNRELEASED; urgency=low
     depends on libqtwebkit4-dbg.
   * Remove an unused override for libqt4-dbus.
 
- -- Timo Jyrinki <timo@debian.org>  Mon, 21 Jan 2013 08:37:04 +0000
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 01 Apr 2013 15:17:39 -0300
 
 qt4-x11 (4:4.8.2+dfsg-11) unstable; urgency=medium
 
