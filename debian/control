@@ -713,7 +713,7 @@ Package: qt4-bin-dbg
 Priority: extra
 Architecture: any
 Section: debug
-Depends: libqt4-dbg (= ${binary:Version}), ${misc:Depends}
+Depends: libqt4-dev-bin (= ${binary:Version}), ${misc:Depends}
 Recommends: libqt4-dbg
 Breaks: libqt4-dbg (<< 4:4.7.3-3)
 Replaces: libqt4-dbg (<< 4:4.7.3-3)

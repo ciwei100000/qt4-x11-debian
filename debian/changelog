@@ -40,6 +40,8 @@ qt4-x11 (4:4.8.4+dfsg-1) UNRELEASED; urgency=low
     - sh.diff
     - QTBUG-25324_assistant_segfault_on_start_with_gcc_4.7.patch
     - qt-multiarch-plugin-path-compat.diff
+  * Fix dependency in qt4-bin-dbg. It should be libqt4-dev-bin instead of
+    libqt4-dbg.
 
  -- Timo Jyrinki <timo@debian.org>  Mon, 21 Jan 2013 08:37:04 +0000
 
