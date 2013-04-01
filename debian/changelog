@@ -42,6 +42,8 @@ qt4-x11 (4:4.8.4+dfsg-1) UNRELEASED; urgency=low
     - qt-multiarch-plugin-path-compat.diff
   * Fix dependency in qt4-bin-dbg. It should be libqt4-dev-bin instead of
     libqt4-dbg.
+  * Add a lintian override for libqt4-webkit-dbg, it's a dummy package that
+    depends on libqtwebkit4-dbg.
 
  -- Timo Jyrinki <timo@debian.org>  Mon, 21 Jan 2013 08:37:04 +0000
 
