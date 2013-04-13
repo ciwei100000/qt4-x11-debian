@@ -382,7 +382,7 @@ override_dh_builddeb:
 	dh_builddeb -- -Zxz
 
 prune-nonfree:
-	# Delete zlib's RFCs.
-	find \( -name rfc195* \) -print -delete
+	# Delete RFCs.
+	find \( -name rfc????.txt \) -print -delete
 
 .PHONY: override_dh_auto_test

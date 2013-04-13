@@ -3,6 +3,7 @@ qt4-x11 (4:4.8.4+dfsg-2) UNRELEASED; urgency=low
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Switched qt4-default to Section libdevel. Thanks Ansgar Burchardt for
     noticing!
+  * Be more aggressive when deleting RFCs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 01 Apr 2013 19:38:35 -0300
 
