@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.2 amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
+# SymbolsHelper-Confirmed: 4:4.8.4 amd64 armel ia64 mips powerpc s390 s390x sparc
 libQtCLucene.so.4 libqtcore4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN12QCLuceneHits2idEi@Base 4:4.5.3
@@ -996,7 +996,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN10QByteArray7replaceEiiPKc@Base 4:4.5.3
  _ZN10QByteArray7replaceEiiPKci@Base 4:4.7.0~beta1
  _ZN10QByteArray7replaceEiiRKS_@Base 4:4.5.3
- _ZN10QByteArray7reserveEi@Base 4:4.8.3
+ (arch=amd64)_ZN10QByteArray7reserveEi@Base 4:4.8.4
  _ZN10QByteArray8truncateEi@Base 4:4.5.3
  _ZN10QByteArrayC1EPKc@Base 4:4.5.3
  _ZN10QByteArrayC1EPKci@Base 4:4.5.3

@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.2 s390x
+# SymbolsHelper-Confirmed: 4:4.8.4 s390x
 libQtNetwork.so.4 libqt4-network #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z19qt_qhostinfo_lookupRK7QStringP7QObjectPKcPbPi@Base 4:4.6.3
