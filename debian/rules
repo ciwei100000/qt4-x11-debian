@@ -325,6 +325,10 @@ override_dh_auto_install:
 	echo "/usr/lib/$(DEB_HOST_MULTIARCH)" >> $(CURDIR)/debian/tmp/usr/share/qtchooser/qt4.conf
 	ln -s /usr/share/qtchooser/qt4.conf $(CURDIR)/debian/tmp/usr/share/qtchooser/default.conf
 
+	# Use qtchooser's qt4 config as the second option path for qtchooser.
+	mkdir -p $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qtchooser
+	ln -s /usr/share/qtchooser/qt4.conf $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qtchooser/default.conf
+
 	# Remove leftover directories
 	find $(CURDIR)/debian/tmp/usr/lib/qt4 -depth -type d \( -false \
 	  -o -name .moc\* \

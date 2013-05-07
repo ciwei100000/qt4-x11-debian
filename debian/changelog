@@ -2,6 +2,8 @@ qt4-x11 (4:4.8.4+dfsg-3) UNRELEASED; urgency=low
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Add armhf to the list of archs that should not use pch to avoid FTBFSs.
+  * Also ship a default config in the second search path of qtchooser, used as
+    a last-resort fallback.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 06 May 2013 21:00:32 -0300
 
