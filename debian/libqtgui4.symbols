@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.2 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
+# SymbolsHelper-Confirmed: 4:4.8.4 alpha powerpcspe ppc64
 libQtGui.so.4 libqtgui4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qDrawArrowP8QPainterN2Qt9ArrowTypeENS1_8GUIStyleEbiiiiRK8QPaletteb@Base 4:4.5.3
@@ -82,7 +82,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _Z6bitBltP12QPaintDeviceiiPKS_iiiib@Base 4:4.5.3
  _Z6bitBltP6QImageiiPKS_iiii6QFlagsIN2Qt19ImageConversionFlagEE@Base 4:4.5.3
  _Z7copyBltP7QPixmapiiPKS_iiii@Base 4:4.5.3
- (optional=external|arch=!amd64 !armel !armhf !hurd-i386 !i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386 !sparc)_Z8qWarningv@Base 4:4.7.2
+ (optional=external|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386 !sparc)_Z8qWarningv@Base 4:4.7.2
  _Z9qDrawItemP8QPainterN2Qt8GUIStyleEiiiiiRK8QPalettebPK7QPixmapRK7QStringiPK6QColor@Base 4:4.5.3
  _Z9qGeomCalcR7QVectorI13QLayoutStructEiiiii@Base 4:4.5.3
  _Z9qItemRectP8QPainterN2Qt8GUIStyleEiiiiibPK7QPixmapRK7QStringi@Base 4:4.5.3
@@ -6840,8 +6840,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN6QMovieD0Ev@Base 4:4.5.3
  _ZN6QMovieD1Ev@Base 4:4.5.3
  _ZN6QMovieD2Ev@Base 4:4.5.3
- (optional|arch=mips mipsel powerpc s390)_ZN6QRectFC1ERK5QRect@Base 4:4.8.0
- (optional|arch=mips mipsel powerpc s390)_ZN6QRectFC2ERK5QRect@Base 4:4.8.1
+ (optional|arch=mips mipsel powerpc powerpcspe s390)_ZN6QRectFC1ERK5QRect@Base 4:4.8.0
+ (optional|arch=mips mipsel powerpc powerpcspe s390)_ZN6QRectFC2ERK5QRect@Base 4:4.8.1
  _ZN6QSound11isAvailableEv@Base 4:4.5.3
  _ZN6QSound11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN6QSound11qt_metacastEPKc@Base 4:4.5.3
@@ -7890,8 +7890,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN8QX11InfoaSERKS_@Base 4:4.5.3
  (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN9QBitArray6setBitEi@Base 4:4.8.1
  (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN9QBitArray8clearBitEi@Base 4:4.8.1
- (optional=external|arch=amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc)_ZN9QBitArrayD1Ev@Base 4:4.8.1
- (optional=external|arch=amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc)_ZN9QBitArrayD2Ev@Base 4:4.8.1
+ (optional=external|arch=alpha amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc powerpcspe s390 s390x sparc)_ZN9QBitArrayD1Ev@Base 4:4.8.1
+ (optional=external|arch=alpha amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc powerpcspe s390 s390x sparc)_ZN9QBitArrayD2Ev@Base 4:4.8.1
  _ZN9QCDEStyle11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN9QCDEStyle11qt_metacastEPKc@Base 4:4.5.3
  _ZN9QCDEStyle16staticMetaObjectE@Base 4:4.5.3
@@ -11521,7 +11521,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK6QMovie9cacheModeEv@Base 4:4.5.3
  _ZNK6QMovie9frameRectEv@Base 4:4.5.3
  _ZNK6QMovie9loopCountEv@Base 4:4.5.3
- (optional=external|arch=!armel !s390x)_ZNK6QRectF6toRectEv@Base 4:4.7.2
+ (optional=external|arch=!alpha !armel !s390x)_ZNK6QRectF6toRectEv@Base 4:4.7.2
  _ZNK6QSound10isFinishedEv@Base 4:4.5.3
  _ZNK6QSound10metaObjectEv@Base 4:4.5.3
  _ZNK6QSound14loopsRemainingEv@Base 4:4.5.3
@@ -12054,9 +12054,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK8QToolBox7indexOfEP7QWidget@Base 4:4.5.3
  _ZNK8QToolBox8itemIconEi@Base 4:4.5.3
  _ZNK8QToolBox8itemTextEi@Base 4:4.5.3
- (optional=templinst|arch=ia64 s390x)_ZNK8QVariant5valueI5QFontEET_v@Base 4:4.7.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !s390 !sparc)_ZNK8QVariant5valueI6QImageEET_v@Base 4:4.7.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !s390)_ZNK8QVariant5valueI7QPixmapEET_v@Base 4:4.7.2
+ (optional=templinst|arch=ia64 ppc64 s390x)_ZNK8QVariant5valueI5QFontEET_v@Base 4:4.7.2
+ (optional=templinst|arch=!alpha !amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !powerpcspe !s390 !sparc)_ZNK8QVariant5valueI6QImageEET_v@Base 4:4.7.2
+ (optional=templinst|arch=!alpha !amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !powerpcspe !s390)_ZNK8QVariant5valueI7QPixmapEET_v@Base 4:4.7.2
  _ZNK8QX11Info10getX11DataEb@Base 4:4.5.3
  _ZNK8QX11Info13defaultVisualEv@Base 4:4.5.3
  _ZNK8QX11Info15defaultColormapEv@Base 4:4.5.3
