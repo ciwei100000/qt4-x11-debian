@@ -69,10 +69,8 @@ Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Suggests: libthai0, libicu48
-Replaces: libqt4-core (<< 4.4.0~beta1-1), libqt4-gui (<< 4.4.0~beta1-1),
- libqt4-dev (<< 4:4.8.4+dfsg-2)
-Breaks: libqt4-core (<< 4.4.0~beta1-1), libqt4-gui (<< 4.4.0~beta1-1),
- libqt4-dev (<< 4:4.8.4+dfsg-2)
+Replaces: libqt4-dev (<< 4:4.8.4+dfsg-2)
+Breaks: libqt4-dev (<< 4:4.8.4+dfsg-2)
 Description: Qt 4 core module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -104,14 +102,6 @@ Pre-Depends: ${misc:Pre-Depends}
 Depends: fontconfig, ${misc:Depends}, ${shlibs:Depends}
 Recommends: libcups2
 Suggests: qt4-qtconfig
-Breaks: libqt4-core (<< 4.0.1-3),
-        libqt4-designer (<< 4.4.0~beta1-1),
-        libqt4-gui (<< 4.4.0),
-        qt4-designer (<< 4.1.4)
-Replaces: libqt4-core (<< 4.0.1-3),
-          libqt4-designer (<< 4.4.0~beta1-1),
-          libqt4-gui (<< 4.4.0),
-          qt4-designer (<< 4.1.4)
 Description: Qt 4 GUI module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -141,8 +131,6 @@ Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Recommends: ca-certificates
-Breaks: libqt4-core (<< 4.4.0~beta1-1)
-Replaces: libqt4-core (<< 4.4.0~beta1-1)
 Description: Qt 4 network module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -155,8 +143,6 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libqt4-gui (<< 4.4.0~beta1-1)
-Replaces: libqt4-gui (<< 4.4.0~beta1-1)
 Description: Qt 4 OpenGL module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -172,8 +158,6 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libqt4-core (<< 4.4.0~beta1-1)
-Replaces: libqt4-core (<< 4.4.0~beta1-1)
 Description: Qt 4 script module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -301,8 +285,6 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libqt4-gui (<< 4.4.0~beta1-1)
-Replaces: libqt4-gui (<< 4.4.0~beta1-1)
 Description: Qt 4 SVG module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -329,8 +311,6 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libqt4-core (<< 4.4.0~beta1-1)
-Replaces: libqt4-core (<< 4.4.0~beta1-1)
 Description: Qt 4 XML module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -355,8 +335,8 @@ Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: qdbus (= ${binary:Version}), libqtdbus4 (= ${binary:Version}),
  ${misc:Depends}
-Replaces: libqt4-core (<< 4.4.0~beta1-1), libqt4-dev (<< 4:4.7.1)
-Breaks: libqt4-core (<< 4.4.0~beta1-1), libqt4-dev (<< 4:4.7.1)
+Replaces: libqt4-dev (<< 4:4.7.1)
+Breaks: libqt4-dev (<< 4:4.7.1)
 Description: Qt 4 D-Bus module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -394,8 +374,6 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libqt4-gui (<< 4.2.1-1), qt4-designer (<< 4.4.0~beta1-1)
-Replaces: libqt4-gui (<< 4.2.1-1), qt4-designer (<< 4.4.0~beta1-1)
 Description: Qt 3 compatibility library for Qt 4
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -411,8 +389,6 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libqt4-gui (<< 4.4.0~beta1-1)
-Replaces: libqt4-gui (<< 4.4.0~beta1-1)
 Description: Qt 4 designer module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -450,8 +426,6 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libqt4-core (<< 4.4.0~beta1-1)
-Replaces: libqt4-core (<< 4.4.0~beta1-1)
 Description: Qt 4 test module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -465,8 +439,6 @@ Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Conflicts: libphonon4
-Breaks: kdelibs5 (<= 4:4.0.80)
-Replaces: kdelibs5 (<= 4:4.0.80), libphonon4
 Description: Qt 4 Phonon module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -563,11 +535,6 @@ Depends: libqt4-dbus (= ${binary:Version}),
          qtchooser,
          ${misc:Depends}
 Recommends: libqt4-opengl-dev (= ${binary:Version}), libqtwebkit-dev (>= 2.0~)
-Breaks: g++-4.6 (<< 4.6.0-7~) [armel],
-        libqt4-opengl-dev (<< 4.4.0-2),
-        libqtwebkit-dev (<< 2.0~),
-        libphonon4-dev (<< 4:4.6.0.0-1+exp1~)
-Replaces: libqt4-opengl-dev (<< 4.4.0-2), libqtwebkit-dev (<< 2.0~)
 Suggests: firebird-dev,
           libmysqlclient-dev,
           libpq-dev,
@@ -621,8 +588,6 @@ Depends: libgl1-mesa-dev,
          libqt4-opengl (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
-Breaks: libqt4-dev (<< 4.4.0-2)
-Replaces: libqt4-dev (<< 4.4.0-2)
 Description: Qt 4 OpenGL library development files
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -635,9 +600,7 @@ Priority: extra
 Architecture: any
 Section: debug
 Depends: libqtcore4 (= ${binary:Version}), ${misc:Depends}
-Breaks: libqt4-debug (<< 4.4.0~beta1-1)
 Conflicts: qt-x11-free-dbg
-Replaces: libqt4-debug (<< 4.4.0~beta1-1)
 Description: Qt 4 library debugging symbols
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -743,12 +706,6 @@ Package: qt4-designer
 Architecture: any
 Section: devel
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libqt4-core (<< 4.4.0~beta1-1),
-        libqt4-designer (<< 4.4.0~beta1-1),
-        qt4-dev-tools (<= 4.0.1-2)
-Replaces: libqt4-core (<< 4.4.0~beta1-1),
-          libqt4-designer (<< 4.4.0~beta1-1),
-          qt4-dev-tools (<= 4.0.1-2)
 Recommends: libqt4-dev, qtchooser
 Description: graphical designer for Qt 4 applications
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -761,8 +718,6 @@ Package: qt4-dev-tools
 Architecture: any
 Section: devel
 Depends: libqt4-sql-sqlite, ${misc:Depends}, ${shlibs:Depends}
-Breaks: libqt4-core (<< 4.4.0~beta1-1)
-Replaces: libqt4-core (<< 4.4.0~beta1-1)
 Recommends: libqt4-dev, qt4-designer, qt4-doc, qtchooser
 Suggests: qt4-doc-html
 Conflicts: qt3-dev-tools-embedded
@@ -787,8 +742,6 @@ Architecture: any
 Multi-Arch: foreign
 Section: devel
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libqt4-dev (<< 4.5.0~beta1+snapshot20090114-1)
-Replaces: libqt4-dev (<< 4.5.0~beta1+snapshot20090114-1)
 Recommends: qtchooser
 Description: Qt 4 qmake Makefile generator tool
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -809,8 +762,6 @@ Package: qt4-qtconfig
 Architecture: any
 Section: x11
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libqt4-core (<< 4.4.0~beta1-1), libqt4-gui (<< 4.1.0)
-Replaces: libqt4-core (<< 4.4.0~beta1-1), libqt4-gui (<< 4.1.0)
 Recommends: qtchooser
 Description: Qt 4 configuration tool
  Qt is a cross-platform C++ application framework. Qt's primary feature
