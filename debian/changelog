@@ -5,6 +5,9 @@ qt4-x11 (4:4.8.4+dfsg-3) UNRELEASED; urgency=low
   * Also ship a default config in the second search path of qtchooser, used as
     a last-resort fallback.
   * Update symbols files.
+  * Move qt4.conf from libqt4-dev to libqtcore4. It will not be strange to find
+    apps explicitely calling the qt4 config.
+    - Add Breaks+Replaces to libqtcore4 against libqt4-dev << 4:4.8.4+dfsg-2.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 06 May 2013 21:00:32 -0300
 
