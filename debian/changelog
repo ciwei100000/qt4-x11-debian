@@ -7,7 +7,7 @@ qt4-x11 (4:4.8.4+dfsg-3) UNRELEASED; urgency=low
   * Update symbols files.
   * Move qt4.conf from libqt4-dev to libqtcore4. It will not be strange to find
     apps explicitely calling the qt4 config.
-    - Add Breaks+Replaces to libqtcore4 against libqt4-dev << 4:4.8.4+dfsg-2.
+    - Add Breaks+Replaces to libqtcore4 against libqt4-dev << 4:4.8.4+dfsg-3~.
   * Remove Break+Replaces for packages older than what Squeeze shipped.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 06 May 2013 21:00:32 -0300
