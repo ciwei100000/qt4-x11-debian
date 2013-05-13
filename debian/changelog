@@ -4,8 +4,8 @@ qt4-x11 (4:4.8.4+dfsg-3) UNRELEASED; urgency=low
   * Add armhf to the list of archs that should not use pch to avoid FTBFSs.
   * Update symbols files.
   * Ship multi-arch aware configs files and a last resort fallback qt4.conf to
-    avoid FTBFSs in Qt4 packages already in the archive. See README.Debian for
-    more info.
+    avoid FTBFSs in Qt4 packages already in the archive. This is explained in
+    qtchooser's README.Debian.
   * Remove Break+Replaces for packages older than what Squeeze shipped.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 06 May 2013 21:00:32 -0300
