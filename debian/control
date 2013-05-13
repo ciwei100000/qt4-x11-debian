@@ -69,8 +69,6 @@ Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Suggests: libthai0, libicu48
-Replaces: libqt4-dev (<< 4:4.8.4+dfsg-3~)
-Breaks: libqt4-dev (<< 4:4.8.4+dfsg-3~)
 Description: Qt 4 core module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
