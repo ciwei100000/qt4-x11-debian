@@ -1,4 +1,4 @@
-qt4-x11 (4:4.8.4+dfsg-2r4) UNRELEASED; urgency=low
+qt4-x11 (4:4.8.4+dfsg-3) UNRELEASED; urgency=low
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Add armhf to the list of archs that should not use pch to avoid FTBFSs.
