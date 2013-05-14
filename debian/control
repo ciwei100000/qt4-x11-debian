@@ -856,7 +856,7 @@ Description: Qt 4 API documentation (HTML format)
  The documentation is provided in HTML format.
 
 Package: qt4-default
-Architecture: all
+Architecture: any
 Depends: qtchooser, libqt4-dev, ${misc:Depends}
 Section: libdevel
 Conflicts: qt5-default
