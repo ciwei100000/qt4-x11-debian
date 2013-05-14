@@ -7,6 +7,8 @@ qt4-x11 (4:4.8.4+dfsg-3) UNRELEASED; urgency=low
     avoid FTBFSs in Qt4 packages already in the archive. This is explained in
     qtchooser's README.Debian.
   * Remove Break+Replaces for packages older than what Squeeze shipped.
+  * Changed qt4-default to arch: all. Should have been like this from start, as
+    it contains arch-qualified paths in it.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 06 May 2013 21:00:32 -0300
 
