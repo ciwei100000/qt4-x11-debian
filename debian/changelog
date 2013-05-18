@@ -1,5 +1,7 @@
 qt4-x11 (4:4.8.4+dfsg-4) UNRELEASED; urgency=low
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Also ship 4.conf. This makes calls to qtchooser prettier: qtchooser -qt4.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 18 May 2013 16:07:49 -0300
 

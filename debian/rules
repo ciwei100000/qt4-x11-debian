@@ -324,8 +324,10 @@ override_dh_auto_install:
 	echo "/usr/lib/$(DEB_HOST_MULTIARCH)/qt4/bin" > $(CURDIR)/debian/tmp/usr/share/qtchooser/qt4-$(DEB_HOST_MULTIARCH).conf
 	echo "/usr/lib/$(DEB_HOST_MULTIARCH)" >> $(CURDIR)/debian/tmp/usr/share/qtchooser/qt4-$(DEB_HOST_MULTIARCH).conf
 
-	# Ship qt4.conf for this arch, and a default.conf.
+	# Ship 4.conf and qt4.conf for this arch, and a default.conf.
+	# 4.conf makes calling qtchooser prettier.
 	mkdir -p $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qtchooser
+	ln -s /usr/share/qtchooser/qt4-$(DEB_HOST_MULTIARCH).conf $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qtchooser/4.conf
 	ln -s /usr/share/qtchooser/qt4-$(DEB_HOST_MULTIARCH).conf $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qtchooser/qt4.conf
 	ln -s /usr/share/qtchooser/qt4-$(DEB_HOST_MULTIARCH).conf $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qtchooser/default.conf
 
