@@ -1,9 +1,58 @@
-qt4-x11 (4:4.8.2+dfsg-5) UNRELEASED; urgency=low
+qt4-x11 (4:4.8.2+dfsg-11) unstable; urgency=medium
+
+  * Take upstream patch change_all_shmget_calls_to_use_user-only_memory.patch.
+    It changes the shmget calls to get user-only memory, CVE-2013-0254.
+    - Set urgency to medium.
+    - Drop changes from tests/auto/qtipc/qsharedmemory/tst_qsharedmemory.cpp,
+    it doesn't exists in the Debian tarball.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 05 Feb 2013 18:52:29 -0300
+
+qt4-x11 (4:4.8.2+dfsg-10) unstable; urgency=medium
+
+  * Add SSL-certificates-blacklist-mis-issued-Turktrust-cert.patch to blacklist
+    miss issued certificates from Turktrust.
+    - Patch taken from upstream.
+    - Set urgency to medium.
+  * Add Fix_binary_incompatibility_between_openssl_versions.patch to avoid a
+    bug that would cause certificate verification problems if a different
+    version of openssl is loaded at runtime to the headers Qt was compiled
+    against (Closes: #697582).
+    - Patch taken from upstream.
+    - Also deserves setting the urgency to medium.
+  * Confirm symbols files with buildds' logs.
+  * Make libqt4-network recommend ca-certificates. It may be needed if doing
+    SSL stuff and expecting to use certificate chains.
+    Also Qt does not ship certificate bundles anymore but rather uses the
+    system bundle (Closes: #530532).
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sat, 19 Jan 2013 16:47:57 -0300
+
+qt4-x11 (4:4.8.2+dfsg-9) unstable; urgency=low
+
+  * Fix the Breaks and Replaces version in libqtdbus4 to 4:4.8.2+dfsg-8
+    (Closes: #697507).
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 06 Jan 2013 13:16:54 -0300
+
+qt4-x11 (4:4.8.2+dfsg-8) unstable; urgency=low
+
+  * Make libqtdbus4 Break+Replaces libqt4-dbus << 4:4.7.4-6, thus allowing
+    proper installation (Closes: #697147).
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 04 Jan 2013 12:18:01 -0300
+
+qt4-x11 (4:4.8.2+dfsg-7) unstable; urgency=medium
+
+  [ Pino Toscano ]
+  * Re-enable parallel building for all the architectures, after
+    4:4.8.2+dfsg-5 accidentally disabled it. (Closes: #696961)
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Apply make_rules_for_redirect_stricter.patch taken from upstream to solve
     a "man in the middle" attack, CVE-2012-5624. Thanks Thijs Kinkhorst
     (Closes: #695156).
+    - Set urgency to medium.
   * Break the circular dependency between libqt4-dbus and qdbus by adding
     libqtdbus4 with the contents of libqt4-dbus in it. Then make libqt4-dbus
     depend on both qdbus and libqtdbus4. The symbols file of libqtdbus4 depends
@@ -11,7 +60,27 @@ qt4-x11 (4:4.8.2+dfsg-5) UNRELEASED; urgency=low
     installed, also on rebuilt packages. This arrangement is transitional.
     (Closes: #669278).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 08 Dec 2012 14:26:18 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 31 Dec 2012 00:48:09 -0300
+
+qt4-x11 (4:4.8.2+dfsg-6) unstable; urgency=low
+
+  [ Debian Qt/KDE Maintainers ]
+  * Hopefully fix ia64 FTBFS:
+    - Remove add-winvalid.patch. Stephan Schreiber has determined the problem
+      with the precompiled headers on ia64. Thanks *a lot* Stephan.
+    - Apply the changes suggested by Stephan to avoid using pre compiled
+      headers just on ia64.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 18 Dec 2012 07:21:48 -0300
+
+qt4-x11 (4:4.8.2+dfsg-5) unstable; urgency=low
+
+  * Add some changes in order to determine the reason of the FTBFS on ia64:
+    - Re-allow parallel building on ia64.
+    - Pass -Winvalid-pch to CFLAGS.
+    See http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=696096 for more info.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 16 Dec 2012 15:00:35 -0300
 
 qt4-x11 (4:4.8.2+dfsg-4) unstable; urgency=medium
 
