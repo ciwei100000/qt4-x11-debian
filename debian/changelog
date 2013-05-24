@@ -1,3 +1,89 @@
+qt4-x11 (4:4.8.4+dfsg-4) unstable; urgency=low
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Also ship 4.conf. This makes calls to qtchooser prettier: qtchooser -qt4.
+  * Make every package that ships a binary managed by qtchooser depend on it.
+  * Upload to unstable.
+
+  [ Pino Toscano ]
+  * Switch libtiff4-dev build dependency to libtiff-dev.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 24 May 2013 10:11:35 -0300
+
+qt4-x11 (4:4.8.4+dfsg-3) experimental; urgency=low
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Add armhf to the list of archs that should not use pch to avoid FTBFSs.
+  * Update symbols files.
+  * Ship multi-arch aware configs files and a last resort fallback qt4.conf to
+    avoid FTBFSs in Qt4 packages already in the archive. This is explained in
+    qtchooser's README.Debian.
+  * Remove Break+Replaces for packages older than what Squeeze shipped.
+  * Changed qt4-default to arch: all. Should have been like this from start, as
+    it contains arch-qualified paths in it.
+  * Fix typos in lintian overrides.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 13 May 2013 23:31:54 -0300
+
+qt4-x11 (4:4.8.4+dfsg-2) experimental; urgency=low
+
+  * Switched qt4-default to Section libdevel. Thanks Ansgar Burchardt for
+    noticing!
+  * Be more aggressive when deleting RFCs.
+  * libqt4-dev needs qtchooser, so we make it a dependency.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 14 Apr 2013 16:30:21 -0300
+
+qt4-x11 (4:4.8.4+dfsg-1) experimental; urgency=low
+
+  [ Timo Jyrinki ]
+  * New upstream release
+  * Migrate to use qtchooser for Qt5 co-installation support
+    - Libraries co-installed, executables managed by qtchooser
+    - Packages will need build-dep on qt4-default to build against Qt4
+    - Symlinks left for binaries that had -qt4 via alternatives
+  * Drop patches that have been merged upstream:
+    - QElfParser-fix-type-of-sh_size.patch
+    - Fix-cursor-truncate-to-include-line-position.patch
+    - qt_atomic_sparc64.patch
+    - fix_use_after_free_qlocale_unix.patch
+    - QTBUG-14724_close_orphaned_file_descriptors_after_printing.patch
+    - disable-SSL-compression-by-default.patch
+    - fix_jit_crash_on_x86_64.patch
+    - add_missing_map_noreserve.patch
+    - make_rules_for_redirect_stricter.patch
+  * Refresh patches:
+    - 16_hide_std_symbols_on_qtwebkit.diff
+    - no_libicu_message.diff
+  * Update symbols
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Improve watch file to mangle Debian version.
+  * Refresh patches:
+    - Add_support_for_QT_USE_DRAG_DISTANCE_env_var.patch
+    - QTBUG-21900_Buttons_in_Qt_applications_not_clickable_when_run_under\
+      _gnome-shell.patch
+    - 0195-compositing-properties.diff
+    - qtdebug_syslog.patch
+    - 02_syncqt_sane_timestamp_for_nonexisting_headers.diff
+    - 07_trust_dpkg-arch_over_uname-m.diff
+    - 08_configure_quilt_compat.diff
+    - 12_add_nostrip_for_debug_packages.diff
+    - 23_permit_plugins_built_with_future_qt.diff
+    - 71_hppa_unaligned_access_fix_458133.diff
+    - 94_armv6_uname_entry.diff
+    - powerpcspe.diff
+    - sh.diff
+    - QTBUG-25324_assistant_segfault_on_start_with_gcc_4.7.patch
+    - qt-multiarch-plugin-path-compat.diff
+  * Fix dependency in qt4-bin-dbg. It should be libqt4-dev-bin instead of
+    libqt4-dbg.
+  * Add a lintian override for libqt4-webkit-dbg, it's a dummy package that
+    depends on libqtwebkit4-dbg.
+  * Remove an unused override for libqt4-dbus.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 01 Apr 2013 15:17:39 -0300
+
 qt4-x11 (4:4.8.2+dfsg-11) unstable; urgency=medium
 
   * Take upstream patch change_all_shmget_calls_to_use_user-only_memory.patch.

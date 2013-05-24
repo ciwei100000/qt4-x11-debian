@@ -8,7 +8,7 @@ Trolltech task ID : 181882
 
 --- a/configure
 +++ b/configure
-@@ -228,7 +228,50 @@ linkerSupportsFlag()
+@@ -247,7 +247,50 @@ DeviceVar()
  #-------------------------------------------------------------------------------
  
  # need that throughout the script

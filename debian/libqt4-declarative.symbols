@@ -1,11 +1,11 @@
-# SymbolsHelper-Confirmed: 4:4.8.1 amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
+# SymbolsHelper-Confirmed: 4:4.8.4 alpha powerpcspe ppc64
 libQtDeclarative.so.4 libqt4-declarative #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qmlContextPK7QObject@Base 4:4.7.0~beta1
  _Z18qmlExecuteDeferredP7QObject@Base 4:4.7.0~beta1
  _Z27qmlAttachedPropertiesObjectPiPK7QObjectPK11QMetaObjectb@Base 4:4.7.0~beta1
  _Z31qmlAttachedPropertiesObjectByIdiPK7QObjectb@Base 4:4.7.0~beta1
- (optional=internal|arch=armel armhf mips mipsel powerpc s390 s390x sparc)_Z6qDebugv@Base 4:4.8.1
+ (optional=internal|arch=alpha armel armhf mips mipsel powerpc powerpcspe s390 s390x sparc)_Z6qDebugv@Base 4:4.8.1
  _Z7qmlInfoPK7QObject@Base 4:4.7.0~beta2
  _Z7qmlInfoPK7QObjectRK17QDeclarativeError@Base 4:4.7.0~beta2
  _Z7qmlInfoPK7QObjectRK5QListI17QDeclarativeErrorE@Base 4:4.7.0~beta2
@@ -243,6 +243,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN17QDeclarativeTimerD0Ev@Base 4:4.7.4
  _ZN17QDeclarativeTimerD1Ev@Base 4:4.7.4
  _ZN17QDeclarativeTimerD2Ev@Base 4:4.7.4
+ _ZN17QPerformanceTimer5startEv@Base 4:4.8.4
  _ZN18QDeclarativeAction17deleteFromBindingEv@Base 4:4.7.0~beta1
  _ZN18QDeclarativeActionC1EP7QObjectRK7QStringP19QDeclarativeContextRK8QVariant@Base 4:4.7.0~beta1
  _ZN18QDeclarativeActionC1EP7QObjectRK7QStringRK8QVariant@Base 4:4.7.0~beta1
@@ -416,6 +417,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN19QDeclarativeAnchorsD0Ev@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchorsD1Ev@Base 4:4.7.0~beta1
  _ZN19QDeclarativeAnchorsD2Ev@Base 4:4.7.0~beta1
+ _ZN19QDeclarativeBinding10disconnectEN27QDeclarativeAbstractBinding14DisconnectModeE@Base 4:4.8.3
  _ZN19QDeclarativeBinding10setEnabledEb6QFlagsIN27QDeclarativePropertyPrivate9WriteFlagEE@Base 4:4.7.0~beta1
  _ZN19QDeclarativeBinding11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1
  _ZN19QDeclarativeBinding11qt_metacastEPKc@Base 4:4.7.0~beta1
@@ -685,6 +687,28 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN22QDeclarativeDebugQueryD0Ev@Base 4:4.7.4
  _ZN22QDeclarativeDebugQueryD1Ev@Base 4:4.7.4
  _ZN22QDeclarativeDebugQueryD2Ev@Base 4:4.7.4
+ _ZN22QDeclarativeDebugTrace10startRangeENS_9RangeTypeE@Base 4:4.8.4
+ _ZN22QDeclarativeDebugTrace12addEventImplENS_9EventTypeE@Base 4:4.8.4
+ _ZN22QDeclarativeDebugTrace12endRangeImplENS_9RangeTypeE@Base 4:4.8.4
+ _ZN22QDeclarativeDebugTrace12sendMessagesEv@Base 4:4.8.4
+ _ZN22QDeclarativeDebugTrace13rangeDataImplENS_9RangeTypeERK4QUrl@Base 4:4.8.4
+ _ZN22QDeclarativeDebugTrace13rangeDataImplENS_9RangeTypeERK7QString@Base 4:4.8.4
+ _ZN22QDeclarativeDebugTrace13rangeLocationENS_9RangeTypeERK4QUrli@Base 4:4.8.4
+ _ZN22QDeclarativeDebugTrace13rangeLocationENS_9RangeTypeERK7QStringi@Base 4:4.8.4
+ _ZN22QDeclarativeDebugTrace14processMessageERK21QDeclarativeDebugData@Base 4:4.8.4
+ _ZN22QDeclarativeDebugTrace14startRangeImplENS_9RangeTypeE@Base 4:4.8.4
+ _ZN22QDeclarativeDebugTrace15messageReceivedERK10QByteArray@Base 4:4.8.4
+ _ZN22QDeclarativeDebugTrace17rangeLocationImplENS_9RangeTypeERK4QUrli@Base 4:4.8.4
+ _ZN22QDeclarativeDebugTrace17rangeLocationImplENS_9RangeTypeERK7QStringi@Base 4:4.8.4
+ _ZN22QDeclarativeDebugTrace8addEventENS_9EventTypeE@Base 4:4.8.4
+ _ZN22QDeclarativeDebugTrace8endRangeENS_9RangeTypeE@Base 4:4.8.4
+ _ZN22QDeclarativeDebugTrace9rangeDataENS_9RangeTypeERK4QUrl@Base 4:4.8.4
+ _ZN22QDeclarativeDebugTrace9rangeDataENS_9RangeTypeERK7QString@Base 4:4.8.4
+ _ZN22QDeclarativeDebugTraceC1Ev@Base 4:4.8.4
+ _ZN22QDeclarativeDebugTraceC2Ev@Base 4:4.8.4
+ _ZN22QDeclarativeDebugTraceD0Ev@Base 4:4.8.4
+ _ZN22QDeclarativeDebugTraceD1Ev@Base 4:4.8.4
+ _ZN22QDeclarativeDebugTraceD2Ev@Base 4:4.8.4
  _ZN22QDeclarativeDebugWatch11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1
  _ZN22QDeclarativeDebugWatch11qt_metacastEPKc@Base 4:4.7.0~beta1
  _ZN22QDeclarativeDebugWatch12stateChangedENS_5StateE@Base 4:4.7.0~beta1
@@ -1070,7 +1094,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN27QDeclarativeAbstractBinding11weakPointerEv@Base 4:4.7.1
  _ZN27QDeclarativeAbstractBinding16removeFromObjectEv@Base 4:4.7.0~beta1
  _ZN27QDeclarativeAbstractBinding5clearEv@Base 4:4.7.0~beta1
- _ZN27QDeclarativeAbstractBinding7destroyEv@Base 4:4.7.0~beta1
+ _ZN27QDeclarativeAbstractBinding7destroyENS_11DestroyModeE@Base 4:4.8.3
  _ZN27QDeclarativeAbstractBindingC1Ev@Base 4:4.7.0~beta1
  _ZN27QDeclarativeAbstractBindingC2Ev@Base 4:4.7.0~beta1
  _ZN27QDeclarativeAbstractBindingD0Ev@Base 4:4.7.0~beta1
@@ -1158,7 +1182,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN27QDeclarativePropertyPrivate5writeERK20QDeclarativePropertyRK8QVariant6QFlagsINS_9WriteFlagEE@Base 4:4.7.0~beta1
  _ZN27QDeclarativePropertyPrivate7bindingEP7QObjectii@Base 4:4.7.2
  _ZN27QDeclarativePropertyPrivate7bindingERK20QDeclarativeProperty@Base 4:4.7.0~beta1
- _ZN27QDeclarativePropertyPrivate7connectEPK7QObjectiS2_iiPi@Base 4:4.7.2
+ _ZN27QDeclarativePropertyPrivate7connectEP7QObjectiPKS0_iiPi@Base 4:4.8.3
  _ZN27QDeclarativePropertyPrivate7restoreERK10QByteArrayP7QObjectP23QDeclarativeContextData@Base 4:4.7.0~beta1
  _ZN27QDeclarativePropertyPrivate7restoreERKN25QDeclarativePropertyCache4DataERKNS0_13ValueTypeDataEP7QObjectP23QDeclarativeContextData@Base 4:4.7.4
  _ZN27QDeclarativePropertyPrivateD0Ev@Base 4:4.7.4
@@ -1210,6 +1234,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN28QDeclarativeStringConverters18vector3DFromStringERK7QStringPb@Base 4:4.7.0~beta1
  _ZN28QDeclarativeValueTypeFactory11isValueTypeEi@Base 4:4.7.0~beta1
  _ZN28QDeclarativeValueTypeFactory18registerValueTypesEv@Base 4:4.7.0~beta1
+ _ZN28QDeclarativeValueTypeFactory24registerValueTypesCompatEv@Base 4:4.8.4
  _ZN28QDeclarativeValueTypeFactory9valueTypeEi@Base 4:4.7.0~beta1
  _ZN28QDeclarativeValueTypeFactoryC1Ev@Base 4:4.7.0~beta1
  _ZN28QDeclarativeValueTypeFactoryC2Ev@Base 4:4.7.0~beta1
@@ -1511,6 +1536,8 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZNK17QDeclarativeTimer16triggeredOnStartEv@Base 4:4.7.1
  _ZNK17QDeclarativeTimer8intervalEv@Base 4:4.7.1
  _ZNK17QDeclarativeTimer9isRunningEv@Base 4:4.7.1
+ _ZNK17QPerformanceTimer21elapsedToAbsoluteTimeEx@Base 4:4.8.4
+ _ZNK17QPerformanceTimer7elapsedEv@Base 4:4.8.4
  _ZNK18QDeclarativeEngine10metaObjectEv@Base 4:4.7.0~beta1
  _ZNK18QDeclarativeEngine11rootContextEv@Base 4:4.7.0~rc1
  _ZNK18QDeclarativeEngine13imageProviderERK7QString@Base 4:4.7.0~beta1
@@ -1907,12 +1934,14 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZNK32QDeclarativeDebugExpressionQuery10metaObjectEv@Base 4:4.7.0~beta1
  _ZNK32QDeclarativeDebugExpressionQuery6resultEv@Base 4:4.7.0~beta1
  _ZNK32QDeclarativeDebugObjectReference10propertiesEv@Base 4:4.7.0~beta1
+ _ZNK32QDeclarativeDebugObjectReference13needsMoreDataEv@Base 4:4.8.4
  _ZNK32QDeclarativeDebugObjectReference14contextDebugIdEv@Base 4:4.7.0~beta1
  _ZNK32QDeclarativeDebugObjectReference4nameEv@Base 4:4.7.0~beta1
  _ZNK32QDeclarativeDebugObjectReference6sourceEv@Base 4:4.7.0~beta1
  _ZNK32QDeclarativeDebugObjectReference7debugIdEv@Base 4:4.7.0~beta1
  _ZNK32QDeclarativeDebugObjectReference8childrenEv@Base 4:4.7.0~beta1
  _ZNK32QDeclarativeDebugObjectReference8idStringEv@Base 4:4.7.0~beta1
+ _ZNK32QDeclarativeDebugObjectReference8parentIdEv@Base 4:4.8.4
  _ZNK32QDeclarativeDebugObjectReference9classNameEv@Base 4:4.7.0~beta1
  _ZNK33QDeclarativeDebugContextReference4nameEv@Base 4:4.7.0~beta1
  _ZNK33QDeclarativeDebugContextReference7debugIdEv@Base 4:4.7.0~beta1
@@ -1933,7 +1962,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZNK7QPacket4dataEv@Base 4:4.7.2
  _ZNK7QPacket7isEmptyEv@Base 4:4.7.0~beta1
  (optional=external|arch=amd64 kfreebsd-amd64)_ZNK7QPointF7toPointEv@Base 4:4.8.1
- (optional=templinst|arch=armel armhf sparc)_ZNK8QVariant5valueI6QColorEET_v@Base 4:4.7.2
+ (optional=templinst|arch=armel armhf ppc64 sparc)_ZNK8QVariant5valueI6QColorEET_v@Base 4:4.7.2
  _ZTI11QMetaObject@Base 4:4.7.0~beta1
  _ZTI11QSharedData@Base 4:4.7.0~beta1
  (arch=!armel !armhf)_ZTI12QDashStroker@Base 4:4.7.2
@@ -1960,6 +1989,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZTI21QDeclarativeScaleGrid@Base 4:4.7.0~beta1
  _ZTI21QDeclarativeValueType@Base 4:4.7.0~beta1
  _ZTI22QDeclarativeDebugQuery@Base 4:4.7.0~beta1
+ _ZTI22QDeclarativeDebugTrace@Base 4:4.8.4
  _ZTI22QDeclarativeDebugWatch@Base 4:4.7.0~beta1
  _ZTI22QDeclarativeExpression@Base 4:4.7.0~beta1
  _ZTI22QDeclarativeStateGroup@Base 4:4.7.0~beta1
@@ -2028,6 +2058,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZTS21QDeclarativeScaleGrid@Base 4:4.7.0~beta1
  _ZTS21QDeclarativeValueType@Base 4:4.7.0~beta1
  _ZTS22QDeclarativeDebugQuery@Base 4:4.7.0~beta1
+ _ZTS22QDeclarativeDebugTrace@Base 4:4.8.4
  _ZTS22QDeclarativeDebugWatch@Base 4:4.7.0~beta1
  _ZTS22QDeclarativeExpression@Base 4:4.7.0~beta1
  _ZTS22QDeclarativeStateGroup@Base 4:4.7.0~beta1
@@ -2094,6 +2125,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZTV21QDeclarativeScaleGrid@Base 4:4.7.0~beta1
  _ZTV21QDeclarativeValueType@Base 4:4.7.0~beta1
  _ZTV22QDeclarativeDebugQuery@Base 4:4.7.0~beta1
+ _ZTV22QDeclarativeDebugTrace@Base 4:4.8.4
  _ZTV22QDeclarativeDebugWatch@Base 4:4.7.0~beta1
  _ZTV22QDeclarativeExpression@Base 4:4.7.0~beta1
  _ZTV22QDeclarativeStateGroup@Base 4:4.7.0~beta1
@@ -2165,6 +2197,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  (c++)"non-virtual thunk to QDeclarativeBehavior::setTarget(QDeclarativeProperty const&)@Base" 4:4.7.0~beta1
  (c++)"non-virtual thunk to QDeclarativeBehavior::write(QVariant const&)@Base" 4:4.7.0~beta1
  (c++)"non-virtual thunk to QDeclarativeBehavior::~QDeclarativeBehavior()@Base" 4:4.7.0~beta1
+ (c++)"non-virtual thunk to QDeclarativeBinding::disconnect(QDeclarativeAbstractBinding::DisconnectMode)@Base" 4:4.8.3
  (c++)"non-virtual thunk to QDeclarativeBinding::expression() const@Base" 4:4.7.0~beta1
  (c++)"non-virtual thunk to QDeclarativeBinding::setEnabled(bool, QFlags<QDeclarativePropertyPrivate::WriteFlag>)@Base" 4:4.7.0~beta1
  (c++)"non-virtual thunk to QDeclarativeBinding::update(QFlags<QDeclarativePropertyPrivate::WriteFlag>)@Base" 4:4.7.0~beta1

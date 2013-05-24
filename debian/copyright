@@ -86,6 +86,7 @@ modified version of the Library.
 
 The Debian packaging is:
 
+    Copyright (C) 2012-2013 Timo Jyrinki <timo.jyrinki@canonical.com>
     Copyright (C) 2007-2010 Fathi Boudra <fabo@debian.org>
     Copyright (C) 2007-2010 Sune Vuorela <debian@pusling.com>
     Copyright (C) 2008-2010 Modestas Vainius <modax@debian.org>

@@ -85,7 +85,8 @@ else
   endif
 endif
 
-ifeq ($(DEB_HOST_ARCH),ia64)
+no_pch_architectures := armhf ia64
+ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(no_pch_architectures)))
 	extra_configure_opts += -no-pch
 endif
 
@@ -119,7 +120,7 @@ endif
 
 	./configure -confirm-license \
 	            -prefix "/usr" \
-	            -bindir "/usr/bin" \
+	            -bindir "/usr/lib/$(DEB_HOST_MULTIARCH)/qt4/bin" \
 	            -libdir "/usr/lib/$(DEB_HOST_MULTIARCH)" \
 	            -docdir "/usr/share/qt4/doc" \
 	            -headerdir "/usr/include/qt4" \
@@ -280,6 +281,12 @@ override_dh_auto_install:
 	find $(CURDIR)/debian/tmp/usr/lib -type f -name '*.prl' \
 		-exec sed -i -e "/^QMAKE_PRL_BUILD_DIR/d;s/\(QMAKE_PRL_LIBS =\).*/\1/" {} \;
 
+	# Add symlinks for the -qt4 binaries still used by some
+	for links_file in debian/libqt4-dev-bin.links debian/qt4-designer.links debian/qt4-dev-tools.links debian/qt4-linguist-tools.links debian/qt4-qmake.links debian/qt4-qtconfig.links ; do \
+		cat $$links_file.in > $$links_file ; \
+		sed -i 's/MULTIARCH/$(DEB_HOST_MULTIARCH)/' $$links_file ; \
+	done
+
 	install -D -p -m0644 debian/collection/qtdemo.qhc \
 		debian/qt4-demos/usr/lib/qt4/demos/qtdemo/qtdemo.qhc
 
@@ -311,6 +318,23 @@ override_dh_auto_install:
 	rm -f debian/tmp/usr/lib/*/libphonon.so
 	rm -f debian/tmp/usr/lib/*/pkgconfig/phonon.pc
 	rm -rf debian/tmp/usr/include/qt4/phonon
+
+	# Add a configuration for qtchooser
+	mkdir -p $(CURDIR)/debian/tmp/usr/share/qtchooser
+	echo "/usr/lib/$(DEB_HOST_MULTIARCH)/qt4/bin" > $(CURDIR)/debian/tmp/usr/share/qtchooser/qt4-$(DEB_HOST_MULTIARCH).conf
+	echo "/usr/lib/$(DEB_HOST_MULTIARCH)" >> $(CURDIR)/debian/tmp/usr/share/qtchooser/qt4-$(DEB_HOST_MULTIARCH).conf
+
+	# Ship 4.conf and qt4.conf for this arch, and a default.conf.
+	# 4.conf makes calling qtchooser prettier.
+	mkdir -p $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qtchooser
+	ln -s /usr/share/qtchooser/qt4-$(DEB_HOST_MULTIARCH).conf $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qtchooser/4.conf
+	ln -s /usr/share/qtchooser/qt4-$(DEB_HOST_MULTIARCH).conf $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qtchooser/qt4.conf
+	ln -s /usr/share/qtchooser/qt4-$(DEB_HOST_MULTIARCH).conf $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qtchooser/default.conf
+
+	# As a special case to avoid FTBFSs for current Qt4 packages, ship a second
+	# default.conf which will be searched by qtchooser. Only Qt4 should ship this.
+	mkdir -p $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt-default/qtchooser
+	ln -s /usr/share/qtchooser/qt4-$(DEB_HOST_MULTIARCH).conf $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt-default/qtchooser/default.conf
 
 	# Remove leftover directories
 	find $(CURDIR)/debian/tmp/usr/lib/qt4 -depth -type d \( -false \
@@ -370,7 +394,7 @@ override_dh_builddeb:
 	dh_builddeb -- -Zxz
 
 prune-nonfree:
-	# Delete zlib's RFCs.
-	find \( -name rfc195* \) -print -delete
+	# Delete RFCs.
+	find \( -name rfc????.txt \) -print -delete
 
 .PHONY: override_dh_auto_test
