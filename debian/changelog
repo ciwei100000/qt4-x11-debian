@@ -1,13 +1,14 @@
-qt4-x11 (4:4.8.4+dfsg-4) UNRELEASED; urgency=low
+qt4-x11 (4:4.8.4+dfsg-4) unstable; urgency=low
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Also ship 4.conf. This makes calls to qtchooser prettier: qtchooser -qt4.
   * Make every package that ships a binary managed by qtchooser depend on it.
+  * Upload to unstable.
 
   [ Pino Toscano ]
   * Switch libtiff4-dev build dependency to libtiff-dev.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 18 May 2013 16:07:49 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 24 May 2013 10:11:35 -0300
 
 qt4-x11 (4:4.8.4+dfsg-3) experimental; urgency=low
 
