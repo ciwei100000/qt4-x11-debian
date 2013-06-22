@@ -1,5 +1,9 @@
 qt4-x11 (4:4.8.4+dfsg-5) UNRELEASED; urgency=low
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Add QGtkStyle-remove-an-unnecessary-sanity-check-for-the.patch, taken from
+    upstream, to solve a crash in GTK style (Closes: 712886).
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 22 Jun 2013 11:08:53 -0300
 
 qt4-x11 (4:4.8.4+dfsg-4) unstable; urgency=low
