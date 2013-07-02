@@ -2,8 +2,7 @@ qt4-x11 (4:4.8.5+dfsg-1) UNRELEASED; urgency=low
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
-  * Add QGtkStyle-remove-an-unnecessary-sanity-check-for-the.patch, taken from
-    upstream, to solve a crash in GTK style (Closes: 712886).
+  * Solves a crash in GTK style (Closes: 712886).
   * Fix watch file. It seems the URL changed again.
   * Remove patches taken from upstream, already applied:
     - SSL-certificates-blacklist-mis-issued-Turktrust-cert.patch
