@@ -15,6 +15,8 @@ qt4-x11 (4:4.8.5+dfsg-1) UNRELEASED; urgency=low
   * Remove libtool-like files.
   * Remove the gstreamer phonon backend, we are building it in another source
     package.
+  * Remove debian/not-installed. We are removing stuff uninstalled stuff from
+    debian/rules.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 22 Jun 2013 11:08:53 -0300
 
