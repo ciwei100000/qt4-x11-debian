@@ -412,6 +412,7 @@ usr/include/qt4/Qt/qlist.h
 usr/include/qt4/Qt/qlistview.h
 usr/include/qt4/Qt/qlistwidget.h
 usr/include/qt4/Qt/qlocale.h
+usr/include/qt4/Qt/qlocale_blackberry.h
 usr/include/qt4/Qt/qlocalserver.h
 usr/include/qt4/Qt/qlocalsocket.h
 usr/include/qt4/Qt/qmaccocoaviewcontainer_mac.h
@@ -455,6 +456,7 @@ usr/include/qt4/Qt/qnetworkconfiguration.h
 usr/include/qt4/Qt/qnetworkcookie.h
 usr/include/qt4/Qt/qnetworkcookiejar.h
 usr/include/qt4/Qt/qnetworkdiskcache.h
+usr/include/qt4/Qt/qnetworkfunctions_wince.h
 usr/include/qt4/Qt/qnetworkinterface.h
 usr/include/qt4/Qt/qnetworkproxy.h
 usr/include/qt4/Qt/qnetworkreply.h
@@ -1076,6 +1078,7 @@ usr/include/qt4/QtCore/QAnimationGroup
 usr/include/qt4/QtCore/QArgument
 usr/include/qt4/QtCore/QAtomicInt
 usr/include/qt4/QtCore/QAtomicPointer
+usr/include/qt4/QtCore/QBBSystemLocaleData
 usr/include/qt4/QtCore/QBasicAtomicInt
 usr/include/qt4/QtCore/QBasicAtomicPointer
 usr/include/qt4/QtCore/QBasicTimer
@@ -1422,6 +1425,7 @@ usr/include/qt4/QtCore/qline.h
 usr/include/qt4/QtCore/qlinkedlist.h
 usr/include/qt4/QtCore/qlist.h
 usr/include/qt4/QtCore/qlocale.h
+usr/include/qt4/QtCore/qlocale_blackberry.h
 usr/include/qt4/QtCore/qmap.h
 usr/include/qt4/QtCore/qmargins.h
 usr/include/qt4/QtCore/qmath.h
@@ -2601,6 +2605,7 @@ usr/include/qt4/QtNetwork/qnetworkconfiguration.h
 usr/include/qt4/QtNetwork/qnetworkcookie.h
 usr/include/qt4/QtNetwork/qnetworkcookiejar.h
 usr/include/qt4/QtNetwork/qnetworkdiskcache.h
+usr/include/qt4/QtNetwork/qnetworkfunctions_wince.h
 usr/include/qt4/QtNetwork/qnetworkinterface.h
 usr/include/qt4/QtNetwork/qnetworkproxy.h
 usr/include/qt4/QtNetwork/qnetworkreply.h
