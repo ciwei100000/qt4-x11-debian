@@ -321,6 +321,8 @@ override_dh_auto_install:
 	rm -f debian/tmp/usr/lib/*/libphonon.so
 	rm -f debian/tmp/usr/lib/*/pkgconfig/phonon.pc
 	rm -rf debian/tmp/usr/include/qt4/phonon
+	# And the gstreamer backend.
+	rm -f usr/lib/$(DEB_HOST_MULTIARCH)/qt4/plugins/phonon_backend/libphonon_gstreamer.so
 
 	# Add a configuration for qtchooser
 	mkdir -p $(CURDIR)/debian/tmp/usr/share/qtchooser
