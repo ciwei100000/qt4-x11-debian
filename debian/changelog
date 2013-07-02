@@ -12,6 +12,7 @@ qt4-x11 (4:4.8.5+dfsg-1) UNRELEASED; urgency=low
   * Refresh multiple patches.
   * Update symbols files.
   * Pass --fail-missing to dh_install.
+  * Remove libtool-like files.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 22 Jun 2013 11:08:53 -0300
 

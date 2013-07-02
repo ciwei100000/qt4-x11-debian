@@ -262,6 +262,9 @@ endif
 override_dh_auto_install:
 	dh_auto_install -Smakefile -- INSTALL_ROOT=$(CURDIR)/debian/tmp/
 
+	# Remove libtool-like files
+	rm -f debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/*.la
+
 	# Ship private headers - ugly hack to build Qt Creator QML Designer
 	cd $(CURDIR)/include && rsync -aR QtCore/private \
 	                                  QtDeclarative/private \
