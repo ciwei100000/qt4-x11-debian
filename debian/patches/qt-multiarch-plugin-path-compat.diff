@@ -17,7 +17,7 @@ Last-Update: 2012-04-25
 
 --- a/src/corelib/kernel/qcoreapplication.cpp
 +++ b/src/corelib/kernel/qcoreapplication.cpp
-@@ -2507,6 +2507,23 @@ QStringList QCoreApplication::libraryPat
+@@ -2511,6 +2511,23 @@ QStringList QCoreApplication::libraryPat
              if (!app_libpaths->contains(installPathPlugins))
                  app_libpaths->append(installPathPlugins);
          }
@@ -43,7 +43,7 @@ Last-Update: 2012-04-25
          // If QCoreApplication is not yet instantiated,
 --- a/src/declarative/qml/qdeclarativeimport.cpp
 +++ b/src/declarative/qml/qdeclarativeimport.cpp
-@@ -751,6 +751,22 @@ QDeclarativeImportDatabase::QDeclarative
+@@ -770,6 +770,22 @@ QDeclarativeImportDatabase::QDeclarative
          addImportPath(installImportsPath);
      }
  #else
