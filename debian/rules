@@ -360,7 +360,7 @@ ifeq ($(vendor),Ubuntu)
 endif
 
 override_dh_install:
-	dh_install --list-missing
+	dh_install --fail-missing
 
 override_dh_installdocs:
 	dh_installdocs --all LGPL_EXCEPTION.txt
