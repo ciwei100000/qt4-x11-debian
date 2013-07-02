@@ -17,7 +17,7 @@ Last-Update: 2011-12-26
 
 --- a/src/corelib/io/qprocess_unix.cpp
 +++ b/src/corelib/io/qprocess_unix.cpp
-@@ -526,6 +526,13 @@ static char **_q_dupEnvironment(const QP
+@@ -532,6 +532,13 @@ static char **_q_dupEnvironment(const QP
      return envp;
  }
  
@@ -31,7 +31,7 @@ Last-Update: 2011-12-26
  #ifdef Q_OS_MAC
  Q_GLOBAL_STATIC(QMutex, cfbundleMutex);
  #endif
-@@ -647,6 +654,7 @@ void QProcessPrivate::startProcess()
+@@ -658,6 +665,7 @@ void QProcessPrivate::startProcess()
  #if defined(Q_OS_QNX)
      pid_t childPid = spawnChild(workingDirPtr, argv, envp);
  #else
@@ -39,15 +39,15 @@ Last-Update: 2011-12-26
      pid_t childPid = fork();
      int lastForkErrno = errno;
  #endif
-@@ -1340,6 +1348,7 @@ bool QProcessPrivate::startDetached(cons
-     int pidPipe[2];
-     qt_safe_pipe(pidPipe);
+@@ -1355,6 +1363,7 @@ bool QProcessPrivate::startDetached(cons
+         return false;
+     }
  
 +    debbug_561203();
      pid_t childPid = fork();
      if (childPid == 0) {
          struct sigaction noaction;
-@@ -1352,6 +1361,7 @@ bool QProcessPrivate::startDetached(cons
+@@ -1367,6 +1376,7 @@ bool QProcessPrivate::startDetached(cons
          qt_safe_close(startedPipe[0]);
          qt_safe_close(pidPipe[0]);
  
