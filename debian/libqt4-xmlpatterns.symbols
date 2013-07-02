@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.1 amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
+# SymbolsHelper-Confirmed: 4:4.8.4 sparc64
 libQtXmlPatterns.so.4 libqt4-xmlpatterns #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z5qHashRK15QSourceLocation@Base 4:4.5.3
@@ -123,8 +123,6 @@ libQtXmlPatterns.so.4 libqt4-xmlpatterns #MINVER#
  _ZN20QAbstractXmlReceiverD2Ev@Base 4:4.5.3
  (optional=gcc47|arch=amd64 armel hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN20QXmlStreamAttributesC1ERKS_@Base 4:4.8.1
  (optional=gcc47|arch=amd64 armel hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN20QXmlStreamAttributesC2ERKS_@Base 4:4.8.1
- _ZN20QXmlStreamAttributesD1Ev@Base 4:4.7.4
- _ZN20QXmlStreamAttributesD2Ev@Base 4:4.7.4
  _ZN21QAbstractXmlNodeModelC1EP28QAbstractXmlNodeModelPrivate@Base 4:4.5.3
  _ZN21QAbstractXmlNodeModelC1Ev@Base 4:4.5.3
  _ZN21QAbstractXmlNodeModelC2EP28QAbstractXmlNodeModelPrivate@Base 4:4.5.3

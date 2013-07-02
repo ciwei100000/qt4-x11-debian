@@ -1,8 +1,8 @@
-# SymbolsHelper-Confirmed: 4:4.8.4 alpha powerpcspe ppc64
+# SymbolsHelper-Confirmed: 4:4.8.4 alpha powerpcspe ppc64 sparc64
 libQtGui.so.4 libqtgui4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qDrawArrowP8QPainterN2Qt9ArrowTypeENS1_8GUIStyleEbiiiiRK8QPaletteb@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386)_Z10qt_memfillIhEvPT_S0_i@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !hurd-i386 !i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_Z10qt_memfillIhEvPT_S0_i@Base 4:4.8.1
  _Z10qt_x11InfoPK12QPaintDevice@Base 4:4.5.3
  _Z11qFadeEffectP7QWidgeti@Base 4:4.5.3
  _Z11qt_image_idRK6QImage@Base 4:4.5.3
@@ -82,7 +82,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _Z6bitBltP12QPaintDeviceiiPKS_iiiib@Base 4:4.5.3
  _Z6bitBltP6QImageiiPKS_iiii6QFlagsIN2Qt19ImageConversionFlagEE@Base 4:4.5.3
  _Z7copyBltP7QPixmapiiPKS_iiii@Base 4:4.5.3
- (optional=external|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386 !sparc)_Z8qWarningv@Base 4:4.7.2
+ (optional=external|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386 !sparc !sparc64)_Z8qWarningv@Base 4:4.7.2
  _Z9qDrawItemP8QPainterN2Qt8GUIStyleEiiiiiRK8QPalettebPK7QPixmapRK7QStringiPK6QColor@Base 4:4.5.3
  _Z9qGeomCalcR7QVectorI13QLayoutStructEiiiii@Base 4:4.5.3
  _Z9qItemRectP8QPainterN2Qt8GUIStyleEiiiiibPK7QPixmapRK7QStringi@Base 4:4.5.3
@@ -3242,8 +3242,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN14QItemSelection6selectERK11QModelIndexS2_@Base 4:4.5.3
  _ZN14QItemSelectionC1ERK11QModelIndexS2_@Base 4:4.5.3
  _ZN14QItemSelectionC2ERK11QModelIndexS2_@Base 4:4.5.3
- _ZN14QItemSelectionD1Ev@Base 4:4.7.4
- _ZN14QItemSelectionD2Ev@Base 4:4.7.4
+ (optional=gccinternal|arch=!sparc64)_ZN14QItemSelectionD1Ev@Base 4:4.8.4
+ (optional=gccinternal|arch=!sparc64)_ZN14QItemSelectionD2Ev@Base 4:4.8.4
  _ZN14QLayoutPrivate16createSpacerItemEPK7QLayoutiiN11QSizePolicy6PolicyES4_@Base 4:4.5.3
  _ZN14QLayoutPrivate16createWidgetItemEPK7QLayoutP7QWidget@Base 4:4.5.3
  _ZN14QLayoutPrivate20reparentChildWidgetsEP7QWidget@Base 4:4.5.3
@@ -3694,8 +3694,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN15QClipboardEventD0Ev@Base 4:4.5.3
  _ZN15QClipboardEventD1Ev@Base 4:4.5.3
  _ZN15QClipboardEventD2Ev@Base 4:4.5.3
- (optional=private|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN15QDateTimeParser9StateNodeD1Ev@Base 4:4.8.1
- (optional=private|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN15QDateTimeParser9StateNodeD2Ev@Base 4:4.8.1
+ (optional=private|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 sparc64)_ZN15QDateTimeParser9StateNodeD1Ev@Base 4:4.8.1
+ (optional=private|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 sparc64)_ZN15QDateTimeParser9StateNodeD2Ev@Base 4:4.8.1
  _ZN15QDragEnterEventC1ERK6QPoint6QFlagsIN2Qt10DropActionEEPK9QMimeDataS3_INS4_11MouseButtonEES3_INS4_16KeyboardModifierEE@Base 4:4.5.3
  _ZN15QDragEnterEventC2ERK6QPoint6QFlagsIN2Qt10DropActionEEPK9QMimeDataS3_INS4_11MouseButtonEES3_INS4_16KeyboardModifierEE@Base 4:4.5.3
  _ZN15QDragEnterEventD0Ev@Base 4:4.5.3
@@ -3864,8 +3864,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN15QLinearGradientC2ERK7QPointFS2_@Base 4:4.5.3
  _ZN15QLinearGradientC2Ev@Base 4:4.5.3
  (subst)_ZN15QLinearGradientC2E{qreal}{qreal}{qreal}{qreal}@Base 4:4.5.3
- _ZN15QLinearGradientD1Ev@Base 4:4.7.4
- _ZN15QLinearGradientD2Ev@Base 4:4.7.4
+ (optional=gccinternal|arch=!sparc64)_ZN15QLinearGradientD1Ev@Base 4:4.8.4
+ (optional=gccinternal|arch=!sparc64)_ZN15QLinearGradientD2Ev@Base 4:4.8.4
  (optional=inline|arch=amd64 kfreebsd-amd64)_ZN15QLinearGradientaSERKS_@Base 4:4.8.1
  _ZN15QListWidgetItem4readER11QDataStream@Base 4:4.5.3
  _ZN15QListWidgetItem7setDataEiRK8QVariant@Base 4:4.5.3
@@ -3947,8 +3947,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (subst)_ZN15QRadialGradientC2E{qreal}{qreal}{qreal}@Base 4:4.5.3
  (subst)_ZN15QRadialGradientC2E{qreal}{qreal}{qreal}{qreal}{qreal}@Base 4:4.5.3
  (subst)_ZN15QRadialGradientC2E{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}@Base 4:4.8.0
- _ZN15QRadialGradientD1Ev@Base 4:4.7.4
- _ZN15QRadialGradientD2Ev@Base 4:4.7.4
+ (optional=gccinternal|arch=!sparc64)_ZN15QRadialGradientD1Ev@Base 4:4.8.4
+ (optional=gccinternal|arch=!sparc64)_ZN15QRadialGradientD2Ev@Base 4:4.8.4
  _ZN15QSessionManager11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN15QSessionManager11qt_metacastEPKc@Base 4:4.5.3
  _ZN15QSessionManager13requestPhase2Ev@Base 4:4.5.3
@@ -4719,8 +4719,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN17QStyleOptionTabV3C2ERK15QStyleOptionTab@Base 4:4.5.3
  _ZN17QStyleOptionTabV3C2Ei@Base 4:4.5.3
  _ZN17QStyleOptionTabV3C2Ev@Base 4:4.5.3
- _ZN17QStyleOptionTabV3D1Ev@Base 4:4.7.4
- _ZN17QStyleOptionTabV3D2Ev@Base 4:4.7.4
+ (arch=!sparc64)_ZN17QStyleOptionTabV3D1Ev@Base 4:4.8.4
+ (arch=!sparc64)_ZN17QStyleOptionTabV3D2Ev@Base 4:4.8.4
  _ZN17QStyleOptionTabV3aSERK15QStyleOptionTab@Base 4:4.5.3
  _ZN17QTextImageHandler14externalLoaderE@Base 4:4.5.3
  (subst)_ZN17QTextInlineObject10setDescentE{qreal}@Base 4:4.5.3
@@ -5926,8 +5926,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN22QStyleOptionViewItemV3C2ERK20QStyleOptionViewItem@Base 4:4.5.3
  _ZN22QStyleOptionViewItemV3C2Ei@Base 4:4.5.3
  _ZN22QStyleOptionViewItemV3C2Ev@Base 4:4.5.3
- _ZN22QStyleOptionViewItemV3D1Ev@Base 4:4.7.4
- _ZN22QStyleOptionViewItemV3D2Ev@Base 4:4.7.4
+ (optional=gccinternal|arch=!sparc64)_ZN22QStyleOptionViewItemV3D1Ev@Base 4:4.8.4
+ (optional=gccinternal|arch=!sparc64)_ZN22QStyleOptionViewItemV3D2Ev@Base 4:4.8.4
  _ZN22QStyleOptionViewItemV3aSERK20QStyleOptionViewItem@Base 4:4.5.3
  _ZN22QStyleOptionViewItemV4C1ERK20QStyleOptionViewItem@Base 4:4.5.3
  _ZN22QStyleOptionViewItemV4C1Ei@Base 4:4.5.3
@@ -6198,8 +6198,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN25QStyleOptionProgressBarV2C2ERKS_@Base 4:4.5.3
  _ZN25QStyleOptionProgressBarV2C2Ei@Base 4:4.5.3
  _ZN25QStyleOptionProgressBarV2C2Ev@Base 4:4.5.3
- (optional=gcc47|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN25QStyleOptionProgressBarV2D1Ev@Base 4:4.8.1
- (optional=gcc47|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN25QStyleOptionProgressBarV2D2Ev@Base 4:4.8.1
+ (optional=gcc47|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZN25QStyleOptionProgressBarV2D1Ev@Base 4:4.8.1
+ (optional=gcc47|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZN25QStyleOptionProgressBarV2D2Ev@Base 4:4.8.1
  _ZN25QStyleOptionProgressBarV2aSERK23QStyleOptionProgressBar@Base 4:4.5.3
  _ZN26QAbstractGraphicsShapeItem6setPenERK4QPen@Base 4:4.5.3
  _ZN26QAbstractGraphicsShapeItem8setBrushERK6QBrush@Base 4:4.5.3
@@ -7888,8 +7888,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN8QX11InfoD1Ev@Base 4:4.5.3
  _ZN8QX11InfoD2Ev@Base 4:4.5.3
  _ZN8QX11InfoaSERKS_@Base 4:4.5.3
- (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN9QBitArray6setBitEi@Base 4:4.8.1
- (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN9QBitArray8clearBitEi@Base 4:4.8.1
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 sparc64)_ZN9QBitArray6setBitEi@Base 4:4.8.1
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 sparc64)_ZN9QBitArray8clearBitEi@Base 4:4.8.1
  (optional=external|arch=alpha amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc powerpcspe s390 s390x sparc)_ZN9QBitArrayD1Ev@Base 4:4.8.1
  (optional=external|arch=alpha amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc powerpcspe s390 s390x sparc)_ZN9QBitArrayD2Ev@Base 4:4.8.1
  _ZN9QCDEStyle11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -8067,8 +8067,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (subst)_ZN9QGradient8setStopsERK7QVectorI5QPairI{qreal}6QColorEE@Base 4:4.5.3
  _ZN9QGradientC1Ev@Base 4:4.5.3
  _ZN9QGradientC2Ev@Base 4:4.5.3
- _ZN9QGradientD1Ev@Base 4:4.7.4
- _ZN9QGradientD2Ev@Base 4:4.7.4
+ (optional=gccinternal|arch=!sparc64)_ZN9QGradientD1Ev@Base 4:4.8.4
+ (optional=gccinternal|arch=!sparc64)_ZN9QGradientD2Ev@Base 4:4.8.4
  _ZN9QGradienteqERKS_@Base 4:4.5.3
  _ZN9QGroupBox10childEventEP11QChildEvent@Base 4:4.5.3
  _ZN9QGroupBox10paintEventEP11QPaintEvent@Base 4:4.5.3
@@ -8118,7 +8118,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN9QGtkStyleD1Ev@Base 4:4.5.3
  _ZN9QGtkStyleD2Ev@Base 4:4.5.3
  (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN9QHashData8willGrowEv@Base 4:4.8.1
- (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN9QHashData9hasShrunkEv@Base 4:4.8.1
+ (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 sparc64)_ZN9QHashData9hasShrunkEv@Base 4:4.8.1
  _ZN9QKeyEvent22createExtendedKeyEventEN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEEjjjRK7QStringbt@Base 4:4.5.3
  _ZN9QKeyEventC1EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEERK7QStringbt@Base 4:4.5.3
  _ZN9QKeyEventC2EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEERK7QStringbt@Base 4:4.5.3
@@ -11521,7 +11521,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK6QMovie9cacheModeEv@Base 4:4.5.3
  _ZNK6QMovie9frameRectEv@Base 4:4.5.3
  _ZNK6QMovie9loopCountEv@Base 4:4.5.3
- (optional=external|arch=!alpha !armel !s390x)_ZNK6QRectF6toRectEv@Base 4:4.7.2
+ (optional=external|arch=!alpha !armel !s390x !sparc64)_ZNK6QRectF6toRectEv@Base 4:4.7.2
  _ZNK6QSound10isFinishedEv@Base 4:4.5.3
  _ZNK6QSound10metaObjectEv@Base 4:4.5.3
  _ZNK6QSound14loopsRemainingEv@Base 4:4.5.3
@@ -12055,8 +12055,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK8QToolBox8itemIconEi@Base 4:4.5.3
  _ZNK8QToolBox8itemTextEi@Base 4:4.5.3
  (optional=templinst|arch=ia64 ppc64 s390x)_ZNK8QVariant5valueI5QFontEET_v@Base 4:4.7.2
- (optional=templinst|arch=!alpha !amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !powerpcspe !s390 !sparc)_ZNK8QVariant5valueI6QImageEET_v@Base 4:4.7.2
- (optional=templinst|arch=!alpha !amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !powerpcspe !s390)_ZNK8QVariant5valueI7QPixmapEET_v@Base 4:4.7.2
+ (optional=templinst|arch=!alpha !amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !powerpcspe !s390 !sparc !sparc64)_ZNK8QVariant5valueI6QImageEET_v@Base 4:4.7.2
+ (optional=templinst|arch=!alpha !amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !powerpcspe !s390 !sparc64)_ZNK8QVariant5valueI7QPixmapEET_v@Base 4:4.7.2
  _ZNK8QX11Info10getX11DataEb@Base 4:4.5.3
  _ZNK8QX11Info13defaultVisualEv@Base 4:4.5.3
  _ZNK8QX11Info15defaultColormapEv@Base 4:4.5.3

@@ -10,6 +10,7 @@ qt4-x11 (4:4.8.5+dfsg-1) UNRELEASED; urgency=low
     - QGtkStyle-remove-an-unnecessary-sanity-check-for-the.patch
     - CVE-2011-3922.patch
   * Refresh multiple patches.
+  * Update symbols files.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 22 Jun 2013 11:08:53 -0300
 

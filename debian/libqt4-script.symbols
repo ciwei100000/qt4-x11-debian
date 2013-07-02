@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.4 ppc64 s390
+# SymbolsHelper-Confirmed: 4:4.8.4 ppc64 s390 sparc64
 libQtScript.so.4 libqt4-script #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z14qScriptConnectP7QObjectPKcRK12QScriptValueS5_@Base 4:4.5.3
@@ -280,18 +280,20 @@ libQtScript.so.4 libqt4-script #MINVER#
  _ZN24QScriptSyntaxCheckResultD1Ev@Base 4:4.5.3
  _ZN24QScriptSyntaxCheckResultD2Ev@Base 4:4.5.3
  _ZN24QScriptSyntaxCheckResultaSERKS_@Base 4:4.5.3
- (optional=private|subst)_ZN25QScriptEngineAgentPrivate11atStatementERKN5QTJSC17DebuggerCallFrameE{ssize_t}i@Base 4:4.7.0~beta1
- (optional=private|arch=!alpha !amd64 !ia64 !kfreebsd-amd64 !ppc64 !s390x)_ZN25QScriptEngineAgentPrivate11returnEventERKN5QTJSC17DebuggerCallFrameEii@Base 4:4.6.1
- (optional=private|arch=alpha amd64 ia64 kfreebsd-amd64 ppc64 s390x)_ZN25QScriptEngineAgentPrivate11returnEventERKN5QTJSC17DebuggerCallFrameEli@Base 4:4.6.1
- (optional=private|arch=!alpha !amd64 !ia64 !kfreebsd-amd64 !ppc64 !s390x)_ZN25QScriptEngineAgentPrivate12evaluateStopERKN5QTJSC7JSValueEi@Base 4:4.6.1
- (optional=private|arch=alpha amd64 ia64 kfreebsd-amd64 ppc64 s390x)_ZN25QScriptEngineAgentPrivate12evaluateStopERKN5QTJSC7JSValueEl@Base 4:4.6.1
- (optional=private|arch=!alpha !amd64 !ia64 !kfreebsd-amd64 !ppc64 !s390x)_ZN25QScriptEngineAgentPrivate12functionExitERKN5QTJSC7JSValueEi@Base 4:4.6.1
- (optional=private|arch=alpha amd64 ia64 kfreebsd-amd64 ppc64 s390x)_ZN25QScriptEngineAgentPrivate12functionExitERKN5QTJSC7JSValueEl@Base 4:4.6.1
- (optional=private|arch=!alpha !amd64 !ia64 !kfreebsd-amd64 !ppc64 !s390x)_ZN25QScriptEngineAgentPrivate14exceptionCatchERKN5QTJSC17DebuggerCallFrameEi@Base 4:4.6.1
- (optional=private|arch=alpha amd64 ia64 kfreebsd-amd64 ppc64 s390x)_ZN25QScriptEngineAgentPrivate14exceptionCatchERKN5QTJSC17DebuggerCallFrameEl@Base 4:4.6.1
- (optional=private|arch=!alpha !amd64 !ia64 !kfreebsd-amd64 !ppc64 !s390x)_ZN25QScriptEngineAgentPrivate14exceptionThrowERKN5QTJSC17DebuggerCallFrameEib@Base 4:4.6.1
- (optional=private|arch=alpha amd64 ia64 kfreebsd-amd64 ppc64 s390x)_ZN25QScriptEngineAgentPrivate14exceptionThrowERKN5QTJSC17DebuggerCallFrameElb@Base 4:4.6.1
- (optional=private|subst)_ZN25QScriptEngineAgentPrivate18didReachBreakpointERKN5QTJSC17DebuggerCallFrameE{ssize_t}i@Base 4:4.7.0~beta1
+ (optional=private|arch=s390)_ZN25QScriptEngineAgentPrivate11atStatementERKN5QTJSC17DebuggerCallFrameEii@Base 4:4.8.4
+ (optional=private|subst|arch=!s390)_ZN25QScriptEngineAgentPrivate11atStatementERKN5QTJSC17DebuggerCallFrameE{ssize_t}i@Base 4:4.7.0~beta1
+ (optional=private|arch=!alpha !amd64 !ia64 !kfreebsd-amd64 !ppc64 !s390x !sparc64)_ZN25QScriptEngineAgentPrivate11returnEventERKN5QTJSC17DebuggerCallFrameEii@Base 4:4.6.1
+ (optional=private|arch=alpha amd64 ia64 kfreebsd-amd64 ppc64 s390x sparc64)_ZN25QScriptEngineAgentPrivate11returnEventERKN5QTJSC17DebuggerCallFrameEli@Base 4:4.6.1
+ (optional=private|arch=!alpha !amd64 !ia64 !kfreebsd-amd64 !ppc64 !s390x !sparc64)_ZN25QScriptEngineAgentPrivate12evaluateStopERKN5QTJSC7JSValueEi@Base 4:4.6.1
+ (optional=private|arch=alpha amd64 ia64 kfreebsd-amd64 ppc64 s390x sparc64)_ZN25QScriptEngineAgentPrivate12evaluateStopERKN5QTJSC7JSValueEl@Base 4:4.6.1
+ (optional=private|arch=!alpha !amd64 !ia64 !kfreebsd-amd64 !ppc64 !s390x !sparc64)_ZN25QScriptEngineAgentPrivate12functionExitERKN5QTJSC7JSValueEi@Base 4:4.6.1
+ (optional=private|arch=alpha amd64 ia64 kfreebsd-amd64 ppc64 s390x sparc64)_ZN25QScriptEngineAgentPrivate12functionExitERKN5QTJSC7JSValueEl@Base 4:4.6.1
+ (optional=private|arch=!alpha !amd64 !ia64 !kfreebsd-amd64 !ppc64 !s390x !sparc64)_ZN25QScriptEngineAgentPrivate14exceptionCatchERKN5QTJSC17DebuggerCallFrameEi@Base 4:4.6.1
+ (optional=private|arch=alpha amd64 ia64 kfreebsd-amd64 ppc64 s390x sparc64)_ZN25QScriptEngineAgentPrivate14exceptionCatchERKN5QTJSC17DebuggerCallFrameEl@Base 4:4.6.1
+ (optional=private|arch=!alpha !amd64 !ia64 !kfreebsd-amd64 !ppc64 !s390x !sparc64)_ZN25QScriptEngineAgentPrivate14exceptionThrowERKN5QTJSC17DebuggerCallFrameEib@Base 4:4.6.1
+ (optional=private|arch=alpha amd64 ia64 kfreebsd-amd64 ppc64 s390x sparc64)_ZN25QScriptEngineAgentPrivate14exceptionThrowERKN5QTJSC17DebuggerCallFrameElb@Base 4:4.6.1
+ (optional=private|arch=s390)_ZN25QScriptEngineAgentPrivate18didReachBreakpointERKN5QTJSC17DebuggerCallFrameEii@Base 4:4.8.4
+ (optional=private|subst|arch=!s390)_ZN25QScriptEngineAgentPrivate18didReachBreakpointERKN5QTJSC17DebuggerCallFrameE{ssize_t}i@Base 4:4.7.0~beta1
  (optional=private)_ZN25QScriptEngineAgentPrivate6attachEv@Base 4:4.6.1
  (optional=private)_ZN25QScriptEngineAgentPrivate6detachEv@Base 4:4.6.1
  _ZN25QScriptExtensionInterfaceD0Ev@Base 4:4.7.4
