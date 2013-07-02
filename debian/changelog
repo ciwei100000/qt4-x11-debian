@@ -17,7 +17,6 @@ qt4-x11 (4:4.8.5+dfsg-1) UNRELEASED; urgency=low
     package.
   * Remove debian/not-installed. We are removing stuff uninstalled stuff from
     debian/rules.
-  * Simplify libqt4-dev.install. Stuff we do not ship is deleted beforehand.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 22 Jun 2013 11:08:53 -0300
 
