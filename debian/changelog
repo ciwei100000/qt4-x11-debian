@@ -19,6 +19,9 @@ qt4-x11 (4:4.8.5+dfsg-1) UNRELEASED; urgency=low
     debian/rules.
   * Ship some headers for other platforms.
   * Use canonical URLs in the Vcs headers.
+  * Make libqt4-designer-dbg, libqt4-qt3support-dbg, libqt4-dbg,
+    libqt4-script-dbg and libqt4-xmlpatterns-dbg M-A same to allow
+    co-installation of debugging symbols.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 22 Jun 2013 11:08:53 -0300
 

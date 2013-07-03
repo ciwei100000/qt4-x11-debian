@@ -595,6 +595,7 @@ Description: Qt 4 OpenGL library development files
 Package: libqt4-dbg
 Priority: extra
 Architecture: any
+Multi-Arch: same
 Section: debug
 Depends: libqtcore4 (= ${binary:Version}), ${misc:Depends}
 Conflicts: qt-x11-free-dbg
@@ -607,6 +608,7 @@ Description: Qt 4 library debugging symbols
 Package: libqt4-designer-dbg
 Priority: extra
 Architecture: any
+Multi-Arch: same
 Section: debug
 Depends: libqt4-designer (= ${binary:Version}), ${misc:Depends}
 Recommends: libqt4-dbg
@@ -621,6 +623,7 @@ Description: Qt 4 designer library debugging symbols
 Package: libqt4-qt3support-dbg
 Priority: extra
 Architecture: any
+Multi-Arch: same
 Section: debug
 Depends: libqt4-qt3support (= ${binary:Version}), ${misc:Depends}
 Recommends: libqt4-dbg
@@ -636,6 +639,7 @@ Description: Qt 3 compatibility library for Qt 4 debugging symbols
 Package: libqt4-script-dbg
 Priority: extra
 Architecture: any
+Multi-Arch: same
 Section: debug
 Depends: libqt4-script (= ${binary:Version}), ${misc:Depends}
 Recommends: libqt4-dbg
@@ -662,6 +666,7 @@ Description: transitional package for Qt 4 WebKit debugging symbols
 Package: libqt4-xmlpatterns-dbg
 Priority: extra
 Architecture: any
+Multi-Arch: same
 Section: debug
 Depends: libqt4-xmlpatterns (= ${binary:Version}), ${misc:Depends}
 Recommends: libqt4-dbg
