@@ -23,6 +23,8 @@ qt4-x11 (4:4.8.5+dfsg-1) UNRELEASED; urgency=low
     libqt4-script-dbg and libqt4-xmlpatterns-dbg M-A same to allow
     co-installation of debugging symbols.
   * Update Standars-Version to 3.9.4, no changes needed.
+  * Remove unused lintian override for qt4-bin-dbg, it has been fixed in
+    4:4.8.4+dfsg-1.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 22 Jun 2013 11:08:53 -0300
 
