@@ -34,6 +34,9 @@ qt4-x11 (4:4.8.5+dfsg-1) UNRELEASED; urgency=low
     - Make qtcore4-l10n arch all.
     - Add proper Break and Replaces to qtcore4-l10n against libqtcore4.
     - Split the install files.
+  * Remove unused subtitution variables:
+    - ${misc:Pre-Depends} from qtcore4-l10n and libqt4-dbus.
+    - ${shlibs:Depends} from libqt4-private-dev and libqt4-opengl-dev.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 22 Jun 2013 11:08:53 -0300
 

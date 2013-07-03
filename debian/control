@@ -77,7 +77,6 @@ Description: Qt 4 core module
 
 Package: qtcore4-l10n
 Architecture: all
-Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}
 Breaks: libqtcore4 (<< 4:4.8.5+dfsg-1~)
 Replaces: libqtcore4 (<< 4:4.8.5+dfsg-1~)
@@ -342,7 +341,6 @@ Description: Qt 4 XML patterns module
 Package: libqt4-dbus
 Architecture: any
 Multi-Arch: same
-Pre-Depends: ${misc:Pre-Depends}
 Depends: qdbus (= ${binary:Version}), libqtdbus4 (= ${binary:Version}),
  ${misc:Depends}
 Replaces: libqt4-dev (<< 4:4.7.1)
@@ -578,7 +576,7 @@ Description: Qt 4 development programs
 Package: libqt4-private-dev
 Architecture: any
 Section: libdevel
-Depends: libqt4-dev (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
+Depends: libqt4-dev (= ${binary:Version}), ${misc:Depends}
 Description: Qt 4 private development files
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -595,8 +593,7 @@ Depends: libgl1-mesa-dev,
          libglu1-mesa-dev,
          libqt4-dev (= ${binary:Version}),
          libqt4-opengl (= ${binary:Version}),
-         ${misc:Depends},
-         ${shlibs:Depends}
+         ${misc:Depends}
 Description: Qt 4 OpenGL library development files
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
