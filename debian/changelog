@@ -29,7 +29,7 @@ qt4-x11 (4:4.8.5+dfsg-1) UNRELEASED; urgency=low
     - Add a message explaining why we are overriding lintian.
     - Override the warning of libqt4-phonon missing a symbol file, we are not
       tracking the provided lib.
-  * Remove unused lintian override for libqtdbus4 and libqt4-dbus.
+  * Remove unused lintian override for libqt4-dbus.
   * Split libqtcore4's translations to qtcore4-l10n.
     - Make qtcore4-l10n arch all.
     - Add proper Break and Replaces to qtcore4-l10n against libqtcore4.
