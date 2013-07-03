@@ -67,13 +67,25 @@ Package: libqtcore4
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: qtcore4-l10n, ${misc:Depends}, ${shlibs:Depends}
 Suggests: libthai0, libicu48
 Description: Qt 4 core module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
  The QtCore module contains core non-GUI functionality.
+
+Package: qtcore4-l10n
+Architecture: all
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}
+Breaks: libqtcore4 (<< 4:4.8.5+dfsg-1~)
+Replaces: libqtcore4 (<< 4:4.8.5+dfsg-1~)
+Description: Qt 4 core module translations
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtCore module contains the translations of the core non-GUI functionality.
 
 Package: libqt4-core
 Architecture: any

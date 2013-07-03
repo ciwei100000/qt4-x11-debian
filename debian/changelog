@@ -30,6 +30,10 @@ qt4-x11 (4:4.8.5+dfsg-1) UNRELEASED; urgency=low
     - Override the warning of libqt4-phonon missing a symbol file, we are not
       tracking the provided lib.
   * Remove unused lintian override for libqtdbus4.
+  * Split libqtcore4's translations to qtcore4-l10n.
+    - Make qtcore4-l10n arch all.
+    - Add proper Break and Replaces to qtcore4-l10n against libqtcore4.
+    - Split the install files.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 22 Jun 2013 11:08:53 -0300
 
