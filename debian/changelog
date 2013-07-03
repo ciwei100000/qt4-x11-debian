@@ -25,6 +25,10 @@ qt4-x11 (4:4.8.5+dfsg-1) UNRELEASED; urgency=low
   * Update Standars-Version to 3.9.4, no changes needed.
   * Remove unused lintian override for qt4-bin-dbg, it has been fixed in
     4:4.8.4+dfsg-1.
+  * Update the libqt4-phonon lintian overrides:
+    - Add a message explaining why we are overriding lintian.
+    - Override the warning of libqt4-phonon missing a symbol file, we are not
+      tracking the provided lib.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 22 Jun 2013 11:08:53 -0300
 
