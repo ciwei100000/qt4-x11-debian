@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.4 alpha armel powerpcspe sparc sparc64
+# SymbolsHelper-Confirmed: 4:4.8.5 amd64
 libQtDesigner.so.4 libqt4-designer #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z20domPropertyToVariantP20QAbstractFormBuilderPK11QMetaObjectPK11DomProperty@Base 4:4.5.3
@@ -2314,7 +2314,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal|arch=armel hurd-i386 i386 kfreebsd-i386)_ZN18qdesigner_internal29PropertySheetKeySequenceValueC2ERKS0_@Base 4:4.8.1
  (optional=internal)_ZN18qdesigner_internal29PropertySheetKeySequenceValueD1Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal29PropertySheetKeySequenceValueD2Ev@Base 4:4.7.4
- (optional=internal|arch=sparc64)_ZN18qdesigner_internal29PropertySheetKeySequenceValueaSERKS0_@Base 4:4.8.4
+ (optional=internal|arch=amd64 sparc64)_ZN18qdesigner_internal29PropertySheetKeySequenceValueaSERKS0_@Base 4:4.8.4
  (optional=internal)_ZN18qdesigner_internal30DeleteStackedWidgetPageCommand4initEP14QStackedWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal30DeleteStackedWidgetPageCommand4redoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal30DeleteStackedWidgetPageCommand4undoEv@Base 4:4.5.3
@@ -3231,7 +3231,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN8DomSlotsC2Ev@Base 4:4.5.3
  _ZN8DomSlotsD1Ev@Base 4:4.5.3
  _ZN8DomSlotsD2Ev@Base 4:4.5.3
- (optional=inline|arch=sparc sparc64)_ZN8QToolBox7addItemEP7QWidgetRK7QString@Base 4:4.8.4
+ (optional=inline|arch=amd64 sparc sparc64)_ZN8QToolBox7addItemEP7QWidgetRK7QString@Base 4:4.8.4
  (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZN8QVariant8setValueIN18qdesigner_internal22PropertySheetEnumValueEEEvRKT_@Base 4:4.8.0
  (optional=templinst|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !s390 !s390x !sparc !sparc64)_ZN8QVariant8setValueIN18qdesigner_internal22PropertySheetFlagValueEEEvRKT_@Base 4:4.8.0
  (optional=templinst|arch=!amd64 !armel !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !powerpcspe !s390 !sparc64)_ZN8QVariant9fromValueIN18qdesigner_internal29PropertySheetKeySequenceValueEEES_RKT_@Base 4:4.8.0

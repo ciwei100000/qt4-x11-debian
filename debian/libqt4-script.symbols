@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.4 ppc64 s390 sparc64
+# SymbolsHelper-Confirmed: 4:4.8.5 amd64
 libQtScript.so.4 libqt4-script #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z14qScriptConnectP7QObjectPKcRK12QScriptValueS5_@Base 4:4.5.3

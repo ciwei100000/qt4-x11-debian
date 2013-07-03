@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.4 alpha amd64 hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 powerpcspe ppc64 sparc64
+# SymbolsHelper-Confirmed: 4:4.8.5 amd64
 libQtDBus.so.4 libqt4-dbus #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z14qDBusReplyFillRK12QDBusMessageR10QDBusErrorR8QVariant@Base 4:4.5.3
@@ -140,22 +140,22 @@ libQtDBus.so.4 libqt4-dbus #MINVER#
  _ZN16QDBusPendingCallD1Ev@Base 4:4.5.3
  _ZN16QDBusPendingCallD2Ev@Base 4:4.5.3
  _ZN16QDBusPendingCallaSERKS_@Base 4:4.5.3
- (optional=gccinternal|arch=!alpha !armel !armhf !mips !mipsel !powerpc !powerpcspe !s390 !s390x !sparc64)_ZN18QDBusIntrospection10ObjectTreeD1Ev@Base 4:4.7.4
- (optional=gccinternal|arch=!alpha !armel !armhf !mips !mipsel !powerpc !powerpcspe !s390 !s390x !sparc64)_ZN18QDBusIntrospection10ObjectTreeD2Ev@Base 4:4.7.4
+#MISSING: 4:4.8.5# (optional=gccinternal|arch=!alpha !armel !armhf !mips !mipsel !powerpc !powerpcspe !s390 !s390x !sparc64)_ZN18QDBusIntrospection10ObjectTreeD1Ev@Base 4:4.7.4
+#MISSING: 4:4.8.5# (optional=gccinternal|arch=!alpha !armel !armhf !mips !mipsel !powerpc !powerpcspe !s390 !s390x !sparc64)_ZN18QDBusIntrospection10ObjectTreeD2Ev@Base 4:4.7.4
  _ZN18QDBusIntrospection11parseObjectERK7QStringS2_S2_@Base 4:4.5.3
  _ZN18QDBusIntrospection14parseInterfaceERK7QString@Base 4:4.5.3
  _ZN18QDBusIntrospection15parseInterfacesERK7QString@Base 4:4.5.3
  _ZN18QDBusIntrospection15parseObjectTreeERK7QStringS2_S2_@Base 4:4.5.3
- (optional=gccinternal|arch=!amd64 !hurd-i386 !i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386)_ZN18QDBusIntrospection6MethodD1Ev@Base 4:4.8.4
- (optional=gccinternal|arch=!amd64 !hurd-i386 !i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386)_ZN18QDBusIntrospection6MethodD2Ev@Base 4:4.8.4
+ (optional=gccinternal|arch=!hurd-i386 !i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386)_ZN18QDBusIntrospection6MethodD1Ev@Base 4:4.8.4
+ (optional=gccinternal|arch=!hurd-i386 !i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386)_ZN18QDBusIntrospection6MethodD2Ev@Base 4:4.8.4
  _ZN18QDBusIntrospection6ObjectD1Ev@Base 4:4.7.4
  _ZN18QDBusIntrospection6ObjectD2Ev@Base 4:4.7.4
- (optional=gccinternal|arch=alpha armel armhf mips mipsel powerpc powerpcspe s390 s390x sparc sparc64)_ZN18QDBusIntrospection6SignalD1Ev@Base 4:4.8.4
- (optional=gccinternal|arch=alpha armel armhf mips mipsel powerpc powerpcspe s390 s390x sparc sparc64)_ZN18QDBusIntrospection6SignalD2Ev@Base 4:4.8.4
+ (optional=gccinternal|arch=alpha amd64 armel armhf mips mipsel powerpc powerpcspe s390 s390x sparc sparc64)_ZN18QDBusIntrospection6SignalD1Ev@Base 4:4.8.4
+ (optional=gccinternal|arch=alpha amd64 armel armhf mips mipsel powerpc powerpcspe s390 s390x sparc sparc64)_ZN18QDBusIntrospection6SignalD2Ev@Base 4:4.8.4
  _ZN18QDBusIntrospection8ArgumentD1Ev@Base 4:4.7.4
  _ZN18QDBusIntrospection8ArgumentD2Ev@Base 4:4.7.4
- (optional=not-gcc47|arch=!amd64 !hurd-i386 !i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386)_ZN18QDBusIntrospection8PropertyD1Ev@Base 4:4.8.1
- (optional=not-gcc47|arch=!amd64 !hurd-i386 !i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386)_ZN18QDBusIntrospection8PropertyD2Ev@Base 4:4.8.1
+ (optional=not-gcc47|arch=!hurd-i386 !i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386)_ZN18QDBusIntrospection8PropertyD1Ev@Base 4:4.8.1
+ (optional=not-gcc47|arch=!hurd-i386 !i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386)_ZN18QDBusIntrospection8PropertyD2Ev@Base 4:4.8.1
  _ZN18QDBusIntrospection9InterfaceD1Ev@Base 4:4.7.4
  _ZN18QDBusIntrospection9InterfaceD2Ev@Base 4:4.7.4
  _ZN18QDBusVirtualObject11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.8.0

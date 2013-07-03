@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.4 alpha amd64 armel hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips powerpc powerpcspe ppc64 s390 s390x sparc sparc64
+# SymbolsHelper-Confirmed: 4:4.8.5 amd64
 libQtCLucene.so.4 libqtcore4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN12QCLuceneHits2idEi@Base 4:4.5.3
@@ -490,7 +490,7 @@ libQtCLucene.so.4 libqtcore4 #MINVER#
  (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt4listIPN6lucene5index18CompoundFileWriter15WriterFileEntryESaIS4_EED2Ev@Base 4:4.7.4
  (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt4listIPN6lucene6search6ScorerESaIS3_EED1Ev@Base 4:4.7.4
  (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt4listIPN6lucene6search6ScorerESaIS3_EED2Ev@Base 4:4.7.4
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt6vectorIPKwSaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_@Base 4:4.5.3
+ (optional=templinst|arch=!hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt6vectorIPKwSaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_@Base 4:4.5.3
  (optional=templinst|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt6vectorIPKwSaIS1_EED1Ev@Base 4:4.8.1
  (optional=templinst|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt6vectorIPKwSaIS1_EED2Ev@Base 4:4.8.1
  (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene11queryParser10QueryTokenESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_@Base 4:4.5.3
