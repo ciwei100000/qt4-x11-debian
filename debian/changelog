@@ -1,5 +1,11 @@
 qt4-x11 (4:4.8.5+dfsg-2) UNRELEASED; urgency=low
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Make qtcore4-l10n M-A: foreign. Due to a limitation in dpkg which does not
+    do recursive tracking of arch dependency arch: all packages are considered
+    to have the same arch as the package that depends on it. Marking this
+    package as foreign solves this issue.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 04 Jul 2013 09:59:20 -0300
 
 qt4-x11 (4:4.8.5+dfsg-1) unstable; urgency=low
