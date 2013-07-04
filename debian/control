@@ -855,7 +855,7 @@ Description: Qt 4 API documentation
 Package: qt4-doc-html
 Architecture: all
 Section: doc
-Depends: ${misc:Depends}
+Depends: libjs-jquery, ${misc:Depends}
 Suggests: libqt4-dev, qt-assistant-compat, w3m | www-browser | x-www-browser
 Description: Qt 4 API documentation (HTML format)
  Qt is a cross-platform C++ application framework. Qt's primary feature

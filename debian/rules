@@ -324,6 +324,10 @@ override_dh_auto_install:
 	# And the gstreamer backend.
 	rm -f debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt4/plugins/phonon_backend/libphonon_gstreamer.so
 
+	# Remove the embedded jquery library. We will later link to the one provided
+	# by the libjs-jquery package.
+	rm -f debian/tmp/usr/share/qt4/doc/html/scripts/jquery.js
+
 	# Add a configuration for qtchooser
 	mkdir -p $(CURDIR)/debian/tmp/usr/share/qtchooser
 	echo "/usr/lib/$(DEB_HOST_MULTIARCH)/qt4/bin" > $(CURDIR)/debian/tmp/usr/share/qtchooser/qt4-$(DEB_HOST_MULTIARCH).conf
