@@ -1,3 +1,7 @@
+qt4-x11 (4:4.8.5+dfsg-3) UNRELEASED; urgency=low
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 24 Jul 2013 00:20:19 -0300
+
 qt4-x11 (4:4.8.5+dfsg-2) unstable; urgency=low
 
   * Make qtcore4-l10n M-A: foreign. Due to a limitation in dpkg which does not
