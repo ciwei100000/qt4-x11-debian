@@ -85,7 +85,7 @@ Description: Qt 4 core module translations
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
- The QtCore module contains the translations of the core non-GUI functionality.
+ This package contains the translations of the QtCore module.
 
 Package: libqt4-core
 Architecture: any
