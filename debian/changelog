@@ -1,5 +1,9 @@
 qt4-x11 (4:4.8.5+dfsg-3) UNRELEASED; urgency=low
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Add Add-support-for-the-Linux-m68k-platform.patch for supporting the m68k
+    architecture (Closes: 660963).
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 24 Jul 2013 00:20:19 -0300
 
 qt4-x11 (4:4.8.5+dfsg-2) unstable; urgency=low
