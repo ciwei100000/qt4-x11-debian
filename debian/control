@@ -590,7 +590,7 @@ Description: Qt 4 private development files
 Package: libqt4-opengl-dev
 Architecture: any
 Section: libdevel
-Depends: libgl1-mesa-dev,
+Depends: libgl1-mesa-dev | libgl1-dev,
          libglu1-mesa-dev,
          libqt4-dev (= ${binary:Version}),
          libqt4-opengl (= ${binary:Version}),
