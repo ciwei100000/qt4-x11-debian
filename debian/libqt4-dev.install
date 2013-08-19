@@ -174,6 +174,7 @@ usr/include/qt4/Qt/qatomic_generic.h
 usr/include/qt4/Qt/qatomic_i386.h
 usr/include/qt4/Qt/qatomic_ia64.h
 usr/include/qt4/Qt/qatomic_integrity.h
+usr/include/qt4/Qt/qatomic_m68k.h
 usr/include/qt4/Qt/qatomic_macosx.h
 usr/include/qt4/Qt/qatomic_mips.h
 usr/include/qt4/Qt/qatomic_parisc.h
@@ -1357,6 +1358,7 @@ usr/include/qt4/QtCore/qatomic_generic.h
 usr/include/qt4/QtCore/qatomic_i386.h
 usr/include/qt4/QtCore/qatomic_ia64.h
 usr/include/qt4/QtCore/qatomic_integrity.h
+usr/include/qt4/QtCore/qatomic_m68k.h
 usr/include/qt4/QtCore/qatomic_macosx.h
 usr/include/qt4/QtCore/qatomic_mips.h
 usr/include/qt4/QtCore/qatomic_parisc.h

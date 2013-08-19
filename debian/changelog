@@ -3,6 +3,7 @@ qt4-x11 (4:4.8.5+dfsg-3) UNRELEASED; urgency=low
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Add Add-support-for-the-Linux-m68k-platform.patch for supporting the m68k
     architecture (Closes: 660963).
+    - Install m68k headers.
   * Change libqt4-opengl-dev dependency on libgl1-mesa-dev to
     libgl1-mesa-dev | libgl1-dev, thus allowing other implementations of
     libgl1 to be used (Closes: #718992).
