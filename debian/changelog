@@ -9,6 +9,9 @@ qt4-x11 (4:4.8.5+dfsg-3) UNRELEASED; urgency=low
 
   [ Pino Toscano ]
   * Fix description of qtcore4-l10n. (Closes: #717013)
+  * Workaround moc failures with recent versions of Boost; patch
+    qt-everywhere-opensource-src-4.8.5-QTBUG-22829.patch from Fedora (thanks!).
+    (Closes: #704045)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 24 Jul 2013 00:20:19 -0300
 
