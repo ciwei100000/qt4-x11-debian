@@ -1,3 +1,7 @@
+qt4-x11 (4:4.8.5+dfsg-4) UNRELEASED; urgency=low
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 26 Aug 2013 13:29:53 -0300
+
 qt4-x11 (4:4.8.5+dfsg-3) unstable; urgency=low
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
