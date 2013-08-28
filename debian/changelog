@@ -2,7 +2,8 @@ qt4-x11 (4:4.8.5+dfsg-4) UNRELEASED; urgency=low
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Fix typo in libqt4-opengl-dev dependencies (Closes: #720302).
-  * Fix broken symlink to use the system's jquery javascript library.
+  * Fix broken symlink to use the system's jquery javascript library
+    (Closes: #720950).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 26 Aug 2013 13:29:53 -0300
 
