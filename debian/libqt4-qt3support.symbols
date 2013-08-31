@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.5 amd64
+# SymbolsHelper-Confirmed: 4:4.8.5 amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel sh4
 libQt3Support.so.4 libqt4-qt3support #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z16qt_tryAccelEventP7QWidgetP9QKeyEvent@Base 4:4.5.3
@@ -718,7 +718,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN10Q3TitleBarD0Ev@Base 4:4.5.3
  _ZN10Q3TitleBarD1Ev@Base 4:4.5.3
  _ZN10Q3TitleBarD2Ev@Base 4:4.5.3
- (optional=external|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZN10QByteArray4dataEv@Base 4:4.7.2
+ (optional=external|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN10QByteArray4dataEv@Base 4:4.7.2
  _ZN11Q3ColorDrag11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN11Q3ColorDrag11qt_metacastEPKc@Base 4:4.5.3
  _ZN11Q3ColorDrag16staticMetaObjectE@Base 4:4.5.3
@@ -1032,10 +1032,10 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN11Q3WhatsThisD0Ev@Base 4:4.5.3
  _ZN11Q3WhatsThisD1Ev@Base 4:4.5.3
  _ZN11Q3WhatsThisD2Ev@Base 4:4.5.3
- (optional=external|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN11QColorGroupD1Ev@Base 4:4.8.1
- (optional=external|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN11QColorGroupD2Ev@Base 4:4.8.1
- (optional=external|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN11QDomElementD1Ev@Base 4:4.8.1
- (optional=external|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN11QDomElementD2Ev@Base 4:4.8.1
+ (optional=external|arch=amd64)_ZN11QColorGroupD1Ev@Base 4:4.8.1
+ (optional=external|arch=amd64)_ZN11QColorGroupD2Ev@Base 4:4.8.1
+ (optional=external|arch=amd64)_ZN11QDomElementD1Ev@Base 4:4.8.1
+ (optional=external|arch=amd64)_ZN11QDomElementD2Ev@Base 4:4.8.1
  _ZN12Q3CanvasItem10setEnabledEb@Base 4:4.5.3
  _ZN12Q3CanvasItem10setVisibleEb@Base 4:4.5.3
  _ZN12Q3CanvasItem11addToChunksEv@Base 4:4.5.3
@@ -1324,8 +1324,8 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN12Q3PointArray11makeEllipseEiiii@Base 4:4.5.3
  _ZN12Q3PointArray7makeArcEiiiiii@Base 4:4.5.3
  _ZN12Q3PointArray7makeArcEiiiiiiRK7QMatrix@Base 4:4.5.3
- (optional=external|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN12Q3PointArrayD1Ev@Base 4:4.8.1
- (optional=external|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN12Q3PointArrayD2Ev@Base 4:4.8.1
+ (optional=external|arch=amd64)_ZN12Q3PointArrayD1Ev@Base 4:4.8.1
+ (optional=external|arch=amd64)_ZN12Q3PointArrayD2Ev@Base 4:4.8.1
  _ZN12Q3ScrollView10fontChangeERK5QFont@Base 4:4.5.3
  _ZN12Q3ScrollView10setEnabledEb@Base 4:4.5.3
  _ZN12Q3ScrollView10setMarginsEiiii@Base 4:4.5.3
@@ -1630,8 +1630,8 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN12Q3TextStreamrsERs@Base 4:4.5.3
  _ZN12Q3TextStreamrsERt@Base 4:4.5.3
  _ZN12Q3TextString16appendParagraphsEP15Q3TextParagraphS1_@Base 4:4.5.3
- (optional=gccinternal|arch=!amd64 !hurd-i386 !i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZN12Q3TextString18nextCursorPositionEi@Base 4:4.8.4
- (optional=gccinternal|arch=!amd64 !hurd-i386 !i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZN12Q3TextString22previousCursorPositionEi@Base 4:4.8.4
+ (optional=gccinternal|arch=!amd64 !armel !armhf !hurd-i386 !i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN12Q3TextString18nextCursorPositionEi@Base 4:4.8.4
+ (optional=gccinternal|arch=!amd64 !armel !armhf !hurd-i386 !i386 !ia64 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN12Q3TextString22previousCursorPositionEi@Base 4:4.8.4
  _ZN12Q3TextString5clearEv@Base 4:4.5.3
  _ZN12Q3TextString6insertEiP16Q3TextStringCharb@Base 4:4.5.3
  _ZN12Q3TextString6insertEiPK5QChariP12Q3TextFormat@Base 4:4.5.3
@@ -2420,8 +2420,8 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN15Q3MultiLineEditD1Ev@Base 4:4.5.3
  _ZN15Q3MultiLineEditD2Ev@Base 4:4.5.3
  _ZN15Q3PtrCollection7newItemEPv@Base 4:4.5.3
- (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN15Q3SqlRecordInfoD1Ev@Base 4:4.8.1
- (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN15Q3SqlRecordInfoD2Ev@Base 4:4.8.1
+ (optional=gcc47|arch=amd64)_ZN15Q3SqlRecordInfoD1Ev@Base 4:4.8.1
+ (optional=gcc47|arch=amd64)_ZN15Q3SqlRecordInfoD2Ev@Base 4:4.8.1
  _ZN15Q3TextFormatter10formatLineEP15Q3TextParagraphP12Q3TextStringP14QTextLineStartP16Q3TextStringCharS7_ii@Base 4:4.5.3
  _ZN15Q3TextFormatter14setWrapEnabledEb@Base 4:4.5.3
  _ZN15Q3TextFormatter15bidiReorderLineEP15Q3TextParagraphP12Q3TextStringP14QTextLineStartP16Q3TextStringCharS7_ii@Base 4:4.5.3
@@ -2481,12 +2481,12 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN15Q3TextTableCellD0Ev@Base 4:4.5.3
  _ZN15Q3TextTableCellD1Ev@Base 4:4.5.3
  _ZN15Q3TextTableCellD2Ev@Base 4:4.5.3
- (optional=external|arch=hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (optional=external|arch=sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
+ (optional=external|arch=hppa sh4 sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
+ (optional=external|arch=sh4 sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN16Q3CanvasItemList10drawUniqueER8QPainter@Base 4:4.5.3
  _ZN16Q3CanvasItemList4sortEv@Base 4:4.5.3
- (optional=gccinternal|arch=!sparc64)_ZN16Q3CanvasItemListD1Ev@Base 4:4.8.4
- (optional=gccinternal|arch=!sparc64)_ZN16Q3CanvasItemListD2Ev@Base 4:4.8.4
+ (optional=gccinternal|arch=!armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN16Q3CanvasItemListD1Ev@Base 4:4.8.4
+ (optional=gccinternal|arch=!armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN16Q3CanvasItemListD2Ev@Base 4:4.8.4
  _ZN16Q3CheckTableItem10setCheckedEb@Base 4:4.5.3
  _ZN16Q3CheckTableItem20setContentFromEditorEP7QWidget@Base 4:4.5.3
  _ZN16Q3CheckTableItem4RTTIE@Base 4:4.5.3
@@ -2654,8 +2654,6 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN16Q3TextCustomItemD0Ev@Base 4:4.5.3
  _ZN16Q3TextCustomItemD1Ev@Base 4:4.5.3
  _ZN16Q3TextCustomItemD2Ev@Base 4:4.5.3
- (arch=armel)_ZN16Q3TextStringChar10CustomDataC1Ev@Base 4:4.8.0
- (arch=armel)_ZN16Q3TextStringChar10CustomDataC2Ev@Base 4:4.8.0
  _ZN16Q3TextStringChar13setCustomItemEP16Q3TextCustomItem@Base 4:4.5.3
  _ZN16Q3TextStringChar14loseCustomItemEv@Base 4:4.5.3
  _ZN16Q3TextStringChar9setAnchorERK7QStringS2_@Base 4:4.5.3
@@ -2786,8 +2784,8 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN18Q3TextStyleCommand9unexecuteEP12Q3TextCursor@Base 4:4.5.3
  _ZN18Q3TextStyleCommandC1EP14Q3TextDocumentiiRK10QByteArray@Base 4:4.5.3
  _ZN18Q3TextStyleCommandC2EP14Q3TextDocumentiiRK10QByteArray@Base 4:4.5.3
- (optional=external|arch=alpha amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel s390 s390x sparc)_ZN18QStyleOptionButtonD1Ev@Base 4:4.8.1
- (optional=external|arch=alpha amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel s390 s390x sparc)_ZN18QStyleOptionButtonD2Ev@Base 4:4.8.1
+ (optional=external|arch=alpha amd64 armel mips mipsel s390 s390x sh4 sparc)_ZN18QStyleOptionButtonD1Ev@Base 4:4.8.1
+ (optional=external|arch=alpha amd64 armel mips mipsel s390 s390x sh4 sparc)_ZN18QStyleOptionButtonD2Ev@Base 4:4.8.1
  _ZN18QStyleOptionHeaderD1Ev@Base 4:4.7.4
  _ZN18QStyleOptionHeaderD2Ev@Base 4:4.7.4
  _ZN19Q3CanvasPixmapArray11readPixmapsERK7QStringi@Base 4:4.5.3
@@ -3407,6 +3405,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN7Q3TableD0Ev@Base 4:4.5.3
  _ZN7Q3TableD1Ev@Base 4:4.5.3
  _ZN7Q3TableD2Ev@Base 4:4.5.3
+ (arch=armel armhf mips mipsel)_ZN7QString5clearEv@Base 4:4.8.5
  _ZN8Q3Action10removeFromEP7QWidget@Base 4:4.5.3
  _ZN8Q3Action10setEnabledEb@Base 4:4.5.3
  _ZN8Q3Action10setIconSetERK5QIcon@Base 4:4.5.3
@@ -3714,8 +3713,8 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN9Q3CString6setNumEm@Base 4:4.5.3
  _ZN9Q3CString7sprintfEPKcz@Base 4:4.5.3
  _ZN9Q3CString9setExpandEjc@Base 4:4.5.3
- (optional=gccinternal|arch=!sparc64)_ZN9Q3CStringD1Ev@Base 4:4.8.4
- (optional=gccinternal|arch=!sparc64)_ZN9Q3CStringD2Ev@Base 4:4.8.4
+ (optional=gccinternal|arch=!armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN9Q3CStringD1Ev@Base 4:4.8.4
+ (optional=gccinternal|arch=!armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN9Q3CStringD2Ev@Base 4:4.8.4
  _ZN9Q3GVector12compareItemsEPvS0_@Base 4:4.5.3
  _ZN9Q3GVector12insertExpandEjPv@Base 4:4.5.3
  _ZN9Q3GVector17warningIndexRangeEj@Base 4:4.5.3
@@ -3971,8 +3970,8 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN9Q3UriDragD0Ev@Base 4:4.5.3
  _ZN9Q3UriDragD1Ev@Base 4:4.5.3
  _ZN9Q3UriDragD2Ev@Base 4:4.5.3
- (optional=external|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN9QBitArrayD1Ev@Base 4:4.8.1
- (optional=external|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN9QBitArrayD2Ev@Base 4:4.8.1
+ (optional=external|arch=amd64)_ZN9QBitArrayD1Ev@Base 4:4.8.1
+ (optional=external|arch=amd64)_ZN9QBitArrayD2Ev@Base 4:4.8.1
  _ZNK10Q3ComboBox10autoResizeEv@Base 4:4.5.3
  _ZNK10Q3ComboBox10metaObjectEv@Base 4:4.5.3
  _ZNK10Q3ComboBox11currentItemEv@Base 4:4.5.3
@@ -4411,7 +4410,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZNK12Q3TextFormat7descentEv@Base 4:4.5.3
  _ZNK12Q3TextFormat7leadingEv@Base 4:4.5.3
  _ZNK12Q3TextString5widthEi@Base 4:4.5.3
- (arch=armel)_ZNK12Q3TextString8toStringEv@Base 4:4.8.0
+ (arch=sh4)_ZNK12Q3TextString8toStringEv@Base 4:4.8.5
  _ZNK12Q3TextString9checkBidiEv@Base 4:4.5.3
  _ZNK12QPaintDevice7devTypeEv@Base 4:4.5.3
  _ZNK13Q3ActionGroup10metaObjectEv@Base 4:4.5.3
@@ -5550,7 +5549,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZlsR11QDataStreamRK9Q3GVector@Base 4:4.5.3
  _ZlsR11QTextStreamRK10Q3DockArea@Base 4:4.5.3
  _ZlsR11QTextStreamRK12Q3MainWindow@Base 4:4.5.3
- (optional=external|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZneRK5QRectS1_@Base 4:4.8.1
+ (optional=external|arch=amd64)_ZneRK5QRectS1_@Base 4:4.8.1
  _ZrsR11QDataStreamR7Q3GList@Base 4:4.5.3
  _ZrsR11QDataStreamR9Q3CString@Base 4:4.5.3
  _ZrsR11QDataStreamR9Q3GVector@Base 4:4.5.3

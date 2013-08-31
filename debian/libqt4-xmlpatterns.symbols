@@ -1,10 +1,9 @@
-# SymbolsHelper-Confirmed: 4:4.8.5 amd64
+# SymbolsHelper-Confirmed: 4:4.8.5 alpha amd64 armel hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 powerpc ppc64 s390 s390x sh4 sparc
 libQtXmlPatterns.so.4 libqt4-xmlpatterns #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z5qHashRK15QSourceLocation@Base 4:4.5.3
  _Z5qHashRK18QXmlNodeModelIndex@Base 4:4.5.3
  _Z5qHashRK8QXmlName@Base 4:4.5.3
- (optional=external|arch=armel hppa)_Z6qDebugv@Base 4:4.6.2
  _ZN10QXmlSchema14setUriResolverEPK20QAbstractUriResolver@Base 4:4.6.1
  _ZN10QXmlSchema17setMessageHandlerEP23QAbstractMessageHandler@Base 4:4.6.1
  _ZN10QXmlSchema23setNetworkAccessManagerEP21QNetworkAccessManager@Base 4:4.6.1
@@ -66,8 +65,8 @@ libQtXmlPatterns.so.4 libqt4-xmlpatterns #MINVER#
  _ZN14QXmlSerializerD0Ev@Base 4:4.7.4
  _ZN14QXmlSerializerD1Ev@Base 4:4.7.4
  _ZN14QXmlSerializerD2Ev@Base 4:4.7.4
- (optional=external|arch=hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (optional=external|arch=hppa sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
+ (optional=external|arch=hppa sh4 sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
+ (optional=external|arch=hppa sh4 sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN15QSourceLocation6setUriERK4QUrl@Base 4:4.5.3
  _ZN15QSourceLocation7setLineEx@Base 4:4.5.3
  _ZN15QSourceLocation9setColumnEx@Base 4:4.5.3
@@ -121,8 +120,10 @@ libQtXmlPatterns.so.4 libqt4-xmlpatterns #MINVER#
  _ZN20QAbstractXmlReceiverD0Ev@Base 4:4.5.3
  _ZN20QAbstractXmlReceiverD1Ev@Base 4:4.5.3
  _ZN20QAbstractXmlReceiverD2Ev@Base 4:4.5.3
- (optional=gcc47|arch=amd64 armel hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN20QXmlStreamAttributesC1ERKS_@Base 4:4.8.1
- (optional=gcc47|arch=amd64 armel hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN20QXmlStreamAttributesC2ERKS_@Base 4:4.8.1
+ (optional=gcc47|arch=amd64)_ZN20QXmlStreamAttributesC1ERKS_@Base 4:4.8.1
+ (optional=gcc47|arch=amd64)_ZN20QXmlStreamAttributesC2ERKS_@Base 4:4.8.1
+ (arch=!amd64 !armel !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.8.5
+ (arch=!amd64 !armel !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.8.5
  _ZN21QAbstractXmlNodeModelC1EP28QAbstractXmlNodeModelPrivate@Base 4:4.5.3
  _ZN21QAbstractXmlNodeModelC1Ev@Base 4:4.5.3
  _ZN21QAbstractXmlNodeModelC2EP28QAbstractXmlNodeModelPrivate@Base 4:4.5.3
@@ -139,7 +140,7 @@ libQtXmlPatterns.so.4 libqt4-xmlpatterns #MINVER#
  _ZN23QAbstractMessageHandlerD0Ev@Base 4:4.5.3
  _ZN23QAbstractMessageHandlerD1Ev@Base 4:4.5.3
  _ZN23QAbstractMessageHandlerD2Ev@Base 4:4.5.3
- (optional=external|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN7QString5clearEv@Base 4:4.8.1
+ (optional=external|arch=amd64)_ZN7QString5clearEv@Base 4:4.8.1
  _ZN8QXmlItemC1ERK18QXmlNodeModelIndex@Base 4:4.5.3
  _ZN8QXmlItemC1ERK8QVariant@Base 4:4.5.3
  _ZN8QXmlItemC1ERKS_@Base 4:4.5.3
@@ -158,8 +159,8 @@ libQtXmlPatterns.so.4 libqt4-xmlpatterns #MINVER#
  _ZN8QXmlNameC2ER12QXmlNamePoolRK7QStringS4_S4_@Base 4:4.5.3
  _ZN8QXmlNameC2Ev@Base 4:4.5.3
  _ZN8QXmlNameaSERKS_@Base 4:4.5.3
- (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN9QHashData8willGrowEv@Base 4:4.8.1
- (optional=gcc47|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN9QHashData9hasShrunkEv@Base 4:4.8.1
+ (optional=gcc47|arch=amd64)_ZN9QHashData8willGrowEv@Base 4:4.8.1
+ (optional=gcc47|arch=amd64)_ZN9QHashData9hasShrunkEv@Base 4:4.8.1
  _ZN9QXmlQuery12bindVariableERK7QStringP9QIODevice@Base 4:4.5.3
  _ZN9QXmlQuery12bindVariableERK7QStringRK8QXmlItem@Base 4:4.5.3
  _ZN9QXmlQuery12bindVariableERK7QStringRKS_@Base 4:4.5.3

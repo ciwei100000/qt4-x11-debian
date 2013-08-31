@@ -7,6 +7,7 @@ qt4-x11 (4:4.8.5+dfsg-4) UNRELEASED; urgency=low
   * Apply qtdoc-build-offline-docs.patch to build documentation as offline.
     This means the searchbox will not be available, but it wasn't functional
     after all (Closes: #721111). Thanks Roland Hieber for the patch.
+  * Update symbols files with buildds' logs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 26 Aug 2013 13:29:53 -0300
 

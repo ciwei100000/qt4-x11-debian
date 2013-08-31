@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.5 amd64
+# SymbolsHelper-Confirmed: 4:4.8.5 amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel sh4
 libQtCLucene.so.4 libqtcore4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN12QCLuceneHits2idEi@Base 4:4.5.3
@@ -440,179 +440,179 @@ libQtCLucene.so.4 libqtcore4 #MINVER#
  _ZNK21QCLuceneMultiSearcher13searcherIndexEi@Base 4:4.5.3
  _ZNK21QCLuceneMultiSearcher6maxDocEv@Base 4:4.5.3
  _ZNK21QCLuceneMultiSearcher6subDocEi@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapI7QStringPN6lucene5index18CompoundFileReader9FileEntryENS1_4util7Compare7QstringESaISt4pairIKS0_S5_EEED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapI7QStringPN6lucene5index18CompoundFileReader9FileEntryENS1_4util7Compare7QstringESaISt4pairIKS0_S5_EEED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapI7QStringPN6lucene5store11FSDirectoryENS1_4util7Compare7QstringESaISt4pairIKS0_S4_EEED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapI7QStringPN6lucene5store11FSDirectoryENS1_4util7Compare7QstringESaISt4pairIKS0_S4_EEED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapI7QStringPN6lucene5store7RAMFileENS1_4util7Compare7QstringESaISt4pairIKS0_S4_EEED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapI7QStringPN6lucene5store7RAMFileENS1_4util7Compare7QstringESaISt4pairIKS0_S4_EEED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapI7QStringPvN6lucene4util7Compare7QstringESaISt4pairIKS0_S1_EEED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapI7QStringPvN6lucene4util7Compare7QstringESaISt4pairIKS0_S1_EEED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPFvPN6lucene5index11IndexReaderEPvES4_NS2_20CloseCallbackCompareESaISt4pairIKS6_S4_EEED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPFvPN6lucene5index11IndexReaderEPvES4_NS2_20CloseCallbackCompareESaISt4pairIKS6_S4_EEED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPKciN6lucene4util7Compare4CharESaISt4pairIKS1_iEEED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPKciN6lucene4util7Compare4CharESaISt4pairIKS1_iEEED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPKwPN6lucene5index13SegmentReader4NormENS2_4util7Compare5TCharESaISt4pairIKS1_S6_EEED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPKwPN6lucene5index13SegmentReader4NormENS2_4util7Compare5TCharESaISt4pairIKS1_S6_EEED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPKwPN6lucene5index9FieldInfoENS2_4util7Compare5TCharESaISt4pairIKS1_S5_EEED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPKwPN6lucene5index9FieldInfoENS2_4util7Compare5TCharESaISt4pairIKS1_S5_EEED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPKwPN6lucene8analysis8AnalyzerENS2_4util7Compare5TCharESaISt4pairIKS1_S5_EEED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPKwPN6lucene8analysis8AnalyzerENS2_4util7Compare5TCharESaISt4pairIKS1_S5_EEED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPKwPhN6lucene4util7Compare5TCharESaISt4pairIKS1_S2_EEED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPKwPhN6lucene4util7Compare5TCharESaISt4pairIKS1_S2_EEED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPKwiN6lucene4util7Compare5TCharESaISt4pairIKS1_iEEED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPKwiN6lucene4util7Compare5TCharESaISt4pairIKS1_iEEED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPN6lucene5index11IndexReaderEPNS0_6search14FieldCacheImpl25fieldcacheCacheReaderTypeENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPN6lucene5index11IndexReaderEPNS0_6search14FieldCacheImpl25fieldcacheCacheReaderTypeENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPN6lucene5index11IndexReaderEPNS0_6search19FieldSortedHitQueue23hitqueueCacheReaderTypeENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPN6lucene5index11IndexReaderEPNS0_6search19FieldSortedHitQueue23hitqueueCacheReaderTypeENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPN6lucene5index11IndexReaderEPNS0_6search21AbstractCachingFilter12BitSetHolderENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPN6lucene5index11IndexReaderEPNS0_6search21AbstractCachingFilter12BitSetHolderENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPN6lucene5index4TermEPNS1_14DocumentWriter7PostingENS2_7CompareESaISt4pairIKS3_S6_EEED1Ev@Base 4:4.7.4
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPN6lucene5index4TermEPNS1_14DocumentWriter7PostingENS2_7CompareESaISt4pairIKS3_S6_EEED2Ev@Base 4:4.7.4
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_14FieldCacheAutoENS3_7CompareESaISt4pairIKS4_S6_EEED1Ev@Base 4:4.7.4
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_14FieldCacheAutoENS3_7CompareESaISt4pairIKS4_S6_EEED2Ev@Base 4:4.7.4
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_18ScoreDocComparatorENS3_7CompareESaISt4pairIKS4_S6_EEED1Ev@Base 4:4.7.4
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_18ScoreDocComparatorENS3_7CompareESaISt4pairIKS4_S6_EEED2Ev@Base 4:4.7.4
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapImPN6lucene5index15SegmentTermEnumENS0_4util22CLuceneThreadIdCompareESaISt4pairIKmS3_EEED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapImPN6lucene5index15SegmentTermEnumENS0_4util22CLuceneThreadIdCompareESaISt4pairIKmS3_EEED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapImPN6lucene5index17TermVectorsReaderENS0_4util22CLuceneThreadIdCompareESaISt4pairIKmS3_EEED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3mapImPN6lucene5index17TermVectorsReaderENS0_4util22CLuceneThreadIdCompareESaISt4pairIKmS3_EEED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3setI7QStringN6lucene4util7Compare7QstringESaIS0_EED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3setI7QStringN6lucene4util7Compare7QstringESaIS0_EED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3setIPFvbEN6lucene4util7Compare4VoidIS0_EESaIS1_EED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3setIPFvbEN6lucene4util7Compare4VoidIS0_EESaIS1_EED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3setIPKwN6lucene4util7Compare5TCharESaIS1_EED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3setIPKwN6lucene4util7Compare5TCharESaIS1_EED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3setIPwN6lucene4util7Compare5TCharESaIS0_EED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt3setIPwN6lucene4util7Compare5TCharESaIS0_EED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt4listIPN6lucene5index18CompoundFileWriter15WriterFileEntryESaIS4_EED1Ev@Base 4:4.7.4
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt4listIPN6lucene5index18CompoundFileWriter15WriterFileEntryESaIS4_EED2Ev@Base 4:4.7.4
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt4listIPN6lucene6search6ScorerESaIS3_EED1Ev@Base 4:4.7.4
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt4listIPN6lucene6search6ScorerESaIS3_EED2Ev@Base 4:4.7.4
- (optional=templinst|arch=!hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNSt6vectorIPKwSaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_@Base 4:4.5.3
- (optional=templinst|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt6vectorIPKwSaIS1_EED1Ev@Base 4:4.8.1
- (optional=templinst|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZNSt6vectorIPKwSaIS1_EED2Ev@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene11queryParser10QueryTokenESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene11queryParser10QueryTokenESaIS3_EED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene11queryParser10QueryTokenESaIS3_EED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene5index11IndexReaderESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene5index11IndexReaderESaIS3_EED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene5index11IndexReaderESaIS3_EED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene5index13SegmentReaderESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene5index13SegmentReaderESaIS3_EED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene5index13SegmentReaderESaIS3_EED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene5index17TermVectorsWriter6TVTermESaIS4_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS4_S6_EERKS4_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene5index17TermVectorsWriter6TVTermESaIS4_EED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene5index17TermVectorsWriter6TVTermESaIS4_EED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene5index17TermVectorsWriter7TVFieldESaIS4_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS4_S6_EERKS4_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene5index17TermVectorsWriter7TVFieldESaIS4_EED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene5index17TermVectorsWriter7TVFieldESaIS4_EED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene5index4TermESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene5index4TermESaIS3_EED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene5index4TermESaIS3_EED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene5index9FieldInfoESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene5index9FieldInfoESaIS3_EED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene5index9FieldInfoESaIS3_EED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene6search11ExplanationESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene6search11ExplanationESaIS3_EED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene6search11ExplanationESaIS3_EED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene6search13BooleanClauseESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene6search13BooleanClauseESaIS3_EED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene6search13BooleanClauseESaIS3_EED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene6search6HitDocESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene6search6HitDocESaIS3_EED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene6search6HitDocESaIS3_EED2Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene6search6WeightESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene6search6WeightESaIS3_EED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt6vectorIPN6lucene6search6WeightESaIS3_EED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapI7QStringPN6lucene5index18CompoundFileReader9FileEntryENS1_4util7Compare7QstringESaISt4pairIKS0_S5_EEED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapI7QStringPN6lucene5index18CompoundFileReader9FileEntryENS1_4util7Compare7QstringESaISt4pairIKS0_S5_EEED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapI7QStringPN6lucene5store11FSDirectoryENS1_4util7Compare7QstringESaISt4pairIKS0_S4_EEED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapI7QStringPN6lucene5store11FSDirectoryENS1_4util7Compare7QstringESaISt4pairIKS0_S4_EEED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapI7QStringPN6lucene5store7RAMFileENS1_4util7Compare7QstringESaISt4pairIKS0_S4_EEED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapI7QStringPN6lucene5store7RAMFileENS1_4util7Compare7QstringESaISt4pairIKS0_S4_EEED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapI7QStringPvN6lucene4util7Compare7QstringESaISt4pairIKS0_S1_EEED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapI7QStringPvN6lucene4util7Compare7QstringESaISt4pairIKS0_S1_EEED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPFvPN6lucene5index11IndexReaderEPvES4_NS2_20CloseCallbackCompareESaISt4pairIKS6_S4_EEED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPFvPN6lucene5index11IndexReaderEPvES4_NS2_20CloseCallbackCompareESaISt4pairIKS6_S4_EEED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPKciN6lucene4util7Compare4CharESaISt4pairIKS1_iEEED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPKciN6lucene4util7Compare4CharESaISt4pairIKS1_iEEED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPKwPN6lucene5index13SegmentReader4NormENS2_4util7Compare5TCharESaISt4pairIKS1_S6_EEED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPKwPN6lucene5index13SegmentReader4NormENS2_4util7Compare5TCharESaISt4pairIKS1_S6_EEED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPKwPN6lucene5index9FieldInfoENS2_4util7Compare5TCharESaISt4pairIKS1_S5_EEED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPKwPN6lucene5index9FieldInfoENS2_4util7Compare5TCharESaISt4pairIKS1_S5_EEED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPKwPN6lucene8analysis8AnalyzerENS2_4util7Compare5TCharESaISt4pairIKS1_S5_EEED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPKwPN6lucene8analysis8AnalyzerENS2_4util7Compare5TCharESaISt4pairIKS1_S5_EEED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPKwPhN6lucene4util7Compare5TCharESaISt4pairIKS1_S2_EEED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPKwPhN6lucene4util7Compare5TCharESaISt4pairIKS1_S2_EEED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPKwiN6lucene4util7Compare5TCharESaISt4pairIKS1_iEEED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPKwiN6lucene4util7Compare5TCharESaISt4pairIKS1_iEEED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPN6lucene5index11IndexReaderEPNS0_6search14FieldCacheImpl25fieldcacheCacheReaderTypeENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPN6lucene5index11IndexReaderEPNS0_6search14FieldCacheImpl25fieldcacheCacheReaderTypeENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPN6lucene5index11IndexReaderEPNS0_6search19FieldSortedHitQueue23hitqueueCacheReaderTypeENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPN6lucene5index11IndexReaderEPNS0_6search19FieldSortedHitQueue23hitqueueCacheReaderTypeENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPN6lucene5index11IndexReaderEPNS0_6search21AbstractCachingFilter12BitSetHolderENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPN6lucene5index11IndexReaderEPNS0_6search21AbstractCachingFilter12BitSetHolderENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPN6lucene5index4TermEPNS1_14DocumentWriter7PostingENS2_7CompareESaISt4pairIKS3_S6_EEED1Ev@Base 4:4.7.4
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPN6lucene5index4TermEPNS1_14DocumentWriter7PostingENS2_7CompareESaISt4pairIKS3_S6_EEED2Ev@Base 4:4.7.4
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_14FieldCacheAutoENS3_7CompareESaISt4pairIKS4_S6_EEED1Ev@Base 4:4.7.4
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_14FieldCacheAutoENS3_7CompareESaISt4pairIKS4_S6_EEED2Ev@Base 4:4.7.4
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_18ScoreDocComparatorENS3_7CompareESaISt4pairIKS4_S6_EEED1Ev@Base 4:4.7.4
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_18ScoreDocComparatorENS3_7CompareESaISt4pairIKS4_S6_EEED2Ev@Base 4:4.7.4
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapImPN6lucene5index15SegmentTermEnumENS0_4util22CLuceneThreadIdCompareESaISt4pairIKmS3_EEED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapImPN6lucene5index15SegmentTermEnumENS0_4util22CLuceneThreadIdCompareESaISt4pairIKmS3_EEED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapImPN6lucene5index17TermVectorsReaderENS0_4util22CLuceneThreadIdCompareESaISt4pairIKmS3_EEED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3mapImPN6lucene5index17TermVectorsReaderENS0_4util22CLuceneThreadIdCompareESaISt4pairIKmS3_EEED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3setI7QStringN6lucene4util7Compare7QstringESaIS0_EED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3setI7QStringN6lucene4util7Compare7QstringESaIS0_EED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3setIPFvbEN6lucene4util7Compare4VoidIS0_EESaIS1_EED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3setIPFvbEN6lucene4util7Compare4VoidIS0_EESaIS1_EED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3setIPKwN6lucene4util7Compare5TCharESaIS1_EED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3setIPKwN6lucene4util7Compare5TCharESaIS1_EED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3setIPwN6lucene4util7Compare5TCharESaIS0_EED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt3setIPwN6lucene4util7Compare5TCharESaIS0_EED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt4listIPN6lucene5index18CompoundFileWriter15WriterFileEntryESaIS4_EED1Ev@Base 4:4.7.4
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt4listIPN6lucene5index18CompoundFileWriter15WriterFileEntryESaIS4_EED2Ev@Base 4:4.7.4
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt4listIPN6lucene6search6ScorerESaIS3_EED1Ev@Base 4:4.7.4
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt4listIPN6lucene6search6ScorerESaIS3_EED2Ev@Base 4:4.7.4
+ (optional=templinst)_ZNSt6vectorIPKwSaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_@Base 4:4.5.3
+ (optional=templinst|arch=amd64)_ZNSt6vectorIPKwSaIS1_EED1Ev@Base 4:4.8.1
+ (optional=templinst|arch=amd64)_ZNSt6vectorIPKwSaIS1_EED2Ev@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene11queryParser10QueryTokenESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene11queryParser10QueryTokenESaIS3_EED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene11queryParser10QueryTokenESaIS3_EED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene5index11IndexReaderESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene5index11IndexReaderESaIS3_EED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene5index11IndexReaderESaIS3_EED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene5index13SegmentReaderESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene5index13SegmentReaderESaIS3_EED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene5index13SegmentReaderESaIS3_EED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene5index17TermVectorsWriter6TVTermESaIS4_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS4_S6_EERKS4_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene5index17TermVectorsWriter6TVTermESaIS4_EED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene5index17TermVectorsWriter6TVTermESaIS4_EED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene5index17TermVectorsWriter7TVFieldESaIS4_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS4_S6_EERKS4_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene5index17TermVectorsWriter7TVFieldESaIS4_EED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene5index17TermVectorsWriter7TVFieldESaIS4_EED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene5index4TermESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene5index4TermESaIS3_EED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene5index4TermESaIS3_EED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene5index9FieldInfoESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene5index9FieldInfoESaIS3_EED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene5index9FieldInfoESaIS3_EED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene6search11ExplanationESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene6search11ExplanationESaIS3_EED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene6search11ExplanationESaIS3_EED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene6search13BooleanClauseESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene6search13BooleanClauseESaIS3_EED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene6search13BooleanClauseESaIS3_EED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene6search6HitDocESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene6search6HitDocESaIS3_EED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene6search6HitDocESaIS3_EED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene6search6WeightESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene6search6WeightESaIS3_EED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene6search6WeightESaIS3_EED2Ev@Base 4:4.8.2
  (optional=templinst)_ZNSt6vectorIPhSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_@Base 4:4.5.3
- (optional=templinst|arch=alpha amd64 hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc powerpcspe ppc64 s390 s390x sparc)_ZNSt6vectorIPhSaIS0_EED1Ev@Base 4:4.8.1
- (optional=templinst|arch=alpha amd64 hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc powerpcspe ppc64 s390 s390x sparc)_ZNSt6vectorIPhSaIS0_EED2Ev@Base 4:4.8.1
+ (optional=templinst|arch=alpha amd64 ia64 powerpc powerpcspe ppc64 s390 s390x sh4 sparc)_ZNSt6vectorIPhSaIS0_EED1Ev@Base 4:4.8.1
+ (optional=templinst|arch=alpha amd64 ia64 powerpc powerpcspe ppc64 s390 s390x sh4 sparc)_ZNSt6vectorIPhSaIS0_EED2Ev@Base 4:4.8.1
  (optional=templinst)_ZNSt6vectorIPwSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_@Base 4:4.5.3
- (optional=templinst|arch=alpha amd64 hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc powerpcspe ppc64 s390 s390x sparc)_ZNSt6vectorIPwSaIS0_EED1Ev@Base 4:4.8.1
- (optional=templinst|arch=alpha amd64 hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc powerpcspe ppc64 s390 s390x sparc)_ZNSt6vectorIPwSaIS0_EED2Ev@Base 4:4.8.1
+ (optional=templinst|arch=alpha amd64 ia64 powerpc powerpcspe ppc64 s390 s390x sh4 sparc)_ZNSt6vectorIPwSaIS0_EED1Ev@Base 4:4.8.1
+ (optional=templinst|arch=alpha amd64 ia64 powerpc powerpcspe ppc64 s390 s390x sh4 sparc)_ZNSt6vectorIPwSaIS0_EED2Ev@Base 4:4.8.1
  (optional=templinst)_ZNSt6vectorIiSaIiEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPiS1_EERKi@Base 4:4.5.3
- (optional=templinst|arch=alpha amd64 hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc powerpcspe ppc64 s390 s390x sparc)_ZNSt6vectorIiSaIiEED1Ev@Base 4:4.8.1
- (optional=templinst|arch=alpha amd64 hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc powerpcspe ppc64 s390 s390x sparc)_ZNSt6vectorIiSaIiEED2Ev@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeI7QStringS0_St9_IdentityIS0_EN6lucene4util7Compare7QstringESaIS0_EE10_M_insert_EPKSt18_Rb_tree_node_baseSB_RKS0_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeI7QStringS0_St9_IdentityIS0_EN6lucene4util7Compare7QstringESaIS0_EE16_M_insert_uniqueERKS0_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeI7QStringS0_St9_IdentityIS0_EN6lucene4util7Compare7QstringESaIS0_EE8_M_eraseEPSt13_Rb_tree_nodeIS0_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5index18CompoundFileReader9FileEntryEESt10_Select1stIS8_ENS3_4util7Compare7QstringESaIS8_EE10_M_insert_EPKSt18_Rb_tree_node_baseSI_RKS8_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5index18CompoundFileReader9FileEntryEESt10_Select1stIS8_ENS3_4util7Compare7QstringESaIS8_EE16_M_insert_uniqueERKS8_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5index18CompoundFileReader9FileEntryEESt10_Select1stIS8_ENS3_4util7Compare7QstringESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5store11FSDirectoryEESt10_Select1stIS7_ENS3_4util7Compare7QstringESaIS7_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS7_@Base 4:4.7.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5store11FSDirectoryEESt10_Select1stIS7_ENS3_4util7Compare7QstringESaIS7_EE16_M_insert_uniqueERKS7_@Base 4:4.7.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5store11FSDirectoryEESt10_Select1stIS7_ENS3_4util7Compare7QstringESaIS7_EE8_M_eraseEPSt13_Rb_tree_nodeIS7_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5store7RAMFileEESt10_Select1stIS7_ENS3_4util7Compare7QstringESaIS7_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS7_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5store7RAMFileEESt10_Select1stIS7_ENS3_4util7Compare7QstringESaIS7_EE16_M_insert_uniqueERKS7_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5store7RAMFileEESt10_Select1stIS7_ENS3_4util7Compare7QstringESaIS7_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS7_ERKS7_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5store7RAMFileEESt10_Select1stIS7_ENS3_4util7Compare7QstringESaIS7_EE8_M_eraseEPSt13_Rb_tree_nodeIS7_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PvESt10_Select1stIS4_EN6lucene4util7Compare7QstringESaIS4_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS4_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PvESt10_Select1stIS4_EN6lucene4util7Compare7QstringESaIS4_EE16_M_insert_uniqueERKS4_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PvESt10_Select1stIS4_EN6lucene4util7Compare7QstringESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPFvPN6lucene5index11IndexReaderEPvESt4pairIKS6_S4_ESt10_Select1stIS9_ENS2_20CloseCallbackCompareESaIS9_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS9_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPFvPN6lucene5index11IndexReaderEPvESt4pairIKS6_S4_ESt10_Select1stIS9_ENS2_20CloseCallbackCompareESaIS9_EE16_M_insert_uniqueERKS9_@Base 4:4.7.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPFvPN6lucene5index11IndexReaderEPvESt4pairIKS6_S4_ESt10_Select1stIS9_ENS2_20CloseCallbackCompareESaIS9_EE8_M_eraseEPSt13_Rb_tree_nodeIS9_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPFvbES1_St9_IdentityIS1_EN6lucene4util7Compare4VoidIS0_EESaIS1_EE10_M_insert_EPKSt18_Rb_tree_node_baseSD_RKS1_@Base 4:4.7.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPFvbES1_St9_IdentityIS1_EN6lucene4util7Compare4VoidIS0_EESaIS1_EE16_M_insert_uniqueERKS1_@Base 4:4.7.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPFvbES1_St9_IdentityIS1_EN6lucene4util7Compare4VoidIS0_EESaIS1_EE8_M_eraseEPSt13_Rb_tree_nodeIS1_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPKcSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare4CharESaIS4_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS4_@Base 4:4.7.2
- (optional=templinst|arch=!alpha !amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !powerpcspe !ppc64 !s390 !s390x !sparc !sparc64)_ZNSt8_Rb_treeIPKcSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare4CharESaIS4_EE14_M_lower_boundEPSt13_Rb_tree_nodeIS4_ESF_RS3_@Base 4:4.7.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPKcSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare4CharESaIS4_EE16_M_insert_uniqueERKS4_@Base 4:4.7.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPKcSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare4CharESaIS4_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS4_ERKS4_@Base 4:4.7.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPKcSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare4CharESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPKwS1_St9_IdentityIS1_EN6lucene4util7Compare5TCharESaIS1_EE10_M_insert_EPKSt18_Rb_tree_node_baseSC_RKS1_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPKwS1_St9_IdentityIS1_EN6lucene4util7Compare5TCharESaIS1_EE16_M_insert_uniqueERKS1_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPKwS1_St9_IdentityIS1_EN6lucene4util7Compare5TCharESaIS1_EE8_M_eraseEPSt13_Rb_tree_nodeIS1_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PN6lucene5index13SegmentReader4NormEESt10_Select1stIS9_ENS4_4util7Compare5TCharESaIS9_EE10_M_insert_EPKSt18_Rb_tree_node_baseSJ_RKS9_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PN6lucene5index13SegmentReader4NormEESt10_Select1stIS9_ENS4_4util7Compare5TCharESaIS9_EE16_M_insert_uniqueERKS9_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PN6lucene5index13SegmentReader4NormEESt10_Select1stIS9_ENS4_4util7Compare5TCharESaIS9_EE8_M_eraseEPSt13_Rb_tree_nodeIS9_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PN6lucene5index9FieldInfoEESt10_Select1stIS8_ENS4_4util7Compare5TCharESaIS8_EE10_M_insert_EPKSt18_Rb_tree_node_baseSI_RKS8_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PN6lucene5index9FieldInfoEESt10_Select1stIS8_ENS4_4util7Compare5TCharESaIS8_EE16_M_insert_uniqueERKS8_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PN6lucene5index9FieldInfoEESt10_Select1stIS8_ENS4_4util7Compare5TCharESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PN6lucene8analysis8AnalyzerEESt10_Select1stIS8_ENS4_4util7Compare5TCharESaIS8_EE10_M_insert_EPKSt18_Rb_tree_node_baseSI_RKS8_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PN6lucene8analysis8AnalyzerEESt10_Select1stIS8_ENS4_4util7Compare5TCharESaIS8_EE16_M_insert_uniqueERKS8_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PN6lucene8analysis8AnalyzerEESt10_Select1stIS8_ENS4_4util7Compare5TCharESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PhESt10_Select1stIS5_EN6lucene4util7Compare5TCharESaIS5_EE10_M_insert_EPKSt18_Rb_tree_node_baseSG_RKS5_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PhESt10_Select1stIS5_EN6lucene4util7Compare5TCharESaIS5_EE16_M_insert_uniqueERKS5_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PhESt10_Select1stIS5_EN6lucene4util7Compare5TCharESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS4_@Base 4:4.7.3
- (optional=templinst|arch=armel armhf ia64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE14_M_lower_boundEPSt13_Rb_tree_nodeIS4_ESF_RS3_@Base 4:4.7.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE16_M_insert_uniqueERKS4_@Base 4:4.7.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS4_ERKS4_@Base 4:4.7.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search14FieldCacheImpl25fieldcacheCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE10_M_insert_EPKSt18_Rb_tree_node_baseSL_RKSA_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search14FieldCacheImpl25fieldcacheCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE16_M_insert_uniqueERKSA_@Base 4:4.7.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search14FieldCacheImpl25fieldcacheCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE8_M_eraseEPSt13_Rb_tree_nodeISA_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search19FieldSortedHitQueue23hitqueueCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE10_M_insert_EPKSt18_Rb_tree_node_baseSL_RKSA_@Base 4:4.7.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search19FieldSortedHitQueue23hitqueueCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE16_M_insert_uniqueERKSA_@Base 4:4.7.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search19FieldSortedHitQueue23hitqueueCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE8_M_eraseEPSt13_Rb_tree_nodeISA_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search21AbstractCachingFilter12BitSetHolderEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE10_M_insert_EPKSt18_Rb_tree_node_baseSL_RKSA_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search21AbstractCachingFilter12BitSetHolderEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE16_M_insert_uniqueERKSA_@Base 4:4.7.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search21AbstractCachingFilter12BitSetHolderEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE8_M_eraseEPSt13_Rb_tree_nodeISA_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPN6lucene5index4TermESt4pairIKS3_PNS1_14DocumentWriter7PostingEESt10_Select1stIS9_ENS2_7CompareESaIS9_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS9_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPN6lucene5index4TermESt4pairIKS3_PNS1_14DocumentWriter7PostingEESt10_Select1stIS9_ENS2_7CompareESaIS9_EE16_M_insert_uniqueERKS9_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPN6lucene5index4TermESt4pairIKS3_PNS1_14DocumentWriter7PostingEESt10_Select1stIS9_ENS2_7CompareESaIS9_EE8_M_eraseEPSt13_Rb_tree_nodeIS9_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPN6lucene6search14FieldCacheImpl9FileEntryESt4pairIKS4_PNS1_14FieldCacheAutoEESt10_Select1stIS9_ENS3_7CompareESaIS9_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS9_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPN6lucene6search14FieldCacheImpl9FileEntryESt4pairIKS4_PNS1_14FieldCacheAutoEESt10_Select1stIS9_ENS3_7CompareESaIS9_EE16_M_insert_uniqueERKS9_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPN6lucene6search14FieldCacheImpl9FileEntryESt4pairIKS4_PNS1_14FieldCacheAutoEESt10_Select1stIS9_ENS3_7CompareESaIS9_EE8_M_eraseEPSt13_Rb_tree_nodeIS9_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPN6lucene6search14FieldCacheImpl9FileEntryESt4pairIKS4_PNS1_18ScoreDocComparatorEESt10_Select1stIS9_ENS3_7CompareESaIS9_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS9_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPN6lucene6search14FieldCacheImpl9FileEntryESt4pairIKS4_PNS1_18ScoreDocComparatorEESt10_Select1stIS9_ENS3_7CompareESaIS9_EE16_M_insert_uniqueERKS9_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPN6lucene6search14FieldCacheImpl9FileEntryESt4pairIKS4_PNS1_18ScoreDocComparatorEESt10_Select1stIS9_ENS3_7CompareESaIS9_EE8_M_eraseEPSt13_Rb_tree_nodeIS9_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPwS0_St9_IdentityIS0_EN6lucene4util7Compare5TCharESaIS0_EE10_M_insert_EPKSt18_Rb_tree_node_baseSB_RKS0_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPwS0_St9_IdentityIS0_EN6lucene4util7Compare5TCharESaIS0_EE16_M_insert_uniqueERKS0_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeIPwS0_St9_IdentityIS0_EN6lucene4util7Compare5TCharESaIS0_EE8_M_eraseEPSt13_Rb_tree_nodeIS0_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene4util15ThreadLocalBaseEESt10_Select1stIS6_ESt4lessImESaIS6_EE15_M_insert_equalERKS6_@Base 4:4.7.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene4util15ThreadLocalBaseEESt10_Select1stIS6_ESt4lessImESaIS6_EE8_M_eraseEPSt13_Rb_tree_nodeIS6_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene5index15SegmentTermEnumEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS6_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene5index15SegmentTermEnumEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE16_M_insert_uniqueERKS6_@Base 4:4.7.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene5index15SegmentTermEnumEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE8_M_eraseEPSt13_Rb_tree_nodeIS6_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene5index17TermVectorsReaderEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS6_@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene5index17TermVectorsReaderEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE16_M_insert_uniqueERKS6_@Base 4:4.7.2
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene5index17TermVectorsReaderEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE8_M_eraseEPSt13_Rb_tree_nodeIS6_E@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8multimapImPN6lucene4util15ThreadLocalBaseESt4lessImESaISt4pairIKmS3_EEED1Ev@Base 4:4.8.2
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNSt8multimapImPN6lucene4util15ThreadLocalBaseESt4lessImESaISt4pairIKmS3_EEED2Ev@Base 4:4.8.2
+ (optional=templinst|arch=alpha amd64 ia64 powerpc powerpcspe ppc64 s390 s390x sh4 sparc)_ZNSt6vectorIiSaIiEED1Ev@Base 4:4.8.1
+ (optional=templinst|arch=alpha amd64 ia64 powerpc powerpcspe ppc64 s390 s390x sh4 sparc)_ZNSt6vectorIiSaIiEED2Ev@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeI7QStringS0_St9_IdentityIS0_EN6lucene4util7Compare7QstringESaIS0_EE10_M_insert_EPKSt18_Rb_tree_node_baseSB_RKS0_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeI7QStringS0_St9_IdentityIS0_EN6lucene4util7Compare7QstringESaIS0_EE16_M_insert_uniqueERKS0_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeI7QStringS0_St9_IdentityIS0_EN6lucene4util7Compare7QstringESaIS0_EE8_M_eraseEPSt13_Rb_tree_nodeIS0_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5index18CompoundFileReader9FileEntryEESt10_Select1stIS8_ENS3_4util7Compare7QstringESaIS8_EE10_M_insert_EPKSt18_Rb_tree_node_baseSI_RKS8_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5index18CompoundFileReader9FileEntryEESt10_Select1stIS8_ENS3_4util7Compare7QstringESaIS8_EE16_M_insert_uniqueERKS8_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5index18CompoundFileReader9FileEntryEESt10_Select1stIS8_ENS3_4util7Compare7QstringESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5store11FSDirectoryEESt10_Select1stIS7_ENS3_4util7Compare7QstringESaIS7_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS7_@Base 4:4.7.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5store11FSDirectoryEESt10_Select1stIS7_ENS3_4util7Compare7QstringESaIS7_EE16_M_insert_uniqueERKS7_@Base 4:4.7.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5store11FSDirectoryEESt10_Select1stIS7_ENS3_4util7Compare7QstringESaIS7_EE8_M_eraseEPSt13_Rb_tree_nodeIS7_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5store7RAMFileEESt10_Select1stIS7_ENS3_4util7Compare7QstringESaIS7_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS7_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5store7RAMFileEESt10_Select1stIS7_ENS3_4util7Compare7QstringESaIS7_EE16_M_insert_uniqueERKS7_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5store7RAMFileEESt10_Select1stIS7_ENS3_4util7Compare7QstringESaIS7_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS7_ERKS7_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PN6lucene5store7RAMFileEESt10_Select1stIS7_ENS3_4util7Compare7QstringESaIS7_EE8_M_eraseEPSt13_Rb_tree_nodeIS7_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PvESt10_Select1stIS4_EN6lucene4util7Compare7QstringESaIS4_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS4_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PvESt10_Select1stIS4_EN6lucene4util7Compare7QstringESaIS4_EE16_M_insert_uniqueERKS4_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeI7QStringSt4pairIKS0_PvESt10_Select1stIS4_EN6lucene4util7Compare7QstringESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPFvPN6lucene5index11IndexReaderEPvESt4pairIKS6_S4_ESt10_Select1stIS9_ENS2_20CloseCallbackCompareESaIS9_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS9_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPFvPN6lucene5index11IndexReaderEPvESt4pairIKS6_S4_ESt10_Select1stIS9_ENS2_20CloseCallbackCompareESaIS9_EE16_M_insert_uniqueERKS9_@Base 4:4.7.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPFvPN6lucene5index11IndexReaderEPvESt4pairIKS6_S4_ESt10_Select1stIS9_ENS2_20CloseCallbackCompareESaIS9_EE8_M_eraseEPSt13_Rb_tree_nodeIS9_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPFvbES1_St9_IdentityIS1_EN6lucene4util7Compare4VoidIS0_EESaIS1_EE10_M_insert_EPKSt18_Rb_tree_node_baseSD_RKS1_@Base 4:4.7.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPFvbES1_St9_IdentityIS1_EN6lucene4util7Compare4VoidIS0_EESaIS1_EE16_M_insert_uniqueERKS1_@Base 4:4.7.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPFvbES1_St9_IdentityIS1_EN6lucene4util7Compare4VoidIS0_EESaIS1_EE8_M_eraseEPSt13_Rb_tree_nodeIS1_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPKcSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare4CharESaIS4_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS4_@Base 4:4.7.2
+ (optional=templinst|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !powerpcspe !ppc64 !s390 !s390x !sparc !sparc64)_ZNSt8_Rb_treeIPKcSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare4CharESaIS4_EE14_M_lower_boundEPSt13_Rb_tree_nodeIS4_ESF_RS3_@Base 4:4.7.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPKcSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare4CharESaIS4_EE16_M_insert_uniqueERKS4_@Base 4:4.7.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPKcSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare4CharESaIS4_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS4_ERKS4_@Base 4:4.7.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPKcSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare4CharESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPKwS1_St9_IdentityIS1_EN6lucene4util7Compare5TCharESaIS1_EE10_M_insert_EPKSt18_Rb_tree_node_baseSC_RKS1_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPKwS1_St9_IdentityIS1_EN6lucene4util7Compare5TCharESaIS1_EE16_M_insert_uniqueERKS1_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPKwS1_St9_IdentityIS1_EN6lucene4util7Compare5TCharESaIS1_EE8_M_eraseEPSt13_Rb_tree_nodeIS1_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PN6lucene5index13SegmentReader4NormEESt10_Select1stIS9_ENS4_4util7Compare5TCharESaIS9_EE10_M_insert_EPKSt18_Rb_tree_node_baseSJ_RKS9_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PN6lucene5index13SegmentReader4NormEESt10_Select1stIS9_ENS4_4util7Compare5TCharESaIS9_EE16_M_insert_uniqueERKS9_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PN6lucene5index13SegmentReader4NormEESt10_Select1stIS9_ENS4_4util7Compare5TCharESaIS9_EE8_M_eraseEPSt13_Rb_tree_nodeIS9_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PN6lucene5index9FieldInfoEESt10_Select1stIS8_ENS4_4util7Compare5TCharESaIS8_EE10_M_insert_EPKSt18_Rb_tree_node_baseSI_RKS8_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PN6lucene5index9FieldInfoEESt10_Select1stIS8_ENS4_4util7Compare5TCharESaIS8_EE16_M_insert_uniqueERKS8_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PN6lucene5index9FieldInfoEESt10_Select1stIS8_ENS4_4util7Compare5TCharESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PN6lucene8analysis8AnalyzerEESt10_Select1stIS8_ENS4_4util7Compare5TCharESaIS8_EE10_M_insert_EPKSt18_Rb_tree_node_baseSI_RKS8_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PN6lucene8analysis8AnalyzerEESt10_Select1stIS8_ENS4_4util7Compare5TCharESaIS8_EE16_M_insert_uniqueERKS8_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PN6lucene8analysis8AnalyzerEESt10_Select1stIS8_ENS4_4util7Compare5TCharESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PhESt10_Select1stIS5_EN6lucene4util7Compare5TCharESaIS5_EE10_M_insert_EPKSt18_Rb_tree_node_baseSG_RKS5_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PhESt10_Select1stIS5_EN6lucene4util7Compare5TCharESaIS5_EE16_M_insert_uniqueERKS5_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PhESt10_Select1stIS5_EN6lucene4util7Compare5TCharESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS4_@Base 4:4.7.3
+ (optional=templinst|arch=ia64 sh4)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE14_M_lower_boundEPSt13_Rb_tree_nodeIS4_ESF_RS3_@Base 4:4.7.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE16_M_insert_uniqueERKS4_@Base 4:4.7.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS4_ERKS4_@Base 4:4.7.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search14FieldCacheImpl25fieldcacheCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE10_M_insert_EPKSt18_Rb_tree_node_baseSL_RKSA_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search14FieldCacheImpl25fieldcacheCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE16_M_insert_uniqueERKSA_@Base 4:4.7.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search14FieldCacheImpl25fieldcacheCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE8_M_eraseEPSt13_Rb_tree_nodeISA_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search19FieldSortedHitQueue23hitqueueCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE10_M_insert_EPKSt18_Rb_tree_node_baseSL_RKSA_@Base 4:4.7.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search19FieldSortedHitQueue23hitqueueCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE16_M_insert_uniqueERKSA_@Base 4:4.7.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search19FieldSortedHitQueue23hitqueueCacheReaderTypeEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE8_M_eraseEPSt13_Rb_tree_nodeISA_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search21AbstractCachingFilter12BitSetHolderEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE10_M_insert_EPKSt18_Rb_tree_node_baseSL_RKSA_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search21AbstractCachingFilter12BitSetHolderEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE16_M_insert_uniqueERKSA_@Base 4:4.7.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPN6lucene5index11IndexReaderESt4pairIKS3_PNS0_6search21AbstractCachingFilter12BitSetHolderEESt10_Select1stISA_ENS0_4util7Compare4VoidIS2_EESaISA_EE8_M_eraseEPSt13_Rb_tree_nodeISA_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPN6lucene5index4TermESt4pairIKS3_PNS1_14DocumentWriter7PostingEESt10_Select1stIS9_ENS2_7CompareESaIS9_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS9_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPN6lucene5index4TermESt4pairIKS3_PNS1_14DocumentWriter7PostingEESt10_Select1stIS9_ENS2_7CompareESaIS9_EE16_M_insert_uniqueERKS9_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPN6lucene5index4TermESt4pairIKS3_PNS1_14DocumentWriter7PostingEESt10_Select1stIS9_ENS2_7CompareESaIS9_EE8_M_eraseEPSt13_Rb_tree_nodeIS9_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPN6lucene6search14FieldCacheImpl9FileEntryESt4pairIKS4_PNS1_14FieldCacheAutoEESt10_Select1stIS9_ENS3_7CompareESaIS9_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS9_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPN6lucene6search14FieldCacheImpl9FileEntryESt4pairIKS4_PNS1_14FieldCacheAutoEESt10_Select1stIS9_ENS3_7CompareESaIS9_EE16_M_insert_uniqueERKS9_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPN6lucene6search14FieldCacheImpl9FileEntryESt4pairIKS4_PNS1_14FieldCacheAutoEESt10_Select1stIS9_ENS3_7CompareESaIS9_EE8_M_eraseEPSt13_Rb_tree_nodeIS9_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPN6lucene6search14FieldCacheImpl9FileEntryESt4pairIKS4_PNS1_18ScoreDocComparatorEESt10_Select1stIS9_ENS3_7CompareESaIS9_EE10_M_insert_EPKSt18_Rb_tree_node_baseSH_RKS9_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPN6lucene6search14FieldCacheImpl9FileEntryESt4pairIKS4_PNS1_18ScoreDocComparatorEESt10_Select1stIS9_ENS3_7CompareESaIS9_EE16_M_insert_uniqueERKS9_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPN6lucene6search14FieldCacheImpl9FileEntryESt4pairIKS4_PNS1_18ScoreDocComparatorEESt10_Select1stIS9_ENS3_7CompareESaIS9_EE8_M_eraseEPSt13_Rb_tree_nodeIS9_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPwS0_St9_IdentityIS0_EN6lucene4util7Compare5TCharESaIS0_EE10_M_insert_EPKSt18_Rb_tree_node_baseSB_RKS0_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPwS0_St9_IdentityIS0_EN6lucene4util7Compare5TCharESaIS0_EE16_M_insert_uniqueERKS0_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeIPwS0_St9_IdentityIS0_EN6lucene4util7Compare5TCharESaIS0_EE8_M_eraseEPSt13_Rb_tree_nodeIS0_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene4util15ThreadLocalBaseEESt10_Select1stIS6_ESt4lessImESaIS6_EE15_M_insert_equalERKS6_@Base 4:4.7.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene4util15ThreadLocalBaseEESt10_Select1stIS6_ESt4lessImESaIS6_EE8_M_eraseEPSt13_Rb_tree_nodeIS6_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene5index15SegmentTermEnumEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS6_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene5index15SegmentTermEnumEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE16_M_insert_uniqueERKS6_@Base 4:4.7.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene5index15SegmentTermEnumEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE8_M_eraseEPSt13_Rb_tree_nodeIS6_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene5index17TermVectorsReaderEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS6_@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene5index17TermVectorsReaderEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE16_M_insert_uniqueERKS6_@Base 4:4.7.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene5index17TermVectorsReaderEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE8_M_eraseEPSt13_Rb_tree_nodeIS6_E@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8multimapImPN6lucene4util15ThreadLocalBaseESt4lessImESaISt4pairIKmS3_EEED1Ev@Base 4:4.8.2
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8multimapImPN6lucene4util15ThreadLocalBaseESt4lessImESaISt4pairIKmS3_EEED2Ev@Base 4:4.8.2
  (optional=templinst)_ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_EPKS3_RKS6_@Base 4:4.5.3
  _ZTI12QCLuceneHits@Base 4:4.5.3
  _ZTI12QCLuceneSort@Base 4:4.5.3
@@ -645,64 +645,64 @@ libQtCLucene.so.4 libqtcore4 #MINVER#
  _ZTI26QCLuceneWhitespaceAnalyzer@Base 4:4.5.3
  _ZTI29QCLuceneMultiFieldQueryParser@Base 4:4.5.3
  _ZTI31QCLucenePerFieldAnalyzerWrapper@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt10_List_baseIPN6lucene5index18CompoundFileWriter15WriterFileEntryESaIS4_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt10_List_baseIPN6lucene6search6ScorerESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt10_List_baseIPN6lucene5index18CompoundFileWriter15WriterFileEntryESaIS4_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt10_List_baseIPN6lucene6search6ScorerESaIS3_EE@Base 4:4.8.1
  _ZTISt12_Vector_baseIPKwSaIS1_EE@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt12_Vector_baseIPN6lucene11queryParser10QueryTokenESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt12_Vector_baseIPN6lucene5index11IndexReaderESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt12_Vector_baseIPN6lucene5index13SegmentReaderESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt12_Vector_baseIPN6lucene5index17TermVectorsWriter6TVTermESaIS4_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt12_Vector_baseIPN6lucene5index17TermVectorsWriter7TVFieldESaIS4_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt12_Vector_baseIPN6lucene5index4TermESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt12_Vector_baseIPN6lucene5index9FieldInfoESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt12_Vector_baseIPN6lucene6search11ExplanationESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt12_Vector_baseIPN6lucene6search13BooleanClauseESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt12_Vector_baseIPN6lucene6search6HitDocESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt12_Vector_baseIPN6lucene6search6WeightESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt12_Vector_baseIPN6lucene11queryParser10QueryTokenESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt12_Vector_baseIPN6lucene5index11IndexReaderESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt12_Vector_baseIPN6lucene5index13SegmentReaderESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt12_Vector_baseIPN6lucene5index17TermVectorsWriter6TVTermESaIS4_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt12_Vector_baseIPN6lucene5index17TermVectorsWriter7TVFieldESaIS4_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt12_Vector_baseIPN6lucene5index4TermESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt12_Vector_baseIPN6lucene5index9FieldInfoESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt12_Vector_baseIPN6lucene6search11ExplanationESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt12_Vector_baseIPN6lucene6search13BooleanClauseESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt12_Vector_baseIPN6lucene6search6HitDocESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt12_Vector_baseIPN6lucene6search6WeightESaIS3_EE@Base 4:4.8.1
  (optional=templinst)_ZTISt12_Vector_baseIPhSaIS0_EE@Base 4:4.5.3
  (optional=templinst)_ZTISt12_Vector_baseIPwSaIS0_EE@Base 4:4.5.3
  (optional=templinst)_ZTISt12_Vector_baseIiSaIiEE@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt3mapI7QStringPN6lucene5index18CompoundFileReader9FileEntryENS1_4util7Compare7QstringESaISt4pairIKS0_S5_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt3mapI7QStringPN6lucene5store11FSDirectoryENS1_4util7Compare7QstringESaISt4pairIKS0_S4_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt3mapI7QStringPN6lucene5store7RAMFileENS1_4util7Compare7QstringESaISt4pairIKS0_S4_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt3mapI7QStringPvN6lucene4util7Compare7QstringESaISt4pairIKS0_S1_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt3mapIPFvPN6lucene5index11IndexReaderEPvES4_NS2_20CloseCallbackCompareESaISt4pairIKS6_S4_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt3mapIPKciN6lucene4util7Compare4CharESaISt4pairIKS1_iEEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt3mapIPKwPN6lucene5index13SegmentReader4NormENS2_4util7Compare5TCharESaISt4pairIKS1_S6_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt3mapIPKwPN6lucene5index9FieldInfoENS2_4util7Compare5TCharESaISt4pairIKS1_S5_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt3mapIPKwPN6lucene8analysis8AnalyzerENS2_4util7Compare5TCharESaISt4pairIKS1_S5_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt3mapIPKwPhN6lucene4util7Compare5TCharESaISt4pairIKS1_S2_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt3mapIPKwiN6lucene4util7Compare5TCharESaISt4pairIKS1_iEEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt3mapIPN6lucene5index11IndexReaderEPNS0_6search14FieldCacheImpl25fieldcacheCacheReaderTypeENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt3mapIPN6lucene5index11IndexReaderEPNS0_6search19FieldSortedHitQueue23hitqueueCacheReaderTypeENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt3mapIPN6lucene5index11IndexReaderEPNS0_6search21AbstractCachingFilter12BitSetHolderENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt3mapIPN6lucene5index4TermEPNS1_14DocumentWriter7PostingENS2_7CompareESaISt4pairIKS3_S6_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_14FieldCacheAutoENS3_7CompareESaISt4pairIKS4_S6_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_18ScoreDocComparatorENS3_7CompareESaISt4pairIKS4_S6_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt3mapImPN6lucene5index15SegmentTermEnumENS0_4util22CLuceneThreadIdCompareESaISt4pairIKmS3_EEE@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt3mapImPN6lucene5index17TermVectorsReaderENS0_4util22CLuceneThreadIdCompareESaISt4pairIKmS3_EEE@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt3setI7QStringN6lucene4util7Compare7QstringESaIS0_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt3setIPFvbEN6lucene4util7Compare4VoidIS0_EESaIS1_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt3setIPKwN6lucene4util7Compare5TCharESaIS1_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt3setIPwN6lucene4util7Compare5TCharESaIS0_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt4listIPN6lucene5index18CompoundFileWriter15WriterFileEntryESaIS4_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt4listIPN6lucene6search6ScorerESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt3mapI7QStringPN6lucene5index18CompoundFileReader9FileEntryENS1_4util7Compare7QstringESaISt4pairIKS0_S5_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt3mapI7QStringPN6lucene5store11FSDirectoryENS1_4util7Compare7QstringESaISt4pairIKS0_S4_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt3mapI7QStringPN6lucene5store7RAMFileENS1_4util7Compare7QstringESaISt4pairIKS0_S4_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt3mapI7QStringPvN6lucene4util7Compare7QstringESaISt4pairIKS0_S1_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt3mapIPFvPN6lucene5index11IndexReaderEPvES4_NS2_20CloseCallbackCompareESaISt4pairIKS6_S4_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt3mapIPKciN6lucene4util7Compare4CharESaISt4pairIKS1_iEEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt3mapIPKwPN6lucene5index13SegmentReader4NormENS2_4util7Compare5TCharESaISt4pairIKS1_S6_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt3mapIPKwPN6lucene5index9FieldInfoENS2_4util7Compare5TCharESaISt4pairIKS1_S5_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt3mapIPKwPN6lucene8analysis8AnalyzerENS2_4util7Compare5TCharESaISt4pairIKS1_S5_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt3mapIPKwPhN6lucene4util7Compare5TCharESaISt4pairIKS1_S2_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt3mapIPKwiN6lucene4util7Compare5TCharESaISt4pairIKS1_iEEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt3mapIPN6lucene5index11IndexReaderEPNS0_6search14FieldCacheImpl25fieldcacheCacheReaderTypeENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt3mapIPN6lucene5index11IndexReaderEPNS0_6search19FieldSortedHitQueue23hitqueueCacheReaderTypeENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt3mapIPN6lucene5index11IndexReaderEPNS0_6search21AbstractCachingFilter12BitSetHolderENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt3mapIPN6lucene5index4TermEPNS1_14DocumentWriter7PostingENS2_7CompareESaISt4pairIKS3_S6_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_14FieldCacheAutoENS3_7CompareESaISt4pairIKS4_S6_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_18ScoreDocComparatorENS3_7CompareESaISt4pairIKS4_S6_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt3mapImPN6lucene5index15SegmentTermEnumENS0_4util22CLuceneThreadIdCompareESaISt4pairIKmS3_EEE@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt3mapImPN6lucene5index17TermVectorsReaderENS0_4util22CLuceneThreadIdCompareESaISt4pairIKmS3_EEE@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt3setI7QStringN6lucene4util7Compare7QstringESaIS0_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt3setIPFvbEN6lucene4util7Compare4VoidIS0_EESaIS1_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt3setIPKwN6lucene4util7Compare5TCharESaIS1_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt3setIPwN6lucene4util7Compare5TCharESaIS0_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt4listIPN6lucene5index18CompoundFileWriter15WriterFileEntryESaIS4_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt4listIPN6lucene6search6ScorerESaIS3_EE@Base 4:4.8.1
  (optional=templinst)_ZTISt6vectorIPKwSaIS1_EE@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt6vectorIPN6lucene11queryParser10QueryTokenESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt6vectorIPN6lucene5index11IndexReaderESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt6vectorIPN6lucene5index13SegmentReaderESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt6vectorIPN6lucene5index17TermVectorsWriter6TVTermESaIS4_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt6vectorIPN6lucene5index17TermVectorsWriter7TVFieldESaIS4_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt6vectorIPN6lucene5index4TermESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt6vectorIPN6lucene5index9FieldInfoESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt6vectorIPN6lucene6search11ExplanationESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt6vectorIPN6lucene6search13BooleanClauseESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt6vectorIPN6lucene6search6HitDocESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt6vectorIPN6lucene6search6WeightESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt6vectorIPN6lucene11queryParser10QueryTokenESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt6vectorIPN6lucene5index11IndexReaderESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt6vectorIPN6lucene5index13SegmentReaderESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt6vectorIPN6lucene5index17TermVectorsWriter6TVTermESaIS4_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt6vectorIPN6lucene5index17TermVectorsWriter7TVFieldESaIS4_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt6vectorIPN6lucene5index4TermESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt6vectorIPN6lucene5index9FieldInfoESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt6vectorIPN6lucene6search11ExplanationESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt6vectorIPN6lucene6search13BooleanClauseESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt6vectorIPN6lucene6search6HitDocESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt6vectorIPN6lucene6search6WeightESaIS3_EE@Base 4:4.8.1
  (optional=templinst)_ZTISt6vectorIPhSaIS0_EE@Base 4:4.5.3
  (optional=templinst)_ZTISt6vectorIPwSaIS0_EE@Base 4:4.5.3
  (optional=templinst)_ZTISt6vectorIiSaIiEE@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTISt8multimapImPN6lucene4util15ThreadLocalBaseESt4lessImESaISt4pairIKmS3_EEE@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTISt8multimapImPN6lucene4util15ThreadLocalBaseESt4lessImESaISt4pairIKmS3_EEE@Base 4:4.5.3
  _ZTS12QCLuceneHits@Base 4:4.5.3
  _ZTS12QCLuceneSort@Base 4:4.5.3
  _ZTS12QCLuceneTerm@Base 4:4.5.3
@@ -734,64 +734,64 @@ libQtCLucene.so.4 libqtcore4 #MINVER#
  _ZTS26QCLuceneWhitespaceAnalyzer@Base 4:4.5.3
  _ZTS29QCLuceneMultiFieldQueryParser@Base 4:4.5.3
  _ZTS31QCLucenePerFieldAnalyzerWrapper@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt10_List_baseIPN6lucene5index18CompoundFileWriter15WriterFileEntryESaIS4_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt10_List_baseIPN6lucene6search6ScorerESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt10_List_baseIPN6lucene5index18CompoundFileWriter15WriterFileEntryESaIS4_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt10_List_baseIPN6lucene6search6ScorerESaIS3_EE@Base 4:4.8.1
  (optional=templinst)_ZTSSt12_Vector_baseIPKwSaIS1_EE@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt12_Vector_baseIPN6lucene11queryParser10QueryTokenESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt12_Vector_baseIPN6lucene5index11IndexReaderESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt12_Vector_baseIPN6lucene5index13SegmentReaderESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt12_Vector_baseIPN6lucene5index17TermVectorsWriter6TVTermESaIS4_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt12_Vector_baseIPN6lucene5index17TermVectorsWriter7TVFieldESaIS4_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt12_Vector_baseIPN6lucene5index4TermESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt12_Vector_baseIPN6lucene5index9FieldInfoESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt12_Vector_baseIPN6lucene6search11ExplanationESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt12_Vector_baseIPN6lucene6search13BooleanClauseESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt12_Vector_baseIPN6lucene6search6HitDocESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt12_Vector_baseIPN6lucene6search6WeightESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt12_Vector_baseIPN6lucene11queryParser10QueryTokenESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt12_Vector_baseIPN6lucene5index11IndexReaderESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt12_Vector_baseIPN6lucene5index13SegmentReaderESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt12_Vector_baseIPN6lucene5index17TermVectorsWriter6TVTermESaIS4_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt12_Vector_baseIPN6lucene5index17TermVectorsWriter7TVFieldESaIS4_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt12_Vector_baseIPN6lucene5index4TermESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt12_Vector_baseIPN6lucene5index9FieldInfoESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt12_Vector_baseIPN6lucene6search11ExplanationESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt12_Vector_baseIPN6lucene6search13BooleanClauseESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt12_Vector_baseIPN6lucene6search6HitDocESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt12_Vector_baseIPN6lucene6search6WeightESaIS3_EE@Base 4:4.8.1
  (optional=templinst)_ZTSSt12_Vector_baseIPhSaIS0_EE@Base 4:4.5.3
  (optional=templinst)_ZTSSt12_Vector_baseIPwSaIS0_EE@Base 4:4.5.3
  (optional=templinst)_ZTSSt12_Vector_baseIiSaIiEE@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt3mapI7QStringPN6lucene5index18CompoundFileReader9FileEntryENS1_4util7Compare7QstringESaISt4pairIKS0_S5_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt3mapI7QStringPN6lucene5store11FSDirectoryENS1_4util7Compare7QstringESaISt4pairIKS0_S4_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt3mapI7QStringPN6lucene5store7RAMFileENS1_4util7Compare7QstringESaISt4pairIKS0_S4_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt3mapI7QStringPvN6lucene4util7Compare7QstringESaISt4pairIKS0_S1_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt3mapIPFvPN6lucene5index11IndexReaderEPvES4_NS2_20CloseCallbackCompareESaISt4pairIKS6_S4_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt3mapIPKciN6lucene4util7Compare4CharESaISt4pairIKS1_iEEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt3mapIPKwPN6lucene5index13SegmentReader4NormENS2_4util7Compare5TCharESaISt4pairIKS1_S6_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt3mapIPKwPN6lucene5index9FieldInfoENS2_4util7Compare5TCharESaISt4pairIKS1_S5_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt3mapIPKwPN6lucene8analysis8AnalyzerENS2_4util7Compare5TCharESaISt4pairIKS1_S5_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt3mapIPKwPhN6lucene4util7Compare5TCharESaISt4pairIKS1_S2_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt3mapIPKwiN6lucene4util7Compare5TCharESaISt4pairIKS1_iEEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt3mapIPN6lucene5index11IndexReaderEPNS0_6search14FieldCacheImpl25fieldcacheCacheReaderTypeENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt3mapIPN6lucene5index11IndexReaderEPNS0_6search19FieldSortedHitQueue23hitqueueCacheReaderTypeENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt3mapIPN6lucene5index11IndexReaderEPNS0_6search21AbstractCachingFilter12BitSetHolderENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt3mapIPN6lucene5index4TermEPNS1_14DocumentWriter7PostingENS2_7CompareESaISt4pairIKS3_S6_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_14FieldCacheAutoENS3_7CompareESaISt4pairIKS4_S6_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_18ScoreDocComparatorENS3_7CompareESaISt4pairIKS4_S6_EEE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt3mapImPN6lucene5index15SegmentTermEnumENS0_4util22CLuceneThreadIdCompareESaISt4pairIKmS3_EEE@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt3mapImPN6lucene5index17TermVectorsReaderENS0_4util22CLuceneThreadIdCompareESaISt4pairIKmS3_EEE@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt3setI7QStringN6lucene4util7Compare7QstringESaIS0_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt3setIPFvbEN6lucene4util7Compare4VoidIS0_EESaIS1_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt3setIPKwN6lucene4util7Compare5TCharESaIS1_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt3setIPwN6lucene4util7Compare5TCharESaIS0_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt4listIPN6lucene5index18CompoundFileWriter15WriterFileEntryESaIS4_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt4listIPN6lucene6search6ScorerESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt3mapI7QStringPN6lucene5index18CompoundFileReader9FileEntryENS1_4util7Compare7QstringESaISt4pairIKS0_S5_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt3mapI7QStringPN6lucene5store11FSDirectoryENS1_4util7Compare7QstringESaISt4pairIKS0_S4_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt3mapI7QStringPN6lucene5store7RAMFileENS1_4util7Compare7QstringESaISt4pairIKS0_S4_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt3mapI7QStringPvN6lucene4util7Compare7QstringESaISt4pairIKS0_S1_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt3mapIPFvPN6lucene5index11IndexReaderEPvES4_NS2_20CloseCallbackCompareESaISt4pairIKS6_S4_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt3mapIPKciN6lucene4util7Compare4CharESaISt4pairIKS1_iEEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt3mapIPKwPN6lucene5index13SegmentReader4NormENS2_4util7Compare5TCharESaISt4pairIKS1_S6_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt3mapIPKwPN6lucene5index9FieldInfoENS2_4util7Compare5TCharESaISt4pairIKS1_S5_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt3mapIPKwPN6lucene8analysis8AnalyzerENS2_4util7Compare5TCharESaISt4pairIKS1_S5_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt3mapIPKwPhN6lucene4util7Compare5TCharESaISt4pairIKS1_S2_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt3mapIPKwiN6lucene4util7Compare5TCharESaISt4pairIKS1_iEEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt3mapIPN6lucene5index11IndexReaderEPNS0_6search14FieldCacheImpl25fieldcacheCacheReaderTypeENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt3mapIPN6lucene5index11IndexReaderEPNS0_6search19FieldSortedHitQueue23hitqueueCacheReaderTypeENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt3mapIPN6lucene5index11IndexReaderEPNS0_6search21AbstractCachingFilter12BitSetHolderENS0_4util7Compare4VoidIS2_EESaISt4pairIKS3_S7_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt3mapIPN6lucene5index4TermEPNS1_14DocumentWriter7PostingENS2_7CompareESaISt4pairIKS3_S6_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_14FieldCacheAutoENS3_7CompareESaISt4pairIKS4_S6_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt3mapIPN6lucene6search14FieldCacheImpl9FileEntryEPNS1_18ScoreDocComparatorENS3_7CompareESaISt4pairIKS4_S6_EEE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt3mapImPN6lucene5index15SegmentTermEnumENS0_4util22CLuceneThreadIdCompareESaISt4pairIKmS3_EEE@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt3mapImPN6lucene5index17TermVectorsReaderENS0_4util22CLuceneThreadIdCompareESaISt4pairIKmS3_EEE@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt3setI7QStringN6lucene4util7Compare7QstringESaIS0_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt3setIPFvbEN6lucene4util7Compare4VoidIS0_EESaIS1_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt3setIPKwN6lucene4util7Compare5TCharESaIS1_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt3setIPwN6lucene4util7Compare5TCharESaIS0_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt4listIPN6lucene5index18CompoundFileWriter15WriterFileEntryESaIS4_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt4listIPN6lucene6search6ScorerESaIS3_EE@Base 4:4.8.1
  (optional=templinst)_ZTSSt6vectorIPKwSaIS1_EE@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt6vectorIPN6lucene11queryParser10QueryTokenESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt6vectorIPN6lucene5index11IndexReaderESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt6vectorIPN6lucene5index13SegmentReaderESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt6vectorIPN6lucene5index17TermVectorsWriter6TVTermESaIS4_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt6vectorIPN6lucene5index17TermVectorsWriter7TVFieldESaIS4_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt6vectorIPN6lucene5index4TermESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt6vectorIPN6lucene5index9FieldInfoESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt6vectorIPN6lucene6search11ExplanationESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt6vectorIPN6lucene6search13BooleanClauseESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt6vectorIPN6lucene6search6HitDocESaIS3_EE@Base 4:4.8.1
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt6vectorIPN6lucene6search6WeightESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt6vectorIPN6lucene11queryParser10QueryTokenESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt6vectorIPN6lucene5index11IndexReaderESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt6vectorIPN6lucene5index13SegmentReaderESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt6vectorIPN6lucene5index17TermVectorsWriter6TVTermESaIS4_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt6vectorIPN6lucene5index17TermVectorsWriter7TVFieldESaIS4_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt6vectorIPN6lucene5index4TermESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt6vectorIPN6lucene5index9FieldInfoESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt6vectorIPN6lucene6search11ExplanationESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt6vectorIPN6lucene6search13BooleanClauseESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt6vectorIPN6lucene6search6HitDocESaIS3_EE@Base 4:4.8.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt6vectorIPN6lucene6search6WeightESaIS3_EE@Base 4:4.8.1
  (optional=templinst)_ZTSSt6vectorIPhSaIS0_EE@Base 4:4.5.3
  (optional=templinst)_ZTSSt6vectorIPwSaIS0_EE@Base 4:4.5.3
  (optional=templinst)_ZTSSt6vectorIiSaIiEE@Base 4:4.5.3
- (optional=templinst|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZTSSt8multimapImPN6lucene4util15ThreadLocalBaseESt4lessImESaISt4pairIKmS3_EEE@Base 4:4.5.3
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZTSSt8multimapImPN6lucene4util15ThreadLocalBaseESt4lessImESaISt4pairIKmS3_EEE@Base 4:4.5.3
  _ZTV12QCLuceneHits@Base 4:4.5.3
  _ZTV12QCLuceneSort@Base 4:4.5.3
  _ZTV12QCLuceneTerm@Base 4:4.5.3
@@ -830,6 +830,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _Z10qAllocMoreii@Base 4:4.5.3
  _Z10qHBNewFacePvPF8HB_ErrorS_jPhPjE@Base 4:4.5.3
  _Z10qShapeItemP14HB_ShaperItem_@Base 4:4.6.1
+ (arch=sh4)_Z10qvsnprintfPcjPKc13__va_list_tag@Base 4:4.8.5
  (arch=hurd-i386 i386 kfreebsd-i386)_Z10qvsnprintfPcjPKcS_@Base 4:4.5.3
  (arch=armel armhf)_Z10qvsnprintfPcjPKcSt9__va_list@Base 4:4.8.0
  (arch=alpha)_Z10qvsnprintfPcmPKc13__va_list_tag@Base 4:4.5.3
@@ -861,7 +862,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _Z15qIsEffectiveTLDRK7QString@Base 4:4.8.0
  (subst)_Z15qReallocAlignedPv{size_t}{size_t}{size_t}@Base 4:4.6.1
  _Z15qTopLevelDomainRK7QString@Base 4:4.8.0
- (arch=armel armhf)_Z15qt_atomic_yieldPi@Base 4:4.5.3
+ (arch=armel armhf sh4)_Z15qt_atomic_yieldPi@Base 4:4.8.5
  _Z15qt_error_stringi@Base 4:4.5.3
  _Z15uppercasedigitsR11QTextStream@Base 4:4.5.3
  _Z16qInstallPathBinsv@Base 4:4.5.3
@@ -997,7 +998,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN10QByteArray7replaceEiiPKc@Base 4:4.5.3
  _ZN10QByteArray7replaceEiiPKci@Base 4:4.7.0~beta1
  _ZN10QByteArray7replaceEiiRKS_@Base 4:4.5.3
- (arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN10QByteArray7reserveEi@Base 4:4.8.4
+ (arch=amd64)_ZN10QByteArray7reserveEi@Base 4:4.8.4
  _ZN10QByteArray8truncateEi@Base 4:4.5.3
  _ZN10QByteArrayC1EPKc@Base 4:4.5.3
  _ZN10QByteArrayC1EPKci@Base 4:4.5.3
@@ -1591,7 +1592,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN14QObjectPrivateD0Ev@Base 4:4.5.3
  _ZN14QObjectPrivateD1Ev@Base 4:4.5.3
  _ZN14QObjectPrivateD2Ev@Base 4:4.5.3
- (optional=private|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN14QObjectPrivateaSERKS_@Base 4:4.8.1
+ (optional=private|arch=amd64)_ZN14QObjectPrivateaSERKS_@Base 4:4.8.1
  _ZN14QReadWriteLock11lockForReadEv@Base 4:4.5.3
  _ZN14QReadWriteLock12lockForWriteEv@Base 4:4.5.3
  _ZN14QReadWriteLock14tryLockForReadEi@Base 4:4.5.3
@@ -1664,8 +1665,8 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN15QAnimationGroupD0Ev@Base 4:4.6.1
  _ZN15QAnimationGroupD1Ev@Base 4:4.6.1
  _ZN15QAnimationGroupD2Ev@Base 4:4.6.1
- (optional=inline|arch=hppa sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (optional=inline|arch=sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
+ (optional=inline|arch=hppa sh4 sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
+ (optional=inline|arch=sh4 sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN15QDateTimeParser11parseFormatERK7QString@Base 4:4.5.3
  _ZN15QDateTimeParser9StateNodeD1Ev@Base 4:4.7.4
  _ZN15QDateTimeParser9StateNodeD2Ev@Base 4:4.7.4
@@ -2341,8 +2342,8 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN20QStateMachinePrivateD2Ev@Base 4:4.6.1
  _ZN20QXmlStreamAttributes6appendERK7QStringS2_@Base 4:4.5.3
  _ZN20QXmlStreamAttributes6appendERK7QStringS2_S2_@Base 4:4.5.3
- (optional=gccinternal|arch=!alpha !mips !mipsel !sparc64)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.7.4
- (optional=gccinternal|arch=!alpha !mips !mipsel !sparc64)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.7.4
+ (optional=gccinternal|arch=!alpha !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.7.4
+ (optional=gccinternal|arch=!alpha !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.7.4
  _ZN21QAbstractConcatenable14convertToAsciiEPK5QChariRPc@Base 4:4.8.0
  _ZN21QAbstractConcatenable16convertFromAsciiEPKciRP5QChar@Base 4:4.6.1
  _ZN21QObjectCleanupHandler11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -2966,7 +2967,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN7QString4freeEPNS_4DataE@Base 4:4.5.3
  _ZN7QString4growEi@Base 4:4.5.3
  _ZN7QString4nullE@Base 4:4.5.3
- (optional=external|arch=alpha amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel s390x sparc sparc64)_ZN7QString5clearEv@Base 4:4.8.1
+ (optional=external)_ZN7QString5clearEv@Base 4:4.8.1
  _ZN7QString6appendE5QChar@Base 4:4.5.3
  _ZN7QString6appendERK10QStringRef@Base 4:4.5.3
  _ZN7QString6appendERK13QLatin1String@Base 4:4.5.3
@@ -3007,7 +3008,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN7QString8fromUcs4EPKji@Base 4:4.5.3
  _ZN7QString8fromUtf8EPKci@Base 4:4.5.3
  _ZN7QString8truncateEi@Base 4:4.5.3
- (arch=alpha)_ZN7QString8vsprintfEPKc13__va_list_tag@Base 4:4.5.3
+ (arch=alpha sh4)_ZN7QString8vsprintfEPKc13__va_list_tag@Base 4:4.8.5
  (arch=amd64 kfreebsd-amd64 powerpc powerpcspe s390 s390x)_ZN7QString8vsprintfEPKcP13__va_list_tag@Base 4:4.8.4
  (arch=hurd-i386 i386 kfreebsd-i386 ppc64)_ZN7QString8vsprintfEPKcPc@Base 4:4.8.4
  (arch=armel armhf hppa ia64 mips mipsel sparc sparc64)_ZN7QString8vsprintfEPKcPv@Base 4:4.8.4
@@ -3227,11 +3228,11 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN8QVariantaSERKS_@Base 4:4.5.3
  _ZN9QBitArray4fillEbii@Base 4:4.5.3
  _ZN9QBitArray6resizeEi@Base 4:4.5.3
- (optional=external|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 sparc64)_ZN9QBitArray8clearBitEi@Base 4:4.8.1
+ (optional=external|arch=amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel sparc64)_ZN9QBitArray8clearBitEi@Base 4:4.8.1
  _ZN9QBitArrayC1Eib@Base 4:4.5.3
  _ZN9QBitArrayC2Eib@Base 4:4.5.3
- (optional=external|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN9QBitArrayD1Ev@Base 4:4.8.1
- (optional=external|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN9QBitArrayD2Ev@Base 4:4.8.1
+ (optional=external|arch=amd64)_ZN9QBitArrayD1Ev@Base 4:4.8.1
+ (optional=external|arch=amd64)_ZN9QBitArrayD2Ev@Base 4:4.8.1
  _ZN9QBitArrayaNERKS_@Base 4:4.5.3
  _ZN9QBitArrayeOERKS_@Base 4:4.5.3
  _ZN9QBitArrayoRERKS_@Base 4:4.5.3
@@ -3294,7 +3295,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN9QHashData6rehashEi@Base 4:4.5.3
  _ZN9QHashData8freeNodeEPv@Base 4:4.5.3
  _ZN9QHashData8nextNodeEPNS_4NodeE@Base 4:4.5.3
- (optional=external|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386)_ZN9QHashData9hasShrunkEv@Base 4:4.8.1
+ (optional=external|arch=amd64)_ZN9QHashData9hasShrunkEv@Base 4:4.8.1
  _ZN9QIODevice11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN9QIODevice11qt_metacastEPKc@Base 4:4.5.3
  _ZN9QIODevice11resetStatusEv@Base 4:4.5.3
@@ -4973,6 +4974,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  (arch=sparc)q_atomic_trylock_ptr@Base 4:4.5.3
  (arch=sparc)q_atomic_unlock@Base 4:4.5.3
  qt_addObject@Base 4:4.5.3
+ (arch=sh4)qt_atomic_lock@Base 4:4.8.5
  qt_disable_lowpriority_timers@Base 4:4.5.3
  qt_global_mutexpool@Base 4:4.5.3
  qt_locale_initialized@Base 4:4.5.3
