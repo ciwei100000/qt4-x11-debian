@@ -491,8 +491,6 @@ libQtCLucene.so.4 libqtcore4 #MINVER#
  (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt4listIPN6lucene6search6ScorerESaIS3_EED1Ev@Base 4:4.7.4
  (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt4listIPN6lucene6search6ScorerESaIS3_EED2Ev@Base 4:4.7.4
  (optional=templinst)_ZNSt6vectorIPKwSaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_@Base 4:4.5.3
- (optional=templinst|arch=amd64)_ZNSt6vectorIPKwSaIS1_EED1Ev@Base 4:4.8.1
- (optional=templinst|arch=amd64)_ZNSt6vectorIPKwSaIS1_EED2Ev@Base 4:4.8.1
  (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene11queryParser10QueryTokenESaIS3_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS3_S5_EERKS3_@Base 4:4.5.3
  (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene11queryParser10QueryTokenESaIS3_EED1Ev@Base 4:4.8.2
  (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene11queryParser10QueryTokenESaIS3_EED2Ev@Base 4:4.8.2
@@ -527,14 +525,14 @@ libQtCLucene.so.4 libqtcore4 #MINVER#
  (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene6search6WeightESaIS3_EED1Ev@Base 4:4.8.2
  (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt6vectorIPN6lucene6search6WeightESaIS3_EED2Ev@Base 4:4.8.2
  (optional=templinst)_ZNSt6vectorIPhSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_@Base 4:4.5.3
- (optional=templinst|arch=alpha amd64 ia64 powerpc powerpcspe ppc64 s390 s390x sh4 sparc)_ZNSt6vectorIPhSaIS0_EED1Ev@Base 4:4.8.1
- (optional=templinst|arch=alpha amd64 ia64 powerpc powerpcspe ppc64 s390 s390x sh4 sparc)_ZNSt6vectorIPhSaIS0_EED2Ev@Base 4:4.8.1
+ (optional=templinst|arch=alpha ia64 powerpc powerpcspe ppc64 s390 s390x sh4 sparc)_ZNSt6vectorIPhSaIS0_EED1Ev@Base 4:4.8.1
+ (optional=templinst|arch=alpha ia64 powerpc powerpcspe ppc64 s390 s390x sh4 sparc)_ZNSt6vectorIPhSaIS0_EED2Ev@Base 4:4.8.1
  (optional=templinst)_ZNSt6vectorIPwSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_@Base 4:4.5.3
- (optional=templinst|arch=alpha amd64 ia64 powerpc powerpcspe ppc64 s390 s390x sh4 sparc)_ZNSt6vectorIPwSaIS0_EED1Ev@Base 4:4.8.1
- (optional=templinst|arch=alpha amd64 ia64 powerpc powerpcspe ppc64 s390 s390x sh4 sparc)_ZNSt6vectorIPwSaIS0_EED2Ev@Base 4:4.8.1
+ (optional=templinst|arch=alpha ia64 powerpc powerpcspe ppc64 s390 s390x sh4 sparc)_ZNSt6vectorIPwSaIS0_EED1Ev@Base 4:4.8.1
+ (optional=templinst|arch=alpha ia64 powerpc powerpcspe ppc64 s390 s390x sh4 sparc)_ZNSt6vectorIPwSaIS0_EED2Ev@Base 4:4.8.1
  (optional=templinst)_ZNSt6vectorIiSaIiEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPiS1_EERKi@Base 4:4.5.3
- (optional=templinst|arch=alpha amd64 ia64 powerpc powerpcspe ppc64 s390 s390x sh4 sparc)_ZNSt6vectorIiSaIiEED1Ev@Base 4:4.8.1
- (optional=templinst|arch=alpha amd64 ia64 powerpc powerpcspe ppc64 s390 s390x sh4 sparc)_ZNSt6vectorIiSaIiEED2Ev@Base 4:4.8.1
+ (optional=templinst|arch=alpha ia64 powerpc powerpcspe ppc64 s390 s390x sh4 sparc)_ZNSt6vectorIiSaIiEED1Ev@Base 4:4.8.1
+ (optional=templinst|arch=alpha ia64 powerpc powerpcspe ppc64 s390 s390x sh4 sparc)_ZNSt6vectorIiSaIiEED2Ev@Base 4:4.8.1
  (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeI7QStringS0_St9_IdentityIS0_EN6lucene4util7Compare7QstringESaIS0_EE10_M_insert_EPKSt18_Rb_tree_node_baseSB_RKS0_@Base 4:4.5.3
  (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeI7QStringS0_St9_IdentityIS0_EN6lucene4util7Compare7QstringESaIS0_EE16_M_insert_uniqueERKS0_@Base 4:4.5.3
  (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZNSt8_Rb_treeI7QStringS0_St9_IdentityIS0_EN6lucene4util7Compare7QstringESaIS0_EE8_M_eraseEPSt13_Rb_tree_nodeIS0_E@Base 4:4.5.3
@@ -998,7 +996,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN10QByteArray7replaceEiiPKc@Base 4:4.5.3
  _ZN10QByteArray7replaceEiiPKci@Base 4:4.7.0~beta1
  _ZN10QByteArray7replaceEiiRKS_@Base 4:4.5.3
- (arch=amd64)_ZN10QByteArray7reserveEi@Base 4:4.8.4
  _ZN10QByteArray8truncateEi@Base 4:4.5.3
  _ZN10QByteArrayC1EPKc@Base 4:4.5.3
  _ZN10QByteArrayC1EPKci@Base 4:4.5.3
@@ -1592,7 +1589,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN14QObjectPrivateD0Ev@Base 4:4.5.3
  _ZN14QObjectPrivateD1Ev@Base 4:4.5.3
  _ZN14QObjectPrivateD2Ev@Base 4:4.5.3
- (optional=private|arch=amd64)_ZN14QObjectPrivateaSERKS_@Base 4:4.8.1
  _ZN14QReadWriteLock11lockForReadEv@Base 4:4.5.3
  _ZN14QReadWriteLock12lockForWriteEv@Base 4:4.5.3
  _ZN14QReadWriteLock14tryLockForReadEi@Base 4:4.5.3
@@ -2342,8 +2338,8 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN20QStateMachinePrivateD2Ev@Base 4:4.6.1
  _ZN20QXmlStreamAttributes6appendERK7QStringS2_@Base 4:4.5.3
  _ZN20QXmlStreamAttributes6appendERK7QStringS2_S2_@Base 4:4.5.3
- (optional=gccinternal|arch=!alpha !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.7.4
- (optional=gccinternal|arch=!alpha !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.7.4
+ (optional=gccinternal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.7.4
+ (optional=gccinternal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.7.4
  _ZN21QAbstractConcatenable14convertToAsciiEPK5QChariRPc@Base 4:4.8.0
  _ZN21QAbstractConcatenable16convertFromAsciiEPKciRP5QChar@Base 4:4.6.1
  _ZN21QObjectCleanupHandler11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -3231,8 +3227,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  (optional=external|arch=amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel sparc64)_ZN9QBitArray8clearBitEi@Base 4:4.8.1
  _ZN9QBitArrayC1Eib@Base 4:4.5.3
  _ZN9QBitArrayC2Eib@Base 4:4.5.3
- (optional=external|arch=amd64)_ZN9QBitArrayD1Ev@Base 4:4.8.1
- (optional=external|arch=amd64)_ZN9QBitArrayD2Ev@Base 4:4.8.1
  _ZN9QBitArrayaNERKS_@Base 4:4.5.3
  _ZN9QBitArrayeOERKS_@Base 4:4.5.3
  _ZN9QBitArrayoRERKS_@Base 4:4.5.3
@@ -3295,7 +3289,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN9QHashData6rehashEi@Base 4:4.5.3
  _ZN9QHashData8freeNodeEPv@Base 4:4.5.3
  _ZN9QHashData8nextNodeEPNS_4NodeE@Base 4:4.5.3
- (optional=external|arch=amd64)_ZN9QHashData9hasShrunkEv@Base 4:4.8.1
  _ZN9QIODevice11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN9QIODevice11qt_metacastEPKc@Base 4:4.5.3
  _ZN9QIODevice11resetStatusEv@Base 4:4.5.3

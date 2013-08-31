@@ -4,8 +4,8 @@ libQtScriptTools.so.4 libqt4-scripttools #MINVER#
  (optional=external|arch=hppa sh4 sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
  (optional=external|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN15QLinearGradientD1Ev@Base 4:4.8.1
  (optional=external|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN15QLinearGradientD2Ev@Base 4:4.8.1
- (optional=external|arch=!alpha !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.8.4
- (optional=external|arch=!alpha !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.8.4
+ (optional=external|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.8.4
+ (optional=external|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.8.4
  _ZN21QScriptEngineDebugger11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN21QScriptEngineDebugger11qt_metacastEPKc@Base 4:4.5.3
  _ZN21QScriptEngineDebugger16staticMetaObjectE@Base 4:4.5.3

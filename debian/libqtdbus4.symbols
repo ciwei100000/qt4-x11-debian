@@ -91,8 +91,6 @@ libQtDBus.so.4 libqt4-dbus #MINVER#
  _ZN14QDBusInterfaceD1Ev@Base 4:4.5.3
  _ZN14QDBusInterfaceD2Ev@Base 4:4.5.3
  _ZN14QDBusSignature5checkEv@Base 4:4.5.3
- (optional=gcc47|arch=amd64)_ZN14QDBusSignatureD1Ev@Base 4:4.8.1
- (optional=gcc47|arch=amd64)_ZN14QDBusSignatureD2Ev@Base 4:4.8.1
  (optional=external|arch=hppa sh4 sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
  (optional=gccinternal|arch=sh4)_ZN15QBasicAtomicInt5derefEv@Base 4:4.8.5
  _ZN15QDBusConnection10disconnectERK7QStringS2_S2_S2_P7QObjectPKc@Base 4:4.5.3
@@ -129,8 +127,6 @@ libQtDBus.so.4 libqt4-dbus #MINVER#
  _ZN15QDBusMetaObjectC1Ev@Base 4:4.5.3
  _ZN15QDBusMetaObjectC2Ev@Base 4:4.5.3
  _ZN15QDBusObjectPath5checkEv@Base 4:4.5.3
- (optional=gcc47|arch=amd64)_ZN15QDBusObjectPathD1Ev@Base 4:4.8.1
- (optional=gcc47|arch=amd64)_ZN15QDBusObjectPathD2Ev@Base 4:4.8.1
  _ZN16QDBusPendingCall15waitForFinishedEv@Base 4:4.5.3
  _ZN16QDBusPendingCall17fromCompletedCallERK12QDBusMessage@Base 4:4.6.1
  _ZN16QDBusPendingCall9fromErrorERK10QDBusError@Base 4:4.6.1

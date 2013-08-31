@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.5 armel armhf mips mipsel sh4
+# SymbolsHelper-Confirmed: 4:4.8.5 amd64 armel armhf mips mipsel sh4
 libQtXml.so.4 libqt4-xml #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN10QDomEntityC1EP17QDomEntityPrivate@Base 4:4.5.3
@@ -254,7 +254,7 @@ libQtXml.so.4 libqt4-xml #MINVER#
  _ZN25QDomProcessingInstructionC2ERKS_@Base 4:4.5.3
  _ZN25QDomProcessingInstructionC2Ev@Base 4:4.5.3
  _ZN25QDomProcessingInstructionaSERKS_@Base 4:4.5.3
- (optional=external)_ZN7QString5clearEv@Base 4:4.7.2
+ (optional=external|arch=!amd64)_ZN7QString5clearEv@Base 4:4.7.2
  _ZN8QDomAttr8setValueERK7QString@Base 4:4.5.3
  _ZN8QDomAttrC1EP15QDomAttrPrivate@Base 4:4.5.3
  _ZN8QDomAttrC1ERKS_@Base 4:4.5.3
