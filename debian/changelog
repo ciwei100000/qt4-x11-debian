@@ -1,6 +1,5 @@
-qt4-x11 (4:4.8.5+dfsg-4) UNRELEASED; urgency=low
+qt4-x11 (4:4.8.5+dfsg-4) unstable; urgency=low
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Fix typo in libqt4-opengl-dev dependencies (Closes: #720302).
   * Fix broken symlink to use the system's jquery javascript library
     (Closes: #720950).
@@ -9,7 +8,7 @@ qt4-x11 (4:4.8.5+dfsg-4) UNRELEASED; urgency=low
     after all (Closes: #721111). Thanks Roland Hieber for the patch.
   * Update symbols files with buildds' logs.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 26 Aug 2013 13:29:53 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sat, 31 Aug 2013 14:39:25 -0300
 
 qt4-x11 (4:4.8.5+dfsg-3) unstable; urgency=low
 
