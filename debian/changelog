@@ -1,5 +1,9 @@
 qt4-x11 (4:4.8.5+dfsg-5) UNRELEASED; urgency=low
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Add fix_shortcuts_with_secondary_xkb_layout.patch taken from upstream.
+    Thanks Boris Pek for pointing it out (Closes: #719064).
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 13 Sep 2013 12:36:03 -0300
 
 qt4-x11 (4:4.8.5+dfsg-4) unstable; urgency=low
