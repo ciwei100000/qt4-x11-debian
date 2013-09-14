@@ -31,7 +31,7 @@ Last-Update: 2011-12-26
  #ifdef Q_OS_MAC
  Q_GLOBAL_STATIC(QMutex, cfbundleMutex);
  #endif
-@@ -658,6 +665,7 @@ void QProcessPrivate::startProcess()
+@@ -660,6 +667,7 @@ void QProcessPrivate::startProcess()
  #if defined(Q_OS_QNX)
      pid_t childPid = spawnChild(workingDirPtr, argv, envp);
  #else
@@ -39,7 +39,7 @@ Last-Update: 2011-12-26
      pid_t childPid = fork();
      int lastForkErrno = errno;
  #endif
-@@ -1355,6 +1363,7 @@ bool QProcessPrivate::startDetached(cons
+@@ -1357,6 +1365,7 @@ bool QProcessPrivate::startDetached(cons
          return false;
      }
  
@@ -47,7 +47,7 @@ Last-Update: 2011-12-26
      pid_t childPid = fork();
      if (childPid == 0) {
          struct sigaction noaction;
-@@ -1367,6 +1376,7 @@ bool QProcessPrivate::startDetached(cons
+@@ -1369,6 +1378,7 @@ bool QProcessPrivate::startDetached(cons
          qt_safe_close(startedPipe[0]);
          qt_safe_close(pidPipe[0]);
  
