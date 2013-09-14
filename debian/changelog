@@ -5,6 +5,8 @@ qt4-x11 (4:4.8.5+git121-g2a9ea11+dfsg-1) UNRELEASED; urgency=low
   * Fix shortcuts with_secondary xkb layout (Closes: #719064).
     Thanks Boris Pek for pointing it out.
   * Refresh patches.
+  * Remove patches applied upstream:
+    - Add-support-for-the-Linux-m68k-platform.patch.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 13 Sep 2013 12:36:03 -0300
 
