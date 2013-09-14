@@ -2,8 +2,8 @@ qt4-x11 (4:4.8.5+git121-g2a9ea11+dfsg-1) UNRELEASED; urgency=low
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Upstream snapshot, git v4.8.5+git121-g2a9ea11.
-  * Add fix_shortcuts_with_secondary_xkb_layout.patch taken from upstream.
-    Thanks Boris Pek for pointing it out (Closes: #719064).
+  * Fix shortcuts with_secondary xkb layout (Closes: #719064).
+    Thanks Boris Pek for pointing it out.
   * Refresh patches.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 13 Sep 2013 12:36:03 -0300

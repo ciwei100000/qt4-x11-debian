@@ -2,7 +2,6 @@
 Add_support_for_QT_USE_DRAG_DISTANCE_env_var.patch
 QTBUG-21900_Buttons_in_Qt_applications_not_clickable_when_run_under_gnome-shell.patch
 Add-support-for-the-Linux-m68k-platform.patch
-fix_shortcuts_with_secondary_xkb_layout.patch
 
 # qt-copy patches
 0195-compositing-properties.diff
