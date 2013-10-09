@@ -1,8 +1,10 @@
-qt4-x11 (4:4.8.5+git121-g2a9ea11+dfsg-2) UNRELEASED; urgency=low
+qt4-x11 (4:4.8.5+git121-g2a9ea11+dfsg1-1) UNRELEASED; urgency=low
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Add Fix_JavaScriptCore_ftbfs_on_mips64_el.patch. It just needs to be
     approved upstream, but it has been already ACKed (Closes: #719763).
+  * Remove sources with minified javascript libs without source.
+    - Increase DFSG revision number.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 16 Sep 2013 18:25:26 -0300
 
