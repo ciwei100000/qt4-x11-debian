@@ -5,6 +5,9 @@ qt4-x11 (4:4.8.5+git121-g2a9ea11+dfsg1-1) UNRELEASED; urgency=low
     approved upstream, but it has been already ACKed (Closes: #719763).
   * Remove sources with minified javascript libs without source (Closes: #723036).
     - Increase DFSG revision number.
+    I have tried building without those files and everything seems OK except a
+    documentation html file that shows the minified javascript code which has
+    been removed, so I'll leave it like that.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 16 Sep 2013 18:25:26 -0300
 
