@@ -5,7 +5,8 @@ qt4-x11 (4:4.8.5+git121-g2a9ea11+dfsg1-1) UNRELEASED; urgency=low
     approved upstream, but it has been already ACKed (Closes: #719763).
     - Fix s390x_jscore.diff so it can be applied on top of the above mentioned
     patch. This last one seems not pushed upstream.
-  * Remove sources with minified javascript libs without source (Closes: #723036).
+  * Remove sources with minified javascript libs without source
+    (Closes: #723036).
     - Increase DFSG revision number.
     I have tried building without those files and everything seems OK except a
     documentation html file that shows the minified javascript code which has
