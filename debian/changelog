@@ -3,6 +3,7 @@ qt4-x11 (4:4.8.5+git121-g2a9ea11+dfsg1-2) UNRELEASED; urgency=low
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Remove Fix_JavaScriptCore_ftbfs_on_mips64_el.patch, it makes 32 bits
     platforms FTBFS.
+  * Take back s390x_jscore.diff to it's original state.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 11 Oct 2013 20:44:03 -0300
 
