@@ -68,7 +68,7 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: qtcore4-l10n, ${misc:Depends}, ${shlibs:Depends}
-Suggests: libthai0, libicu48
+Suggests: libicu48, libthai0
 Description: Qt 4 core module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -342,8 +342,9 @@ Description: Qt 4 XML patterns module
 Package: libqt4-dbus
 Architecture: any
 Multi-Arch: same
-Depends: qdbus (= ${binary:Version}), libqtdbus4 (= ${binary:Version}),
- ${misc:Depends}
+Depends: libqtdbus4 (= ${binary:Version}),
+         qdbus (= ${binary:Version}),
+         ${misc:Depends}
 Replaces: libqt4-dev (<< 4:4.7.1)
 Breaks: libqt4-dev (<< 4:4.7.1)
 Description: Qt 4 D-Bus module
@@ -729,7 +730,7 @@ Description: graphical designer for Qt 4 applications
 Package: qt4-dev-tools
 Architecture: any
 Section: devel
-Depends: qtchooser, libqt4-sql-sqlite, ${misc:Depends}, ${shlibs:Depends}
+Depends: libqt4-sql-sqlite, qtchooser, ${misc:Depends}, ${shlibs:Depends}
 Recommends: libqt4-dev, qt4-designer, qt4-doc
 Suggests: qt4-doc-html
 Conflicts: qt3-dev-tools-embedded
@@ -867,7 +868,7 @@ Description: Qt 4 API documentation (HTML format)
 
 Package: qt4-default
 Architecture: any
-Depends: qtchooser, libqt4-dev, ${misc:Depends}
+Depends: libqt4-dev, qtchooser, ${misc:Depends}
 Section: libdevel
 Conflicts: qt5-default
 Description: Qt 4 development defaults package
