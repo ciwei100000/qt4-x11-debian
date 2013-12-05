@@ -1,9 +1,10 @@
-# SymbolsHelper-Confirmed: 4:4.8.5 amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel sh4
+# SymbolsHelper-Confirmed: 4:4.8.5+git121 alpha ia64 powerpc powerpcspe ppc64 s390 s390x sparc
 libQtDesigner.so.4 libqt4-designer #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z20domPropertyToVariantP20QAbstractFormBuilderPK11QMetaObjectPK11DomProperty@Base 4:4.5.3
  _Z20domPropertyToVariantPK11DomProperty@Base 4:4.5.3
  _Z20variantToDomPropertyP20QAbstractFormBuilderPK11QMetaObjectRK7QStringRK8QVariant@Base 4:4.5.3
+ (arch=alpha s390 s390x)_Z8qWarningv@Base 4:4.8.5+git121
  _ZN10DomInclude4readER16QXmlStreamReader@Base 4:4.5.3
  _ZN10DomInclude5clearEb@Base 4:4.5.3
  _ZN10DomIncludeC1Ev@Base 4:4.5.3
@@ -3214,8 +3215,9 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN8DomSlotsC2Ev@Base 4:4.5.3
  _ZN8DomSlotsD1Ev@Base 4:4.5.3
  _ZN8DomSlotsD2Ev@Base 4:4.5.3
- (optional=inline)_ZN8QToolBox7addItemEP7QWidgetRK7QString@Base 4:4.8.4
+ (optional=inline|arch=sparc)_ZN8QToolBox7addItemEP7QWidgetRK7QString@Base 4:4.8.4
  (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN8QVariant8setValueIN18qdesigner_internal22PropertySheetEnumValueEEEvRKT_@Base 4:4.8.0
+ (optional=templinst|arch=ia64 powerpc powerpcspe ppc64)_ZN8QVariant8setValueIN18qdesigner_internal22PropertySheetFlagValueEEEvRKT_@Base 4:4.8.5+git121
  (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !powerpcspe !s390 !sparc64)_ZN8QVariant9fromValueIN18qdesigner_internal29PropertySheetKeySequenceValueEEES_RKT_@Base 4:4.8.0
  _ZN9DomAction18setElementPropertyERK5QListIP11DomPropertyE@Base 4:4.5.3
  _ZN9DomAction19setElementAttributeERK5QListIP11DomPropertyE@Base 4:4.5.3
@@ -4692,6 +4694,7 @@ libQtDesignerComponents.so.4 libqt4-designer #MINVER#
  (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !powerpcspe !s390 !sparc64)_ZN8QVariant9fromValueIN18qdesigner_internal24PropertySheetPixmapValueEEES_RKT_@Base 4:4.8.0
  (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !powerpcspe !s390 !sparc64)_ZN8QVariant9fromValueIN18qdesigner_internal24PropertySheetStringValueEEES_RKT_@Base 4:4.8.0
  (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !powerpcspe !s390 !sparc64)_ZN8QVariant9fromValueIN18qdesigner_internal29PropertySheetKeySequenceValueEEES_RKT_@Base 4:4.8.0
+ (arch=sparc)_ZN9QHashData8willGrowEv@Base 4:4.8.5+git121
  _ZTI22QItemEditorCreatorBase@Base 4:4.5.3
  _ZTS22QItemEditorCreatorBase@Base 4:4.5.3
  _ZTV22QItemEditorCreatorBase@Base 4:4.5.3
