@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.5+git121 sparc
+# SymbolsHelper-Confirmed: 4:4.8.5+git192 amd64
 libQtOpenGL.so.4 libqt4-opengl #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z18qt_gl_library_namev@Base 4:4.5.3
@@ -67,7 +67,6 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN12QGLFunctionsC1Ev@Base 4:4.8.0
  _ZN12QGLFunctionsC2EPK10QGLContext@Base 4:4.8.0
  _ZN12QGLFunctionsC2Ev@Base 4:4.8.0
- _ZN12QMutexLocker6unlockEv@Base 4:4.8.5+git121
  (optional=external|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc !sparc64)_ZN12QMutexLockerD1Ev@Base 4:4.7.2
  (optional=external|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc !sparc64)_ZN12QMutexLockerD2Ev@Base 4:4.7.2
  (optional=external|arch=amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel sparc64)_ZN12QWriteLocker6unlockEv@Base 4:4.8.1

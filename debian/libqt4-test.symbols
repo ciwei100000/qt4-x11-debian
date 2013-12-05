@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.1 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
+# SymbolsHelper-Confirmed: 4:4.8.5+git192 amd64
 libQtTest.so.4 libqt4-test #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN10QTestTable15globalTestTableEv@Base 4:4.7.4
@@ -15,10 +15,12 @@ libQtTest.so.4 libqt4-test #MINVER#
  _ZN11QTestResult10testFailedEv@Base 4:4.7.4
  _ZN11QTestResult13allDataPassedEv@Base 4:4.7.4
  _ZN11QTestResult13ignoreMessageE9QtMsgTypePKc@Base 4:4.7.4
+ _ZN11QTestResult14currentAppNameEv@Base 4:4.8.5+git192
  _ZN11QTestResult14currentDataTagEv@Base 4:4.7.4
  _ZN11QTestResult15currentTestDataEv@Base 4:4.7.4
  _ZN11QTestResult15skipCurrentTestEv@Base 4:4.7.4
  _ZN11QTestResult17currentTestFailedEv@Base 4:4.7.4
+ _ZN11QTestResult17setCurrentAppNameEPKc@Base 4:4.8.5+git192
  _ZN11QTestResult18setCurrentTestDataEP9QTestData@Base 4:4.7.4
  _ZN11QTestResult18setSkipCurrentTestEb@Base 4:4.7.4
  _ZN11QTestResult19currentTestFunctionEv@Base 4:4.7.4
@@ -73,6 +75,7 @@ libQtTest.so.4 libqt4-test #MINVER#
  _ZN5QTest13testFunctionsE@Base 4:4.7.4
  _ZN5QTest14compare_helperEbPKcPcS2_S1_S1_S1_i@Base 4:4.5.3
  _ZN5QTest14compare_helperEbPKcS1_i@Base 4:4.5.3
+ _ZN5QTest14currentAppNameEv@Base 4:4.8.5+git192
  _ZN5QTest14currentDataTagEv@Base 4:4.5.3
  _ZN5QTest15defaultKeyDelayEv@Base 4:4.5.3
  _ZN5QTest16qtest_qParseArgsEiPPcb@Base 4:4.7.4
