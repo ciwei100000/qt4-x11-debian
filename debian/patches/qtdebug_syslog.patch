@@ -25,7 +25,7 @@ Author: Thiago Macieira <thiago@kde.org>
  #endif
  
  QT_BEGIN_NAMESPACE
-@@ -2290,6 +2293,27 @@ void qt_message_output(QtMsgType msgType
+@@ -2324,6 +2327,27 @@ void qt_message_output(QtMsgType msgType
  #else
          fprintf(stderr, "%s\n", buf);
          fflush(stderr);
@@ -62,5 +62,5 @@ Author: Thiago Macieira <thiago@kde.org>
 +    static QString staticAppName()
 +    { return QCoreApplication::self ? QCoreApplication::self->d_func()->appName() : QString(); }
      virtual QString appName() const;
-     virtual void createEventDispatcher();
-     static void removePostedEvent(QEvent *);
+     mutable QString applicationName;
+ 
