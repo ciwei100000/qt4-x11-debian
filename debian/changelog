@@ -1,10 +1,9 @@
-qt4-x11 (4:4.8.5+git192-g085f851+dfsg-2) UNRELEASED; urgency=low
+qt4-x11 (4:4.8.5+git192-g085f851+dfsg-2) unstable; urgency=low
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Fix typo created when refreshing a patch for s390x which created a FTBFS.
   * Update symbols files with buildds' logs.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 06 Dec 2013 16:31:27 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 06 Dec 2013 16:38:43 -0300
 
 qt4-x11 (4:4.8.5+git192-g085f851+dfsg-1) unstable; urgency=medium
 
