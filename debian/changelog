@@ -1,13 +1,12 @@
-qt4-x11 (4:4.8.5+git192-g085f851+dfsg-1) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.5+git192-g085f851+dfsg-1) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream git snapshot. This includes the fix for CVE-2013-4549: XML
     Entity Expansion Denial of Service. Set severity to medium.
   * Update symbols fles with buildds' logs and current build.
   * Refresh patches.
   * Install new translation.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 05 Dec 2013 12:10:03 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 05 Dec 2013 20:45:43 -0300
 
 qt4-x11 (4:4.8.5+git121-g2a9ea11+dfsg1-2) unstable; urgency=low
 
