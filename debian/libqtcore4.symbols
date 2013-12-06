@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.5+git192 amd64
+# SymbolsHelper-Confirmed: 4:4.8.5+git192 amd64 ia64 powerpc
 libQtCLucene.so.4 libqtcore4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN12QCLuceneHits2idEi@Base 4:4.5.3
@@ -2963,7 +2963,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN7QString4freeEPNS_4DataE@Base 4:4.5.3
  _ZN7QString4growEi@Base 4:4.5.3
  _ZN7QString4nullE@Base 4:4.5.3
- _ZN7QString5clearEv@Base 4:4.8.5+git192
+ (optional=gccinternal|arch=amd64)_ZN7QString5clearEv@Base 4:4.8.5+git192
  _ZN7QString6appendE5QChar@Base 4:4.5.3
  _ZN7QString6appendERK10QStringRef@Base 4:4.5.3
  _ZN7QString6appendERK13QLatin1String@Base 4:4.5.3
@@ -4597,6 +4597,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZNK9QTimeLine8endFrameEv@Base 4:4.5.3
  _ZNK9QTimeLine9directionEv@Base 4:4.5.3
  _ZNK9QTimeLine9loopCountEv@Base 4:4.5.3
+ (optional=templinst|arch=!amd64)_ZSt6__findIPKPKcS1_ET_S4_S4_RKT0_St26random_access_iterator_tag@Base 4:4.8.5+git192
  _ZTI10QEventLoop@Base 4:4.5.3
  _ZTI10QTextCodec@Base 4:4.5.3
  _ZTI11QChildEvent@Base 4:4.5.3

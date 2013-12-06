@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.5+git121 armhf mips mipsel sparc64
+# SymbolsHelper-Confirmed: 4:4.8.5+git192 ia64 powerpc
 libQtXmlPatterns.so.4 libqt4-xmlpatterns #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z5qHashRK15QSourceLocation@Base 4:4.5.3
@@ -120,6 +120,8 @@ libQtXmlPatterns.so.4 libqt4-xmlpatterns #MINVER#
  _ZN20QAbstractXmlReceiverD0Ev@Base 4:4.5.3
  _ZN20QAbstractXmlReceiverD1Ev@Base 4:4.5.3
  _ZN20QAbstractXmlReceiverD2Ev@Base 4:4.5.3
+ (optional=gccinternal)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.8.5+git192
+ (optional=gccinternal)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.8.5+git192
  _ZN21QAbstractXmlNodeModelC1EP28QAbstractXmlNodeModelPrivate@Base 4:4.5.3
  _ZN21QAbstractXmlNodeModelC1Ev@Base 4:4.5.3
  _ZN21QAbstractXmlNodeModelC2EP28QAbstractXmlNodeModelPrivate@Base 4:4.5.3
