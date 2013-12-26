@@ -50,9 +50,6 @@ ifeq ($(DEB_HOST_ARCH),arm)
 endif
 
 armv6_architectures := armhf
-ifeq ($(vendor),Ubuntu)
-	armv6_architectures += armel
-endif
 ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(armv6_architectures)))
 	extra_configure_opts += -arch armv6
 endif
