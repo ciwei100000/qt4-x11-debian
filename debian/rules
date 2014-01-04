@@ -252,10 +252,6 @@ override_dh_auto_clean:
 	rm -f debian/shlibs.local
 	rm -f debian/stamp-makefile-build-tools
 
-ifeq ($(vendor),Ubuntu)
-	rm -rf po
-endif
-
 override_dh_auto_install:
 	dh_auto_install -Smakefile -- INSTALL_ROOT=$(CURDIR)/debian/tmp/
 
@@ -356,14 +352,6 @@ override_dh_auto_install:
 		-perm /u+x,g+x,o+x -type f \
 		-regex '.*\.\(app\|conf\|cpp\|h\|js\|php\|png\|pro\|xml\|xsl\)$$' \
 		-exec chmod a-x {} \;
-
-ifeq ($(vendor),Ubuntu)
-	# Create .pot file
-	ln -s MessagesQt.sh debian/Messages.sh
-	mkdir po
-	cd debian; qtcopydir=.. podir=../po extract-messages.sh
-	rm -f debian/Message.sh
-endif
 
 override_dh_install:
 	dh_install --fail-missing

@@ -3,6 +3,8 @@ qt4-x11 (4:4.8.5+git192-g085f851+dfsg-3) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * Remove Ubuntu-specific code to add armel to armv6_architectures.
     Ubuntu no longer supports armel.
+  * Also remove Ubuntu-specific translations code, dropped in Ubuntu
+    in version 4:4.8.4+dfsg-0ubuntu8.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 26 Dec 2013 21:17:33 +0400
 
