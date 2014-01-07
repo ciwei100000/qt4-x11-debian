@@ -6,6 +6,10 @@ qt4-x11 (4:4.8.5+git192-g085f851+dfsg-3) UNRELEASED; urgency=medium
   * Also remove Ubuntu-specific translations code, dropped in Ubuntu
     in version 4:4.8.4+dfsg-0ubuntu8.
 
+  [ Pino Toscano ]
+  * Change the libicu48 suggestion in libqtcore4 to libicu52.
+    (Closes: #734514)
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 26 Dec 2013 21:17:33 +0400
 
 qt4-x11 (4:4.8.5+git192-g085f851+dfsg-2) unstable; urgency=low
