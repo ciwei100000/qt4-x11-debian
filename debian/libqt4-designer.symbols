@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.5+git192 amd64 i386 kfreebsd-amd64 kfreebsd-i386
+# SymbolsHelper-Confirmed: 4:4.8.5+git192 alpha amd64 i386 ia64 kfreebsd-amd64 kfreebsd-i386 powerpc powerpcspe ppc64 s390x
 libQtDesigner.so.4 libqt4-designer #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z20domPropertyToVariantP20QAbstractFormBuilderPK11QMetaObjectPK11DomProperty@Base 4:4.5.3
@@ -3215,7 +3215,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN8DomSlotsC2Ev@Base 4:4.5.3
  _ZN8DomSlotsD1Ev@Base 4:4.5.3
  _ZN8DomSlotsD2Ev@Base 4:4.5.3
- (optional=inline)_ZN8QToolBox7addItemEP7QWidgetRK7QString@Base 4:4.8.4
+ (optional=inline|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN8QToolBox7addItemEP7QWidgetRK7QString@Base 4:4.8.4
  (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN8QVariant8setValueIN18qdesigner_internal22PropertySheetEnumValueEEEvRKT_@Base 4:4.8.0
  (optional=templinst|arch=ia64 powerpc powerpcspe ppc64)_ZN8QVariant8setValueIN18qdesigner_internal22PropertySheetFlagValueEEEvRKT_@Base 4:4.8.5+git121
  (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !powerpcspe !s390 !sparc64)_ZN8QVariant9fromValueIN18qdesigner_internal29PropertySheetKeySequenceValueEEES_RKT_@Base 4:4.8.0

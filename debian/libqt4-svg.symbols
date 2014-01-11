@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.5+git192 ia64 powerpc
+# SymbolsHelper-Confirmed: 4:4.8.5+git192 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc sparc64
 libQtSvg.so.4 libqt4-svg #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN10QSvgWidget10paintEventEP11QPaintEvent@Base 4:4.5.3
@@ -95,8 +95,8 @@ libQtSvg.so.4 libqt4-svg #MINVER#
  _ZN16QSvgTinyDocumentD0Ev@Base 4:4.5.3
  _ZN16QSvgTinyDocumentD1Ev@Base 4:4.5.3
  _ZN16QSvgTinyDocumentD2Ev@Base 4:4.5.3
- (optional=gccinternal)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.8.5+git192
- (optional=gccinternal)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.8.5+git192
+ (optional=gccinternal|arch=ia64 powerpc)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.8.5+git192
+ (optional=gccinternal|arch=ia64 powerpc)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.8.5+git192
  _ZN4QCss6ParserD1Ev@Base 4:4.7.4
  _ZN4QCss6ParserD2Ev@Base 4:4.7.4
  _ZNK10QSvgWidget10metaObjectEv@Base 4:4.5.3

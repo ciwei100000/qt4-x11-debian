@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.5+git192 amd64 ia64 powerpc
+# SymbolsHelper-Confirmed: 4:4.8.5+git192 alpha amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc sparc sparc64
 libQtHelp.so.4 libqt4-help #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN11QHelpEngine11indexWidgetEv@Base 4:4.5.3
@@ -164,8 +164,8 @@ libQtHelp.so.4 libqt4-help #MINVER#
  _ZN20QHelpDataContentItemC2EPS_RK7QStringS3_@Base 4:4.5.3
  _ZN20QHelpDataContentItemD1Ev@Base 4:4.5.3
  _ZN20QHelpDataContentItemD2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!amd64)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.8.5+git192
- (optional=gccinternal|arch=!amd64)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.8.5+git192
+ (optional=gccinternal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc !sparc64)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.8.5+git192
+ (optional=gccinternal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc !sparc64)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.8.5+git192
  _ZN21QHelpDataCustomFilterD1Ev@Base 4:4.7.4
  _ZN21QHelpDataCustomFilterD2Ev@Base 4:4.7.4
  _ZN22QHelpDataFilterSection10addContentEP20QHelpDataContentItem@Base 4:4.5.3

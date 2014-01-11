@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.5 amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel sh4
+# SymbolsHelper-Confirmed: 4:4.8.5+git192 sparc64
 libQt3Support.so.4 libqt4-qt3support #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z16qt_tryAccelEventP7QWidgetP9QKeyEvent@Base 4:4.5.3
@@ -2646,6 +2646,8 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN16Q3TextCustomItemD0Ev@Base 4:4.5.3
  _ZN16Q3TextCustomItemD1Ev@Base 4:4.5.3
  _ZN16Q3TextCustomItemD2Ev@Base 4:4.5.3
+ _ZN16Q3TextStringChar10CustomDataC1Ev@Base 4:4.8.5+git192
+ _ZN16Q3TextStringChar10CustomDataC2Ev@Base 4:4.8.5+git192
  _ZN16Q3TextStringChar13setCustomItemEP16Q3TextCustomItem@Base 4:4.5.3
  _ZN16Q3TextStringChar14loseCustomItemEv@Base 4:4.5.3
  _ZN16Q3TextStringChar9setAnchorERK7QStringS2_@Base 4:4.5.3

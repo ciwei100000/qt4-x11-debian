@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.5+git192 amd64 ia64
+# SymbolsHelper-Confirmed: 4:4.8.5+git192 amd64 ia64 ppc64 sparc
 libQtDBus.so.4 libqt4-dbus #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z14qDBusReplyFillRK12QDBusMessageR10QDBusErrorR8QVariant@Base 4:4.5.3
@@ -137,8 +137,8 @@ libQtDBus.so.4 libqt4-dbus #MINVER#
  _ZN16QDBusPendingCallD1Ev@Base 4:4.5.3
  _ZN16QDBusPendingCallD2Ev@Base 4:4.5.3
  _ZN16QDBusPendingCallaSERKS_@Base 4:4.5.3
- (optional=gccinternal|arch=ia64)_ZN18QDBusIntrospection10ObjectTreeD1Ev@Base 4:4.8.5+git192
- (optional=gccinternal|arch=ia64)_ZN18QDBusIntrospection10ObjectTreeD2Ev@Base 4:4.8.5+git192
+ (optional=gccinternal|arch=ia64 ppc64 sparc)_ZN18QDBusIntrospection10ObjectTreeD1Ev@Base 4:4.8.5+git192
+ (optional=gccinternal|arch=ia64 ppc64 sparc)_ZN18QDBusIntrospection10ObjectTreeD2Ev@Base 4:4.8.5+git192
  _ZN18QDBusIntrospection11parseObjectERK7QStringS2_S2_@Base 4:4.5.3
  _ZN18QDBusIntrospection14parseInterfaceERK7QString@Base 4:4.5.3
  _ZN18QDBusIntrospection15parseInterfacesERK7QString@Base 4:4.5.3

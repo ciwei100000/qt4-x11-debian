@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.5+git192 amd64 powerpc
+# SymbolsHelper-Confirmed: 4:4.8.5+git192 amd64 powerpc powerpcspe
 libQtGui.so.4 libqtgui4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qDrawArrowP8QPainterN2Qt9ArrowTypeENS1_8GUIStyleEbiiiiRK8QPaletteb@Base 4:4.5.3
@@ -6811,8 +6811,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN6QMovieD0Ev@Base 4:4.5.3
  _ZN6QMovieD1Ev@Base 4:4.5.3
  _ZN6QMovieD2Ev@Base 4:4.5.3
- (arch=powerpc)_ZN6QRectFC1ERK5QRect@Base 4:4.8.5+git192
- (arch=powerpc)_ZN6QRectFC2ERK5QRect@Base 4:4.8.5+git192
+ (arch=powerpc powerpcspe)_ZN6QRectFC1ERK5QRect@Base 4:4.8.5+git192
+ (arch=powerpc powerpcspe)_ZN6QRectFC2ERK5QRect@Base 4:4.8.5+git192
  _ZN6QSound11isAvailableEv@Base 4:4.5.3
  _ZN6QSound11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN6QSound11qt_metacastEPKc@Base 4:4.5.3
