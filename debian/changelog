@@ -1,4 +1,4 @@
-qt4-x11 (4:4.8.5+git209-g718fae5+dfsg-1) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.5+git209-g718fae5+dfsg-1) unstable; urgency=medium
 
   [ Dmitry Shachnev ]
   * Remove Ubuntu-specific code to add armel to armv6_architectures.
@@ -17,7 +17,7 @@ qt4-x11 (4:4.8.5+git209-g718fae5+dfsg-1) UNRELEASED; urgency=medium
   * Remove commented out AddSense script from static webpage to keep lintian
     calm.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 26 Dec 2013 21:17:33 +0400
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 12 Jan 2014 00:27:31 -0300
 
 qt4-x11 (4:4.8.5+git192-g085f851+dfsg-2) unstable; urgency=low
 
