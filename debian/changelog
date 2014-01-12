@@ -12,7 +12,7 @@ qt4-x11 (4:4.8.5+git209-g718fae5+dfsg-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream git snapshot.
-  * Update symbols files with buildd's logs.
+  * Update symbols files with buildd's and current build's logs.
   * Update Standards-Version to 3.9.5, no changes required.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 26 Dec 2013 21:17:33 +0400
