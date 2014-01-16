@@ -108,12 +108,12 @@ endif
 
 	# Create mkspecs/glibc-g++ from mkspecs/linux-g++, needed by GNU/kFreeBSD
 	# we cannot use directly linux-g++ due to src/corelib/io/io.pri
-	rm -rf mkspecs/glibc-g++
+	rm -rfv mkspecs/glibc-g++
 	cp -a mkspecs/linux-g++ mkspecs/glibc-g++
 
 	# Remove include directory. Then ./configure will take care of calling
 	# syncqt and regenerating it.
-	rm -rf include
+	rm -rfv include
 
 	./configure -confirm-license \
 	            -prefix "/usr" \
@@ -184,7 +184,7 @@ override_dh_auto_clean:
 	# Extra stuff missed by confclean/distclean
 
 	# Misc. files
-	rm -f \
+	rm -fv \
 	  config.status \
 	  config.tests/.qmake.cache \
 	  examples/dbus/*/Makefile.* \
@@ -193,7 +193,7 @@ override_dh_auto_clean:
 	;
 
 	# Misc. directories
-	rm -rf \
+	rm -rfv \
 	  doc-build/ \
 	  doc/html/ \
 	  doc/qch/ \
@@ -206,7 +206,7 @@ override_dh_auto_clean:
 	;
 
 	# hppa test directory
-	rm -rf debian/hppa-tmp
+	rm -rfv debian/hppa-tmp
 
 	# Leftover dirs
 	find -depth -type d \( -false \
@@ -221,7 +221,7 @@ override_dh_auto_clean:
 	  -o -name release-shared \
 	  -o -name release-static \
 	  -o -name .uic \
-	\) -print0 | xargs -0 rm -rf
+	\) -print0 | xargs -0 rm -rfv
 
 	# Leftover files and all symlinks
 	find \( -false \
@@ -233,7 +233,7 @@ override_dh_auto_clean:
 	  -o -name \*.so \
 	  -o -name \*.so.debug \
 	  -o -type l \
-	\) -print0 | xargs -0 rm -rf
+	\) -print0 | xargs -0 rm -rfv
 
 	# Delete all Makefiles, excluding some from src/3rdparty
 	find $(CURDIR) -name Makefile \
@@ -241,22 +241,22 @@ override_dh_auto_clean:
 	  ! -path $(CURDIR)/src/3rdparty/freetype/\* \
 	  ! -path $(CURDIR)/src/3rdparty/zlib/\* \
 	  ! -path $(CURDIR)/src/3rdparty/ptmalloc/Makefile \
-	-print0 | xargs -0 rm -rf
+	-print0 | xargs -0 rm -rfv
 
 	# Any remaining executables
 	find $(CURDIR) -type f -perm /u+x,g+x,o+x -exec file -i '{}' \; \
 	| grep -e application/x-executable \
-	| cut -d ':' -f 1 | xargs rm -f
+	| cut -d ':' -f 1 | xargs rm -fv
 
 	# Generated on build
-	rm -f debian/shlibs.local
-	rm -f debian/stamp-makefile-build-tools
+	rm -fv debian/shlibs.local
+	rm -fv debian/stamp-makefile-build-tools
 
 override_dh_auto_install:
 	dh_auto_install -Smakefile -- INSTALL_ROOT=$(CURDIR)/debian/tmp/
 
 	# Remove libtool-like files
-	rm -f debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/*.la
+	rm -fv debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/*.la
 
 	# Ship private headers - ugly hack to build Qt Creator QML Designer
 	cd $(CURDIR)/include && rsync -aR QtCore/private \
@@ -306,20 +306,20 @@ override_dh_auto_install:
 		debian/qt4-qtconfig/usr/share/pixmaps/qtconfig-qt4.png
 
 	# QTBUG-12159 workaround
-	rm -f debian/tmp//usr/share/qt4/mkspecs/modules/qt_webkit_version.pri
+	rm -fv debian/tmp//usr/share/qt4/mkspecs/modules/qt_webkit_version.pri
 
 	# Remove phonon development files
-	rm -f debian/tmp/usr/lib/*/libphonon.la
-	rm -f debian/tmp/usr/lib/*/libphonon.prl
-	rm -f debian/tmp/usr/lib/*/libphonon.so
-	rm -f debian/tmp/usr/lib/*/pkgconfig/phonon.pc
-	rm -rf debian/tmp/usr/include/qt4/phonon
+	rm -fv debian/tmp/usr/lib/*/libphonon.la
+	rm -fv debian/tmp/usr/lib/*/libphonon.prl
+	rm -fv debian/tmp/usr/lib/*/libphonon.so
+	rm -fv debian/tmp/usr/lib/*/pkgconfig/phonon.pc
+	rm -rfv debian/tmp/usr/include/qt4/phonon
 	# And the gstreamer backend.
-	rm -f debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt4/plugins/phonon_backend/libphonon_gstreamer.so
+	rm -fv debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt4/plugins/phonon_backend/libphonon_gstreamer.so
 
 	# Remove the embedded jquery library. We will later link to the one provided
 	# by the libjs-jquery package.
-	rm -f debian/tmp/usr/share/qt4/doc/html/scripts/jquery.js
+	rm -fv debian/tmp/usr/share/qt4/doc/html/scripts/jquery.js
 
 	# Add a configuration for qtchooser
 	mkdir -p $(CURDIR)/debian/tmp/usr/share/qtchooser
@@ -344,7 +344,7 @@ override_dh_auto_install:
 	  -o -name .obj\* \
 	  -o -name .pch \
 	  -o -name .rcc \
-	\) -print0 | xargs -0 rm -rf
+	\) -print0 | xargs -0 rm -rfv
 
 	# Remove bogus exec bits from some data files in mkspecs, docs, examples
 	# and demos
