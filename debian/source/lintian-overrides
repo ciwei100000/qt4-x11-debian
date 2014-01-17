@@ -1,2 +1,6 @@
 # libqt4-webkit-dbg is a transitional package for libqtwebkit-dbg
 qt4-x11 source: dbg-package-missing-depends libqt4-webkit-dbg
+# Yes, these are outdated autotools helper files, but we are not even using
+# them.
+qt4-x11 source: outdated-autotools-helper-file src/3rdparty/freetype/builds/unix/config.guess
+qt4-x11 source: outdated-autotools-helper-file src/3rdparty/freetype/builds/unix/config.sub

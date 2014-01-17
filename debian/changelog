@@ -2,6 +2,9 @@ qt4-x11 (4:4.8.5+git209-g718fae5+dfsg-2) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Make rm verbose. In this way it's easier to audit the build.
+  * Override lintian's old autotools helpers files warnings, we are not
+    using them, tested by patching them away and rebuilding. Actually we are
+    using the system's version of the involved libs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 15 Jan 2014 15:52:50 -0300
 
