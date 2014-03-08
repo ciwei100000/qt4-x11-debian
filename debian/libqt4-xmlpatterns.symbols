@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.5+git192 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc sparc64
+# SymbolsHelper-Confirmed: 4:4.8.5+git209 powerpcspe sparc
 libQtXmlPatterns.so.4 libqt4-xmlpatterns #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z5qHashRK15QSourceLocation@Base 4:4.5.3
@@ -120,8 +120,8 @@ libQtXmlPatterns.so.4 libqt4-xmlpatterns #MINVER#
  _ZN20QAbstractXmlReceiverD0Ev@Base 4:4.5.3
  _ZN20QAbstractXmlReceiverD1Ev@Base 4:4.5.3
  _ZN20QAbstractXmlReceiverD2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=ia64 powerpc)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.8.5+git192
- (optional=gccinternal|arch=ia64 powerpc)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.8.5+git192
+ (optional=gccinternal|arch=ia64 powerpc sparc)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.8.5+git192
+ (optional=gccinternal|arch=ia64 powerpc sparc)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.8.5+git192
  _ZN21QAbstractXmlNodeModelC1EP28QAbstractXmlNodeModelPrivate@Base 4:4.5.3
  _ZN21QAbstractXmlNodeModelC1Ev@Base 4:4.5.3
  _ZN21QAbstractXmlNodeModelC2EP28QAbstractXmlNodeModelPrivate@Base 4:4.5.3
@@ -138,6 +138,7 @@ libQtXmlPatterns.so.4 libqt4-xmlpatterns #MINVER#
  _ZN23QAbstractMessageHandlerD0Ev@Base 4:4.5.3
  _ZN23QAbstractMessageHandlerD1Ev@Base 4:4.5.3
  _ZN23QAbstractMessageHandlerD2Ev@Base 4:4.5.3
+ (optional=gccinternal|arch=powerpcspe)_ZN7QString5clearEv@Base 4:4.8.5+git209
  _ZN8QXmlItemC1ERK18QXmlNodeModelIndex@Base 4:4.5.3
  _ZN8QXmlItemC1ERK8QVariant@Base 4:4.5.3
  _ZN8QXmlItemC1ERKS_@Base 4:4.5.3
@@ -156,6 +157,8 @@ libQtXmlPatterns.so.4 libqt4-xmlpatterns #MINVER#
  _ZN8QXmlNameC2ER12QXmlNamePoolRK7QStringS4_S4_@Base 4:4.5.3
  _ZN8QXmlNameC2Ev@Base 4:4.5.3
  _ZN8QXmlNameaSERKS_@Base 4:4.5.3
+ (optional=gccinternal|arch=powerpcspe)_ZN9QHashData8willGrowEv@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=powerpcspe)_ZN9QHashData9hasShrunkEv@Base 4:4.8.5+git209
  _ZN9QXmlQuery12bindVariableERK7QStringP9QIODevice@Base 4:4.5.3
  _ZN9QXmlQuery12bindVariableERK7QStringRK8QXmlItem@Base 4:4.5.3
  _ZN9QXmlQuery12bindVariableERK7QStringRKS_@Base 4:4.5.3

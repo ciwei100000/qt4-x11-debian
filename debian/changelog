@@ -6,6 +6,7 @@ qt4-x11 (4:4.8.5+git242-g0315971+dfsg-1) UNRELEASED; urgency=medium
   * Override lintian's old autotools helpers files warnings, we are not
     using them, tested by patching them away and rebuilding. Actually we are
     using the system's version of the involved libs.
+  * Update symbols files with buildd's logs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 15 Jan 2014 15:52:50 -0300
 

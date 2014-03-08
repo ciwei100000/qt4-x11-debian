@@ -1,15 +1,13 @@
-# SymbolsHelper-Confirmed: 4:4.8.5 alpha amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64 s390 s390x sh4 sparc sparc64
+# SymbolsHelper-Confirmed: 4:4.8.5+git209 alpha powerpcspe s390x
 libQtDeclarative.so.4 libqt4-declarative #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qmlContextPK7QObject@Base 4:4.7.0~beta1
  _Z18qmlExecuteDeferredP7QObject@Base 4:4.7.0~beta1
  _Z27qmlAttachedPropertiesObjectPiPK7QObjectPK11QMetaObjectb@Base 4:4.7.0~beta1
  _Z31qmlAttachedPropertiesObjectByIdiPK7QObjectb@Base 4:4.7.0~beta1
- (optional=internal|arch=alpha powerpc powerpcspe ppc64 s390 s390x sh4 sparc)_Z6qDebugv@Base 4:4.8.1
  _Z7qmlInfoPK7QObject@Base 4:4.7.0~beta2
  _Z7qmlInfoPK7QObjectRK17QDeclarativeError@Base 4:4.7.0~beta2
  _Z7qmlInfoPK7QObjectRK5QListI17QDeclarativeErrorE@Base 4:4.7.0~beta2
- (optional=external|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_Z8qWarningv@Base 4:4.8.1
  _Z9qmlEnginePK7QObject@Base 4:4.7.0~beta1
  (optional=gccinternal|arch=!armel !armhf)_ZN12QDashStroker3endEv@Base 4:4.7.2
  (optional=gccinternal|arch=!armel !armhf)_ZN12QDashStroker5beginEPv@Base 4:4.7.2
@@ -246,11 +244,11 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN18QDeclarativeAction17deleteFromBindingEv@Base 4:4.7.0~beta1
  _ZN18QDeclarativeActionC1EP7QObjectRK7QStringP19QDeclarativeContextRK8QVariant@Base 4:4.7.0~beta1
  _ZN18QDeclarativeActionC1EP7QObjectRK7QStringRK8QVariant@Base 4:4.7.0~beta1
- (optional=gcc47|arch=armel mips mipsel sh4)_ZN18QDeclarativeActionC1ERKS_@Base 4:4.8.1
+ (optional=gcc47|arch=armel mips mipsel powerpcspe sh4)_ZN18QDeclarativeActionC1ERKS_@Base 4:4.8.1
  _ZN18QDeclarativeActionC1Ev@Base 4:4.7.0~beta1
  _ZN18QDeclarativeActionC2EP7QObjectRK7QStringP19QDeclarativeContextRK8QVariant@Base 4:4.7.0~beta1
  _ZN18QDeclarativeActionC2EP7QObjectRK7QStringRK8QVariant@Base 4:4.7.0~beta1
- (optional=gcc47|arch=armel mips mipsel sh4)_ZN18QDeclarativeActionC2ERKS_@Base 4:4.8.1
+ (optional=gcc47|arch=armel mips mipsel powerpcspe sh4)_ZN18QDeclarativeActionC2ERKS_@Base 4:4.8.1
  _ZN18QDeclarativeActionC2Ev@Base 4:4.7.0~beta1
  _ZN18QDeclarativeActionD1Ev@Base 4:4.7.4
  _ZN18QDeclarativeActionD2Ev@Base 4:4.7.4
@@ -568,8 +566,6 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN20QMetaPropertyBuilder7setUserEb@Base 4:4.7.0~beta1
  _ZN20QMetaPropertyBuilder8setFinalEb@Base 4:4.8.0
  _ZN20QMetaPropertyBuilder9setStoredEb@Base 4:4.7.0~beta1
- (optional=external|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.8.4
- (optional=external|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.8.4
  _ZN21QDeclarativeComponent11beginCreateEP19QDeclarativeContext@Base 4:4.7.0~beta1
  _ZN21QDeclarativeComponent11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1
  _ZN21QDeclarativeComponent11qt_metacastEPKc@Base 4:4.7.0~beta1
@@ -1026,9 +1022,9 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN25QDeclarativeListReferenceD1Ev@Base 4:4.7.0~beta1
  _ZN25QDeclarativeListReferenceD2Ev@Base 4:4.7.0~beta1
  _ZN25QDeclarativeListReferenceaSERKS_@Base 4:4.7.0~beta1
- (optional=private|arch=!sh4)_ZN26QAbstractScrollAreaPrivateD0Ev@Base 4:4.7.4
- (optional=private|arch=!sh4)_ZN26QAbstractScrollAreaPrivateD1Ev@Base 4:4.7.4
- (optional=private|arch=!sh4)_ZN26QAbstractScrollAreaPrivateD2Ev@Base 4:4.7.4
+ (optional=private|arch=!powerpcspe !sh4)_ZN26QAbstractScrollAreaPrivateD0Ev@Base 4:4.7.4
+ (optional=private|arch=!powerpcspe !sh4)_ZN26QAbstractScrollAreaPrivateD1Ev@Base 4:4.7.4
+ (optional=private|arch=!powerpcspe !sh4)_ZN26QAbstractScrollAreaPrivateD2Ev@Base 4:4.7.4
  _ZN26QDeclarativeBasePositioner10addChangedEv@Base 4:4.7.1
  _ZN26QDeclarativeBasePositioner10itemChangeEN13QGraphicsItem18GraphicsItemChangeERK8QVariant@Base 4:4.7.1
  _ZN26QDeclarativeBasePositioner10setSpacingEi@Base 4:4.7.1
@@ -1410,9 +1406,8 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN7QPacketD0Ev@Base 4:4.7.0~beta1
  _ZN7QPacketD1Ev@Base 4:4.7.0~beta1
  _ZN7QPacketD2Ev@Base 4:4.7.0~beta1
- (optional=external|arch=amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel sparc64)_ZN9QBitArray8clearBitEi@Base 4:4.8.1
- (optional=gccinternal|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN9QBitArrayD1Ev@Base 4:4.8.4
- (optional=gccinternal|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN9QBitArrayD2Ev@Base 4:4.8.4
+ (arch=powerpcspe)_ZN7QString5clearEv@Base 4:4.8.5+git209
+ (optional=external)_ZN9QBitArray8clearBitEi@Base 4:4.8.1
  _ZNK12QPaintDevice7devTypeEv@Base 4:4.7.2
  _ZNK15QDeclarativePen10metaObjectEv@Base 4:4.7.0~beta1
  _ZNK15QPacketProtocol10metaObjectEv@Base 4:4.7.0~beta1
@@ -1951,6 +1946,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZNK36QDeclarativeDomValueValueInterceptor6objectEv@Base 4:4.7.0~beta1
  _ZNK38QDeclarativeDebugObjectExpressionWatch10expressionEv@Base 4:4.7.0~beta1
  _ZNK38QDeclarativeDebugObjectExpressionWatch10metaObjectEv@Base 4:4.7.0~beta1
+ (arch=powerpcspe)_ZNK6QRectF6toRectEv@Base 4:4.8.5+git209
  _ZNK7QPacket4dataEv@Base 4:4.7.2
  _ZNK7QPacket7isEmptyEv@Base 4:4.7.0~beta1
  (optional=templinst|arch=ppc64 sh4 sparc)_ZNK8QVariant5valueI6QColorEET_v@Base 4:4.7.2
