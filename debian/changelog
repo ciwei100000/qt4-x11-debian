@@ -1,6 +1,5 @@
-qt4-x11 (4:4.8.5+git242-g0315971+dfsg-1) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.5+git242-g0315971+dfsg-1) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream git snapshot.
   * Make rm verbose. In this way it's easier to audit the build.
   * Override lintian's old autotools helpers files warnings, we are not
@@ -9,7 +8,7 @@ qt4-x11 (4:4.8.5+git242-g0315971+dfsg-1) UNRELEASED; urgency=medium
   * Update symbols files with buildd's logs.
   * Install new translations.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 15 Jan 2014 15:52:50 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sat, 08 Mar 2014 21:00:55 -0300
 
 qt4-x11 (4:4.8.5+git209-g718fae5+dfsg-1) unstable; urgency=medium
 
