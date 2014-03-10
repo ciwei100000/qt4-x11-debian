@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.5+git209 alpha armel armhf hurd-i386 mips mipsel powerpcspe s390x sparc
+# SymbolsHelper-Confirmed: 4:4.8.5+git242 hppa
 libQtDesigner.so.4 libqt4-designer #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z20domPropertyToVariantP20QAbstractFormBuilderPK11QMetaObjectPK11DomProperty@Base 4:4.5.3
@@ -496,8 +496,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN15DomResourceIconC2Ev@Base 4:4.5.3
  _ZN15DomResourceIconD1Ev@Base 4:4.5.3
  _ZN15DomResourceIconD2Ev@Base 4:4.5.3
- (optional=external|arch=hppa sh4 sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (optional=external|arch=hppa sh4 sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN15QDesignerDialog10paintEventEP11QPaintEvent@Base 4:4.5.3
  _ZN15QDesignerDialog11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN15QDesignerDialog11qt_metacastEPKc@Base 4:4.5.3
@@ -516,8 +514,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN15QDesignerWidgetD0Ev@Base 4:4.5.3
  _ZN15QDesignerWidgetD1Ev@Base 4:4.5.3
  _ZN15QDesignerWidgetD2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !s390x !sparc64)_ZN15QLinearGradientD1Ev@Base 4:4.8.4
- (optional=gccinternal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !s390x !sparc64)_ZN15QLinearGradientD2Ev@Base 4:4.8.4
  (arch=powerpcspe)_ZN15QRadialGradientD1Ev@Base 4:4.8.5+git209
  (arch=powerpcspe)_ZN15QRadialGradientD2Ev@Base 4:4.8.5+git209
  (arch=powerpcspe)_ZN15QTextCharFormatD1Ev@Base 4:4.8.5+git209
@@ -1280,11 +1276,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal16AddActionCommandD1Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal16AddActionCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal16DesignerMetaEnumC1ERK7QStringS3_S3_@Base 4:4.5.3
- (optional=internal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpcspe !s390 !s390x !sparc64)_ZN18qdesigner_internal16DesignerMetaEnumC1ERKS0_@Base 4:4.8.1
  (optional=internal)_ZN18qdesigner_internal16DesignerMetaEnumC2ERK7QStringS3_S3_@Base 4:4.5.3
- (optional=internal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpcspe !s390 !s390x !sparc64)_ZN18qdesigner_internal16DesignerMetaEnumC2ERKS0_@Base 4:4.8.0
- (optional=internal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpcspe !s390x !sparc64)_ZN18qdesigner_internal16DesignerMetaEnumD1Ev@Base 4:4.8.1
- (optional=internal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpcspe !s390x !sparc64)_ZN18qdesigner_internal16DesignerMetaEnumD2Ev@Base 4:4.8.1
  (optional=internal)_ZN18qdesigner_internal16LayoutProperties17fromPropertySheetEPK28QDesignerFormEditorInterfaceP7QLayouti@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal16LayoutProperties17visiblePropertiesEPK7QLayout@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal16LayoutProperties5clearEv@Base 4:4.5.3
@@ -1370,11 +1362,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal17DesignerIconCacheD1Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal17DesignerIconCacheD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal17DesignerMetaFlagsC1ERK7QStringS3_S3_@Base 4:4.5.3
- (optional=internal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpcspe !s390 !s390x !sparc64)_ZN18qdesigner_internal17DesignerMetaFlagsC1ERKS0_@Base 4:4.8.0
  (optional=internal)_ZN18qdesigner_internal17DesignerMetaFlagsC2ERK7QStringS3_S3_@Base 4:4.5.3
- (optional=internal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpcspe !s390 !s390x !sparc64)_ZN18qdesigner_internal17DesignerMetaFlagsC2ERKS0_@Base 4:4.8.0
- (optional=internal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpcspe !s390x !sparc64)_ZN18qdesigner_internal17DesignerMetaFlagsD1Ev@Base 4:4.8.1
- (optional=internal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpcspe !s390x !sparc64)_ZN18qdesigner_internal17DesignerMetaFlagsD2Ev@Base 4:4.8.1
  (optional=internal)_ZN18qdesigner_internal17DockWidgetCommand4initEP11QDockWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal17DockWidgetCommandC1ERK7QStringP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal17DockWidgetCommandC2ERK7QStringP28QDesignerFormWindowInterface@Base 4:4.5.3
@@ -1978,16 +1966,10 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal|arch=sh4 sparc)_ZN18qdesigner_internal22PropertySheetEnumValueC2ERKS0_@Base 4:4.8.0
  (optional=internal)_ZN18qdesigner_internal22PropertySheetEnumValueC2EiRKNS_16DesignerMetaEnumE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal22PropertySheetEnumValueC2Ev@Base 4:4.5.3
- (optional=internal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !s390x !sparc64)_ZN18qdesigner_internal22PropertySheetEnumValueD1Ev@Base 4:4.7.4
- (optional=internal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !s390x !sparc64)_ZN18qdesigner_internal22PropertySheetEnumValueD2Ev@Base 4:4.7.4
- (optional=internal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpcspe !s390 !s390x !sparc64)_ZN18qdesigner_internal22PropertySheetFlagValueC1ERKS0_@Base 4:4.8.0
  (optional=internal)_ZN18qdesigner_internal22PropertySheetFlagValueC1EiRKNS_17DesignerMetaFlagsE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal22PropertySheetFlagValueC1Ev@Base 4:4.5.3
- (optional=internal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpcspe !s390 !s390x !sparc64)_ZN18qdesigner_internal22PropertySheetFlagValueC2ERKS0_@Base 4:4.8.0
  (optional=internal)_ZN18qdesigner_internal22PropertySheetFlagValueC2EiRKNS_17DesignerMetaFlagsE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal22PropertySheetFlagValueC2Ev@Base 4:4.5.3
- (optional=internal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !s390x !sparc64)_ZN18qdesigner_internal22PropertySheetFlagValueD1Ev@Base 4:4.7.4
- (optional=internal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !s390x !sparc64)_ZN18qdesigner_internal22PropertySheetFlagValueD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal22PropertySheetIconValue6assignERKS0_j@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal22PropertySheetIconValue8setThemeERK7QString@Base 4:4.8.0
  (optional=internal)_ZN18qdesigner_internal22PropertySheetIconValue9setPixmapEN5QIcon4ModeENS1_5StateERKNS_24PropertySheetPixmapValueE@Base 4:4.5.3
@@ -2313,7 +2295,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal|arch=armel powerpcspe)_ZN18qdesigner_internal29PropertySheetKeySequenceValueC2ERKS0_@Base 4:4.8.1
  (optional=internal)_ZN18qdesigner_internal29PropertySheetKeySequenceValueD1Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal29PropertySheetKeySequenceValueD2Ev@Base 4:4.7.4
- (optional=internal|arch=alpha amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel s390x sparc64)_ZN18qdesigner_internal29PropertySheetKeySequenceValueaSERKS0_@Base 4:4.8.4
+ (optional=internal|arch=alpha amd64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel s390x sparc64)_ZN18qdesigner_internal29PropertySheetKeySequenceValueaSERKS0_@Base 4:4.8.4
  (optional=internal)_ZN18qdesigner_internal30DeleteStackedWidgetPageCommand4initEP14QStackedWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal30DeleteStackedWidgetPageCommand4redoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal30DeleteStackedWidgetPageCommand4undoEv@Base 4:4.5.3
@@ -2564,8 +2546,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN20QDesignerMemberSheetD0Ev@Base 4:4.5.3
  _ZN20QDesignerMemberSheetD1Ev@Base 4:4.5.3
  _ZN20QDesignerMemberSheetD2Ev@Base 4:4.5.3
- (optional=internal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !s390x !sparc64)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.7.4
- (optional=internal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !s390x !sparc64)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.7.4
  _ZN20QtResourceViewDialog11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN20QtResourceViewDialog11qt_metacastEPKc@Base 4:4.5.3
  _ZN20QtResourceViewDialog14selectResourceERK7QString@Base 4:4.5.3
@@ -2639,8 +2619,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN23QTabWidgetPropertySheet13checkPropertyERK7QString@Base 4:4.5.3
  _ZN23QTabWidgetPropertySheet25tabWidgetPropertyFromNameERK7QString@Base 4:4.5.3
  _ZN23QTabWidgetPropertySheet5resetEi@Base 4:4.5.3
- (arch=!powerpcspe)_ZN23QTabWidgetPropertySheet8PageDataC1Ev@Base 4:4.8.5+git209
- (arch=!powerpcspe)_ZN23QTabWidgetPropertySheet8PageDataC2Ev@Base 4:4.8.5+git209
  _ZN23QTabWidgetPropertySheet8PageDataD1Ev@Base 4:4.7.4
  _ZN23QTabWidgetPropertySheet8PageDataD2Ev@Base 4:4.7.4
  _ZN23QTabWidgetPropertySheetC1EP10QTabWidgetP7QObject@Base 4:4.5.3
@@ -3230,9 +3208,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN8DomSlotsC2Ev@Base 4:4.5.3
  _ZN8DomSlotsD1Ev@Base 4:4.5.3
  _ZN8DomSlotsD2Ev@Base 4:4.5.3
- (optional=inline|arch=alpha amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel s390x sparc)_ZN8QToolBox7addItemEP7QWidgetRK7QString@Base 4:4.8.4
- (optional=templinst|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpcspe !s390x !sparc64)_ZN8QVariant8setValueIN18qdesigner_internal22PropertySheetEnumValueEEEvRKT_@Base 4:4.8.0
- (optional=templinst|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !powerpcspe !s390 !s390x !sparc64)_ZN8QVariant9fromValueIN18qdesigner_internal29PropertySheetKeySequenceValueEEES_RKT_@Base 4:4.8.0
+ (optional=inline|arch=alpha amd64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel s390x sparc)_ZN8QToolBox7addItemEP7QWidgetRK7QString@Base 4:4.8.4
  _ZN9DomAction18setElementPropertyERK5QListIP11DomPropertyE@Base 4:4.5.3
  _ZN9DomAction19setElementAttributeERK5QListIP11DomPropertyE@Base 4:4.5.3
  _ZN9DomAction4readER16QXmlStreamReader@Base 4:4.5.3
@@ -3325,8 +3301,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN9DomWidgetC2Ev@Base 4:4.5.3
  _ZN9DomWidgetD1Ev@Base 4:4.5.3
  _ZN9DomWidgetD2Ev@Base 4:4.5.3
- (optional=external|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpcspe !s390x !sparc64)_ZN9QGradientD1Ev@Base 4:4.8.1
- (optional=external|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpcspe !s390x !sparc64)_ZN9QGradientD2Ev@Base 4:4.8.1
  _ZNK10DomInclude5writeER16QXmlStreamWriterRK7QString@Base 4:4.5.3
  _ZNK10DomPalette5writeER16QXmlStreamWriterRK7QString@Base 4:4.5.3
  _ZNK11DomDateTime5writeER16QXmlStreamWriterRK7QString@Base 4:4.5.3
@@ -4682,8 +4656,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal|c++)"non-virtual thunk to qdesigner_internal::ZoomWidget::~ZoomWidget()@Base" 4:4.7.4
 libQtDesignerComponents.so.4 libqt4-designer #MINVER#
 * Build-Depends-Package: libqt4-dev
- (optional=external|arch=hppa sh4 sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (optional=external|arch=hppa sh4 sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN18QStyleOptionButtonD1Ev@Base 4:4.7.4
  _ZN18QStyleOptionButtonD2Ev@Base 4:4.7.4
  _ZN19QDesignerComponents14createTaskMenuEP28QDesignerFormEditorInterfaceP7QObject@Base 4:4.5.3
@@ -4696,18 +4668,8 @@ libQtDesignerComponents.so.4 libqt4-designer #MINVER#
  _ZN19QDesignerComponents20createResourceEditorEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  _ZN19QDesignerComponents21createObjectInspectorEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  _ZN19QDesignerComponents22createSignalSlotEditorEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
- (optional=gccinternal|arch=alpha amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel s390x sparc64)_ZN20QStyleOptionViewItemD1Ev@Base 4:4.8.4
- (optional=gccinternal|arch=alpha amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel s390x sparc64)_ZN20QStyleOptionViewItemD2Ev@Base 4:4.8.4
- (optional=external|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpcspe !s390x !sparc64)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.7.4
- (optional=external|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpcspe !s390x !sparc64)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.7.4
- (optional=gccinternal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !s390x !sparc64)_ZN22QStyleOptionViewItemV3D1Ev@Base 4:4.8.4
- (optional=gccinternal|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !s390x !sparc64)_ZN22QStyleOptionViewItemV3D2Ev@Base 4:4.8.4
- (optional=templinst|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpcspe !s390x !sparc64)_ZN8QVariant8setValueI4QMapIi5QIconEEEvRKT_@Base 4:4.8.0
- (optional=templinst|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpcspe !s390x !sparc64)_ZN8QVariant8setValueI5QListI5QPairI7QStringjEEEEvRKT_@Base 4:4.8.0
- (optional=templinst|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !powerpcspe !s390 !s390x !sparc64)_ZN8QVariant9fromValueIN18qdesigner_internal22PropertySheetIconValueEEES_RKT_@Base 4:4.8.0
- (optional=templinst|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !powerpcspe !s390 !s390x !sparc64)_ZN8QVariant9fromValueIN18qdesigner_internal24PropertySheetPixmapValueEEES_RKT_@Base 4:4.8.0
- (optional=templinst|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !powerpcspe !s390 !s390x !sparc64)_ZN8QVariant9fromValueIN18qdesigner_internal24PropertySheetStringValueEEES_RKT_@Base 4:4.8.0
- (optional=templinst|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !powerpcspe !s390 !s390x !sparc64)_ZN8QVariant9fromValueIN18qdesigner_internal29PropertySheetKeySequenceValueEEES_RKT_@Base 4:4.8.0
+ (optional=gccinternal|arch=alpha amd64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel s390x sparc64)_ZN20QStyleOptionViewItemD1Ev@Base 4:4.8.4
+ (optional=gccinternal|arch=alpha amd64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel s390x sparc64)_ZN20QStyleOptionViewItemD2Ev@Base 4:4.8.4
  (arch=powerpcspe sparc)_ZN9QHashData8willGrowEv@Base 4:4.8.5+git209
  (arch=powerpcspe)_ZN9QHashData9hasShrunkEv@Base 4:4.8.5+git209
  _ZTI22QItemEditorCreatorBase@Base 4:4.5.3

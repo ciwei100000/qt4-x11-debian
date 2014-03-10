@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.5+git209 powerpcspe
+# SymbolsHelper-Confirmed: 4:4.8.5+git242 alpha armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel s390x sparc
 libQtScript.so.4 libqt4-script #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z14qScriptConnectP7QObjectPKcRK12QScriptValueS5_@Base 4:4.5.3
@@ -306,7 +306,6 @@ libQtScript.so.4 libqt4-script #MINVER#
  _ZN28QScriptClassPropertyIteratorD0Ev@Base 4:4.5.3
  _ZN28QScriptClassPropertyIteratorD1Ev@Base 4:4.5.3
  _ZN28QScriptClassPropertyIteratorD2Ev@Base 4:4.5.3
- _ZN9QHashData9hasShrunkEv@Base 4:4.8.5+git209
  _ZNK11QScriptable10thisObjectEv@Base 4:4.5.3
  _ZNK11QScriptable13argumentCountEv@Base 4:4.5.3
  _ZNK11QScriptable6engineEv@Base 4:4.5.3
@@ -438,7 +437,6 @@ libQtScript.so.4 libqt4-script #MINVER#
  _ZNK28QScriptClassPropertyIterator2idEv@Base 4:4.5.3
  _ZNK28QScriptClassPropertyIterator5flagsEv@Base 4:4.5.3
  _ZNK28QScriptClassPropertyIterator6objectEv@Base 4:4.5.3
- (optional=templinst)_ZNK7QObject12findChildrenIPS_EE5QListIT_ERK7QString@Base 4:4.8.5+git209
  _ZTI12QScriptClass@Base 4:4.5.3
  _ZTI13QScriptEngine@Base 4:4.5.3
  _ZTI17QFactoryInterface@Base 4:4.5.3

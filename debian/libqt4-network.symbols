@@ -1,9 +1,10 @@
-# SymbolsHelper-Confirmed: 4:4.8.5+git209 alpha powerpcspe s390x
+# SymbolsHelper-Confirmed: 4:4.8.5+git242 hppa sparc
 libQtNetwork.so.4 libqt4-network #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z19qt_qhostinfo_lookupRK7QStringP7QObjectPKcPbPi@Base 4:4.6.3
  _Z35qNetworkConfigurationManagerPrivatev@Base 4:4.7.0~beta1
  _Z5qHashRK12QHostAddress@Base 4:4.5.3
+ (optional=gccinternal|arch=sparc)_ZN10QByteArray4dataEv@Base 4:4.8.5+git242
  _ZN10QSslCipherC1ERK7QStringN4QSsl11SslProtocolE@Base 4:4.5.3
  _ZN10QSslCipherC1ERKS_@Base 4:4.5.3
  _ZN10QSslCipherC1Ev@Base 4:4.5.3
@@ -356,7 +357,7 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN15QAbstractSocketD0Ev@Base 4:4.5.3
  _ZN15QAbstractSocketD1Ev@Base 4:4.5.3
  _ZN15QAbstractSocketD2Ev@Base 4:4.5.3
- (optional=external|arch=hppa sh4 sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
+ (optional=external|arch=sh4 sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
  (optional=external|arch=sh4 sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.7.1
  _ZN15QNetworkRequest11setPriorityENS_8PriorityE@Base 4:4.7.0~beta1
  _ZN15QNetworkRequest12setAttributeENS_9AttributeERK8QVariant@Base 4:4.5.3
@@ -818,7 +819,6 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN9QSslErrorD1Ev@Base 4:4.5.3
  _ZN9QSslErrorD2Ev@Base 4:4.5.3
  _ZN9QSslErroraSERKS_@Base 4:4.5.3
- (optional=external|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !powerpc !ppc64 !s390 !s390x !sparc !sparc64)_ZNK10QByteArray8containsEPKc@Base 4:4.8.4
  _ZNK10QSslCipher13supportedBitsEv@Base 4:4.5.3
  _ZNK10QSslCipher14protocolStringEv@Base 4:4.5.3
  _ZNK10QSslCipher16encryptionMethodEv@Base 4:4.5.3
