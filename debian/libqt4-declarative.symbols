@@ -1,15 +1,15 @@
-# SymbolsHelper-Confirmed: 4:4.8.5+git242 sparc
+# SymbolsHelper-Confirmed: 4:4.8.5+git242 amd64 sparc
 libQtDeclarative.so.4 libqt4-declarative #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qmlContextPK7QObject@Base 4:4.7.0~beta1
  _Z18qmlExecuteDeferredP7QObject@Base 4:4.7.0~beta1
  _Z27qmlAttachedPropertiesObjectPiPK7QObjectPK11QMetaObjectb@Base 4:4.7.0~beta1
  _Z31qmlAttachedPropertiesObjectByIdiPK7QObjectb@Base 4:4.7.0~beta1
- _Z6qDebugv@Base 4:4.8.5+git242
+ (optional=gccinternal|arch=sparc)_Z6qDebugv@Base 4:4.8.5+git242
  _Z7qmlInfoPK7QObject@Base 4:4.7.0~beta2
  _Z7qmlInfoPK7QObjectRK17QDeclarativeError@Base 4:4.7.0~beta2
  _Z7qmlInfoPK7QObjectRK5QListI17QDeclarativeErrorE@Base 4:4.7.0~beta2
- _Z8qWarningv@Base 4:4.8.5+git242
+ (optional=gccinternal|arch=sparc)_Z8qWarningv@Base 4:4.8.5+git242
  _Z9qmlEnginePK7QObject@Base 4:4.7.0~beta1
  (optional=gccinternal|arch=!armel !armhf)_ZN12QDashStroker3endEv@Base 4:4.7.2
  (optional=gccinternal|arch=!armel !armhf)_ZN12QDashStroker5beginEPv@Base 4:4.7.2
@@ -568,8 +568,8 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN20QMetaPropertyBuilder7setUserEb@Base 4:4.7.0~beta1
  _ZN20QMetaPropertyBuilder8setFinalEb@Base 4:4.8.0
  _ZN20QMetaPropertyBuilder9setStoredEb@Base 4:4.7.0~beta1
- (optional=gccinternal)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.8.5+git242
- (optional=gccinternal)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.8.5+git242
+ (optional=gccinternal|arch=sparc)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.8.5+git242
+ (optional=gccinternal|arch=sparc)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.8.5+git242
  _ZN21QDeclarativeComponent11beginCreateEP19QDeclarativeContext@Base 4:4.7.0~beta1
  _ZN21QDeclarativeComponent11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1
  _ZN21QDeclarativeComponent11qt_metacastEPKc@Base 4:4.7.0~beta1
@@ -1411,8 +1411,9 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN7QPacketD1Ev@Base 4:4.7.0~beta1
  _ZN7QPacketD2Ev@Base 4:4.7.0~beta1
  (arch=powerpcspe)_ZN7QString5clearEv@Base 4:4.8.5+git209
- (optional=gccinternal)_ZN9QBitArrayD1Ev@Base 4:4.8.5+git242
- (optional=gccinternal)_ZN9QBitArrayD2Ev@Base 4:4.8.5+git242
+ (arch=amd64)_ZN9QBitArray8clearBitEi@Base 4:4.8.5+git242
+ (optional=gccinternal|arch=sparc)_ZN9QBitArrayD1Ev@Base 4:4.8.5+git242
+ (optional=gccinternal|arch=sparc)_ZN9QBitArrayD2Ev@Base 4:4.8.5+git242
  _ZNK12QPaintDevice7devTypeEv@Base 4:4.7.2
  _ZNK15QDeclarativePen10metaObjectEv@Base 4:4.7.0~beta1
  _ZNK15QPacketProtocol10metaObjectEv@Base 4:4.7.0~beta1
