@@ -1,12 +1,11 @@
-qt4-x11 (4:4.8.5+git242-g0315971+dfsg-2) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.5+git242-g0315971+dfsg-2) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Update symbols files with buildd's and current build logs.
   * Add powerpc to the list of archs that will not build with precompiled
     headers. The last upload FTBFS due to a pch problem, reproducible in a
     porter box. I have mailed debian-powerpc informing them of the situation.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 10 Mar 2014 12:36:13 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 10 Mar 2014 14:32:08 -0300
 
 qt4-x11 (4:4.8.5+git242-g0315971+dfsg-1) unstable; urgency=medium
 
