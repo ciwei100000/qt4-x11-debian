@@ -1,5 +1,9 @@
 qt4-x11 (4:4.8.5+git242-g0315971+dfsg-3) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Also add ppc64 to the list of non-pch build archs. Thanks Hiroyuki Yamamoto
+    for the tip.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 11 Mar 2014 12:38:06 -0300
 
 qt4-x11 (4:4.8.5+git242-g0315971+dfsg-2) unstable; urgency=medium
