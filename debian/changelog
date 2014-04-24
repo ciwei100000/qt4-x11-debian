@@ -1,6 +1,7 @@
-qt4-x11 (4:4.8.5+git242-g0315971+dfsg-3) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.6+dfsg-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
+  * New upstream release.
   * Also add ppc64 to the list of non-pch build archs. Thanks Hiroyuki Yamamoto
     for the tip.
 
