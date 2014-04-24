@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.5+git242 armel hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 sparc
+# SymbolsHelper-Confirmed: 4:4.8.5+git242 alpha armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel s390x sparc
 libQtGui.so.4 libqtgui4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qDrawArrowP8QPainterN2Qt9ArrowTypeENS1_8GUIStyleEbiiiiRK8QPaletteb@Base 4:4.5.3
@@ -11522,7 +11522,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK6QMovie9cacheModeEv@Base 4:4.5.3
  _ZNK6QMovie9frameRectEv@Base 4:4.5.3
  _ZNK6QMovie9loopCountEv@Base 4:4.5.3
- (optional=external|arch=armel hppa sparc)_ZNK6QRectF6toRectEv@Base 4:4.7.2
+ (optional=external|arch=alpha armel armhf hppa mips mipsel s390x sparc)_ZNK6QRectF6toRectEv@Base 4:4.7.2
  _ZNK6QSound10isFinishedEv@Base 4:4.5.3
  _ZNK6QSound10metaObjectEv@Base 4:4.5.3
  _ZNK6QSound14loopsRemainingEv@Base 4:4.5.3

@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.5+git242 hppa
+# SymbolsHelper-Confirmed: 4:4.8.5+git242 hppa sparc
 libQtXmlPatterns.so.4 libqt4-xmlpatterns #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z5qHashRK15QSourceLocation@Base 4:4.5.3
@@ -65,6 +65,8 @@ libQtXmlPatterns.so.4 libqt4-xmlpatterns #MINVER#
  _ZN14QXmlSerializerD0Ev@Base 4:4.7.4
  _ZN14QXmlSerializerD1Ev@Base 4:4.7.4
  _ZN14QXmlSerializerD2Ev@Base 4:4.7.4
+ (optional=gccinternal|arch=sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.8.5+git242
+ (optional=gccinternal|arch=sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.8.5+git242
  _ZN15QSourceLocation6setUriERK4QUrl@Base 4:4.5.3
  _ZN15QSourceLocation7setLineEx@Base 4:4.5.3
  _ZN15QSourceLocation9setColumnEx@Base 4:4.5.3
