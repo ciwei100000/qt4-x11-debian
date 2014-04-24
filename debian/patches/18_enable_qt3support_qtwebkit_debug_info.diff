@@ -22,7 +22,7 @@ This patch enable them.
  *-g++*:QMAKE_CXXFLAGS_RELEASE -= -O2
 --- a/src/3rdparty/webkit/Source/WebCore/WebCore.pri
 +++ b/src/3rdparty/webkit/Source/WebCore/WebCore.pri
-@@ -273,8 +273,6 @@ contains(DEFINES, ENABLE_WEBGL=1)|contai
+@@ -266,8 +266,6 @@ contains(DEFINES, ENABLE_WEBGL=1)|contai
  
  !CONFIG(webkit-debug):CONFIG(QTDIR_build) {
      # Remove the following 2 lines if you want debug information in WebCore

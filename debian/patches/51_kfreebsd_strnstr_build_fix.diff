@@ -9,7 +9,7 @@ Bug: https://bugs.webkit.org/show_bug.cgi?id=33903
 
 --- a/src/3rdparty/webkit/Source/JavaScriptCore/wtf/Platform.h
 +++ b/src/3rdparty/webkit/Source/JavaScriptCore/wtf/Platform.h
-@@ -423,7 +423,7 @@
+@@ -427,7 +427,7 @@
  #endif
  
  /* OS(LINUX) - Linux */
@@ -20,7 +20,7 @@ Bug: https://bugs.webkit.org/show_bug.cgi?id=33903
  
 --- a/src/3rdparty/javascriptcore/JavaScriptCore/wtf/Platform.h
 +++ b/src/3rdparty/javascriptcore/JavaScriptCore/wtf/Platform.h
-@@ -415,7 +415,7 @@
+@@ -423,7 +423,7 @@
  #endif
  
  /* OS(LINUX) - Linux */

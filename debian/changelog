@@ -4,6 +4,7 @@ qt4-x11 (4:4.8.6+dfsg-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Also add ppc64 to the list of non-pch build archs. Thanks Hiroyuki Yamamoto
     for the tip.
+  * Refresh patches.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 11 Mar 2014 12:38:06 -0300
 

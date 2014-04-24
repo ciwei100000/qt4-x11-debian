@@ -13,7 +13,7 @@ Last-Update: 2010-05-31 (mipsel added)
 
 --- a/src/3rdparty/webkit/Source/WebCore/WebCore.pri
 +++ b/src/3rdparty/webkit/Source/WebCore/WebCore.pri
-@@ -324,7 +324,7 @@ mac {
+@@ -317,7 +317,7 @@ mac {
  }
  
  unix:!mac:*-g++*:QMAKE_CXXFLAGS += -ffunction-sections -fdata-sections
