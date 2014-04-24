@@ -1,6 +1,5 @@
-qt4-x11 (4:4.8.6+dfsg-1) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.6+dfsg-1) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
   * Also add ppc64 to the list of non-pch build archs. Thanks Hiroyuki Yamamoto
     for the tip.
@@ -12,7 +11,7 @@ qt4-x11 (4:4.8.6+dfsg-1) UNRELEASED; urgency=medium
     pages listing RFCs' license are licensed under it.
   * Remove sourceless doc/html/scripts/jquery.js from the original tarball.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 11 Mar 2014 12:38:06 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 24 Apr 2014 17:42:45 -0300
 
 qt4-x11 (4:4.8.5+git242-g0315971+dfsg-2) unstable; urgency=medium
 
