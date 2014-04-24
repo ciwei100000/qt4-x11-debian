@@ -393,6 +393,7 @@ prune-nonfree:
 	# Delete files that contain minified javascript libs without source
 	# In it's preferred form of modification.
 	rm -fv tests/benchmarks/script/sunspider/tests/string-unpack-code.js
+	rm -fv doc/html/scripts/jquery.js
 	rm -fv doc/src/template/scripts/jquery.js
 	rm -fv tools/qdoc3/doc/config/scripts/jquery.js
 	rm -fv examples/webkit/fancybrowser/jquery.min.js
