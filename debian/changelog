@@ -10,7 +10,7 @@ qt4-x11 (4:4.8.6+dfsg-1) UNRELEASED; urgency=medium
     CVE-2014-0190.
   * Add lintian overrides for a bug a lintian which makes it think that HTML
     pages listing RFCs' license are licensed under it.
-  * Also remove doc/html/scripts/jquery.js from the original tarball.
+  * Remove sourceless doc/html/scripts/jquery.js from the original tarball.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 11 Mar 2014 12:38:06 -0300
 
