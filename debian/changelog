@@ -8,6 +8,8 @@ qt4-x11 (4:4.8.6+dfsg-1) UNRELEASED; urgency=medium
   * Update symbols files with buildd's logs and current build log.
   * Apply upstream's dont_crash_on_broken_gif_images.patch to solve
     CVE-2014-0190.
+  * Add lintian overrides for a bug a lintian which makes it think that HTML
+    pages listing RFCs' license are licensed under it.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 11 Mar 2014 12:38:06 -0300
 

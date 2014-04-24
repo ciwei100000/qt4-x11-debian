@@ -4,3 +4,8 @@ qt4-x11 source: dbg-package-missing-depends libqt4-webkit-dbg
 # them.
 qt4-x11 source: outdated-autotools-helper-file src/3rdparty/freetype/builds/unix/config.guess
 qt4-x11 source: outdated-autotools-helper-file src/3rdparty/freetype/builds/unix/config.sub
+# No lintian, these are HTML pages listing the licenses. The page is not using
+# that license.
+qt4-x11 source: license-problem-non-free-RFC doc/html/licenses.html
+qt4-x11 source: license-problem-non-free-RFC doc/html/network-torrent.html
+qt4-x11 source: license-problem-non-free-RFC doc/src/examples/torrent.qdoc
