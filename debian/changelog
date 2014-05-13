@@ -1,5 +1,7 @@
 qt4-x11 (4:4.8.6+dfsg-2) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
+  * Add arm64 to no_pch_architectures.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 13 May 2014 10:51:15 +0400
 
