@@ -1,4 +1,4 @@
-qt4-x11 (4:4.8.6+dfsg-2) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.6+dfsg-2) unstable; urgency=medium
 
   [ Dmitry Shachnev ]
   * Add arm64 to no_pch_architectures.
@@ -11,7 +11,7 @@ qt4-x11 (4:4.8.6+dfsg-2) UNRELEASED; urgency=medium
   * Add ppc64el to the list of architectures that build without using pch,
     partly solving #749743.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 13 May 2014 10:51:15 +0400
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 16 Jun 2014 10:10:58 -0300
 
 qt4-x11 (4:4.8.6+dfsg-1) unstable; urgency=medium
 
