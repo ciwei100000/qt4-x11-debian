@@ -45,3 +45,4 @@ QTBUG-25324_assistant_segfault_on_start_with_gcc_4.7.patch
 qt-everywhere-opensource-src-4.8.5-QTBUG-22829.patch
 qtdoc-build-offline-docs.patch
 remove_addsense.patch
+parisc-atomic.patch
