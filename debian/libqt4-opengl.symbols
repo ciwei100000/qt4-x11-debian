@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.6 powerpc ppc64 sparc64
+# SymbolsHelper-Confirmed: 4:4.8.6 amd64 powerpc ppc64 sparc64
 libQtOpenGL.so.4 libqt4-opengl #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z18qt_gl_library_namev@Base 4:4.5.3
@@ -612,6 +612,7 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZNK10QGLContext6formatEv@Base 4:4.5.3
  _ZNK10QGLContext7isValidEv@Base 4:4.5.3
  _ZNK10QGLContext9isSharingEv@Base 4:4.5.3
+ (optional=gccinternal|arch=amd64)_ZNK11QFontEngine25supportsSubPixelPositionsEv@Base 4:4.8.6
  _ZNK11QGLColormap10entryColorEi@Base 4:4.5.3
  _ZNK11QGLColormap11findNearestEj@Base 4:4.5.3
  _ZNK11QGLColormap4findEj@Base 4:4.5.3

@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.6 ppc64
+# SymbolsHelper-Confirmed: 4:4.8.6 amd64 ppc64
 libQtNetwork.so.4 libqt4-network #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z19qt_qhostinfo_lookupRK7QStringP7QObjectPKcPbPi@Base 4:4.6.3
@@ -633,9 +633,9 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN28QNetworkConfigurationManagerD0Ev@Base 4:4.7.0~beta1
  _ZN28QNetworkConfigurationManagerD1Ev@Base 4:4.7.0~beta1
  _ZN28QNetworkConfigurationManagerD2Ev@Base 4:4.7.0~beta1
- _ZN29QBearerEngineFactoryInterfaceD0Ev@Base 4:4.7.4
- _ZN29QBearerEngineFactoryInterfaceD1Ev@Base 4:4.7.4
- _ZN29QBearerEngineFactoryInterfaceD2Ev@Base 4:4.7.4
+ (optional=gccinternal|arch=ppc64)_ZN29QBearerEngineFactoryInterfaceD0Ev@Base 4:4.8.6
+ (optional=gccinternal|arch=ppc64)_ZN29QBearerEngineFactoryInterfaceD1Ev@Base 4:4.8.6
+ (optional=gccinternal|arch=ppc64)_ZN29QBearerEngineFactoryInterfaceD2Ev@Base 4:4.8.6
  _ZN35QNetworkConfigurationManagerPrivate10initializeEv@Base 4:4.7.4
  _ZN35QNetworkConfigurationManagerPrivate11pollEnginesEv@Base 4:4.7.0~beta1
  _ZN35QNetworkConfigurationManagerPrivate11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1
