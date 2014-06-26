@@ -150,6 +150,7 @@ endif
 	            -system-libtiff \
 	            -system-libpng \
 	            -system-libjpeg \
+	            -system-proxies \
 	            -no-rpath \
 	            -optimized-qmake \
 	            -dbus-linked \
