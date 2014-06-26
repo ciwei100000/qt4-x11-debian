@@ -1,9 +1,11 @@
 qt4-x11 (4:4.8.6+dfsg-3) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Update 07_trust_dpkg-arch_over_uname-m.diff and debian/rules in order to
+    let mips64[el] build (Closes: #719763). Thanks Yunqiang Su for the patch.
   * Enable using system network proxies by default.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 26 Jun 2014 10:18:02 -0300
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 26 Jun 2014 01:19:21 -0300
 
 qt4-x11 (4:4.8.6+dfsg-2) unstable; urgency=medium
 
