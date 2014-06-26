@@ -1,3 +1,7 @@
+qt4-x11 (4:4.8.6+dfsg-3) UNRELEASED; urgency=medium
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 26 Jun 2014 01:19:21 -0300
+
 qt4-x11 (4:4.8.6+dfsg-2) unstable; urgency=medium
 
   [ Dmitry Shachnev ]
