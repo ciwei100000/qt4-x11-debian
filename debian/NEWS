@@ -1,0 +1,5 @@
+qt4-x11 (4:4.8.6+dfsg-3) unstable; urgency=medium
+
+  This version of Qt 4 uses system network proxies by default.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 27 Jun 2014 16:30:42 -0300
