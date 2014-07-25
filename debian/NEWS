@@ -1,4 +1,4 @@
-qt4-x11 (4:4.8.6+dfsg-3) unstable; urgency=medium
+qt4-x11 (4:4.8.6+git49-gbc62005+dfsg-1) unstable; urgency=medium
 
   This version of Qt 4 uses system network proxies by default.
 
