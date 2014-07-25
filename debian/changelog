@@ -1,6 +1,5 @@
-qt4-x11 (4:4.8.6+git49-gbc62005+dfsg-1) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.6+git49-gbc62005+dfsg-1) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream GIT snapshot.
   * Update 07_trust_dpkg-arch_over_uname-m.diff and debian/rules in order to
     let mips64[el] build (Closes: #719763). Thanks Yunqiang Su for the patch.
@@ -10,7 +9,7 @@ qt4-x11 (4:4.8.6+git49-gbc62005+dfsg-1) UNRELEASED; urgency=medium
   * Refresh patches.
   * Update install files due to the fix of QTBUG-16838.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 26 Jun 2014 01:19:21 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 25 Jul 2014 14:07:38 -0300
 
 qt4-x11 (4:4.8.6+dfsg-2) unstable; urgency=medium
 
