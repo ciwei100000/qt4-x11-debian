@@ -25,7 +25,7 @@ Author: Thiago Macieira <thiago@kde.org>
  #endif
  
  QT_BEGIN_NAMESPACE
-@@ -2324,6 +2327,27 @@ void qt_message_output(QtMsgType msgType
+@@ -2327,6 +2330,27 @@ void qt_message_output(QtMsgType msgType
  #else
          fprintf(stderr, "%s\n", buf);
          fflush(stderr);
