@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.6 amd64 powerpc ppc64
+# SymbolsHelper-Confirmed: 4:4.8.6 alpha amd64 armel armhf hppa hurd-i386 i386 kfreebsd-i386 mips powerpc ppc64 s390x sparc64
 libQtCLucene.so.4 libqtcore4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN12QCLuceneHits2idEi@Base 4:4.5.3
@@ -2078,9 +2078,9 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN18QFutureWatcherBase9setPausedEb@Base 4:4.5.3
  _ZN18QFutureWatcherBaseC1EP7QObject@Base 4:4.5.3
  _ZN18QFutureWatcherBaseC2EP7QObject@Base 4:4.5.3
- (optional=gccinternal|arch=!amd64)_ZN18QFutureWatcherBaseD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN18QFutureWatcherBaseD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN18QFutureWatcherBaseD2Ev@Base 4:4.8.6
+ (optional=gccinternal|arch=!alpha !amd64 !armel !armhf !hppa !hurd-i386 !i386 !kfreebsd-i386 !mips !ppc64 !s390x !sparc64)_ZN18QFutureWatcherBaseD0Ev@Base 4:4.8.6
+ (optional=gccinternal|arch=!alpha !amd64 !armel !armhf !hppa !hurd-i386 !i386 !kfreebsd-i386 !mips !ppc64 !s390x !sparc64)_ZN18QFutureWatcherBaseD1Ev@Base 4:4.8.6
+ (optional=gccinternal|arch=!alpha !amd64 !armel !armhf !hppa !hurd-i386 !i386 !kfreebsd-i386 !mips !ppc64 !s390x !sparc64)_ZN18QFutureWatcherBaseD2Ev@Base 4:4.8.6
  _ZN18QPropertyAnimation11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN18QPropertyAnimation11qt_metacastEPKc@Base 4:4.6.1
  _ZN18QPropertyAnimation11updateStateEN18QAbstractAnimation5StateES1_@Base 4:4.6.1
@@ -2496,9 +2496,9 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN26QAbstractTransitionPrivateD0Ev@Base 4:4.7.4
  _ZN26QAbstractTransitionPrivateD1Ev@Base 4:4.7.4
  _ZN26QAbstractTransitionPrivateD2Ev@Base 4:4.7.4
- (optional=gccinternal|arch=!amd64)_ZN26QTextCodecFactoryInterfaceD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN26QTextCodecFactoryInterfaceD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN26QTextCodecFactoryInterfaceD2Ev@Base 4:4.8.6
+ (optional=gccinternal|arch=!alpha !amd64 !armel !armhf !hppa !hurd-i386 !i386 !kfreebsd-i386 !mips !ppc64 !s390x !sparc64)_ZN26QTextCodecFactoryInterfaceD0Ev@Base 4:4.8.6
+ (optional=gccinternal|arch=!alpha !amd64 !armel !armhf !hppa !hurd-i386 !i386 !kfreebsd-i386 !mips !ppc64 !s390x !sparc64)_ZN26QTextCodecFactoryInterfaceD1Ev@Base 4:4.8.6
+ (optional=gccinternal|arch=!alpha !amd64 !armel !armhf !hppa !hurd-i386 !i386 !kfreebsd-i386 !mips !ppc64 !s390x !sparc64)_ZN26QTextCodecFactoryInterfaceD2Ev@Base 4:4.8.6
  _ZN27QAbstractFileEngineIterator7setPathERK7QString@Base 4:4.5.3
  _ZN27QAbstractFileEngineIteratorC1E6QFlagsIN4QDir6FilterEERK11QStringList@Base 4:4.5.3
  _ZN27QAbstractFileEngineIteratorC2E6QFlagsIN4QDir6FilterEERK11QStringList@Base 4:4.5.3
@@ -3217,7 +3217,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN8QVariantaSERKS_@Base 4:4.5.3
  _ZN9QBitArray4fillEbii@Base 4:4.5.3
  _ZN9QBitArray6resizeEi@Base 4:4.5.3
- (optional=external|arch=!amd64)_ZN9QBitArray8clearBitEi@Base 4:4.8.1
+ (optional=external|arch=!alpha !amd64 !armel !armhf !hppa !hurd-i386 !i386 !kfreebsd-i386 !mips !ppc64 !s390x !sparc64)_ZN9QBitArray8clearBitEi@Base 4:4.8.1
  _ZN9QBitArrayC1Eib@Base 4:4.5.3
  _ZN9QBitArrayC2Eib@Base 4:4.5.3
  _ZN9QBitArrayaNERKS_@Base 4:4.5.3
@@ -4596,7 +4596,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTI11QChildEvent@Base 4:4.5.3
  _ZTI11QDataStream@Base 4:4.5.3
  _ZTI11QFinalState@Base 4:4.6.1
- (arch=amd64)_ZTI11QMetaObject@Base 4:4.8.6
+ (arch=alpha amd64 armel armhf hppa hurd-i386 i386 kfreebsd-i386 mips ppc64 s390x sparc64)_ZTI11QMetaObject@Base 4:4.8.6
  _ZTI11QTextStream@Base 4:4.5.3
  _ZTI11QThreadPool@Base 4:4.5.3
  _ZTI11QTimerEvent@Base 4:4.5.3
@@ -4653,7 +4653,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTI24QXmlStreamEntityResolver@Base 4:4.5.3
  _ZTI25QAbstractItemModelPrivate@Base 4:4.5.3
  _ZTI25QSequentialAnimationGroup@Base 4:4.6.1
- (arch=amd64)_ZTI26QAbstractDynamicMetaObject@Base 4:4.8.6
+ (arch=alpha amd64 armel armhf hppa hurd-i386 i386 kfreebsd-i386 mips ppc64 s390x sparc64)_ZTI26QAbstractDynamicMetaObject@Base 4:4.8.6
  _ZTI26QAbstractFileEngineHandler@Base 4:4.5.3
  _ZTI26QAbstractTransitionPrivate@Base 4:4.6.1
  _ZTI26QTextCodecFactoryInterface@Base 4:4.5.3
@@ -4686,7 +4686,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTS11QChildEvent@Base 4:4.5.3
  _ZTS11QDataStream@Base 4:4.5.3
  _ZTS11QFinalState@Base 4:4.6.1
- (arch=amd64)_ZTS11QMetaObject@Base 4:4.8.6
+ (arch=alpha amd64 armel armhf hppa hurd-i386 i386 kfreebsd-i386 mips ppc64 s390x sparc64)_ZTS11QMetaObject@Base 4:4.8.6
  _ZTS11QTextStream@Base 4:4.5.3
  _ZTS11QThreadPool@Base 4:4.5.3
  _ZTS11QTimerEvent@Base 4:4.5.3
@@ -4743,7 +4743,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTS24QXmlStreamEntityResolver@Base 4:4.5.3
  _ZTS25QAbstractItemModelPrivate@Base 4:4.5.3
  _ZTS25QSequentialAnimationGroup@Base 4:4.6.1
- (arch=amd64)_ZTS26QAbstractDynamicMetaObject@Base 4:4.8.6
+ (arch=alpha amd64 armel armhf hppa hurd-i386 i386 kfreebsd-i386 mips ppc64 s390x sparc64)_ZTS26QAbstractDynamicMetaObject@Base 4:4.8.6
  _ZTS26QAbstractFileEngineHandler@Base 4:4.5.3
  _ZTS26QAbstractTransitionPrivate@Base 4:4.6.1
  _ZTS26QTextCodecFactoryInterface@Base 4:4.5.3
@@ -4832,7 +4832,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTV24QXmlStreamEntityResolver@Base 4:4.5.3
  _ZTV25QAbstractItemModelPrivate@Base 4:4.5.3
  _ZTV25QSequentialAnimationGroup@Base 4:4.6.1
- (arch=amd64)_ZTV26QAbstractDynamicMetaObject@Base 4:4.8.6
+ (arch=alpha amd64 armel armhf hppa hurd-i386 i386 kfreebsd-i386 mips ppc64 s390x sparc64)_ZTV26QAbstractDynamicMetaObject@Base 4:4.8.6
  _ZTV26QAbstractFileEngineHandler@Base 4:4.5.3
  _ZTV26QAbstractTransitionPrivate@Base 4:4.6.1
  _ZTV26QTextCodecFactoryInterface@Base 4:4.5.3

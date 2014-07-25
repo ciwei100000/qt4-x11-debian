@@ -6,6 +6,7 @@ qt4-x11 (4:4.8.6+git49-gbc62005+dfsg-1) UNRELEASED; urgency=medium
     let mips64[el] build (Closes: #719763). Thanks Yunqiang Su for the patch.
   * Enable using system network proxies by default.
     - Add this information to debian/NEWS to inform our users.
+  * Update symbols files with buildd's logs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 26 Jun 2014 01:19:21 -0300
 
