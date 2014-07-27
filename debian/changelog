@@ -1,6 +1,10 @@
 qt4-x11 (4:4.8.6+dfsg-2~bpo70+1) wheezy-backports; urgency=medium
 
+  [ Jean-Baptiste Rouault ]
   * Rebuild for wheezy-backports.
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Fix symbols files.
 
  -- Jean-Baptiste Rouault <jean-baptiste.rouault@diateam.net>  Fri, 20 Jun 2014 10:21:38 +0200
 

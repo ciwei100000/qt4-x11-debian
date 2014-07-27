@@ -1032,10 +1032,10 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN11Q3WhatsThisD0Ev@Base 4:4.5.3
  _ZN11Q3WhatsThisD1Ev@Base 4:4.5.3
  _ZN11Q3WhatsThisD2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZN11QColorGroupD1Ev@Base 4:4.8.5+git209
- (optional=gccinternal|arch=powerpcspe)_ZN11QColorGroupD2Ev@Base 4:4.8.5+git209
- (optional=gccinternal|arch=powerpcspe)_ZN11QDomElementD1Ev@Base 4:4.8.5+git209
- (optional=gccinternal|arch=powerpcspe)_ZN11QDomElementD2Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN11QColorGroupD1Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN11QColorGroupD2Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN11QDomElementD1Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN11QDomElementD2Ev@Base 4:4.8.5+git209
  _ZN12Q3CanvasItem10setEnabledEb@Base 4:4.5.3
  _ZN12Q3CanvasItem10setVisibleEb@Base 4:4.5.3
  _ZN12Q3CanvasItem11addToChunksEv@Base 4:4.5.3
@@ -1324,8 +1324,8 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN12Q3PointArray11makeEllipseEiiii@Base 4:4.5.3
  _ZN12Q3PointArray7makeArcEiiiiii@Base 4:4.5.3
  _ZN12Q3PointArray7makeArcEiiiiiiRK7QMatrix@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZN12Q3PointArrayD1Ev@Base 4:4.8.5+git209
- (optional=gccinternal|arch=powerpcspe)_ZN12Q3PointArrayD2Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN12Q3PointArrayD1Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN12Q3PointArrayD2Ev@Base 4:4.8.5+git209
  _ZN12Q3ScrollView10fontChangeERK5QFont@Base 4:4.5.3
  _ZN12Q3ScrollView10setEnabledEb@Base 4:4.5.3
  _ZN12Q3ScrollView10setMarginsEiiii@Base 4:4.5.3
@@ -2420,8 +2420,8 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN15Q3MultiLineEditD1Ev@Base 4:4.5.3
  _ZN15Q3MultiLineEditD2Ev@Base 4:4.5.3
  _ZN15Q3PtrCollection7newItemEPv@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZN15Q3SqlRecordInfoD1Ev@Base 4:4.8.5+git209
- (optional=gccinternal|arch=powerpcspe)_ZN15Q3SqlRecordInfoD2Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN15Q3SqlRecordInfoD1Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN15Q3SqlRecordInfoD2Ev@Base 4:4.8.5+git209
  _ZN15Q3TextFormatter10formatLineEP15Q3TextParagraphP12Q3TextStringP14QTextLineStartP16Q3TextStringCharS7_ii@Base 4:4.5.3
  _ZN15Q3TextFormatter14setWrapEnabledEb@Base 4:4.5.3
  _ZN15Q3TextFormatter15bidiReorderLineEP15Q3TextParagraphP12Q3TextStringP14QTextLineStartP16Q3TextStringCharS7_ii@Base 4:4.5.3
@@ -2485,6 +2485,8 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  (optional=external|arch=sh4 sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN16Q3CanvasItemList10drawUniqueER8QPainter@Base 4:4.5.3
  _ZN16Q3CanvasItemList4sortEv@Base 4:4.5.3
+ (arch=amd64)_ZN16Q3CanvasItemListD1Ev@Base 4:4.8.6
+ (arch=amd64)_ZN16Q3CanvasItemListD2Ev@Base 4:4.8.6
  _ZN16Q3CheckTableItem10setCheckedEb@Base 4:4.5.3
  _ZN16Q3CheckTableItem20setContentFromEditorEP7QWidget@Base 4:4.5.3
  _ZN16Q3CheckTableItem4RTTIE@Base 4:4.5.3
@@ -2724,9 +2726,9 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN18Q3DateTimeEditBase11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN18Q3DateTimeEditBase11qt_metacastEPKc@Base 4:4.5.3
  _ZN18Q3DateTimeEditBase16staticMetaObjectE@Base 4:4.5.3
- (optional=gccinternal|arch=!amd64)_ZN18Q3DateTimeEditBaseD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN18Q3DateTimeEditBaseD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN18Q3DateTimeEditBaseD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN18Q3DateTimeEditBaseD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN18Q3DateTimeEditBaseD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN18Q3DateTimeEditBaseD2Ev@Base 4:4.8.6
  _ZN18Q3FileIconProvider11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN18Q3FileIconProvider11qt_metacastEPKc@Base 4:4.5.3
  _ZN18Q3FileIconProvider16staticMetaObjectE@Base 4:4.5.3
@@ -2784,8 +2786,8 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN18Q3TextStyleCommand9unexecuteEP12Q3TextCursor@Base 4:4.5.3
  _ZN18Q3TextStyleCommandC1EP14Q3TextDocumentiiRK10QByteArray@Base 4:4.5.3
  _ZN18Q3TextStyleCommandC2EP14Q3TextDocumentiiRK10QByteArray@Base 4:4.5.3
- (optional=external|arch=alpha armel mips mipsel powerpcspe s390 sh4 sparc)_ZN18QStyleOptionButtonD1Ev@Base 4:4.8.1
- (optional=external|arch=alpha armel mips mipsel powerpcspe s390 sh4 sparc)_ZN18QStyleOptionButtonD2Ev@Base 4:4.8.1
+ (optional=external|arch=alpha amd64 armel mips mipsel powerpcspe s390 sh4 sparc)_ZN18QStyleOptionButtonD1Ev@Base 4:4.8.1
+ (optional=external|arch=alpha amd64 armel mips mipsel powerpcspe s390 sh4 sparc)_ZN18QStyleOptionButtonD2Ev@Base 4:4.8.1
  _ZN18QStyleOptionHeaderD1Ev@Base 4:4.7.4
  _ZN18QStyleOptionHeaderD2Ev@Base 4:4.7.4
  _ZN19Q3CanvasPixmapArray11readPixmapsERK7QStringi@Base 4:4.5.3
@@ -3713,8 +3715,8 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN9Q3CString6setNumEm@Base 4:4.5.3
  _ZN9Q3CString7sprintfEPKcz@Base 4:4.5.3
  _ZN9Q3CString9setExpandEjc@Base 4:4.5.3
- (optional=gccinternal|arch=sparc)_ZN9Q3CStringD1Ev@Base 4:4.8.5+git242
- (optional=gccinternal|arch=sparc)_ZN9Q3CStringD2Ev@Base 4:4.8.5+git242
+ (optional=gccinternal|arch=amd64 sparc)_ZN9Q3CStringD1Ev@Base 4:4.8.5+git242
+ (optional=gccinternal|arch=amd64 sparc)_ZN9Q3CStringD2Ev@Base 4:4.8.5+git242
  _ZN9Q3GVector12compareItemsEPvS0_@Base 4:4.5.3
  _ZN9Q3GVector12insertExpandEjPv@Base 4:4.5.3
  _ZN9Q3GVector17warningIndexRangeEj@Base 4:4.5.3
@@ -3970,8 +3972,8 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN9Q3UriDragD0Ev@Base 4:4.5.3
  _ZN9Q3UriDragD1Ev@Base 4:4.5.3
  _ZN9Q3UriDragD2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZN9QBitArrayD1Ev@Base 4:4.8.5+git209
- (optional=gccinternal|arch=powerpcspe)_ZN9QBitArrayD2Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN9QBitArrayD1Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN9QBitArrayD2Ev@Base 4:4.8.5+git209
  _ZNK10Q3ComboBox10autoResizeEv@Base 4:4.5.3
  _ZNK10Q3ComboBox10metaObjectEv@Base 4:4.5.3
  _ZNK10Q3ComboBox11currentItemEv@Base 4:4.5.3
@@ -5550,7 +5552,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZlsR11QDataStreamRK9Q3GVector@Base 4:4.5.3
  _ZlsR11QTextStreamRK10Q3DockArea@Base 4:4.5.3
  _ZlsR11QTextStreamRK12Q3MainWindow@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZneRK5QRectS1_@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZneRK5QRectS1_@Base 4:4.8.5+git209
  _ZrsR11QDataStreamR7Q3GList@Base 4:4.5.3
  _ZrsR11QDataStreamR9Q3CString@Base 4:4.5.3
  _ZrsR11QDataStreamR9Q3GVector@Base 4:4.5.3
@@ -5566,7 +5568,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  (c++)"non-virtual thunk to Q3DataView::~Q3DataView()@Base" 4:4.5.3
  (c++)"non-virtual thunk to Q3DateEdit::~Q3DateEdit()@Base" 4:4.5.3
  (c++)"non-virtual thunk to Q3DateTimeEdit::~Q3DateTimeEdit()@Base" 4:4.5.3
- (c++|arch=!amd64)"non-virtual thunk to Q3DateTimeEditBase::~Q3DateTimeEditBase()@Base" 4:4.8.6
+ (c++)"non-virtual thunk to Q3DateTimeEditBase::~Q3DateTimeEditBase()@Base" 4:4.8.6
  (c++)"non-virtual thunk to Q3DockArea::~Q3DockArea()@Base" 4:4.5.3
  (c++)"non-virtual thunk to Q3DockAreaLayout::hasHeightForWidth() const@Base" 4:4.5.3
  (c++)"non-virtual thunk to Q3DockAreaLayout::heightForWidth(int) const@Base" 4:4.5.3

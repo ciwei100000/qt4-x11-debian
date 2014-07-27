@@ -296,6 +296,9 @@ libQtScript.so.4 libqt4-script #MINVER#
  (optional=private|subst|arch=!s390)_ZN25QScriptEngineAgentPrivate18didReachBreakpointERKN5QTJSC17DebuggerCallFrameE{ssize_t}i@Base 4:4.7.0~beta1
  (optional=private)_ZN25QScriptEngineAgentPrivate6attachEv@Base 4:4.6.1
  (optional=private)_ZN25QScriptEngineAgentPrivate6detachEv@Base 4:4.6.1
+ _ZN25QScriptExtensionInterfaceD0Ev@Base 4:4.8.6
+ _ZN25QScriptExtensionInterfaceD1Ev@Base 4:4.8.6
+ _ZN25QScriptExtensionInterfaceD2Ev@Base 4:4.8.6
  _ZN28QScriptClassPropertyIteratorC1ERK12QScriptValue@Base 4:4.5.3
  _ZN28QScriptClassPropertyIteratorC1ERK12QScriptValueR35QScriptClassPropertyIteratorPrivate@Base 4:4.5.3
  _ZN28QScriptClassPropertyIteratorC2ERK12QScriptValue@Base 4:4.5.3
@@ -303,6 +306,7 @@ libQtScript.so.4 libqt4-script #MINVER#
  _ZN28QScriptClassPropertyIteratorD0Ev@Base 4:4.5.3
  _ZN28QScriptClassPropertyIteratorD1Ev@Base 4:4.5.3
  _ZN28QScriptClassPropertyIteratorD2Ev@Base 4:4.5.3
+ _ZN9QHashData9hasShrunkEv@Base 4:4.8.6
  _ZNK11QScriptable10thisObjectEv@Base 4:4.5.3
  _ZNK11QScriptable13argumentCountEv@Base 4:4.5.3
  _ZNK11QScriptable6engineEv@Base 4:4.5.3
@@ -443,7 +447,6 @@ libQtScript.so.4 libqt4-script #MINVER#
  _ZTI25QScriptEngineAgentPrivate@Base 4:4.5.3
  _ZTI25QScriptExtensionInterface@Base 4:4.5.3
  _ZTI28QScriptClassPropertyIterator@Base 4:4.5.3
- _ZTIN23QScriptDeclarativeClass6ObjectE@Base 4:4.8.6
  _ZTS12QScriptClass@Base 4:4.5.3
  _ZTS13QScriptEngine@Base 4:4.5.3
  _ZTS17QFactoryInterface@Base 4:4.5.3
@@ -453,7 +456,6 @@ libQtScript.so.4 libqt4-script #MINVER#
  _ZTS25QScriptEngineAgentPrivate@Base 4:4.5.3
  _ZTS25QScriptExtensionInterface@Base 4:4.5.3
  _ZTS28QScriptClassPropertyIterator@Base 4:4.5.3
- _ZTSN23QScriptDeclarativeClass6ObjectE@Base 4:4.8.6
  _ZTV12QScriptClass@Base 4:4.5.3
  _ZTV13QScriptEngine@Base 4:4.5.3
  _ZTV17QFactoryInterface@Base 4:4.5.3
@@ -463,7 +465,6 @@ libQtScript.so.4 libqt4-script #MINVER#
  _ZTV25QScriptEngineAgentPrivate@Base 4:4.5.3
  _ZTV25QScriptExtensionInterface@Base 4:4.5.3
  _ZTV28QScriptClassPropertyIterator@Base 4:4.5.3
- _ZTVN23QScriptDeclarativeClass6ObjectE@Base 4:4.8.6
  _ZlsR11QDataStreamRK18QScriptContextInfo@Base 4:4.5.3
  _ZrsR11QDataStreamR18QScriptContextInfo@Base 4:4.5.3
  (c++)"non-virtual thunk to QScriptExtensionPlugin::~QScriptExtensionPlugin()@Base" 4:4.5.3

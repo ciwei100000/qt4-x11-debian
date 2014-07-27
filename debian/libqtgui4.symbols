@@ -506,12 +506,10 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (subst)_ZN10QTransform9setMatrixE{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}@Base 4:4.5.3
  (subst)_ZN10QTransform9translateE{qreal}{qreal}@Base 4:4.5.3
  _ZN10QTransformC1ERK7QMatrix@Base 4:4.5.3
- (optional=external|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 powerpcspe)_ZN10QTransformC1ERKS_@Base 4:4.8.1
  _ZN10QTransformC1Ev@Base 4:4.5.3
  (subst)_ZN10QTransformC1E{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}@Base 4:4.5.3
  (subst)_ZN10QTransformC1E{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}@Base 4:4.5.3
  _ZN10QTransformC2ERK7QMatrix@Base 4:4.5.3
- (optional=external|arch=amd64 hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 powerpcspe)_ZN10QTransformC2ERKS_@Base 4:4.8.1
  _ZN10QTransformC2Ev@Base 4:4.5.3
  (subst)_ZN10QTransformC2E{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}@Base 4:4.5.3
  (subst)_ZN10QTransformC2E{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}@Base 4:4.5.3
@@ -2805,9 +2803,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN13QIconEngineV214availableSizesEN5QIcon4ModeENS0_5StateE@Base 4:4.5.3
  _ZN13QIconEngineV24readER11QDataStream@Base 4:4.5.3
  _ZN13QIconEngineV28iconNameEv@Base 4:4.7.0~beta2
- (optional=gccinternal|arch=!amd64)_ZN13QIconEngineV2D0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN13QIconEngineV2D1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN13QIconEngineV2D2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN13QIconEngineV2D0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN13QIconEngineV2D1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN13QIconEngineV2D2Ev@Base 4:4.8.6
  _ZN13QInputContext11filterEventEPK6QEvent@Base 4:4.5.3
  _ZN13QInputContext11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN13QInputContext11qt_metacastEPKc@Base 4:4.5.3
@@ -3241,6 +3239,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN14QItemSelection6selectERK11QModelIndexS2_@Base 4:4.5.3
  _ZN14QItemSelectionC1ERK11QModelIndexS2_@Base 4:4.5.3
  _ZN14QItemSelectionC2ERK11QModelIndexS2_@Base 4:4.5.3
+ (arch=amd64)_ZN14QItemSelectionD1Ev@Base 4:4.8.6
+ (arch=amd64)_ZN14QItemSelectionD2Ev@Base 4:4.8.6
  _ZN14QLayoutPrivate16createSpacerItemEPK7QLayoutiiN11QSizePolicy6PolicyES4_@Base 4:4.5.3
  _ZN14QLayoutPrivate16createWidgetItemEPK7QLayoutP7QWidget@Base 4:4.5.3
  _ZN14QLayoutPrivate20reparentChildWidgetsEP7QWidget@Base 4:4.5.3
@@ -3283,9 +3283,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN14QPaintEngineExC1Ev@Base 4:4.6.1
  _ZN14QPaintEngineExC2ER21QPaintEngineExPrivate@Base 4:4.5.3
  _ZN14QPaintEngineExC2Ev@Base 4:4.6.1
- (optional=gccinternal|arch=!amd64)_ZN14QPaintEngineExD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN14QPaintEngineExD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN14QPaintEngineExD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN14QPaintEngineExD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN14QPaintEngineExD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN14QPaintEngineExD2Ev@Base 4:4.8.6
  _ZN14QPlainTextEdit10appendHtmlERK7QString@Base 4:4.5.3
  _ZN14QPlainTextEdit10moveCursorEN11QTextCursor13MoveOperationENS0_8MoveModeE@Base 4:4.5.3
  _ZN14QPlainTextEdit10paintEventEP11QPaintEvent@Base 4:4.5.3
@@ -3861,7 +3861,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN15QLinearGradientC2ERK7QPointFS2_@Base 4:4.5.3
  _ZN15QLinearGradientC2Ev@Base 4:4.5.3
  (subst)_ZN15QLinearGradientC2E{qreal}{qreal}{qreal}{qreal}@Base 4:4.5.3
- (arch=powerpcspe)_ZN15QLinearGradientaSERKS_@Base 4:4.8.5+git209
+ (arch=amd64)_ZN15QLinearGradientD1Ev@Base 4:4.8.6
+ (arch=amd64)_ZN15QLinearGradientD2Ev@Base 4:4.8.6
+ (arch=amd64 powerpcspe)_ZN15QLinearGradientaSERKS_@Base 4:4.8.6
  _ZN15QListWidgetItem4readER11QDataStream@Base 4:4.5.3
  _ZN15QListWidgetItem7setDataEiRK8QVariant@Base 4:4.5.3
  _ZN15QListWidgetItem8setFlagsE6QFlagsIN2Qt8ItemFlagEE@Base 4:4.5.3
@@ -3942,6 +3944,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (subst)_ZN15QRadialGradientC2E{qreal}{qreal}{qreal}@Base 4:4.5.3
  (subst)_ZN15QRadialGradientC2E{qreal}{qreal}{qreal}{qreal}{qreal}@Base 4:4.5.3
  (subst)_ZN15QRadialGradientC2E{qreal}{qreal}{qreal}{qreal}{qreal}{qreal}@Base 4:4.8.0
+ (arch=amd64)_ZN15QRadialGradientD1Ev@Base 4:4.8.6
+ (arch=amd64)_ZN15QRadialGradientD2Ev@Base 4:4.8.6
  _ZN15QSessionManager11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN15QSessionManager11qt_metacastEPKc@Base 4:4.5.3
  _ZN15QSessionManager13requestPhase2Ev@Base 4:4.5.3
@@ -4030,14 +4034,14 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN15QTextCharFormatC1Ev@Base 4:4.5.3
  _ZN15QTextCharFormatC2ERK11QTextFormat@Base 4:4.5.3
  _ZN15QTextCharFormatC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZN15QTextCharFormatD1Ev@Base 4:4.8.5+git209
- (optional=gccinternal|arch=powerpcspe)_ZN15QTextCharFormatD2Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN15QTextCharFormatD1Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN15QTextCharFormatD2Ev@Base 4:4.8.5+git209
  _ZN15QTextListFormatC1ERK11QTextFormat@Base 4:4.5.3
  _ZN15QTextListFormatC1Ev@Base 4:4.5.3
  _ZN15QTextListFormatC2ERK11QTextFormat@Base 4:4.5.3
  _ZN15QTextListFormatC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZN15QTextListFormatD1Ev@Base 4:4.8.5+git209
- (optional=gccinternal|arch=powerpcspe)_ZN15QTextListFormatD2Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN15QTextListFormatD1Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN15QTextListFormatD2Ev@Base 4:4.8.5+git209
  _ZN15QTreeWidgetItem11addChildrenERK5QListIPS_E@Base 4:4.5.3
  _ZN15QTreeWidgetItem11insertChildEiPS_@Base 4:4.5.3
  _ZN15QTreeWidgetItem11itemChangedEv@Base 4:4.5.3
@@ -4157,8 +4161,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (subst)_ZN16QConicalGradientC2ERK7QPointF{qreal}@Base 4:4.5.3
  _ZN16QConicalGradientC2Ev@Base 4:4.5.3
  (subst)_ZN16QConicalGradientC2E{qreal}{qreal}{qreal}@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZN16QConicalGradientD1Ev@Base 4:4.8.5+git209
- (optional=gccinternal|arch=powerpcspe)_ZN16QConicalGradientD2Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN16QConicalGradientD1Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN16QConicalGradientD2Ev@Base 4:4.8.5+git209
  _ZN16QCoreApplication20sendSpontaneousEventEP7QObjectP6QEvent@Base 4:4.5.3
  _ZN16QCoreApplication9sendEventEP7QObjectP6QEvent@Base 4:4.5.3
  _ZN16QDesktopServices11displayNameENS_16StandardLocationE@Base 4:4.5.3
@@ -4318,15 +4322,15 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN16QTextBlockFormatC1Ev@Base 4:4.5.3
  _ZN16QTextBlockFormatC2ERK11QTextFormat@Base 4:4.5.3
  _ZN16QTextBlockFormatC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZN16QTextBlockFormatD1Ev@Base 4:4.8.5+git209
- (optional=gccinternal|arch=powerpcspe)_ZN16QTextBlockFormatD2Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN16QTextBlockFormatD1Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN16QTextBlockFormatD2Ev@Base 4:4.8.5+git209
  (subst)_ZN16QTextFrameFormat9setMarginE{qreal}@Base 4:4.5.3
  _ZN16QTextFrameFormatC1ERK11QTextFormat@Base 4:4.5.3
  _ZN16QTextFrameFormatC1Ev@Base 4:4.5.3
  _ZN16QTextFrameFormatC2ERK11QTextFormat@Base 4:4.5.3
  _ZN16QTextFrameFormatC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZN16QTextFrameFormatD1Ev@Base 4:4.8.5+git209
- (optional=gccinternal|arch=powerpcspe)_ZN16QTextFrameFormatD2Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN16QTextFrameFormatD1Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN16QTextFrameFormatD2Ev@Base 4:4.8.5+git209
  _ZN16QTextImageFormatC1ERK11QTextFormat@Base 4:4.5.3
  _ZN16QTextImageFormatC1Ev@Base 4:4.5.3
  _ZN16QTextImageFormatC2ERK11QTextFormat@Base 4:4.5.3
@@ -4710,6 +4714,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN17QStyleOptionTabV3C2ERK15QStyleOptionTab@Base 4:4.5.3
  _ZN17QStyleOptionTabV3C2Ei@Base 4:4.5.3
  _ZN17QStyleOptionTabV3C2Ev@Base 4:4.5.3
+ (arch=amd64)_ZN17QStyleOptionTabV3D1Ev@Base 4:4.8.6
+ (arch=amd64)_ZN17QStyleOptionTabV3D2Ev@Base 4:4.8.6
  _ZN17QStyleOptionTabV3aSERK15QStyleOptionTab@Base 4:4.5.3
  _ZN17QTextImageHandler14externalLoaderE@Base 4:4.5.3
  (subst)_ZN17QTextInlineObject10setDescentE{qreal}@Base 4:4.5.3
@@ -4862,8 +4868,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN18QStyleOptionSliderC1Ev@Base 4:4.5.3
  _ZN18QStyleOptionSliderC2Ei@Base 4:4.5.3
  _ZN18QStyleOptionSliderC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZN18QStyleOptionSliderD1Ev@Base 4:4.8.5+git209
- (optional=gccinternal|arch=powerpcspe)_ZN18QStyleOptionSliderD2Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN18QStyleOptionSliderD1Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN18QStyleOptionSliderD2Ev@Base 4:4.8.5+git209
  _ZN18QSyntaxHighlighter11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN18QSyntaxHighlighter11qt_metacastEPKc@Base 4:4.5.3
  _ZN18QSyntaxHighlighter11rehighlightEv@Base 4:4.5.3
@@ -5330,16 +5336,16 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN19QPrintPreviewWidgetD2Ev@Base 4:4.5.3
  _ZN19QStyleOptionComplexC1Eii@Base 4:4.5.3
  _ZN19QStyleOptionComplexC2Eii@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZN19QStyleOptionComplexD1Ev@Base 4:4.8.5+git209
- (optional=gccinternal|arch=powerpcspe)_ZN19QStyleOptionComplexD2Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN19QStyleOptionComplexD1Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN19QStyleOptionComplexD2Ev@Base 4:4.8.5+git209
  _ZN19QStyleOptionFrameV2C1ERK17QStyleOptionFrame@Base 4:4.5.3
  _ZN19QStyleOptionFrameV2C1Ei@Base 4:4.5.3
  _ZN19QStyleOptionFrameV2C1Ev@Base 4:4.5.3
  _ZN19QStyleOptionFrameV2C2ERK17QStyleOptionFrame@Base 4:4.5.3
  _ZN19QStyleOptionFrameV2C2Ei@Base 4:4.5.3
  _ZN19QStyleOptionFrameV2C2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZN19QStyleOptionFrameV2D1Ev@Base 4:4.8.5+git209
- (optional=gccinternal|arch=powerpcspe)_ZN19QStyleOptionFrameV2D2Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN19QStyleOptionFrameV2D1Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN19QStyleOptionFrameV2D2Ev@Base 4:4.8.5+git209
  _ZN19QStyleOptionFrameV2aSERK17QStyleOptionFrame@Base 4:4.5.3
  _ZN19QStyleOptionFrameV3C1ERK17QStyleOptionFrame@Base 4:4.5.3
  _ZN19QStyleOptionFrameV3C1Ei@Base 4:4.5.3
@@ -5352,8 +5358,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN19QStyleOptionSpinBoxC1Ev@Base 4:4.5.3
  _ZN19QStyleOptionSpinBoxC2Ei@Base 4:4.5.3
  _ZN19QStyleOptionSpinBoxC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZN19QStyleOptionSpinBoxD1Ev@Base 4:4.8.5+git209
- (optional=gccinternal|arch=powerpcspe)_ZN19QStyleOptionSpinBoxD2Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN19QStyleOptionSpinBoxD1Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN19QStyleOptionSpinBoxD2Ev@Base 4:4.8.5+git209
  _ZN19QStyleOptionToolBarC1Ei@Base 4:4.5.3
  _ZN19QStyleOptionToolBarC1Ev@Base 4:4.5.3
  _ZN19QStyleOptionToolBarC2Ei@Base 4:4.5.3
@@ -5792,8 +5798,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN21QStyleOptionFocusRectC1Ev@Base 4:4.5.3
  _ZN21QStyleOptionFocusRectC2Ei@Base 4:4.5.3
  _ZN21QStyleOptionFocusRectC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZN21QStyleOptionFocusRectD1Ev@Base 4:4.8.5+git209
- (optional=gccinternal|arch=powerpcspe)_ZN21QStyleOptionFocusRectD2Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN21QStyleOptionFocusRectD1Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN21QStyleOptionFocusRectD2Ev@Base 4:4.8.5+git209
  _ZN21QStyleOptionToolBoxV2C1ERK19QStyleOptionToolBox@Base 4:4.5.3
  _ZN21QStyleOptionToolBoxV2C1Ei@Base 4:4.5.3
  _ZN21QStyleOptionToolBoxV2C1Ev@Base 4:4.5.3
@@ -5832,9 +5838,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN22QAccessibleApplicationD1Ev@Base 4:4.7.4
  _ZN22QAccessibleApplicationD2Ev@Base 4:4.7.4
  _ZN22QAccessibleInterfaceEx12virtual_hookERK8QVariant@Base 4:4.5.3
- (optional=gccinternal|arch=!amd64)_ZN22QAccessibleInterfaceExD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN22QAccessibleInterfaceExD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN22QAccessibleInterfaceExD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN22QAccessibleInterfaceExD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN22QAccessibleInterfaceExD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN22QAccessibleInterfaceExD2Ev@Base 4:4.8.6
  _ZN22QGraphicsEffectPrivateD0Ev@Base 4:4.7.4
  _ZN22QGraphicsEffectPrivateD1Ev@Base 4:4.7.4
  _ZN22QGraphicsEffectPrivateD2Ev@Base 4:4.7.4
@@ -5875,9 +5881,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN22QPaintEngineExReplayerD0Ev@Base 4:4.7.4
  _ZN22QPaintEngineExReplayerD1Ev@Base 4:4.7.4
  _ZN22QPaintEngineExReplayerD2Ev@Base 4:4.7.4
- (optional=gccinternal|arch=!amd64)_ZN22QStyleFactoryInterfaceD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN22QStyleFactoryInterfaceD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN22QStyleFactoryInterfaceD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN22QStyleFactoryInterfaceD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN22QStyleFactoryInterfaceD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN22QStyleFactoryInterfaceD2Ev@Base 4:4.8.6
  _ZN22QStyleOptionDockWidgetC1Ei@Base 4:4.5.3
  _ZN22QStyleOptionDockWidgetC1Ev@Base 4:4.5.3
  _ZN22QStyleOptionDockWidgetC2Ei@Base 4:4.5.3
@@ -5915,6 +5921,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN22QStyleOptionViewItemV3C2ERK20QStyleOptionViewItem@Base 4:4.5.3
  _ZN22QStyleOptionViewItemV3C2Ei@Base 4:4.5.3
  _ZN22QStyleOptionViewItemV3C2Ev@Base 4:4.5.3
+ (arch=amd64)_ZN22QStyleOptionViewItemV3D1Ev@Base 4:4.8.6
+ (arch=amd64)_ZN22QStyleOptionViewItemV3D2Ev@Base 4:4.8.6
  _ZN22QStyleOptionViewItemV3aSERK20QStyleOptionViewItem@Base 4:4.5.3
  _ZN22QStyleOptionViewItemV4C1ERK20QStyleOptionViewItem@Base 4:4.5.3
  _ZN22QStyleOptionViewItemV4C1Ei@Base 4:4.5.3
@@ -5993,9 +6001,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN23QPaintBufferSignalProxyD0Ev@Base 4:4.7.4
  _ZN23QPaintBufferSignalProxyD1Ev@Base 4:4.7.4
  _ZN23QPaintBufferSignalProxyD2Ev@Base 4:4.7.4
- (optional=gccinternal|arch=!amd64)_ZN23QPictureFormatInterfaceD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN23QPictureFormatInterfaceD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN23QPictureFormatInterfaceD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN23QPictureFormatInterfaceD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN23QPictureFormatInterfaceD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN23QPictureFormatInterfaceD2Ev@Base 4:4.8.6
  _ZN23QPixmapDropShadowFilter11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN23QPixmapDropShadowFilter11qt_metacastEPKc@Base 4:4.5.3
  (subst)_ZN23QPixmapDropShadowFilter13setBlurRadiusE{qreal}@Base 4:4.5.3
@@ -6149,8 +6157,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN24QStyleOptionTabBarBaseV2C2ERK22QStyleOptionTabBarBase@Base 4:4.5.3
  _ZN24QStyleOptionTabBarBaseV2C2Ei@Base 4:4.5.3
  _ZN24QStyleOptionTabBarBaseV2C2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZN24QStyleOptionTabBarBaseV2D1Ev@Base 4:4.8.5+git209
- (optional=gccinternal|arch=powerpcspe)_ZN24QStyleOptionTabBarBaseV2D2Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN24QStyleOptionTabBarBaseV2D1Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN24QStyleOptionTabBarBaseV2D2Ev@Base 4:4.8.5+git209
  _ZN24QStyleOptionTabBarBaseV2aSERK22QStyleOptionTabBarBase@Base 4:4.5.3
  _ZN25QAbstractItemModelPrivate10PersistentD1Ev@Base 4:4.7.4
  _ZN25QAbstractItemModelPrivate10PersistentD2Ev@Base 4:4.7.4
@@ -6254,9 +6262,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN27QAbstractTextDocumentLayoutD0Ev@Base 4:4.5.3
  _ZN27QAbstractTextDocumentLayoutD1Ev@Base 4:4.5.3
  _ZN27QAbstractTextDocumentLayoutD2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!amd64)_ZN27QAccessibleFactoryInterfaceD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN27QAccessibleFactoryInterfaceD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN27QAccessibleFactoryInterfaceD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN27QAccessibleFactoryInterfaceD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN27QAccessibleFactoryInterfaceD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN27QAccessibleFactoryInterfaceD2Ev@Base 4:4.8.6
  _ZN27QEventDispatcherGlibPrivateD0Ev@Base 4:4.7.4
  _ZN27QEventDispatcherGlibPrivateD1Ev@Base 4:4.7.4
  _ZN27QEventDispatcherGlibPrivateD2Ev@Base 4:4.7.4
@@ -6276,27 +6284,27 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN27QGraphicsSceneDragDropEventD0Ev@Base 4:4.5.3
  _ZN27QGraphicsSceneDragDropEventD1Ev@Base 4:4.5.3
  _ZN27QGraphicsSceneDragDropEventD2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!amd64)_ZN27QGuiPlatformPluginInterfaceD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN27QGuiPlatformPluginInterfaceD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN27QGuiPlatformPluginInterfaceD2Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN27QIconEngineFactoryInterfaceD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN27QIconEngineFactoryInterfaceD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN27QIconEngineFactoryInterfaceD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN27QGuiPlatformPluginInterfaceD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN27QGuiPlatformPluginInterfaceD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN27QGuiPlatformPluginInterfaceD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN27QIconEngineFactoryInterfaceD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN27QIconEngineFactoryInterfaceD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN27QIconEngineFactoryInterfaceD2Ev@Base 4:4.8.6
  _ZN28QStyleOptionTabWidgetFrameV2C1ERK26QStyleOptionTabWidgetFrame@Base 4:4.6.1
  _ZN28QStyleOptionTabWidgetFrameV2C1Ei@Base 4:4.6.1
  _ZN28QStyleOptionTabWidgetFrameV2C1Ev@Base 4:4.6.1
  _ZN28QStyleOptionTabWidgetFrameV2C2ERK26QStyleOptionTabWidgetFrame@Base 4:4.6.1
  _ZN28QStyleOptionTabWidgetFrameV2C2Ei@Base 4:4.6.1
  _ZN28QStyleOptionTabWidgetFrameV2C2Ev@Base 4:4.6.1
- (optional=gccinternal|arch=powerpcspe)_ZN28QStyleOptionTabWidgetFrameV2D1Ev@Base 4:4.8.5+git209
- (optional=gccinternal|arch=powerpcspe)_ZN28QStyleOptionTabWidgetFrameV2D2Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN28QStyleOptionTabWidgetFrameV2D1Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN28QStyleOptionTabWidgetFrameV2D2Ev@Base 4:4.8.5+git209
  _ZN28QStyleOptionTabWidgetFrameV2aSERK26QStyleOptionTabWidgetFrame@Base 4:4.6.1
- (optional=gccinternal|arch=!amd64)_ZN29QIconEngineFactoryInterfaceV2D0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN29QIconEngineFactoryInterfaceV2D1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN29QIconEngineFactoryInterfaceV2D2Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN29QInputContextFactoryInterfaceD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN29QInputContextFactoryInterfaceD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN29QInputContextFactoryInterfaceD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN29QIconEngineFactoryInterfaceV2D0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN29QIconEngineFactoryInterfaceV2D1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN29QIconEngineFactoryInterfaceV2D2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN29QInputContextFactoryInterfaceD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN29QInputContextFactoryInterfaceD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN29QInputContextFactoryInterfaceD2Ev@Base 4:4.8.6
  _ZN2Qt12codecForHtmlERK10QByteArray@Base 4:4.5.3
  _ZN2Qt15mightBeRichTextERK7QString@Base 4:4.5.3
  _ZN2Qt20convertFromPlainTextERK7QStringNS_14WhiteSpaceModeE@Base 4:4.5.3
@@ -6314,12 +6322,12 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN31QAbstractEventDispatcherPrivateD0Ev@Base 4:4.7.4
  _ZN31QAbstractEventDispatcherPrivateD1Ev@Base 4:4.7.4
  _ZN31QAbstractEventDispatcherPrivateD2Ev@Base 4:4.7.4
- (optional=gccinternal|arch=!amd64)_ZN31QImageIOHandlerFactoryInterfaceD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN31QImageIOHandlerFactoryInterfaceD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN31QImageIOHandlerFactoryInterfaceD2Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN33QAccessibleBridgeFactoryInterfaceD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN33QAccessibleBridgeFactoryInterfaceD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!amd64)_ZN33QAccessibleBridgeFactoryInterfaceD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN31QImageIOHandlerFactoryInterfaceD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN31QImageIOHandlerFactoryInterfaceD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN31QImageIOHandlerFactoryInterfaceD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN33QAccessibleBridgeFactoryInterfaceD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN33QAccessibleBridgeFactoryInterfaceD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN33QAccessibleBridgeFactoryInterfaceD2Ev@Base 4:4.8.6
  _ZN38QAccessibleSimpleEditableTextInterface10deleteTextEii@Base 4:4.5.3
  _ZN38QAccessibleSimpleEditableTextInterface10insertTextEiRK7QString@Base 4:4.5.3
  _ZN38QAccessibleSimpleEditableTextInterface11replaceTextEiiRK7QString@Base 4:4.5.3
@@ -6339,8 +6347,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN4QCss13StyleSelectorD0Ev@Base 4:4.5.3
  _ZN4QCss13StyleSelectorD1Ev@Base 4:4.5.3
  _ZN4QCss13StyleSelectorD2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZN4QCss5ValueD1Ev@Base 4:4.8.5+git209
- (optional=gccinternal|arch=powerpcspe)_ZN4QCss5ValueD2Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN4QCss5ValueD1Ev@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN4QCss5ValueD2Ev@Base 4:4.8.5+git209
  _ZN4QCss6Parser10lexemUntilENS_9TokenTypeE@Base 4:4.5.3
  _ZN4QCss6Parser10parseClassEP7QString@Base 4:4.5.3
  _ZN4QCss6Parser10parseMediaEPNS_9MediaRuleE@Base 4:4.5.3
@@ -7160,7 +7168,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN7QSliderD0Ev@Base 4:4.5.3
  _ZN7QSliderD1Ev@Base 4:4.5.3
  _ZN7QSliderD2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZN7QString5clearEv@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZN7QString5clearEv@Base 4:4.8.5+git209
  _ZN7QTabBar10paintEventEP11QPaintEvent@Base 4:4.5.3
  _ZN7QTabBar10setMovableEb@Base 4:4.5.3
  _ZN7QTabBar10setTabDataEiRK8QVariant@Base 4:4.5.3
@@ -7878,11 +7886,11 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN8QX11InfoD1Ev@Base 4:4.5.3
  _ZN8QX11InfoD2Ev@Base 4:4.5.3
  _ZN8QX11InfoaSERKS_@Base 4:4.5.3
- (optional=gcc47|arch=!amd64 !sparc)_ZN9QBitArray6setBitEi@Base 4:4.8.1
+ (optional=gcc47)_ZN9QBitArray6setBitEi@Base 4:4.8.1
  (arch=alpha armel mips mipsel s390x)_ZN9QBitArray6setBitEib@Base 4:4.8.5+git209
- (optional=gcc47|arch=!amd64 !sparc)_ZN9QBitArray8clearBitEi@Base 4:4.8.1
- (optional=gccinternal|arch=sparc)_ZN9QBitArrayD1Ev@Base 4:4.8.5+git242
- (optional=gccinternal|arch=sparc)_ZN9QBitArrayD2Ev@Base 4:4.8.5+git242
+ (optional=gcc47)_ZN9QBitArray8clearBitEi@Base 4:4.8.1
+ (optional=gccinternal|arch=amd64 sparc)_ZN9QBitArrayD1Ev@Base 4:4.8.5+git242
+ (optional=gccinternal|arch=amd64 sparc)_ZN9QBitArrayD2Ev@Base 4:4.8.5+git242
  _ZN9QCDEStyle11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN9QCDEStyle11qt_metacastEPKc@Base 4:4.5.3
  _ZN9QCDEStyle16staticMetaObjectE@Base 4:4.5.3
@@ -8058,6 +8066,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (subst)_ZN9QGradient8setStopsERK7QVectorI5QPairI{qreal}6QColorEE@Base 4:4.5.3
  _ZN9QGradientC1Ev@Base 4:4.5.3
  _ZN9QGradientC2Ev@Base 4:4.5.3
+ (arch=amd64)_ZN9QGradientD1Ev@Base 4:4.8.6
+ (arch=amd64)_ZN9QGradientD2Ev@Base 4:4.8.6
  _ZN9QGradienteqERKS_@Base 4:4.5.3
  _ZN9QGroupBox10childEventEP11QChildEvent@Base 4:4.5.3
  _ZN9QGroupBox10paintEventEP11QPaintEvent@Base 4:4.5.3
@@ -8106,7 +8116,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN9QGtkStyleD0Ev@Base 4:4.5.3
  _ZN9QGtkStyleD1Ev@Base 4:4.5.3
  _ZN9QGtkStyleD2Ev@Base 4:4.5.3
- (arch=powerpcspe)_ZN9QHashData8willGrowEv@Base 4:4.8.5+git209
+ (arch=amd64 powerpcspe)_ZN9QHashData8willGrowEv@Base 4:4.8.6
  (optional=gcc47|arch=!armel !sparc)_ZN9QHashData9hasShrunkEv@Base 4:4.8.1
  _ZN9QKeyEvent22createExtendedKeyEventEN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEEjjjRK7QStringbt@Base 4:4.5.3
  _ZN9QKeyEventC1EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEERK7QStringbt@Base 4:4.5.3
@@ -10243,7 +10253,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK14QWidgetPrivate22childAtRecursiveHelperERK6QPointbb@Base 4:4.7.0~beta2
  _ZNK14QWidgetPrivate22subtractOpaqueChildrenER7QRegionRK5QRect@Base 4:4.5.3
  _ZNK14QWidgetPrivate22subtractOpaqueSiblingsER7QRegionPbb@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZNK14QWidgetPrivate7topDataEv@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZNK14QWidgetPrivate7topDataEv@Base 4:4.8.5+git209
  _ZNK14QWidgetPrivate8clipRectEv@Base 4:4.5.3
  _ZNK14QWindowSurface10grabWidgetEPK7QWidgetRK5QRect@Base 4:4.5.3
  _ZNK14QWindowSurface14staticContentsEv@Base 4:4.5.3
@@ -11810,8 +11820,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK7QWidget8hasFocusEv@Base 4:4.5.3
  _ZNK7QWidget8sizeHintEv@Base 4:4.5.3
  _ZNK7QWidget9frameSizeEv@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZNK7QWidget9isEnabledEv@Base 4:4.8.5+git209
- (optional=gccinternal|arch=powerpcspe)_ZNK7QWidget9isVisibleEv@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZNK7QWidget9isEnabledEv@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=amd64 powerpcspe)_ZNK7QWidget9isVisibleEv@Base 4:4.8.5+git209
  _ZNK7QWidget9statusTipEv@Base 4:4.5.3
  _ZNK7QWidget9whatsThisEv@Base 4:4.5.3
  _ZNK7QWizard10buttonTextENS_12WizardButtonE@Base 4:4.5.3
