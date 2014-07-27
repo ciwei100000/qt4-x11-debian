@@ -6,7 +6,7 @@ qt4-x11 (4:4.8.6+dfsg-2~bpo70+1) wheezy-backports; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Fix symbols files.
 
- -- Jean-Baptiste Rouault <jean-baptiste.rouault@diateam.net>  Fri, 20 Jun 2014 10:21:38 +0200
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 27 Jul 2014 10:14:36 -0300
 
 qt4-x11 (4:4.8.6+dfsg-2) unstable; urgency=medium
 
