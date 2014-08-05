@@ -8,9 +8,8 @@ Description: Revise PARISC atomic support to use GCC atomic builtins
   AVR32 implementation.  This allows atomic operations on integer
   objects. 
 Author: John David Anglin <dave.anglin@bell.net>
-Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Debian: http://bugs.debian.org/741190
 Forwarded: not-needed
-Author: John David Anglin <dave.anglin@bell.net>
 Last-Update: <2014-05-03>
 
 --- qt4-x11-4.8.6+dfsg.orig/src/corelib/arch/parisc/arch.pri
