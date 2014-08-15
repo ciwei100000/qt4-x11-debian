@@ -1,3 +1,11 @@
+qt4-x11 (4:4.8.6+git49-gbc62005+dfsg-2) UNRELEASED; urgency=medium
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Disable the use of system proxies by default. It seems that if http_proxy
+    is setted then all protocols try to use the proxy.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 15 Aug 2014 12:02:33 -0300
+
 qt4-x11 (4:4.8.6+git49-gbc62005+dfsg-1) unstable; urgency=medium
 
   * New upstream GIT snapshot.
