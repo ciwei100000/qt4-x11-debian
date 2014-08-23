@@ -7,6 +7,7 @@ dont_crash_on_broken_gif_images.patch
 aarch64_arm64_fix_arch_detection.patch
 aarch64_arm64_mkspecs.patch
 aarch64_arm64_qatomic_support.patch
+fix_libmng_test.patch
 
 # qt-copy patches
 0195-compositing-properties.diff
