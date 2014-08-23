@@ -1,4 +1,4 @@
-qt4-x11 (4:4.8.6+git60-g469dcff-1) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.6+git60-g469dcff+dfsg-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream snapshot.
