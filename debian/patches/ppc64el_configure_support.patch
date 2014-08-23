@@ -18,10 +18,9 @@ Some chunks were changed/removed on Debian:
 [2] http://launchpadlibrarian.net/162331250/qt4-x11_4:4.8.4+dfsg-0ubuntu22_4:4.8.5+git192-g085f851+dfsg-2ubuntu1.diff.gz
 [3] https://launchpad.net/ubuntu/+source/qt4-x11/+changelog
 
-diff -pruN a/configure b/configure
---- qt4-x11-4.8.6+dfsg.orig/configure	2014-03-17 13:53:25.000000000 +0000
-+++ qt4-x11-4.8.6+dfsg/configure	2014-03-17 13:55:46.000000000 +0000
-@@ -3277,7 +3280,7 @@ if [ -z "${CFG_HOST_ARCH}" ]; then
+--- a/configure
++++ b/configure
+@@ -3283,7 +3283,7 @@ if [ -z "${CFG_HOST_ARCH}" ]; then
          fi
          CFG_HOST_ARCH=powerpc
          ;;
