@@ -3,7 +3,7 @@ Origin: vendor, http://launchpadlibrarian.net/159898800/qt4-x11_4:4.8.4+dfsg-0ub
 Author: William Grant <wgrant@ubuntu.com>
 Author: Mauricio Faria de Oliveira <mauricfo@linux.vnet.ibm.com>
 Last-Update: 2014-08-22
-Forwarded: no
+Forwarded: https://codereview.qt-project.org/#/c/93060/
 
 This patch was originally introduced [1] and rebased [2] in Ubuntu Trusty [3].
 
