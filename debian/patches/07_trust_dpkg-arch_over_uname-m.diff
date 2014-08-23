@@ -8,7 +8,7 @@ Trolltech task ID : 181882
 
 --- a/configure
 +++ b/configure
-@@ -247,7 +247,50 @@ DeviceVar()
+@@ -247,7 +247,53 @@ DeviceVar()
  #-------------------------------------------------------------------------------
  
  # need that throughout the script
@@ -50,6 +50,9 @@ Trolltech task ID : 181882
 +	;;
 +	powerpc)
 +		UNAME_MACHINE="ppc"
++	;;
++	ppc64el)
++		UNAME_MACHINE="ppc64le"
 +	;;
 +	*)
 +		UNAME_MACHINE="$DPKG_ARCH"
