@@ -51,3 +51,4 @@ qt-everywhere-opensource-src-4.8.5-QTBUG-22829.patch
 qtdoc-build-offline-docs.patch
 remove_addsense.patch
 parisc-atomic.patch
+ppc64el_configure_support.patch
