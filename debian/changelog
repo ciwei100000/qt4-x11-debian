@@ -6,6 +6,9 @@ qt4-x11 (4:4.8.6+git49-gbc62005+dfsg-2) UNRELEASED; urgency=medium
   * Add support for arm64 (Closes: #735488).
     - Make arm64 use linux-g++ as platform_arg.
     - Fix arch detection.
+    - Add qatomic support. This patch is known to not be the most correct way
+      to implement them, as it seems to be possible to do it in a faster way,
+      but should work non the less until we can provide something better.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 15 Aug 2014 12:02:33 -0300
 

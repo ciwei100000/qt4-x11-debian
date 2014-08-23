@@ -161,6 +161,7 @@ usr/include/qt4/Qt/qalgorithms.h
 usr/include/qt4/Qt/qanimationgroup.h
 usr/include/qt4/Qt/qapplication.h
 usr/include/qt4/Qt/qatomic.h
+usr/include/qt4/Qt/qatomic_aarch64.h
 usr/include/qt4/Qt/qatomic_alpha.h
 usr/include/qt4/Qt/qatomic_arch.h
 usr/include/qt4/Qt/qatomic_arm.h
@@ -1345,6 +1346,7 @@ usr/include/qt4/QtCore/qabstracttransition.h
 usr/include/qt4/QtCore/qalgorithms.h
 usr/include/qt4/QtCore/qanimationgroup.h
 usr/include/qt4/QtCore/qatomic.h
+usr/include/qt4/QtCore/qatomic_aarch64.h
 usr/include/qt4/QtCore/qatomic_alpha.h
 usr/include/qt4/QtCore/qatomic_arch.h
 usr/include/qt4/QtCore/qatomic_arm.h
