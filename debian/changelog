@@ -13,6 +13,7 @@ qt4-x11 (4:4.8.6+git49-gbc62005+dfsg-2) UNRELEASED; urgency=medium
   * Add support for ppc64el (Closes: #749743).
     - Add ppc64el to 07_trust_dpkg-arch_over_uname-m.diff, as the uname output
       differs from the arch name.
+    - Add symbols changes for ppc64el. Thanks Mauricio Faria de Oliveira!
     - Add ppc64el_configure_support.patch to properly detect ppc64* in
       configure. Patch from Ubuntu's William Grant. Thanks William!
 

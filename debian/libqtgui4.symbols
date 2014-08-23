@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.6 alpha amd64 armel armhf hppa hurd-i386 i386 kfreebsd-i386 mips powerpc ppc64 s390x sparc64
+# SymbolsHelper-Confirmed: 4:4.8.6 alpha amd64 armel armhf hppa hurd-i386 i386 kfreebsd-i386 mips powerpc ppc64 ppc64el s390x sparc64
 libQtGui.so.4 libqtgui4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qDrawArrowP8QPainterN2Qt9ArrowTypeENS1_8GUIStyleEbiiiiRK8QPaletteb@Base 4:4.5.3
@@ -6137,7 +6137,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN24QStyleOptionGraphicsItemC1Ev@Base 4:4.5.3
  _ZN24QStyleOptionGraphicsItemC2Ei@Base 4:4.5.3
  _ZN24QStyleOptionGraphicsItemC2Ev@Base 4:4.5.3
- (arch=alpha)_ZN24QStyleOptionGraphicsItemaSERKS_@Base 4:4.8.6
+ (arch=alpha ppc64el)_ZN24QStyleOptionGraphicsItemaSERKS_@Base 4:4.8.6
  _ZN24QStyleOptionQ3DockWindowC1Ei@Base 4:4.5.3
  _ZN24QStyleOptionQ3DockWindowC1Ev@Base 4:4.5.3
  _ZN24QStyleOptionQ3DockWindowC2Ei@Base 4:4.5.3
@@ -11509,7 +11509,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK6QMovie9cacheModeEv@Base 4:4.5.3
  _ZNK6QMovie9frameRectEv@Base 4:4.5.3
  _ZNK6QMovie9loopCountEv@Base 4:4.5.3
- (optional=external|arch=alpha amd64 armel armhf hppa mipsel ppc64 s390x sparc sparc64)_ZNK6QRectF6toRectEv@Base 4:4.7.2
+ (optional=external|arch=alpha amd64 armel armhf hppa mipsel ppc64 ppc64el s390x sparc sparc64)_ZNK6QRectF6toRectEv@Base 4:4.7.2
  _ZNK6QSound10isFinishedEv@Base 4:4.5.3
  _ZNK6QSound10metaObjectEv@Base 4:4.5.3
  _ZNK6QSound14loopsRemainingEv@Base 4:4.5.3

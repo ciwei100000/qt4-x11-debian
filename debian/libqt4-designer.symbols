@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.6 alpha amd64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64 s390x sparc sparc64
+# SymbolsHelper-Confirmed: 4:4.8.6 alpha amd64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64 ppc64el s390x sparc sparc64
 libQtDesigner.so.4 libqt4-designer #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z20domPropertyToVariantP20QAbstractFormBuilderPK11QMetaObjectPK11DomProperty@Base 4:4.5.3
@@ -2313,7 +2313,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal|arch=armel powerpcspe)_ZN18qdesigner_internal29PropertySheetKeySequenceValueC2ERKS0_@Base 4:4.8.1
  (optional=internal)_ZN18qdesigner_internal29PropertySheetKeySequenceValueD1Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal29PropertySheetKeySequenceValueD2Ev@Base 4:4.7.4
- (optional=internal|arch=alpha amd64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64 s390x sparc64)_ZN18qdesigner_internal29PropertySheetKeySequenceValueaSERKS0_@Base 4:4.8.4
+ (optional=internal|arch=alpha amd64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64 ppc64el s390x sparc64)_ZN18qdesigner_internal29PropertySheetKeySequenceValueaSERKS0_@Base 4:4.8.4
  (optional=internal)_ZN18qdesigner_internal30DeleteStackedWidgetPageCommand4initEP14QStackedWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal30DeleteStackedWidgetPageCommand4redoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal30DeleteStackedWidgetPageCommand4undoEv@Base 4:4.5.3
@@ -3154,7 +3154,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN7DomTimeC2Ev@Base 4:4.5.3
  _ZN7DomTimeD1Ev@Base 4:4.5.3
  _ZN7DomTimeD2Ev@Base 4:4.5.3
- (optional=external|arch=alpha armhf mips mipsel powerpc powerpcspe ppc64 s390x)_ZN7QString5clearEv@Base 4:4.8.1
+ (optional=external|arch=alpha armhf mips mipsel powerpc powerpcspe ppc64 ppc64el s390x)_ZN7QString5clearEv@Base 4:4.8.1
  _ZN8DomBrush15setElementColorEP8DomColor@Base 4:4.5.3
  _ZN8DomBrush16takeElementColorEv@Base 4:4.5.3
  _ZN8DomBrush17setElementTextureEP11DomProperty@Base 4:4.5.3
@@ -4696,8 +4696,8 @@ libQtDesignerComponents.so.4 libqt4-designer #MINVER#
  _ZN19QDesignerComponents20createResourceEditorEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  _ZN19QDesignerComponents21createObjectInspectorEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  _ZN19QDesignerComponents22createSignalSlotEditorEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
- (optional=gccinternal|arch=alpha amd64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64 s390x sparc64)_ZN20QStyleOptionViewItemD1Ev@Base 4:4.8.4
- (optional=gccinternal|arch=alpha amd64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64 s390x sparc64)_ZN20QStyleOptionViewItemD2Ev@Base 4:4.8.4
+ (optional=gccinternal|arch=alpha amd64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64 ppc64el s390x sparc64)_ZN20QStyleOptionViewItemD1Ev@Base 4:4.8.4
+ (optional=gccinternal|arch=alpha amd64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64 ppc64el s390x sparc64)_ZN20QStyleOptionViewItemD2Ev@Base 4:4.8.4
  (optional=gccinternal|arch=sparc)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.8.6
  (optional=gccinternal|arch=sparc)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.8.6
  (optional=gccinternal|arch=sparc)_ZN22QStyleOptionViewItemV3D1Ev@Base 4:4.8.6
@@ -4713,4 +4713,4 @@ libQtDesignerComponents.so.4 libqt4-designer #MINVER#
  _ZTI22QItemEditorCreatorBase@Base 4:4.5.3
  _ZTS22QItemEditorCreatorBase@Base 4:4.5.3
  _ZTV22QItemEditorCreatorBase@Base 4:4.5.3
- (optional=external|arch=alpha armhf hurd-i386 i386 kfreebsd-i386 mips mipsel powerpc powerpcspe ppc64 s390x)_ZeqRK6QRectFS1_@Base 4:4.8.1
+ (optional=external|arch=alpha armhf hurd-i386 i386 kfreebsd-i386 mips mipsel powerpc powerpcspe ppc64 ppc64el s390x)_ZeqRK6QRectFS1_@Base 4:4.8.1
