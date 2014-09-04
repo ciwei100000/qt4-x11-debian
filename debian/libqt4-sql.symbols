@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.6 amd64 kfreebsd-amd64 mipsel powerpc
+# SymbolsHelper-Confirmed: 4:4.8.6 alpha amd64 arm64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mips64el mipsel powerpc ppc64 ppc64el s390x sparc64
 libQtSql.so.4 libqt4-sql #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN10QSqlDriver11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -209,9 +209,6 @@ libQtSql.so.4 libqt4-sql #MINVER#
  _ZN25QAbstractItemModelPrivateD0Ev@Base 4:4.7.4
  _ZN25QAbstractItemModelPrivateD1Ev@Base 4:4.7.4
  _ZN25QAbstractItemModelPrivateD2Ev@Base 4:4.7.4
- (arch=!amd64)_ZN26QSqlDriverFactoryInterfaceD0Ev@Base 4:4.8.6
- (arch=!amd64)_ZN26QSqlDriverFactoryInterfaceD1Ev@Base 4:4.8.6
- (arch=!amd64)_ZN26QSqlDriverFactoryInterfaceD2Ev@Base 4:4.8.6
  _ZN9QSqlError13setDriverTextERK7QString@Base 4:4.5.3
  _ZN9QSqlError15setDatabaseTextERK7QString@Base 4:4.5.3
  _ZN9QSqlError7setTypeENS_9ErrorTypeE@Base 4:4.5.3
