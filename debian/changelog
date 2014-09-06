@@ -1,3 +1,7 @@
+qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-3) UNRELEASED; urgency=medium
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 06 Sep 2014 19:50:03 -0300
+
 qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-2) unstable; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
