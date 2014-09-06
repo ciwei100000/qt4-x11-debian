@@ -188,11 +188,13 @@ override_dh_auto_clean:
 
 	# Misc. files
 	rm -fv \
+	  .qmake.vars \
 	  config.status \
 	  config.tests/.qmake.cache \
 	  examples/dbus/*/Makefile.* \
 	  mkspecs/qconfig.pri \
 	  src/corelib/global/qconfig.* \
+	  src/tools/uic/qclass_lib_map.h \
 	;
 
 	# Misc. directories
