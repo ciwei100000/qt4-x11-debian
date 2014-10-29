@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.6 alpha amd64 arm64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mips64el mipsel powerpc ppc64 ppc64el s390x sparc64
+# SymbolsHelper-Confirmed: 4:4.8.6+git64-g5dc8b2b+dfsg amd64
 libQtGui.so.4 libqtgui4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qDrawArrowP8QPainterN2Qt9ArrowTypeENS1_8GUIStyleEbiiiiRK8QPaletteb@Base 4:4.5.3
@@ -3483,6 +3483,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN14QWidgetPrivate18_q_showIfNotHiddenEv@Base 4:4.5.3
  _ZN14QWidgetPrivate18setConstraints_sysEv@Base 4:4.5.3
  _ZN14QWidgetPrivate18setWindowTitle_sysERK7QString@Base 4:4.5.3
+ _ZN14QWidgetPrivate19registerTouchWindowEv@Base 4:4.8.6+git64-g5dc8b2b+dfsg
  _ZN14QWidgetPrivate19setNetWmWindowTypesEv@Base 4:4.5.3
  _ZN14QWidgetPrivate19updateIsTranslucentEv@Base 4:4.5.3
  _ZN14QWidgetPrivate20reparentFocusWidgetsEP7QWidget@Base 4:4.5.3
@@ -5043,6 +5044,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN19QApplicationPrivate21cleanupMultitouch_sysEv@Base 4:4.6.1
  _ZN19QApplicationPrivate21createEventDispatcherEv@Base 4:4.5.3
  _ZN19QApplicationPrivate21obey_desktop_settingsE@Base 4:4.5.3
+ _ZN19QApplicationPrivate21x11GetTouchDeviceInfoEv@Base 4:4.8.6+git64-g5dc8b2b+dfsg
  _ZN19QApplicationPrivate22quitOnLastWindowClosedE@Base 4:4.5.3
  _ZN19QApplicationPrivate22reset_instance_pointerEv@Base 4:4.5.3
  _ZN19QApplicationPrivate22translateRawTouchEventEP7QWidgetN11QTouchEvent10DeviceTypeERK5QListINS2_10TouchPointEE@Base 4:4.6.1
@@ -6030,6 +6032,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN24QAbstractPageSetupDialogD0Ev@Base 4:4.5.3
  _ZN24QAbstractPageSetupDialogD1Ev@Base 4:4.5.3
  _ZN24QAbstractPageSetupDialogD2Ev@Base 4:4.5.3
+ _ZN24QAccessibleTextInterface22textAtOffsetFromStringEiN12QAccessible212BoundaryTypeEPiS2_RK7QString@Base 4:4.8.6+git64-g5dc8b2b+dfsg
+ _ZN24QAccessibleTextInterface25textAfterOffsetFromStringEiN12QAccessible212BoundaryTypeEPiS2_RK7QString@Base 4:4.8.6+git64-g5dc8b2b+dfsg
+ _ZN24QAccessibleTextInterface26textBeforeOffsetFromStringEiN12QAccessible212BoundaryTypeEPiS2_RK7QString@Base 4:4.8.6+git64-g5dc8b2b+dfsg
  _ZN24QGraphicsSceneHoverEvent10setLastPosERK7QPointF@Base 4:4.5.3
  _ZN24QGraphicsSceneHoverEvent11setScenePosERK7QPointF@Base 4:4.5.3
  _ZN24QGraphicsSceneHoverEvent12setModifiersE6QFlagsIN2Qt16KeyboardModifierEE@Base 4:4.5.3
@@ -6194,6 +6199,12 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN26QAbstractScrollAreaPrivateD0Ev@Base 4:4.7.4
  _ZN26QAbstractScrollAreaPrivateD1Ev@Base 4:4.7.4
  _ZN26QAbstractScrollAreaPrivateD2Ev@Base 4:4.7.4
+ _ZN26QAbstractSystemTrayIconSys13sendActivatedEN15QSystemTrayIcon16ActivationReasonE@Base 4:4.8.6+git64-g5dc8b2b+dfsg
+ _ZN26QAbstractSystemTrayIconSysC1EP15QSystemTrayIcon@Base 4:4.8.6+git64-g5dc8b2b+dfsg
+ _ZN26QAbstractSystemTrayIconSysC2EP15QSystemTrayIcon@Base 4:4.8.6+git64-g5dc8b2b+dfsg
+ _ZN26QAbstractSystemTrayIconSysD0Ev@Base 4:4.8.6+git64-g5dc8b2b+dfsg
+ _ZN26QAbstractSystemTrayIconSysD1Ev@Base 4:4.8.6+git64-g5dc8b2b+dfsg
+ _ZN26QAbstractSystemTrayIconSysD2Ev@Base 4:4.8.6+git64-g5dc8b2b+dfsg
  _ZN26QAbstractTransitionPrivateD0Ev@Base 4:4.7.4
  _ZN26QAbstractTransitionPrivateD1Ev@Base 4:4.7.4
  _ZN26QAbstractTransitionPrivateD2Ev@Base 4:4.7.4
@@ -6283,6 +6294,12 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN31QAbstractEventDispatcherPrivateD0Ev@Base 4:4.7.4
  _ZN31QAbstractEventDispatcherPrivateD1Ev@Base 4:4.7.4
  _ZN31QAbstractEventDispatcherPrivateD2Ev@Base 4:4.7.4
+ _ZN34QSystemTrayIconSysFactoryInterface11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.8.6+git64-g5dc8b2b+dfsg
+ _ZN34QSystemTrayIconSysFactoryInterface11qt_metacastEPKc@Base 4:4.8.6+git64-g5dc8b2b+dfsg
+ _ZN34QSystemTrayIconSysFactoryInterface16availableChangedEb@Base 4:4.8.6+git64-g5dc8b2b+dfsg
+ _ZN34QSystemTrayIconSysFactoryInterface16staticMetaObjectE@Base 4:4.8.6+git64-g5dc8b2b+dfsg
+ _ZN34QSystemTrayIconSysFactoryInterfaceC1Ev@Base 4:4.8.6+git64-g5dc8b2b+dfsg
+ _ZN34QSystemTrayIconSysFactoryInterfaceC2Ev@Base 4:4.8.6+git64-g5dc8b2b+dfsg
  _ZN38QAccessibleSimpleEditableTextInterface10deleteTextEii@Base 4:4.5.3
  _ZN38QAccessibleSimpleEditableTextInterface10insertTextEiRK7QString@Base 4:4.5.3
  _ZN38QAccessibleSimpleEditableTextInterface11replaceTextEiiRK7QString@Base 4:4.5.3
@@ -11201,6 +11218,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK30QGraphicsSceneContextMenuEvent8scenePosEv@Base 4:4.5.3
  _ZNK30QGraphicsSceneContextMenuEvent9modifiersEv@Base 4:4.5.3
  _ZNK30QGraphicsSceneContextMenuEvent9screenPosEv@Base 4:4.5.3
+ _ZNK34QSystemTrayIconSysFactoryInterface10metaObjectEv@Base 4:4.8.6+git64-g5dc8b2b+dfsg
  _ZNK4QCss13StyleSelector14nodeNameEqualsENS0_7NodePtrERK7QString@Base 4:4.5.3
  _ZNK4QCss13StyleSelector7nodeIdsENS0_7NodePtrE@Base 4:4.5.3
  _ZNK4QCss5Value8toStringEv@Base 4:4.5.3
@@ -12640,6 +12658,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTI25QGraphicsSceneResizeEvent@Base 4:4.5.3
  _ZTI26QAbstractGraphicsShapeItem@Base 4:4.5.3
  _ZTI26QAbstractScrollAreaPrivate@Base 4:4.7.0~beta1
+ _ZTI26QAbstractSystemTrayIconSys@Base 4:4.8.6+git64-g5dc8b2b+dfsg
  _ZTI27QAbstractTextDocumentLayout@Base 4:4.5.3
  _ZTI27QAccessibleFactoryInterface@Base 4:4.5.3
  _ZTI27QEventDispatcherGlibPrivate@Base 4:4.5.3
@@ -12653,6 +12672,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTI31QImageIOHandlerFactoryInterface@Base 4:4.5.3
  _ZTI32QAccessibleEditableTextInterface@Base 4:4.5.3
  _ZTI33QAccessibleBridgeFactoryInterface@Base 4:4.5.3
+ _ZTI34QSystemTrayIconSysFactoryInterface@Base 4:4.8.6+git64-g5dc8b2b+dfsg
  _ZTI38QAccessibleSimpleEditableTextInterface@Base 4:4.5.3
  _ZTI5QDial@Base 4:4.5.3
  _ZTI5QDrag@Base 4:4.5.3
@@ -12974,6 +12994,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTS25QGraphicsSceneResizeEvent@Base 4:4.5.3
  _ZTS26QAbstractGraphicsShapeItem@Base 4:4.5.3
  _ZTS26QAbstractScrollAreaPrivate@Base 4:4.7.0~beta1
+ _ZTS26QAbstractSystemTrayIconSys@Base 4:4.8.6+git64-g5dc8b2b+dfsg
  _ZTS27QAbstractTextDocumentLayout@Base 4:4.5.3
  _ZTS27QAccessibleFactoryInterface@Base 4:4.5.3
  _ZTS27QEventDispatcherGlibPrivate@Base 4:4.5.3
@@ -12987,6 +13008,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTS31QImageIOHandlerFactoryInterface@Base 4:4.5.3
  _ZTS32QAccessibleEditableTextInterface@Base 4:4.5.3
  _ZTS33QAccessibleBridgeFactoryInterface@Base 4:4.5.3
+ _ZTS34QSystemTrayIconSysFactoryInterface@Base 4:4.8.6+git64-g5dc8b2b+dfsg
  _ZTS38QAccessibleSimpleEditableTextInterface@Base 4:4.5.3
  _ZTS5QDial@Base 4:4.5.3
  _ZTS5QDrag@Base 4:4.5.3
@@ -13305,6 +13327,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV25QGraphicsSceneResizeEvent@Base 4:4.5.3
  _ZTV26QAbstractGraphicsShapeItem@Base 4:4.5.3
  _ZTV26QAbstractScrollAreaPrivate@Base 4:4.7.0~beta1
+ _ZTV26QAbstractSystemTrayIconSys@Base 4:4.8.6+git64-g5dc8b2b+dfsg
  _ZTV27QAbstractTextDocumentLayout@Base 4:4.5.3
  _ZTV27QAccessibleFactoryInterface@Base 4:4.5.3
  _ZTV27QEventDispatcherGlibPrivate@Base 4:4.5.3
@@ -13318,6 +13341,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV31QImageIOHandlerFactoryInterface@Base 4:4.5.3
  _ZTV32QAccessibleEditableTextInterface@Base 4:4.5.3
  _ZTV33QAccessibleBridgeFactoryInterface@Base 4:4.5.3
+ _ZTV34QSystemTrayIconSysFactoryInterface@Base 4:4.8.6+git64-g5dc8b2b+dfsg
  _ZTV38QAccessibleSimpleEditableTextInterface@Base 4:4.5.3
  _ZTV5QDial@Base 4:4.5.3
  _ZTV5QDrag@Base 4:4.5.3

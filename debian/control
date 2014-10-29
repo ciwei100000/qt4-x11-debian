@@ -1,7 +1,7 @@
 Source: qt4-x11
 Section: libs
 Priority: optional
-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Fathi Boudra <fabo@debian.org>,
            Modestas Vainius <modax@debian.org>,
            Sune Vuorela <debian@pusling.com>,
@@ -10,7 +10,6 @@ Uploaders: Fathi Boudra <fabo@debian.org>,
            Timo Jyrinki <timo@debian.org>
 Build-Depends: debhelper (>= 9),
                dpkg-dev (>= 1.16.1),
-               firebird-dev [amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sh4 sparc],
                flex,
                freetds-dev,
                libasound2-dev [linux-any],
@@ -18,9 +17,10 @@ Build-Depends: debhelper (>= 9),
                libcups2-dev,
                libdbus-1-dev,
                libfreetype6-dev,
-               libgl1-mesa-dev,
+               libgl1-mesa-dev [!armel !armhf],
+               libgles2-mesa-dev [armel armhf],
                libglib2.0-dev,
-               libglu1-mesa-dev,
+               libglu1-mesa-dev [!armel !armhf],
                libgtk2.0-dev,
                libice-dev,
                libicu-dev,
@@ -32,7 +32,6 @@ Build-Depends: debhelper (>= 9),
                libpq-dev,
                libreadline-dev,
                libsm-dev,
-               libsqlite0-dev,
                libsqlite3-dev,
                libssl-dev,
                libtiff-dev,
@@ -190,7 +189,7 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Recommends: libqt4-sql-mysql | libqt4-sql-odbc | libqt4-sql-psql | libqt4-sql-sqlite | libqt4-sql-sqlite2 | libqt4-sql-ibase [amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sh4 sparc]
+Recommends: libqt4-sql-mysql | libqt4-sql-odbc | libqt4-sql-psql | libqt4-sql-sqlite
 Suggests: libqt4-dev
 Description: Qt 4 SQL module
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -201,18 +200,6 @@ Description: Qt 4 SQL module
  .
  If you wish to use the SQL module for development, you should install the
  libqt4-dev package.
-
-Package: libqt4-sql-ibase
-Architecture: amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sh4 sparc
-Multi-Arch: same
-Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Suggests: libqt4-dev
-Description: Qt 4 InterBase/FireBird database driver
- This package contains the InterBase/FireBird plugin for Qt 4.
- .
- Install it if you intend to use or write Qt programs that are to access an
- InterBase/FireBird DB.
 
 Package: libqt4-sql-mysql
 Architecture: any
@@ -261,18 +248,6 @@ Description: Qt 4 SQLite 3 database driver
  .
  Install it if you intend to use or write Qt programs that are to access an
  SQLite 3 DB.
-
-Package: libqt4-sql-sqlite2
-Architecture: any
-Multi-Arch: same
-Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Suggests: libqt4-dev
-Description: Qt 4 SQLite 2 database driver
- This package contains the SQLite 2 plugin for Qt 4.
- .
- Install it if you intend to use or write Qt programs that are to access an
- SQLite 2 DB.
 
 Package: libqt4-sql-tds
 Architecture: any
@@ -353,9 +328,6 @@ Description: Qt 4 D-Bus module
  Applications using the QtDBus module can provide services to other, remote
  applications by exporting objects, as well as use services exported by those
  applications by placing calls and accessing properties.
- .
- This package depends on qdbus and libqtdbus4 to break their circular dependency
- and allow easy updates from Squeeze to Wheezy.
 
 Package: libqtdbus4
 Architecture: any
@@ -438,23 +410,6 @@ Description: Qt 4 test module
  .
  The QtTest module provides classes for unit testing Qt applications and
  libraries.
-
-Package: libqt4-phonon
-Architecture: any
-Multi-Arch: same
-Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Conflicts: libphonon4
-Description: Qt 4 Phonon module
- Qt is a cross-platform C++ application framework. Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- The Qt Phonon module provides a cross-platform multimedia framework that
- enables the use of audio and video content in Qt applications.
- .
- The sole purpose of this package to provide Phonon libraries until libphonon4
- is built from the phonon source package. Therefore it's only useful when
- bootstraping new architectures or rebuilding the whole archive from scratch.
 
 Package: libqt4-declarative
 Architecture: any
@@ -587,8 +542,9 @@ Description: Qt 4 private development files
 Package: libqt4-opengl-dev
 Architecture: any
 Section: libdevel
-Depends: libgl1-mesa-dev | libgl-dev,
-         libglu1-mesa-dev,
+Depends: libgl1-mesa-dev [!armel !armhf],
+         libgles2-mesa-dev [armel armhf],
+         libglu1-mesa-dev [!armel !armhf],
          libqt4-dev (= ${binary:Version}),
          libqt4-opengl (= ${binary:Version}),
          ${misc:Depends}

@@ -5,3 +5,4 @@ usr/lib/*/qt4/plugins/codecs/*.so
 usr/lib/*/qtchooser/4.conf
 usr/lib/*/qtchooser/qt4.conf
 usr/share/qtchooser/qt4-*.conf
+debian/Trolltech.conf etc/xdg/

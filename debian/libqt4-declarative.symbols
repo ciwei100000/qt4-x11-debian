@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.6 alpha amd64 arm64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mips64el mipsel powerpc ppc64 ppc64el s390x sparc64
+# SymbolsHelper-Confirmed: 4:4.8.6+git64-g5dc8b2b+dfsg amd64
 libQtDeclarative.so.4 libqt4-declarative #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qmlContextPK7QObject@Base 4:4.7.0~beta1
@@ -82,6 +82,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN16QDeclarativeItem16setKeepMouseGrabEb@Base 4:4.7.0~beta1
  _ZN16QDeclarativeItem16staticMetaObjectE@Base 4:4.7.0~beta1
  _ZN16QDeclarativeItem17componentCompleteEv@Base 4:4.7.0~beta1
+ _ZN16QDeclarativeItem17setAccessibleRoleEN11QAccessible4RoleE@Base 4:4.8.6+git64-g5dc8b2b+dfsg
  (subst)_ZN16QDeclarativeItem17setBaselineOffsetE{qreal}@Base 4:4.7.0~beta1
  (subst)_ZN16QDeclarativeItem17setImplicitHeightE{qreal}@Base 4:4.7.0~beta1
  _ZN16QDeclarativeItem18activeFocusChangedEb@Base 4:4.7.0~rc1
@@ -878,6 +879,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN23QDeclarativeItemPrivate21implicitHeightChangedEv@Base 4:4.7.4
  _ZN23QDeclarativeItemPrivate23setImplicitLayoutMirrorEbb@Base 4:4.7.4
  _ZN23QDeclarativeItemPrivate24removeItemChangeListenerEP30QDeclarativeItemChangeListener6QFlagsINS_10ChangeTypeEE@Base 4:4.7.0~beta1
+ _ZN23QDeclarativeItemPrivate28setAccessibleFlagAndListenerEv@Base 4:4.8.6+git64-g5dc8b2b+dfsg
  _ZN23QDeclarativeItemPrivate4dataEv@Base 4:4.7.0~beta2
  _ZN23QDeclarativeItemPrivate5startER13QElapsedTimer@Base 4:4.7.0~beta2
  _ZN23QDeclarativeItemPrivate6statesEv@Base 4:4.7.0~beta1
@@ -1279,6 +1281,18 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN29QDeclarativeDebugEnginesQueryD0Ev@Base 4:4.7.0~beta1
  _ZN29QDeclarativeDebugEnginesQueryD1Ev@Base 4:4.7.0~beta1
  _ZN29QDeclarativeDebugEnginesQueryD2Ev@Base 4:4.7.0~beta1
+ _ZN30QDeclarativeAccessibleAttached11nameChangedEv@Base 4:4.8.6+git64-g5dc8b2b+dfsg
+ _ZN30QDeclarativeAccessibleAttached11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.8.6+git64-g5dc8b2b+dfsg
+ _ZN30QDeclarativeAccessibleAttached11qt_metacastEPKc@Base 4:4.8.6+git64-g5dc8b2b+dfsg
+ _ZN30QDeclarativeAccessibleAttached11roleChangedEv@Base 4:4.8.6+git64-g5dc8b2b+dfsg
+ _ZN30QDeclarativeAccessibleAttached16staticMetaObjectE@Base 4:4.8.6+git64-g5dc8b2b+dfsg
+ _ZN30QDeclarativeAccessibleAttached18descriptionChangedEv@Base 4:4.8.6+git64-g5dc8b2b+dfsg
+ _ZN30QDeclarativeAccessibleAttached21qmlAttachedPropertiesEP7QObject@Base 4:4.8.6+git64-g5dc8b2b+dfsg
+ _ZN30QDeclarativeAccessibleAttachedC1EP7QObject@Base 4:4.8.6+git64-g5dc8b2b+dfsg
+ _ZN30QDeclarativeAccessibleAttachedC2EP7QObject@Base 4:4.8.6+git64-g5dc8b2b+dfsg
+ _ZN30QDeclarativeAccessibleAttachedD0Ev@Base 4:4.8.6+git64-g5dc8b2b+dfsg
+ _ZN30QDeclarativeAccessibleAttachedD1Ev@Base 4:4.8.6+git64-g5dc8b2b+dfsg
+ _ZN30QDeclarativeAccessibleAttachedD2Ev@Base 4:4.8.6+git64-g5dc8b2b+dfsg
  _ZN30QDeclarativeDebugFileReference13setLineNumberEi@Base 4:4.7.0~beta1
  _ZN30QDeclarativeDebugFileReference15setColumnNumberEi@Base 4:4.7.0~beta1
  _ZN30QDeclarativeDebugFileReference6setUrlERK4QUrl@Base 4:4.7.0~beta1
@@ -1423,6 +1437,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZNK16QDeclarativeItem12boundingRectEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeItem13implicitWidthEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeItem13keepMouseGrabEv@Base 4:4.7.0~beta1
+ _ZNK16QDeclarativeItem14accessibleRoleEv@Base 4:4.8.6+git64-g5dc8b2b+dfsg
  _ZNK16QDeclarativeItem14baselineOffsetEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeItem14hasActiveFocusEv@Base 4:4.7.0~rc1
  _ZNK16QDeclarativeItem14implicitHeightEv@Base 4:4.7.0~beta1
@@ -1493,6 +1508,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZNK16QDeclarativeView10rootObjectEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeView11initialSizeEv@Base 4:4.7.0~beta2
  _ZNK16QDeclarativeView11rootContextEv@Base 4:4.7.0~rc1
+ _ZNK16QDeclarativeView18accessibleRootItemEv@Base 4:4.8.6+git64-g5dc8b2b+dfsg
  _ZNK16QDeclarativeView6engineEv@Base 4:4.7.0~rc1
  _ZNK16QDeclarativeView6errorsEv@Base 4:4.7.0~beta1
  _ZNK16QDeclarativeView6sourceEv@Base 4:4.7.0~beta1
@@ -1897,6 +1913,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZNK29QDeclarativeAbstractAnimation9isRunningEv@Base 4:4.7.1
  _ZNK29QDeclarativeDebugEnginesQuery10metaObjectEv@Base 4:4.7.0~beta1
  _ZNK29QDeclarativeDebugEnginesQuery7enginesEv@Base 4:4.7.0~beta1
+ _ZNK30QDeclarativeAccessibleAttached10metaObjectEv@Base 4:4.8.6+git64-g5dc8b2b+dfsg
  _ZNK30QDeclarativeDebugFileReference10lineNumberEv@Base 4:4.7.0~beta1
  _ZNK30QDeclarativeDebugFileReference12columnNumberEv@Base 4:4.7.0~beta1
  _ZNK30QDeclarativeDebugFileReference3urlEv@Base 4:4.7.0~beta1
@@ -2009,6 +2026,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZTI28QDeclarativeInspectorService@Base 4:4.8.0
  _ZTI29QDeclarativeAbstractAnimation@Base 4:4.7.1
  _ZTI29QDeclarativeDebugEnginesQuery@Base 4:4.7.0~beta1
+ _ZTI30QDeclarativeAccessibleAttached@Base 4:4.8.6+git64-g5dc8b2b+dfsg
  _ZTI30QDeclarativeDebugPropertyWatch@Base 4:4.7.0~beta1
  _ZTI30QDeclarativeExtensionInterface@Base 4:4.7.0~beta1
  _ZTI30QDeclarativeOpenMetaObjectType@Base 4:4.7.0~beta1
@@ -2078,6 +2096,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZTS28QDeclarativeInspectorService@Base 4:4.8.0
  _ZTS29QDeclarativeAbstractAnimation@Base 4:4.7.1
  _ZTS29QDeclarativeDebugEnginesQuery@Base 4:4.7.0~beta1
+ _ZTS30QDeclarativeAccessibleAttached@Base 4:4.8.6+git64-g5dc8b2b+dfsg
  _ZTS30QDeclarativeDebugPropertyWatch@Base 4:4.7.0~beta1
  _ZTS30QDeclarativeExtensionInterface@Base 4:4.7.0~beta1
  _ZTS30QDeclarativeOpenMetaObjectType@Base 4:4.7.0~beta1
@@ -2145,6 +2164,7 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZTV28QDeclarativeInspectorService@Base 4:4.8.0
  _ZTV29QDeclarativeAbstractAnimation@Base 4:4.7.1
  _ZTV29QDeclarativeDebugEnginesQuery@Base 4:4.7.0~beta1
+ _ZTV30QDeclarativeAccessibleAttached@Base 4:4.8.6+git64-g5dc8b2b+dfsg
  _ZTV30QDeclarativeDebugPropertyWatch@Base 4:4.7.0~beta1
  _ZTV30QDeclarativeExtensionInterface@Base 4:4.7.0~beta1
  _ZTV30QDeclarativeOpenMetaObjectType@Base 4:4.7.0~beta1

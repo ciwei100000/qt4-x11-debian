@@ -1,3 +1,44 @@
+qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-3~ubuntu1) vivid; urgency=medium
+
+  * Merge with Debian git, remaining changes:
+    - Pass list-missing to dh_install instead of fail-missing, since we don't
+      install the QtWebkit headers
+    - Make sure libqt4-opengl-dev depends on gles libs for armel and armhf
+    - Do not package ibase/firebird and sqlite2 package
+      + remove from debian/control
+      + libqt4-sql doesn't recommend libqt4-sql-ibase and libqt4-sql-sqlite2
+    - Build QtWebkit and use it only for QtAssistant
+      + Rule to put qt_webkit_version.pri in mkspecs/modules
+      + Rule to remove libQtWebKit* after build
+      + Exclude bin/assistant from dh_shlibdeps
+    - Also exclude webkit examples from dh_shlibdeps
+    - Do not build libqt4-phonon, disable in debian/control
+    - Add debian/Trolltech.conf and install it in libqtcore4.install
+    - On armel and armhf, build with -gstabs instead of -g in an effort to get
+      the link step for QtWebkit to complete before timed out by the builders
+    - Build with -no-neon on armel and armhf
+    - Build with -no-javascript-jit on arm64
+    - Add patches:
+      + kubuntu_10_ibus_input_method.diff
+      + kubuntu_12_fix_stack_protector.diff
+      + kubuntu_14_systemtrayicon.diff
+      + kubuntu_17_enable_qtwebkit_for_qtassistant.diff
+      + kubuntu_28_xi2.1.patch
+      + kubuntu_30_translucent_drag_pixmap.diff
+      + kubuntu_31_unity_workarea_atom.diff
+      + kubuntu_37_cups_settings.diff
+      + kubuntu_39_fix_medium_font.diff
+      + kubuntu_40_disable_neon.patch
+      + kubuntu_93_disable_overlay_scrollbars.diff
+      + kubuntu_94_xinput_valuators_fix.diff
+      + kubuntu_95_qt_disable_bounce.diff
+      + kubuntu_97_a11y_qt_and_qml_backport.diff
+      + kubuntu_98_a11y_fix_crash.diff
+      + kubuntu_glib-honor-ExcludeSocketNotifiers-flag.diff
+    - Drop powerpc_designer_gstabs.diff, it breaks powerpc
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 29 Oct 2014 16:20:32 +0100
+
 qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-3) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
@@ -42,6 +83,51 @@ qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-1) unstable; urgency=medium
 
  -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sat, 23 Aug 2014 16:09:14 -0300
 
+qt4-x11 (4:4.8.6+git49-gbc62005+dfsg-1ubuntu1) utopic; urgency=medium
+
+  * Merge from Debian unstable.  Remaining changes:
+    - Pass list-missing to dh_install instead of fail-missing, since we don't
+      install the QtWebkit headers
+    - Make sure libqt4-opengl-dev depends on gles libs for armel and armhf
+    - Do not package ibase/firebird and sqlite2 package
+      + remove from debian/control
+      + libqt4-sql doesn't recommend libqt4-sql-ibase and libqt4-sql-sqlite2
+    - Build QtWebkit and use it only for QtAssistant
+      + Rule to put qt_webkit_version.pri in mkspecs/modules
+      + Rule to remove libQtWebKit* after build
+      + Exclude usr/bin/assistant-qt4 from dh_shlibdeps
+    - Also exclude webkit examples from dh_shlibdeps
+    - Do not build libqt4-phonon, disable in debian/control
+    - Add debian/Trolltech.conf and install it in libqtcore4.install
+    - On armel and armhf, build with -gstabs instead of -g in an effort to get
+      the link step for QtWebkit to complete before timed out by the builders
+    - Build with -no-neon on armel and armhf
+    - Build with -no-javascript-jit on arm64
+    - Install qatomic_aarch64.h
+    - Add patches:
+      + kubuntu_10_ibus_input_method.diff
+      + kubuntu_12_fix_stack_protector.diff
+      + kubuntu_14_systemtrayicon.diff
+      + kubuntu_17_enable_qtwebkit_for_qtassistant.diff
+      + kubuntu_28_xi2.1.patch
+      + kubuntu_30_translucent_drag_pixmap.diff
+      + kubuntu_31_unity_workarea_atom.diff
+      + kubuntu_37_cups_settings.diff
+      + kubuntu_39_fix_medium_font.diff
+      + kubuntu_40_disable_neon.patch
+      + kubuntu_93_disable_overlay_scrollbars.diff
+      + kubuntu_94_xinput_valuators_fix.diff
+      + kubuntu_95_qt_disable_bounce.diff
+      + kubuntu_97_a11y_qt_and_qml_backport.diff
+      + kubuntu_98_a11y_fix_crash.diff
+      + kubuntu_glib-honor-ExcludeSocketNotifiers-flag.diff
+      + aarch64.patch
+      + ppc64el.patch
+    - Drop powerpc_designer_gstabs.diff, it breaks powerpc
+    - Use Kubuntu Vcs fields
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Sat, 26 Jul 2014 11:44:27 +0400
+
 qt4-x11 (4:4.8.6+git49-gbc62005+dfsg-1) unstable; urgency=medium
 
   * New upstream GIT snapshot.
@@ -69,6 +155,63 @@ qt4-x11 (4:4.8.6+dfsg-2) unstable; urgency=medium
     partly solving #749743.
 
  -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 16 Jun 2014 10:10:58 -0300
+
+qt4-x11 (4:4.8.6+dfsg-1ubuntu2) utopic; urgency=medium
+
+  * Add arm64 to no_pch_architectures, should fix FTBFS.
+    See LP #1318635 for details.
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Mon, 12 May 2014 18:06:34 +0400
+
+qt4-x11 (4:4.8.6+dfsg-1ubuntu1) utopic; urgency=low
+
+  * Merge from Debian unstable.  Remaining changes:
+    - Pass list-missing to dh_install instead of fail-missing, since we don't
+      install the QtWebkit headers
+    - Make sure libqt4-opengl-dev depends on gles libs for armel and armhf
+    - Do not package ibase/firebird and sqlite2 package
+      + remove from debian/control
+      + libqt4-sql doesn't recommend libqt4-sql-ibase and libqt4-sql-sqlite2
+    - Build QtWebkit and use it only for QtAssistant
+      + Rule to put qt_webkit_version.pri in mkspecs/modules
+      + Rule to remove libQtWebKit* after build
+      + Exclude usr/bin/assistant-qt4 from dh_shlibdeps
+    - Also exclude webkit examples from dh_shlibdeps
+    - Do not build libqt4-phonon, disable in debian/control
+    - Add debian/Trolltech.conf and install it in libqtcore4.install
+    - On armel and armhf, build with -gstabs instead of -g in an effort to get
+      the link step for QtWebkit to complete before timed out by the builders
+    - Build with -no-neon on armel and armhf
+    - Build with -no-javascript-jit on arm64
+    - Install qatomic_aarch64.h
+    - Add patches:
+      + kubuntu_10_ibus_input_method.diff
+      + kubuntu_12_fix_stack_protector.diff
+      + kubuntu_14_systemtrayicon.diff
+      + kubuntu_17_enable_qtwebkit_for_qtassistant.diff
+      + kubuntu_28_xi2.1.patch
+      + kubuntu_30_translucent_drag_pixmap.diff
+      + kubuntu_31_unity_workarea_atom.diff
+      + kubuntu_37_cups_settings.diff
+      + kubuntu_39_fix_medium_font.diff
+      + kubuntu_40_disable_neon.patch
+      + kubuntu_93_disable_overlay_scrollbars.diff
+      + kubuntu_94_xinput_valuators_fix.diff
+      + kubuntu_95_qt_disable_bounce.diff
+      + kubuntu_97_a11y_qt_and_qml_backport.diff
+      + kubuntu_98_a11y_fix_crash.diff
+      + kubuntu_glib-honor-ExcludeSocketNotifiers-flag.diff
+      + aarch64.patch
+      + ppc64el.patch
+    - Drop powerpc_designer_gstabs.diff, it breaks powerpc
+    - Use Kubuntu Vcs fields
+  * Drop kubuntu_34_no_gold_check.diff, applied upstream.
+  * Drop aarch64_fix_jsc.patch, no longer needed.
+  * Drop aarch64_fix_atomic_set.patch, instead of patching a patch
+    apply changes directly in aarch64.patch.
+  * Refresh and rebase other patches.
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Fri, 25 Apr 2014 13:46:57 +0400
 
 qt4-x11 (4:4.8.6+dfsg-1) unstable; urgency=medium
 
@@ -126,6 +269,91 @@ qt4-x11 (4:4.8.5+git209-g718fae5+dfsg-1) unstable; urgency=medium
     calm.
 
  -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 12 Jan 2014 00:27:31 -0300
+
+qt4-x11 (4:4.8.5+git192-g085f851+dfsg-2ubuntu4) trusty; urgency=medium
+
+  [ Jonathan Riddell ]
+  * Add kubuntu_glib-honor-ExcludeSocketNotifiers-flag.diff from LiMux
+    fix crash in LibreOffice with KDE theme LP: #1290514
+
+  [ Rohan Garg ]
+  * Add kubuntu_98_a11y_fix_crash.diff to fix plasma crashing due to
+    ubuntu-specific accessibility patch LP: #1289600
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 11 Mar 2014 13:29:27 +0000
+
+qt4-x11 (4:4.8.5+git192-g085f851+dfsg-2ubuntu3) trusty; urgency=medium
+
+  * Make libqtdbus4 break/replace libqt4-dbus (<< 4:4.8.5) (LP: #1268690).
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Tue, 14 Jan 2014 11:58:48 +0000
+
+qt4-x11 (4:4.8.5+git192-g085f851+dfsg-2ubuntu2) trusty; urgency=medium
+
+  * debian/libqt4-dev.install: Readd qatomic_aarch64.h (dropped in last upload)
+    to presumably fix build failures on arm64 against qt4-x11.
+
+ -- Logan Rosen <logan@ubuntu.com>  Mon, 13 Jan 2014 22:55:55 -0500
+
+qt4-x11 (4:4.8.5+git192-g085f851+dfsg-2ubuntu1) trusty; urgency=low
+
+  [ Rohan Garg, Dmitry Shachnev ]
+  * Merge from Debian unstable.  Remaining changes:
+    - Pass list-missing to dh_install instead of fail-missing, since we don't
+      install the QtWebkit headers
+    - Make sure libqt4-opengl-dev depends on gles libs for armel and armhf
+    - Do not package ibase/firebird and sqlite2 package
+      + remove from debian/control
+      + libqt4-sql doesn't recommend libqt4-sql-ibase and libqt4-sql-sqlite2
+    - Build QtWebkit and use it only for QtAssistant
+      + Rule to put qt_webkit_version.pri in mkspecs/modules
+      + Rule to remove libQtWebKit* after build
+      + Exclude usr/bin/assistant-qt4 from dh_shlibdeps
+    - Also exclude webkit examples from dh_shlibdeps
+    - Do not build libqt4-phonon, disable in debian/control
+    - Add debian/Trolltech.conf and install it in libqtcore4.install
+    - On armel and armhf, build with -gstabs instead of -g in an effort to get
+      the link step for QtWebkit to complete before timed out by the builders
+    - Build with -no-neon on armel and armhf
+    - Build with -no-pch on powerpc
+    - Add patches:
+      + aarch64_fix_atomic_set.patch
+      + aarch64_fix_jsc.patch
+      + aarch64.patch
+      + kubuntu_10_ibus_input_method.diff
+      + kubuntu_12_fix_stack_protector.diff
+      + kubuntu_14_systemtrayicon.diff
+      + kubuntu_17_enable_qtwebkit_for_qtassistant.diff
+      + kubuntu_28_xi2.1.patch
+      + kubuntu_30_translucent_drag_pixmap.diff
+      + kubuntu_31_unity_workarea_atom.diff
+      + kubuntu_34_no_gold_check.diff
+      + kubuntu_37_cups_settings.diff
+      + kubuntu_39_fix_medium_font.diff
+      + kubuntu_40_disable_neon.patch
+      + kubuntu_93_disable_overlay_scrollbars.diff
+      + kubuntu_94_xinput_valuators_fix.diff
+      + kubuntu_95_qt_disable_bounce.diff
+      + kubuntu_97_a11y_qt_and_qml_backport.diff
+    - Drop powerpc_designer_gstabs.diff, it breaks powerpc
+    - Use Kubuntu Vcs fields
+  * Drop the following patches, applied upstream:
+    - QTBUG-29082_Fix_call_to_QMetaObject_metaCall_from_updateProperty.patch
+    - CVE-2013-4549.patch
+    - gcc-4.8.diff
+    - CVE-2011-3922.patch
+    - CVE-2012-6093.patch
+    - CVE-2013-0254.patch
+    - kubuntu_41_remove_gtk_theme_check.diff
+    - kubuntu_42_fix_icon_themes.diff
+    - kubuntu_default_numbers.diff
+    - moc-boost148-53.patch
+  * Rebase patches:
+    - kubuntu_28_xi2.1.patch
+    - ppc64el.patch
+    - aarch64.patch
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 03 Jan 2014 19:33:31 +0100
 
 qt4-x11 (4:4.8.5+git192-g085f851+dfsg-2) unstable; urgency=low
 
@@ -348,6 +576,248 @@ qt4-x11 (4:4.8.4+dfsg-1) experimental; urgency=low
 
  -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 01 Apr 2013 15:17:39 -0300
 
+qt4-x11 (4:4.8.4+dfsg-0ubuntu22) trusty; urgency=medium
+
+  * No-change rebuild for libmng soname bump.
+
+ -- Matthias Klose <doko@ubuntu.com>  Mon, 16 Dec 2013 16:07:30 +0100
+
+qt4-x11 (4:4.8.4+dfsg-0ubuntu21) trusty; urgency=low
+
+  * debian/patches/ppc64el.patch: Add configure support for ppc64el.
+  * debian/patches/powerpc_designer_gstabs.diff: Drop. powerpc works now, and
+    it breaks ppc64el.
+
+ -- William Grant <wgrant@ubuntu.com>  Mon, 16 Dec 2013 09:57:49 +1100
+
+qt4-x11 (4:4.8.4+dfsg-0ubuntu20) trusty; urgency=low
+
+  * SECURITY UPDATE: [XML Entity Expansion Denial of Service] (LP: #1259577).
+    - Add CVE-2013-4549.patch
+    - add limit in src/xml/sax/qxml.cpp
+    - http://lists.qt-project.org/pipermail/announce/2013-December/000036.html
+    - CVE-2013-4549
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 10 Dec 2013 16:30:00 +0000
+
+qt4-x11 (4:4.8.4+dfsg-0ubuntu19) trusty; urgency=low
+
+  [ William Grant ]
+  * debian/patches/aarch64_fix_jsc.patch:
+    Fix JavaScriptCore aarch64 platform configuration to actually be
+    evaluated; it was previously hidden inside an #ifdef __arm__ so
+    was never executed.
+
+  [ Adam Conrad ]
+  * Revert the translation-disabling hack from 4:4.8.4+dfsg-0ubuntu17.
+
+ -- William Grant <wgrant@ubuntu.com>  Tue, 22 Oct 2013 22:06:13 +1100
+
+qt4-x11 (4:4.8.4+dfsg-0ubuntu18) saucy; urgency=low
+
+  * debian/patches/aarch64_fix_atomic_set.patch:
+    Fix QBasicAtomicInt::testAndSetRelaxed and
+    QBasicAtomicPointer<T>::testAndSetRelaxed to actually set the given value,
+    rather than a pointer to that value on the local stack frame.
+
+ -- William Grant <wgrant@ubuntu.com>  Sun, 13 Oct 2013 22:29:08 +1100
+
+qt4-x11 (4:4.8.4+dfsg-0ubuntu17) saucy; urgency=low
+
+  * Do not build the translations on AArch64.
+
+ -- Matthias Klose <doko@ubuntu.com>  Fri, 11 Oct 2013 16:51:18 +0200
+
+qt4-x11 (4:4.8.4+dfsg-0ubuntu16) saucy; urgency=low
+
+  * add kubuntu_default_numbers.diff to fix default numbers in slovak
+    and indian locales LP: #1131070
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 23 Sep 2013 11:24:34 +0100
+
+qt4-x11 (4:4.8.4+dfsg-0ubuntu15) saucy; urgency=low
+
+  * Build for Aarch64.
+
+ -- Matthias Klose <doko@ubuntu.com>  Wed, 31 Jul 2013 16:21:09 +0200
+
+qt4-x11 (4:4.8.4+dfsg-0ubuntu14) saucy; urgency=low
+
+  * Fix regression caused by LP: #1180067. (LP: #1195007)
+
+ -- Dmitrijs Ledkovs <dmitrij.ledkov@ubuntu.com>  Mon, 08 Jul 2013 15:40:39 +0100
+
+qt4-x11 (4:4.8.4+dfsg-0ubuntu13) saucy; urgency=low
+
+  * Rebuild to investigate Valgrind errors in qgtkstyle
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 03 Jul 2013 12:18:51 +0100
+
+qt4-x11 (4:4.8.4+dfsg-0ubuntu12) saucy; urgency=low
+
+  * Drop kubuntu_38_revert_fix_jit_crash.diff as QTBUG-27322 which it was
+    preventing is fixed in 4.8.4 and now only causes a regression as it's
+    a revert of the fix for QTBUG-23871
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Mon, 03 Jun 2013 17:02:44 +0200
+
+qt4-x11 (4:4.8.4+dfsg-0ubuntu11) saucy; urgency=low
+
+  * debian/rules: build with -no-pch on armhf and powerpc (fixes FTBFS).
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Tue, 28 May 2013 16:07:22 +0400
+
+qt4-x11 (4:4.8.4+dfsg-0ubuntu10) saucy; urgency=low
+
+  * debian/patches/kubuntu_42_fix_icon_themes.diff:
+    fix icon themes not working on a default Ubuntu install by using
+    GtkSettings where appropriate (LP: #1180067).
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Sun, 19 May 2013 19:18:58 +0400
+
+qt4-x11 (4:4.8.4+dfsg-0ubuntu9) raring; urgency=low
+
+  * Fix moc tripping over BOOST_JOIN. (LP: #1119656)
+
+ -- Dmitrijs Ledkovs <dmitrij.ledkov@ubuntu.com>  Wed, 27 Mar 2013 00:02:12 +0000
+
+qt4-x11 (4:4.8.4+dfsg-0ubuntu8) raring; urgency=low
+
+  [ Harald Sitter ]
+  * Drop kdeqt.pot creation. Not used anymore (fixes build with new
+    pkg-kde-tools)
+
+  [ Dmitry Shachnev ]
+  * debian/patches/kubuntu_41_remove_gtk_theme_check.diff:
+    do not check that Gtk theme is not empty (LP: #1094360).
+
+ -- Harald Sitter <apachelogger@kubuntu.org>  Mon, 18 Mar 2013 11:10:45 +0100
+
+qt4-x11 (4:4.8.4+dfsg-0ubuntu7) raring; urgency=low
+
+  * Fix header file, causing build failure with GCC 4.8.
+
+ -- Matthias Klose <doko@ubuntu.com>  Tue, 26 Feb 2013 11:00:45 +0100
+
+qt4-x11 (4:4.8.4+dfsg-0ubuntu6) raring; urgency=low
+
+  * Cherry pick upstream commit 5b285845a3c3478a4008b7e3416c3912c69fd20b
+    as QTBUG-29082_Fix_call_to_QMetaObject_metaCall_from_updateProperty.patch
+    to fix a crash in QML to fix kde bug 311751.
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Tue, 19 Feb 2013 19:22:01 +0100
+
+qt4-x11 (4:4.8.4+dfsg-0ubuntu5) raring; urgency=low
+
+  * SECURITY UPDATE: incorrect errors with certificate verification
+    - debian/patches/CVE-2012-6093.patch: use openssl access functions to
+      properly handle layout changes in
+      src/network/ssl/qsslsocket_openssl.cpp,
+      src/network/ssl/qsslsocket_openssl_symbols.cpp,
+      src/network/ssl/qsslsocket_openssl_symbols_p.h.
+    - CVE-2012-6093
+  * SECURITY UPDATE: shared memory segments incorrect permissions
+    - debian/patches/CVE-2013-0254.patch: set appropriate permissions in
+      src/corelib/kernel/qsharedmemory_unix.cpp,
+      src/corelib/kernel/qsystemsemaphore_unix.cpp,
+      src/gui/image/qnativeimage.cpp,
+      src/gui/image/qpixmap_x11.cpp,
+      src/plugins/platforms/xcb/qxcbwindowsurface.cpp,
+      src/plugins/platforms/xlib/qxlibwindowsurface.cpp,
+      tools/qvfb/qvfbshmem.cpp.
+    - CVE-2013-0254
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 14 Feb 2013 12:40:48 -0500
+
+qt4-x11 (4:4.8.4+dfsg-0ubuntu4) raring; urgency=low
+
+  * debian/control:
+    - change the build-dep order the way around to get previous packages
+      depending on libqt4-dev still building. libqt4-dev dep on
+      qt4-default | qt-default to ensure at least one version of qmake & co
+      is targetted. qt{4,5}-default will provide qt-default.
+
+ -- Didier Roche <didrocks@ubuntu.com>  Fri, 08 Feb 2013 13:21:39 +0100
+
+qt4-x11 (4:4.8.4+dfsg-0ubuntu3) raring; urgency=low
+
+  [ Harald Sitter]
+  * Rename fix_medium_font.diff to kubuntu_39_fix_medium_font.diff to reflect
+    its origin.
+  * Apply kubuntu patches in numeric order.
+  * Add more dep3 tags to kubuntu patches.
+
+  [ Timo Jyrinki ]
+  * Migrate to use qtchooser for Qt5 co-installation support
+    - Libraries co-installed, executables managed by qtchooser
+    - Packages will need build-dep on qt4-default to build against Qt4
+    - Symlinks left for binaries that had -qt4 via alternatives
+  * Clean alternatives on upgrade
+  * Add qt4-default package
+
+ -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Wed, 16 Jan 2013 07:58:47 +0000
+
+qt4-x11 (4:4.8.4+dfsg-0ubuntu2) raring; urgency=low
+
+  * Add kubuntu_40_disable_neon.patch disable neon for Ubuntu since armel
+    is no longer supported.
+
+ -- Tim Gardner <tim.gardner@canonical.com>  Sun, 13 Jan 2013 08:02:00 -0700
+
+qt4-x11 (4:4.8.4+dfsg-0ubuntu1) raring; urgency=low
+
+  * New upstream release
+  * Remove QTBUG-14724_close_orphaned_file_descriptors_after_printing.patch
+    now upstream
+  * Remove disable-SSL-compression-by-default.patch now upstream
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 09 Jan 2013 12:27:22 +0000
+
+qt4-x11 (4:4.8.3+dfsg-0ubuntu3) quantal-proposed; urgency=low
+
+  [ Iain Lane ]
+  * On armel and armhf, build with -gstabs instead of -g in an effort to get
+    the link step for QtWebkit to complete before timed out by the builders.
+
+  [ Felix Geyer ]
+  * Disabling SSL/TLS compression to mitigate the "CRIME" attack. (LP: #1057578)
+    - Add disable-SSL-compression-by-default.patch
+
+ -- Iain Lane <iain.lane@canonical.com>  Tue, 02 Oct 2012 10:36:17 +0100
+
+qt4-x11 (4:4.8.3+dfsg-0ubuntu2) quantal-proposed; urgency=low
+
+  [ Felix Geyer ]
+  * Drop versioned build-dependcy on g++-4.6 [armel]. g++ 4.7 is used
+    on all architectures in Ubuntu.
+
+  [ Ken VanDine ]
+  * debian/patches/fix_medium_font.diff
+    - Patch from Michał Sawicz to fix Ubuntu Medium font in Qt (LP: #744812)
+
+ -- Ken VanDine <ken.vandine@canonical.com>  Wed, 26 Sep 2012 16:25:16 -0400
+
+qt4-x11 (4:4.8.3+dfsg-0ubuntu1) quantal; urgency=low
+
+  * New upstream bugfix release.
+  * Drop patches that have been merged upstream:
+    - QElfParser-fix-type-of-sh_size.patch
+    - Fix-cursor-truncate-to-include-line-position.patch
+    - qt_atomic_sparc64.patch
+    - fix_use_after_free_qlocale_unix.patch
+    - kubuntu_01_fix_build_glib_231.diff
+    - kubuntu_33_shaped_drag.diff
+  * Refresh patches:
+    - 01_debian_append_qt4_suffix.diff
+    - 16_hide_std_symbols_on_qtwebkit.diff
+    - no_libicu_message.diff
+    - kubuntu_93_disable_overlay_scrollbars.diff
+  * Update symbols files.
+  * Add kubuntu_38_revert_fix_jit_crash.diff as the patch removed in
+    4:4.8.2-0ubuntu7 has been merged upstream.
+
+ -- Felix Geyer <debfx@ubuntu.com>  Wed, 19 Sep 2012 19:54:40 +0200
+
 qt4-x11 (4:4.8.2+dfsg-11) unstable; urgency=medium
 
   * Take upstream patch change_all_shmget_calls_to_use_user-only_memory.patch.
@@ -456,6 +926,28 @@ qt4-x11 (4:4.8.2+dfsg-3) unstable; urgency=medium
 
  -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 23 Nov 2012 22:09:58 -0300
 
+qt4-x11 (4:4.8.2+dfsg-2ubuntu1) quantal; urgency=low
+
+  * Merge from Debian unstable, remaining changes:
+    - Do not package ibase/firebird and sqlite2 package
+      + remove from debian/control
+      + libqt4-sql doesn't recommend libqt4-sql-ibase and libqt4-sql-sqlite2
+    - libqt4-dbus recommends instead of depends on qdbus
+    - build with -no-phonon
+    - Do not build libqt4-phonon, disable in debian/control
+    - Add MessagesQt.sh
+    - Rules to create Messages.sh link to MessagesQt.sh and rules to create po
+      dir and execute extract-messages.sh in override_dh_auto_install
+    - Add and install Trolltech.conf in libqtcore4.install
+    - Build QtWebkit and use it only for QtAssistant
+      + Rule to put qt_webkit_version.pri in mkspecs/modules
+      + Rule to remove libQtWebKit* after build
+      + Exclude usr/bin/assistant-qt4 from dh_shlibdeps
+  * Fixes crash in Qt Assistant during startup. (LP: #1045755)
+  * Update symbols files.
+
+ -- Felix Geyer <debfx@ubuntu.com>  Wed, 12 Sep 2012 11:32:36 +0200
+
 qt4-x11 (4:4.8.2+dfsg-2) unstable; urgency=low
 
   * Remove Fix-JIT-crash-on-x86-64-avoid-32-bit-branch-offset-o.patch. It seems
@@ -508,6 +1000,85 @@ qt4-x11 (4:4.8.2-1) unstable; urgency=low
   * Mark qdesigner_internal symbols as (optional=internal).
 
  -- Modestas Vainius <modax@debian.org>  Sun, 10 Jun 2012 12:09:51 +0300
+
+qt4-x11 (4:4.8.2-0ubuntu7) quantal; urgency=low
+
+  * Remove patch kubuntu_36_qtscript_64bit.diff causes crashes on app startup
+    LP: #1046244
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 05 Sep 2012 17:31:51 +0100
+
+qt4-x11 (4:4.8.2-0ubuntu6) quantal; urgency=low
+
+  [ Rohan Garg ]
+  * Transition to libtiff-dev 
+
+  [ Jonathan Riddell ]
+  * Add kubuntu_37_cups_settings.diff from https://bugs.kde.org/180051 and
+    QTBUG-25372 use CUPS settings in the print dialogue. LP: #905147
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 24 Aug 2012 00:16:10 +0530
+
+qt4-x11 (4:4.8.2-0ubuntu5) quantal; urgency=low
+
+  * Add patch kubuntu_36_qtscript_64bit.diff from Qt 4.8.3 branch
+    recommended by KDevelop authors. Fix JIT crash on x86-64
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 17 Aug 2012 11:46:46 +0100
+
+qt4-x11 (4:4.8.2-0ubuntu4) quantal; urgency=low
+
+  * Add kubuntu_35_text_cursor_position.diff from upstream fixes LP: #1024402
+    "Text cursor in wrong cell in calligrawords"
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Sat, 14 Jul 2012 18:30:29 +0100
+
+qt4-x11 (4:4.8.2-0ubuntu3) quantal; urgency=low
+
+  * debian/control:
+    - Build-Depend on libtiff5-dev instead of libtiff4-dev
+
+ -- Michael Terry <mterry@ubuntu.com>  Tue, 10 Jul 2012 09:26:09 -0400
+
+qt4-x11 (4:4.8.2-0ubuntu2) quantal; urgency=low
+
+  * Add kubuntu_34_no_gold_check.diff. On some archs /usr/bin/ld.gold exists
+    in the form of a wrapper despite binutils-gold not being installed.
+    Disable the check to fix FTBFS. (We aren't using gold anyways)
+
+ -- Jonathan Thomas <echidnaman@kubuntu.org>  Tue, 29 May 2012 20:20:19 -0400
+
+qt4-x11 (4:4.8.2-0ubuntu1) quantal; urgency=low
+
+  * Merge from Debian Git snapshot, remaining changes:
+    - Do not package ibase/firebird and sqlite2 package
+      + remove from debian/control
+      + libqt4-sql doesn't recommend libqt4-sql-ibase and libqt4-sql-sqlite2
+    - libqt4-dbus recommends instead of depends on qdbus
+    - build with -no-phonon
+    - Do not build libqt4-phonon, disable in debian/control
+    - Build packages with lzma compression using the dh addon from
+      pkg-kde-tools
+    - Add MessagesQt.sh
+    - Rules to create Messages.sh link to MessagesQt.sh and rules to create po
+      dir and execute extract-messages.sh in override_dh_auto_install
+    - Add and install Trolltech.conf in libqtcore4.install
+    - Build QtWebkit and use it only for QtAssistant
+      + Rule to put qt_webkit_version.pri in mkspecs/modules
+      + Rule to remove libQtWebKit* after build
+      + Exclude usr/bin/assistant-qt4 from dh_shlibdeps
+    - In debian/rules: move documentation building to override_dh_auto_install
+      where dh_listpackages works as expected with dpkg-buildpackage.
+  * Update symbols files.
+  * New upstream release.
+  * Drop patches that have been applied upstream:
+    - QTBUG-24718_Fix_a_crash_in_cursorToX_when_new_block_is_added.patch
+    - fix_qvfb_build.patch
+    - gcc-4.7.diff
+  * Update kubuntu_33_shaped_drag.diff with a commit backported from the
+    upstream 4.8 branch. (LP: #999522)
+
+ -- Felix Geyer <debfx@ubuntu.com>  Tue, 29 May 2012 19:03:38 +0200
 
 qt4-x11 (4:4.8.1-2) unstable; urgency=low
 
@@ -592,6 +1163,199 @@ qt4-x11 (4:4.8.1-1) unstable; urgency=low
   * Compress qt4-doc-html as XZ.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 01 May 2012 12:15:56 +0300
+
+qt4-x11 (4:4.8.1-0ubuntu4.1) precise-proposed; urgency=low
+
+  * Add kubuntu_33_shaped_drag.diff fixes LP: #987855
+    "problem in Qt dragging when all of the window target has been
+     shaped out for input"
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 24 Apr 2012 16:44:41 +0100
+
+qt4-x11 (4:4.8.1-0ubuntu4) precise-proposed; urgency=low
+
+  * Rebuild for .pot generation
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 12 Apr 2012 16:32:11 +0100
+
+qt4-x11 (4:4.8.1-0ubuntu3) precise; urgency=low
+
+  * kubuntu_97_a11y_qt_and_qml_backport.diff from upstream: removed geometry and animation updates
+    because they are useless and the code is buggy, leading to crashes (LP: #918566).
+
+ -- Pawel Stolowski <pawel.stolowski@canonical.com>  Mon, 09 Apr 2012 18:55:11 +0200
+
+qt4-x11 (4:4.8.1-0ubuntu2) precise; urgency=low
+
+  * Update libqt4-designer.symbols.
+  * Add QTBUG-24718_Fix_a_crash_in_cursorToX_when_new_block_is_added.patch,
+    cherry-picked from upstream.
+
+ -- Felix Geyer <debfx@ubuntu.com>  Tue, 03 Apr 2012 16:18:44 +0200
+
+qt4-x11 (4:4.8.1-0ubuntu1) precise; urgency=low
+
+  * New upstream release.
+  * Drop kubuntu_32_oriental_character_crash.diff, the changes are already
+    part of Qt 4.8.0.
+  * Drop patches that have been applied upstream:
+    - Pass_events_to_eventFilter_first.patch
+    - Pass_non-MotionNotify_events_to_event_dispatcher_filters.patch
+    - Raise_loopLevel_for_deleteLater_in_event_filters.patch
+    - fix_ftbfs_format-security.patch
+    - kubuntu_29_window_shaping_fix.diff
+  * Adapt to new upstream version:
+    - 16_hide_std_symbols_on_qtwebkit.diff
+    - kubuntu_01_fix_build_glib_231.diff
+    - 99_hppa_bug561203_decrease_failure_rate.diff
+  * Regenerate qt_webkit_version.pri after calling ./config.status because
+    configure deletes it.
+  * Update libqtgui4.symbols.
+  * Use dpkg-buildflags to export CFLAGS, CXXFLAGS and LDFLAGS.
+
+ -- Felix Geyer <debfx@ubuntu.com>  Mon, 02 Apr 2012 23:11:42 +0200
+
+qt4-x11 (4:4.8.0-1ubuntu11) precise; urgency=low
+
+  * Add patches cherry-picked upstream (LP: #911733):
+    - Pass_events_to_eventFilter_first.patch
+    - Pass_non-MotionNotify_events_to_event_dispatcher_filters.patch
+    - Raise_loopLevel_for_deleteLater_in_event_filters.patch
+
+ -- Fathi Boudra <fabo@debian.org>  Mon, 19 Mar 2012 09:06:21 +0200
+
+qt4-x11 (4:4.8.0-1ubuntu10) precise; urgency=low
+
+  * Add kubuntu_32_oriental_character_crash.diff from upstream, fix
+    crash in oriental characters
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 12 Mar 2012 11:10:48 +0000
+
+qt4-x11 (4:4.8.0-1ubuntu9) precise; urgency=low
+
+  * "update kubuntu_31_unity_workarea_atom.diff to notify of
+    workArea change on change of atom _UNITY_NET_WORKAREA_REGION"
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 09 Mar 2012 17:07:54 +0000
+
+qt4-x11 (4:4.8.0-1ubuntu8) precise; urgency=low
+
+  * Add kubuntu_31_unity_workarea_atom.diff from Unity team
+    LP: #939629
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 23 Feb 2012 16:23:22 +0000
+
+qt4-x11 (4:4.8.0-1ubuntu7) precise; urgency=low
+
+  * Update kubuntu_29_window_shaping_fix.diff
+    with improved patch now upstream
+    http://qt.gitorious.org/qt/qt/commit/29ec5ba68a14b8c75876ce129dd7b3204f8ba503/diffs
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 22 Feb 2012 10:39:17 +0000
+
+qt4-x11 (4:4.8.0-1ubuntu6) precise; urgency=low
+
+  * Add kubuntu_30_translucent_drag_pixmap.diff
+   - use a translucent drag pixmap if compositing is active
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 21 Feb 2012 09:26:02 +0000
+
+qt4-x11 (4:4.8.0-1ubuntu5) precise; urgency=low
+
+  [ Martin Pitt ]
+  * debian/control: Drop qdbus dependency of libqt4-dbus to a Recommends. The
+    library does not actually need qdbus, and this is a cyclic dependency
+    which breaks upgrades. (LP: #927637)
+
+  [ Jonathan Riddell ]
+  * Add kubuntu_29_window_shaping_fix.diff from
+    http://qt.gitorious.org/qt/qt/commit/21713e04160ee285c831fedd1f3c7b8
+    ce0aba681 take window shape into account in findRealWindow, 
+    LP: #926129
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 06 Feb 2012 19:39:15 +0000
+
+qt4-x11 (4:4.8.0-1ubuntu4) precise; urgency=low
+
+  * Drop kubuntu_92_qml_memory_leak.diff, it causes crashes and has been
+    rejected by upstream. (LP: #864475)
+  * Update symbols files.
+
+ -- Felix Geyer <debfx@ubuntu.com>  Sat, 28 Jan 2012 20:18:14 +0100
+
+qt4-x11 (4:4.8.0-1ubuntu3) precise; urgency=low
+
+  * Bump Build-Depends on libxi-dev for current epoch (2:1.5.99.2)
+
+ -- Chase Douglas <chase.douglas@ubuntu.com>  Tue, 17 Jan 2012 13:10:59 -0800
+
+qt4-x11 (4:4.8.0-1ubuntu2) precise; urgency=low
+
+  [ Felix Geyer ]
+  * Fix include path of qdeclarativeitemchangelistener_p.h in
+    kubuntu_97_a11y_qt_and_qml_backport.diff. This caused QtCreator to FTBFS.
+
+  [ Chase Douglas ]
+  * Update kubuntu_28_xi2.1.patch for upstream multitouch implementation
+  * Update Build-Depends on libxi-dev >= 1.5.99.2 for multitouch support
+
+ -- Chase Douglas <chase.douglas@ubuntu.com>  Tue, 17 Jan 2012 11:32:48 -0800
+
+qt4-x11 (4:4.8.0-1ubuntu1) precise; urgency=low
+
+  * Fix version number
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 16 Jan 2012 12:15:52 +0000
+
+qt4-x11 (4:4.8.0-1ubuntu1~ppa1) precise; urgency=low
+
+  [ Felix Geyer ]
+  * Merge from Debian experimental, remaining changes:
+    - Do not package ibase/firebird and sqlite2 package
+      + remove from debian/control
+      + libqt4-sql doesn't recommend libqt4-sql-ibase and libqt4-sql-sqlite2
+    - build with -no-phonon
+    - Do not build libqt4-phonon, disable in debian/control
+    - Build packages with lzma compression using the dh addon from
+      pkg-kde-tools
+    - Add MessagesQt.sh
+    - Rules to create Messages.sh link to MessagesQt.sh and rules to create po
+      dir and execute extract-messages.sh in common-install-prehook-impl
+    - Add and install Trolltech.conf in libqtcore4.install
+    - Build QtWebkit and use it only for QtAssistant
+      + Rule to put qt_webkit_version.pri in mkspecs/modules
+      + Rule to remove libQtWebKit* after build
+      + Exclude usr/bin/assistant-qt4 from dh_shlibdeps
+    - Fix Lucid upgrades: libqt4-help breaks/replaces libqtcore4 (<< 4:4.7.0)
+    - In debian/rules: move documentation building to override_dh_auto_install
+      where dh_listpackages works as expected with dpkg-buildpackage.
+      (LP: #857377)
+  * Drop patches that have been merged upstream:
+    - kubuntu_15_appmenu.diff
+    - kubuntu_16_qt-designer-toplevel-mode-menubar.diff
+    - kubuntu_18_fix_qtreeview_regression.diff
+    - kubuntu_26_dbusconnection_pointer.diff
+    - kubuntu_29_egl_qglcontext_stubs.diff
+    - kubuntu_96_fix_qml_crash.diff
+    - kubuntu_98_fix_accessible_menu.diff
+  * Refresh kubuntu patches.
+  * Fix build error with glib 2.31.
+    - Add kubuntu_01_fix_build_glib_231.diff
+
+  [ Fathi Boudra ]
+  * Refresh patches using debian/quiltrc.
+  * Revert debian/compat to 8.
+  * Avoid extra work in merging and use vendor for:
+    - rules to remove po dir in clean.
+    - set GL ES 2 architectures to armel/armhf.
+  * Add CVE-2011-3922.patch: Stack-buffer-overflow in glyph handling.
+  * Update kubuntu_28_xi2.1.patch for Qt 4.8.0.
+  * Update kubuntu_97_a11y_qt_and_qml_backport.diff for Qt 4.8.0.
+  * Drop kubuntu_99_notify_qml_name_description_change.diff, merged into 
+    kubuntu_97_a11y_qt_and_qml_backport.diff.
+  * Update symbols files.
+
+ -- Felix Geyer <debfx@ubuntu.com>  Sun, 11 Dec 2011 17:24:53 +0100
 
 qt4-x11 (4:4.8.0-1) experimental; urgency=low
 
@@ -684,6 +1448,82 @@ qt4-x11 (4:4.7.4-2) unstable; urgency=low
 
  -- Fathi Boudra <fabo@debian.org>  Thu, 05 Jan 2012 22:23:02 +0200
 
+qt4-x11 (4:4.7.4-1ubuntu6) precise; urgency=low
+
+  * No-change rebuild to drop spurious libsfgcc1 dependency on armhf.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Fri, 02 Dec 2011 17:34:26 -0700
+
+qt4-x11 (4:4.7.4-1ubuntu5) precise; urgency=low
+
+  * No-change rebuild against pkgbinarymangler with multi-arch doc symlinking
+    fix. (LP: #893826)
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Tue, 29 Nov 2011 10:24:42 +0100
+
+qt4-x11 (4:4.7.4-1ubuntu4) precise; urgency=low
+
+  * Rebuild for libmysqlclient transition
+
+ -- Clint Byrum <clint@ubuntu.com>  Thu, 24 Nov 2011 00:10:16 -0800
+
+qt4-x11 (4:4.7.4-1ubuntu3) precise; urgency=low
+
+  * Add kubuntu_100_format_security.diff, fix compile failure in qdeclarativedebugserver.cpp
+  * Update debhelper's build-dep version to match use of debhelper 9
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 21 Nov 2011 21:35:58 +0000
+
+qt4-x11 (4:4.7.4-1ubuntu2) precise; urgency=low
+
+  * Remove firebird2.5-dev build-depends
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 21 Nov 2011 19:59:46 +0000
+
+qt4-x11 (4:4.7.4-1ubuntu1) precise; urgency=low
+
+  [ Jonathan Riddell ]
+  * Merge from Debian Git packaging.  Remaining Ubuntu changes:
+    - Do not package ibase/firebird package, remove from debian/rules and
+      debian/control
+    - libqt4-sql-ibase not recommend for libqt4-sql
+    - build with -no-phonon
+    - do not build libqt4-phonon, disable in debian/control
+    - Build packages with lzma compression using the dh addon from pkg-kde-tools
+    - Rules to remove po dir in clean
+    - Add MessagesQt.sh
+    - Rules to create Messages.sh link to MessagesQt.sh and rules to create po
+      dir and exectue extract-messages.sh in common-install-prehook-impl
+    - Make libqt4-dev depend on libx11-dev
+    - Add and install Trolltech.conf in libqtcore4.install
+    - Build QtWebkit and use it only for QtAssistant
+      + Rule to put qt_webkit_version.pri in mkspecs/modules
+      + Rule to remove libQtWebKit* after build
+      + Exclude usr/bin/assistant-qt4 from dh_shlibdeps
+    - Fix Lucid upgrades: libqt4-help breaks/replaces libqtcore4 (<< 4:4.7.0)
+    - Change OpenGL backend from GL to GLES 2 for armel (Debian does this for
+      armhf)
+      + Build-depend and make libqt4-opengl-dev depend on libgles2-mesa-dev
+        instead of libgl1-mesa-dev and libglu1-mesa-dev
+      + Pass "-opengl es2" to configure
+    - Pass extra_configure_opts += -arch armv6 on both armel and armhf and not
+      just armhf
+    - In debian/rules Move documentation building to override_dh_auto_install where
+      dh_listpackages works as expected with dpkg-buildpackage. (LP: #857377)
+    - debian/compat is 9 and build-depend on newer debhelper for multiarch
+    - Remove firebird2.5-dev build-depends
+  * debian/patches/blacklist-diginotar-certs.diff is now
+    debian/patches/blacklist-diginotar-cert.diff to match Debian
+  * Add prefix to some patches to clarify they come from Ubuntu rather than Debian
+   - kubuntu_97_a11y_qt_and_qml_backport.diff
+   - kubuntu_98_fix_accessible_menu.diff
+   - kubuntu_99_notify_qml_name_description_change.diff
+
+  [ Felix Geyer ]
+  * Use DEB_*_MAINT_APPEND instead of setting CXXFLAGS and LDFLAGS.
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 01 Nov 2011 16:23:55 +0100
+
 qt4-x11 (4:4.7.4-1) unstable; urgency=low
 
   * New upstream release.
@@ -765,12 +1605,234 @@ qt4-x11 (4:4.7.3-5) unstable; urgency=low
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 06 Jul 2011 03:42:41 +0300
 
+qt4-x11 (4:4.7.4-0ubuntu8) oneiric; urgency=low
+
+  * debian/patches/kubuntu_93_disable_overlay_scrollbars.diff:
+    - using the new and correct gtk symbols (LP: #805303)
+
+ -- Didier Roche <didrocks@ubuntu.com>  Fri, 30 Sep 2011 11:46:32 +0200
+
+qt4-x11 (4:4.7.4-0ubuntu7) oneiric; urgency=low
+
+  * debian/patches/kubuntu_96_fix_qml_crash.diff:
+    - unity-2d-panel crashed with SIGSEGV in QPainter::drawTiledPixmap()
+      (LP: #804784)
+    - unity-2d-launcher crashed with SIGSEGV in QPainter::fillRect()
+      (LP: #805587)
+
+ -- Didier Roche <didrocks@ubuntu.com>  Thu, 29 Sep 2011 13:31:46 +0200
+
+qt4-x11 (4:4.7.4-0ubuntu6) oneiric; urgency=low
+
+  * debian/patches/notify_qml_name_description_change.diff:
+    - upstream fix to notify in QML of name/description change for
+      accessiblity (LP: #854516)
+  * debian/patches/kubuntu_93_disable_overlay_scrollbars.diff:
+    - update to a better french fix for Qt apps crashing under the default
+      ubuntu theme (LP: #805303)
+
+ -- Didier Roche <didrocks@ubuntu.com>  Wed, 28 Sep 2011 17:34:20 +0200
+
+qt4-x11 (4:4.7.4-0ubuntu5) oneiric; urgency=low
+
+  * debian/patches/kubuntu_95_qt_disable_bounce.diff:
+    - Fix Touchpad scrolling bounces (LP: #805972)
+  * debian/patches/kubuntu_14_systemtrayicon.diff:
+    - sni-qt and hp-systray interact badly (LP: #860395)
+
+ -- Didier Roche <didrocks@ubuntu.com>  Wed, 28 Sep 2011 08:43:28 +0200
+
+qt4-x11 (4:4.7.4-0ubuntu4) oneiric; urgency=low
+
+  [ Felix Geyer ]
+  * Move documentation building to override_dh_auto_install where
+    dh_listpackages works as expected with dpkg-buildpackage. (LP: #857377)
+
+  [ Didier Roche ]
+  * debian/patches/fix_accessible_menu.diff:
+    - Contextual QMenu accessible now (LP: #817416)
+  * debian/patches/kubuntu_94_xinput_valuators_fix.diff:
+    - wacom stylus jumps with latest xserver-xorg-core (LP: #799202)
+
+ -- Didier Roche <didrocks@ubuntu.com>  Mon, 26 Sep 2011 09:28:36 +0200
+
+qt4-x11 (4:4.7.4-0ubuntu3) oneiric; urgency=low
+
+  [ Felix Geyer ]
+  * Build the documentation if the qt4-doc package is being built instead of
+    relying on the i386 architecture check.
+  * Update symbol files.
+
+  [ Fathi Boudra ]
+  * Add patches:
+    - openssl_no_ssl2.patch - OpenSSL in Debian dropped the insecure SSLv2
+      protocol. (Closes: #640210)
+    - Remove_QtHelp_dependency_on_QtXml.patch - (Closes: #641753)
+
+  [ Didier Roche ]
+  * debian/patches/kubuntu_93_disable_overlay_scrollbars.diff:
+    - disable unsupported overlay scrollbar when the gtkstyle is used
+      to not make the machine swapping or session crash. Thanks agateau
+      (LP: #805303)
+
+ -- Didier Roche <didrocks@ubuntu.com>  Thu, 22 Sep 2011 18:42:00 +0200
+
+qt4-x11 (4:4.7.4-0ubuntu2) oneiric; urgency=low
+
+  * debian/rules:
+    - only build documentation on i386. The -doc package is arch:all
+      and building the documentation timeout on armel (LP: #847224)
+
+ -- Didier Roche <didrocks@ubuntu.com>  Tue, 13 Sep 2011 13:06:55 +0200
+
+qt4-x11 (4:4.7.4-0ubuntu1) oneiric; urgency=low
+
+  * New upstream release (LP: #839557, #785318)
+  * debian/patches/Add_support_for_QT_USE_DRAG_DISTANCE_env_var.patch,
+    debian/patches/a11y_qt_and_qml_backport.diff,
+    debian/patches/qtdebug_syslog.patch,
+    debian/patches/kubuntu_12_fix_stack_protector.diff,
+    debian/patches/kubuntu_28_xi2.1.patch:
+    - adapt to new upstream version
+  * Fix_GL_problems_on_stock_1.4_SGX_drivers.patch,
+    Fixed_missing_text_when_using_static_text_items_in_GL_2_engine.patch,
+    Prevent_recursion_when_creating_window_surface.patch,
+    kubuntu_24_large_qtreeview.diff,
+    kubuntu_27_dbus_signal_filter_passes_not_handled.diff:
+    - removed, part of the upstream tarball now
+  * debian/patches/kubuntu_15_appmenu.diff:
+    - updated to take a version closer to the upstreamed 4.8 one. Is compatible
+      with incoming appmenu-qt 0.2.2 (LP: #838115)
+  * debian/libqt4-declarative.install:
+    - libtcpserver.so has been renamed libqmldbg_tcp.so
+  * debian/control, debian/libqt4-declarative-shaders.install:
+    - add the new shaders package. Use the same suggests/recommends pattern
+      than other declarative-* plugins
+  * debian/patches/blacklist-diginotar-certs.diff:
+    - add DigiNotar securty breach blacklist (LP: #837557)
+
+ -- Didier Roche <didrocks@ubuntu.com>  Thu, 08 Sep 2011 11:33:52 +0200
+
+qt4-x11 (4:4.7.3-4ubuntu6) oneiric; urgency=low
+
+  * Break qdbus out into a separate 'qdbus' package and make it a dependency
+    of libqt4-dbus, because some things will use this at runtime.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Wed, 17 Aug 2011 13:07:38 -0700
+
+qt4-x11 (4:4.7.3-4ubuntu5) oneiric; urgency=low
+
+  * Move qdbus from libqt4-dbus to qt4-dev-tools, so that libqt4-dbus is
+    genuinely multiarch-installable.  LP: #825689.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Tue, 16 Aug 2011 15:46:28 -0700
+
+qt4-x11 (4:4.7.3-4ubuntu4) oneiric; urgency=low
+
+  * debian/*.install, debian/rules: fix build failure by looking in the
+    right path for plugins, and by not trying to put imports into the
+    multiarch dir since these aren't yet needed to be coinstallable.
+  * debian/patches/qt-multiarch-plugin-path-compat.diff: include legacy
+    pre-multiarch plugin path.
+  * don't mark libqt4-declarative-* Multi-Arch: same, so long as the imports
+    are shipping in /usr/lib/qt4.
+  * don't mark transitional libqt4-* packages as Multi-arch either.
+  * drop debian/patches/21_qt_ia32_library_path.diff, which interacts
+    incompatibly with the multiarch path resolution and should be obsolete
+    anyway now that multiarch is available: we should drop qt from the next
+    ia32-libs upload.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Fri, 12 Aug 2011 08:34:07 -0700
+
+qt4-x11 (4:4.7.3-4ubuntu3) oneiric; urgency=low
+
+  [ Felix Geyer ]
+  * Update symbols files for all supported architectures.
+
+  [ Steve Langasek ]
+  * Build for multiarch.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Thu, 11 Aug 2011 13:58:31 -0700
+
+qt4-x11 (4:4.7.3-4ubuntu2) oneiric; urgency=low
+
+  [ Scott Kitterman ]
+  * Remove no longer used debian/patches/kubuntu_22_thumb2_support.diff
+
+  [ Didier Roche ]
+  * debian/patches/a11y_qt_and_qml_backport.diff:
+    - refreshed from 11/06/28
+  * debian/control:
+    - refresh Vcs-* with new location
+  * debian/libqt4-sql-sqlite2.install, debian/rules, debian/control:
+    - don't build anymore the sqlite2 flavor. Only have libqt4-sql-sqlite with
+      sqlite 3 support. (LP: #747325)
+  * kubuntu_26_dbusconnection_pointer.diff:
+    - readd wrongly removed upstream patch (will only be there for 4.8 and is
+      needed for the dconf binding)
+
+ -- Didier Roche <didrocks@ubuntu.com>  Thu, 07 Jul 2011 09:01:08 +0200
+
+qt4-x11 (4:4.7.3-4ubuntu1) oneiric; urgency=low
+
+  * Merge from Debian Unstable.  Remaining Ubuntu changes:
+    - Do not package ibase/firebird package, remove from debian/rules and
+      debian/control
+    - libqt4-sql-ibase not recommend for libqt4-sql
+    - build with -no-phonon
+    - do not build libqt4-phonon, disable in debian/control
+    - Build packages with lzma compression using the dh addon from pkg-kde-tools
+    - Rules to remove po dir in clean
+    - Add MessagesQt.sh
+    - Rules to create Messages.sh link to MessagesQt.sh and rules to create po
+      dir and exectue extract-messages.sh in common-install-prehook-impl
+    - Make libqt4-dev depend on libx11-dev
+    - Add and install Trolltech.conf in libqtcore4.install
+    - Build QtWebkit and use it only for QtAssistant
+      + Rule to put qt_webkit_version.pri in mkspecs/modules
+      + Rule to remove libQtWebKit* after build
+      + Exclude usr/bin/assistant-qt4 from dh_shlibdeps
+    - Fix Lucid upgrades: libqt4-help breaks/replaces libqtcore4 (<< 4:4.7.0)
+    - Change OpenGL backend from GL to GLES 2 for armel (Debian does this for
+      armhf)
+      + Build-depend and make libqt4-opengl-dev depend on libgles2-mesa-dev
+        instead of libgl1-mesa-dev and libglu1-mesa-dev
+      + Pass "-opengl es2" to configure
+    - Pass extra_configure_opts += -arch armv6 on both armel and armhf and not
+      just armhf
+  * Update debian/patches/94_armv6_uname_entry.diff to use armv6 for armel too
+  * Fix debian/rules harder to make sure -arch armv6 is passed to configure
+
+ -- Scott Kitterman <scott@kitterman.com>  Sat, 25 Jun 2011 16:19:01 -0400
+
 qt4-x11 (4:4.7.3-4) unstable; urgency=low
 
   * Update Fix_fontconfig_usage_in_X11_font_database.patch to fix crashes in
     various Qt/KDE applications. (Closes: #631652)
 
  -- Fathi Boudra <fabo@debian.org>  Sat, 25 Jun 2011 21:22:37 +0300
+
+qt4-x11 (4:4.7.3-3ubuntu2) oneiric; urgency=low
+
+  * Fix FTBFS on armel by adding extra_configure_opts += -arch armv6 back to
+    debian/rules for armel
+
+ -- Scott Kitterman <scott@kitterman.com>  Fri, 24 Jun 2011 12:42:50 -0400
+
+qt4-x11 (4:4.7.3-3ubuntu1) oneiric; urgency=low
+
+  [ Michał Zając ]
+  * Merge with Debian, remaining changes in KUBUNTU-DEBIAN-DIFFERENCES
+  * Dropped x-0003-Use-GCC-intrinsics-for-armv6-atomic-operations.patch,
+    95_neon_flags.patch and kubuntu_23_arm_memory_barriers.patch
+  * Removed OpenVG stuff since we no longer build or install it
+
+  [ Didier Roche ]
+  * debian/patches/kubuntu_14_systemtrayicon.diff:
+    - add agateau's patch for hooking plugins in the system tray like
+      the indicator (qt-sni) one
+
+ -- Didier Roche <didrocks@ubuntu.com>  Fri, 24 Jun 2011 11:24:58 +0200
 
 qt4-x11 (4:4.7.3-3) unstable; urgency=low
 
@@ -812,6 +1874,76 @@ qt4-x11 (4:4.7.3-2) unstable; urgency=low
   * Remove myself from Uploaders.
 
  -- Fathi Boudra <fabo@debian.org>  Mon, 13 Jun 2011 15:51:26 +0200
+
+qt4-x11 (4:4.7.3-1ubuntu4) oneiric; urgency=low
+
+  [ Chase Douglas ]
+  * Re-enable tablet support (LP: #762938)
+  * Fix touch end event handling for reentrancy (LP: #785433)
+    - Updated kubuntu_28_xi2.1.patch with the fixes
+
+  [ Didier Roche ]
+  * debian/patches/a11y_qt_and_qml_backport.diff:
+    - backport patches from 4.8 to 4.7 for Qt and QML a11y support
+
+ -- Didier Roche <didrocks@ubuntu.com>  Thu, 23 Jun 2011 09:07:42 +0200
+
+qt4-x11 (4:4.7.3-1ubuntu3) oneiric; urgency=low
+
+  * debian/rules:
+    - preserve default flags (like -g)
+
+ -- Didier Roche <didrocks@ubuntu.com>  Thu, 09 Jun 2011 18:33:15 +0200
+
+qt4-x11 (4:4.7.3-1ubuntu2) oneiric; urgency=low
+
+  [ Chase Douglas ]
+  * Fix touch end event handling, LP: #785433
+    - Updated kubuntu_28_xi2.1.patch with the fix
+
+  [ Didier Roche ]
+  * debian/rules:
+    - use -fno-strict-aliasing for now as a lot of QML codes broke because of
+      aliasing wrongly optimized. Issue under work upstream. (LP: #791213)
+
+ -- Didier Roche <didrocks@ubuntu.com>  Wed, 08 Jun 2011 17:20:48 +0200
+
+qt4-x11 (4:4.7.3-1ubuntu1) oneiric; urgency=low
+
+  * Merge from Debian unstable, remaining changes:
+    - Do not package ibase/firebird package, remove from debian/rules and
+      debian/control
+    - libqt4-sql-ibase not recommend for libqt4-sql
+    - build with -no-phonon
+    - do not build libqt4-phonon, disable in debian/control
+    - Build packages with lzma compression using the dh addon from pkg-kde-tools
+    - Rules to remove po dir in clean
+    - Add MessagesQt.sh
+    - Rules to create Messages.sh link to MessagesQt.sh and rules to create po
+      dir and exectue extract-messages.sh in common-install-prehook-impl
+    - Make libqt4-dev depend on libx11-dev
+    - In debian/rules: configure with "-arch armv6" option on armel
+    - Add and install Trolltech.conf in libqtcore4.install
+    - Build QtWebkit and use it only for QtAssistant
+      + Rule to put qt_webkit_version.pri in mkspecs/modules
+      + Rule to remove libQtWebKit* after build
+      + Exclude usr/bin/assistant-qt4 from dh_shlibdeps
+    - Fix Lucid upgrades: libqt4-help breaks/replaces libqtcore4 (<< 4:4.7.0)
+    - Change OpenGL backend from GL to GLES 2 for ARM
+      + Build-depend and make libqt4-opengl-dev depend on libgles2-mesa-dev
+        instead of libgl1-mesa-dev and libglu1-mesa-dev
+      + Pass "-opengl es2" to configure
+  * Drop kubuntu_23_syncqt_no_timestamp_change.diff, replaced by
+    02_syncqt_sane_timestamp_for_nonexisting_headers.diff.
+  * Drop kubuntu_02_neon_flags.patch, replaced by 95_neon_flags.patch.
+  * Disable x-0003-Use-GCC-intrinsics-for-armv6-atomic-operations.patch as
+    we use kubuntu_23_arm_memory_barriers.patch instead.
+  * Drop appmenu-qt from libqtgui4's Recommends since indicator-appmenu
+    recommends it.
+  * Drop kubuntu_30_blacklist_ssl_certificates.diff, applied upstream.
+  * Update Vcs links as the branch is owned by kubuntu-packagers now.
+
+ -- Felix Geyer <debfx-pkg@fobos.de>  Tue, 31 May 2011 15:48:58 +0200
 
 qt4-x11 (4:4.7.3-1) unstable; urgency=low
 
@@ -947,6 +2079,85 @@ qt4-x11 (4:4.7.2-1) unstable; urgency=low
 
  -- Fathi Boudra <fabo@debian.org>  Thu, 03 Mar 2011 20:58:36 +0200
 
+qt4-x11 (4:4.7.2-0ubuntu6.1) natty-proposed; urgency=low
+
+  * Add kubuntu_92_qml_memory_leak.diff from Canonical Design team to
+    fix a memory leak in QML, LP: #723956
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 26 Apr 2011 17:07:09 +0100
+
+qt4-x11 (4:4.7.2-0ubuntu6) natty; urgency=low
+
+  * SECURITY UPDATE: Fake SSL certificates produced by Comodo, LP: #742377
+  * Update kubuntu_30_blacklist_ssl_certificates.diff from upstream staging
+    - in qsslsocket_openssl.cpp block bad certificates
+    - http://qt.gitorious.org/+qt-developers/qt/staging/commit/b87528a71b66e786c11804d7b79e408aae612748
+    - http://bugreports.qt.nokia.com/browse/QTBUG-18338
+    - http://www.comodo.com/Comodo-Fraud-Incident-2011-03-23.html
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 25 Mar 2011 17:31:29 +0000
+
+qt4-x11 (4:4.7.2-0ubuntu5) natty; urgency=low
+
+  * libqtgui4 recommends appmenu-qt, LP: #733309
+  * SECURITY UPDATE: Fake SSL certificates produced by Comodo, LP: #742377
+    - Add kubuntu_30_blacklist_ssl_certificates.diff from upstream staging, lists
+      and blocks known bad certificates
+    - http://qt.gitorious.org/+qt-developers/qt/staging/commit/04e074e8d7c097295505e63565abdc7ca2b49f7b
+    - http://bugreports.qt.nokia.com/browse/QTBUG-18338
+    - http://www.comodo.com/Comodo-Fraud-Incident-2011-03-23.html
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 23 Mar 2011 17:31:55 +0000
+
+qt4-x11 (4:4.7.2-0ubuntu4) natty; urgency=low
+
+  [ Felix Geyer ]
+  * Drop accidentally added debian-changes-4:4.7.2-0ubuntu1 patch.
+
+  [ Scott Kitterman ]
+  * Rebuild again to get rid of gcc4.4 on armel now that pkg-kde-tools has
+    been reverted to use gcc4.5 too
+
+ -- Scott Kitterman <scott@kitterman.com>  Sun, 13 Mar 2011 12:26:39 -0400
+
+qt4-x11 (4:4.7.2-0ubuntu3) natty; urgency=low
+
+  * Stop forcing Qt4 on ARM to build against gcc-4.4 (drop build-dep and
+    related rules changes)
+  * Replace Debian Vcs-* fields in Ubuntu Vcs-* in debian/control
+
+ -- Scott Kitterman <scott@kitterman.com>  Fri, 11 Mar 2011 16:26:52 -0500
+
+qt4-x11 (4:4.7.2-0ubuntu2) natty; urgency=low
+
+  * debian/patches/kubuntu_02_neon_flags.patch: Pass -mfpu=neon to
+    files that use NEON instructions, fix ARM FTBFS.
+  * debian/patches/kubuntu_23_arm_memory_barriers.patch: Make ARM
+    atomic operations SMP-safe by adding memory barriers. Backported
+    from Qt master branch.
+
+ -- Jani Monoses <jani@ubuntu.com>  Fri, 04 Mar 2011 14:53:00 +0200
+
+qt4-x11 (4:4.7.2-0ubuntu1) natty; urgency=low
+
+  [ Jonathan Riddell ]
+  * New upstream release
+  * Remove 17_add_postgresql_8.3_support.diff now upstream
+  * Remove 22_use___GLIBC__.diff now upstream
+  * Remove kubuntu_19_gtkstyle_inactive_background.diff now upstream
+  * Remove kubuntu_20_gtkstyle_tabwidget_focus.diff now upstream
+  * Remove kubuntu_25_qsortfilterproxymodel.diff now upstream
+
+  [ Chase Douglas ]
+  * If no widget is found on touch begin, stop processing touch (LP:
+    #725959)
+
+  [ Felix Geyer ]
+  * Add kubuntu_29_egl_qglcontext_stubs.diff to retain ABI/API compatibility
+    when Qt is built with EGL support. (LP: #707794)
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 03 Mar 2011 10:51:40 +0000
+
 qt4-x11 (4:4.7.1-2) experimental; urgency=low
 
   [ Pino Toscano ]
@@ -1047,6 +2258,311 @@ qt4-x11 (4:4.7.1-1) experimental; urgency=low
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Dec 2010 19:50:11 +0200
 
+qt4-x11 (4:4.7.1-0ubuntu12) natty; urgency=low
+
+  * Fix kubuntu_28_xi2.1.patch, use double instead of casting to qreal
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 28 Feb 2011 22:15:06 +0000
+
+qt4-x11 (4:4.7.1-0ubuntu11) natty; urgency=low
+
+  [ Felix Geyer ]
+  * Explicitly disable EGL support on all architectures except ARM. The last
+    version accidentally enabled it as libegl1-mesa-dev was pulled in.
+    (LP: #724867)
+
+  [ Jonathan Riddell ]
+  * Cast use of double in kubuntu_28_xi2.1.patch to fix FTBFS on armel.
+
+  [ Ricardo Salveti de Araujo ]
+  * Changing OpenGL backend from GL to GLES 2 for ARM (LP: #707794)
+
+ -- Felix Geyer <debfx-pkg@fobos.de>  Fri, 25 Feb 2011 14:21:36 +0100
+
+qt4-x11 (4:4.7.1-0ubuntu10) natty; urgency=low
+
+  * Add multitouch support through preliminary XInput 2.1
+    - Add debian/patches/kubuntu_28_xi2.1.patch
+    - Add build dependency on new libxi-dev with XInput 2.1 support
+
+ -- Chase Douglas <chase.douglas@ubuntu.com>  Wed, 23 Feb 2011 10:59:05 -0500
+
+qt4-x11 (4:4.7.1-0ubuntu9) natty; urgency=high
+
+  * Force Qt4 on ARM to build against gcc-4.4 due to compiler regression in
+    gcc 4.5 (LP: #713452)
+
+ -- Michael Casadevall <mcasadevall@ubuntu.com>  Mon, 07 Feb 2011 12:11:02 -0800
+
+qt4-x11 (4:4.7.1-0ubuntu8) natty; urgency=low
+
+  * Add kubuntu_26_dbusconnection_pointer.diff,
+    kubuntu_27_dbus_signal_filter_passes_not_handled.diff from Qt 4.8
+    to add a way to obtain the DBusConnection* pointer from a
+    QDBusConnection.  Requested by Ryan Lortie
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 18 Jan 2011 20:37:32 +0000
+
+qt4-x11 (4:4.7.1-0ubuntu7) natty; urgency=low
+
+  [ Scott Kitterman ]
+  * Drop debian/patches/kubuntu_01_volatile_bit_fields.diff, no longer needed
+
+  [ Jonathan Riddell ]
+  * Add kubuntu_24_large_qtreeview.diff by David Faure, fix crash when
+    using large lists in KPackageKit
+  * Add kubuntu_25_qsortfilterproxymodel.diff requested by David Jarvie
+    for KAlarm from http://qt.gitorious.org/qt/qt/merge_requests/934
+  * Update kubuntu_15_appmenu.diff with 20110111 from Aurelien Gateau
+    this version loads plugins for menubars and gets rid of the dbusmenu-qt
+    code duplication
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 12 Jan 2011 00:07:51 +0000
+
+qt4-x11 (4:4.7.1-0ubuntu6) natty; urgency=low
+
+  * No-change rebuild against fixed pkg-create-dbgsym. (LP: #669430)
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 31 Dec 2010 15:33:39 +0100
+
+qt4-x11 (4:4.7.1-0ubuntu5) natty; urgency=low
+
+  * Add debian/patches/kubuntu_91_fix_qtextedit_selectall_crash.patch to fix
+    http://bugreports.qt.nokia.com/browse/QTBUG-15659
+
+ -- Kristóf Kiszel <ulysses@kubuntu.org>  Fri, 10 Dec 2010 08:53:24 +0100
+
+qt4-x11 (4:4.7.1-0ubuntu4) natty; urgency=low
+
+  * Add debian/patches/kubuntu_01_volatile_bit_fields.diff to work around gcc
+    bug (LP 675347) and fix FTBFS on armel
+
+ -- Scott Kitterman <scott@kitterman.com>  Thu, 18 Nov 2010 11:40:25 -0500
+
+qt4-x11 (4:4.7.1-0ubuntu3) natty; urgency=low
+
+  * Further fixes to kubuntu_23_syncqt_no_timestamp_change.diff
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 17 Nov 2010 11:52:21 +0000
+
+qt4-x11 (4:4.7.1-0ubuntu2) natty; urgency=low
+
+  * Add kubuntu_23_syncqt_no_timestamp_change.diff, stop it changing
+    file timestamps during build which results in qconfig.h being set to
+    0, http://bugreports.qt.nokia.com/browse/QTBUG-12731
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 17 Nov 2010 11:01:01 +0000
+
+qt4-x11 (4:4.7.1-0ubuntu1) natty; urgency=low
+
+  * New upstream release
+  * Remove kubuntu_21_fix_phantom_cursor.diff applied upstream
+  * Refresh 10_config_tests_fixes.diff
+  * Refresh 01_debian_append_qt4_suffix.diff
+  * Add kubuntu_22_thumb2_support.diff LP: #673085, remove implict thumb
+    flag from debian/rules
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 15 Nov 2010 17:20:18 +0000
+
+qt4-x11 (4:4.7.0-0ubuntu8) natty; urgency=low
+
+  * In debian/rules add export CXXFLAGS += -Wa,-mimplicit-it=thumb on armel
+    to work around lack of IT instruction usage and fix FTBFS
+
+ -- Scott Kitterman <scott@kitterman.com>  Fri, 29 Oct 2010 18:10:05 -0400
+
+qt4-x11 (4:4.7.0-0ubuntu7) natty; urgency=low
+
+  * Remove kubuntu_08_add_missing_bold_style.diff and 
+    kubuntu_08_add_missing_bold_style.diff, as they were causing regressions
+    with normal bold fonts, and were in fact already disabled before they
+    were acidentally re-enabled in a merge.
+
+ -- Jonathan Thomas <echidnaman@kubuntu.org>  Sat, 23 Oct 2010 13:14:16 -0400
+
+qt4-x11 (4:4.7.0-0ubuntu6) natty; urgency=low
+
+  * Remove dh_shlibdeps --remaining-packages no needed, fix FTBFS
+  * Update symbol files
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Tue, 19 Oct 2010 23:55:28 +0200
+
+qt4-x11 (4:4.7.0-0ubuntu5) natty; urgency=low
+
+  * Merge with Debian, remaining changes:
+    - Do not package firebird and ibase packages, remove from debian/rules and
+      debian/control
+    - libqt4-sql-ibase not recommend for libqt4-sql
+    - libqtgui4: suggest, not recommend, qt4-qtconfig
+    - build with -no-phonon
+    - do not build libqt4-phonon, disable in debian/control
+    - Build packages with lzma compression using the dh addon from
+      pkg-kde-tools
+    - Rules to remove po dir in clean
+    - Add MessagesQt.sh
+    - Rules to create Messages.sh link to MessagesQt.sh and rules to create po
+      dir and exectue extract-messages.sh in common-install-prehook-impl
+    - Make libqt4-dev depend on libx11-dev
+    - In debian/rules Set DEB_HOST_ARCH and DEB_HOST_ARCH_OS. Configure with
+      "-arch armv6" option on ARM
+    - Add and install Trolltech.conf in libqtcore4.install
+    - Build QtWebkit and use it only for QtAssistant
+      + Rule to put qt_webkit_version.pri in mkspecs/modules
+      + Rule to remove libQtWebKit* after build
+      + Exclude usr/bin/assistant-qt4 from dh_shlibdeps
+    - kubuntu_08_add_missing_bold_style.diff to make qt support bold style CJK
+      fonts
+    - kubuntu_09_use_ft_glyph_embolden_to_fake_bold.diff to make qt support
+      bold style CJK fonts
+    - kubuntu_10_ibus_input_method.diff to change default input method
+    - kubuntu_12_fix_stack_protector.diff restore the stack protector
+      compiler flag (LP: #538237).
+    - kubuntu_15_appmenu.diff  from Aurelien Gateau, adds support
+      for external menu bars exported over dbus
+    - kubuntu_16_qt-designer-toplevel-mode-menubar.diff from Aurelien
+      Gateau to keep designer working with global menu when in toplevel
+      mode
+    - kubuntu_17_enable_qtwebkit_for_qtassistant.diff Build QtWebkit so
+      QtAssistant is able to link 
+      against it. (LP: #624697)
+    - kubuntu_18_fix_qtreeview_regression.diff
+      (http://bugreports.qt.nokia.com/browse/QTBUG-13567
+       https://bugs.kde.org/show_bug.cgi?id=246997)
+    - kubuntu_19_gtkstyle_inactive_background.diff fixes
+      http://bugreports.qt.nokia.com/browse/QTBUG-13792
+      'GTK style: Wrong foreground color for selected item when unfocused'
+    - kubuntu_20_gtkstyle_tabwidget_focus.diff fixes
+      http://bugreports.qt.nokia.com/browse/QTBUG-14161
+     'Tab focus incorrectly drawn with Ubuntu Ambience theme'
+    - kubuntu_21_fix_phantom_cursor.diff cursor would disappear after
+      attempting to paste something
+      (http://bugreports.qt.nokia.com/browse/QTBUG-6185)
+    - Fix Lucid -> Maverick upgrade (LP: #652029) libqt4-help replaces
+      libqtcore4 (<< 4:4.7.0)
+  * Refresh 01_debian_append_qt4_suffix.diff
+  * Refresh 10_config_tests_fixes.diff
+  * Add kubuntu_90_webkit_htmlxml_gb_gb18030_detect.diff to handle
+    gb2312/gbk/gb18030 correctly
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 15 Oct 2010 12:23:16 +0100
+
+qt4-x11 (4:4.7.0-0ubuntu4) maverick; urgency=low
+
+  * Fix Lucid -> Maverick upgrade (LP: #652029)
+    - libqt4-help replaces libqtcore4 (<< 4:4.7.0)
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Sun, 03 Oct 2010 04:14:04 +0200
+
+qt4-x11 (4:4.7.0-0ubuntu3) maverick; urgency=low
+
+  [ Jonathan Riddell ]
+  * Add kubuntu_19_gtkstyle_inactive_background.diff recommended by
+    upstream, fixes http://bugreports.qt.nokia.com/browse/QTBUG-13792
+    'GTK style: Wrong foreground color for selected item when unfocused'
+  * Add kubuntu_20_gtkstyle_tabwidget_focus.diff recommended by
+    upstream, fixes http://bugreports.qt.nokia.com/browse/QTBUG-14161
+    'Tab focus incorrectly drawn with Ubuntu Ambience theme'
+
+  [ Jonathan Thomas ]
+  * Add kubuntu_21_fix_phantom_cursor.diff to fix a problem visible in
+    several KDE applications (such as Konversation, KPackageKit, and KOrg, to
+    name a few) where the cursor would disappear after attempting to paste
+    something (http://bugreports.qt.nokia.com/browse/QTBUG-6185)
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 01 Oct 2010 11:59:23 +0100
+
+qt4-x11 (4:4.7.0-0ubuntu2) maverick; urgency=low
+
+  * Add kubuntu_18_fix_qtreeview_regression.diff
+    (http://bugreports.qt.nokia.com/browse/QTBUG-13567
+     https://bugs.kde.org/show_bug.cgi?id=246997)
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Sun, 26 Sep 2010 19:34:58 +0200
+
+qt4-x11 (4:4.7.0-0ubuntu1) maverick; urgency=low
+
+  [ Alessandro Ghersi ]
+  * New upstream release
+    - Enable 11_build_translations.diff
+
+  [ Jonathan Riddell ]
+  * Update kubuntu_15_appmenu.diff from Aurelien Gateau, LP: #643393
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Wed, 22 Sep 2010 21:33:24 +0200
+
+qt4-x11 (4:4.7.0~rc1+git20100917-0ubuntu1) maverick; urgency=low
+
+  * New upstream git snapshot
+    - Fix FTBS
+    - Refresh patches
+    - Update install files
+    - Update symbol files 
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Fri, 17 Sep 2010 08:12:23 +0200
+
+qt4-x11 (4:4.7.0~rc1+git20100916-0ubuntu1) maverick; urgency=low
+
+  * New upstream git snapshot
+    - Refresh patches
+    - Removed 0001_webkit_self_injection_into_qt_configuration.patch
+      fixed by upstream
+    - Update install files
+    - Update symbol files
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Wed, 15 Sep 2010 18:57:09 +0200
+
+qt4-x11 (4:4.7.0~rc1-1ubuntu3) maverick; urgency=low
+
+  * Build QtWebkit so QtAssistant is able to link against it. (LP: #624697)
+    We don't actually package QtWebkit here but make qt4-dev-tools depend on
+    the binary-compatible libqtwebkit4 package.
+    - add kubuntu_17_enable_qtwebkit_for_qtassistant.diff
+
+ -- Felix Geyer <debfx-pkg@fobos.de>  Tue, 14 Sep 2010 15:48:41 +0200
+
+qt4-x11 (4:4.7.0~rc1-1ubuntu2) maverick; urgency=low
+
+  * Update kubuntu_15_appmenu.diff from Aurelien Gateau, fixes memory
+    leaks, patch 20100909
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 09 Sep 2010 15:26:42 +0100
+
+qt4-x11 (4:4.7.0~rc1-1ubuntu1) maverick; urgency=low
+
+  [ Felix Geyer ]
+  * Merge with Debian git (unreleased), remaining changes:
+    - Do not package firebird and ibase packages, remove from debian/rules and
+      debian/control
+    - libqt4-sql-ibase not recommend for libqt4-sql
+    - libqtgui4: suggest, not recommend, qt4-qtconfig
+    - Build with -no-phonon
+    - Do not package libqt4-phonon
+    - Build packages with lzma compression using the dh addon from pkg-kde-tools
+    - Rules to remove po dir in clean
+    - Add MessagesQt.sh
+    - Rules to create Messages.sh link to MessagesQt.sh and rules to create po
+      dir and exectue extract-messages.sh in common-install-prehook-impl
+    - Rules to remove Messages.sh link
+    - Make libqt4-dev depend on libx11-dev
+    - In debian/rules Set DEB_HOST_ARCH and
+      DEB_HOST_ARCH_OS. Configure with "-arch armv6" option on ARM
+    - Disable the Qt OpenVG module
+    - Add Kubuntu patches:
+      - kubuntu_08_add_missing_bold_style.diff
+      - kubuntu_09_use_ft_glyph_embolden_to_fake_bold.diff
+      - kubuntu_10_ibus_input_method.diff
+      - kubuntu_12_fix_stack_protector.diff
+      - kubuntu_15_appmenu.diff
+  * Drop kubuntu_16_qx11embed.diff, applied upstream.
+  * Adapt kubuntu_15_appmenu.diff to new upstream version.
+
+  [ Jonathan Riddell ]
+  * Add kubuntu_16_qt-designer-toplevel-mode-menubar.diff from Aurelien
+    Gateau to keep designer working with global menu when in toplevel
+    mode
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 03 Sep 2010 13:32:37 +0100
+
 qt4-x11 (4:4.7.0~rc1-1) experimental; urgency=low
 
   * New upstream release.
@@ -1122,6 +2638,175 @@ qt4-x11 (4:4.7.0~beta2-1) experimental; urgency=low
 
  -- Fathi Boudra <fabo@debian.org>  Thu, 08 Jul 2010 16:59:50 +0300
 
+qt4-x11 (4:4.7.0~beta2-0ubuntu8) maverick; urgency=low
+
+  * Fix path in libqtcore4.install
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 26 Aug 2010 09:14:03 +0100
+
+qt4-x11 (4:4.7.0~beta2-0ubuntu7) maverick; urgency=low
+
+  * Add debian/Trolltech.conf installed into /etc/xdg to point at KDE
+    plugin directory for oxygen style, closes LP: #600646
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 26 Aug 2010 00:55:02 +0100
+
+qt4-x11 (4:4.7.0~beta2-0ubuntu6) maverick; urgency=low
+
+  * Add kubuntu_16_qx11embed.diff to fix QX11Embed widgets, fix from
+    qt's git repository (change
+    9a1b0695277a3864b42d082095962f8742cdcf04), Closes LP: #614699
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 24 Aug 2010 13:34:47 +0100
+
+qt4-x11 (4:4.7.0~beta2-0ubuntu5) maverick; urgency=low
+
+  * Update kubuntu_15_appmenu.diff to 20100819
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 19 Aug 2010 15:16:21 +0100
+
+qt4-x11 (4:4.7.0~beta2-0ubuntu4) maverick; urgency=low
+
+  * Update kubuntu_15_appmenu.diff to 20100810
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 11 Aug 2010 01:13:34 +0100
+
+qt4-x11 (4:4.7.0~beta2-0ubuntu3) maverick; urgency=low
+
+  * Weekly update to kubuntu_15_appmenu.diff
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 23 Jul 2010 09:47:36 +0100
+
+qt4-x11 (4:4.7.0~beta2-0ubuntu2) maverick; urgency=low
+
+  [ Felix Geyer ]
+  * Add libqt4-webkit and libqt4-webkit-dbg dummy transitional packages,
+    remove references to Debian in package descriptions
+  * Make libqt4-dev replace/conflict with libqtwebkit-dev (<< 2.0~) and
+    recommend libqtwebkit-dev instead of libqt4-webkit.
+
+  [ Jonathan Riddell ]
+  * Merge some changes from Debian
+   - Drop multimedia package, QtMultimediaKit in QtMobility replaces it
+   - Copy over patches from Debian, only header differences
+   - in debian/rules remove qt_webkit_version.pri
+   - Copy over debian's libqt4-dev.install, just different order of files
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 19 Jul 2010 15:02:46 +0100
+
+qt4-x11 (4:4.7.0~beta2-0ubuntu1) maverick; urgency=low
+
+  * New upstream beta release
+    - Refresh all patches
+    - Enabled 11_build_translations.diff
+    - Update symbols files
+    - Update libqt4-dev.install
+    - Update libqtcore4.install
+    - Sync qt4-demos.lintian-overrides with Debian
+    - Sync debian/copyright with Debian
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Fri, 09 Jul 2010 19:38:17 +0200
+
+qt4-x11 (4:4.7.0~beta1+git20100706-0ubuntu2) maverick; urgency=low
+
+  [ Alessandro Ghersi ]
+  * libqt4-opengl-dev replaces libqt4-dev (<< 4:4.7.0~beta1+git20100706)
+    (LP: #602856)
+
+  [ Jonathan Riddell ]
+  * Weekly update to kubuntu_15_appmenu.diff
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 08 Jul 2010 21:05:19 +0100
+
+qt4-x11 (4:4.7.0~beta1+git20100706-0ubuntu1) maverick; urgency=low
+
+  * New upstream snapshot
+    - Refresh kubuntu patches
+    - libqt4-help replaces qt4-dev-tools (<< 4:4.7.0~beta1+git20100706)
+    - qt4-designer replaces qt4-dev-tools (<< 4:4.7.0~beta1+git20100706)
+    - Disable kubuntu_08_add_missing_bold_style.diff
+    - Disable kubuntu_09_use_ft_glyph_embolden_to_fake_bold.diff
+    - New packages:
+      - qt4-qmlviewer, which replaces qt4-dev-tools
+      - libqt4-declarative-{particles, gestures, folderlistmodel} which
+        replaces libqt4-declarative (<< 4:4.7.0~beta1+git20100706)
+  * Merge with Debian git (unreleased) remaining changes:
+    - Do not package firebird and ibase packages, remove from debian/rules and
+      debian/control
+    - libqt4-sql-ibase not recommend for libqt4-sql
+    - libqtgui4: suggest, not recommend, qt4-qtconfig
+    - Build with -no-phonon
+    - Do not package libqt4-phonon
+    - Do not add libpulse-dev to build-depends
+    - Do not package libqt4-webkit transitional package
+    - Build with -multimedia for now
+      - Keep libqt4-multimedia package in debian/control
+      - Keep libqt4-multimedia.{install, symbols, lintian-overrides}
+    - libqt4-dev recommends libqt4-webkit
+    - Build packages with lzma compression with override_dh_builddeb
+    - Rules to remove po dir in clean
+    - Add MessagesQt.sh
+    - Rules to create Messages.sh link to MessagesQt.sh and rules to create po
+      dir and exectue extract-messages.sh in common-install-prehook-impl
+    - Rules to remove Messages.sh link
+    - Make libqt4-dev depend on libx11-dev
+    - In debian/rules Set DEB_HOST_ARCH and
+      DEB_HOST_ARCH_OS. Configure with "-arch armv6" option on ARM
+    - Add Kubuntu patches:
+      - kubuntu_08_add_missing_bold_style.diff
+      - kubuntu_09_use_ft_glyph_embolden_to_fake_bold.diff
+      - kubuntu_10_ibus_input_method.diff
+      - kubuntu_12_fix_stack_protector.diff
+      - kubuntu_14_qtdemos_compile_failure.diff
+      - kubuntu_15_appmenu.diff
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Tue, 06 Jul 2010 02:43:04 +0200
+
+qt4-x11 (4:4.7.0~beta1+git20100522-0ubuntu5) maverick; urgency=low
+
+  * Weekly update to kubuntu_15_appmenu.diff from Aurelien Gateau
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 25 Jun 2010 14:40:20 +0100
+
+qt4-x11 (4:4.7.0~beta1+git20100522-0ubuntu4) maverick; urgency=low
+
+  * Update kubuntu_15_appmenu.diff with appmenu-qt-4.7-20100617.diff
+    from Aurelien Gateau
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 17 Jun 2010 14:53:48 +0100
+
+qt4-x11 (4:4.7.0~beta1+git20100522-0ubuntu3) maverick; urgency=low
+
+  * Update kubuntu_15_appmenu.diff with appmenu-qt-4.7-20100610.diff
+    from Aurelien Gateau
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 11 Jun 2010 00:29:10 +0100
+
+qt4-x11 (4:4.7.0~beta1+git20100522-0ubuntu2) maverick; urgency=low
+
+  * Add kubuntu_15_appmenu.diff from Aurelien Gateau, adds support
+    for external menu bars exported over dbus
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 31 May 2010 17:31:34 +0000
+
+qt4-x11 (4:4.7.0~beta1+git20100522-0ubuntu1) maverick; urgency=low
+
+  * New git snapshot:
+    - Refresh patches:
+      - 0180-window-role.diff
+      - 0209-prevent-qt-mixing.diff
+      - 05_append_qt4_target.diff
+      - 11_build_translations.diff
+      - kubuntu_14_qtdemos_compile_failure.diff
+    - Update install files:
+      - libqt4-declarative.install
+      - libqt4-dev.install
+      - libqt4-multimedia.install
+      - libqtcore4.install
+      - qt4-dev-tools.install
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Sat, 22 May 2010 01:55:18 +0200
+
 qt4-x11 (4:4.7.0~beta1-1) experimental; urgency=low
 
   * New upstream release.
@@ -1154,6 +2839,34 @@ qt4-x11 (4:4.7.0~beta1-1) experimental; urgency=low
   * Update symbols files.
 
  -- Fathi Boudra <fabo@debian.org>  Fri, 21 May 2010 10:31:22 +0300
+
+qt4-x11 (4:4.7.0~beta1-0ubuntu1) maverick; urgency=low
+
+  * New upstream beta release
+  * Merge with Debian, remaining changes:
+    - Do not package firebird and ibase packages, remove from debian/rules and
+      debian/control
+    - libqt4-sql-ibase not recommend for libqt4-sql
+    - libqtgui4: suggest, not recommend, qt4-qtconfig
+    - build with -no-phonon
+    - Build packages with lzma compression with override_dh_buildded
+    - Rules to remove po dir in clean
+    - Add MessagesQt.sh
+    - Rules to create Messages.sh link to MessagesQt.sh and rules to create po
+      dir and exectue extract-messages.sh in common-install-prehook-impl
+    - Rules to remove Messages.sh link
+    - Make libqt4-dev depend on libx11-dev
+    - In debian/rules Set DEB_HOST_ARCH and
+      DEB_HOST_ARCH_OS. Configure with "-arch armv6" option on ARM
+  * Build with no-webkit, let's see if we can package QtWebKit standalone
+  * Build with no-phonon, let's see if we can package Phonon standalone
+  * Add build-dep on libgstreamer0.10-dev for QtMultimedia
+  * New package libqt4-declarative
+  * Add kubuntu_13_gstreamer_test.diff fix gstreamer config test
+  * Add kubuntu_14_qtdemos_compile_failure.diff don't compile
+    qtdemo, it uses obsolete libraries
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 19 May 2010 11:03:10 +0000
 
 qt4-x11 (4:4.6.3-4+squeeze1) stable; urgency=low
 
@@ -1412,6 +3125,259 @@ qt4-x11 (4:4.6.2-1) experimental; urgency=low
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 01 Mar 2010 13:26:14 +0100
 
+qt4-x11 (4:4.6.2-0ubuntu5) lucid; urgency=low
+
+  [ Alessandro Ghersi ]
+  * Update applications icons (LP: #350312)
+  * Fix watch file to report only stable versions
+  * Sync patches with Debian:
+    - 02_launch_assistant-qt4.diff
+    - 10_config_tests_fixes.diff
+    - 15_fix_qmake_makefile_generation.diff
+    - 16_hide_std_symbols_on_qtwebkit.diff
+    - 40_alpha_ice.diff
+  * Fix qdbus.1 manpage
+  * Sync desktop files with Debian to fix lintian warning
+  * Fix lintian warning: binary-control-field-duplicates-source
+  * Add upstream patch 0002_qmake_qfileinfo_absolutepath.diff
+    - Fixed QFileInfo::absolutePath() warning when running "qmake -project"
+      http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=%23574043
+
+  [ Jonathan Thomas ]
+  * Update upstream's libphonon patch. This will correct build system issues
+    that caused both the PulseAudio integration to fail as well as the
+    libphonon version to be under-reported (LP: #557514)
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Fri, 09 Apr 2010 05:57:00 +0200
+
+qt4-x11 (4:4.6.2-0ubuntu4) lucid; urgency=low
+
+  [ Alessandro Ghersi ]
+  * Drop 90_ia64_opts.diff, is obsolete, fixed in gcc now
+
+  [ Anthony Mercatante ]
+  *  Added kubuntu_06_qdnd_x11_cursor.diff:
+    - Use X11 theme for drag and drop icons
+    - Closes LP: #280113
+
+ -- Anthony Mercatante <tonio@ubuntu.com>  Wed, 07 Apr 2010 12:35:07 +0200
+
+qt4-x11 (4:4.6.2-0ubuntu3) lucid; urgency=low
+
+  [ Jonathan Thomas ]
+  * Update kubuntu_07_phonon_4.3.80.diff, patches Qt's libphonon to Phonon
+    4.4.0
+
+  [ Alessandro Ghersi ]
+  * Add cherry-picked patch 0001_qpixmap_load_no_modify_referenced_copies.diff
+    from upstream  (sync with Debian)
+  * Rename kubuntu_07_phonon_4.3.80.diff to kubuntu_07_phonon_4.4.0.diff
+  * qt4-dev-tools replaces libqtcore4 (<< 4:4.6.2) (LP: #544688)
+
+  [ Michael Vogt ]
+  * debian/control:
+    - fix missing Replaces in phonon-dbg (LP: #546024)
+
+  [ Roderick B. Greening ]
+  * Release 4:4.6.2-0ubuntu3 
+
+ -- Roderick B. Greening <roderick.greening@gmail.com>  Mon, 29 Mar 2010 13:54:01 -0230
+
+qt4-x11 (4:4.6.2-0ubuntu2) lucid; urgency=low
+
+  [ Matthias Klose ]
+  * 90_ia64_opts.diff: Build with -Os on ia64, to work around
+    PR target/43348. LP: #531697.
+  * debian/rules (clean): Use find/xargs for a small speedup.
+
+  [ Kees Cook ]
+  * Add kubuntu_12_fix_stack_protector.diff: restore the stack protector
+    compiler flag (LP: #538237).
+
+ -- Matthias Klose <doko@ubuntu.com>  Sun, 14 Mar 2010 13:58:43 +0100
+
+qt4-x11 (4:4.6.2-0ubuntu1) lucid; urgency=low
+
+  [ Jonathan Riddell ]
+  * New upstream release
+  * Update kubuntu_07_phonon_4.3.80.diff
+  * Update 05_append_qt4_target.diff
+
+  [ Alessandro Ghersi ]
+  * Update patches:
+    - 0180-window-role.diff
+    - 15_fix_qmake_makefile_generation.diff
+    - 18_enable_qt3support_qtwebkit_debug_info.diff
+    - 81_hurd_architecture.diff
+    - 82_hurd_SA_SIGINFO.diff
+    - 96_powerpc_no_gc_sections.diff
+  * Sync 92_armel_gcc43_valist_compat.diff with Debian
+  * Add kubuntu_11_fix_main_window_without_central_widget.diff (LP: #515132)
+    (backport from Qt 4.6.3)
+  * In libqt4-dbg add conflicts with qt-x11-free-dbg (LP: #517263)
+  * qt4-dev-tools replaces libqt4-core (<= 4.5.3really4.5.2-0ubuntu1)
+    (LP: #527534)
+  * Sync manpages/qdbus.1 with Debian
+    - Update libqt4-dev.manpages
+  * qt4-dev-tools conflicts with qt3-dev-tools-embedded
+  * qt4-dev-tools suggests qt4-doc-html
+  * Update all symbol files
+  * Bump build dependency of debhelper and pkg-kde-tools to version 0.6.4 as it
+    is needed to handle symbol files and build with pkgkde symbolshelper and
+    parallel addon
+  * Call dh_auto_build instead of $(MAKE) for parallel build
+  * In override_dh_makeshlibs: do not FTBS if there are lost symbols
+  * Drop rules to generating libphonon4 symbols, no longer need
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Thu, 25 Feb 2010 02:23:43 +0100
+
+qt4-x11 (4:4.6.1-1ubuntu2) lucid; urgency=low
+
+  * Fix kubuntu_04_qt_ia32_library_path.patch to use QLatin1String
+    fix ftbs on i386
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Wed, 03 Feb 2010 21:23:43 +0100
+
+qt4-x11 (4:4.6.1-1ubuntu1) lucid; urgency=low
+
+  [ Alessandro Ghersi ]
+  * New upstream release
+    - Phonon stuff:
+      - In libphonon-dev.install install headers in the right place to build
+        KDE with phonon support
+    - Refresh patches:
+      - 96_powerpc_no_gc_sections.diff
+      - 0180-window-role.diff
+      - 0216-allow-isystem-for-headers.diff
+      - 05_append_qt4_target.diff
+      - 07_trust_dpkg-arch_over_uname-m.diff
+      - 08_configure_quilt_compat.diff
+      - 09_qmake_lflags_as-needed.diff
+      - 12_add_nostrip_for_debug_packages.diff
+      - 18_enable_qt3support_qtwebkit_debug_info.diff
+      - 20_install_qvfb.diff
+      - 30_webkit_unaligned_access.diff
+      - 40_alpha_ice.diff
+      - 92_armel_gcc43_valist_compat.diff
+      - 95_sparc_platform_definition.diff
+      - 96_powerpc_no_gc_sections.diff
+      - kubuntu_04_qt_ia32_library_path.patch
+      - kubuntu_09_use_ft_glyph_embolden_to_fake_bold.diff
+      - kubuntu_07_phonon_4.3.80.diff
+    - Remove patches merged upstream:
+      - 93_jsvalue64_on_ia64.diff
+      - 94_fix_crash_in_qdbuspendingreply_qdbusreply.diff
+      - 97_prevent_crash_on_inputcontext_creation.diff
+  * Merge with Debian git remaining changes:
+    - Do not package firebird and ibase packages, remove from debian/rules and
+      debian/control
+    - libqt4-sql-ibase not recommend for libqt4-sql
+    - libqt4-gui: suggest, not recommend, qt4-qtconfig
+    - libphonon and libphonon-dev replace libqt4-phonon{,-dev}
+    - libphonon replaces libqt4-phonon-dev (<= 4.5.3really4.5.2-0ubuntu1),
+      usr/lib/qt4/plugins/designer/libphononwidgets.so was moved from
+      libqt4-phonon-dev
+    - libqt4-phonon-dev replaces libphonon-dev (<= 4:4.3.1-1ubuntu1)
+    - libqt4-phonon-dbg replaces phonon-dbg (<= 4:4.3.1-4ubuntu1)
+    - Install various extra headers in libqt4-opengl-dev.install and
+      libqt4-dev.install
+    - Build packages with lzma compression
+    - Add links from /usr/share/qt4/lib/ to /usr/lib for Qt libraries
+      needed for Qt Jambi in debian/rules
+    - Rules to remove po dir in clean
+    - Add MessagesQt.sh
+    - Rules to create Messages.sh link to MessagesQt.sh and rules to create po
+      dir and exectue extract-messages.sh in common-install-prehook-impl
+    - Rules to remove Messages.sh link
+    - Make libqt4-dev depend on libx11-dev
+    - Add libpulse-dev to build-depends
+    - In debian/rules Set DEB_HOST_ARCH and DEB_HOST_ARCH_OS.
+      Configure with "-arch armv6" option on ARM
+    - Keep Kubuntu patches:
+      - kubuntu_04_qt_ia32_library_path.patch
+      - kubuntu_07_phonon_4.3.95.diff
+      - kubuntu_08_add_missing_bold_style.diff
+      - kubuntu_09_use_ft_glyph_embolden_to_fake_bold.diff
+
+  [ Zhengpeng Hou ]
+  * Add kubuntu_08_add_missing_bold_style.diff and
+    kubuntu_09_use_ft_glyph_embolden_to_fake_bold.diff
+    to make qt support bold style CJK fonts
+
+  [ Jonathan Riddell ]
+  * Add kubuntu_10_ibus_input_method.diff to change default input method
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Tue, 19 Jan 2010 13:26:43 +0100
+
+qt4-x11 (4:4.6.0-1ubuntu6) lucid; urgency=low
+
+  * Add patch kubuntu_05_powerpc_build.diff to fix build on powerpc,
+    apply in debian/rules
+  * Rename 93_jsvalue64_on_ia64.diff to kubuntu_06_jsvalue64_on_ia64.diff
+  * Rename updated-phonon.diff to kubuntu_07_phonon_4.3.80.diff
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 23 Dec 2009 23:50:07 +0000
+
+qt4-x11 (4:4.6.0-1ubuntu5) lucid; urgency=low
+
+  * Add missing #endif to debian/patches/93_jsvalue64_on_ia64.diff
+
+ -- Scott Kitterman <scott@kitterman.com>  Sun, 20 Dec 2009 09:06:18 -0500
+
+qt4-x11 (4:4.6.0-1ubuntu4) lucid; urgency=low
+
+  * debian/patches/92_powerpc_no_gc_sections.diff: Don't pass
+    -Wl,--gc-sections on powerpc when building libQtWebKit.so; works around
+    a binutils bug that results in a segfault.
+  * debian/patches/93_jsvalue64_on_ia64.diff: make sure we're setting
+    WTF_USE_JSVALUE64 on ia64, as in previous releases.
+  * fix override_dh_clean target to not *completely bypass* dh_clean
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Sun, 20 Dec 2009 07:36:30 +0000
+
+qt4-x11 (4:4.6.0-1ubuntu3) lucid; urgency=low
+
+  * Add updated-phonon.diff, diff between Phonon in Qt 4.6.0 and Phonon in
+    http://qt.gitorious.org/~sandsmark/qt/sandsmarks-kde-qt-with-updated-phonon
+    Thanks to Martin T. H. Sandsmark
+  * Add libpulse-dev in build-deps
+  * Update libphonon-dev.install
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Sun, 13 Dec 2009 20:53:59 +0100
+
+qt4-x11 (4:4.6.0-1ubuntu2) lucid; urgency=low
+
+  * Make libqt4-dev depend on libx11-dev
+  * In debian/rules Set DEB_HOST_ARCH and DEB_HOST_ARCH_OS. Configure with "-arch armv6" option on ARM
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 08 Dec 2009 13:30:39 +0000
+
+qt4-x11 (4:4.6.0-1ubuntu1) lucid; urgency=low
+
+  * Merge with Debian experimental, remaining changes:
+    - Do not package firebird and ibase packages, remove from debian/rules and
+      debian/control
+    - libqt4-sql-ibase not recommend for libqt4-sql
+    - libqt4-gui: suggest, not recommend, qt4-qtconfig
+    - libphonon and libphonon-dev replace libqt4-phonon{,-dev}
+    - libphonon replaces libqt4-phonon-dev (<= 4.5.3really4.5.2-0ubuntu1),
+      usr/lib/qt4/plugins/designer/libphononwidgets.so was moved from
+      libqt4-phonon-dev
+    - libqt4-phonon-dev replaces libphonon-dev (<= 4:4.3.1-1ubuntu1)
+    - libqt4-phonon-dbg replaces phonon-dbg (<= 4:4.3.1-4ubuntu1)
+    - Install various extra headers in libqt4-opengl-dev.install and
+      libqt4-dev.install
+    - Build packages with lzma compression
+    - Add links from /usr/share/qt4/lib/ to /usr/lib for Qt libraries
+      needed for Qt Jambi in debian/rules
+    - Rules to remove po dir in clean
+    - Add MessagesQt.sh
+    - Rules to create Messages.sh link to MessagesQt.sh and rules to create po
+      dir and exectue extract-messages.sh in common-install-prehook-impl
+    - Rules to remove Messages.sh link
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Sun, 06 Dec 2009 04:25:35 +0100
+
 qt4-x11 (4:4.6.0-1) experimental; urgency=low
 
   * New upstream release.
@@ -1428,6 +3394,50 @@ qt4-x11 (4:4.6.0-1) experimental; urgency=low
 
  -- Fathi Boudra <fabo@debian.org>  Tue, 01 Dec 2009 14:07:47 +0100
 
+qt4-x11 (4:4.6.0-0ubuntu1) lucid; urgency=low
+
+  [ Alessandro Ghersi ]
+  * New upstream release:
+    - Update qt4-dev-tools.install
+    - Update qt4-designer.install
+    - Update libqt4-help.install
+
+ -- Scott Kitterman <scott@kitterman.com>  Sat, 05 Dec 2009 18:26:57 -0500
+
+qt4-x11 (4:4.6.0~rc1-1ubuntu1) lucid; urgency=low
+
+  [Alessandro Ghersi]
+  * Merge with Debian experimental, remaining changes:
+    - Do not package firebird and ibase packages, remove from debian/rules and
+      debian/control
+    - libqt4-sql-ibase not recommend for libqt4-sql
+    - libqt4-gui: suggest, not recommend, qt4-qtconfig
+    - libphonon and libphonon-dev replace libqt4-phonon{,-dev}
+    - libphonon replaces libqt4-phonon-dev (<= 4.5.3really4.5.2-0ubuntu1),
+      usr/lib/qt4/plugins/designer/libphononwidgets.so was moved from
+      libqt4-phonon-dev
+    - libqt4-phonon-dev replaces libphonon-dev (<= 4:4.3.1-1ubuntu1)
+    - libqt4-phonon-dbg replaces phonon-dbg (<= 4:4.3.1-4ubuntu1)
+    - Install various extra headers in libqt4-opengl-dev.install and
+      libqt4-dev.install
+    - Keep kubuntu_03_use_bash_in_configure.diff
+    - Build packages with lzma compression
+    - Add links from /usr/share/qt4/lib/ to /usr/lib for Qt libraries
+      needed for Qt Jambi in debian/rules
+    - Rules to remove po dir in clean
+    - Add MessagesQt.sh
+    - Rules to create Messages.sh link to MessagesQt.sh and rules to create po
+      dir and exectue extract-messages.sh in common-install-prehook-impl
+    - Rules to remove Messages.sh link
+  * Refresh kubuntu_04_qt_ia32_library_path.patch
+
+  [Jonathan Riddell]
+  * Remove kubuntu_03_use_bash_in_configure.diff, Debian uses dash too
+    and they don't need it
+  * Add depends on freetds-dev and add libqt4-sql-tds with -plugin-sql-tds
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Tue, 17 Nov 2009 21:09:55 +0100
+
 qt4-x11 (4:4.6.0~rc1-1) experimental; urgency=low
 
   * New upstream release.
@@ -1436,6 +3446,38 @@ qt4-x11 (4:4.6.0~rc1-1) experimental; urgency=low
   * Update debian/libqt4-dev.install: update installed files.
 
  -- Fathi Boudra <fabo@debian.org>  Tue, 17 Nov 2009 12:12:36 +0100
+
+qt4-x11 (4:4.6.0~beta1-1ubuntu1) lucid; urgency=low
+
+  * Merge with Debian experimental, remaining changes:
+    - Do not package firebird and ibase packages, remove from debian/rules and
+      debian/control
+    - libqt4-sql-ibase not recommend for libqt4-sql
+    - libqt4-gui: suggest, not recommend, qt4-qtconfig
+    - libphonon and libphonon-dev replace libqt4-phonon{,-dev}
+    - libphonon replaces libqt4-phonon-dev (<= 4.5.3really4.5.2-0ubuntu1),
+      usr/lib/qt4/plugins/designer/libphononwidgets.so was moved from
+      libqt4-phonon-dev
+    - libqt4-phonon-dev replaces libphonon-dev (<= 4:4.3.1-1ubuntu1)
+    - libqt4-phonon-dbg replaces phonon-dbg (<= 4:4.3.1-4ubuntu1)
+    - Install various extra headers in libqt4-opengl-dev.install and
+      libqt4-dev.install
+    - Keep kubuntu_03_use_bash_in_configure.diff
+    - Build packages with lzma compression
+    - Add links from /usr/share/qt4/lib/ to /usr/lib for Qt libraries
+      needed for Qt Jambi in debian/rules
+    - Rules to remove po dir in clean
+    - Add MessagesQt.sh
+    - Rules to create Messages.sh link to MessagesQt.sh and rules to create po
+      dir and exectue extract-messages.sh in common-install-prehook-impl
+    - Rules to remove Messages.sh link
+    - Build against libiodbc2-dev and libreadline5-dev, for now don't switch to
+      unixodbc-dev and libreadline-dev to prevent FTBS
+  * Drop our custom -dbg setup, launchpad Bug 261380 was fixed by Fathi Boudra
+    in 4:4.6.0~beta1-1 and merged in our package
+  * Refresh kubuntu_04_qt_ia32_library_path.patch
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Mon, 02 Nov 2009 18:30:08 +0100
 
 qt4-x11 (4:4.6.0~beta1-1) experimental; urgency=low
 
@@ -1637,6 +3679,160 @@ qt4-x11 (4:4.5.2-1) unstable; urgency=low
 
  -- Fathi Boudra <fabo@debian.org>  Thu, 25 Jun 2009 15:23:55 +0200
 
+qt4-x11 (4.5.3really4.5.2-0ubuntu1) karmic; urgency=low
+
+  * Revert back to 4.5.2.  Our 4.5.3 package does not compile in the
+    build daemons and we are unable to recreate the problem so a
+    solution looks unlikely before freeze.
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 14 Oct 2009 16:14:19 +0100
+
+qt4-x11 (4.5.3-0ubuntu3) karmic; urgency=low
+
+  * Remove -fast from ./configure in debian/rules, fix fail to build
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 12 Oct 2009 15:43:52 +0100
+
+qt4-x11 (4.5.3-0ubuntu2) karmic; urgency=low
+
+  * debian/rules: cleanup make target usage by removing sub-src and sub-tools
+    call. Fix FTBS on buildds caused by make target ordering.
+    Thanks to Fathi Boudra
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Fri, 09 Oct 2009 05:24:41 +0200
+
+qt4-x11 (4.5.3-0ubuntu1) karmic; urgency=low
+
+  [ Jonathan Riddell ]
+  * Add kubuntu_05_qtimer_delay.diff from 
+    http://qt.gitorious.org/qt/qt/commit/d0d0fdb8e46351b4ab8492de31e5363ef6662b57.patch
+    as advised by upstream http://mail.kde.org/pipermail/release-team/2009-October/003337.html
+	
+  [ Alessandro Ghersi ]
+  Thanks to Fathi Boudra
+  * debian/rules:
+    - Improve shlibs version rules
+    - Build translations
+    - Test file type on *.a cleaning. tests directory contains *.a in their
+      names
+    - Make sure translations directory is created before calling lrelease
+  * Add qt-copy patch:
+    - 0289-context-for-shortcuts-tr.diff
+      Some languages have special rules for using "+" to concatenate strings
+      and for example it needs to be Ctrl + Shift instead of Ctrl+Shift,
+      adding context to these strings helps creating a more correct translation
+  * Sync debian/copyright file with Debian
+  * Add watch and README.source file
+  * Update debian/manpages files
+  * Update patches to fix offset lines:
+    - 0180-window-role.diff
+    - 0216-allow-isystem-for-headers.diff
+    - 0225-invalidate-tabbar-geometry-on-refresh.patch
+    - 0255-qtreeview-selection-columns-hidden.diff
+    - 0274-shm-native-image-fix.diff
+    - 07_trust_dpkg-arch_over_uname-m.diff
+    - 09_qmake_lflags_as-needed.diff
+    - 15_fix_qmake_makefile_generation.diff
+    - 17_add_postgresql_8.3_support.diff
+    - 40_alpha_ice.diff
+  * Add patch from Debian:
+    - 11_build_translations.diff for fix build translations, with correct
+      prependALL path and with our lupdate-qt4 and lrelease-qt4
+  * Update 05_append_qt4_target.diff patch
+  * Add some translations files
+  * Update libqt4-phonon-dev.install and delete libqt4-phonon-dev.links no
+    longer need
+
+  [ Roderick B. Greening ]
+  * New upstream release
+  * Update Patches
+    - 0274-shm-native-image-fix.diff
+    - 05_append_qt4_target.diff
+    - 70_hppa_ldcw_fix.diff
+    - kubuntu_03_use_bash_in_configure.diff
+  * Remove Patches
+    - 0286-fix-error-string.diff - fixed upstream
+    - kubuntu_05_fix_arora_drag_crash.diff - fixed upstream
+    - kubuntu_06_fix_webkit_mimetype_detection.diff - fixed upstream
+    - kubuntu_07_CVE_2009_2700.diff - fixed upstream
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Sun, 04 Oct 2009 04:12:20 +0200
+
+qt4-x11 (4.5.2-0ubuntu6) karmic; urgency=low
+
+  * Add MessagesQt.sh (Messages.sh is a link for extract-messages.sh)
+  * rules to create po dir and exectue extract-messages.sh in
+    common-install-prehook-impl
+  * rules to remove po dir in clean
+  * Build-Depends pkg-kde-tools for extract-messages.sh
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Sun, 27 Sep 2009 18:53:30 +0200
+
+qt4-x11 (4.5.2-0ubuntu5) karmic; urgency=low
+
+  * SECURITY UPDATE: fix vulnerability with NULL byte in Subject Alternate
+    Names field of X.509 certificates
+    - debian/patches/kubuntu_07_CVE_2009_2700.diff: adjust
+      network/ssl/qsslcertificate.cpp to use QString::fromLatin1 instead of
+      QLatin1String
+    - CVE-2009-2700
+
+ -- Jamie Strandboge <jamie@ubuntu.com>  Wed, 09 Sep 2009 12:57:48 -0500
+
+qt4-x11 (4.5.2-0ubuntu4) karmic; urgency=low
+
+  * Build with mysql 5.1
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 19 Aug 2009 20:40:32 +0100
+
+qt4-x11 (4.5.2-0ubuntu3) karmic; urgency=low
+
+  [ Jonathan Thomas ]
+  * Change Vcs-Browser and Vcs-Bzr in debian/control
+  * Add kubuntu_05_fix_arora_drag_crash.diff to stop QtWebkit from crashing
+    when dragging things to the desktop (LP: #400794)
+  * Add kubuntu_06_fix_webkit_mimetype_detection.diff to stop QtWebKit from
+    trying to load mimetypes it doesn't know as images
+  * Add 0286-fix-error-string.diff from kde-qt git
+  * Add 0287-qmenu-respect-minwidth.diff from kde-qt git to fix the ugly
+    Plasma task manager context menus
+  * Add 0288-more-x-keycodes from kde-qt git to add support for more X
+    keycodes to Qt (LP: #293213)
+
+  [ Jonathan Riddell ]
+  * Add pkg-config to libqt4-dev depends, see launchpad.net/bugs/410228
+
+ -- Jonathan Thomas <echidnaman@kubuntu.org>  Sun, 02 Aug 2009 20:03:52 -0400
+
+qt4-x11 (4.5.2-0ubuntu2) karmic; urgency=low
+
+  * Make libqtgui4 suggest qt4-qtconfig (instead of recommending). This prevents
+    qt4-qtconfig from getting on the Kubuntu CD and thus create a one-item
+    "Settings" category in the menu
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Mon, 20 Jul 2009 19:24:06 +0200
+
+qt4-x11 (4.5.2-0ubuntu1) karmic; urgency=low
+
+  * New upstream release
+  * Remove patches fixed by upstream:
+    - 0234-fix-mysql-threaded.diff
+    - 0273-odbc-64bit-compile.diff
+    - 0279-svg-rendering-regression.diff
+    - 0282-fix-qpixmapcache-leak.diff
+    - 90_ia64_boilerplate.diff
+    - kubuntu_05_multi_line_cookies.diff
+  * Update patches:
+    - 0274-shm-native-image-fix.diff
+    - 05_append_qt4_target.diff
+    - 19_install_qdoc3.diff
+  * Update libqt4-phonon-dev.install:
+    - add usr/lib/libphonon.prl
+  * Update libqt4-help.install, libqtcore4.install, qt4-designer.install,
+    qt4-dev-tools.install, qt4-qtconfig.install, not-installed
+
+ -- Alessandro Ghersi <alessandro-ghersi@kubuntu.org>  Thu, 25 Jun 2009 16:37:49 +0200
+
 qt4-x11 (4.5.1-2) unstable; urgency=low
 
   +++ Changes by Fathi Boudra:
@@ -1658,6 +3854,61 @@ qt4-x11 (4.5.1-2) unstable; urgency=low
       qatomic_mips.h. (Closes: #525707)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 03 May 2009 14:22:26 +0200
+
+qt4-x11 (4.5.1-1ubuntu6) karmic; urgency=low
+
+  * Add patches from qt-copy
+   - 0281-syncqt-create-phonon-global.diff
+   - 0282-fix-qpixmapcache-leak.diff
+   - 0283-do-not-deduce-scrollbar-extent-twice.diff
+   - 0285-qgv-dontshowchildren.diff
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 17 Jun 2009 15:36:39 +0100
+
+qt4-x11 (4.5.1-1ubuntu5) karmic; urgency=low
+
+  * Add kubuntu_05_multi_line_cookies.diff from 4.5 branch, fix
+    multi-line cookies (we need our facebook)
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 15 Jun 2009 17:11:33 +0100
+
+qt4-x11 (4.5.1-1ubuntu4) karmic; urgency=low
+
+  * Fix debian/control file, it helps if packages have the right name
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 06 May 2009 14:08:20 +0000
+
+qt4-x11 (4.5.1-1ubuntu3) karmic; urgency=low
+
+  * Move phonon files to libqt4-phonon and libqt4-phonon-dev, version trickery 
+    doesn't work currently due to depends.
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 06 May 2009 10:06:19 +0000
+
+qt4-x11 (4.5.1-1ubuntu2) karmic; urgency=low
+
+  [ Jonathan Thomas ]
+  * Merge with Debian unstable, remaining changes:
+    - Do not package firebird and ibase packages, remove from debian/rules
+      and debian/control
+    - Use our custom -dbg setup
+    - libqt4-dev depends on a load of -dev packages
+    - Install various extra headers in libqt4-opengl-dev.install and
+      libqt4-dev.install
+    - Keep kubuntu_03_use_bash_in_configure.diff
+    - Build packages with lzma compression
+    - Add links from /usr/share/qt4/lib/ to /usr/lib for Qt libraries
+      needed for Qt Jambi in debian/rules
+  * Remove unused kubuntu_08_fix_systemtray.diff
+  * Update KUBUNTU-DEBIAN-DIFFERENCES
+  * Add -opensource flag to config target in debian/rules to work around an               
+    upstream bug in the configure script
+
+  [ Jonathan Riddell ]
+  * Add 0280-deserialization-custom-dbus-properties.diff from qt-copy
+  * Build phonon from Qt and set rules to set the version number
+
+ -- Jonathan Thomas <echidnaman@kubuntu.org>  Wed, 29 Apr 2009 09:17:18 -0400
 
 qt4-x11 (4.5.1-1) unstable; urgency=low
 
@@ -1722,6 +3973,104 @@ qt4-x11 (4.5.0-1) experimental; urgency=low
 
  -- Fathi Boudra <fabo@debian.org>  Tue, 03 Mar 2009 16:40:52 +0100
 
+qt4-x11 (4.5.0-0ubuntu4) jaunty; urgency=low
+
+  * debian/patches/90_ia64_boilerplate.diff: don't try to use special
+    hand assembly for printing the boilerplate message on ia64, since it
+    causes a build failure due to undefined symbols.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Sun, 05 Apr 2009 08:44:43 +0000
+
+qt4-x11 (4.5.0-0ubuntu3) jaunty; urgency=low
+
+  * Fix debug packages according to LP #261380
+  * Reinstantiating explicit debug packages (LP #261380 comment #26 by
+    Jonathan Thomas).
+  * Leaving out lintian overrides for packages (comment #24).
+  * Listing DEB_DBG_PACKAGE_* explicitely, as implicit logic doesn't seem to
+    work as I would have expected.
+
+ -- Martin von Gagern <Martin.vGagern@gmx.net>  Wed, 18 Mar 2009 16:07:10 +0100
+
+qt4-x11 (4.5.0-0ubuntu2) jaunty; urgency=low
+
+  * kubuntu_09_powerpc_opts.patch: Build with
+    -fno-optimize-sibling-calls on powerpc, until such time as we start
+    using GCC 4.4 (LP: #342335).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Sat, 14 Mar 2009 13:33:52 +0000
+
+qt4-x11 (4.5.0-0ubuntu1) jaunty; urgency=low
+
+  * New upstream release
+  * Use lzma compression
+  * Add 0274-shm-native-image-fix.diff from qt-copy
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 03 Mar 2009 13:31:00 +0000
+
+qt4-x11 (4.5.0~+rc1-0ubuntu1) jaunty; urgency=low
+
+  * New upstream release candidate (rc1)
+
+  * Fixed libqt4-dbg.install (dup entry)
+    - remove usr/lib/libQtXmlPatterns.so.4.5.0.debug, which is also in libqt4-xmlpatterns-dbg.install
+
+  * Added in files from list-missing to appropriate places.
+
+  * Removed patches (applied upstream or obsolete)
+    - 0167-fix-group-reading.diff
+    - 0203-qtexthtmlparser-link-color.diff
+    - 0224-fast-qpixmap-fill.diff
+    - 0226-qtreeview-column_resize_when_needed.diff
+    - 0238-fix-qt-qttabbar-size.diff
+    - 0248-fix-qwidget-scroll-slowness.diff
+    - 0249-webkit-stale-frame-pointer.diff
+    - 0254-fix-qgraphicsproxywidget-deletion-crash.diff
+    - 0256-fix-recursive-backingstore-sync-crash.diff
+    - 0257-qurl-validate-speedup.diff
+    - 0260-fix-qgraphicswidget-deletionclearFocus.diff
+    - 0261-sync-before-reset-errorhandler.patch
+    - 0262-fix-treeview-animation-crash.diff
+    - 07_trust_dpkg-arch_over_uname-m.diff
+    - 12_fix_qmake_pkgconfig.diff
+    - 20_mips_atomic_ops.diff
+   
+  * Merge changes from debian
+    - Update install files
+    - Update lintian files
+    - Refresh patches from debian
+      - 02, 03, 04, 05, 09, 14, 15, 16, 17, 30, 40, 41, 50, 71, 80.
+    - Refresh qt-copy patches
+      - 0180, 0195, 0209, 0216, 0225, 0234, 0245, 0255.
+    - Update SHLIBSVERSION to 4.5.0
+    - QGtkStyle is part of Qt 4.5 release. (Closes: #507143)
+    - Fix useless warning flood when sockets > 1024. (Closes: #511700)
+    - Add libgtk2.0-dev build dependency to enable GTK theme support.
+    - Add package libqt4-scripttools: The QtScriptTools module provides
+      additional components for applications that use Qt Script.
+    - Clean up the prl postprocessing.
+    - Build documentations if current version is a snapshot.
+    - Update *.install and *.lintian files.
+    - Move mkspecs in qt4-qmake package to use qt4-qmake standalone.
+    - Add qdoc3 to qt4-dev-tools package.
+    - Add Debian patches:
+      - 18_enable_qt3support_qtwebkit_debug_info.diff
+        On Qt >= 4.5, debug info are disabled for Qt3Support and QtWebkit.
+        This patch enable them.
+      - 19_install_qdoc3.diff
+        Install qdoc3 binary. It is used by Qt Creator.
+      - 20_fix_ftbfs_callgrindChildExitCode.diff
+        Fix ftfbs on qtestcase.cpp. Stolen from snapshot 20090206.
+    - Remove Debian patches:
+      - 07_trust_dpkg-arch_over_uname-m.diff - Fixed upstream.
+      - 12_fix_qmake_pkgconfig.diff
+      - 20_mips_atomic_ops.diff - Fixed upstream.
+
+  * Build with -phonon and -no-phonon-backend
+   - add rule to remove built phonon and use system phonon
+	
+ -- Roderick B. Greening <roderick.greening@gmail.com>  Thu, 19 Feb 2009 12:04:00 -0330
+
 qt4-x11 (4.5.0~rc1-2) experimental; urgency=low
 
   * Fix shlibs version. It should be 4.5.0~rc1.
@@ -1781,6 +4130,19 @@ qt4-x11 (4.5.0~rc1-1) experimental; urgency=low
 
  -- Fathi Boudra <fabo@debian.org>  Fri, 06 Feb 2009 10:03:16 +0100
 
+qt4-x11 (4.4.3-2ubuntu1) jaunty; urgency=low
+
+  * Merge from debian unstable, remaining changes:
+    - Fix binary-post-install/libqt4-dev:: to install to debian/libqt4-dev
+    - Add missing depends to libqt4-dev
+    - kubuntu_03_use_bash_in_configure.diff
+    - kubuntu_08_systray_fix.diff
+    - Not using firebird (ibase)
+    - Add links from /usr/share/qt4/lib/ to /usr/lib for Qt libraries
+      needed for Qt Jambi
+
+ -- Scott Kitterman <scott@kitterman.com>  Sun, 21 Dec 2008 00:27:50 -0500
+
 qt4-x11 (4.4.3-2) unstable; urgency=low
 
   +++ Changes by Armin Berres:
@@ -1795,6 +4157,44 @@ qt4-x11 (4.4.3-2) unstable; urgency=low
     - 0262-fix-treeview-animation-crash.diff
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 03 Dec 2008 00:54:18 +0100
+
+qt4-x11 (4.4.3-1ubuntu5) jaunty; urgency=low
+
+  * Add 0260-fix-qgraphicswidget-deletionclearFocus.diff from KDE's qt-copy
+    Fixes KDE bug 168278 observable in the file watcher plasmoid (LP: #272399)
+
+ -- Jonathan Thomas <echidnaman@kubuntu.org>  Wed, 03 Dec 2008 18:54:29 -0500
+
+qt4-x11 (4.4.3-1ubuntu4) jaunty; urgency=low
+
+  * Fix binary-post-install/libqt4-dev:: to install to debian/libqt4-dev
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 20 Nov 2008 17:57:14 +0000
+
+qt4-x11 (4.4.3-1ubuntu3) jaunty; urgency=low
+
+  * Add 0256-fix-recursive-backingstore-sync-crash.diff from KDE's qt-copy
+    Fixes KDE bug 174065 in kmail (new mailing list)
+    "Random crashes deep in Qt painting code"
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 11 Nov 2008 21:41:30 +0000
+
+qt4-x11 (4.4.3-1ubuntu2) jaunty; urgency=low
+
+  * Add missing depends to libqt4-dev
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Sat, 08 Nov 2008 16:38:28 +0000
+
+qt4-x11 (4.4.3-1ubuntu1) jaunty; urgency=low
+
+  * Merge with Debian, remaining changes
+   - kubuntu_03_use_bash_in_configure.diff
+   - kubuntu_08_systray_fix.diff
+  * Not using firebird (ibase)
+  * Add links from /usr/share/qt4/lib/ to /usr/lib for Qt libraries 
+    needed for Qt Jambi
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 05 Nov 2008 14:20:44 +0000
 
 qt4-x11 (4.4.3-1) unstable; urgency=low
 
@@ -1814,6 +4214,54 @@ qt4-x11 (4.4.3-1) unstable; urgency=low
     one symbol to 4.4.1 that wasn't in 4.4.0, but no way to fix it.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 29 Sep 2008 19:10:52 +0200
+
+qt4-x11 (4.4.3-0ubuntu1) intrepid; urgency=low
+
+  * New Upstream Release - bump config from ubuntu 4.4.2 deb
+  * Update copyright info from debian copyright
+  * Re-sync with Debian svn
+    - Add following qt-copy patches:
+      0245-fix-randr-changes-detecting.diff
+      0248-fix-qwidget-scroll-slowness.diff
+      0249-webkit-stale-frame-pointer.diff
+      0254-fix-qgraphicsproxywidget-deletion-crash.diff
+    - Remove following qt-copy patches (prev disabled):
+      0214-fix-qgraphicsproxywidget-tab-crash.diff
+      0220-no-x-recursion-in-xerrhandler.diff
+      0223-fix-qpixmap-hasalpha.diff
+      0227-qdatastream-regression.diff
+      0228-qsortfilterproxymodel-invalidate-noscroll.diff
+      0237-printdialog-assert.diff
+      0240-printdialog-print-into-real-printer.diff
+    - Remove following Debian patches (prev disabled):
+      90_gcc43.diff
+    - Add following debian patches:
+      16_hide_std_symbols_on_qtwebkit.diff
+      17_add_postgresql_8.3_support.diff
+      30_webkit_unaligned_access.diff
+      71_hppa_unaligned_access_fix_458133.diff
+      81_hurd_more_max_path.diff
+    - Cosmetic cleanup in control
+      replace Qt4 with Qt 4 as per Debian
+      some grammer clean-up in comments/notes
+    - libqt4-dev.install (insert missing help - usr/include/qt4/QtHelp/QHelpGlobal)
+    - Updated some patches (line numbering changed - cosmetic only)
+      0167-fix-group-reading.diff
+      0180-window-role.diff
+      0195-compositing-properties.diff
+      0203-qtexthtmlparser-link-color.diff
+      0216-allow-isystem-for-headers.diff
+      0224-fast-qpixmap-fill.diff
+      0226-qtreeview-column_resize_when_needed.diff
+      0234-fix-mysql-threaded.diff
+      0238-fix-qt-qttabbar-size.diff
+      05_append_qt4_target.diff
+      50_kfreebsd_build_fix.diff
+    - Patches with some re-write changes/fixes (non-cosmetic):
+      14_add_libraries_to_gui_build_where_actually_needed.diff
+      20_mips_atomic_ops.diff
+
+ -- Roderick B. Greening <roderick.greening@gmail.com>  Mon, 29 Sep 2008 13:59:56 -0230
 
 qt4-x11 (4.4.2-2) unstable; urgency=low
 
@@ -1865,6 +4313,31 @@ qt4-x11 (4.4.2-1) unstable; urgency=low
   * Split qmake in its own qt4-qmake package. (Closes: #437354)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 18 Sep 2008 18:22:04 +0200
+
+qt4-x11 (4.4.2-0ubuntu2) intrepid; urgency=low
+
+  * Add links from /usr/share/qt4/lib/ to /usr/lib for Qt libraries 
+    needed for Qt Jambi
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 23 Sep 2008 00:28:36 +0100
+
+qt4-x11 (4.4.2-0ubuntu1) intrepid; urgency=low
+
+  * New Upstream Release - bump config from ubuntu 4.4.1 deb
+  * Removed the following patches (resolved upstream)
+    - 0230-qtextcontrol-selectnextword.diff
+    - 0233-fix-q3textbrowser-image.diff
+    - 0235-qdbus-dispatch-async-timeout.diff
+    - 0236-qtoolbararealayout-restore.diff
+    - 0241-fix-null-stylesheet-warning.diff
+    - 60_m68k_inotify_fix.diff
+    - 72_generic_arch_atomic_header_fix.diff
+  * Updated broken patch (code changes upstream)
+    - 10_config_tests_fixes.diff
+  * Removed unknown header file refs in debian/libqt4-dev.install
+    - qatomic_windows.h/qatomic_windowsce.h
+
+ -- Roderick B. Greening <roderick.greening@gmail.com>  Fri, 19 Sep 2008 17:54:57 -0230
 
 qt4-x11 (4.4.1-1) experimental; urgency=low
 
@@ -1918,6 +4391,18 @@ qt4-x11 (4.4.1-1) experimental; urgency=low
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 02 Aug 2008 22:49:17 +0300
 
+qt4-x11 (4.4.1-0ubuntu2) intrepid; urgency=low
+
+  * Add kubuntu_08_systray_fix.diff, should fix systray not showing icons
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 05 Aug 2008 11:23:23 +0100
+
+qt4-x11 (4.4.1-0ubuntu1) intrepid; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 01 Aug 2008 11:30:30 +0100
+
 qt4-x11 (4.4.0-4) unstable; urgency=low
 
   +++ Changes by Sune Vuorela:
@@ -1947,6 +4432,20 @@ qt4-x11 (4.4.0-4) unstable; urgency=low
   * Add 0233-fix-q3textbrowser-image.diff patch from qt copy.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 09 Jul 2008 02:53:33 +0200
+
+qt4-x11 (4.4.0-3ubuntu2) intrepid; urgency=low
+
+  * Make libqt4-dev depend on the necessary -dev packages again
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 18 Jun 2008 11:08:14 +0100
+
+qt4-x11 (4.4.0-3ubuntu1) intrepid; urgency=low
+
+  * Merge with Debian, remaining changes:
+   - remove ibase and firebird from debian/control and debian/rules
+   - patches
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 11 Jun 2008 15:01:30 +0000
 
 qt4-x11 (4.4.0-3) unstable; urgency=low
 
@@ -1996,6 +4495,47 @@ qt4-x11 (4.4.0-2) unstable; urgency=low
       misplace).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 09 May 2008 23:35:16 +0300
+
+qt4-x11 (4.4.0-1ubuntu5) intrepid; urgency=low
+
+  * Remove pkgconfig directory from libqt4-dev.install, it installed
+    files that were in other packages
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 19 May 2008 12:52:59 +0100
+
+qt4-x11 (4.4.0-1ubuntu4) intrepid; urgency=low
+
+  * Add depends to libqt4-dev removed in 4.4.0~rc1-3, causes build
+    problems in backports, closes LP: #229813
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Sat, 17 May 2008 15:56:45 +0100
+
+qt4-x11 (4.4.0-1ubuntu3) intrepid; urgency=low
+
+  * Add kubuntu_08_sqlite_undefined.diff, for some reason we need to 
+    add -ldl
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 08 May 2008 22:13:44 +0100
+
+qt4-x11 (4.4.0-1ubuntu2) intrepid; urgency=low
+
+  * libqt4-opengl-dev replaces old libqt4-dev
+  * move usr/include/qt4/Qt/qglobal.h to libqt4-dev
+  * libqt4-dev replaces old libqt4-opengl-dev for the above
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 08 May 2008 13:04:47 +0100
+
+qt4-x11 (4.4.0-1ubuntu1) intrepid; urgency=low
+
+  * Sync with debian, remaining changes:
+   - patches 
+     kubuntu_01_load_ssl.diff  
+     kubuntu_02_no_undefined.diff  
+     kubuntu_03_use_bash_in_configure.diff  
+     kubuntu_07_trust_dpkg-arch_over_uname-m.diff
+   - remove ibase and firebird from debian/control and debian/rules
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 06 May 2008 12:39:31 +0100
 
 qt4-x11 (4.4.0-1) unstable; urgency=low
 
@@ -2331,6 +4871,27 @@ qt4-x11 (4.3.4-1) unstable; urgency=low
 
  -- Fathi Boudra <fabo@debian.org>  Tue, 26 Feb 2008 18:38:27 +0100
 
+qt4-x11 (4.3.4-0ubuntu3) hardy; urgency=low
+
+  * Add LPIA support to
+    07_trust_dpkg-arch_over_uname-m.diff (renamed to
+    kubuntu_07_trust_dpkg-arch_over_uname-m.diff) (LP: #207863)
+
+ -- Steve Magoun <steve.magoun@canonical.com>  Thu, 27 Mar 2008 15:58:25 -0400
+
+qt4-x11 (4.3.4-0ubuntu2) hardy; urgency=low
+
+  * Don't build odbc, fails on amd64.
+  * Sync qt-copy patches with Debian
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 28 Feb 2008 14:19:52 +0000
+
+qt4-x11 (4.3.4-0ubuntu1) hardy; urgency=low
+
+  * New upstream releaes
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 26 Feb 2008 16:32:56 +0000
+
 qt4-x11 (4.3.3-2) unstable; urgency=low
 
   * Update 0203-qtexthtmlparser-link-color qt-copy patch:
@@ -2381,6 +4942,41 @@ qt4-x11 (4.3.3-1) unstable; urgency=low
 
  -- Fathi Boudra <fabo@debian.org>  Thu, 06 Dec 2007 22:06:46 +0100
 
+qt4-x11 (4.3.3-0ubuntu3) hardy; urgency=low
+
+  * Added build-dep on unixodbc-dev
+  * Added kubuntu_03_use_bash_in_configure.diff to fix detection of
+    available plugins for libQtSql
+  * Added package libqt4-plugin-odbc for odbc support (LP: #179261)
+
+ -- Terence Simpson <tsimpson@ubuntu.com>  Thu, 07 Feb 2008 19:23:31 +0000
+
+qt4-x11 (4.3.3-0ubuntu2) hardy; urgency=low
+
+  * Add kubuntu_02_no_undefined.diff as used upstream in Qt 4.4,
+    ensures no undefined symbols
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 18 Dec 2007 16:23:03 +0000
+
+qt4-x11 (4.3.3-0ubuntu1) hardy; urgency=low
+
+  * New upstream release
+  * Added back 0172-prefer-xrandr-over-xinerama.diff, updated by dirk
+  * Updated 0178-transparency-window-types.diff
+  * Removed 0193-qtreeview-division-by-zero.diff, applied upstream
+  * Add CDDL exception to debian/copyright
+  * Add 0203-qtexthtmlparser-link-color.diff from qt-copy
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 05 Dec 2007 16:55:12 +0000
+
+qt4-x11 (4.3.2-1ubuntu1) hardy; urgency=low
+
+  * Merge with Debian, remaining changes:
+   - qt4-dev-tools conflicts on qdbusviewer
+   - Add kubuntu_01_load_ssl.diff, LP: #155784
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 05 Nov 2007 17:20:28 +0000
+
 qt4-x11 (4.3.2-1) unstable; urgency=low
 
   * New upstream release.
@@ -2420,6 +5016,27 @@ qt4-x11 (4.3.2-1) unstable; urgency=low
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 06 Oct 2007 07:00:54 +0200
 
+qt4-x11 (4.3.2-0ubuntu3) gutsy; urgency=low
+
+  * Disable 00_0172-prefer-xrandr-over-xinerama.dpatch, causes menus
+    to appear on the primary screen even when app is on a second screen
+    Closes LP: #135882
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 08 Oct 2007 12:51:57 +0100
+
+qt4-x11 (4.3.2-0ubuntu2) gutsy; urgency=low
+
+  * Remove excessive categories from debian/desktop/qt4config.desktop
+    Closes LP: #136425
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 04 Oct 2007 16:21:06 +0100
+
+qt4-x11 (4.3.2-0ubuntu1) gutsy; urgency=low
+
+  * New upstream bugfix release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 03 Oct 2007 17:04:56 +0100
+
 qt4-x11 (4.3.1-2) unstable; urgency=low
 
   * There is a large difference between 8 spaces and a tab.
@@ -2455,6 +5072,32 @@ qt4-x11 (4.3.1-1) unstable; urgency=low
 
  -- Fathi Boudra <fboudra@free.fr>  Wed, 08 Aug 2007 15:08:11 +0200
 
+qt4-x11 (4.3.1-0ubuntu3) gutsy; urgency=low
+
+  * SECURITY UPDATE: unterminated UTF8 strings could lead to 2 byte
+    overflow that may allow arbitrary code execution.
+  * Add debian/patches/kubuntu_01_CVE_2007_4137.dpatch: upstream fixes.
+  * References
+    CVE-2007-4137
+    http://trolltech.com/company/newsroom/announcements/press.2007-09-03.7564032119
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 01 Oct 2007 22:23:19 +0100
+
+qt4-x11 (4.3.1-0ubuntu2) gutsy; urgency=low
+
+  * Build with -fpermissive when building with g++-4.3. LP: #138646.
+
+ -- Matthias Klose <doko@ubuntu.com>  Thu, 13 Sep 2007 17:08:20 +0000
+
+qt4-x11 (4.3.1-0ubuntu1) gutsy; urgency=low
+
+  * Merge with Debian
+  * New upstream release
+  * Update copyright file
+  * Remove qdbusviewer package, now in qt4-dev-tools
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 07 Aug 2007 12:02:01 +0100
+
 qt4-x11 (4.3.0-5) unstable; urgency=low
 
   [Fathi Boudra]
@@ -2473,6 +5116,14 @@ qt4-x11 (4.3.0-5) unstable; urgency=low
       the background isn't fully opaque.
 
  -- Fathi Boudra <fboudra@free.fr>  Mon, 30 Jul 2007 21:36:25 +0200
+
+qt4-x11 (4.3.0-4ubuntu1) gutsy; urgency=low
+
+  * Sync with Debian, no changes except .orig md5sum
+   - Closes https://bugs.launchpad.net/bugs/126766
+  * Add package qdbusviewer, replaces dbus-viewer
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 18 Jul 2007 15:43:24 +0100
 
 qt4-x11 (4.3.0-4) unstable; urgency=low
 
@@ -2512,6 +5163,12 @@ qt4-x11 (4.3.0-3) unstable; urgency=low
     * 00_0183-qprocess-corruption: fix plain data loss bug. Applied Upstream.
 
  -- Fathi Boudra <fboudra@free.fr>  Fri, 29 Jun 2007 08:15:23 +0200
+
+qt4-x11 (4.3.0-2ubuntu1) gutsy; urgency=low
+
+  * Sync with Debian, no diff except .orig md5sum
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 09 Jul 2007 10:04:03 +0000
 
 qt4-x11 (4.3.0-2) unstable; urgency=low
 
