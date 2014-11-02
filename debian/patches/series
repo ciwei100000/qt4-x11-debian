@@ -59,7 +59,6 @@ kubuntu_12_fix_stack_protector.diff
 kubuntu_14_systemtrayicon.diff
 kubuntu_28_xi2.1.patch
 kubuntu_30_translucent_drag_pixmap.diff
-kubuntu_31_unity_workarea_atom.diff
 kubuntu_37_cups_settings.diff
 kubuntu_39_fix_medium_font.diff
 kubuntu_40_disable_neon.patch
