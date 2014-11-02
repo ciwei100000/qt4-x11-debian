@@ -57,7 +57,6 @@ ppc64el_configure_support.patch
 kubuntu_10_ibus_input_method.diff
 kubuntu_12_fix_stack_protector.diff
 kubuntu_14_systemtrayicon.diff
-kubuntu_17_enable_qtwebkit_for_qtassistant.diff
 kubuntu_28_xi2.1.patch
 kubuntu_30_translucent_drag_pixmap.diff
 kubuntu_31_unity_workarea_atom.diff

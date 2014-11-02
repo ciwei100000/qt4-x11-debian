@@ -75,10 +75,6 @@ else
 	                        -no-egl
 endif
 
-ifneq (,$(filter $(DEB_HOST_ARCH),arm64))
-	extra_configure_opts += -no-javascript-jit
-endif
-
 ifeq ($(DEB_HOST_ARCH_OS),linux)
   ifneq (,$(filter $(DEB_HOST_ARCH),alpha ia64 mips64 mips64el))
 	platform_arg = linux-g++
@@ -181,9 +177,6 @@ endif
 	            -icu \
 	            $(extra_configure_opts)
 
-	# Kubuntu addition: set the version of QtWebkit but don't add it to QT_CONFIG
-	sed 's/^\s*QT_CONFIG.*//' src/3rdparty/webkit/Source/WebKit/qt/qt_webkit_version.pri > mkspecs/modules/qt_webkit_version.pri
-
 override_dh_auto_build:
 	dh_auto_build
 	# Build documentations
@@ -196,8 +189,6 @@ endif
 	# Workaround: It's a known qmake limitation.
 	# It can't generate install rules for files that don't exist yet like docs.
 	./config.status
-	# Kubuntu addition: set the version of QtWebkit but don't add it to QT_CONFIG
-	sed 's/^\s*QT_CONFIG.*//' src/3rdparty/webkit/Source/WebKit/qt/qt_webkit_version.pri > mkspecs/modules/qt_webkit_version.pri
 
 override_dh_auto_clean:
 	[ ! -f Makefile ] || $(MAKE) confclean distclean
@@ -331,9 +322,6 @@ override_dh_auto_install:
 	# QTBUG-12159 workaround
 	rm -fv debian/tmp//usr/share/qt4/mkspecs/modules/qt_webkit_version.pri
 
-	# Kubuntu addition
-	rm -f debian/tmp/usr/lib/*/libQtWebKit*
-
 	# Remove phonon development files
 	rm -fv debian/tmp/usr/lib/*/libphonon.la
 	rm -fv debian/tmp/usr/lib/*/libphonon.prl
@@ -380,7 +368,7 @@ override_dh_auto_install:
 		-exec chmod a-x {} \;
 
 override_dh_install:
-	dh_install --list-missing
+	dh_install --fail-missing
 
 override_dh_installdocs:
 	dh_installdocs --all LGPL_EXCEPTION.txt
@@ -404,27 +392,8 @@ override_dh_makeshlibs:
 	done
 
 override_dh_shlibdeps:
-	# Kubuntu: assistant-qt4 links against libQtWebkit which we don't package in qt4-x11
-	# dependencies are manually added in debian/control
-	dh_shlibdeps -pqt4-dev-tools -Xusr/lib/$(DEB_HOST_MULTIARCH)/qt4/bin/assistant
-	dh_shlibdeps -pqt4-demos \
-		-Xusr/lib/qt4/examples/webkit/webplugin/webplugin \
-		-Xusr/lib/qt4/examples/webkit/simpleselector/simpleselector \
-		-Xusr/lib/qt4/examples/xmlpatterns/qobjectxmlmodel/qobjectxmlmodel \
-		-Xusr/lib/qt4/examples/webkit/previewer/previewer \
-		-Xusr/lib/qt4/examples/webkit/domtraversal/domtraversal \
-		-Xusr/lib/qt4/demos/browser/browser \
-		-Xusr/lib/qt4/examples/webkit/fancybrowser/fancybrowser \
-		-Xusr/lib/qt4/examples/webkit/simpleselector/simpleselector \
-		-Xusr/lib/qt4/examples/webkit/domtraversal/domtraversal \
-		-Xusr/lib/qt4/examples/webkit/webplugin/webplugin \
-		-Xusr/lib/qt4/examples/webkit/googlechat/googlechat \
-		-Xusr/lib/qt4/examples/webkit/formextractor/formextractor \
-		-Xusr/lib/qt4/examples/webkit/simplewebplugin/simplewebplugin \
-		-Xusr/lib/qt4/examples/webkit/previewer/previewer \
-		-Xusr/lib/qt4/examples/webkit/fancybrowser/fancybrowser \
-		-Xusr/lib/qt4/examples/webkit/framecapture/framecapture \
-		-Xusr/lib/qt4/examples/webkit/webftpclient/webftpclient
+	# Exclude phonon deps from libqt4-phonon itself (they get injected there somehow)
+	dh_shlibdeps -plibqt4-phonon -- -xlibphonon4 -xlibqt4-phonon
 	dh_shlibdeps --remaining-packages
 
 override_dh_builddeb:
