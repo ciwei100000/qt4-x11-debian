@@ -1,4 +1,4 @@
-qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-3~ubuntu2) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-3~ubuntu2) vivid; urgency=medium
 
   * Drop the hacks to build QtWebKit for Assistant, as we now have Assistant
     from Qt 5.x properly built against QtWebKit 5.x.
