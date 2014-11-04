@@ -1,4 +1,4 @@
-qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-3~ubuntu3) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-3~ubuntu3) vivid; urgency=medium
 
   * kubuntu_43_no_meego_helper.patch: Don’t build QtMeegoGraphicsSystemHelper,
     useless on non-MeeGo systems.
