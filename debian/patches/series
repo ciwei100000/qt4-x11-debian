@@ -62,6 +62,7 @@ kubuntu_30_translucent_drag_pixmap.diff
 kubuntu_37_cups_settings.diff
 kubuntu_39_fix_medium_font.diff
 kubuntu_40_disable_neon.patch
+kubuntu_43_no_meego_helper.patch
 kubuntu_93_disable_overlay_scrollbars.diff
 kubuntu_94_xinput_valuators_fix.diff
 kubuntu_95_qt_disable_bounce.diff

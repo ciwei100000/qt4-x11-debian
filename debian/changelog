@@ -1,3 +1,10 @@
+qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-3~ubuntu3) UNRELEASED; urgency=medium
+
+  * kubuntu_43_no_meego_helper.patch: Don’t build QtMeegoGraphicsSystemHelper,
+    useless on non-MeeGo systems.
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Tue, 04 Nov 2014 17:37:26 +0300
+
 qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-3~ubuntu2) vivid; urgency=medium
 
   * Drop the hacks to build QtWebKit for Assistant, as we now have Assistant
