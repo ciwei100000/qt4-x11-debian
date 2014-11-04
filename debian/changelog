@@ -1,3 +1,9 @@
+qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-3~ubuntu4) UNRELEASED; urgency=medium
+
+  * kubuntu_43_no_meego_helper.patch: Patch in one more location.
+
+ -- Dmitry Shachnev <mitya57@ubuntu.com>  Tue, 04 Nov 2014 21:29:04 +0300
+
 qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-3~ubuntu3) vivid; urgency=medium
 
   * kubuntu_43_no_meego_helper.patch: Don’t build QtMeegoGraphicsSystemHelper,
