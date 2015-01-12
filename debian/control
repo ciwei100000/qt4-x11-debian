@@ -875,3 +875,7 @@ Description: Qt 4 development defaults package
  using development binaries like qmake. It provides a default
  configuration for qtchooser, but does not prevent alternative Qt
  installations from being used.
+ .
+ This package should not be used for building Debian packages. Take a
+ look at http://pkg-kde.alioth.debian.org/packagingqtstuff.html for
+ more information.
