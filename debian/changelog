@@ -4,7 +4,7 @@ qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-3) UNRELEASED; urgency=medium
   * Remove aarch64_arm64_mkspecs.patch, as it's not really needed. Simply use
     platform_arg = linux-g++ for it.
   * Add two more files to override_dh_auto_clean.
-  * Remove GStreamer 0.1's build dependencies. The real users of it
+  * Remove GStreamer 0.10's build dependencies. The real users of it
     should be using phonon with GStreamer 1.0.
   * Add a note for packagers on qt4-default's long description.
 
