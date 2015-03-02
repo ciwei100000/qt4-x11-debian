@@ -1,3 +1,9 @@
+qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-3) UNRELEASED; urgency=medium
+
+  * Team upload.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 02 Mar 2015 17:12:28 +0300
+
 qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-2) unstable; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
