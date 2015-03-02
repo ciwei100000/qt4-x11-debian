@@ -1,4 +1,4 @@
-qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-3) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-4) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Remove aarch64_arm64_mkspecs.patch, as it's not really needed. Simply use
@@ -9,6 +9,14 @@ qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-3) UNRELEASED; urgency=medium
   * Add a note for packagers on qt4-default's long description.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 06 Sep 2014 19:50:03 -0300
+
+qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-3) unstable; urgency=medium
+
+  * Team upload.
+  * Fix CVE-2015-0295 (DoS vulnerability in BMP images handler).
+    Closes: #779550.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 02 Mar 2015 17:12:28 +0300
 
 qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-2) unstable; urgency=medium
 

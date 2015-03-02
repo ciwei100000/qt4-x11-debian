@@ -53,3 +53,4 @@ qtdoc-build-offline-docs.patch
 remove_addsense.patch
 parisc-atomic.patch
 ppc64el_configure_support.patch
+cve-2015-0295.diff
