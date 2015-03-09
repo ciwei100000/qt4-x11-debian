@@ -1,3 +1,9 @@
+qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-3~ubuntu6) vivid; urgency=medium
+
+  * Fix detection of GCC 5.
+
+ -- Matthias Klose <doko@ubuntu.com>  Fri, 06 Mar 2015 12:10:22 +0100
+
 qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-3~ubuntu5) vivid; urgency=medium
 
   * Add kubuntu_qclipboard_delay.diff to fix KDE dialogs in LibreOffice

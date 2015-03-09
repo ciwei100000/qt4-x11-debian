@@ -1,0 +1,33 @@
+Index: b/configure
+===================================================================
+--- a/configure
++++ b/configure
+@@ -7801,7 +7801,7 @@ case "$XPLATFORM" in
+ 
+ 	# Check gcc's version
+ 	case "$(${QMAKE_CONF_COMPILER} -dumpversion)" in
+-	    4*)
++	    5*|4*)
+ 		;;
+ 	    3.4*)
+ 		canBuildQtXmlPatterns="no"
+@@ -8124,6 +8124,10 @@ g++*)
+         QT_GCC_MINOR_VERSION=`echo $COMPILER_VERSION | sed 's,^\([0-9]*\)\.\([0-9]*\).*,\2,'`
+         QT_GCC_PATCH_VERSION=0
+         ;;
++    *)
++        QT_GCC_MAJOR_VERSION=$COMPILER_VERSION
++        QT_GCC_MINOR_VERSION=0
++        QT_GCC_PATCH_VERSION=0
+     esac
+ 
+     case "$COMPILER_VERSION" in
+@@ -8133,7 +8137,7 @@ g++*)
+     3.*)
+         COMPILER_VERSION="3.*"
+         ;;
+-    4.*)
++    5.*|4.*)
+         COMPILER_VERSION="4"
+         ;;
+     *)

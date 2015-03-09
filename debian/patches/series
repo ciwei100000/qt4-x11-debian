@@ -71,3 +71,5 @@ kubuntu_98_a11y_fix_crash.diff
 kubuntu_glib-honor-ExcludeSocketNotifiers-flag.diff
 kubuntu_qclipboard_delay.diff
 kubuntu_qclipboard_fix_recursive.diff
+
+gcc-5.diff
