@@ -11,6 +11,7 @@ qt4-x11 (4:4.8.6+git155-g716fbae+dfsg-1) UNRELEASED; urgency=medium
   * Remove patches applied upstream:
     - aarch64_arm64_fix_arch_detection.patch
     - fix_libmng_test.patch
+    - ppc64el_configure_support.patch
 
   [ Dmitry Shachnev ]
   * Make qt4-qmake suggest libqtcore4, as that package contains configuration
