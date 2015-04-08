@@ -42,7 +42,7 @@ Bug: https://bugreports.qt.nokia.com/browse/QTBUG-21900
  static void qt_x11_create_intern_atoms()
  {
      const char *names[QX11Data::NAtoms];
-@@ -5304,8 +5325,11 @@ bool QETWidget::translateConfigEvent(con
+@@ -5310,8 +5331,11 @@ bool QETWidget::translateConfigEvent(con
          if (d->extra->compress_events) {
              // ConfigureNotify compression for faster opaque resizing
              XEvent otherEvent;
@@ -56,7 +56,7 @@ Bug: https://bugreports.qt.nokia.com/browse/QTBUG-21900
                  if (qt_x11EventFilter(&otherEvent))
                      continue;
  
-@@ -5318,13 +5342,19 @@ bool QETWidget::translateConfigEvent(con
+@@ -5324,13 +5348,19 @@ bool QETWidget::translateConfigEvent(con
                  newSize.setWidth(otherEvent.xconfigure.width);
                  newSize.setHeight(otherEvent.xconfigure.height);
  
@@ -77,7 +77,7 @@ Bug: https://bugreports.qt.nokia.com/browse/QTBUG-21900
              }
  #ifndef QT_NO_XSYNC
              qt_sync_request_event_data sync_event;
-@@ -5337,9 +5367,14 @@ bool QETWidget::translateConfigEvent(con
+@@ -5343,9 +5373,14 @@ bool QETWidget::translateConfigEvent(con
          }
  
          if (!isCPos) {

@@ -8,7 +8,7 @@ Author: Thiago Macieira <thiago@kde.org>
 
 --- a/src/corelib/global/qglobal.cpp
 +++ b/src/corelib/global/qglobal.cpp
-@@ -50,6 +50,7 @@
+@@ -52,6 +52,7 @@
  
  #ifndef QT_NO_QOBJECT
  #include <private/qthread_p.h>
@@ -16,7 +16,7 @@ Author: Thiago Macieira <thiago@kde.org>
  #endif
  
  #include <stdio.h>
-@@ -92,6 +93,8 @@
+@@ -94,6 +95,8 @@
  
  _LIT(qt_S60Filter, "Series60v?.*.sis");
  _LIT(qt_symbianSystemInstallDir, "z:\\system\\install\\");
@@ -25,7 +25,7 @@ Author: Thiago Macieira <thiago@kde.org>
  #endif
  
  QT_BEGIN_NAMESPACE
-@@ -2327,6 +2330,27 @@ void qt_message_output(QtMsgType msgType
+@@ -2388,6 +2391,27 @@ void qt_message_output(QtMsgType msgType
  #else
          fprintf(stderr, "%s\n", buf);
          fflush(stderr);
