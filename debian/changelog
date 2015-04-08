@@ -8,6 +8,7 @@ qt4-x11 (4:4.8.6+git155-g716fbae+dfsg-1) UNRELEASED; urgency=medium
   * Remove GStreamer 0.10's build dependencies. The real users of it
     should be using phonon with GStreamer 1.0.
   * Add a note for packagers on qt4-default's long description.
+  * Remove aarch64_arm64_fix_arch_detection.patch, applied upstream.
 
   [ Dmitry Shachnev ]
   * Make qt4-qmake suggest libqtcore4, as that package contains configuration
