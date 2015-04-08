@@ -1,6 +1,7 @@
-qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-4) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.6+git155-g716fbae+dfsg-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
+  * New upstream snapshot.
   * Remove aarch64_arm64_mkspecs.patch, as it's not really needed. Simply use
     platform_arg = linux-g++ for it.
   * Add two more files to override_dh_auto_clean.
