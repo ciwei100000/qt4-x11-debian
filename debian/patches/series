@@ -6,7 +6,6 @@ xmlpatterns_stack_overflow_fix.diff
 
 # Patches submitted upstream but still not accepted
 aarch64_arm64_qatomic_support.patch
-fix_libmng_test.patch
 
 # qt-copy patches
 0195-compositing-properties.diff
