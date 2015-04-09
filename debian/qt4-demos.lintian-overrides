@@ -267,10 +267,10 @@ qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/animation/easi
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/animation/easing/qml/easing/content/quit.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/animation/states/qml/states/qt-logo.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/animation/states/states.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/cppextensions/plugins/com/nokia/TimeExample/center.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/cppextensions/plugins/com/nokia/TimeExample/clock.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/cppextensions/plugins/com/nokia/TimeExample/hour.png
-qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/cppextensions/plugins/com/nokia/TimeExample/minute.png
+qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/cppextensions/plugins/org/qtproject/TimeExample/center.png
+qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/cppextensions/plugins/org/qtproject/TimeExample/clock.png
+qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/cppextensions/plugins/org/qtproject/TimeExample/hour.png
+qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/cppextensions/plugins/org/qtproject/TimeExample/minute.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/i18n/i18n.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/imageelements/borderimage/borderimage.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/imageelements/borderimage/qml/borderimage/content/bw.png
@@ -477,6 +477,8 @@ qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/searchbox/searchbox64.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/searchbox/searchbox80.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/slideswitch/slideswitch.png
+qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/spinner/qml/spinner/content/spinner-bg.png
+qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/spinner/qml/spinner/content/spinner-select.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/spinner/spinner64.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/spinner/spinner80.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/declarative/ui-components/tabwidget/qml/tabwidget/tab.png
@@ -712,6 +714,10 @@ qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/mainwindows/application/im
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/mainwindows/application/images/open.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/mainwindows/application/images/paste.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/mainwindows/application/images/save.png
+qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/mainwindows/dockwidgets/images/new.png
+qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/mainwindows/dockwidgets/images/print.png
+qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/mainwindows/dockwidgets/images/save.png
+qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/mainwindows/dockwidgets/images/undo.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/mainwindows/mdi/images/copy.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/mainwindows/mdi/images/cut.png
 qt4-demos: image-file-in-usr-lib usr/lib/qt4/examples/mainwindows/mdi/images/new.png
