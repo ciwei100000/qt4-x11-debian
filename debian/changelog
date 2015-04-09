@@ -1,4 +1,4 @@
-qt4-x11 (4:4.8.6+git155-g716fbae+dfsg-1) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.6+git155-g716fbae+dfsg-1) experimental; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream snapshot.
@@ -24,7 +24,7 @@ qt4-x11 (4:4.8.6+git155-g716fbae+dfsg-1) UNRELEASED; urgency=medium
   * Make qt4-qmake suggest libqtcore4, as that package contains configuration
     files for qtchooser, without which /usr/bin/qmake will not work.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 06 Sep 2014 19:50:03 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 09 Apr 2015 12:02:13 -0300
 
 qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-3) unstable; urgency=medium
 
