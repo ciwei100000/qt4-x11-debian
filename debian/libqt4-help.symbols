@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.5+git242 amd64 sparc
+# SymbolsHelper-Confirmed: 4:4.8.6 sh4
 libQtHelp.so.4 libqt4-help #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN11QHelpEngine11indexWidgetEv@Base 4:4.5.3
@@ -41,7 +41,6 @@ libQtHelp.so.4 libqt4-help #MINVER#
  _ZN14QHelpGeneratorD1Ev@Base 4:4.5.3
  _ZN14QHelpGeneratorD2Ev@Base 4:4.5.3
  (optional=external|arch=sh4)_ZN15QBasicAtomicInt3refEv@Base 4:4.8.5
- (optional=external|arch=sh4 sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN15QHelpEngineCore11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN15QHelpEngineCore11qt_metacastEPKc@Base 4:4.5.3
  _ZN15QHelpEngineCore12setupStartedEv@Base 4:4.5.3

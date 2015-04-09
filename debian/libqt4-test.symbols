@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.5+git192 amd64
+# SymbolsHelper-Confirmed: 4:4.8.6 sh4
 libQtTest.so.4 libqt4-test #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN10QTestTable15globalTestTableEv@Base 4:4.7.4
@@ -47,6 +47,7 @@ libQtTest.so.4 libqt4-test #MINVER#
  _ZN14QTestEventLoopD0Ev@Base 4:4.7.4
  _ZN14QTestEventLoopD1Ev@Base 4:4.7.4
  _ZN14QTestEventLoopD2Ev@Base 4:4.7.4
+ _ZN15QBasicAtomicInt3refEv@Base 4:4.8.6
  _ZN20QBenchmarkGlobalData14createMeasurerEv@Base 4:4.7.4
  _ZN20QBenchmarkGlobalData26adjustMedianIterationCountEv@Base 4:4.7.4
  _ZN20QBenchmarkGlobalData7currentE@Base 4:4.7.4

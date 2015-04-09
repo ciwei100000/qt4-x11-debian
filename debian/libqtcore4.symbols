@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.6 alpha amd64 arm64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mips64el mipsel powerpc ppc64 ppc64el s390x sparc64
+# SymbolsHelper-Confirmed: 4:4.8.6 alpha amd64 arm64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 m68k mips mips64el mipsel powerpc ppc64 ppc64el s390x sh4 sparc64
 libQtCLucene.so.4 libqtcore4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN12QCLuceneHits2idEi@Base 4:4.5.3
@@ -571,7 +571,6 @@ libQtCLucene.so.4 libqtcore4 #MINVER#
  (optional=templinst|arch=sparc)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PhESt10_Select1stIS5_EN6lucene4util7Compare5TCharESaIS5_EE16_M_insert_uniqueERKS5_@Base 4:4.8.5+git242
  (optional=templinst|arch=sparc)_ZNSt8_Rb_treeIPKwSt4pairIKS1_PhESt10_Select1stIS5_EN6lucene4util7Compare5TCharESaIS5_EE8_M_eraseEPSt13_Rb_tree_nodeIS5_E@Base 4:4.8.5+git242
  (optional=templinst|arch=sparc)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE10_M_insert_EPKSt18_Rb_tree_node_baseSF_RKS4_@Base 4:4.8.5+git242
- (optional=templinst|arch=ia64 sh4)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE14_M_lower_boundEPSt13_Rb_tree_nodeIS4_ESF_RS3_@Base 4:4.7.3
  (optional=templinst|arch=sparc)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE16_M_insert_uniqueERKS4_@Base 4:4.8.5+git242
  (optional=templinst|arch=sparc)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS4_ERKS4_@Base 4:4.8.5+git242
  (optional=templinst|arch=sparc)_ZNSt8_Rb_treeIPKwSt4pairIKS1_iESt10_Select1stIS4_EN6lucene4util7Compare5TCharESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 4:4.8.5+git242
@@ -830,7 +829,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  (arch=ppc64 ppc64el)_Z10qvsnprintfPcmPKcS_@Base 4:4.8.4
  (arch=arm64)_Z10qvsnprintfPcmPKcSt9__va_list@Base 4:4.8.6
  (arch=amd64 kfreebsd-amd64 powerpc powerpcspe s390 s390x|subst)_Z10qvsnprintfPc{size_t}PKcP13__va_list_tag@Base 4:4.8.4
- (arch=armel armhf hppa ia64 mips mips64el mipsel sparc sparc64|subst)_Z10qvsnprintfPc{size_t}PKcPv@Base 4:4.8.6
+ (arch=armel armhf hppa ia64 m68k mips mips64el mipsel sparc sparc64|subst)_Z10qvsnprintfPc{size_t}PKcPv@Base 4:4.8.6
  _Z10scientificR11QTextStream@Base 4:4.5.3
  _Z11noforcesignR11QTextStream@Base 4:4.5.3
  _Z11qHBFreeFaceP11HB_FaceRec_@Base 4:4.5.3
@@ -1653,7 +1652,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN15QAnimationGroupD0Ev@Base 4:4.6.1
  _ZN15QAnimationGroupD1Ev@Base 4:4.6.1
  _ZN15QAnimationGroupD2Ev@Base 4:4.6.1
- (optional=gccinternal|arch=sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.8.5+git242
+ (optional=gccinternal|arch=sh4 sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.8.5+git242
  (optional=inline|arch=sh4 sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN15QDateTimeParser11parseFormatERK7QString@Base 4:4.5.3
  _ZN15QDateTimeParser9StateNodeD1Ev@Base 4:4.7.4
@@ -2995,7 +2994,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  (arch=alpha sh4)_ZN7QString8vsprintfEPKc13__va_list_tag@Base 4:4.8.5
  (arch=amd64 kfreebsd-amd64 powerpc powerpcspe s390 s390x)_ZN7QString8vsprintfEPKcP13__va_list_tag@Base 4:4.8.4
  (arch=hurd-i386 i386 kfreebsd-i386 ppc64 ppc64el)_ZN7QString8vsprintfEPKcPc@Base 4:4.8.4
- (arch=armel armhf hppa ia64 mips mips64el mipsel sparc sparc64)_ZN7QString8vsprintfEPKcPv@Base 4:4.8.6
+ (arch=armel armhf hppa ia64 m68k mips mips64el mipsel sparc sparc64)_ZN7QString8vsprintfEPKcPv@Base 4:4.8.6
  (arch=arm64 armel armhf)_ZN7QString8vsprintfEPKcSt9__va_list@Base 4:4.8.6
  _ZN7QString9fromAsciiEPKci@Base 4:4.5.3
  _ZN7QString9fromUtf16EPKti@Base 4:4.5.3
@@ -3276,7 +3275,7 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN9QHashData6rehashEi@Base 4:4.5.3
  _ZN9QHashData8freeNodeEPv@Base 4:4.5.3
  _ZN9QHashData8nextNodeEPNS_4NodeE@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZN9QHashData9hasShrunkEv@Base 4:4.8.5+git209
+ (optional=gccinternal|arch=powerpcspe sh4)_ZN9QHashData9hasShrunkEv@Base 4:4.8.5+git209
  _ZN9QIODevice11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN9QIODevice11qt_metacastEPKc@Base 4:4.5.3
  _ZN9QIODevice11resetStatusEv@Base 4:4.5.3

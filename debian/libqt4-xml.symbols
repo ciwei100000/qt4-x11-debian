@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.6 alpha amd64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64 s390x sparc64
+# SymbolsHelper-Confirmed: 4:4.8.6 alpha amd64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 m68k mips mipsel powerpc ppc64 s390x sh4 sparc64
 libQtXml.so.4 libqt4-xml #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN10QDomEntityC1EP17QDomEntityPrivate@Base 4:4.5.3
@@ -98,6 +98,7 @@ libQtXml.so.4 libqt4-xml #MINVER#
  _ZN14QXmlAttributes6appendERK7QStringS2_S2_S2_@Base 4:4.5.3
  _ZN14QXmlAttributes9AttributeD1Ev@Base 4:4.7.4
  _ZN14QXmlAttributes9AttributeD2Ev@Base 4:4.7.4
+ (optional=gccinternal|arch=sh4)_ZN15QBasicAtomicInt3refEv@Base 4:4.8.6
  (optional=gccinternal|arch=sh4)_ZN15QBasicAtomicInt5derefEv@Base 4:4.8.5
  _ZN15QXmlInputSource11fromRawDataERK10QByteArrayb@Base 4:4.5.3
  _ZN15QXmlInputSource13EndOfDocumentE@Base 4:4.5.3
@@ -253,7 +254,7 @@ libQtXml.so.4 libqt4-xml #MINVER#
  _ZN25QDomProcessingInstructionC2ERKS_@Base 4:4.5.3
  _ZN25QDomProcessingInstructionC2Ev@Base 4:4.5.3
  _ZN25QDomProcessingInstructionaSERKS_@Base 4:4.5.3
- (optional=gccinternal|arch=!amd64 !hppa !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZN7QString5clearEv@Base 4:4.8.6
+ (optional=gccinternal|arch=!amd64 !hppa !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !m68k !sparc64)_ZN7QString5clearEv@Base 4:4.8.6
  _ZN8QDomAttr8setValueERK7QString@Base 4:4.5.3
  _ZN8QDomAttrC1EP15QDomAttrPrivate@Base 4:4.5.3
  _ZN8QDomAttrC1ERKS_@Base 4:4.5.3
