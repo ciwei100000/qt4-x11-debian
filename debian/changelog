@@ -17,6 +17,7 @@ qt4-x11 (4:4.8.6+git155-g716fbae+dfsg-1) UNRELEASED; urgency=medium
   * Update symbols files with buildds' logs.
   * Add remove_functions_not_in_qt4.patch for solving QTBUG-45463.
   * Add linguist's hebrew translation.
+  * Update Standards-Version, no changes required.
 
   [ Dmitry Shachnev ]
   * Make qt4-qmake suggest libqtcore4, as that package contains configuration
