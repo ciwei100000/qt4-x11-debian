@@ -6,6 +6,7 @@ xmlpatterns_stack_overflow_fix.diff
 
 # Patches submitted upstream but still not accepted
 aarch64_arm64_qatomic_support.patch
+remove_functions_not_in_qt4.patch
 
 # qt-copy patches
 0195-compositing-properties.diff
