@@ -1,6 +1,8 @@
 qt4-x11 (4:4.8.6+git155-g716fbae+dfsg-2) UNRELEASED; urgency=medium
 
-
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Add fixes_crash_in_gif_image_decoder.patch to fix CVE-2015-1860 (gif image
+    decoder vulnerability).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 30 Apr 2015 20:42:00 -0300
 
