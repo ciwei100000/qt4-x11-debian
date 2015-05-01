@@ -1,12 +1,11 @@
-qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-3~bpo70+1) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-3~bpo70+1) wheezy-backports; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Backport the final version in Jessie, which includes a CVE fix.
   * Add fixes_crash_in_gif_image_decoder.patch and
     fixes_crash_in_bmp_and_ico_image_decoder.patch to fix CVE-2015-1858,
     CVE-2015-1859 and CVE-2015-1860 (Closes: #783133).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 01 May 2015 12:25:22 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 01 May 2015 12:52:28 -0300
 
 qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-3) unstable; urgency=medium
 
