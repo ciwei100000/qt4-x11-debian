@@ -7,6 +7,7 @@ usr/include/qt4/Qt/qglfunctions.h
 usr/include/qt4/Qt/qglpixelbuffer.h
 usr/include/qt4/Qt/qglscreen_qws.h
 usr/include/qt4/Qt/qglshaderprogram.h
+usr/include/qt4/QtOpenGL/QGL
 usr/include/qt4/QtOpenGL/QGLBuffer
 usr/include/qt4/QtOpenGL/QGLColormap
 usr/include/qt4/QtOpenGL/QGLContext

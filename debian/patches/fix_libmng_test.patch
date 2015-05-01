@@ -1,0 +1,24 @@
+Author: Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
+Description: Fix libmng test.
+ libmng pulls in libjpeg. In turn libjpeg requires that code that uses it should
+ include stdio.h [0].
+ .
+ [0] <https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=461602#10>
+ .
+ So adding the corresponding include before libmng solves the issue.
+Forwarded: https://codereview.qt-project.org/#/c/93061/
+
+---
+ config.tests/unix/libmng/libmng.cpp |    1 +
+ 1 file changed, 1 insertion(+)
+
+--- a/config.tests/unix/libmng/libmng.cpp
++++ b/config.tests/unix/libmng/libmng.cpp
+@@ -39,6 +39,7 @@
+ **
+ ****************************************************************************/
+ 
++#include <stdio.h>
+ #include <libmng.h>
+ 
+ int main(int, char **)

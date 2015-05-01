@@ -16,15 +16,13 @@ Task-number: QTBUG-38367
 Change-Id: I0680740018aaa8356d267b7af3f01fac3697312a
 Security-advisory: CVE-2014-0190
 ---
- src/gui/image/qgifhandler.cpp | 7 +++++++
+ src/gui/image/qgifhandler.cpp |    7 +++++++
  1 file changed, 7 insertions(+)
 
-diff --git a/src/gui/image/qgifhandler.cpp b/src/gui/image/qgifhandler.cpp
-index 3324f04..5199dd3 100644
 --- a/src/gui/image/qgifhandler.cpp
 +++ b/src/gui/image/qgifhandler.cpp
-@@ -359,6 +359,13 @@ int QGIFFormat::decode(QImage *image, const uchar *buffer, int length,
-                     memset(bits, 0, image->byteCount());
+@@ -366,6 +366,13 @@ int QGIFFormat::decode(QImage *image, co
+                     return -1;
                  }
  
 +                // Check if the previous attempt to create the image failed. If it
@@ -37,6 +35,3 @@ index 3324f04..5199dd3 100644
                  disposePrevious(image);
                  disposed = false;
  
--- 
-1.8.5.1
-

@@ -1,3 +1,57 @@
+qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-3) unstable; urgency=medium
+
+  * Team upload.
+  * Fix CVE-2015-0295 (DoS vulnerability in BMP images handler).
+    Closes: #779550.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 02 Mar 2015 17:12:28 +0300
+
+qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-2) unstable; urgency=medium
+
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Remove debian/NEWS, it's no longer accurate.
+  * Update symbols files with buildds' logs.
+
+  [ Adam Majer ]
+  * Add xmlpatterns_stack_overflow_fix.diff which changes a recursive call
+    into iteration fixing stack overflow in XmlPatterns.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 04 Sep 2014 16:25:52 -0300
+
+qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+  * Disable the use of system proxies by default. It seems that if http_proxy
+    is setted then all protocols try to use the proxy.
+  * Add support for arm64 (Closes: #735488).
+    - Make arm64 use linux-g++ as platform_arg.
+    - Fix arch detection.
+    - Add qatomic support. This patch is known to not be the most correct way
+      to implement them, as it seems to be possible to do it in a faster way,
+      but should work non the less until we can provide something better.
+    - Add arm64's mkspecs.
+  * Add support for ppc64el (Closes: #749743).
+    - Add ppc64el to 07_trust_dpkg-arch_over_uname-m.diff, as the uname output
+      differs from the arch name.
+    - Add symbols changes for ppc64el. Thanks Mauricio Faria de Oliveira!
+    - Add ppc64el_configure_support.patch to properly detect ppc64* in
+      configure. Patch from Ubuntu's William Grant. Thanks William!
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sat, 23 Aug 2014 16:09:14 -0300
+
+qt4-x11 (4:4.8.6+git49-gbc62005+dfsg-1) unstable; urgency=medium
+
+  * New upstream GIT snapshot.
+  * Update 07_trust_dpkg-arch_over_uname-m.diff and debian/rules in order to
+    let mips64[el] build (Closes: #719763). Thanks Yunqiang Su for the patch.
+  * Enable using system network proxies by default.
+    - Add this information to debian/NEWS to inform our users.
+  * Update symbols files with buildd's logs.
+  * Refresh patches.
+  * Update install files due to the fix of QTBUG-16838.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 25 Jul 2014 14:07:38 -0300
+
 qt4-x11 (4:4.8.6+dfsg-2~bpo70+1) wheezy-backports; urgency=medium
 
   [ Jean-Baptiste Rouault ]
