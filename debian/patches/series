@@ -3,8 +3,6 @@ Add_support_for_QT_USE_DRAG_DISTANCE_env_var.patch
 QTBUG-21900_Buttons_in_Qt_applications_not_clickable_when_run_under_gnome-shell.patch
 dont_crash_on_broken_gif_images.patch
 xmlpatterns_stack_overflow_fix.diff
-fixes_crash_in_bmp_and_ico_image_decoder.patch
-fixes_crash_in_gif_image_decoder.patch
 
 # Patches submitted upstream but still not accepted
 aarch64_arm64_qatomic_support.patch
