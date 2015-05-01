@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.6 sh4
+# SymbolsHelper-Confirmed: 4:4.8.6 alpha amd64 arm64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64 ppc64el s390x sh4
 libQtHelp.so.4 libqt4-help #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN11QHelpEngine11indexWidgetEv@Base 4:4.5.3
@@ -25,8 +25,8 @@ libQtHelp.so.4 libqt4-help #MINVER#
  _ZN14QHelpGenerator14insertMetaDataERK4QMapI7QString8QVariantE@Base 4:4.5.3
  _ZN14QHelpGenerator15progressChangedEd@Base 4:4.5.3
  _ZN14QHelpGenerator16staticMetaObjectE@Base 4:4.5.3
- _ZN14QHelpGenerator17FileNameTableDataD1Ev@Base 4:4.7.4
- _ZN14QHelpGenerator17FileNameTableDataD2Ev@Base 4:4.7.4
+ (optional=gccinternal|arch=!hppa)_ZN14QHelpGenerator17FileNameTableDataD1Ev@Base 4:4.8.6
+ (optional=gccinternal|arch=!hppa)_ZN14QHelpGenerator17FileNameTableDataD2Ev@Base 4:4.8.6
  _ZN14QHelpGenerator20registerCustomFilterERK7QStringRK11QStringListb@Base 4:4.5.3
  _ZN14QHelpGenerator21registerVirtualFolderERK7QStringS2_@Base 4:4.5.3
  _ZN14QHelpGenerator22insertFileNotFoundFileEv@Base 4:4.5.3
@@ -59,6 +59,7 @@ libQtHelp.so.4 libqt4-help #MINVER#
  _ZN15QHelpEngineCore21documentationFileNameERK7QString@Base 4:4.5.3
  _ZN15QHelpEngineCore21registerDocumentationERK7QString@Base 4:4.5.3
  _ZN15QHelpEngineCore23unregisterDocumentationERK7QString@Base 4:4.5.3
+ (optional=gccinternal|arch=!sh4)_ZN15QHelpEngineCore27readersAboutToBeInvalidatedEv@Base 4:4.8.6
  _ZN15QHelpEngineCore5filesE7QStringRK11QStringListRKS0_@Base 4:4.5.3
  _ZN15QHelpEngineCore7warningERK7QString@Base 4:4.5.3
  _ZN15QHelpEngineCore8metaDataERK7QStringS2_@Base 4:4.5.3
@@ -99,9 +100,9 @@ libQtHelp.so.4 libqt4-help #MINVER#
  _ZN16QHelpIndexWidget8showLinkERK11QModelIndex@Base 4:4.5.3
  _ZN16QHelpIndexWidgetC1Ev@Base 4:4.5.3
  _ZN16QHelpIndexWidgetC2Ev@Base 4:4.5.3
- _ZN16QHelpIndexWidgetD0Ev@Base 4:4.7.4
- _ZN16QHelpIndexWidgetD1Ev@Base 4:4.7.4
- _ZN16QHelpIndexWidgetD2Ev@Base 4:4.7.4
+ (optional=gccinternal|arch=!hppa)_ZN16QHelpIndexWidgetD0Ev@Base 4:4.8.6
+ (optional=gccinternal|arch=!hppa)_ZN16QHelpIndexWidgetD1Ev@Base 4:4.8.6
+ (optional=gccinternal|arch=!hppa)_ZN16QHelpIndexWidgetD2Ev@Base 4:4.8.6
  _ZN16QHelpProjectData8readDataERK7QString@Base 4:4.5.3
  _ZN16QHelpProjectDataC1Ev@Base 4:4.5.3
  _ZN16QHelpProjectDataC2Ev@Base 4:4.5.3
@@ -110,9 +111,9 @@ libQtHelp.so.4 libqt4-help #MINVER#
  _ZN16QHelpProjectDataD2Ev@Base 4:4.5.3
  (optional=gccinternal|arch=sparc)_ZN16QHelpSearchQueryD1Ev@Base 4:4.8.5+git242
  (optional=gccinternal|arch=sparc)_ZN16QHelpSearchQueryD2Ev@Base 4:4.8.5+git242
- _ZN16QStringListModelD0Ev@Base 4:4.7.4
- _ZN16QStringListModelD1Ev@Base 4:4.7.4
- _ZN16QStringListModelD2Ev@Base 4:4.7.4
+ (optional=gccinternal|arch=!hppa)_ZN16QStringListModelD0Ev@Base 4:4.8.6
+ (optional=gccinternal|arch=!hppa)_ZN16QStringListModelD1Ev@Base 4:4.8.6
+ (optional=gccinternal|arch=!hppa)_ZN16QStringListModelD2Ev@Base 4:4.8.6
  _ZN17QHelpContentModel11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN17QHelpContentModel11qt_metacastEPKc@Base 4:4.5.3
  _ZN17QHelpContentModel14createContentsERK7QString@Base 4:4.5.3
@@ -154,17 +155,17 @@ libQtHelp.so.4 libqt4-help #MINVER#
  _ZN18QHelpContentWidget8showLinkERK11QModelIndex@Base 4:4.5.3
  _ZN18QHelpContentWidgetC1Ev@Base 4:4.5.3
  _ZN18QHelpContentWidgetC2Ev@Base 4:4.5.3
- _ZN18QHelpContentWidgetD0Ev@Base 4:4.7.4
- _ZN18QHelpContentWidgetD1Ev@Base 4:4.7.4
- _ZN18QHelpContentWidgetD2Ev@Base 4:4.7.4
- _ZN18QHelpDataIndexItemD1Ev@Base 4:4.7.4
- _ZN18QHelpDataIndexItemD2Ev@Base 4:4.7.4
+ (optional=gccinternal|arch=!hppa)_ZN18QHelpContentWidgetD0Ev@Base 4:4.8.6
+ (optional=gccinternal|arch=!hppa)_ZN18QHelpContentWidgetD1Ev@Base 4:4.8.6
+ (optional=gccinternal|arch=!hppa)_ZN18QHelpContentWidgetD2Ev@Base 4:4.8.6
+ (optional=gccinternal|arch=!hppa)_ZN18QHelpDataIndexItemD1Ev@Base 4:4.8.6
+ (optional=gccinternal|arch=!hppa)_ZN18QHelpDataIndexItemD2Ev@Base 4:4.8.6
  _ZN20QHelpDataContentItemC1EPS_RK7QStringS3_@Base 4:4.5.3
  _ZN20QHelpDataContentItemC2EPS_RK7QStringS3_@Base 4:4.5.3
  _ZN20QHelpDataContentItemD1Ev@Base 4:4.5.3
  _ZN20QHelpDataContentItemD2Ev@Base 4:4.5.3
- _ZN21QHelpDataCustomFilterD1Ev@Base 4:4.7.4
- _ZN21QHelpDataCustomFilterD2Ev@Base 4:4.7.4
+ (optional=gccinternal|arch=!hppa)_ZN21QHelpDataCustomFilterD1Ev@Base 4:4.8.6
+ (optional=gccinternal|arch=!hppa)_ZN21QHelpDataCustomFilterD2Ev@Base 4:4.8.6
  _ZN22QHelpDataFilterSection10addContentEP20QHelpDataContentItem@Base 4:4.5.3
  _ZN22QHelpDataFilterSection10setIndicesERK5QListI18QHelpDataIndexItemE@Base 4:4.5.3
  _ZN22QHelpDataFilterSection11setContentsERK5QListIP20QHelpDataContentItemE@Base 4:4.5.3
@@ -294,10 +295,10 @@ libQtHelp.so.4 libqt4-help #MINVER#
  _ZTV17QHelpContentModel@Base 4:4.5.3
  _ZTV17QHelpSearchEngine@Base 4:4.5.3
  _ZTV18QHelpContentWidget@Base 4:4.5.3
- _ZTV18QHelpDataInterface@Base 4:4.5.3
+ (optional=gccinternal|arch=!hppa)_ZTV18QHelpDataInterface@Base 4:4.8.6
  _ZTV22QHelpSearchQueryWidget@Base 4:4.5.3
  _ZTV23QHelpSearchResultWidget@Base 4:4.5.3
- (c++)"non-virtual thunk to QHelpContentWidget::~QHelpContentWidget()@Base" 4:4.7.4
- (c++)"non-virtual thunk to QHelpIndexWidget::~QHelpIndexWidget()@Base" 4:4.7.4
+ (c++|arch=!hppa)"non-virtual thunk to QHelpContentWidget::~QHelpContentWidget()@Base" 4:4.8.6
+ (c++|arch=!hppa)"non-virtual thunk to QHelpIndexWidget::~QHelpIndexWidget()@Base" 4:4.8.6
  (c++)"non-virtual thunk to QHelpSearchQueryWidget::~QHelpSearchQueryWidget()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QHelpSearchResultWidget::~QHelpSearchResultWidget()@Base" 4:4.5.3
