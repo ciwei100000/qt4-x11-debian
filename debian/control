@@ -300,18 +300,6 @@ Description: Qt 4 SVG module
  Scalable Vector Graphics (SVG) is a language for describing two-dimensional
  graphics and graphical applications in XML.
 
-Package: libqt4-webkit
-Architecture: any
-Section: oldlibs
-Priority: extra
-Depends: libqtwebkit4 (>= 2.0~), ${misc:Depends}
-Description: transitional package for Qt 4 WebKit module
- Qt is a cross-platform C++ application framework.  Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- This is a dummy transitional package to enable installation of other packages
- linked against Qt WebKit 4.4 - 4.6 releases previously shipped from Qt source.
-
 Package: libqt4-xml
 Architecture: any
 Multi-Arch: same
@@ -657,18 +645,6 @@ Description: Qt 4 script library debugging symbols
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains the debugging symbols for the Qt 4 Script library.
-
-Package: libqt4-webkit-dbg
-Architecture: any
-Section: oldlibs
-Priority: extra
-Depends: libqtwebkit4-dbg (>= 2.0~), ${misc:Depends}
-Description: transitional package for Qt 4 WebKit debugging symbols
- Qt is a cross-platform C++ application framework. Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- This is a dummy transitional package and can be safely removed after
- libqtwebkit4-dbg is installed.
 
 Package: libqt4-xmlpatterns-dbg
 Priority: extra
