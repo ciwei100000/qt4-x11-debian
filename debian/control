@@ -403,18 +403,6 @@ Description: Qt 4 help module
  The QtHelp module provides classes for integrating online documentation in
  applications.
 
-Package: libqt4-assistant
-Architecture: any
-Section: oldlibs
-Priority: extra
-Depends: libqtassistantclient4 (>= 4.6.3), ${misc:Depends}
-Description: transitional package for Qt 4 assistant module
- Qt is a cross-platform C++ application framework. Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- This is a dummy transitional package to enable installation of other packages
- linked against Qt 4 assistant module previously shipped from Qt source.
-
 Package: libqt4-test
 Architecture: any
 Multi-Arch: same
