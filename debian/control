@@ -83,24 +83,6 @@ Description: Qt 4 core module translations
  .
  This package contains the translations of the QtCore module.
 
-Package: libqt4-core
-Architecture: any
-Section: oldlibs
-Priority: extra
-Depends: libqt4-dbus (= ${binary:Version}),
-         libqt4-network (= ${binary:Version}),
-         libqt4-script (= ${binary:Version}),
-         libqt4-test (= ${binary:Version}),
-         libqt4-xml (= ${binary:Version}),
-         libqtcore4 (= ${binary:Version}),
-         ${misc:Depends}
-Description: transitional package for Qt 4 core non-GUI runtime libraries
- Qt is a cross-platform C++ application framework.  Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- This is a dummy transitional package to enable installation of other packages
- linked against Qt 4.3 or earlier Qt 4 releases previously shipped.
-
 Package: libqtgui4
 Architecture: any
 Multi-Arch: same
@@ -113,23 +95,6 @@ Description: Qt 4 GUI module
  is its rich set of widgets that provide standard GUI functionality.
  .
  The QtGui module extends QtCore with GUI functionality.
-
-Package: libqt4-gui
-Architecture: any
-Section: oldlibs
-Priority: extra
-Depends: libqt4-designer (= ${binary:Version}),
-         libqt4-opengl (= ${binary:Version}),
-         libqt4-svg (= ${binary:Version}),
-         libqtgui4 (= ${binary:Version}),
-         ${misc:Depends}
-Description: transitional package for Qt 4 GUI runtime libraries
- Qt is a cross-platform C++ application framework.  Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- This is a dummy transitional package depending on the Qt 4 GUI library
- packages which the package of the same name used to provide in Qt 4.3.4
- and earlier packages of Qt 4.
 
 Package: libqt4-network
 Architecture: any
