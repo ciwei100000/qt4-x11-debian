@@ -1,3 +1,7 @@
+qt4-x11 (4:4.8.6+git155-g716fbae+dfsg-3) UNRELEASED; urgency=medium
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 05 May 2015 18:50:37 -0300
+
 qt4-x11 (4:4.8.6+git155-g716fbae+dfsg-2) unstable; urgency=medium
 
   * The previous upload fixed CVE-2015-1858, CVE-2015-1859, CVE-2015-1860.
