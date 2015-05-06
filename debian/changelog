@@ -1,7 +1,7 @@
 qt4-x11 (4:4.8.6+git155-g716fbae+dfsg-3) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
-  * Remove dummy transitional packages libqt4-webkit-dbg], libqt4-assistant,
+  * Remove dummy transitional packages libqt4-webkit[-dbg], libqt4-assistant,
     libqt4-gui and libqt4-core.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 05 May 2015 18:50:37 -0300
