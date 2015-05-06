@@ -512,19 +512,6 @@ Description: Qt 4 development programs
  applications, such as moc, qdbuscpp2xml, qdbusxml2cpp, qt3to4, rcc, uic3,
  and uic.
 
-Package: libqt4-private-dev
-Architecture: any
-Section: libdevel
-Depends: libqt4-dev (= ${binary:Version}), ${misc:Depends}
-Description: Qt 4 private development files
- Qt is a cross-platform C++ application framework. Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- This package contains the private header development files for building some
- Qt 4 applications like Qt Creator QML Designer plugin.
- .
- Use at your own risk.
-
 Package: libqt4-opengl-dev
 Architecture: any
 Section: libdevel
