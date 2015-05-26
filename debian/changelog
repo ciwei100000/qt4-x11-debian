@@ -10,6 +10,7 @@ qt4-x11 (4:4.8.7+dfsg-1) UNRELEASED; urgency=medium
     repo in more than a year. They can re add themselves whenever they want
     (and we really hope to see you back really soon!).
   * Update symbols files with buildds' logs.
+  * Remove remove_functions_not_in_qt4.patch which is already present upstream.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 05 May 2015 18:50:37 -0300
 
