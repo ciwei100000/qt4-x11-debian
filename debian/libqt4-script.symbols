@@ -303,7 +303,6 @@ libQtScript.so.4 libqt4-script #MINVER#
  _ZN28QScriptClassPropertyIteratorD0Ev@Base 4:4.5.3
  _ZN28QScriptClassPropertyIteratorD1Ev@Base 4:4.5.3
  _ZN28QScriptClassPropertyIteratorD2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=hppa)_ZN9QHashData9hasShrunkEv@Base 4:4.8.6
  _ZNK11QScriptable10thisObjectEv@Base 4:4.5.3
  _ZNK11QScriptable13argumentCountEv@Base 4:4.5.3
  _ZNK11QScriptable6engineEv@Base 4:4.5.3
@@ -444,7 +443,7 @@ libQtScript.so.4 libqt4-script #MINVER#
  _ZTI25QScriptEngineAgentPrivate@Base 4:4.5.3
  _ZTI25QScriptExtensionInterface@Base 4:4.5.3
  _ZTI28QScriptClassPropertyIterator@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZTIN23QScriptDeclarativeClass6ObjectE@Base 4:4.8.6
+ (optional=gccinternal)_ZTIN23QScriptDeclarativeClass6ObjectE@Base 4:4.8.6
  _ZTS12QScriptClass@Base 4:4.5.3
  _ZTS13QScriptEngine@Base 4:4.5.3
  _ZTS17QFactoryInterface@Base 4:4.5.3
@@ -454,17 +453,17 @@ libQtScript.so.4 libqt4-script #MINVER#
  _ZTS25QScriptEngineAgentPrivate@Base 4:4.5.3
  _ZTS25QScriptExtensionInterface@Base 4:4.5.3
  _ZTS28QScriptClassPropertyIterator@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZTSN23QScriptDeclarativeClass6ObjectE@Base 4:4.8.6
+ (optional=gccinternal)_ZTSN23QScriptDeclarativeClass6ObjectE@Base 4:4.8.6
  _ZTV12QScriptClass@Base 4:4.5.3
  _ZTV13QScriptEngine@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZTV17QFactoryInterface@Base 4:4.8.6
+ (optional=gccinternal)_ZTV17QFactoryInterface@Base 4:4.8.6
  _ZTV18QScriptEngineAgent@Base 4:4.5.3
  _ZTV22QScriptExtensionPlugin@Base 4:4.5.3
  _ZTV23QScriptDeclarativeClass@Base 4:4.6.1
  _ZTV25QScriptEngineAgentPrivate@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZTV25QScriptExtensionInterface@Base 4:4.8.6
+ (optional=gccinternal)_ZTV25QScriptExtensionInterface@Base 4:4.8.6
  _ZTV28QScriptClassPropertyIterator@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZTVN23QScriptDeclarativeClass6ObjectE@Base 4:4.8.6
+ (optional=gccinternal)_ZTVN23QScriptDeclarativeClass6ObjectE@Base 4:4.8.6
  _ZlsR11QDataStreamRK18QScriptContextInfo@Base 4:4.5.3
  _ZrsR11QDataStreamR18QScriptContextInfo@Base 4:4.5.3
  (c++)"non-virtual thunk to QScriptExtensionPlugin::~QScriptExtensionPlugin()@Base" 4:4.5.3

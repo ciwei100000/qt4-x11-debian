@@ -729,9 +729,9 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN11Q3ColorDragC1ERK6QColorP7QWidgetPKc@Base 4:4.5.3
  _ZN11Q3ColorDragC2EP7QWidgetPKc@Base 4:4.5.3
  _ZN11Q3ColorDragC2ERK6QColorP7QWidgetPKc@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN11Q3ColorDragD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN11Q3ColorDragD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN11Q3ColorDragD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11Q3ColorDragD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11Q3ColorDragD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11Q3ColorDragD2Ev@Base 4:4.8.6
  _ZN11Q3DataTable10findBufferERK9QSqlIndexi@Base 4:4.5.3
  _ZN11Q3DataTable10hideColumnEi@Base 4:4.5.3
  _ZN11Q3DataTable10paintFieldEP8QPainterPK9QSqlFieldRK5QRectb@Base 4:4.5.3
@@ -857,9 +857,9 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN11Q3PopupMenu11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN11Q3PopupMenu11qt_metacastEPKc@Base 4:4.5.3
  _ZN11Q3PopupMenu16staticMetaObjectE@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN11Q3PopupMenuD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN11Q3PopupMenuD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN11Q3PopupMenuD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11Q3PopupMenuD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11Q3PopupMenuD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11Q3PopupMenuD2Ev@Base 4:4.8.6
  _ZN11Q3Semaphore9tryAccessEi@Base 4:4.5.3
  _ZN11Q3SemaphoreC1Ei@Base 4:4.5.3
  _ZN11Q3SemaphoreC2Ei@Base 4:4.5.3
@@ -1538,7 +1538,6 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN12Q3TextFormat8pntr_ldgE@Base 4:4.5.3
  _ZN12Q3TextFormat8setColorERK6QColor@Base 4:4.5.3
  _ZN12Q3TextFormat9applyFontERK5QFont@Base 4:4.5.3
- (optional=gccinternal|arch=hppa)_ZN12Q3TextFormat9removeRefEv@Base 4:4.8.6
  _ZN12Q3TextFormat9setFamilyERK7QString@Base 4:4.5.3
  _ZN12Q3TextFormat9setItalicEb@Base 4:4.5.3
  _ZN12Q3TextFormat9setVAlignENS_17VerticalAlignmentE@Base 4:4.5.3
@@ -1650,9 +1649,9 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN12Q3TextStringD2Ev@Base 4:4.5.3
  (arch=!armel !armhf)_ZN12QDashStroker3endEv@Base 4:4.5.3
  (arch=!armel !armhf)_ZN12QDashStroker5beginEPv@Base 4:4.5.3
- (optional=gccinternal|arch=!armel !armhf !hppa)_ZN12QDashStrokerD0Ev@Base 4:4.7.4
- (optional=gccinternal|arch=!armel !armhf !hppa)_ZN12QDashStrokerD1Ev@Base 4:4.7.4
- (optional=gccinternal|arch=!armel !armhf !hppa)_ZN12QDashStrokerD2Ev@Base 4:4.7.4
+ (optional=gccinternal|arch=!armel !armhf)_ZN12QDashStrokerD0Ev@Base 4:4.7.4
+ (optional=gccinternal|arch=!armel !armhf)_ZN12QDashStrokerD1Ev@Base 4:4.7.4
+ (optional=gccinternal|arch=!armel !armhf)_ZN12QDashStrokerD2Ev@Base 4:4.7.4
  _ZN13Q3ActionGroup10childEventEP11QChildEvent@Base 4:4.5.3
  _ZN13Q3ActionGroup10removeFromEP7QWidget@Base 4:4.5.3
  _ZN13Q3ActionGroup10setEnabledEb@Base 4:4.5.3
@@ -1837,9 +1836,9 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN13Q3ProgressBarC2EP7QWidgetPKc6QFlagsIN2Qt10WindowTypeEE@Base 4:4.5.3
  _ZN13Q3ProgressBarC2EiP7QWidget6QFlagsIN2Qt10WindowTypeEE@Base 4:4.5.3
  _ZN13Q3ProgressBarC2EiP7QWidgetPKc6QFlagsIN2Qt10WindowTypeEE@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN13Q3ProgressBarD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN13Q3ProgressBarD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN13Q3ProgressBarD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN13Q3ProgressBarD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN13Q3ProgressBarD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN13Q3ProgressBarD2Ev@Base 4:4.8.6
  _ZN13Q3TableHeader10paintEventEP11QPaintEvent@Base 4:4.5.3
  _ZN13Q3TableHeader10saveStatesEv@Base 4:4.5.3
  _ZN13Q3TableHeader10setCachingEb@Base 4:4.5.3
@@ -2030,9 +2029,9 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN14Q3HButtonGroup11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN14Q3HButtonGroup11qt_metacastEPKc@Base 4:4.5.3
  _ZN14Q3HButtonGroup16staticMetaObjectE@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN14Q3HButtonGroupD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN14Q3HButtonGroupD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN14Q3HButtonGroupD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN14Q3HButtonGroupD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN14Q3HButtonGroupD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN14Q3HButtonGroupD2Ev@Base 4:4.8.6
  _ZN14Q3IconDragData11setTextRectERK5QRect@Base 4:4.5.3
  _ZN14Q3IconDragData13setPixmapRectERK5QRect@Base 4:4.5.3
  _ZN14Q3IconDragDataC1ERK5QRectS2_@Base 4:4.5.3
@@ -2262,8 +2261,8 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN14Q3TextDocument4initEv@Base 4:4.5.3
  _ZN14Q3TextDocument4redoEP12Q3TextCursor@Base 4:4.5.3
  _ZN14Q3TextDocument4undoEP12Q3TextCursor@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN14Q3TextDocument5FocusD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN14Q3TextDocument5FocusD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN14Q3TextDocument5FocusD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN14Q3TextDocument5FocusD2Ev@Base 4:4.8.6
  _ZN14Q3TextDocument5clearEb@Base 4:4.5.3
  _ZN14Q3TextDocument7setTextERK7QStringS2_@Base 4:4.5.3
  _ZN14Q3TextDocument8doLayoutEP8QPainteri@Base 4:4.5.3
@@ -2282,9 +2281,9 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN14Q3VButtonGroup11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN14Q3VButtonGroup11qt_metacastEPKc@Base 4:4.5.3
  _ZN14Q3VButtonGroup16staticMetaObjectE@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN14Q3VButtonGroupD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN14Q3VButtonGroupD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN14Q3VButtonGroupD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN14Q3VButtonGroupD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN14Q3VButtonGroupD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN14Q3VButtonGroupD2Ev@Base 4:4.8.6
  _ZN15Q3CanvasEllipse4RTTIE@Base 4:4.5.3
  _ZN15Q3CanvasEllipse7setSizeEii@Base 4:4.5.3
  _ZN15Q3CanvasEllipse9drawShapeER8QPainter@Base 4:4.5.3
@@ -2492,9 +2491,9 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN16Q3CheckTableItem7setTextERK7QString@Base 4:4.5.3
  _ZN16Q3CheckTableItemC1EP7Q3TableRK7QString@Base 4:4.5.3
  _ZN16Q3CheckTableItemC2EP7Q3TableRK7QString@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN16Q3CheckTableItemD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN16Q3CheckTableItemD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN16Q3CheckTableItemD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN16Q3CheckTableItemD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN16Q3CheckTableItemD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN16Q3CheckTableItemD2Ev@Base 4:4.8.6
  _ZN16Q3ComboTableItem11setEditableEb@Base 4:4.5.3
  _ZN16Q3ComboTableItem13setStringListERK11QStringList@Base 4:4.5.3
  _ZN16Q3ComboTableItem14setCurrentItemERK7QString@Base 4:4.5.3
@@ -2728,11 +2727,11 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN18Q3FileIconProvider6pixmapERK9QFileInfo@Base 4:4.5.3
  _ZN18Q3FileIconProviderC1EP7QObjectPKc@Base 4:4.5.3
  _ZN18Q3FileIconProviderC2EP7QObjectPKc@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN18Q3FileIconProviderD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN18Q3FileIconProviderD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN18Q3FileIconProviderD2Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN18Q3IconDragDataItemD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN18Q3IconDragDataItemD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN18Q3FileIconProviderD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN18Q3FileIconProviderD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN18Q3FileIconProviderD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN18Q3IconDragDataItemD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN18Q3IconDragDataItemD2Ev@Base 4:4.8.6
  _ZN18Q3NetworkOperation11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN18Q3NetworkOperation11qt_metacastEPKc@Base 4:4.5.3
  _ZN18Q3NetworkOperation12setErrorCodeEi@Base 4:4.5.3
@@ -2781,8 +2780,8 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN18Q3TextStyleCommandC2EP14Q3TextDocumentiiRK10QByteArray@Base 4:4.5.3
  (optional=external|arch=alpha armel mips mips64el mipsel powerpcspe s390 sh4 sparc)_ZN18QStyleOptionButtonD1Ev@Base 4:4.8.1
  (optional=external|arch=alpha armel mips mips64el mipsel powerpcspe s390 sh4 sparc)_ZN18QStyleOptionButtonD2Ev@Base 4:4.8.1
- (optional=gccinternal|arch=!hppa)_ZN18QStyleOptionHeaderD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN18QStyleOptionHeaderD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN18QStyleOptionHeaderD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN18QStyleOptionHeaderD2Ev@Base 4:4.8.6
  _ZN19Q3CanvasPixmapArray11readPixmapsERK7QStringi@Base 4:4.5.3
  _ZN19Q3CanvasPixmapArray11readPixmapsERK7QStringib@Base 4:4.5.3
  _ZN19Q3CanvasPixmapArray18readCollisionMasksERK7QString@Base 4:4.5.3
@@ -2809,9 +2808,9 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN19Q3HttpRequestHeaderC2ERK7QStringS2_ii@Base 4:4.5.3
  _ZN19Q3HttpRequestHeaderC2ERKS_@Base 4:4.5.3
  _ZN19Q3HttpRequestHeaderC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN19Q3HttpRequestHeaderD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN19Q3HttpRequestHeaderD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN19Q3HttpRequestHeaderD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN19Q3HttpRequestHeaderD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN19Q3HttpRequestHeaderD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN19Q3HttpRequestHeaderD2Ev@Base 4:4.8.6
  _ZN19Q3MimeSourceFactory10addFactoryEPS_@Base 4:4.5.3
  _ZN19Q3MimeSourceFactory11addFilePathERK7QString@Base 4:4.5.3
  _ZN19Q3MimeSourceFactory11setFilePathERK11QStringList@Base 4:4.5.3
@@ -2868,9 +2867,9 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN20Q3HttpResponseHeaderC2ERKS_@Base 4:4.5.3
  _ZN20Q3HttpResponseHeaderC2EiRK7QStringii@Base 4:4.5.3
  _ZN20Q3HttpResponseHeaderC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN20Q3HttpResponseHeaderD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN20Q3HttpResponseHeaderD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN20Q3HttpResponseHeaderD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20Q3HttpResponseHeaderD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20Q3HttpResponseHeaderD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20Q3HttpResponseHeaderD2Ev@Base 4:4.8.6
  _ZN20Q3TextCommandHistory10addCommandEP13Q3TextCommand@Base 4:4.5.3
  _ZN20Q3TextCommandHistory15isRedoAvailableEv@Base 4:4.5.3
  _ZN20Q3TextCommandHistory15isUndoAvailableEv@Base 4:4.5.3
@@ -2887,12 +2886,12 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN20Q3TextHorizontalLineD0Ev@Base 4:4.5.3
  _ZN20Q3TextHorizontalLineD1Ev@Base 4:4.5.3
  _ZN20Q3TextHorizontalLineD2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN20QStyleOptionComboBoxD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN20QStyleOptionComboBoxD2Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN20QStyleOptionGroupBoxD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN20QStyleOptionGroupBoxD2Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN20QStyleOptionTitleBarD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN20QStyleOptionTitleBarD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QStyleOptionComboBoxD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QStyleOptionComboBoxD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QStyleOptionGroupBoxD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QStyleOptionGroupBoxD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QStyleOptionTitleBarD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QStyleOptionTitleBarD2Ev@Base 4:4.8.6
  _ZN21Q3CanvasPolygonalItem10invalidateEv@Base 4:4.5.3
  _ZN21Q3CanvasPolygonalItem10setWindingEb@Base 4:4.5.3
  _ZN21Q3CanvasPolygonalItem4RTTIE@Base 4:4.5.3
@@ -2939,12 +2938,12 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN22Q3TextFormatCollectionD0Ev@Base 4:4.5.3
  _ZN22Q3TextFormatCollectionD1Ev@Base 4:4.5.3
  _ZN22Q3TextFormatCollectionD2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN22QStyleOptionQ3ListViewD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN22QStyleOptionQ3ListViewD2Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN23Q3TextDocumentSelectionD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN23Q3TextDocumentSelectionD2Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN23QStyleOptionProgressBarD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN23QStyleOptionProgressBarD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN22QStyleOptionQ3ListViewD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN22QStyleOptionQ3ListViewD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN23Q3TextDocumentSelectionD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN23Q3TextDocumentSelectionD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN23QStyleOptionProgressBarD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN23QStyleOptionProgressBarD2Ev@Base 4:4.8.6
  _ZN25Q3TextFormatterBreakWords6formatEP14Q3TextDocumentP15Q3TextParagraphiRK4QMapIiP14QTextLineStartE@Base 4:4.5.3
  _ZN25Q3TextFormatterBreakWordsC1Ev@Base 4:4.5.3
  _ZN25Q3TextFormatterBreakWordsC2Ev@Base 4:4.5.3
@@ -3079,9 +3078,9 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN6Q3GridC1EiP7QWidgetPKc6QFlagsIN2Qt10WindowTypeEE@Base 4:4.5.3
  _ZN6Q3GridC2EiN2Qt11OrientationEP7QWidgetPKc6QFlagsINS0_10WindowTypeEE@Base 4:4.5.3
  _ZN6Q3GridC2EiP7QWidgetPKc6QFlagsIN2Qt10WindowTypeEE@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN6Q3GridD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN6Q3GridD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN6Q3GridD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN6Q3GridD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN6Q3GridD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN6Q3GridD2Ev@Base 4:4.8.6
  _ZN6Q3HBox10setSpacingEi@Base 4:4.5.3
  _ZN6Q3HBox11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN6Q3HBox11qt_metacastEPKc@Base 4:4.5.3
@@ -3092,9 +3091,9 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN6Q3HBoxC1EbP7QWidgetPKc6QFlagsIN2Qt10WindowTypeEE@Base 4:4.5.3
  _ZN6Q3HBoxC2EP7QWidgetPKc6QFlagsIN2Qt10WindowTypeEE@Base 4:4.5.3
  _ZN6Q3HBoxC2EbP7QWidgetPKc6QFlagsIN2Qt10WindowTypeEE@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN6Q3HBoxD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN6Q3HBoxD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN6Q3HBoxD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN6Q3HBoxD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN6Q3HBoxD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN6Q3HBoxD2Ev@Base 4:4.8.6
  _ZN6Q3Http10addRequestEP13Q3HttpRequest@Base 4:4.5.3
  _ZN6Q3Http10clientDoneEb@Base 4:4.5.3
  _ZN6Q3Http10slotClosedEv@Base 4:4.5.3
@@ -3152,9 +3151,9 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN6Q3VBox16staticMetaObjectE@Base 4:4.5.3
  _ZN6Q3VBoxC1EP7QWidgetPKc6QFlagsIN2Qt10WindowTypeEE@Base 4:4.5.3
  _ZN6Q3VBoxC2EP7QWidgetPKc6QFlagsIN2Qt10WindowTypeEE@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN6Q3VBoxD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN6Q3VBoxD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN6Q3VBoxD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN6Q3VBoxD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN6Q3VBoxD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN6Q3VBoxD2Ev@Base 4:4.8.6
  _ZN7Q3Accel10insertItemERK12QKeySequencei@Base 4:4.5.3
  _ZN7Q3Accel10removeItemEi@Base 4:4.5.3
  _ZN7Q3Accel10setEnabledEb@Base 4:4.5.3
@@ -3841,9 +3840,9 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN9Q3LocalFs21operationListChildrenEP18Q3NetworkOperation@Base 4:4.5.3
  _ZN9Q3LocalFsC1Ev@Base 4:4.5.3
  _ZN9Q3LocalFsC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN9Q3LocalFsD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN9Q3LocalFsD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN9Q3LocalFsD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN9Q3LocalFsD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN9Q3LocalFsD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN9Q3LocalFsD2Ev@Base 4:4.8.6
  _ZN9Q3Painter17adjustedRectangleERK5QRect@Base 4:4.5.3
  _ZN9Q3Picture4loadEP9QIODevicePKc@Base 4:4.5.3
  _ZN9Q3Picture4loadERK7QStringPKc@Base 4:4.5.3
@@ -4405,7 +4404,6 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZNK12Q3TextFormat7descentEv@Base 4:4.5.3
  _ZNK12Q3TextFormat7leadingEv@Base 4:4.5.3
  _ZNK12Q3TextString5widthEi@Base 4:4.5.3
- (optional=gccinternal|arch=hppa)_ZNK12Q3TextString8toStringEv@Base 4:4.8.6
  _ZNK12Q3TextString9checkBidiEv@Base 4:4.5.3
  _ZNK12QPaintDevice7devTypeEv@Base 4:4.5.3
  _ZNK13Q3ActionGroup10metaObjectEv@Base 4:4.5.3
@@ -4749,7 +4747,6 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZNK16Q3TextCustomItem9placementEv@Base 4:4.5.3
  _ZNK16Q3TextStringChar10anchorHrefEv@Base 4:4.5.3
  _ZNK16Q3TextStringChar10anchorNameEv@Base 4:4.5.3
- (optional=gccinternal|arch=hppa)_ZNK16Q3TextStringChar6heightEv@Base 4:4.8.6
  _ZNK17Q3CanvasRectangle10areaPointsEv@Base 4:4.5.3
  _ZNK17Q3CanvasRectangle12collidesWithEPK12Q3CanvasItem@Base 4:4.5.3
  _ZNK17Q3CanvasRectangle12collidesWithEPK14Q3CanvasSpritePK21Q3CanvasPolygonalItemPKS_PK15Q3CanvasEllipsePK12Q3CanvasText@Base 4:4.5.3
@@ -5482,7 +5479,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZTV16Q3CheckTableItem@Base 4:4.5.3
  _ZTV16Q3ComboTableItem@Base 4:4.5.3
  _ZTV16Q3DockAreaLayout@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZTV16Q3PolygonScanner@Base 4:4.8.6
+ (optional=gccinternal)_ZTV16Q3PolygonScanner@Base 4:4.8.6
  _ZTV16Q3ProgressDialog@Base 4:4.5.3
  _ZTV16Q3SqlFormManager@Base 4:4.5.3
  _ZTV16Q3SqlPropertyMap@Base 4:4.5.3
@@ -5511,7 +5508,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZTV22Q3TextFormatCollection@Base 4:4.5.3
  _ZTV25Q3TextFormatterBreakWords@Base 4:4.5.3
  _ZTV27Q3TextFormatterBreakInWords@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZTV28Q3NetworkProtocolFactoryBase@Base 4:4.8.6
+ (optional=gccinternal)_ZTV28Q3NetworkProtocolFactoryBase@Base 4:4.8.6
  _ZTV5Q3Dns@Base 4:4.5.3
  _ZTV5Q3Ftp@Base 4:4.5.3
  _ZTV5Q3Url@Base 4:4.5.3
@@ -5555,7 +5552,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  (c++)"non-virtual thunk to Q3Button::~Q3Button()@Base" 4:4.5.3
  (c++)"non-virtual thunk to Q3ButtonGroup::~Q3ButtonGroup()@Base" 4:4.5.3
  (c++)"non-virtual thunk to Q3CanvasView::~Q3CanvasView()@Base" 4:4.5.3
- (c++|arch=!hppa)"non-virtual thunk to Q3ColorDrag::~Q3ColorDrag()@Base" 4:4.8.6
+ (c++)"non-virtual thunk to Q3ColorDrag::~Q3ColorDrag()@Base" 4:4.8.6
  (c++)"non-virtual thunk to Q3ComboBox::~Q3ComboBox()@Base" 4:4.5.3
  (c++)"non-virtual thunk to Q3DataBrowser::~Q3DataBrowser()@Base" 4:4.5.3
  (c++)"non-virtual thunk to Q3DataTable::~Q3DataTable()@Base" 4:4.5.3
@@ -5573,11 +5570,11 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  (c++)"non-virtual thunk to Q3DragObject::~Q3DragObject()@Base" 4:4.5.3
  (c++)"non-virtual thunk to Q3FileDialog::~Q3FileDialog()@Base" 4:4.5.3
  (c++)"non-virtual thunk to Q3Frame::~Q3Frame()@Base" 4:4.5.3
- (c++|arch=!hppa)"non-virtual thunk to Q3Grid::~Q3Grid()@Base" 4:4.8.6
+ (c++)"non-virtual thunk to Q3Grid::~Q3Grid()@Base" 4:4.8.6
  (c++)"non-virtual thunk to Q3GridView::~Q3GridView()@Base" 4:4.5.3
  (c++)"non-virtual thunk to Q3GroupBox::~Q3GroupBox()@Base" 4:4.5.3
- (c++|arch=!hppa)"non-virtual thunk to Q3HBox::~Q3HBox()@Base" 4:4.8.6
- (c++|arch=!hppa)"non-virtual thunk to Q3HButtonGroup::~Q3HButtonGroup()@Base" 4:4.8.6
+ (c++)"non-virtual thunk to Q3HBox::~Q3HBox()@Base" 4:4.8.6
+ (c++)"non-virtual thunk to Q3HButtonGroup::~Q3HButtonGroup()@Base" 4:4.8.6
  (c++)"non-virtual thunk to Q3HGroupBox::~Q3HGroupBox()@Base" 4:4.5.3
  (c++)"non-virtual thunk to Q3Header::~Q3Header()@Base" 4:4.5.3
  (c++)"non-virtual thunk to Q3IconDrag::encodedData(char const*) const@Base" 4:4.5.3
@@ -5591,8 +5588,8 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  (c++)"non-virtual thunk to Q3ListView::~Q3ListView()@Base" 4:4.5.3
  (c++)"non-virtual thunk to Q3MainWindow::~Q3MainWindow()@Base" 4:4.5.3
  (c++)"non-virtual thunk to Q3MultiLineEdit::~Q3MultiLineEdit()@Base" 4:4.5.3
- (c++|arch=!hppa)"non-virtual thunk to Q3PopupMenu::~Q3PopupMenu()@Base" 4:4.8.6
- (c++|arch=!hppa)"non-virtual thunk to Q3ProgressBar::~Q3ProgressBar()@Base" 4:4.8.6
+ (c++)"non-virtual thunk to Q3PopupMenu::~Q3PopupMenu()@Base" 4:4.8.6
+ (c++)"non-virtual thunk to Q3ProgressBar::~Q3ProgressBar()@Base" 4:4.8.6
  (c++)"non-virtual thunk to Q3ProgressDialog::~Q3ProgressDialog()@Base" 4:4.5.3
  (c++)"non-virtual thunk to Q3ScrollView::~Q3ScrollView()@Base" 4:4.5.3
  (c++)"non-virtual thunk to Q3SpinWidget::~Q3SpinWidget()@Base" 4:4.5.3
@@ -5616,8 +5613,8 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  (c++)"non-virtual thunk to Q3UrlOperator::reset()@Base" 4:4.5.3
  (c++)"non-virtual thunk to Q3UrlOperator::setPath(QString const&)@Base" 4:4.5.3
  (c++)"non-virtual thunk to Q3UrlOperator::~Q3UrlOperator()@Base" 4:4.5.3
- (c++|arch=!hppa)"non-virtual thunk to Q3VBox::~Q3VBox()@Base" 4:4.8.6
- (c++|arch=!hppa)"non-virtual thunk to Q3VButtonGroup::~Q3VButtonGroup()@Base" 4:4.8.6
+ (c++)"non-virtual thunk to Q3VBox::~Q3VBox()@Base" 4:4.8.6
+ (c++)"non-virtual thunk to Q3VButtonGroup::~Q3VButtonGroup()@Base" 4:4.8.6
  (c++)"non-virtual thunk to Q3VGroupBox::~Q3VGroupBox()@Base" 4:4.5.3
  (c++)"non-virtual thunk to Q3WidgetStack::~Q3WidgetStack()@Base" 4:4.5.3
  (c++)"non-virtual thunk to Q3Wizard::~Q3Wizard()@Base" 4:4.5.3

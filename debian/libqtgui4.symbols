@@ -808,8 +808,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN11QFontDialogD0Ev@Base 4:4.5.3
  _ZN11QFontDialogD1Ev@Base 4:4.5.3
  _ZN11QFontDialogD2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN11QFontEngine10PropertiesD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN11QFontEngine10PropertiesD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11QFontEngine10PropertiesD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11QFontEngine10PropertiesD2Ev@Base 4:4.8.6
  _ZN11QFontEngine11boundingBoxEjRK10QTransform@Base 4:4.5.3
  _ZN11QFontEngine11grayPaletteEv@Base 4:4.6.1
  _ZN11QFontEngine13setGlyphCacheEPvP21QFontEngineGlyphCache@Base 4:4.5.3
@@ -831,8 +831,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN11QFontEngine20removeGlyphFromCacheEj@Base 4:4.5.3
  _ZN11QFontEngine21getTrueTypeGlyphIndexEPKhj@Base 4:4.5.3
  _ZN11QFontEngine33convertToPostscriptFontFamilyNameERK10QByteArray@Base 4:4.7.2
- (optional=gccinternal|arch=!hppa)_ZN11QFontEngine6FaceIdD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN11QFontEngine6FaceIdD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11QFontEngine6FaceIdD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11QFontEngine6FaceIdD2Ev@Base 4:4.8.6
  _ZN11QFontEngine7getCMapEPKhjPbPi@Base 4:4.5.3
  _ZN11QFontEngineC1Ev@Base 4:4.5.3
  _ZN11QFontEngineC2Ev@Base 4:4.5.3
@@ -1216,9 +1216,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN11QPanGesture9setOffsetERK7QPointF@Base 4:4.6.1
  _ZN11QPanGestureC1EP7QObject@Base 4:4.6.1
  _ZN11QPanGestureC2EP7QObject@Base 4:4.6.1
- (optional=gccinternal|arch=!hppa)_ZN11QPanGestureD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN11QPanGestureD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN11QPanGestureD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11QPanGestureD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11QPanGestureD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11QPanGestureD2Ev@Base 4:4.8.6
  _ZN11QPixmapData15fromImageReaderEP12QImageReader6QFlagsIN2Qt19ImageConversionFlagEE@Base 4:4.7.0~rc1
  _ZN11QPixmapData15setAlphaChannelERK7QPixmap@Base 4:4.5.3
  _ZN11QPixmapData15setSerialNumberEi@Base 4:4.5.3
@@ -1345,9 +1345,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN11QSpacerItem10changeSizeEiiN11QSizePolicy6PolicyES1_@Base 4:4.5.3
  _ZN11QSpacerItem10spacerItemEv@Base 4:4.5.3
  _ZN11QSpacerItem11setGeometryERK5QRect@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN11QSpacerItemD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN11QSpacerItemD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN11QSpacerItemD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11QSpacerItemD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11QSpacerItemD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11QSpacerItemD2Ev@Base 4:4.8.6
  (subst)_ZN11QStaticText12setTextWidthE{qreal}@Base 4:4.7.0~beta1
  _ZN11QStaticText13setTextFormatEN2Qt10TextFormatE@Base 4:4.7.0~beta1
  _ZN11QStaticText13setTextOptionERK11QTextOption@Base 4:4.7.0~beta2
@@ -1380,9 +1380,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN11QTapGesture16staticMetaObjectE@Base 4:4.6.1
  _ZN11QTapGestureC1EP7QObject@Base 4:4.6.1
  _ZN11QTapGestureC2EP7QObject@Base 4:4.6.1
- (optional=gccinternal|arch=!hppa)_ZN11QTapGestureD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN11QTapGestureD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN11QTapGestureD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11QTapGestureD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11QTapGestureD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11QTapGestureD2Ev@Base 4:4.8.6
  _ZN11QTextCursor10createListEN15QTextListFormat5StyleE@Base 4:4.5.3
  _ZN11QTextCursor10createListERK15QTextListFormat@Base 4:4.5.3
  _ZN11QTextCursor10deleteCharEv@Base 4:4.5.3
@@ -1679,9 +1679,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN11QWheelEventD2Ev@Base 4:4.5.3
  _ZN11QWidgetItem11setGeometryERK5QRect@Base 4:4.5.3
  _ZN11QWidgetItem6widgetEv@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN11QWidgetItemD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN11QWidgetItemD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN11QWidgetItemD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11QWidgetItemD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11QWidgetItemD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11QWidgetItemD2Ev@Base 4:4.8.6
  _ZN11QWizardPage11cleanupPageEv@Base 4:4.5.3
  _ZN11QWizardPage11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN11QWizardPage11qt_metacastEPKc@Base 4:4.5.3
@@ -1699,9 +1699,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN11QWizardPage9setPixmapEN7QWizard12WizardPixmapERK7QPixmap@Base 4:4.5.3
  _ZN11QWizardPageC1EP7QWidget@Base 4:4.5.3
  _ZN11QWizardPageC2EP7QWidget@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN11QWizardPageD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN11QWizardPageD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN11QWizardPageD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11QWizardPageD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11QWizardPageD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN11QWizardPageD2Ev@Base 4:4.8.6
  _ZN12QActionEventC1EiP7QActionS1_@Base 4:4.5.3
  _ZN12QActionEventC2EiP7QActionS1_@Base 4:4.5.3
  _ZN12QActionEventD0Ev@Base 4:4.5.3
@@ -1902,9 +1902,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN12QDashStroker5beginEPv@Base 4:4.5.3
  _ZN12QDashStrokerC1EP8QStroker@Base 4:4.5.3
  _ZN12QDashStrokerC2EP8QStroker@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN12QDashStrokerD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN12QDashStrokerD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN12QDashStrokerD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN12QDashStrokerD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN12QDashStrokerD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN12QDashStrokerD2Ev@Base 4:4.8.6
  _ZN12QFontMetricsC1ERK5QFont@Base 4:4.5.3
  _ZN12QFontMetricsC1ERK5QFontP12QPaintDevice@Base 4:4.5.3
  _ZN12QFontMetricsC1ERKS_@Base 4:4.5.3
@@ -2243,9 +2243,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN12QProgressBar9setFormatERK7QString@Base 4:4.5.3
  _ZN12QProgressBarC1EP7QWidget@Base 4:4.5.3
  _ZN12QProgressBarC2EP7QWidget@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN12QProgressBarD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN12QProgressBarD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN12QProgressBarD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN12QProgressBarD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN12QProgressBarD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN12QProgressBarD2Ev@Base 4:4.8.6
  _ZN12QRadioButton10paintEventEP11QPaintEvent@Base 4:4.5.3
  _ZN12QRadioButton11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN12QRadioButton11qt_metacastEPKc@Base 4:4.5.3
@@ -2260,9 +2260,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN12QRadioButtonC2EP7QWidgetPKc@Base 4:4.5.3
  _ZN12QRadioButtonC2ERK7QStringP7QWidget@Base 4:4.5.3
  _ZN12QRadioButtonC2ERK7QStringP7QWidgetPKc@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN12QRadioButtonD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN12QRadioButtonD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN12QRadioButtonD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN12QRadioButtonD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN12QRadioButtonD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN12QRadioButtonD2Ev@Base 4:4.8.6
  _ZN12QResizeEventC1ERK5QSizeS2_@Base 4:4.5.3
  _ZN12QResizeEventC2ERK5QSizeS2_@Base 4:4.5.3
  _ZN12QResizeEventD0Ev@Base 4:4.5.3
@@ -2527,9 +2527,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN13QDateTimeEditC2ERK5QTimeP7QWidget@Base 4:4.5.3
  _ZN13QDateTimeEditC2ERK8QVariantNS0_4TypeEP7QWidget@Base 4:4.5.3
  _ZN13QDateTimeEditC2ERK9QDateTimeP7QWidget@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN13QDateTimeEditD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN13QDateTimeEditD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN13QDateTimeEditD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN13QDateTimeEditD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN13QDateTimeEditD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN13QDateTimeEditD2Ev@Base 4:4.8.6
  _ZN13QErrorMessage11changeEventEP6QEvent@Base 4:4.5.3
  _ZN13QErrorMessage11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN13QErrorMessage11qt_metacastEPKc@Base 4:4.5.3
@@ -2911,9 +2911,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (subst)_ZN13QPinchGesture21setTotalRotationAngleE{qreal}@Base 4:4.6.2
  _ZN13QPinchGestureC1EP7QObject@Base 4:4.6.1
  _ZN13QPinchGestureC2EP7QObject@Base 4:4.6.1
- (optional=gccinternal|arch=!hppa)_ZN13QPinchGestureD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN13QPinchGestureD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN13QPinchGestureD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN13QPinchGestureD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN13QPinchGestureD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN13QPinchGestureD2Ev@Base 4:4.8.6
  _ZN13QPixmapFilter11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN13QPixmapFilter11qt_metacastEPKc@Base 4:4.5.3
  _ZN13QPixmapFilter16staticMetaObjectE@Base 4:4.5.3
@@ -2994,9 +2994,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN13QSwipeGesture16staticMetaObjectE@Base 4:4.6.1
  _ZN13QSwipeGestureC1EP7QObject@Base 4:4.6.1
  _ZN13QSwipeGestureC2EP7QObject@Base 4:4.6.1
- (optional=gccinternal|arch=!hppa)_ZN13QSwipeGestureD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN13QSwipeGestureD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN13QSwipeGestureD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN13QSwipeGestureD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN13QSwipeGestureD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN13QSwipeGestureD2Ev@Base 4:4.8.6
  _ZN13QTextDocument10adjustSizeEv@Base 4:4.5.3
  _ZN13QTextDocument11addResourceEiRK4QUrlRK8QVariant@Base 4:4.5.3
  _ZN13QTextDocument11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -3112,9 +3112,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN14QDoubleSpinBox9setSuffixERK7QString@Base 4:4.5.3
  _ZN14QDoubleSpinBoxC1EP7QWidget@Base 4:4.5.3
  _ZN14QDoubleSpinBoxC2EP7QWidget@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN14QDoubleSpinBoxD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN14QDoubleSpinBoxD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN14QDoubleSpinBoxD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN14QDoubleSpinBoxD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN14QDoubleSpinBoxD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN14QDoubleSpinBoxD2Ev@Base 4:4.8.6
  _ZN14QDragMoveEventC1ERK6QPoint6QFlagsIN2Qt10DropActionEEPK9QMimeDataS3_INS4_11MouseButtonEES3_INS4_16KeyboardModifierEEN6QEvent4TypeE@Base 4:4.5.3
  _ZN14QDragMoveEventC2ERK6QPoint6QFlagsIN2Qt10DropActionEEPK9QMimeDataS3_INS4_11MouseButtonEES3_INS4_16KeyboardModifierEEN6QEvent4TypeE@Base 4:4.5.3
  _ZN14QDragMoveEventD0Ev@Base 4:4.5.3
@@ -3246,9 +3246,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN14QLayoutPrivate8doResizeERK5QSize@Base 4:4.5.3
  _ZN14QLayoutPrivateC1Ev@Base 4:4.5.3
  _ZN14QLayoutPrivateC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN14QLayoutPrivateD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN14QLayoutPrivateD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN14QLayoutPrivateD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN14QLayoutPrivateD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN14QLayoutPrivateD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN14QLayoutPrivateD2Ev@Base 4:4.8.6
  _ZN14QPaintEngineEx10drawPixmapERK7QPointFRK7QPixmap@Base 4:4.5.3
  _ZN14QPaintEngineEx10drawPointsEPK6QPointi@Base 4:4.5.3
  _ZN14QPaintEngineEx10drawPointsEPK7QPointFi@Base 4:4.5.3
@@ -3685,8 +3685,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN15QClipboardEventD0Ev@Base 4:4.5.3
  _ZN15QClipboardEventD1Ev@Base 4:4.5.3
  _ZN15QClipboardEventD2Ev@Base 4:4.5.3
- (optional=private|arch=!hppa !sparc)_ZN15QDateTimeParser9StateNodeD1Ev@Base 4:4.8.1
- (optional=private|arch=!hppa !sparc)_ZN15QDateTimeParser9StateNodeD2Ev@Base 4:4.8.1
+ (optional=private)_ZN15QDateTimeParser9StateNodeD1Ev@Base 4:4.8.1
+ (optional=private)_ZN15QDateTimeParser9StateNodeD2Ev@Base 4:4.8.1
  _ZN15QDragEnterEventC1ERK6QPoint6QFlagsIN2Qt10DropActionEEPK9QMimeDataS3_INS4_11MouseButtonEES3_INS4_16KeyboardModifierEE@Base 4:4.5.3
  _ZN15QDragEnterEventC2ERK6QPoint6QFlagsIN2Qt10DropActionEEPK9QMimeDataS3_INS4_11MouseButtonEES3_INS4_16KeyboardModifierEE@Base 4:4.5.3
  _ZN15QDragEnterEventD0Ev@Base 4:4.5.3
@@ -3761,9 +3761,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN15QGraphicsObjectC1ER20QGraphicsItemPrivateP13QGraphicsItemP14QGraphicsScene@Base 4:4.6.1
  _ZN15QGraphicsObjectC2EP13QGraphicsItem@Base 4:4.6.1
  _ZN15QGraphicsObjectC2ER20QGraphicsItemPrivateP13QGraphicsItemP14QGraphicsScene@Base 4:4.6.1
- (optional=gccinternal|arch=!hppa)_ZN15QGraphicsObjectD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN15QGraphicsObjectD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN15QGraphicsObjectD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN15QGraphicsObjectD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN15QGraphicsObjectD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN15QGraphicsObjectD2Ev@Base 4:4.8.6
  _ZN15QGraphicsSystem16createPixmapDataEP11QPixmapData@Base 4:4.7.0~rc1
  _ZN15QGraphicsSystem17platformExtensionEv@Base 4:4.7.4
  _ZN15QGraphicsSystem23createDefaultPixmapDataEN11QPixmapData9PixelTypeE@Base 4:4.5.3
@@ -3968,9 +3968,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN15QSplitterHandle5eventEP6QEvent@Base 4:4.5.3
  _ZN15QSplitterHandleC1EN2Qt11OrientationEP9QSplitter@Base 4:4.5.3
  _ZN15QSplitterHandleC2EN2Qt11OrientationEP9QSplitter@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN15QSplitterHandleD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN15QSplitterHandleD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN15QSplitterHandleD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN15QSplitterHandleD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN15QSplitterHandleD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN15QSplitterHandleD2Ev@Base 4:4.8.6
  _ZN15QStaticTextItem13setFontEngineEP11QFontEngine@Base 4:4.7.2
  _ZN15QStaticTextItemD1Ev@Base 4:4.7.2
  _ZN15QStaticTextItemD2Ev@Base 4:4.7.2
@@ -3983,8 +3983,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN15QStyleOptionTabC1Ev@Base 4:4.5.3
  _ZN15QStyleOptionTabC2Ei@Base 4:4.5.3
  _ZN15QStyleOptionTabC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN15QStyleOptionTabD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN15QStyleOptionTabD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN15QStyleOptionTabD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN15QStyleOptionTabD2Ev@Base 4:4.8.6
  _ZN15QSystemTrayIcon10setToolTipERK7QString@Base 4:4.5.3
  _ZN15QSystemTrayIcon10setVisibleEb@Base 4:4.5.3
  _ZN15QSystemTrayIcon11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -4153,8 +4153,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (subst)_ZN16QConicalGradientC2E{qreal}{qreal}{qreal}@Base 4:4.5.3
  (optional=gccinternal|arch=powerpcspe)_ZN16QConicalGradientD1Ev@Base 4:4.8.5+git209
  (optional=gccinternal|arch=powerpcspe)_ZN16QConicalGradientD2Ev@Base 4:4.8.5+git209
- (optional=gccinternal|arch=!hppa)_ZN16QCoreApplication20sendSpontaneousEventEP7QObjectP6QEvent@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN16QCoreApplication9sendEventEP7QObjectP6QEvent@Base 4:4.8.6
+ (optional=gccinternal)_ZN16QCoreApplication20sendSpontaneousEventEP7QObjectP6QEvent@Base 4:4.8.6
+ (optional=gccinternal)_ZN16QCoreApplication9sendEventEP7QObjectP6QEvent@Base 4:4.8.6
  _ZN16QDesktopServices11displayNameENS_16StandardLocationE@Base 4:4.5.3
  _ZN16QDesktopServices13setUrlHandlerERK7QStringP7QObjectPKc@Base 4:4.5.3
  _ZN16QDesktopServices15storageLocationENS_16StandardLocationE@Base 4:4.5.3
@@ -4252,9 +4252,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN16QPageSetupDialogC1EP8QPrinterP7QWidget@Base 4:4.5.3
  _ZN16QPageSetupDialogC2EP7QWidget@Base 4:4.5.3
  _ZN16QPageSetupDialogC2EP8QPrinterP7QWidget@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN16QPageSetupDialogD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN16QPageSetupDialogD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN16QPageSetupDialogD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN16QPageSetupDialogD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN16QPageSetupDialogD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN16QPageSetupDialogD2Ev@Base 4:4.8.6
  _ZN16QPainterReplayer14setupTransformEP8QPainter@Base 4:4.6.1
  _ZN16QPainterReplayer15processCommandsERK12QPaintBufferP8QPainterii@Base 4:4.7.0~beta1
  _ZN16QPainterReplayer7processERK19QPaintBufferCommand@Base 4:4.6.1
@@ -4285,9 +4285,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN16QStringListModelC1ERK11QStringListP7QObject@Base 4:4.5.3
  _ZN16QStringListModelC2EP7QObject@Base 4:4.5.3
  _ZN16QStringListModelC2ERK11QStringListP7QObject@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN16QStringListModelD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN16QStringListModelD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN16QStringListModelD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN16QStringListModelD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN16QStringListModelD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN16QStringListModelD2Ev@Base 4:4.8.6
  _ZN16QStyleHintReturnC1Eii@Base 4:4.5.3
  _ZN16QStyleHintReturnC2Eii@Base 4:4.5.3
  _ZN16QStyleHintReturnD1Ev@Base 4:4.5.3
@@ -4333,9 +4333,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN16QTreeViewPrivate15insertViewItemsEiiRK13QTreeViewItem@Base 4:4.8.0
  _ZN16QTreeViewPrivate15removeViewItemsEii@Base 4:4.8.0
  _ZN16QTreeViewPrivate16updateScrollBarsEv@Base 4:4.8.0
- (optional=gccinternal|arch=!hppa)_ZN16QTreeViewPrivate17AnimatedOperationD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN16QTreeViewPrivate17AnimatedOperationD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN16QTreeViewPrivate17AnimatedOperationD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN16QTreeViewPrivate17AnimatedOperationD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN16QTreeViewPrivate17AnimatedOperationD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN16QTreeViewPrivate17AnimatedOperationD2Ev@Base 4:4.8.6
  _ZN16QTreeViewPrivate17_q_columnsRemovedERK11QModelIndexii@Base 4:4.8.0
  _ZN16QTreeViewPrivate17_q_modelDestroyedEv@Base 4:4.8.0
  _ZN16QTreeViewPrivate22_q_modelAboutToBeResetEv@Base 4:4.8.0
@@ -4637,8 +4637,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN17QIconEnginePluginD0Ev@Base 4:4.5.3
  _ZN17QIconEnginePluginD1Ev@Base 4:4.5.3
  _ZN17QIconEnginePluginD2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN17QImageTextKeyLangD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN17QImageTextKeyLangD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN17QImageTextKeyLangD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN17QImageTextKeyLangD2Ev@Base 4:4.8.6
  _ZN17QInputMethodEvent15setCommitStringERK7QStringii@Base 4:4.5.3
  _ZN17QInputMethodEventC1ERK7QStringRK5QListINS_9AttributeEE@Base 4:4.5.3
  _ZN17QInputMethodEventC1ERKS_@Base 4:4.5.3
@@ -4646,9 +4646,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN17QInputMethodEventC2ERK7QStringRK5QListINS_9AttributeEE@Base 4:4.5.3
  _ZN17QInputMethodEventC2ERKS_@Base 4:4.5.3
  _ZN17QInputMethodEventC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN17QInputMethodEventD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN17QInputMethodEventD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN17QInputMethodEventD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN17QInputMethodEventD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN17QInputMethodEventD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN17QInputMethodEventD2Ev@Base 4:4.8.6
  _ZN17QInternalMimeData11canReadDataERK7QString@Base 4:4.8.0
  _ZN17QInternalMimeData11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.8.0
  _ZN17QInternalMimeData11qt_metacastEPKc@Base 4:4.8.0
@@ -4721,9 +4721,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN18QCommandLinkButtonC2EP7QWidget@Base 4:4.5.3
  _ZN18QCommandLinkButtonC2ERK7QStringP7QWidget@Base 4:4.5.3
  _ZN18QCommandLinkButtonC2ERK7QStringS2_P7QWidget@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN18QCommandLinkButtonD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN18QCommandLinkButtonD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN18QCommandLinkButtonD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN18QCommandLinkButtonD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN18QCommandLinkButtonD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN18QCommandLinkButtonD2Ev@Base 4:4.8.6
  _ZN18QDragResponseEventC1Eb@Base 4:4.5.3
  _ZN18QDragResponseEventC2Eb@Base 4:4.5.3
  _ZN18QDragResponseEventD0Ev@Base 4:4.5.3
@@ -4844,14 +4844,14 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN18QStyleOptionButtonC1Ev@Base 4:4.5.3
  _ZN18QStyleOptionButtonC2Ei@Base 4:4.5.3
  _ZN18QStyleOptionButtonC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN18QStyleOptionButtonD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN18QStyleOptionButtonD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN18QStyleOptionButtonD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN18QStyleOptionButtonD2Ev@Base 4:4.8.6
  _ZN18QStyleOptionHeaderC1Ei@Base 4:4.5.3
  _ZN18QStyleOptionHeaderC1Ev@Base 4:4.5.3
  _ZN18QStyleOptionHeaderC2Ei@Base 4:4.5.3
  _ZN18QStyleOptionHeaderC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN18QStyleOptionHeaderD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN18QStyleOptionHeaderD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN18QStyleOptionHeaderD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN18QStyleOptionHeaderD2Ev@Base 4:4.8.6
  _ZN18QStyleOptionSliderC1Ei@Base 4:4.5.3
  _ZN18QStyleOptionSliderC1Ev@Base 4:4.5.3
  _ZN18QStyleOptionSliderC2Ei@Base 4:4.5.3
@@ -4886,9 +4886,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN18QTapAndHoldGesture7timeoutEv@Base 4:4.7.1
  _ZN18QTapAndHoldGestureC1EP7QObject@Base 4:4.6.1
  _ZN18QTapAndHoldGestureC2EP7QObject@Base 4:4.6.1
- (optional=gccinternal|arch=!hppa)_ZN18QTapAndHoldGestureD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN18QTapAndHoldGestureD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN18QTapAndHoldGestureD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN18QTapAndHoldGestureD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN18QTapAndHoldGestureD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN18QTapAndHoldGestureD2Ev@Base 4:4.8.6
  _ZN18QTextBlockUserDataD0Ev@Base 4:4.5.3
  _ZN18QTextBlockUserDataD1Ev@Base 4:4.5.3
  _ZN18QTextBlockUserDataD2Ev@Base 4:4.5.3
@@ -5107,9 +5107,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN19QBlitterPaintEngine9drawRectsEPK6QRectFi@Base 4:4.8.0
  _ZN19QBlitterPaintEngineC1EP20QBlittablePixmapData@Base 4:4.8.0
  _ZN19QBlitterPaintEngineC2EP20QBlittablePixmapData@Base 4:4.8.0
- (optional=gccinternal|arch=!hppa)_ZN19QBlitterPaintEngineD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN19QBlitterPaintEngineD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN19QBlitterPaintEngineD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN19QBlitterPaintEngineD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN19QBlitterPaintEngineD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN19QBlitterPaintEngineD2Ev@Base 4:4.8.6
  _ZN19QGraphicsBlurEffect11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN19QGraphicsBlurEffect11qt_metacastEPKc@Base 4:4.6.1
  _ZN19QGraphicsBlurEffect12setBlurHintsE6QFlagsINS_8BlurHintEE@Base 4:4.6.1
@@ -5250,8 +5250,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN19QItemSelectionModelD0Ev@Base 4:4.5.3
  _ZN19QItemSelectionModelD1Ev@Base 4:4.5.3
  _ZN19QItemSelectionModelD2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN19QItemSelectionRangeD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN19QItemSelectionRangeD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN19QItemSelectionRangeD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN19QItemSelectionRangeD2Ev@Base 4:4.8.6
  _ZN19QKeyEventTransition11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN19QKeyEventTransition11qt_metacastEPKc@Base 4:4.6.1
  _ZN19QKeyEventTransition12onTransitionEP6QEvent@Base 4:4.6.1
@@ -5356,8 +5356,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN19QStyleOptionToolBoxC1Ev@Base 4:4.5.3
  _ZN19QStyleOptionToolBoxC2Ei@Base 4:4.5.3
  _ZN19QStyleOptionToolBoxC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN19QStyleOptionToolBoxD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN19QStyleOptionToolBoxD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN19QStyleOptionToolBoxD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN19QStyleOptionToolBoxD2Ev@Base 4:4.8.6
  _ZN19QStyledItemDelegate11editorEventEP6QEventP18QAbstractItemModelRK20QStyleOptionViewItemRK11QModelIndex@Base 4:4.5.3
  _ZN19QStyledItemDelegate11eventFilterEP7QObjectP6QEvent@Base 4:4.5.3
  _ZN19QStyledItemDelegate11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -5544,9 +5544,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN20QGraphicsViewPrivate28updateInputMethodSensitivityEv@Base 4:4.7.0~beta1
  _ZN20QGraphicsViewPrivateC1Ev@Base 4:4.7.0~beta1
  _ZN20QGraphicsViewPrivateC2Ev@Base 4:4.7.0~beta1
- (optional=gccinternal|arch=!hppa)_ZN20QGraphicsViewPrivateD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN20QGraphicsViewPrivateD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN20QGraphicsViewPrivateD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QGraphicsViewPrivateD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QGraphicsViewPrivateD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QGraphicsViewPrivateD2Ev@Base 4:4.8.6
  _ZN20QInputContextFactory11descriptionERK7QString@Base 4:4.5.3
  _ZN20QInputContextFactory11displayNameERK7QString@Base 4:4.5.3
  _ZN20QInputContextFactory4keysEv@Base 4:4.5.3
@@ -5554,9 +5554,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN20QInputContextFactory9languagesERK7QString@Base 4:4.5.3
  _ZN20QMenubarUpdatedEventC1EP8QMenuBar@Base 4:4.5.3
  _ZN20QMenubarUpdatedEventC2EP8QMenuBar@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN20QMenubarUpdatedEventD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN20QMenubarUpdatedEventD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN20QMenubarUpdatedEventD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QMenubarUpdatedEventD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QMenubarUpdatedEventD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QMenubarUpdatedEventD2Ev@Base 4:4.8.6
  _ZN20QPaintBufferResource11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN20QPaintBufferResource11qt_metacastEPKc@Base 4:4.6.1
  _ZN20QPaintBufferResource16staticMetaObjectE@Base 4:4.6.1
@@ -5592,26 +5592,26 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN20QRasterWindowSurfaceD2Ev@Base 4:4.5.3
  _ZN20QStyleHintReturnMaskC1Ev@Base 4:4.5.3
  _ZN20QStyleHintReturnMaskC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN20QStyleHintReturnMaskD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN20QStyleHintReturnMaskD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QStyleHintReturnMaskD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QStyleHintReturnMaskD2Ev@Base 4:4.8.6
  _ZN20QStyleOptionComboBoxC1Ei@Base 4:4.5.3
  _ZN20QStyleOptionComboBoxC1Ev@Base 4:4.5.3
  _ZN20QStyleOptionComboBoxC2Ei@Base 4:4.5.3
  _ZN20QStyleOptionComboBoxC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN20QStyleOptionComboBoxD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN20QStyleOptionComboBoxD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QStyleOptionComboBoxD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QStyleOptionComboBoxD2Ev@Base 4:4.8.6
  _ZN20QStyleOptionGroupBoxC1Ei@Base 4:4.5.3
  _ZN20QStyleOptionGroupBoxC1Ev@Base 4:4.5.3
  _ZN20QStyleOptionGroupBoxC2Ei@Base 4:4.5.3
  _ZN20QStyleOptionGroupBoxC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN20QStyleOptionGroupBoxD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN20QStyleOptionGroupBoxD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QStyleOptionGroupBoxD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QStyleOptionGroupBoxD2Ev@Base 4:4.8.6
  _ZN20QStyleOptionMenuItemC1Ei@Base 4:4.5.3
  _ZN20QStyleOptionMenuItemC1Ev@Base 4:4.5.3
  _ZN20QStyleOptionMenuItemC2Ei@Base 4:4.5.3
  _ZN20QStyleOptionMenuItemC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN20QStyleOptionMenuItemD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN20QStyleOptionMenuItemD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QStyleOptionMenuItemD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QStyleOptionMenuItemD2Ev@Base 4:4.8.6
  _ZN20QStyleOptionSizeGripC1Ei@Base 4:4.5.3
  _ZN20QStyleOptionSizeGripC1Ev@Base 4:4.5.3
  _ZN20QStyleOptionSizeGripC2Ei@Base 4:4.5.3
@@ -5620,14 +5620,14 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN20QStyleOptionTitleBarC1Ev@Base 4:4.5.3
  _ZN20QStyleOptionTitleBarC2Ei@Base 4:4.5.3
  _ZN20QStyleOptionTitleBarC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN20QStyleOptionTitleBarD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN20QStyleOptionTitleBarD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QStyleOptionTitleBarD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QStyleOptionTitleBarD2Ev@Base 4:4.8.6
  _ZN20QStyleOptionViewItemC1Ei@Base 4:4.5.3
  _ZN20QStyleOptionViewItemC1Ev@Base 4:4.5.3
  _ZN20QStyleOptionViewItemC2Ei@Base 4:4.5.3
  _ZN20QStyleOptionViewItemC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN20QStyleOptionViewItemD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN20QStyleOptionViewItemD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QStyleOptionViewItemD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QStyleOptionViewItemD2Ev@Base 4:4.8.6
  _ZN20QTextFrameLayoutDataD0Ev@Base 4:4.5.3
  _ZN20QTextFrameLayoutDataD1Ev@Base 4:4.5.3
  _ZN20QTextFrameLayoutDataD2Ev@Base 4:4.5.3
@@ -5648,9 +5648,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN20QWidgetResizeHandler9setActiveENS_6ActionEb@Base 4:4.5.3
  _ZN20QWidgetResizeHandlerC1EP7QWidgetS1_@Base 4:4.5.3
  _ZN20QWidgetResizeHandlerC2EP7QWidgetS1_@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN20QWidgetResizeHandlerD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN20QWidgetResizeHandlerD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN20QWidgetResizeHandlerD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QWidgetResizeHandlerD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QWidgetResizeHandlerD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN20QWidgetResizeHandlerD2Ev@Base 4:4.8.6
  _ZN21QAbstractItemDelegate10commitDataEP7QWidget@Base 4:4.5.3
  _ZN21QAbstractItemDelegate10elidedTextERK12QFontMetricsiN2Qt13TextElideModeERK7QString@Base 4:4.5.3
  _ZN21QAbstractItemDelegate11closeEditorEP7QWidgetNS_11EndEditHintE@Base 4:4.5.3
@@ -5746,9 +5746,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN21QPixmapColorizeFilter8setColorERK6QColor@Base 4:4.5.3
  _ZN21QPixmapColorizeFilterC1EP7QObject@Base 4:4.5.3
  _ZN21QPixmapColorizeFilterC2EP7QObject@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN21QPixmapColorizeFilterD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN21QPixmapColorizeFilterD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN21QPixmapColorizeFilterD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN21QPixmapColorizeFilterD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN21QPixmapColorizeFilterD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN21QPixmapColorizeFilterD2Ev@Base 4:4.8.6
  _ZN21QSortFilterProxyModel10insertRowsEiiRK11QModelIndex@Base 4:4.5.3
  _ZN21QSortFilterProxyModel10invalidateEv@Base 4:4.5.3
  _ZN21QSortFilterProxyModel10removeRowsEiiRK11QModelIndex@Base 4:4.5.3
@@ -5822,13 +5822,13 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN22QAccessibleApplication8doActionEiiRK5QListI8QVariantE@Base 4:4.5.3
  _ZN22QAccessibleApplicationC1Ev@Base 4:4.5.3
  _ZN22QAccessibleApplicationC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN22QAccessibleApplicationD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN22QAccessibleApplicationD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN22QAccessibleApplicationD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN22QAccessibleApplicationD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN22QAccessibleApplicationD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN22QAccessibleApplicationD2Ev@Base 4:4.8.6
  _ZN22QAccessibleInterfaceEx12virtual_hookERK8QVariant@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN22QGraphicsEffectPrivateD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN22QGraphicsEffectPrivateD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN22QGraphicsEffectPrivateD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN22QGraphicsEffectPrivateD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN22QGraphicsEffectPrivateD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN22QGraphicsEffectPrivateD2Ev@Base 4:4.8.6
  (subst)_ZN22QGraphicsItemAnimation10setScaleAtE{qreal}{qreal}{qreal}@Base 4:4.5.3
  (subst)_ZN22QGraphicsItemAnimation10setShearAtE{qreal}{qreal}{qreal}@Base 4:4.5.3
  _ZN22QGraphicsItemAnimation11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -5863,15 +5863,15 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN22QGraphicsOpacityEffectD1Ev@Base 4:4.6.1
  _ZN22QGraphicsOpacityEffectD2Ev@Base 4:4.6.1
  _ZN22QPaintEngineExReplayer7processERK19QPaintBufferCommand@Base 4:4.6.1
- (optional=gccinternal|arch=!hppa)_ZN22QPaintEngineExReplayerD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN22QPaintEngineExReplayerD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN22QPaintEngineExReplayerD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN22QPaintEngineExReplayerD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN22QPaintEngineExReplayerD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN22QPaintEngineExReplayerD2Ev@Base 4:4.8.6
  _ZN22QStyleOptionDockWidgetC1Ei@Base 4:4.5.3
  _ZN22QStyleOptionDockWidgetC1Ev@Base 4:4.5.3
  _ZN22QStyleOptionDockWidgetC2Ei@Base 4:4.5.3
  _ZN22QStyleOptionDockWidgetC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN22QStyleOptionDockWidgetD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN22QStyleOptionDockWidgetD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN22QStyleOptionDockWidgetD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN22QStyleOptionDockWidgetD2Ev@Base 4:4.8.6
  _ZN22QStyleOptionQ3ListViewC1Ei@Base 4:4.5.3
  _ZN22QStyleOptionQ3ListViewC1Ev@Base 4:4.5.3
  _ZN22QStyleOptionQ3ListViewC2Ei@Base 4:4.5.3
@@ -5888,8 +5888,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN22QStyleOptionToolButtonC1Ev@Base 4:4.5.3
  _ZN22QStyleOptionToolButtonC2Ei@Base 4:4.5.3
  _ZN22QStyleOptionToolButtonC2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN22QStyleOptionToolButtonD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN22QStyleOptionToolButtonD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN22QStyleOptionToolButtonD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN22QStyleOptionToolButtonD2Ev@Base 4:4.8.6
  _ZN22QStyleOptionViewItemV2C1ERK20QStyleOptionViewItem@Base 4:4.5.3
  _ZN22QStyleOptionViewItemV2C1Ei@Base 4:4.5.3
  _ZN22QStyleOptionViewItemV2C1Ev@Base 4:4.5.3
@@ -5910,8 +5910,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN22QStyleOptionViewItemV4C2ERK20QStyleOptionViewItem@Base 4:4.5.3
  _ZN22QStyleOptionViewItemV4C2Ei@Base 4:4.5.3
  _ZN22QStyleOptionViewItemV4C2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN22QStyleOptionViewItemV4D1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN22QStyleOptionViewItemV4D2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN22QStyleOptionViewItemV4D1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN22QStyleOptionViewItemV4D2Ev@Base 4:4.8.6
  _ZN22QStyleOptionViewItemV4aSERK20QStyleOptionViewItem@Base 4:4.5.3
  _ZN22QWhatsThisClickedEventC1ERK7QString@Base 4:4.5.3
  _ZN22QWhatsThisClickedEventC2ERK7QString@Base 4:4.5.3
@@ -5926,9 +5926,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN23QAccessibleBridgePluginD0Ev@Base 4:4.5.3
  _ZN23QAccessibleBridgePluginD1Ev@Base 4:4.5.3
  _ZN23QAccessibleBridgePluginD2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN23QEventTransitionPrivateD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN23QEventTransitionPrivateD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN23QEventTransitionPrivateD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN23QEventTransitionPrivateD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN23QEventTransitionPrivateD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN23QEventTransitionPrivateD2Ev@Base 4:4.8.6
  _ZN23QGraphicsColorizeEffect11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN23QGraphicsColorizeEffect11qt_metacastEPKc@Base 4:4.6.1
  (subst)_ZN23QGraphicsColorizeEffect11setStrengthE{qreal}@Base 4:4.6.2
@@ -5970,17 +5970,17 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN23QImageTextureGlyphCache11fillTextureERKN18QTextureGlyphCache5CoordEj6QFixed@Base 4:4.8.0
  _ZN23QImageTextureGlyphCache17createTextureDataEii@Base 4:4.7.0~beta2
  _ZN23QImageTextureGlyphCache17resizeTextureDataEii@Base 4:4.7.0~beta2
- (optional=gccinternal|arch=!hppa)_ZN23QImageTextureGlyphCacheD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN23QImageTextureGlyphCacheD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN23QImageTextureGlyphCacheD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN23QImageTextureGlyphCacheD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN23QImageTextureGlyphCacheD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN23QImageTextureGlyphCacheD2Ev@Base 4:4.8.6
  _ZN23QPaintBufferSignalProxy11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN23QPaintBufferSignalProxy11qt_metacastEPKc@Base 4:4.6.1
  _ZN23QPaintBufferSignalProxy14aboutToDestroyEPK19QPaintBufferPrivate@Base 4:4.6.1
  _ZN23QPaintBufferSignalProxy16staticMetaObjectE@Base 4:4.6.1
  _ZN23QPaintBufferSignalProxy8instanceEv@Base 4:4.6.1
- (optional=gccinternal|arch=!hppa)_ZN23QPaintBufferSignalProxyD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN23QPaintBufferSignalProxyD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN23QPaintBufferSignalProxyD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN23QPaintBufferSignalProxyD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN23QPaintBufferSignalProxyD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN23QPaintBufferSignalProxyD2Ev@Base 4:4.8.6
  _ZN23QPixmapDropShadowFilter11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN23QPixmapDropShadowFilter11qt_metacastEPKc@Base 4:4.5.3
  (subst)_ZN23QPixmapDropShadowFilter13setBlurRadiusE{qreal}@Base 4:4.5.3
@@ -5998,8 +5998,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN23QStyleOptionProgressBarC1Ev@Base 4:4.5.3
  _ZN23QStyleOptionProgressBarC2Ei@Base 4:4.5.3
  _ZN23QStyleOptionProgressBarC2Ev@Base 4:4.5.3
- (arch=!hppa)_ZN23QStyleOptionProgressBarD1Ev@Base 4:4.8.6
- (arch=!hppa)_ZN23QStyleOptionProgressBarD2Ev@Base 4:4.8.6
+ _ZN23QStyleOptionProgressBarD1Ev@Base 4:4.8.6
+ _ZN23QStyleOptionProgressBarD2Ev@Base 4:4.8.6
  _ZN23QTreeWidgetItemIteratorC1EP11QTreeWidget6QFlagsINS_12IteratorFlagEE@Base 4:4.5.3
  _ZN23QTreeWidgetItemIteratorC1EP15QTreeWidgetItem6QFlagsINS_12IteratorFlagEE@Base 4:4.5.3
  _ZN23QTreeWidgetItemIteratorC1ERKS_@Base 4:4.5.3
@@ -6136,11 +6136,11 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (optional=gccinternal|arch=powerpcspe)_ZN24QStyleOptionTabBarBaseV2D1Ev@Base 4:4.8.5+git209
  (optional=gccinternal|arch=powerpcspe)_ZN24QStyleOptionTabBarBaseV2D2Ev@Base 4:4.8.5+git209
  _ZN24QStyleOptionTabBarBaseV2aSERK22QStyleOptionTabBarBase@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN25QAbstractItemModelPrivate10PersistentD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN25QAbstractItemModelPrivate10PersistentD2Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN25QAbstractItemModelPrivateD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN25QAbstractItemModelPrivateD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN25QAbstractItemModelPrivateD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN25QAbstractItemModelPrivate10PersistentD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN25QAbstractItemModelPrivate10PersistentD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN25QAbstractItemModelPrivateD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN25QAbstractItemModelPrivateD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN25QAbstractItemModelPrivateD2Ev@Base 4:4.8.6
  _ZN25QGraphicsDropShadowEffect11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN25QGraphicsDropShadowEffect11qt_metacastEPKc@Base 4:4.6.1
  _ZN25QGraphicsDropShadowEffect12colorChangedERK6QColor@Base 4:4.6.1
@@ -6191,12 +6191,12 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN26QAbstractScrollAreaPrivate9_q_vslideEi@Base 4:4.7.0~beta1
  _ZN26QAbstractScrollAreaPrivateC1Ev@Base 4:4.7.0~beta1
  _ZN26QAbstractScrollAreaPrivateC2Ev@Base 4:4.7.0~beta1
- (optional=gccinternal|arch=!hppa)_ZN26QAbstractScrollAreaPrivateD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN26QAbstractScrollAreaPrivateD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN26QAbstractScrollAreaPrivateD2Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN26QAbstractTransitionPrivateD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN26QAbstractTransitionPrivateD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN26QAbstractTransitionPrivateD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN26QAbstractScrollAreaPrivateD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN26QAbstractScrollAreaPrivateD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN26QAbstractScrollAreaPrivateD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN26QAbstractTransitionPrivateD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN26QAbstractTransitionPrivateD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN26QAbstractTransitionPrivateD2Ev@Base 4:4.8.6
  _ZN26QStyleOptionQ3ListViewItemC1Ei@Base 4:4.5.3
  _ZN26QStyleOptionQ3ListViewItemC1Ev@Base 4:4.5.3
  _ZN26QStyleOptionQ3ListViewItemC2Ei@Base 4:4.5.3
@@ -6217,8 +6217,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN27QAbstractTextDocumentLayout11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN27QAbstractTextDocumentLayout11qt_metacastEPKc@Base 4:4.5.3
  _ZN27QAbstractTextDocumentLayout11updateBlockERK10QTextBlock@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN27QAbstractTextDocumentLayout12PaintContextD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN27QAbstractTextDocumentLayout12PaintContextD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN27QAbstractTextDocumentLayout12PaintContextD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN27QAbstractTextDocumentLayout12PaintContextD2Ev@Base 4:4.8.6
  _ZN27QAbstractTextDocumentLayout14setPaintDeviceEP12QPaintDevice@Base 4:4.5.3
  _ZN27QAbstractTextDocumentLayout15registerHandlerEiP7QObject@Base 4:4.5.3
  _ZN27QAbstractTextDocumentLayout16drawInlineObjectEP8QPainterRK6QRectF17QTextInlineObjectiRK11QTextFormat@Base 4:4.5.3
@@ -6229,8 +6229,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN27QAbstractTextDocumentLayout20positionInlineObjectE17QTextInlineObjectiRK11QTextFormat@Base 4:4.5.3
  _ZN27QAbstractTextDocumentLayout6formatEi@Base 4:4.5.3
  _ZN27QAbstractTextDocumentLayout6updateERK6QRectF@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN27QAbstractTextDocumentLayout9SelectionD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN27QAbstractTextDocumentLayout9SelectionD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN27QAbstractTextDocumentLayout9SelectionD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN27QAbstractTextDocumentLayout9SelectionD2Ev@Base 4:4.8.6
  _ZN27QAbstractTextDocumentLayoutC1EP13QTextDocument@Base 4:4.5.3
  _ZN27QAbstractTextDocumentLayoutC1ER34QAbstractTextDocumentLayoutPrivateP13QTextDocument@Base 4:4.5.3
  _ZN27QAbstractTextDocumentLayoutC2EP13QTextDocument@Base 4:4.5.3
@@ -6238,9 +6238,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN27QAbstractTextDocumentLayoutD0Ev@Base 4:4.5.3
  _ZN27QAbstractTextDocumentLayoutD1Ev@Base 4:4.5.3
  _ZN27QAbstractTextDocumentLayoutD2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN27QEventDispatcherGlibPrivateD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN27QEventDispatcherGlibPrivateD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN27QEventDispatcherGlibPrivateD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN27QEventDispatcherGlibPrivateD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN27QEventDispatcherGlibPrivateD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN27QEventDispatcherGlibPrivateD2Ev@Base 4:4.8.6
  _ZN27QGraphicsSceneDragDropEvent10setButtonsE6QFlagsIN2Qt11MouseButtonEE@Base 4:4.5.3
  _ZN27QGraphicsSceneDragDropEvent11setMimeDataEPK9QMimeData@Base 4:4.5.3
  _ZN27QGraphicsSceneDragDropEvent11setScenePosERK7QPointF@Base 4:4.5.3
@@ -6280,9 +6280,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN30QGraphicsSceneContextMenuEventD0Ev@Base 4:4.5.3
  _ZN30QGraphicsSceneContextMenuEventD1Ev@Base 4:4.5.3
  _ZN30QGraphicsSceneContextMenuEventD2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa)_ZN31QAbstractEventDispatcherPrivateD0Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN31QAbstractEventDispatcherPrivateD1Ev@Base 4:4.8.6
- (optional=gccinternal|arch=!hppa)_ZN31QAbstractEventDispatcherPrivateD2Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN31QAbstractEventDispatcherPrivateD0Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN31QAbstractEventDispatcherPrivateD1Ev@Base 4:4.8.6
+ (optional=gccinternal)_ZN31QAbstractEventDispatcherPrivateD2Ev@Base 4:4.8.6
  _ZN38QAccessibleSimpleEditableTextInterface10deleteTextEii@Base 4:4.5.3
  _ZN38QAccessibleSimpleEditableTextInterface10insertTextEiRK7QString@Base 4:4.5.3
  _ZN38QAccessibleSimpleEditableTextInterface11replaceTextEiiRK7QString@Base 4:4.5.3
@@ -6291,9 +6291,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN38QAccessibleSimpleEditableTextInterface9pasteTextEi@Base 4:4.5.3
  _ZN38QAccessibleSimpleEditableTextInterfaceC1EP20QAccessibleInterface@Base 4:4.5.3
  _ZN38QAccessibleSimpleEditableTextInterfaceC2EP20QAccessibleInterface@Base 4:4.5.3
- (arch=!hppa)_ZN38QAccessibleSimpleEditableTextInterfaceD0Ev@Base 4:4.8.6
- (arch=!hppa)_ZN38QAccessibleSimpleEditableTextInterfaceD1Ev@Base 4:4.8.6
- (arch=!hppa)_ZN38QAccessibleSimpleEditableTextInterfaceD2Ev@Base 4:4.8.6
+ _ZN38QAccessibleSimpleEditableTextInterfaceD0Ev@Base 4:4.8.6
+ _ZN38QAccessibleSimpleEditableTextInterfaceD1Ev@Base 4:4.8.6
+ _ZN38QAccessibleSimpleEditableTextInterfaceD2Ev@Base 4:4.8.6
  _ZN4QCss13StyleSelector15selectorMatchesERKNS_8SelectorENS0_7NodePtrE@Base 4:4.5.3
  _ZN4QCss13StyleSelector17styleRulesForNodeENS0_7NodePtrE@Base 4:4.5.3
  _ZN4QCss13StyleSelector19declarationsForNodeENS0_7NodePtrEPKc@Base 4:4.5.3
@@ -6341,8 +6341,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN4QCss6ParserC1Ev@Base 4:4.5.3
  _ZN4QCss6ParserC2ERK7QStringb@Base 4:4.5.3
  _ZN4QCss6ParserC2Ev@Base 4:4.5.3
- (arch=!hppa)_ZN4QCss6ParserD1Ev@Base 4:4.8.6
- (arch=!hppa)_ZN4QCss6ParserD2Ev@Base 4:4.8.6
+ _ZN4QCss6ParserD1Ev@Base 4:4.8.6
+ _ZN4QCss6ParserD2Ev@Base 4:4.8.6
  _ZN4QPen10isDetachedEv@Base 4:4.5.3
  _ZN4QPen11setCapStyleEN2Qt11PenCapStyleE@Base 4:4.5.3
  _ZN4QPen11setCosmeticEb@Base 4:4.5.3
@@ -7725,9 +7725,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN8QSpinBoxC2EP7QWidget@Base 4:4.5.3
  _ZN8QSpinBoxC2EP7QWidgetPKc@Base 4:4.5.3
  _ZN8QSpinBoxC2EiiiP7QWidgetPKc@Base 4:4.5.3
- (arch=!hppa)_ZN8QSpinBoxD0Ev@Base 4:4.8.6
- (arch=!hppa)_ZN8QSpinBoxD1Ev@Base 4:4.8.6
- (arch=!hppa)_ZN8QSpinBoxD2Ev@Base 4:4.8.6
+ _ZN8QSpinBoxD0Ev@Base 4:4.8.6
+ _ZN8QSpinBoxD1Ev@Base 4:4.8.6
+ _ZN8QSpinBoxD2Ev@Base 4:4.8.6
  (subst)_ZN8QStroker10joinPointsE{qreal}{qreal}RK6QLineFNS_12LineJoinModeE@Base 4:4.5.3
  _ZN8QStroker14capForJoinModeENS_12LineJoinModeE@Base 4:4.5.3
  _ZN8QStroker14joinModeForCapEN2Qt11PenCapStyleE@Base 4:4.5.3
@@ -7841,9 +7841,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN8QX11InfoD1Ev@Base 4:4.5.3
  _ZN8QX11InfoD2Ev@Base 4:4.5.3
  _ZN8QX11InfoaSERKS_@Base 4:4.5.3
- (arch=hppa)_ZN9QBitArray6setBitEi@Base 4:4.8.6
  (arch=alpha m68k mips mips64el mipsel s390x sh4)_ZN9QBitArray6setBitEib@Base 4:4.8.6
- (arch=hppa)_ZN9QBitArray8clearBitEi@Base 4:4.8.6
  (optional=gccinternal|arch=sparc)_ZN9QBitArrayD1Ev@Base 4:4.8.5+git242
  (optional=gccinternal|arch=sparc)_ZN9QBitArrayD2Ev@Base 4:4.8.5+git242
  _ZN9QCDEStyle11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -7873,9 +7871,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN9QCheckBoxC2EP7QWidgetPKc@Base 4:4.5.3
  _ZN9QCheckBoxC2ERK7QStringP7QWidget@Base 4:4.5.3
  _ZN9QCheckBoxC2ERK7QStringP7QWidgetPKc@Base 4:4.5.3
- (arch=!hppa)_ZN9QCheckBoxD0Ev@Base 4:4.8.6
- (arch=!hppa)_ZN9QCheckBoxD1Ev@Base 4:4.8.6
- (arch=!hppa)_ZN9QCheckBoxD2Ev@Base 4:4.8.6
+ _ZN9QCheckBoxD0Ev@Base 4:4.8.6
+ _ZN9QCheckBoxD1Ev@Base 4:4.8.6
+ _ZN9QCheckBoxD2Ev@Base 4:4.8.6
  _ZN9QColormap10initializeEv@Base 4:4.5.3
  _ZN9QColormap7cleanupEv@Base 4:4.5.3
  _ZN9QColormap8instanceEi@Base 4:4.5.3
@@ -7962,9 +7960,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN9QDateEditC1ERK5QDateP7QWidget@Base 4:4.5.3
  _ZN9QDateEditC2EP7QWidget@Base 4:4.5.3
  _ZN9QDateEditC2ERK5QDateP7QWidget@Base 4:4.5.3
- (arch=!hppa)_ZN9QDateEditD0Ev@Base 4:4.8.6
- (arch=!hppa)_ZN9QDateEditD1Ev@Base 4:4.8.6
- (arch=!hppa)_ZN9QDateEditD2Ev@Base 4:4.8.6
+ _ZN9QDateEditD0Ev@Base 4:4.8.6
+ _ZN9QDateEditD1Ev@Base 4:4.8.6
+ _ZN9QDateEditD2Ev@Base 4:4.8.6
  _ZN9QDirModel10setSortingE6QFlagsIN4QDir8SortFlagEE@Base 4:4.5.3
  _ZN9QDirModel11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN9QDirModel11qt_metacastEPKc@Base 4:4.5.3
@@ -8214,9 +8212,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN9QMenuItem5setIdEi@Base 4:4.5.3
  _ZN9QMenuItemC1Ev@Base 4:4.5.3
  _ZN9QMenuItemC2Ev@Base 4:4.5.3
- (arch=!hppa)_ZN9QMenuItemD0Ev@Base 4:4.8.6
- (arch=!hppa)_ZN9QMenuItemD1Ev@Base 4:4.8.6
- (arch=!hppa)_ZN9QMenuItemD2Ev@Base 4:4.8.6
+ _ZN9QMenuItemD0Ev@Base 4:4.8.6
+ _ZN9QMenuItemD1Ev@Base 4:4.8.6
+ _ZN9QMenuItemD2Ev@Base 4:4.8.6
  _ZN9QPolygonF9translateERK7QPointF@Base 4:4.5.3
  _ZN9QPolygonFC1ERK6QRectF@Base 4:4.5.3
  _ZN9QPolygonFC1ERK8QPolygon@Base 4:4.5.3
@@ -8326,8 +8324,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN9QTextEdit13setTextCursorERK11QTextCursor@Base 4:4.5.3
  _ZN9QTextEdit13setTextFormatEN2Qt10TextFormatE@Base 4:4.5.3
  _ZN9QTextEdit13undoAvailableEb@Base 4:4.5.3
- (arch=!hppa)_ZN9QTextEdit14ExtraSelectionD1Ev@Base 4:4.8.6
- (arch=!hppa)_ZN9QTextEdit14ExtraSelectionD2Ev@Base 4:4.8.6
+ _ZN9QTextEdit14ExtraSelectionD1Ev@Base 4:4.8.6
+ _ZN9QTextEdit14ExtraSelectionD2Ev@Base 4:4.8.6
  _ZN9QTextEdit14dragEnterEventEP15QDragEnterEvent@Base 4:4.5.3
  _ZN9QTextEdit14dragLeaveEventEP15QDragLeaveEvent@Base 4:4.5.3
  _ZN9QTextEdit14mouseMoveEventEP11QMouseEvent@Base 4:4.5.3
@@ -8420,9 +8418,9 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN9QTimeEditC1ERK5QTimeP7QWidget@Base 4:4.5.3
  _ZN9QTimeEditC2EP7QWidget@Base 4:4.5.3
  _ZN9QTimeEditC2ERK5QTimeP7QWidget@Base 4:4.5.3
- (arch=!hppa)_ZN9QTimeEditD0Ev@Base 4:4.8.6
- (arch=!hppa)_ZN9QTimeEditD1Ev@Base 4:4.8.6
- (arch=!hppa)_ZN9QTimeEditD2Ev@Base 4:4.8.6
+ _ZN9QTimeEditD0Ev@Base 4:4.8.6
+ _ZN9QTimeEditD1Ev@Base 4:4.8.6
+ _ZN9QTimeEditD2Ev@Base 4:4.8.6
  _ZN9QTreeView10hideColumnEi@Base 4:4.5.3
  _ZN9QTreeView10moveCursorEN17QAbstractItemView12CursorActionE6QFlagsIN2Qt16KeyboardModifierEE@Base 4:4.5.3
  _ZN9QTreeView10paintEventEP11QPaintEvent@Base 4:4.5.3
@@ -11624,7 +11622,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK7QPixmap9doImageIOEP12QImageWriteri@Base 4:4.5.3
  _ZNK7QPixmap9isQBitmapEv@Base 4:4.5.3
  _ZNK7QPixmapcv8QVariantEv@Base 4:4.5.3
- (arch=hppa)_ZNK7QPointF7toPointEv@Base 4:4.8.6
  _ZNK7QRegion10intersectsERK5QRect@Base 4:4.5.3
  _ZNK7QRegion10intersectsERKS_@Base 4:4.5.3
  _ZNK7QRegion10translatedEii@Base 4:4.5.3
@@ -13112,7 +13109,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV12QPaintDevice@Base 4:4.5.3
  _ZTV12QPaintEngine@Base 4:4.5.3
  _ZTV12QPrintDialog@Base 4:4.5.3
- (arch=!hppa)_ZTV12QPrintEngine@Base 4:4.8.6
+ _ZTV12QPrintEngine@Base 4:4.8.6
  _ZTV12QProgressBar@Base 4:4.5.3
  _ZTV12QRadioButton@Base 4:4.5.3
  _ZTV12QResizeEvent@Base 4:4.5.3
@@ -13205,7 +13202,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV17QContextMenuEvent@Base 4:4.5.3
  _ZTV17QDataWidgetMapper@Base 4:4.5.3
  _ZTV17QDockWidgetLayout@Base 4:4.5.3
- (arch=!hppa)_ZTV17QFactoryInterface@Base 4:4.8.6
+ _ZTV17QFactoryInterface@Base 4:4.8.6
  _ZTV17QFileIconProvider@Base 4:4.5.3
  _ZTV17QGraphicsLineItem@Base 4:4.5.3
  _ZTV17QGraphicsPathItem@Base 4:4.5.3
@@ -13253,7 +13250,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV19QStyledItemDelegate@Base 4:4.5.3
  _ZTV19QToolBarChangeEvent@Base 4:4.5.3
  _ZTV20QAbstractPrintDialog@Base 4:4.5.3
- (arch=!hppa)_ZTV20QAccessibleInterface@Base 4:4.8.6
+ _ZTV20QAccessibleInterface@Base 4:4.8.6
  _ZTV20QBlittablePixmapData@Base 4:4.8.0
  _ZTV20QGraphicsEllipseItem@Base 4:4.5.3
  _ZTV20QGraphicsItemPrivate@Base 4:4.6.1
@@ -13265,10 +13262,10 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV20QPictureFormatPlugin@Base 4:4.5.3
  _ZTV20QRasterWindowSurface@Base 4:4.5.3
  _ZTV20QTextFrameLayoutData@Base 4:4.5.3
- (arch=!hppa)_ZTV20QTextObjectInterface@Base 4:4.8.6
+ _ZTV20QTextObjectInterface@Base 4:4.8.6
  _ZTV20QWidgetResizeHandler@Base 4:4.5.3
  _ZTV21QAbstractItemDelegate@Base 4:4.5.3
- (arch=!hppa)_ZTV21QAccessible2Interface@Base 4:4.8.6
+ _ZTV21QAccessible2Interface@Base 4:4.8.6
  _ZTV21QGraphicsAnchorLayout@Base 4:4.6.1
  _ZTV21QGraphicsEffectSource@Base 4:4.6.1
  _ZTV21QGraphicsLinearLayout@Base 4:4.5.3
@@ -13283,17 +13280,17 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV22QGraphicsItemAnimation@Base 4:4.5.3
  _ZTV22QGraphicsOpacityEffect@Base 4:4.6.1
  _ZTV22QPaintEngineExReplayer@Base 4:4.6.1
- (arch=!hppa)_ZTV22QStyleFactoryInterface@Base 4:4.8.6
+ _ZTV22QStyleFactoryInterface@Base 4:4.8.6
  _ZTV22QWhatsThisClickedEvent@Base 4:4.5.3
  _ZTV23QAccessibleBridgePlugin@Base 4:4.5.3
- (arch=!hppa)_ZTV23QEventTransitionPrivate@Base 4:4.8.6
+ _ZTV23QEventTransitionPrivate@Base 4:4.8.6
  _ZTV23QGraphicsColorizeEffect@Base 4:4.6.1
  _ZTV23QGraphicsSceneHelpEvent@Base 4:4.5.3
  _ZTV23QGraphicsSceneMoveEvent@Base 4:4.5.3
  _ZTV23QGraphicsSimpleTextItem@Base 4:4.5.3
  _ZTV23QImageTextureGlyphCache@Base 4:4.7.0~beta2
  _ZTV23QPaintBufferSignalProxy@Base 4:4.6.1
- (arch=!hppa)_ZTV23QPictureFormatInterface@Base 4:4.8.6
+ _ZTV23QPictureFormatInterface@Base 4:4.8.6
  _ZTV23QPixmapDropShadowFilter@Base 4:4.5.3
  _ZTV23QWindowStateChangeEvent@Base 4:4.5.3
  _ZTV24QAbstractPageSetupDialog@Base 4:4.5.3
@@ -13308,18 +13305,18 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTV26QAbstractGraphicsShapeItem@Base 4:4.5.3
  _ZTV26QAbstractScrollAreaPrivate@Base 4:4.7.0~beta1
  _ZTV27QAbstractTextDocumentLayout@Base 4:4.5.3
- (arch=!hppa)_ZTV27QAccessibleFactoryInterface@Base 4:4.8.6
- (arch=!hppa)_ZTV27QEventDispatcherGlibPrivate@Base 4:4.8.6
+ _ZTV27QAccessibleFactoryInterface@Base 4:4.8.6
+ _ZTV27QEventDispatcherGlibPrivate@Base 4:4.8.6
  _ZTV27QGraphicsSceneDragDropEvent@Base 4:4.5.3
- (arch=!hppa)_ZTV27QGuiPlatformPluginInterface@Base 4:4.8.6
- (arch=!hppa)_ZTV27QIconEngineFactoryInterface@Base 4:4.8.6
- (arch=!hppa)_ZTV29QIconEngineFactoryInterfaceV2@Base 4:4.8.6
- (arch=!hppa)_ZTV29QInputContextFactoryInterface@Base 4:4.8.6
+ _ZTV27QGuiPlatformPluginInterface@Base 4:4.8.6
+ _ZTV27QIconEngineFactoryInterface@Base 4:4.8.6
+ _ZTV29QIconEngineFactoryInterfaceV2@Base 4:4.8.6
+ _ZTV29QInputContextFactoryInterface@Base 4:4.8.6
  _ZTV30QGraphicsSceneContextMenuEvent@Base 4:4.5.3
  _ZTV31QAbstractEventDispatcherPrivate@Base 4:4.5.3
- (arch=!hppa)_ZTV31QImageIOHandlerFactoryInterface@Base 4:4.8.6
- (arch=!hppa)_ZTV32QAccessibleEditableTextInterface@Base 4:4.8.6
- (arch=!hppa)_ZTV33QAccessibleBridgeFactoryInterface@Base 4:4.8.6
+ _ZTV31QImageIOHandlerFactoryInterface@Base 4:4.8.6
+ _ZTV32QAccessibleEditableTextInterface@Base 4:4.8.6
+ _ZTV33QAccessibleBridgeFactoryInterface@Base 4:4.8.6
  _ZTV38QAccessibleSimpleEditableTextInterface@Base 4:4.5.3
  _ZTV5QDial@Base 4:4.5.3
  _ZTV5QDrag@Base 4:4.5.3
@@ -13430,7 +13427,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZlsR11QTextStreamRK9QSplitter@Base 4:4.5.3
  _ZlsR6QDebugRK11QVectorPath@Base 4:4.5.3
  _ZmlRK12QPainterPathRK7QMatrix@Base 4:4.5.3
- (arch=hppa)_ZneRK6QRectFS1_@Base 4:4.8.6
  _ZrsR11QDataStreamR10QMatrix4x4@Base 4:4.6.1
  _ZrsR11QDataStreamR10QTransform@Base 4:4.5.3
  _ZrsR11QDataStreamR11QColorGroup@Base 4:4.5.3
@@ -13483,13 +13479,13 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (c++)"non-virtual thunk to QBoxLayout::sizeHint() const@Base" 4:4.5.3
  (c++)"non-virtual thunk to QBoxLayout::~QBoxLayout()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QCalendarWidget::~QCalendarWidget()@Base" 4:4.5.3
- (c++|arch=!hppa)"non-virtual thunk to QCheckBox::~QCheckBox()@Base" 4:4.8.6
+ (c++)"non-virtual thunk to QCheckBox::~QCheckBox()@Base" 4:4.8.6
  (c++)"non-virtual thunk to QColorDialog::~QColorDialog()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QColumnView::~QColumnView()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QComboBox::~QComboBox()@Base" 4:4.5.3
- (c++|arch=!hppa)"non-virtual thunk to QCommandLinkButton::~QCommandLinkButton()@Base" 4:4.8.6
- (c++|arch=!hppa)"non-virtual thunk to QDateEdit::~QDateEdit()@Base" 4:4.8.6
- (c++|arch=!hppa)"non-virtual thunk to QDateTimeEdit::~QDateTimeEdit()@Base" 4:4.8.6
+ (c++)"non-virtual thunk to QCommandLinkButton::~QCommandLinkButton()@Base" 4:4.8.6
+ (c++)"non-virtual thunk to QDateEdit::~QDateEdit()@Base" 4:4.8.6
+ (c++)"non-virtual thunk to QDateTimeEdit::~QDateTimeEdit()@Base" 4:4.8.6
  (c++)"non-virtual thunk to QDesktopWidget::~QDesktopWidget()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QDial::~QDial()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QDialog::~QDialog()@Base" 4:4.5.3
@@ -13500,7 +13496,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (c++)"non-virtual thunk to QDockWidgetLayout::setGeometry(QRect const&)@Base" 4:4.5.3
  (c++)"non-virtual thunk to QDockWidgetLayout::sizeHint() const@Base" 4:4.5.3
  (c++)"non-virtual thunk to QDockWidgetLayout::~QDockWidgetLayout()@Base" 4:4.5.3
- (c++|arch=!hppa)"non-virtual thunk to QDoubleSpinBox::~QDoubleSpinBox()@Base" 4:4.8.6
+ (c++)"non-virtual thunk to QDoubleSpinBox::~QDoubleSpinBox()@Base" 4:4.8.6
  (c++)"non-virtual thunk to QDragEnterEvent::~QDragEnterEvent()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QDragMoveEvent::~QDragMoveEvent()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QDropEvent::encodedData(char const*) const@Base" 4:4.5.3
@@ -13521,7 +13517,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (c++)"non-virtual thunk to QFormLayout::sizeHint() const@Base" 4:4.5.3
  (c++)"non-virtual thunk to QFormLayout::~QFormLayout()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QFrame::~QFrame()@Base" 4:4.5.3
- (c++|arch=!hppa)"non-virtual thunk to QGraphicsObject::~QGraphicsObject()@Base" 4:4.8.6
+ (c++)"non-virtual thunk to QGraphicsObject::~QGraphicsObject()@Base" 4:4.8.6
  (c++)"non-virtual thunk to QGraphicsProxyWidget::contextMenuEvent(QGraphicsSceneContextMenuEvent*)@Base" 4:4.5.3
  (c++)"non-virtual thunk to QGraphicsProxyWidget::dragEnterEvent(QGraphicsSceneDragDropEvent*)@Base" 4:4.5.3
  (c++)"non-virtual thunk to QGraphicsProxyWidget::dragLeaveEvent(QGraphicsSceneDragDropEvent*)@Base" 4:4.5.3
@@ -13631,7 +13627,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (c++)"non-virtual thunk to QMenu::~QMenu()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QMenuBar::~QMenuBar()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QMessageBox::~QMessageBox()@Base" 4:4.5.3
- (c++|arch=!hppa)"non-virtual thunk to QPageSetupDialog::~QPageSetupDialog()@Base" 4:4.8.6
+ (c++)"non-virtual thunk to QPageSetupDialog::~QPageSetupDialog()@Base" 4:4.8.6
  (c++)"non-virtual thunk to QPictureFormatPlugin::loadPicture(QString const&, QString const&, QPicture*)@Base" 4:4.5.3
  (c++)"non-virtual thunk to QPictureFormatPlugin::savePicture(QString const&, QString const&, QPicture const&)@Base" 4:4.5.3
  (c++)"non-virtual thunk to QPictureFormatPlugin::~QPictureFormatPlugin()@Base" 4:4.5.3
@@ -13639,19 +13635,19 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (c++)"non-virtual thunk to QPrintDialog::~QPrintDialog()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QPrintPreviewDialog::~QPrintPreviewDialog()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QPrintPreviewWidget::~QPrintPreviewWidget()@Base" 4:4.5.3
- (c++|arch=!hppa)"non-virtual thunk to QProgressBar::~QProgressBar()@Base" 4:4.8.6
+ (c++)"non-virtual thunk to QProgressBar::~QProgressBar()@Base" 4:4.8.6
  (c++)"non-virtual thunk to QProgressDialog::~QProgressDialog()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QPushButton::~QPushButton()@Base" 4:4.5.3
- (c++|arch=!hppa)"non-virtual thunk to QRadioButton::~QRadioButton()@Base" 4:4.8.6
+ (c++)"non-virtual thunk to QRadioButton::~QRadioButton()@Base" 4:4.8.6
  (c++)"non-virtual thunk to QRubberBand::~QRubberBand()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QScrollArea::~QScrollArea()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QScrollBar::~QScrollBar()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QSizeGrip::~QSizeGrip()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QSlider::~QSlider()@Base" 4:4.5.3
- (c++|arch=!hppa)"non-virtual thunk to QSpinBox::~QSpinBox()@Base" 4:4.8.6
+ (c++)"non-virtual thunk to QSpinBox::~QSpinBox()@Base" 4:4.8.6
  (c++)"non-virtual thunk to QSplashScreen::~QSplashScreen()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QSplitter::~QSplitter()@Base" 4:4.5.3
- (c++|arch=!hppa)"non-virtual thunk to QSplitterHandle::~QSplitterHandle()@Base" 4:4.8.6
+ (c++)"non-virtual thunk to QSplitterHandle::~QSplitterHandle()@Base" 4:4.8.6
  (c++)"non-virtual thunk to QStackedLayout::minimumSize() const@Base" 4:4.5.3
  (c++)"non-virtual thunk to QStackedLayout::setGeometry(QRect const&)@Base" 4:4.5.3
  (c++)"non-virtual thunk to QStackedLayout::sizeHint() const@Base" 4:4.5.3
@@ -13665,7 +13661,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (c++)"non-virtual thunk to QTableWidget::~QTableWidget()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QTextBrowser::~QTextBrowser()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QTextEdit::~QTextEdit()@Base" 4:4.5.3
- (c++|arch=!hppa)"non-virtual thunk to QTimeEdit::~QTimeEdit()@Base" 4:4.8.6
+ (c++)"non-virtual thunk to QTimeEdit::~QTimeEdit()@Base" 4:4.8.6
  (c++)"non-virtual thunk to QToolBar::~QToolBar()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QToolBox::~QToolBox()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QToolButton::~QToolButton()@Base" 4:4.5.3
@@ -13679,7 +13675,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (c++)"non-virtual thunk to QWidget::paintEngine() const@Base" 4:4.5.3
  (c++)"non-virtual thunk to QWidget::~QWidget()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QWizard::~QWizard()@Base" 4:4.5.3
- (c++|arch=!hppa)"non-virtual thunk to QWizardPage::~QWizardPage()@Base" 4:4.8.6
+ (c++)"non-virtual thunk to QWizardPage::~QWizardPage()@Base" 4:4.8.6
  (c++)"non-virtual thunk to QWorkspace::~QWorkspace()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QX11EmbedContainer::~QX11EmbedContainer()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QX11EmbedWidget::~QX11EmbedWidget()@Base" 4:4.5.3
