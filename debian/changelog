@@ -6,7 +6,7 @@ qt4-x11 (4:4.8.7+dfsg-1) UNRELEASED; urgency=medium
     libqt4-gui and libqt4-core.
   * Remove libqt4-private-dev. The only package using it is gammaray (#763852)
     which at the moment of this writing has it fixed in it's repo.
-  * Clear up the list in Uploaders removing people who hasn't commited to the
+  * Clear up the list in Uploaders removing people who hasn't committed to the
     repo in more than a year. They can re add themselves whenever they want
     (and we really hope to see you back really soon!).
   * Update symbols files with buildds' logs.
