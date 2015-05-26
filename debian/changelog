@@ -1,6 +1,7 @@
-qt4-x11 (4:4.8.6+git155-g716fbae+dfsg-3) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.7+dfsg-1) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
+  * New upstream release, possibly the latest point release for Qt4.
   * Remove dummy transitional packages libqt4-webkit[-dbg], libqt4-assistant,
     libqt4-gui and libqt4-core.
   * Remove libqt4-private-dev. The only package using it is gammaray (#763852)
