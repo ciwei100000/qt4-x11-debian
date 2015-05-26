@@ -1,6 +1,5 @@
-qt4-x11 (4:4.8.7+dfsg-1) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.7+dfsg-1) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release, possibly the latest point release for Qt4.
   * Remove dummy transitional packages libqt4-webkit[-dbg], libqt4-assistant,
     libqt4-gui and libqt4-core.
@@ -12,7 +11,7 @@ qt4-x11 (4:4.8.7+dfsg-1) UNRELEASED; urgency=medium
   * Update symbols files with buildds' logs.
   * Remove remove_functions_not_in_qt4.patch which is already present upstream.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 05 May 2015 18:50:37 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 26 May 2015 09:18:39 -0300
 
 qt4-x11 (4:4.8.6+git155-g716fbae+dfsg-2) unstable; urgency=medium
 
