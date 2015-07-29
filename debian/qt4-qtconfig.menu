@@ -4,4 +4,4 @@
 	title="QtConfig"\
 	longtitle="Qt Configuration Utility"\
 	hints="Qt4 config tool"\
-	command="/usr/lib/*/qt4/bin/qtconfig"
+	command="/usr/bin/qtconfig-qt4"

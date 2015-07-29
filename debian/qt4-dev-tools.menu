@@ -3,11 +3,11 @@
 	section="Applications/Programming"\
 	hints="KDE"\
 	title="Qt4 Assistant"\
-	command="/usr/lib/*/qt4/bin/assistant"
+	command="/usr/bin/assistant-qt4"
 
 ?package(qt4-dev-tools):\
 	needs="x11"\
 	section="Applications/Programming"\
 	hints="KDE"\
 	title="Qt4 Linguist"\
-	command="/usr/lib/*/qt4/bin/linguist"
+	command="/usr/bin/linguist-qt4"
