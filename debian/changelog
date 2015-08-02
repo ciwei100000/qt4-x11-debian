@@ -4,6 +4,9 @@ qt4-x11 (4:4.8.7+dfsg-2) UNRELEASED; urgency=medium
   * Add Daniel Schepler's QtScript_x32_config.diff and x32.diff to let Qt4
     compile on x32 (Closes: #699862).
   * Fix menu entries's paths for Qt4 apps (Closes: #793956).
+  * Add plugin_system_for_systemtray.patch to allow Qt4 apps to use sni-qt.
+    The patch is unnoficial, but an upstream developer blessed it, so in this
+    specific case we are keeping the delta.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 26 May 2015 14:14:19 -0300
 

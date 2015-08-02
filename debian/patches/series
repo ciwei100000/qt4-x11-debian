@@ -7,6 +7,9 @@ xmlpatterns_stack_overflow_fix.diff
 # Patches submitted upstream but still not accepted
 aarch64_arm64_qatomic_support.patch
 
+# Patched blessed by upstream but that will never reach Qt4.
+plugin_system_for_systemtray.patch
+
 # qt-copy patches
 0195-compositing-properties.diff
 0225-invalidate-tabbar-geometry-on-refresh.patch
