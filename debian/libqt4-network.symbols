@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.6 alpha amd64 arm64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mips64el mipsel powerpc ppc64 ppc64el s390x sh4 sparc64
+# SymbolsHelper-Confirmed: 4:4.8.7 amd64
 libQtNetwork.so.4 libqt4-network #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z19qt_qhostinfo_lookupRK7QStringP7QObjectPKcPbPi@Base 4:4.6.3
@@ -476,9 +476,6 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN18QHttpRequestHeaderC2ERK7QStringS2_ii@Base 4:4.5.3
  _ZN18QHttpRequestHeaderC2ERKS_@Base 4:4.5.3
  _ZN18QHttpRequestHeaderC2Ev@Base 4:4.5.3
- (optional=gccinternal)_ZN18QHttpRequestHeaderD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN18QHttpRequestHeaderD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN18QHttpRequestHeaderD2Ev@Base 4:4.8.6
  _ZN18QHttpRequestHeaderaSERKS_@Base 4:4.5.3
  _ZN18QNetworkProxyQuery11setPeerPortEi@Base 4:4.5.3
  _ZN18QNetworkProxyQuery12setLocalPortEi@Base 4:4.5.3
@@ -524,9 +521,6 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZN19QHttpResponseHeaderC2ERKS_@Base 4:4.5.3
  _ZN19QHttpResponseHeaderC2EiRK7QStringii@Base 4:4.5.3
  _ZN19QHttpResponseHeaderC2Ev@Base 4:4.5.3
- (optional=gccinternal)_ZN19QHttpResponseHeaderD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN19QHttpResponseHeaderD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN19QHttpResponseHeaderD2Ev@Base 4:4.8.6
  _ZN19QHttpResponseHeaderaSERKS_@Base 4:4.5.3
  _ZN20QNetworkAddressEntry10setNetmaskERK12QHostAddress@Base 4:4.5.3
  _ZN20QNetworkAddressEntry12setBroadcastERK12QHostAddress@Base 4:4.5.3
@@ -1224,7 +1218,6 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZTV14QHttpMultiPart@Base 4:4.8.0
  _ZTV15QAbstractSocket@Base 4:4.5.3
  _ZTV15QNetworkSession@Base 4:4.7.0~beta1
- (optional=gccinternal)_ZTV17QFactoryInterface@Base 4:4.8.6
  _ZTV17QNetworkCookieJar@Base 4:4.5.3
  _ZTV17QNetworkDiskCache@Base 4:4.5.3
  _ZTV18QHttpRequestHeader@Base 4:4.5.3
@@ -1235,7 +1228,6 @@ libQtNetwork.so.4 libqt4-network #MINVER#
  _ZTV21QNetworkAccessManager@Base 4:4.5.3
  _ZTV22QNetworkSessionPrivate@Base 4:4.7.0~beta1
  _ZTV28QNetworkConfigurationManager@Base 4:4.7.0~beta1
- (optional=gccinternal)_ZTV29QBearerEngineFactoryInterface@Base 4:4.8.6
  _ZTV35QNetworkConfigurationManagerPrivate@Base 4:4.7.0~beta1
  _ZTV4QFtp@Base 4:4.5.3
  _ZTV5QHttp@Base 4:4.5.3

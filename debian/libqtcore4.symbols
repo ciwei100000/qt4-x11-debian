@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.6 alpha amd64 arm64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 m68k mips mips64el mipsel powerpc ppc64 ppc64el s390x sh4 sparc64
+# SymbolsHelper-Confirmed: 4:4.8.7 amd64
 libQtCLucene.so.4 libqtcore4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN12QCLuceneHits2idEi@Base 4:4.5.3
@@ -605,7 +605,7 @@ libQtCLucene.so.4 libqtcore4 #MINVER#
  (optional=templinst|arch=sparc)_ZNSt8_Rb_treeImSt4pairIKmPN6lucene5index17TermVectorsReaderEESt10_Select1stIS6_ENS2_4util22CLuceneThreadIdCompareESaIS6_EE8_M_eraseEPSt13_Rb_tree_nodeIS6_E@Base 4:4.8.5+git242
  (optional=templinst|arch=sparc)_ZNSt8multimapImPN6lucene4util15ThreadLocalBaseESt4lessImESaISt4pairIKmS3_EEED1Ev@Base 4:4.8.5+git242
  (optional=templinst|arch=sparc)_ZNSt8multimapImPN6lucene4util15ThreadLocalBaseESt4lessImESaISt4pairIKmS3_EEED2Ev@Base 4:4.8.5+git242
- (optional=templinst)_ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_EPKS3_RKS6_@Base 4:4.5.3
+ (optional=templinst)_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_@Base 4:4.8.7
  _ZTI12QCLuceneHits@Base 4:4.5.3
  _ZTI12QCLuceneSort@Base 4:4.5.3
  _ZTI12QCLuceneTerm@Base 4:4.5.3
@@ -1326,15 +1326,9 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN12QtConcurrent18ResultIteratorBaseC2EN4QMapIiNS_10ResultItemEE14const_iteratorEi@Base 4:4.5.3
  _ZN12QtConcurrent18ResultIteratorBaseC2Ev@Base 4:4.5.3
  _ZN12QtConcurrent18ResultIteratorBaseppEv@Base 4:4.5.3
- (optional=gccinternal)_ZN12QtConcurrent18UnhandledExceptionD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN12QtConcurrent18UnhandledExceptionD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN12QtConcurrent18UnhandledExceptionD2Ev@Base 4:4.8.6
  _ZN12QtConcurrent8internal14ExceptionStore12setExceptionERKNS_9ExceptionE@Base 4:4.5.3
  _ZN12QtConcurrent8internal14ExceptionStore22throwPossibleExceptionEv@Base 4:4.5.3
  _ZN12QtConcurrent8internal14ExceptionStore9exceptionEv@Base 4:4.5.3
- (optional=gccinternal)_ZN12QtConcurrent9ExceptionD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN12QtConcurrent9ExceptionD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN12QtConcurrent9ExceptionD2Ev@Base 4:4.8.6
  _ZN13QElapsedTimer10invalidateEv@Base 4:4.7.0~beta1
  _ZN13QElapsedTimer11isMonotonicEv@Base 4:4.7.0~beta1
  _ZN13QElapsedTimer5startEv@Base 4:4.7.0~beta1
@@ -1493,8 +1487,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN13QStateMachineD0Ev@Base 4:4.6.1
  _ZN13QStateMachineD1Ev@Base 4:4.6.1
  _ZN13QStateMachineD2Ev@Base 4:4.6.1
- (optional=gccinternal)_ZN13QSystemLocale24CurrencyToStringArgumentD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN13QSystemLocale24CurrencyToStringArgumentD2Ev@Base 4:4.8.6
  _ZN13QSystemLocaleC1Eb@Base 4:4.5.3
  _ZN13QSystemLocaleC1Ev@Base 4:4.5.3
  _ZN13QSystemLocaleC2Eb@Base 4:4.5.3
@@ -1518,9 +1510,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN13QUnifiedTimer8instanceEv@Base 4:4.6.1
  _ZN13QUnifiedTimerC1Ev@Base 4:4.8.0
  _ZN13QUnifiedTimerC2Ev@Base 4:4.8.0
- (optional=gccinternal)_ZN13QUnifiedTimerD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN13QUnifiedTimerD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN13QUnifiedTimerD2Ev@Base 4:4.8.6
  _ZN14QAbstractState11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN14QAbstractState11qt_metacastEPKc@Base 4:4.6.1
  _ZN14QAbstractState16staticMetaObjectE@Base 4:4.6.1
@@ -1655,8 +1644,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  (optional=gccinternal|arch=sh4 sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.8.5+git242
  (optional=inline|arch=sh4 sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN15QDateTimeParser11parseFormatERK7QString@Base 4:4.5.3
- (optional=gccinternal)_ZN15QDateTimeParser9StateNodeD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN15QDateTimeParser9StateNodeD2Ev@Base 4:4.8.6
  _ZN15QLinkedListData11shared_nullE@Base 4:4.5.3
  _ZN15QObjectUserDataD0Ev@Base 4:4.5.3
  _ZN15QObjectUserDataD1Ev@Base 4:4.5.3
@@ -1704,9 +1691,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN16QAnimationDriverC1ER23QAnimationDriverPrivateP7QObject@Base 4:4.8.0
  _ZN16QAnimationDriverC2EP7QObject@Base 4:4.8.0
  _ZN16QAnimationDriverC2ER23QAnimationDriverPrivateP7QObject@Base 4:4.8.0
- (optional=gccinternal)_ZN16QAnimationDriverD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN16QAnimationDriverD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN16QAnimationDriverD2Ev@Base 4:4.8.6
  _ZN16QCoreApplication10enter_loopEv@Base 4:4.5.3
  _ZN16QCoreApplication10startingUpEv@Base 4:4.5.3
  _ZN16QCoreApplication10unixSignalEi@Base 4:4.5.3
@@ -2352,9 +2336,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN21QPersistentModelIndexD2Ev@Base 4:4.5.3
  _ZN21QPersistentModelIndexaSERK11QModelIndex@Base 4:4.5.3
  _ZN21QPersistentModelIndexaSERKS_@Base 4:4.5.3
- (optional=gccinternal)_ZN23QAnimationDriverPrivateD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN23QAnimationDriverPrivateD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN23QAnimationDriverPrivateD2Ev@Base 4:4.8.6
  _ZN23QCoreApplicationPrivate10mainThreadEv@Base 4:4.5.3
  _ZN23QCoreApplicationPrivate13checkInstanceEPKc@Base 4:4.5.3
  _ZN23QCoreApplicationPrivate13notify_helperEP7QObjectP6QEvent@Base 4:4.5.3
@@ -2385,9 +2366,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN23QEventTransitionPrivate3getEP16QEventTransition@Base 4:4.6.1
  _ZN23QEventTransitionPrivateC1Ev@Base 4:4.6.1
  _ZN23QEventTransitionPrivateC2Ev@Base 4:4.6.1
- (optional=gccinternal)_ZN23QEventTransitionPrivateD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN23QEventTransitionPrivateD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN23QEventTransitionPrivateD2Ev@Base 4:4.8.6
  _ZN23QParallelAnimationGroup11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN23QParallelAnimationGroup11qt_metacastEPKc@Base 4:4.6.1
  _ZN23QParallelAnimationGroup11updateStateEN18QAbstractAnimation5StateES1_@Base 4:4.6.1
@@ -2441,8 +2419,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN24QXmlStreamEntityResolverD1Ev@Base 4:4.5.3
  _ZN24QXmlStreamEntityResolverD2Ev@Base 4:4.5.3
  _ZN25QAbstractItemModelPrivate10Persistent16insertMultiAtEndERK11QModelIndexP25QPersistentModelIndexData@Base 4:4.5.3
- (optional=gccinternal)_ZN25QAbstractItemModelPrivate10PersistentD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN25QAbstractItemModelPrivate10PersistentD2Ev@Base 4:4.8.6
  _ZN25QAbstractItemModelPrivate10itemsMovedERK11QModelIndexiiS2_iN2Qt11OrientationE@Base 4:4.6.1
  _ZN25QAbstractItemModelPrivate11rowsRemovedERK11QModelIndexii@Base 4:4.5.3
  _ZN25QAbstractItemModelPrivate12rowsInsertedERK11QModelIndexii@Base 4:4.5.3
@@ -2459,9 +2435,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN25QAbstractItemModelPrivate24columnsAboutToBeInsertedERK11QModelIndexii@Base 4:4.5.3
  _ZN25QAbstractItemModelPrivate25removePersistentIndexDataEP25QPersistentModelIndexData@Base 4:4.5.3
  _ZN25QAbstractItemModelPrivate9allowMoveERK11QModelIndexiiS2_iN2Qt11OrientationE@Base 4:4.6.1
- (optional=gccinternal)_ZN25QAbstractItemModelPrivateD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN25QAbstractItemModelPrivateD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN25QAbstractItemModelPrivateD2Ev@Base 4:4.8.6
  _ZN25QSequentialAnimationGroup11insertPauseEii@Base 4:4.6.1
  _ZN25QSequentialAnimationGroup11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.6.1
  _ZN25QSequentialAnimationGroup11qt_metacastEPKc@Base 4:4.6.1
@@ -2490,9 +2463,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN26QAbstractTransitionPrivate3getEP19QAbstractTransition@Base 4:4.6.1
  _ZN26QAbstractTransitionPrivateC1Ev@Base 4:4.6.1
  _ZN26QAbstractTransitionPrivateC2Ev@Base 4:4.6.1
- (optional=gccinternal)_ZN26QAbstractTransitionPrivateD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN26QAbstractTransitionPrivateD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN26QAbstractTransitionPrivateD2Ev@Base 4:4.8.6
  _ZN27QAbstractFileEngineIterator7setPathERK7QString@Base 4:4.5.3
  _ZN27QAbstractFileEngineIteratorC1E6QFlagsIN4QDir6FilterEERK11QStringList@Base 4:4.5.3
  _ZN27QAbstractFileEngineIteratorC2E6QFlagsIN4QDir6FilterEERK11QStringList@Base 4:4.5.3
@@ -2507,9 +2477,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN27QEventDispatcherGlibPrivate31runTimersOnceWithNormalPriorityEv@Base 4:4.6.1
  _ZN27QEventDispatcherGlibPrivateC1EP13_GMainContext@Base 4:4.5.3
  _ZN27QEventDispatcherGlibPrivateC2EP13_GMainContext@Base 4:4.5.3
- (optional=gccinternal)_ZN27QEventDispatcherGlibPrivateD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN27QEventDispatcherGlibPrivateD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN27QEventDispatcherGlibPrivateD2Ev@Base 4:4.8.6
  _ZN27QEventDispatcherUNIXPrivate16initThreadWakeUpEv@Base 4:4.8.4
  _ZN27QEventDispatcherUNIXPrivate19processThreadWakeUpEi@Base 4:4.8.4
  _ZN27QEventDispatcherUNIXPrivate8doSelectE6QFlagsIN10QEventLoop17ProcessEventsFlagEEP7timeval@Base 4:4.5.3
@@ -2544,9 +2511,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN31QAbstractEventDispatcherPrivate14releaseTimerIdEi@Base 4:4.5.3
  _ZN31QAbstractEventDispatcherPrivate15allocateTimerIdEv@Base 4:4.5.3
  _ZN31QAbstractEventDispatcherPrivate4initEv@Base 4:4.5.3
- (optional=gccinternal)_ZN31QAbstractEventDispatcherPrivateD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN31QAbstractEventDispatcherPrivateD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN31QAbstractEventDispatcherPrivateD2Ev@Base 4:4.8.6
  _ZN31QNonContiguousByteDeviceFactory4wrapEP24QNonContiguousByteDevice@Base 4:4.6.1
  _ZN31QNonContiguousByteDeviceFactory6createE14QSharedPointerI11QRingBufferE@Base 4:4.8.0
  _ZN31QNonContiguousByteDeviceFactory6createEP10QByteArray@Base 4:4.6.1
@@ -4589,7 +4553,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTI11QChildEvent@Base 4:4.5.3
  _ZTI11QDataStream@Base 4:4.5.3
  _ZTI11QFinalState@Base 4:4.6.1
- (optional=gccinternal)_ZTI11QMetaObject@Base 4:4.8.6
  _ZTI11QTextStream@Base 4:4.5.3
  _ZTI11QThreadPool@Base 4:4.5.3
  _ZTI11QTimerEvent@Base 4:4.5.3
@@ -4646,7 +4609,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTI24QXmlStreamEntityResolver@Base 4:4.5.3
  _ZTI25QAbstractItemModelPrivate@Base 4:4.5.3
  _ZTI25QSequentialAnimationGroup@Base 4:4.6.1
- (optional=gccinternal)_ZTI26QAbstractDynamicMetaObject@Base 4:4.8.6
  _ZTI26QAbstractFileEngineHandler@Base 4:4.5.3
  _ZTI26QAbstractTransitionPrivate@Base 4:4.6.1
  _ZTI26QTextCodecFactoryInterface@Base 4:4.5.3
@@ -4679,7 +4641,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTS11QChildEvent@Base 4:4.5.3
  _ZTS11QDataStream@Base 4:4.5.3
  _ZTS11QFinalState@Base 4:4.6.1
- (optional=gccinternal)_ZTS11QMetaObject@Base 4:4.8.6
  _ZTS11QTextStream@Base 4:4.5.3
  _ZTS11QThreadPool@Base 4:4.5.3
  _ZTS11QTimerEvent@Base 4:4.5.3
@@ -4736,7 +4697,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTS24QXmlStreamEntityResolver@Base 4:4.5.3
  _ZTS25QAbstractItemModelPrivate@Base 4:4.5.3
  _ZTS25QSequentialAnimationGroup@Base 4:4.6.1
- (optional=gccinternal)_ZTS26QAbstractDynamicMetaObject@Base 4:4.8.6
  _ZTS26QAbstractFileEngineHandler@Base 4:4.5.3
  _ZTS26QAbstractTransitionPrivate@Base 4:4.6.1
  _ZTS26QTextCodecFactoryInterface@Base 4:4.5.3
@@ -4799,7 +4759,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTV16QEventTransition@Base 4:4.6.1
  _ZTV16QIODevicePrivate@Base 4:4.5.3
  _ZTV16QTextCodecPlugin@Base 4:4.5.3
- (optional=gccinternal)_ZTV17QFactoryInterface@Base 4:4.8.6
  _ZTV17QSignalTransition@Base 4:4.6.1
  _ZTV17QVariantAnimation@Base 4:4.6.1
  _ZTV18QAbstractAnimation@Base 4:4.6.1
@@ -4825,10 +4784,8 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZTV24QXmlStreamEntityResolver@Base 4:4.5.3
  _ZTV25QAbstractItemModelPrivate@Base 4:4.5.3
  _ZTV25QSequentialAnimationGroup@Base 4:4.6.1
- (optional=gccinternal)_ZTV26QAbstractDynamicMetaObject@Base 4:4.8.6
  _ZTV26QAbstractFileEngineHandler@Base 4:4.5.3
  _ZTV26QAbstractTransitionPrivate@Base 4:4.6.1
- (optional=gccinternal)_ZTV26QTextCodecFactoryInterface@Base 4:4.8.6
  _ZTV27QAbstractFileEngineIterator@Base 4:4.5.3
  _ZTV27QDynamicPropertyChangeEvent@Base 4:4.5.3
  _ZTV27QEventDispatcherGlibPrivate@Base 4:4.5.3

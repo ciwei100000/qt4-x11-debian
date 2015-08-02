@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.6 alpha amd64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 m68k mips mipsel powerpc ppc64 s390x sh4 sparc64
+# SymbolsHelper-Confirmed: 4:4.8.7 amd64
 libQtXml.so.4 libqt4-xml #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN10QDomEntityC1EP17QDomEntityPrivate@Base 4:4.5.3
@@ -96,8 +96,6 @@ libQtXml.so.4 libqt4-xml #MINVER#
  _ZN12QDomNotationaSERKS_@Base 4:4.5.3
  _ZN14QXmlAttributes5clearEv@Base 4:4.5.3
  _ZN14QXmlAttributes6appendERK7QStringS2_S2_S2_@Base 4:4.5.3
- (optional=gccinternal)_ZN14QXmlAttributes9AttributeD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN14QXmlAttributes9AttributeD2Ev@Base 4:4.8.6
  (optional=gccinternal|arch=sh4)_ZN15QBasicAtomicInt3refEv@Base 4:4.8.6
  (optional=gccinternal|arch=sh4)_ZN15QBasicAtomicInt5derefEv@Base 4:4.8.5
  _ZN15QXmlInputSource11fromRawDataERK10QByteArrayb@Base 4:4.5.3
@@ -254,7 +252,7 @@ libQtXml.so.4 libqt4-xml #MINVER#
  _ZN25QDomProcessingInstructionC2ERKS_@Base 4:4.5.3
  _ZN25QDomProcessingInstructionC2Ev@Base 4:4.5.3
  _ZN25QDomProcessingInstructionaSERKS_@Base 4:4.5.3
- (optional=gccinternal|arch=!amd64 !hppa !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !m68k !sparc64)_ZN7QString5clearEv@Base 4:4.8.6
+ (optional=gccinternal|arch=!hppa !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !m68k !sparc64)_ZN7QString5clearEv@Base 4:4.8.6
  _ZN8QDomAttr8setValueERK7QString@Base 4:4.5.3
  _ZN8QDomAttrC1EP15QDomAttrPrivate@Base 4:4.5.3
  _ZN8QDomAttrC1ERKS_@Base 4:4.5.3
@@ -455,18 +453,11 @@ libQtXml.so.4 libqt4-xml #MINVER#
  _ZTS18QXmlDefaultHandler@Base 4:4.5.3
  _ZTS18QXmlEntityResolver@Base 4:4.5.3
  _ZTS18QXmlLexicalHandler@Base 4:4.5.3
- (optional=gccinternal)_ZTV10QXmlReader@Base 4:4.8.6
  _ZTV11QXmlLocator@Base 4:4.5.3
  _ZTV14QXmlAttributes@Base 4:4.5.3
- (optional=gccinternal)_ZTV14QXmlDTDHandler@Base 4:4.8.6
- (optional=gccinternal)_ZTV15QXmlDeclHandler@Base 4:4.8.6
  _ZTV15QXmlInputSource@Base 4:4.5.3
- (optional=gccinternal)_ZTV16QXmlErrorHandler@Base 4:4.8.6
  _ZTV16QXmlSimpleReader@Base 4:4.5.3
- (optional=gccinternal)_ZTV18QXmlContentHandler@Base 4:4.8.6
  _ZTV18QXmlDefaultHandler@Base 4:4.5.3
- (optional=gccinternal)_ZTV18QXmlEntityResolver@Base 4:4.8.6
- (optional=gccinternal)_ZTV18QXmlLexicalHandler@Base 4:4.8.6
  _ZlsR11QTextStreamRK8QDomNode@Base 4:4.5.3
  (c++)"non-virtual thunk to QXmlDefaultHandler::attributeDecl(QString const&, QString const&, QString const&, QString const&, QString const&)@Base" 4:4.5.3
  (c++)"non-virtual thunk to QXmlDefaultHandler::comment(QString const&)@Base" 4:4.5.3

@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.6 hppa powerpc sh4
+# SymbolsHelper-Confirmed: 4:4.8.7 amd64
 libQtXmlPatterns.so.4 libqt4-xmlpatterns #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z5qHashRK15QSourceLocation@Base 4:4.5.3
@@ -40,9 +40,6 @@ libQtXmlPatterns.so.4 libqt4-xmlpatterns #MINVER#
  _ZN13QXmlFormatter9attributeERK8QXmlNameRK10QStringRef@Base 4:4.5.3
  _ZN13QXmlFormatterC1ERK9QXmlQueryP9QIODevice@Base 4:4.5.3
  _ZN13QXmlFormatterC2ERK9QXmlQueryP9QIODevice@Base 4:4.5.3
- (optional=gccinternal)_ZN13QXmlFormatterD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN13QXmlFormatterD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN13QXmlFormatterD2Ev@Base 4:4.8.6
  _ZN14QXmlSerializer10charactersERK10QStringRef@Base 4:4.5.3
  _ZN14QXmlSerializer10endElementEv@Base 4:4.5.3
  _ZN14QXmlSerializer11atomicValueERK8QVariant@Base 4:4.5.3
@@ -62,9 +59,6 @@ libQtXmlPatterns.so.4 libqt4-xmlpatterns #MINVER#
  _ZN14QXmlSerializerC1ERK9QXmlQueryP9QIODevice@Base 4:4.5.3
  _ZN14QXmlSerializerC2EP27QAbstractXmlReceiverPrivate@Base 4:4.5.3
  _ZN14QXmlSerializerC2ERK9QXmlQueryP9QIODevice@Base 4:4.5.3
- (optional=gccinternal)_ZN14QXmlSerializerD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN14QXmlSerializerD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN14QXmlSerializerD2Ev@Base 4:4.8.6
  (optional=gccinternal|arch=sh4 sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.8.5+git242
  (optional=gccinternal|arch=sh4 sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.8.5+git242
  _ZN15QSourceLocation6setUriERK4QUrl@Base 4:4.5.3

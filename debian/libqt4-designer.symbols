@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.6 alpha amd64 arm64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 m68k mips mips64el mipsel powerpc ppc64 ppc64el s390x sh4 sparc sparc64
+# SymbolsHelper-Confirmed: 4:4.8.7 amd64
 libQtDesigner.so.4 libqt4-designer #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z20domPropertyToVariantP20QAbstractFormBuilderPK11QMetaObjectPK11DomProperty@Base 4:4.5.3
@@ -328,9 +328,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN13QLayoutWidget5eventEP6QEvent@Base 4:4.5.3
  _ZN13QLayoutWidgetC1EP28QDesignerFormWindowInterfaceP7QWidget@Base 4:4.5.3
  _ZN13QLayoutWidgetC2EP28QDesignerFormWindowInterfaceP7QWidget@Base 4:4.5.3
- (optional=gccinternal)_ZN13QLayoutWidgetD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN13QLayoutWidgetD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN13QLayoutWidgetD2Ev@Base 4:4.8.6
  _ZN13QtResourceSet11setModifiedERK7QString@Base 4:4.5.3
  _ZN13QtResourceSet16activateQrcPathsERK11QStringListPiP7QString@Base 4:4.5.3
  _ZN13QtResourceSetC1EP15QtResourceModel@Base 4:4.5.3
@@ -378,9 +375,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN14QToolBoxHelper8helperOfEPK8QToolBox@Base 4:4.5.3
  _ZN14QToolBoxHelperC1EP8QToolBox@Base 4:4.5.3
  _ZN14QToolBoxHelperC2EP8QToolBox@Base 4:4.5.3
- (optional=gccinternal)_ZN14QToolBoxHelperD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN14QToolBoxHelperD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN14QToolBoxHelperD2Ev@Base 4:4.8.6
  _ZN14QtResourceView11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN14QtResourceView11qt_metacastEPKc@Base 4:4.5.3
  _ZN14QtResourceView14decodeMimeDataEPK9QMimeDataPNS_12ResourceTypeEP7QString@Base 4:4.5.3
@@ -504,9 +498,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN15QDesignerDialog16staticMetaObjectE@Base 4:4.5.3
  _ZN15QDesignerDialogC1EP28QDesignerFormWindowInterfaceP7QWidget@Base 4:4.5.3
  _ZN15QDesignerDialogC2EP28QDesignerFormWindowInterfaceP7QWidget@Base 4:4.5.3
- (optional=gccinternal)_ZN15QDesignerDialogD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN15QDesignerDialogD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN15QDesignerDialogD2Ev@Base 4:4.8.6
  _ZN15QDesignerWidget10paintEventEP11QPaintEvent@Base 4:4.5.3
  _ZN15QDesignerWidget11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN15QDesignerWidget11qt_metacastEPKc@Base 4:4.5.3
@@ -645,9 +636,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN17QExtensionFactory16staticMetaObjectE@Base 4:4.5.3
  _ZN17QExtensionFactoryC1EP17QExtensionManager@Base 4:4.5.3
  _ZN17QExtensionFactoryC2EP17QExtensionManager@Base 4:4.5.3
- (optional=gccinternal)_ZN17QExtensionFactoryD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN17QExtensionFactoryD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN17QExtensionFactoryD2Ev@Base 4:4.8.6
  _ZN17QExtensionManager11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN17QExtensionManager11qt_metacastEPKc@Base 4:4.5.3
  _ZN17QExtensionManager16staticMetaObjectE@Base 4:4.5.3
@@ -666,8 +654,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN17QFormBuilderExtra16CustomWidgetDataC1Ev@Base 4:4.6.1
  _ZN17QFormBuilderExtra16CustomWidgetDataC2EPK15DomCustomWidget@Base 4:4.6.1
  _ZN17QFormBuilderExtra16CustomWidgetDataC2Ev@Base 4:4.6.1
- (optional=gccinternal)_ZN17QFormBuilderExtra16CustomWidgetDataD1Ev@Base 4:4.8.1
- (optional=gccinternal)_ZN17QFormBuilderExtra16CustomWidgetDataD2Ev@Base 4:4.8.1
  _ZN17QFormBuilderExtra16boxLayoutStretchEPK10QBoxLayout@Base 4:4.5.3
  _ZN17QFormBuilderExtra16clearTextBuilderEv@Base 4:4.5.3
  _ZN17QFormBuilderExtra16formScriptRunnerEv@Base 4:4.5.3
@@ -703,8 +689,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN17QFormScriptRunner24QFormScriptRunnerPrivate16initializeEngineEP7QWidgetRK5QListIS2_ER13QScriptEngine@Base 4:4.5.3
  _ZN17QFormScriptRunner24QFormScriptRunnerPrivate3runERK7QStringP7QWidgetRK5QListIS5_EPS1_@Base 4:4.5.3
  _ZN17QFormScriptRunner3runEPK9DomWidgetRK7QStringP7QWidgetRK5QListIS7_EPS3_@Base 4:4.5.3
- (optional=gccinternal)_ZN17QFormScriptRunner5ErrorD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN17QFormScriptRunner5ErrorD2Ev@Base 4:4.8.6
  _ZN17QFormScriptRunnerC1Ev@Base 4:4.5.3
  _ZN17QFormScriptRunnerC2Ev@Base 4:4.5.3
  _ZN17QFormScriptRunnerD1Ev@Base 4:4.5.3
@@ -723,9 +707,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN18QDesignerQSettings8setValueERK7QStringRK8QVariant@Base 4:4.5.3
  _ZN18QDesignerQSettingsC1Ev@Base 4:4.5.3
  _ZN18QDesignerQSettingsC2Ev@Base 4:4.5.3
- (optional=gccinternal)_ZN18QDesignerQSettingsD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN18QDesignerQSettingsD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN18QDesignerQSettingsD2Ev@Base 4:4.8.6
  (optional=gcc47|arch=alpha armel mips mips64el mipsel powerpcspe sh4)_ZN18QStyleOptionButtonD1Ev@Base 4:4.8.1
  (optional=gcc47|arch=alpha armel mips mips64el mipsel powerpcspe sh4)_ZN18QStyleOptionButtonD2Ev@Base 4:4.8.1
  (optional=internal)_ZN18qdesigner_internal10CodeDialog10slotSaveAsEv@Base 4:4.5.3
@@ -783,9 +764,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal10ZoomWidget9setWidgetEP7QWidget6QFlagsIN2Qt10WindowTypeEE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal10ZoomWidgetC1EP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal10ZoomWidgetC2EP7QWidget@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal10ZoomWidgetD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal10ZoomWidgetD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal10ZoomWidgetD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal10isPromotedEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal11ActionModel11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal11ActionModel11qt_metacastEPKc@Base 4:4.5.3
@@ -802,9 +780,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal11ActionModel9addActionEP7QAction@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal11ActionModelC1EP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal11ActionModelC2EP7QWidget@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal11ActionModelD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal11ActionModelD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal11ActionModelD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal11OrderDialog11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal11OrderDialog11qt_metacastEPKc@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal11OrderDialog11setPageListERK5QListIP7QWidgetE@Base 4:4.5.3
@@ -870,9 +845,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal12FilterWidget5resetEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal12FilterWidgetC1EP7QWidgetNS0_10LayoutModeE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal12FilterWidgetC2EP7QWidgetNS0_10LayoutModeE@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal12FilterWidgetD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal12FilterWidgetD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal12FilterWidgetD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal12HintLineEdit11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal12HintLineEdit11qt_metacastEPKc@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal12HintLineEdit12focusInEventEP11QFocusEvent@Base 4:4.5.3
@@ -881,9 +853,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal12HintLineEdit16staticMetaObjectE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal12HintLineEditC1EP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal12HintLineEditC2EP7QWidget@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal12HintLineEditD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal12HintLineEditD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal12HintLineEditD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal12IconSelector11checkPixmapERK7QStringNS0_9CheckModeEPS1_@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal12IconSelector11iconChangedERKNS_22PropertySheetIconValueE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal12IconSelector11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -925,9 +894,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal12ScriptDialog16staticMetaObjectE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal12ScriptDialogC1EP27QDesignerDialogGuiInterfaceP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal12ScriptDialogC2EP27QDesignerDialogGuiInterfaceP7QWidget@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal12ScriptDialogD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal12ScriptDialogD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal12ScriptDialogD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal12demoteWidgetEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal13DeviceProfile10fromSystemEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal13DeviceProfile13setFontFamilyERK7QString@Base 4:4.5.3
@@ -981,17 +947,11 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal13ScriptCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal13ScriptCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal13ScriptCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal13ScriptCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal13ScriptCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal13ScriptCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal13SheetDelegate11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal13SheetDelegate11qt_metacastEPKc@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal13SheetDelegate16staticMetaObjectE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal13SheetDelegateC1EP9QTreeViewP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal13SheetDelegateC2EP9QTreeViewP7QWidget@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal13SheetDelegateD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal13SheetDelegateD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal13SheetDelegateD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal13UpdateBlockerC1EP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal13UpdateBlockerC2EP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal13UpdateBlockerD1Ev@Base 4:4.5.3
@@ -1016,8 +976,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal13WidgetFactory35disableStyleCustomPaintingPropertyCE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal13WidgetFactory7StringsC1Ev@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal13WidgetFactory7StringsC2Ev@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal13WidgetFactory7StringsD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal13WidgetFactory7StringsD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal13WidgetFactory8getStyleERK7QString@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal13WidgetFactoryC1EP28QDesignerFormEditorInterfaceP7QObject@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal13WidgetFactoryC2EP28QDesignerFormEditorInterfaceP7QObject@Base 4:4.5.3
@@ -1086,9 +1044,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal14CssHighlighter9highlightERK7QStringiii@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal14CssHighlighterC1EP13QTextDocument@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal14CssHighlighterC2EP13QTextDocument@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal14CssHighlighterD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal14CssHighlighterD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal14CssHighlighterD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal14FormLayoutMenu10slotAddRowEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal14FormLayoutMenu11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal14FormLayoutMenu11qt_metacastEPKc@Base 4:4.5.3
@@ -1097,9 +1052,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal14FormLayoutMenu8populateEP7QWidgetP28QDesignerFormWindowInterfaceR5QListIP7QActionE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal14FormLayoutMenuC1EP7QObject@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal14FormLayoutMenuC2EP7QObject@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal14FormLayoutMenuD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal14FormLayoutMenuD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal14FormLayoutMenuD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal14FormWindowBase11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal14FormWindowBase11qt_metacastEPKc@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal14FormWindowBase11setFeaturesE6QFlagsIN28QDesignerFormWindowInterface11FeatureFlagEE@Base 4:4.5.3
@@ -1229,9 +1181,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal15InvisibleWidget16staticMetaObjectE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal15InvisibleWidgetC1EP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal15InvisibleWidgetC2EP7QWidget@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal15InvisibleWidgetD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal15InvisibleWidgetD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal15InvisibleWidgetD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal15QSimpleResource10nameToIconERK7QStringS3_@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal15QSimpleResource10setupBrushEP8DomBrush@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal15QSimpleResource12createScriptERK7QStringNS0_12ScriptSourceE@Base 4:4.5.3
@@ -1260,15 +1209,9 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal15TabOrderCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal15TabOrderCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal15TabOrderCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal15TabOrderCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal15TabOrderCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal15TabOrderCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal15ZoomProxyWidget10itemChangeEN13QGraphicsItem18GraphicsItemChangeERK8QVariant@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal15ZoomProxyWidgetC1EP13QGraphicsItem6QFlagsIN2Qt10WindowTypeEE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal15ZoomProxyWidgetC2EP13QGraphicsItem6QFlagsIN2Qt10WindowTypeEE@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal15ZoomProxyWidgetD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal15ZoomProxyWidgetD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal15ZoomProxyWidgetD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal15designerWarningERK7QString@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal15promotedExtendsEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal16AddActionCommand4initEP7QAction@Base 4:4.5.3
@@ -1276,9 +1219,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal16AddActionCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal16AddActionCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal16AddActionCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal16AddActionCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal16AddActionCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal16AddActionCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal16DesignerMetaEnumC1ERK7QStringS3_S3_@Base 4:4.5.3
  (optional=gccinternal|arch=sparc)_ZN18qdesigner_internal16DesignerMetaEnumC1ERKS0_@Base 4:4.8.6
  (optional=internal)_ZN18qdesigner_internal16DesignerMetaEnumC2ERK7QStringS3_S3_@Base 4:4.5.3
@@ -1290,8 +1230,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal16LayoutProperties5clearEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal16LayoutPropertiesC1Ev@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal16LayoutPropertiesC2Ev@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal16LayoutPropertiesD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal16LayoutPropertiesD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal16MetaDataBaseItem10setEnabledEb@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal16MetaDataBaseItem11setTabOrderERK5QListIP7QWidgetE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal16MetaDataBaseItem12setFakeSlotsERK11QStringList@Base 4:4.5.3
@@ -1330,9 +1268,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal16StyleSheetEditor16staticMetaObjectE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal16StyleSheetEditorC1EP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal16StyleSheetEditorC2EP7QWidget@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal16StyleSheetEditorD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal16StyleSheetEditorD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal16StyleSheetEditorD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal16TabWidgetCommand10removePageEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal16TabWidgetCommand4initEP10QTabWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal16TabWidgetCommand7addPageEv@Base 4:4.5.3
@@ -1356,9 +1291,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal17AddToolBarCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal17AddToolBarCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal17AddToolBarCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal17AddToolBarCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal17AddToolBarCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal17AddToolBarCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal17DesignerIconCache11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal17DesignerIconCache11qt_metacastEPKc@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal17DesignerIconCache16staticMetaObjectE@Base 4:4.5.3
@@ -1366,9 +1298,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal17DesignerIconCache8reloadedEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal17DesignerIconCacheC1EPNS_19DesignerPixmapCacheEP7QObject@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal17DesignerIconCacheC2EPNS_19DesignerPixmapCacheEP7QObject@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal17DesignerIconCacheD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal17DesignerIconCacheD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal17DesignerIconCacheD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal17DesignerMetaFlagsC1ERK7QStringS3_S3_@Base 4:4.5.3
  (optional=gccinternal|arch=sparc)_ZN18qdesigner_internal17DesignerMetaFlagsC1ERKS0_@Base 4:4.8.6
  (optional=internal)_ZN18qdesigner_internal17DesignerMetaFlagsC2ERK7QStringS3_S3_@Base 4:4.5.3
@@ -1386,9 +1315,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal17MenuActionCommand4initEP7QActionS2_P7QWidgetS4_@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal17MenuActionCommandC1ERK7QStringP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal17MenuActionCommandC2ERK7QStringP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal17MenuActionCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal17MenuActionCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal17MenuActionCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal17PromotionTaskMenu10addActionsEP28QDesignerFormWindowInterfacejP5QMenu@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal17PromotionTaskMenu10addActionsEP28QDesignerFormWindowInterfacejR5QListIP7QActionE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal17PromotionTaskMenu10addActionsEjP5QMenu@Base 4:4.5.3
@@ -1411,9 +1337,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal17PromotionTaskMenu9setWidgetEP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal17PromotionTaskMenuC1EP7QWidgetNS0_4ModeEP7QObject@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal17PromotionTaskMenuC2EP7QWidgetNS0_4ModeEP7QObject@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal17PromotionTaskMenuD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal17PromotionTaskMenuD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal17PromotionTaskMenuD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal17QDesignerMimeData11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal17QDesignerMimeData11qt_metacastEPKc@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal17QDesignerMimeData16staticMetaObjectE@Base 4:4.5.3
@@ -1457,9 +1380,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal17ScriptErrorDialog16staticMetaObjectE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal17ScriptErrorDialogC1ERK5QListIN17QFormScriptRunner5ErrorEEP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal17ScriptErrorDialogC2ERK5QListIN17QFormScriptRunner5ErrorEEP7QWidget@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal17ScriptErrorDialogD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal17ScriptErrorDialogD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal17ScriptErrorDialogD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal18BreakLayoutCommand4initERK5QListIP7QWidgetES3_b@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18BreakLayoutCommand4redoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18BreakLayoutCommand4undoEv@Base 4:4.5.3
@@ -1471,9 +1391,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal18LowerWidgetCommand4initEP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18LowerWidgetCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18LowerWidgetCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal18LowerWidgetCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal18LowerWidgetCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal18LowerWidgetCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal18MorphLayoutCommand17formatDescriptionEP28QDesignerFormEditorInterfacePK7QWidgetii@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18MorphLayoutCommand4initEP7QWidgeti@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18MorphLayoutCommand4redoEv@Base 4:4.5.3
@@ -1499,9 +1416,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal18QDesignerPromotion27setPromotedClassIncludeFileERK7QStringS3_PS1_@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18QDesignerPromotionC1EP28QDesignerFormEditorInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18QDesignerPromotionC2EP28QDesignerFormEditorInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal18QDesignerPromotionD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal18QDesignerPromotionD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal18QDesignerPromotionD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal18QDesignerWidgetBox10findWidgetEPK27QDesignerWidgetBoxInterfaceRK7QStringS6_PNS1_6WidgetE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18QDesignerWidgetBox11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18QDesignerWidgetBox11qt_metacastEPKc@Base 4:4.5.3
@@ -1517,9 +1431,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal18RaiseWidgetCommand4initEP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18RaiseWidgetCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18RaiseWidgetCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal18RaiseWidgetCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal18RaiseWidgetCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal18RaiseWidgetCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal18SetPropertyCommand10mergeValueERK8QVariant@Base 4:4.7.0~beta1
  (optional=internal)_ZN18qdesigner_internal18SetPropertyCommand14setDescriptionEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18SetPropertyCommand15subPropertyMaskERK8QVariantP7QObject@Base 4:4.5.3
@@ -1529,9 +1440,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal18SetPropertyCommand9mergeWithEPK12QUndoCommand@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18SetPropertyCommandC1EP28QDesignerFormWindowInterfaceP12QUndoCommand@Base 4:4.7.0~beta1
  (optional=internal)_ZN18qdesigner_internal18SetPropertyCommandC2EP28QDesignerFormWindowInterfaceP12QUndoCommand@Base 4:4.7.0~beta1
- (optional=internal)_ZN18qdesigner_internal18SetPropertyCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal18SetPropertyCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal18SetPropertyCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal18TextPropertyEditor11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18TextPropertyEditor11qt_metacastEPKc@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18TextPropertyEditor11resizeEventEP12QResizeEvent@Base 4:4.5.3
@@ -1554,9 +1462,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal18TextPropertyEditor9selectAllEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18TextPropertyEditorC1EP7QWidgetNS0_13EmbeddingModeENS_26TextPropertyValidationModeE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18TextPropertyEditorC2EP7QWidgetNS0_13EmbeddingModeENS_26TextPropertyValidationModeE@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal18TextPropertyEditorD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal18TextPropertyEditorD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal18TextPropertyEditorD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal18ToolBarEventFilter10handleAreaEPK8QToolBar@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18ToolBarEventFilter11eventFilterEP7QObjectP6QEvent@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18ToolBarEventFilter11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -1584,19 +1489,12 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal18ToolBarEventFilter9startDragERK6QPoint6QFlagsIN2Qt16KeyboardModifierEE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18ToolBarEventFilterC1EP8QToolBar@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18ToolBarEventFilterC2EP8QToolBar@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal18ToolBarEventFilterD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal18ToolBarEventFilterD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal18ToolBarEventFilterD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal18TreeWidgetContents12ItemContentsC1EPK15QTreeWidgetItemb@Base 4:4.5.3
  (arch=powerpcspe)_ZN18qdesigner_internal18TreeWidgetContents12ItemContentsC1ERKS1_@Base 4:4.8.5+git209
  (optional=internal)_ZN18qdesigner_internal18TreeWidgetContents12ItemContentsC2EPK15QTreeWidgetItemb@Base 4:4.5.3
  (arch=powerpcspe)_ZN18qdesigner_internal18TreeWidgetContents12ItemContentsC2ERKS1_@Base 4:4.8.5+git209
- (optional=internal)_ZN18qdesigner_internal18TreeWidgetContents12ItemContentsD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal18TreeWidgetContents12ItemContentsD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal18TreeWidgetContents14fromTreeWidgetEPK11QTreeWidgetb@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18TreeWidgetContents5clearEv@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal18TreeWidgetContentsD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal18TreeWidgetContentsD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal18WidgetDataBaseItem10setExtendsERK7QString@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18WidgetDataBaseItem10setToolTipERK7QString@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18WidgetDataBaseItem11setPromotedEb@Base 4:4.5.3
@@ -1616,9 +1514,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal18WidgetDataBaseItem9setCustomEb@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18WidgetDataBaseItemC1ERK7QStringS3_@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18WidgetDataBaseItemC2ERK7QStringS3_@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal18WidgetDataBaseItemD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal18WidgetDataBaseItemD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal18WidgetDataBaseItemD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal19ChangeZOrderCommand4initEP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19ChangeZOrderCommand4redoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19ChangeZOrderCommand4undoEv@Base 4:4.5.3
@@ -1642,9 +1537,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal19DesignerPixmapCache8reloadedEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19DesignerPixmapCacheC1EP7QObject@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19DesignerPixmapCacheC2EP7QObject@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal19DesignerPixmapCacheD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal19DesignerPixmapCacheD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal19DesignerPixmapCacheD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal19InsertWidgetCommand18refreshBuddyLabelsEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19InsertWidgetCommand4initEP7QWidgetbii@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19InsertWidgetCommand4redoEv@Base 4:4.5.3
@@ -1660,8 +1552,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal19PropertyListCommand19PropertyDescriptionC1Ev@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19PropertyListCommand19PropertyDescriptionC2ERK7QStringP31QDesignerPropertySheetExtensioni@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19PropertyListCommand19PropertyDescriptionC2Ev@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal19PropertyListCommand19PropertyDescriptionD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal19PropertyListCommand19PropertyDescriptionD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal19PropertyListCommand19restoreDefaultValueEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19PropertyListCommand3addEP7QObjectRK7QString@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19PropertyListCommand4undoEv@Base 4:4.5.3
@@ -1670,9 +1560,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal19PropertyListCommand8setValueE8QVariantbj@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19PropertyListCommandC1EP28QDesignerFormWindowInterfaceP12QUndoCommand@Base 4:4.7.0~beta1
  (optional=internal)_ZN18qdesigner_internal19PropertyListCommandC2EP28QDesignerFormWindowInterfaceP12QUndoCommand@Base 4:4.7.0~beta1
- (optional=internal)_ZN18qdesigner_internal19PropertyListCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal19PropertyListCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal19PropertyListCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal19QDesignerWidgetItem11eventFilterEP7QObjectP6QEvent@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19QDesignerWidgetItem11isContainerEPK28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19QDesignerWidgetItem11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -1687,17 +1574,11 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal19QDesignerWidgetItem9deinstallEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19QDesignerWidgetItemC1EPK7QLayoutP7QWidget6QFlagsIN2Qt11OrientationEE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19QDesignerWidgetItemC2EPK7QLayoutP7QWidget6QFlagsIN2Qt11OrientationEE@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal19QDesignerWidgetItemD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal19QDesignerWidgetItemD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal19QDesignerWidgetItemD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal19RemoveActionCommand4initEP7QAction@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19RemoveActionCommand4redoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19RemoveActionCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19RemoveActionCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19RemoveActionCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal19RemoveActionCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal19RemoveActionCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal19RemoveActionCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal19TableWidgetContents15fromTableWidgetEPK12QTableWidgetb@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19TableWidgetContents16insertHeaderItemEPK16QTableWidgetItemiPNS_12ListContentsEb@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19TableWidgetContents17defaultHeaderTextEi@Base 4:4.5.3
@@ -1705,8 +1586,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal19TableWidgetContents8nonEmptyEPK16QTableWidgetItemi@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19TableWidgetContentsC1Ev@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19TableWidgetContentsC2Ev@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal19TableWidgetContentsD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal19TableWidgetContentsD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal19formLayoutAddWidgetEP11QFormLayoutP7QWidgetRK5QRectb@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19preferredEditActionEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal19promotionCandidatesEPK32QDesignerWidgetDataBaseInterfaceRK7QString@Base 4:4.5.3
@@ -1715,52 +1594,32 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal20AddConnectionCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20AddConnectionCommandC1EPNS_14ConnectionEditEPNS_10ConnectionE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20AddConnectionCommandC2EPNS_14ConnectionEditEPNS_10ConnectionE@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal20AddConnectionCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal20AddConnectionCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal20AddConnectionCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal20AddDockWidgetCommand4initEP11QMainWindow@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20AddDockWidgetCommand4initEP11QMainWindowP11QDockWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20AddDockWidgetCommand4redoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20AddDockWidgetCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20AddDockWidgetCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20AddDockWidgetCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal20AddDockWidgetCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal20AddDockWidgetCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal20AddDockWidgetCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal20AddMenuActionCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20AddMenuActionCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal20AddMenuActionCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal20AddMenuActionCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal20AddMenuActionCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal20CreateMenuBarCommand4initEP11QMainWindow@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20CreateMenuBarCommand4redoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20CreateMenuBarCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20CreateMenuBarCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20CreateMenuBarCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal20CreateMenuBarCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal20CreateMenuBarCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal20CreateMenuBarCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal20CreateSubmenuCommand4initEP13QDesignerMenuP7QActionP7QObject@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20CreateSubmenuCommand4redoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20CreateSubmenuCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20CreateSubmenuCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20CreateSubmenuCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal20CreateSubmenuCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal20CreateSubmenuCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal20CreateSubmenuCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal20CursorSelectionState4saveEPK28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20CursorSelectionStateC1Ev@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20CursorSelectionStateC2Ev@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal20CursorSelectionStateD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal20CursorSelectionStateD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal20DeleteMenuBarCommand4initEP8QMenuBar@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20DeleteMenuBarCommand4redoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20DeleteMenuBarCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20DeleteMenuBarCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20DeleteMenuBarCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal20DeleteMenuBarCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal20DeleteMenuBarCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal20DeleteMenuBarCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal20DeleteTabPageCommand4initEP10QTabWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20DeleteTabPageCommand4redoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20DeleteTabPageCommand4undoEv@Base 4:4.5.3
@@ -1774,9 +1633,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal20DeleteToolBarCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20DeleteToolBarCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20DeleteToolBarCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal20DeleteToolBarCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal20DeleteToolBarCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal20DeleteToolBarCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal20FormBuilderClipboardC1EP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20FormBuilderClipboardC2EP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20PreviewConfiguration12fromSettingsERK7QStringPK26QDesignerSettingsInterface@Base 4:4.5.3
@@ -1814,9 +1670,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal20QDesignerFormBuilder9createDomEP7QWidgetP9DomWidgetb@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20QDesignerFormBuilderC1EP28QDesignerFormEditorInterfaceNS0_4ModeERKNS_13DeviceProfileE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20QDesignerFormBuilderC2EP28QDesignerFormEditorInterfaceNS0_4ModeERKNS_13DeviceProfileE@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal20QDesignerFormBuilderD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal20QDesignerFormBuilderD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal20QDesignerFormBuilderD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal20QDesignerIntegration10initializeEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20QDesignerIntegration11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20QDesignerIntegration11qt_metacastEPKc@Base 4:4.5.3
@@ -1859,9 +1712,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal20ResetPropertyCommand4redoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20ResetPropertyCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20ResetPropertyCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal20ResetPropertyCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal20ResetPropertyCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal20ResetPropertyCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal20RichTextEditorDialog10showDialogEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20RichTextEditorDialog11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal20RichTextEditorDialog11qt_metacastEPKc@Base 4:4.5.3
@@ -1910,9 +1760,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal21ReparentWidgetCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal21ReparentWidgetCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal21ReparentWidgetCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal21ReparentWidgetCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal21ReparentWidgetCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal21ReparentWidgetCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal21SimplifyLayoutCommand11canSimplifyEP28QDesignerFormEditorInterfacePK7QWidgetPi@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal21SimplifyLayoutCommand4initEP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal21SimplifyLayoutCommand4redoEv@Base 4:4.5.3
@@ -1927,9 +1774,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal22ActionInsertionCommand4initEP7QWidgetP7QActionS4_b@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal22ActionInsertionCommandC1ERK7QStringP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal22ActionInsertionCommandC2ERK7QStringP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal22ActionInsertionCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal22ActionInsertionCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal22ActionInsertionCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal22ContainerWidgetCommand10removePageEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal22ContainerWidgetCommand4initEP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal22ContainerWidgetCommand7addPageEv@Base 4:4.5.3
@@ -1943,17 +1787,11 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal22CreateStatusBarCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal22CreateStatusBarCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal22CreateStatusBarCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal22CreateStatusBarCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal22CreateStatusBarCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal22CreateStatusBarCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal22DeleteStatusBarCommand4initEP10QStatusBar@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal22DeleteStatusBarCommand4redoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal22DeleteStatusBarCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal22DeleteStatusBarCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal22DeleteStatusBarCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal22DeleteStatusBarCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal22DeleteStatusBarCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal22DeleteStatusBarCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal22LanguageResourceDialog11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal22LanguageResourceDialog11qt_metacastEPKc@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal22LanguageResourceDialog14setCurrentPathERK7QString@Base 4:4.5.3
@@ -2029,14 +1867,8 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal23AdjustWidgetSizeCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal23AdjustWidgetSizeCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal23AdjustWidgetSizeCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal23AdjustWidgetSizeCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal23AdjustWidgetSizeCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal23AdjustWidgetSizeCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal23InsertActionIntoCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal23InsertActionIntoCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal23InsertActionIntoCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal23InsertActionIntoCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal23InsertActionIntoCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal23QDesignerPropertyEditor11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal23QDesignerPropertyEditor11qt_metacastEPKc@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal23QDesignerPropertyEditor12editorClosedEv@Base 4:4.5.3
@@ -2071,14 +1903,8 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal23QDesignerSharedSettingsC2EP28QDesignerFormEditorInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal23RemoveActionFromCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal23RemoveActionFromCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal23RemoveActionFromCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal23RemoveActionFromCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal23RemoveActionFromCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal23RemoveMenuActionCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal23RemoveMenuActionCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal23RemoveMenuActionCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal23RemoveMenuActionCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal23RemoveMenuActionCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal23promotedCustomClassNameEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal24ActionRepositoryMimeData11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal24ActionRepositoryMimeData11qt_metacastEPKc@Base 4:4.5.3
@@ -2088,9 +1914,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal24ActionRepositoryMimeDataC1ERK5QListIP7QActionEN2Qt10DropActionE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal24ActionRepositoryMimeDataC2EP7QActionN2Qt10DropActionE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal24ActionRepositoryMimeDataC2ERK5QListIP7QActionEN2Qt10DropActionE@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal24ActionRepositoryMimeDataD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal24ActionRepositoryMimeDataD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal24ActionRepositoryMimeDataD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal24ChangeCurrentPageCommand4initEP7QWidgeti@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal24ChangeCurrentPageCommand4redoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal24ChangeCurrentPageCommand4undoEv@Base 4:4.5.3
@@ -2105,16 +1928,10 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal24ChangeLayoutItemGeometry4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal24ChangeLayoutItemGeometryC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal24ChangeLayoutItemGeometryC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal24ChangeLayoutItemGeometryD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal24ChangeLayoutItemGeometryD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal24ChangeLayoutItemGeometryD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal24DeleteConnectionsCommand4redoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal24DeleteConnectionsCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal24DeleteConnectionsCommandC1EPNS_14ConnectionEditERK5QListIPNS_10ConnectionEE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal24DeleteConnectionsCommandC2EPNS_14ConnectionEditERK5QListIPNS_10ConnectionEE@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal24DeleteConnectionsCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal24DeleteConnectionsCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal24DeleteConnectionsCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal24DeleteToolBoxPageCommand4initEP8QToolBox@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal24DeleteToolBoxPageCommand4redoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal24DeleteToolBoxPageCommand4undoEv@Base 4:4.5.3
@@ -2134,9 +1951,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal24NewFormWidgetFormBuilder19createCustomWidgetsEP16DomCustomWidgets@Base 4:4.6.1
  (optional=internal)_ZN18qdesigner_internal24NewFormWidgetFormBuilderC1EP28QDesignerFormEditorInterfaceNS_20QDesignerFormBuilder4ModeERKNS_13DeviceProfileE@Base 4:4.6.1
  (optional=internal)_ZN18qdesigner_internal24NewFormWidgetFormBuilderC2EP28QDesignerFormEditorInterfaceNS_20QDesignerFormBuilder4ModeERKNS_13DeviceProfileE@Base 4:4.6.1
- (optional=internal)_ZN18qdesigner_internal24NewFormWidgetFormBuilderD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal24NewFormWidgetFormBuilderD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal24NewFormWidgetFormBuilderD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal24PropertySheetPixmapValue15getPixmapSourceEP28QDesignerFormEditorInterfaceRK7QString@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal24PropertySheetPixmapValue7setPathERK7QString@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal24PropertySheetPixmapValueC1ERK7QString@Base 4:4.5.3
@@ -2153,8 +1967,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal|arch=armel powerpcspe)_ZN18qdesigner_internal24PropertySheetStringValueC1ERKS0_@Base 4:4.8.1
  (optional=internal)_ZN18qdesigner_internal24PropertySheetStringValueC2ERK7QStringbS3_S3_@Base 4:4.5.3
  (optional=internal|arch=armel powerpcspe)_ZN18qdesigner_internal24PropertySheetStringValueC2ERKS0_@Base 4:4.8.1
- (optional=internal)_ZN18qdesigner_internal24PropertySheetStringValueD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal24PropertySheetStringValueD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal24QDesignerObjectInspector11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal24QDesignerObjectInspector11qt_metacastEPKc@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal24QDesignerObjectInspector16staticMetaObjectE@Base 4:4.5.3
@@ -2170,26 +1982,17 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal25AddDynamicPropertyCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal25AddDynamicPropertyCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal25AddDynamicPropertyCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal25AddDynamicPropertyCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal25AddDynamicPropertyCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal25AddDynamicPropertyCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal25ChangeListContentsCommand4initEP11QListWidgetRKNS_12ListContentsES5_@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal25ChangeListContentsCommand4initEP9QComboBoxRKNS_12ListContentsES5_@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal25ChangeListContentsCommand4redoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal25ChangeListContentsCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal25ChangeListContentsCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal25ChangeListContentsCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal25ChangeListContentsCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal25ChangeListContentsCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal25ChangeListContentsCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal25ChangeTreeContentsCommand4initEP11QTreeWidgetRKNS_18TreeWidgetContentsES5_@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal25ChangeTreeContentsCommand4redoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal25ChangeTreeContentsCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal25ChangeTreeContentsCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal25ChangeTreeContentsCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal25ChangeTreeContentsCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal25ChangeTreeContentsCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal25ChangeTreeContentsCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal25ManageWidgetCommandHelper4initEP7QWidgetRK7QVectorIS2_E@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal25ManageWidgetCommandHelper4initEPK28QDesignerFormWindowInterfaceP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal25ManageWidgetCommandHelper6manageEP28QDesignerFormWindowInterface@Base 4:4.5.3
@@ -2203,9 +2006,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal26ChangeTableContentsCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal26ChangeTableContentsCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal26ChangeTableContentsCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal26ChangeTableContentsCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal26ChangeTableContentsCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal26ChangeTableContentsCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal26PreviewConfigurationWidget11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal26PreviewConfigurationWidget11qt_metacastEPKc@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal26PreviewConfigurationWidget15slotSkinChangedEi@Base 4:4.5.3
@@ -2229,9 +2029,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal26PreviewConfigurationWidgetD2Ev@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal26QDesignerFormEditorCommandC1ERK7QStringP28QDesignerFormEditorInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal26QDesignerFormEditorCommandC2ERK7QStringP28QDesignerFormEditorInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal26QDesignerFormEditorCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal26QDesignerFormEditorCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal26QDesignerFormEditorCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal26QDesignerFormWindowCommand11cheapUpdateEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal26QDesignerFormWindowCommand13updateBuddiesEP28QDesignerFormWindowInterfaceRK7QStringS5_@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal26QDesignerFormWindowCommand21selectUnmanagedObjectEP7QObject@Base 4:4.5.3
@@ -2239,9 +2036,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal26QDesignerFormWindowCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal26QDesignerFormWindowCommandC1ERK7QStringP28QDesignerFormWindowInterfaceP12QUndoCommand@Base 4:4.7.0~beta1
  (optional=internal)_ZN18qdesigner_internal26QDesignerFormWindowCommandC2ERK7QStringP28QDesignerFormWindowInterfaceP12QUndoCommand@Base 4:4.7.0~beta1
- (optional=internal)_ZN18qdesigner_internal26QDesignerFormWindowCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal26QDesignerFormWindowCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal26QDesignerFormWindowCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal26QDesignerFormWindowManager11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal26QDesignerFormWindowManager11qt_metacastEPKc@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal26QDesignerFormWindowManager12aboutPluginsEv@Base 4:4.5.3
@@ -2267,9 +2061,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal28PromoteToCustomWidgetCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal28PromoteToCustomWidgetCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal28PromoteToCustomWidgetCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal28PromoteToCustomWidgetCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal28PromoteToCustomWidgetCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal28PromoteToCustomWidgetCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal28QDesignerWidgetItemInstaller15m_instanceCountE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal28QDesignerWidgetItemInstallerC1Ev@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal28QDesignerWidgetItemInstallerC2Ev@Base 4:4.5.3
@@ -2281,9 +2072,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal28RemoveDynamicPropertyCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal28RemoveDynamicPropertyCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal28RemoveDynamicPropertyCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal28RemoveDynamicPropertyCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal28RemoveDynamicPropertyCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal28RemoveDynamicPropertyCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal29AddContainerWidgetPageCommand4initEP7QWidgetNS_13ContainerTypeENS0_13InsertionModeE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal29AddContainerWidgetPageCommand4redoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal29AddContainerWidgetPageCommand4undoEv@Base 4:4.5.3
@@ -2297,9 +2085,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal29DemoteFromCustomWidgetCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal29DemoteFromCustomWidgetCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal29DemoteFromCustomWidgetCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal29DemoteFromCustomWidgetCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal29DemoteFromCustomWidgetCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal29DemoteFromCustomWidgetCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal29PropertySheetKeySequenceValue10setCommentERK7QString@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal29PropertySheetKeySequenceValue14setStandardKeyERKN12QKeySequence11StandardKeyE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal29PropertySheetKeySequenceValue15setTranslatableEb@Base 4:4.5.3
@@ -2311,9 +2096,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal29PropertySheetKeySequenceValueC2ERK12QKeySequencebRK7QStringS6_@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal29PropertySheetKeySequenceValueC2ERKN12QKeySequence11StandardKeyEbRK7QStringS7_@Base 4:4.5.3
  (optional=internal|arch=armel powerpcspe)_ZN18qdesigner_internal29PropertySheetKeySequenceValueC2ERKS0_@Base 4:4.8.1
- (optional=internal)_ZN18qdesigner_internal29PropertySheetKeySequenceValueD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal29PropertySheetKeySequenceValueD2Ev@Base 4:4.7.4
- (optional=internal|arch=alpha amd64 arm64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 m68k mips mips64el mipsel powerpc ppc64 ppc64el s390x sh4 sparc64)_ZN18qdesigner_internal29PropertySheetKeySequenceValueaSERKS0_@Base 4:4.8.4
  (optional=internal)_ZN18qdesigner_internal30DeleteStackedWidgetPageCommand4initEP14QStackedWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal30DeleteStackedWidgetPageCommand4redoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal30DeleteStackedWidgetPageCommand4undoEv@Base 4:4.5.3
@@ -2328,9 +2110,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal30StyleSheetPropertyEditorDialog16staticMetaObjectE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal30StyleSheetPropertyEditorDialogC1EP7QWidgetP28QDesignerFormWindowInterfaceS2_@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal30StyleSheetPropertyEditorDialogC2EP7QWidgetP28QDesignerFormWindowInterfaceS2_@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal30StyleSheetPropertyEditorDialogD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal30StyleSheetPropertyEditorDialogD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal30StyleSheetPropertyEditorDialogD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal31ChangeFormLayoutItemRoleCommand11doOperationENS0_9OperationE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal31ChangeFormLayoutItemRoleCommand16reverseOperationENS0_9OperationE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal31ChangeFormLayoutItemRoleCommand18possibleOperationsEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
@@ -2340,9 +2119,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal31ChangeFormLayoutItemRoleCommand4undoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal31ChangeFormLayoutItemRoleCommandC1EP28QDesignerFormWindowInterface@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal31ChangeFormLayoutItemRoleCommandC2EP28QDesignerFormWindowInterface@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal31ChangeFormLayoutItemRoleCommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal31ChangeFormLayoutItemRoleCommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal31ChangeFormLayoutItemRoleCommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal32DeleteContainerWidgetPageCommand4initEP7QWidgetNS_13ContainerTypeE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal32DeleteContainerWidgetPageCommand4redoEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal32DeleteContainerWidgetPageCommand4undoEv@Base 4:4.5.3
@@ -2390,9 +2166,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal8ZoomMenu7setZoomEi@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal8ZoomMenuC1EP7QObject@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal8ZoomMenuC2EP7QObject@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal8ZoomMenuD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal8ZoomMenuD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal8ZoomMenuD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal8ZoomView11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal8ZoomView11qt_metacastEPKc@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal8ZoomView14scrollToOriginEv@Base 4:4.5.3
@@ -2406,12 +2179,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal8ZoomView9applyZoomEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal8ZoomViewC1EP7QWidget@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal8ZoomViewC2EP7QWidget@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal8ZoomViewD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal8ZoomViewD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal8ZoomViewD2Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal9CECommandD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal9CECommandD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal9CECommandD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal9DialogGui15getOpenFileNameEP7QWidgetRK7QStringS5_S5_PS3_6QFlagsIN11QFileDialog6OptionEE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal9DialogGui15getSaveFileNameEP7QWidgetRK7QStringS5_S5_PS3_6QFlagsIN11QFileDialog6OptionEE@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal9DialogGui16getOpenFileNamesEP7QWidgetRK7QStringS5_S5_PS3_6QFlagsIN11QFileDialog6OptionEE@Base 4:4.5.3
@@ -2451,12 +2218,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal9MorphMenu9slotMorphERK7QString@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal9MorphMenuC1EP7QObject@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal9MorphMenuC2EP7QObject@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal9MorphMenuD0Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal9MorphMenuD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal9MorphMenuD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal9Selection5clearEv@Base 4:4.5.3
- (optional=internal)_ZN18qdesigner_internal9SelectionD1Ev@Base 4:4.7.4
- (optional=internal)_ZN18qdesigner_internal9SelectionD2Ev@Base 4:4.7.4
  (optional=internal)_ZN18qdesigner_internal9emptyIconEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internaleqERKNS_20PreviewConfigurationES2_@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internallsE6QDebugRKNS_22PropertySheetIconValueE@Base 4:4.8.0
@@ -2475,8 +2237,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN19QFormBuilderStrings8instanceEv@Base 4:4.5.3
  _ZN19QFormBuilderStringsC1Ev@Base 4:4.5.3
  _ZN19QFormBuilderStringsC2Ev@Base 4:4.5.3
- (optional=gccinternal)_ZN19QFormBuilderStringsD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN19QFormBuilderStringsD2Ev@Base 4:4.8.6
  _ZN20QAbstractFormBuilder10initializeEPK5DomUI@Base 4:4.5.3
  _ZN20QAbstractFormBuilder10layoutInfoEP9DomLayoutP7QObjectPiS4_@Base 4:4.5.3
  _ZN20QAbstractFormBuilder10nameToIconERK7QStringS2_@Base 4:4.5.3
@@ -2639,15 +2399,8 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN23QTabWidgetPropertySheet13checkPropertyERK7QString@Base 4:4.5.3
  _ZN23QTabWidgetPropertySheet25tabWidgetPropertyFromNameERK7QString@Base 4:4.5.3
  _ZN23QTabWidgetPropertySheet5resetEi@Base 4:4.5.3
- (optional=gccinternal|arch=!hppa !m68k)_ZN23QTabWidgetPropertySheet8PageDataC1Ev@Base 4:4.8.5+git242
- (optional=gccinternal|arch=!hppa !m68k)_ZN23QTabWidgetPropertySheet8PageDataC2Ev@Base 4:4.8.5+git242
- (optional=gccinternal)_ZN23QTabWidgetPropertySheet8PageDataD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN23QTabWidgetPropertySheet8PageDataD2Ev@Base 4:4.8.6
  _ZN23QTabWidgetPropertySheetC1EP10QTabWidgetP7QObject@Base 4:4.5.3
  _ZN23QTabWidgetPropertySheetC2EP10QTabWidgetP7QObject@Base 4:4.5.3
- (optional=gccinternal)_ZN23QTabWidgetPropertySheetD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN23QTabWidgetPropertySheetD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN23QTabWidgetPropertySheetD2Ev@Base 4:4.8.6
  _ZN24QDesignerScriptExtensionD0Ev@Base 4:4.5.3
  _ZN24QDesignerScriptExtensionD1Ev@Base 4:4.5.3
  _ZN24QDesignerScriptExtensionD2Ev@Base 4:4.5.3
@@ -2680,9 +2433,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN25QStackedWidgetEventFilter8gotoPageEi@Base 4:4.5.3
  _ZN25QStackedWidgetEventFilterC1EP14QStackedWidget@Base 4:4.5.3
  _ZN25QStackedWidgetEventFilterC2EP14QStackedWidget@Base 4:4.5.3
- (optional=gccinternal)_ZN25QStackedWidgetEventFilterD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN25QStackedWidgetEventFilterD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN25QStackedWidgetEventFilterD2Ev@Base 4:4.8.6
  _ZN26QDesignerMetaEnumInterfaceC1Ev@Base 4:4.5.3
  _ZN26QDesignerMetaEnumInterfaceC2Ev@Base 4:4.5.3
  _ZN26QDesignerMetaEnumInterfaceD0Ev@Base 4:4.5.3
@@ -2707,9 +2457,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN27QDesignerMemberSheetFactory16staticMetaObjectE@Base 4:4.5.3
  _ZN27QDesignerMemberSheetFactoryC1EP17QExtensionManager@Base 4:4.5.3
  _ZN27QDesignerMemberSheetFactoryC2EP17QExtensionManager@Base 4:4.5.3
- (optional=gccinternal)_ZN27QDesignerMemberSheetFactoryD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN27QDesignerMemberSheetFactoryD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN27QDesignerMemberSheetFactoryD2Ev@Base 4:4.8.6
  _ZN27QDesignerPromotionInterfaceD0Ev@Base 4:4.5.3
  _ZN27QDesignerPromotionInterfaceD1Ev@Base 4:4.5.3
  _ZN27QDesignerPromotionInterfaceD2Ev@Base 4:4.5.3
@@ -2717,10 +2464,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN27QDesignerWidgetBoxInterface11qt_metacastEPKc@Base 4:4.5.3
  _ZN27QDesignerWidgetBoxInterface16staticMetaObjectE@Base 4:4.5.3
  _ZN27QDesignerWidgetBoxInterface20findOrInsertCategoryERK7QString@Base 4:4.5.3
- (optional=gccinternal)_ZN27QDesignerWidgetBoxInterface6WidgetD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN27QDesignerWidgetBoxInterface6WidgetD2Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN27QDesignerWidgetBoxInterface8CategoryD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN27QDesignerWidgetBoxInterface8CategoryD2Ev@Base 4:4.8.6
  _ZN27QDesignerWidgetBoxInterfaceC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE@Base 4:4.5.3
  _ZN27QDesignerWidgetBoxInterfaceC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE@Base 4:4.5.3
  _ZN27QDesignerWidgetBoxInterfaceD0Ev@Base 4:4.5.3
@@ -2731,22 +2474,14 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN27QStackedWidgetPropertySheet5resetEi@Base 4:4.5.3
  _ZN27QStackedWidgetPropertySheetC1EP14QStackedWidgetP7QObject@Base 4:4.5.3
  _ZN27QStackedWidgetPropertySheetC2EP14QStackedWidgetP7QObject@Base 4:4.5.3
- (optional=gccinternal)_ZN27QStackedWidgetPropertySheetD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN27QStackedWidgetPropertySheetD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN27QStackedWidgetPropertySheetD2Ev@Base 4:4.8.6
  _ZN27QToolBoxWidgetPropertySheet11setPropertyEiRK8QVariant@Base 4:4.5.3
  _ZN27QToolBoxWidgetPropertySheet13checkPropertyERK7QString@Base 4:4.5.3
  _ZN27QToolBoxWidgetPropertySheet23toolBoxPropertyFromNameERK7QString@Base 4:4.5.3
  _ZN27QToolBoxWidgetPropertySheet5resetEi@Base 4:4.5.3
  (arch=alpha mips64el)_ZN27QToolBoxWidgetPropertySheet8PageDataC1Ev@Base 4:4.8.6
  (arch=alpha mips64el)_ZN27QToolBoxWidgetPropertySheet8PageDataC2Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN27QToolBoxWidgetPropertySheet8PageDataD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN27QToolBoxWidgetPropertySheet8PageDataD2Ev@Base 4:4.8.6
  _ZN27QToolBoxWidgetPropertySheetC1EP8QToolBoxP7QObject@Base 4:4.5.3
  _ZN27QToolBoxWidgetPropertySheetC2EP8QToolBoxP7QObject@Base 4:4.5.3
- (optional=gccinternal)_ZN27QToolBoxWidgetPropertySheetD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN27QToolBoxWidgetPropertySheetD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN27QToolBoxWidgetPropertySheetD2Ev@Base 4:4.8.6
  _ZN28QDesignerFormEditorInterface11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN28QDesignerFormEditorInterface11qt_metacastEPKc@Base 4:4.5.3
  _ZN28QDesignerFormEditorInterface11setTopLevelEP7QWidget@Base 4:4.5.3
@@ -2921,9 +2656,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN32QStackedWidgetPreviewEventFilter8prevPageEv@Base 4:4.5.3
  _ZN32QStackedWidgetPreviewEventFilterC1EP14QStackedWidget@Base 4:4.5.3
  _ZN32QStackedWidgetPreviewEventFilterC2EP14QStackedWidget@Base 4:4.5.3
- (optional=gccinternal)_ZN32QStackedWidgetPreviewEventFilterD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN32QStackedWidgetPreviewEventFilterD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN32QStackedWidgetPreviewEventFilterD2Ev@Base 4:4.8.6
  _ZN33QDesignerObjectInspectorInterface11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN33QDesignerObjectInspectorInterface11qt_metacastEPKc@Base 4:4.5.3
  _ZN33QDesignerObjectInspectorInterface16staticMetaObjectE@Base 4:4.5.3
@@ -2975,11 +2707,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN4Line11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN4Line11qt_metacastEPKc@Base 4:4.5.3
  _ZN4Line16staticMetaObjectE@Base 4:4.5.3
- (optional=gccinternal)_ZN4LineD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN4LineD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN4LineD2Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN4QCss6ParserD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN4QCss6ParserD2Ev@Base 4:4.8.6
  _ZN5DomUI15setElementClassERK7QString@Base 4:4.5.3
  _ZN5DomUI15setElementSlotsEP8DomSlots@Base 4:4.5.3
  _ZN5DomUI16setElementAuthorERK7QString@Base 4:4.5.3
@@ -3061,9 +2788,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN6Spacer5eventEP6QEvent@Base 4:4.5.3
  _ZN6SpacerC1EP7QWidget@Base 4:4.5.3
  _ZN6SpacerC2EP7QWidget@Base 4:4.5.3
- (optional=gccinternal)_ZN6SpacerD0Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN6SpacerD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN6SpacerD2Ev@Base 4:4.8.6
  _ZN7DomChar17setElementUnicodeEi@Base 4:4.5.3
  _ZN7DomChar19clearElementUnicodeEv@Base 4:4.5.3
  _ZN7DomChar4readER16QXmlStreamReader@Base 4:4.5.3
@@ -3230,7 +2954,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN8DomSlotsC2Ev@Base 4:4.5.3
  _ZN8DomSlotsD1Ev@Base 4:4.5.3
  _ZN8DomSlotsD2Ev@Base 4:4.5.3
- (optional=inline)_ZN8QToolBox7addItemEP7QWidgetRK7QString@Base 4:4.8.4
  (optional=templinst|arch=sparc)_ZN8QVariant8setValueIN18qdesigner_internal22PropertySheetEnumValueEEEvRKT_@Base 4:4.8.6
  (optional=templinst|arch=sparc)_ZN8QVariant9fromValueIN18qdesigner_internal29PropertySheetKeySequenceValueEEES_RKT_@Base 4:4.8.6
  _ZN9DomAction18setElementPropertyERK5QListIP11DomPropertyE@Base 4:4.5.3
@@ -4406,10 +4129,8 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZTV22QDesignerPropertySheet@Base 4:4.5.3
  _ZTV23QTabWidgetPropertySheet@Base 4:4.5.3
  _ZTV24QDesignerScriptExtension@Base 4:4.5.3
- (optional=gccinternal)_ZTV25QDesignerDnDItemInterface@Base 4:4.8.6
  _ZTV25QStackedWidgetEventFilter@Base 4:4.5.3
  _ZTV26QDesignerMetaEnumInterface@Base 4:4.5.3
- (optional=gccinternal)_ZTV26QDesignerSettingsInterface@Base 4:4.8.6
  _ZTV27QDesignerDialogGuiInterface@Base 4:4.5.3
  _ZTV27QDesignerIconCacheInterface@Base 4:4.5.3
  _ZTV27QDesignerMemberSheetFactory@Base 4:4.5.3
@@ -4564,11 +4285,9 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZTVN18qdesigner_internal9DialogGuiE@Base 4:4.5.3
  (optional=internal)_ZTVN18qdesigner_internal9GridPanelE@Base 4:4.5.3
  (optional=internal)_ZTVN18qdesigner_internal9MorphMenuE@Base 4:4.5.3
- (c++)"non-virtual thunk to Line::~Line()@Base" 4:4.8.6
  (c++)"non-virtual thunk to QDesignerAbstractPropertySheetFactory::extension(QObject*, QString const&) const@Base" 4:4.5.3
  (c++)"non-virtual thunk to QDesignerAbstractPropertySheetFactory::~QDesignerAbstractPropertySheetFactory()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QDesignerActionEditorInterface::~QDesignerActionEditorInterface()@Base" 4:4.5.3
- (c++)"non-virtual thunk to QDesignerDialog::~QDesignerDialog()@Base" 4:4.8.6
  (c++)"non-virtual thunk to QDesignerDockWidget::~QDesignerDockWidget()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QDesignerFormWindowInterface::~QDesignerFormWindowInterface()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QDesignerMemberSheet::count() const@Base" 4:4.5.3
@@ -4586,7 +4305,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (c++)"non-virtual thunk to QDesignerMemberSheet::setVisible(int, bool)@Base" 4:4.5.3
  (c++)"non-virtual thunk to QDesignerMemberSheet::signature(int) const@Base" 4:4.5.3
  (c++)"non-virtual thunk to QDesignerMemberSheet::~QDesignerMemberSheet()@Base" 4:4.5.3
- (c++)"non-virtual thunk to QDesignerMemberSheetFactory::~QDesignerMemberSheetFactory()@Base" 4:4.8.6
  (c++)"non-virtual thunk to QDesignerMenu::~QDesignerMenu()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QDesignerMenuBar::~QDesignerMenuBar()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QDesignerNewFormWidgetInterface::~QDesignerNewFormWidgetInterface()@Base" 4:4.5.3
@@ -4617,37 +4335,28 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (c++)"non-virtual thunk to QDesignerWidget::~QDesignerWidget()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QDesignerWidgetBoxInterface::~QDesignerWidgetBoxInterface()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QExtensionFactory::extension(QObject*, QString const&) const@Base" 4:4.5.3
- (c++)"non-virtual thunk to QExtensionFactory::~QExtensionFactory()@Base" 4:4.8.6
  (c++)"non-virtual thunk to QExtensionManager::extension(QObject*, QString const&) const@Base" 4:4.5.3
  (c++)"non-virtual thunk to QExtensionManager::registerExtensions(QAbstractExtensionFactory*, QString const&)@Base" 4:4.5.3
  (c++)"non-virtual thunk to QExtensionManager::unregisterExtensions(QAbstractExtensionFactory*, QString const&)@Base" 4:4.5.3
  (c++)"non-virtual thunk to QExtensionManager::~QExtensionManager()@Base" 4:4.5.3
- (c++)"non-virtual thunk to QLayoutWidget::~QLayoutWidget()@Base" 4:4.8.6
  (c++)"non-virtual thunk to QStackedWidgetPropertySheet::property(int) const@Base" 4:4.5.3
  (c++)"non-virtual thunk to QStackedWidgetPropertySheet::reset(int)@Base" 4:4.5.3
  (c++)"non-virtual thunk to QStackedWidgetPropertySheet::setProperty(int, QVariant const&)@Base" 4:4.5.3
- (c++)"non-virtual thunk to QStackedWidgetPropertySheet::~QStackedWidgetPropertySheet()@Base" 4:4.8.6
  (c++)"non-virtual thunk to QTabWidgetPropertySheet::property(int) const@Base" 4:4.5.3
  (c++)"non-virtual thunk to QTabWidgetPropertySheet::reset(int)@Base" 4:4.5.3
  (c++)"non-virtual thunk to QTabWidgetPropertySheet::setProperty(int, QVariant const&)@Base" 4:4.5.3
- (c++)"non-virtual thunk to QTabWidgetPropertySheet::~QTabWidgetPropertySheet()@Base" 4:4.8.6
  (c++)"non-virtual thunk to QToolBoxWidgetPropertySheet::property(int) const@Base" 4:4.5.3
  (c++)"non-virtual thunk to QToolBoxWidgetPropertySheet::reset(int)@Base" 4:4.5.3
  (c++)"non-virtual thunk to QToolBoxWidgetPropertySheet::setProperty(int, QVariant const&)@Base" 4:4.5.3
- (c++)"non-virtual thunk to QToolBoxWidgetPropertySheet::~QToolBoxWidgetPropertySheet()@Base" 4:4.8.6
  (c++)"non-virtual thunk to QtResourceView::~QtResourceView()@Base" 4:4.5.3
  (c++)"non-virtual thunk to QtResourceViewDialog::~QtResourceViewDialog()@Base" 4:4.5.3
- (c++)"non-virtual thunk to Spacer::~Spacer()@Base" 4:4.8.6
  (optional=internal|c++)"non-virtual thunk to qdesigner_internal::ActionEditor::~ActionEditor()@Base" 4:4.5.3
  (optional=internal|c++)"non-virtual thunk to qdesigner_internal::CodeDialog::~CodeDialog()@Base" 4:4.5.3
  (optional=internal|c++)"non-virtual thunk to qdesigner_internal::ConnectionEdit::~ConnectionEdit()@Base" 4:4.5.3
- (optional=internal|c++)"non-virtual thunk to qdesigner_internal::FilterWidget::~FilterWidget()@Base" 4:4.7.4
  (optional=internal|c++)"non-virtual thunk to qdesigner_internal::FormWindowBase::~FormWindowBase()@Base" 4:4.5.3
  (optional=internal|c++)"non-virtual thunk to qdesigner_internal::GridPanel::~GridPanel()@Base" 4:4.5.3
- (optional=internal|c++)"non-virtual thunk to qdesigner_internal::HintLineEdit::~HintLineEdit()@Base" 4:4.7.4
  (optional=internal|c++)"non-virtual thunk to qdesigner_internal::IconSelector::~IconSelector()@Base" 4:4.5.3
  (optional=internal|c++)"non-virtual thunk to qdesigner_internal::IconThemeEditor::~IconThemeEditor()@Base" 4:4.8.0
- (optional=internal|c++)"non-virtual thunk to qdesigner_internal::InvisibleWidget::~InvisibleWidget()@Base" 4:4.7.4
  (optional=internal|c++)"non-virtual thunk to qdesigner_internal::LanguageResourceDialog::~LanguageResourceDialog()@Base" 4:4.5.3
  (optional=internal|c++)"non-virtual thunk to qdesigner_internal::NewFormWidget::~NewFormWidget()@Base" 4:4.5.3
  (optional=internal|c++)"non-virtual thunk to qdesigner_internal::OrderDialog::~OrderDialog()@Base" 4:4.5.3
@@ -4660,7 +4369,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal|c++|arch=!alpha !amd64 !arm64 !armel !armhf !hppa !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !m68k !mips !mips64el !mipsel !powerpc !ppc64 !ppc64el !s390x !sh4 !sparc64)"non-virtual thunk to qdesigner_internal::QDesignerWidgetBox::~QDesignerWidgetBox()@Base" 4:4.7.4
  (optional=internal|c++)"non-virtual thunk to qdesigner_internal::QDesignerWidgetItem::minimumSize() const@Base" 4:4.5.3
  (optional=internal|c++)"non-virtual thunk to qdesigner_internal::QDesignerWidgetItem::sizeHint() const@Base" 4:4.5.3
- (optional=internal|c++)"non-virtual thunk to qdesigner_internal::QDesignerWidgetItem::~QDesignerWidgetItem()@Base" 4:4.7.4
  (optional=internal|c++)"non-virtual thunk to qdesigner_internal::QLayoutSupport::adjustIndicator(QPoint const&, int)@Base" 4:4.5.3
  (optional=internal|c++)"non-virtual thunk to qdesigner_internal::QLayoutSupport::findItemAt(QPoint const&) const@Base" 4:4.5.3
  (optional=internal|c++)"non-virtual thunk to qdesigner_internal::QLayoutSupport::indexOf(QLayoutItem*) const@Base" 4:4.5.3
@@ -4669,23 +4377,13 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal|c++)"non-virtual thunk to qdesigner_internal::QLayoutSupport::widgets(QLayout*) const@Base" 4:4.5.3
  (optional=internal|c++)"non-virtual thunk to qdesigner_internal::QLayoutSupport::~QLayoutSupport()@Base" 4:4.5.3
  (optional=internal|c++)"non-virtual thunk to qdesigner_internal::RichTextEditorDialog::~RichTextEditorDialog()@Base" 4:4.5.3
- (optional=internal|c++)"non-virtual thunk to qdesigner_internal::ScriptDialog::~ScriptDialog()@Base" 4:4.7.4
- (optional=internal|c++)"non-virtual thunk to qdesigner_internal::ScriptErrorDialog::~ScriptErrorDialog()@Base" 4:4.7.4
  (optional=internal|c++)"non-virtual thunk to qdesigner_internal::SignalSlotDialog::~SignalSlotDialog()@Base" 4:4.5.3
- (optional=internal|c++)"non-virtual thunk to qdesigner_internal::StyleSheetEditor::~StyleSheetEditor()@Base" 4:4.7.4
  (optional=internal|c++)"non-virtual thunk to qdesigner_internal::StyleSheetEditorDialog::~StyleSheetEditorDialog()@Base" 4:4.5.3
- (optional=internal|c++)"non-virtual thunk to qdesigner_internal::StyleSheetPropertyEditorDialog::~StyleSheetPropertyEditorDialog()@Base" 4:4.7.4
- (optional=internal|c++)"non-virtual thunk to qdesigner_internal::TextPropertyEditor::~TextPropertyEditor()@Base" 4:4.7.4
  (optional=internal|c++)"non-virtual thunk to qdesigner_internal::ZoomProxyWidget::itemChange(QGraphicsItem::GraphicsItemChange, QVariant const&)@Base" 4:4.5.3
- (optional=internal|c++)"non-virtual thunk to qdesigner_internal::ZoomProxyWidget::~ZoomProxyWidget()@Base" 4:4.7.4
- (optional=internal|c++)"non-virtual thunk to qdesigner_internal::ZoomView::~ZoomView()@Base" 4:4.7.4
- (optional=internal|c++)"non-virtual thunk to qdesigner_internal::ZoomWidget::~ZoomWidget()@Base" 4:4.7.4
 libQtDesignerComponents.so.4 libqt4-designer #MINVER#
 * Build-Depends-Package: libqt4-dev
  (optional=gccinternal|arch=sh4 sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.8.6
  (optional=gccinternal|arch=sh4 sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.8.6
- (optional=gccinternal)_ZN18QStyleOptionButtonD1Ev@Base 4:4.8.6
- (optional=gccinternal)_ZN18QStyleOptionButtonD2Ev@Base 4:4.8.6
  _ZN19QDesignerComponents14createTaskMenuEP28QDesignerFormEditorInterfaceP7QObject@Base 4:4.5.3
  _ZN19QDesignerComponents15createWidgetBoxEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  _ZN19QDesignerComponents16createFormEditorEP7QObject@Base 4:4.5.3
@@ -4696,8 +4394,6 @@ libQtDesignerComponents.so.4 libqt4-designer #MINVER#
  _ZN19QDesignerComponents20createResourceEditorEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  _ZN19QDesignerComponents21createObjectInspectorEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  _ZN19QDesignerComponents22createSignalSlotEditorEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
- (optional=gccinternal|arch=alpha amd64 arm64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 m68k mips mips64el mipsel powerpc ppc64 ppc64el s390x sh4 sparc64)_ZN20QStyleOptionViewItemD1Ev@Base 4:4.8.4
- (optional=gccinternal|arch=alpha amd64 arm64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 m68k mips mips64el mipsel powerpc ppc64 ppc64el s390x sh4 sparc64)_ZN20QStyleOptionViewItemD2Ev@Base 4:4.8.4
  (optional=gccinternal|arch=sparc)_ZN20QXmlStreamAttributesD1Ev@Base 4:4.8.6
  (optional=gccinternal|arch=sparc)_ZN20QXmlStreamAttributesD2Ev@Base 4:4.8.6
  (optional=gccinternal|arch=sparc)_ZN22QStyleOptionViewItemV3D1Ev@Base 4:4.8.6
@@ -4712,5 +4408,4 @@ libQtDesignerComponents.so.4 libqt4-designer #MINVER#
  (optional=gccinternal|arch=hppa powerpcspe ppc64 sh4)_ZN9QHashData9hasShrunkEv@Base 4:4.8.6
  _ZTI22QItemEditorCreatorBase@Base 4:4.5.3
  _ZTS22QItemEditorCreatorBase@Base 4:4.5.3
- (optional=gccinternal)_ZTV22QItemEditorCreatorBase@Base 4:4.8.6
- (optional=external|arch=alpha armhf hurd-i386 i386 kfreebsd-i386 m68k mips mips64el mipsel powerpc powerpcspe ppc64 ppc64el s390x)_ZeqRK6QRectFS1_@Base 4:4.8.1
+ (optional=external|arch=alpha amd64 armhf hurd-i386 i386 kfreebsd-i386 m68k mips mips64el mipsel powerpc powerpcspe ppc64 ppc64el s390x)_ZeqRK6QRectFS1_@Base 4:4.8.1
