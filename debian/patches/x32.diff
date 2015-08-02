@@ -1,6 +1,6 @@
 --- a/configure
 +++ b/configure
-@@ -3329,6 +3329,12 @@ if [ -z "${CFG_HOST_ARCH}" ]; then
+@@ -3330,6 +3330,12 @@ if [ -z "${CFG_HOST_ARCH}" ]; then
          fi
          CFG_HOST_ARCH=sh
          ;;
