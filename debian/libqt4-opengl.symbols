@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.7 amd64
+# SymbolsHelper-Confirmed: 4:4.8.7 alpha amd64 arm64 armel armhf hppa mips mipsel powerpc ppc64 ppc64el s390x
 libQtOpenGL.so.4 libqt4-opengl #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z18qt_gl_library_namev@Base 4:4.5.3
@@ -9,6 +9,8 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _Z26qt_destroy_gl_share_widgetv@Base 4:4.7.1
  _Z28qt_resolve_buffer_extensionsP10QGLContext@Base 4:4.8.0
  _Z32qt_resolve_version_2_0_functionsP10QGLContext@Base 4:4.8.0
+ (optional=gcc5|arch=!amd64)_ZN10QByteArrayD1Ev@Base 4:4.8.7
+ (optional=gcc5|arch=!amd64)_ZN10QByteArrayD2Ev@Base 4:4.8.7
  _ZN10QGLContext10areSharingEPKS_S1_@Base 4:4.6.1
  _ZN10QGLContext10currentCtxE@Base 4:4.5.3
  _ZN10QGLContext11bindTextureERK6QImageji6QFlagsINS_10BindOptionEE@Base 4:4.6.1
@@ -42,6 +44,8 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  _ZN10QGLContextD0Ev@Base 4:4.5.3
  _ZN10QGLContextD1Ev@Base 4:4.5.3
  _ZN10QGLContextD2Ev@Base 4:4.5.3
+ (optional=gcc5|arch=mips mipsel)_ZN10QTransformC1ERKS_@Base 4:4.8.7
+ (optional=gcc5|arch=mips mipsel)_ZN10QTransformC2ERKS_@Base 4:4.8.7
  _ZN11QGLColormap10setEntriesEiPKji@Base 4:4.5.3
  _ZN11QGLColormap11shared_nullE@Base 4:4.5.3
  _ZN11QGLColormap13detach_helperEv@Base 4:4.5.3
@@ -462,6 +466,8 @@ libQtOpenGL.so.4 libqt4-opengl #MINVER#
  (optional=external)_ZN6QDebugD2Ev@Base 4:4.8.1
  (optional=external)_ZN6QDebuglsEPKc@Base 4:4.8.1
  (optional=gccinternal)_ZN6QMutex12unlockInlineEv@Base 4:4.8.4
+ (optional=gcc5|arch=!amd64)_ZN7QStringD1Ev@Base 4:4.8.7
+ (optional=gcc5|arch=!amd64)_ZN7QStringD2Ev@Base 4:4.8.7
  (arch=sparc)_ZN8QPolygonD1Ev@Base 4:4.8.5+git242
  (arch=sparc)_ZN8QPolygonD2Ev@Base 4:4.8.5+git242
  _ZN9QGLBuffer15setUsagePatternENS_12UsagePatternE@Base 4:4.7.0~beta1

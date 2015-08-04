@@ -1,5 +1,8 @@
 qt4-x11 (4:4.8.7+dfsg-3) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Update symbols files with buildds' logs.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 02 Aug 2015 18:25:27 -0300
 
 qt4-x11 (4:4.8.7+dfsg-2) experimental; urgency=medium

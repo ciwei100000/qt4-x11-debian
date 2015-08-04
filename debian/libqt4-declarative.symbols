@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.7 amd64
+# SymbolsHelper-Confirmed: 4:4.8.7 amd64 armel mips mipsel
 libQtDeclarative.so.4 libqt4-declarative #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qmlContextPK7QObject@Base 4:4.7.0~beta1
@@ -234,11 +234,9 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN18QDeclarativeAction17deleteFromBindingEv@Base 4:4.7.0~beta1
  _ZN18QDeclarativeActionC1EP7QObjectRK7QStringP19QDeclarativeContextRK8QVariant@Base 4:4.7.0~beta1
  _ZN18QDeclarativeActionC1EP7QObjectRK7QStringRK8QVariant@Base 4:4.7.0~beta1
- (optional=gcc47|arch=armel mips mipsel powerpcspe sh4)_ZN18QDeclarativeActionC1ERKS_@Base 4:4.8.1
  _ZN18QDeclarativeActionC1Ev@Base 4:4.7.0~beta1
  _ZN18QDeclarativeActionC2EP7QObjectRK7QStringP19QDeclarativeContextRK8QVariant@Base 4:4.7.0~beta1
  _ZN18QDeclarativeActionC2EP7QObjectRK7QStringRK8QVariant@Base 4:4.7.0~beta1
- (optional=gcc47|arch=armel mips mipsel powerpcspe sh4)_ZN18QDeclarativeActionC2ERKS_@Base 4:4.8.1
  _ZN18QDeclarativeActionC2Ev@Base 4:4.7.0~beta1
  _ZN18QDeclarativeEngine10setBaseUrlERK4QUrl@Base 4:4.7.0~beta1
  _ZN18QDeclarativeEngine11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.7.0~beta1

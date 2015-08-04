@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.7 amd64
+# SymbolsHelper-Confirmed: 4:4.8.7 alpha amd64 arm64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64 ppc64el s390x x32
 libQt3Support.so.4 libqt4-qt3support #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z16qt_tryAccelEventP7QWidgetP9QKeyEvent@Base 4:4.5.3
@@ -1532,6 +1532,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN12Q3TextFormat8pntr_ldgE@Base 4:4.5.3
  _ZN12Q3TextFormat8setColorERK6QColor@Base 4:4.5.3
  _ZN12Q3TextFormat9applyFontERK5QFont@Base 4:4.5.3
+ (optional=gccinternal|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !x32)_ZN12Q3TextFormat9removeRefEv@Base 4:4.8.7
  _ZN12Q3TextFormat9setFamilyERK7QString@Base 4:4.5.3
  _ZN12Q3TextFormat9setItalicEb@Base 4:4.5.3
  _ZN12Q3TextFormat9setVAlignENS_17VerticalAlignmentE@Base 4:4.5.3
@@ -2750,8 +2751,6 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN18Q3TextStyleCommand9unexecuteEP12Q3TextCursor@Base 4:4.5.3
  _ZN18Q3TextStyleCommandC1EP14Q3TextDocumentiiRK10QByteArray@Base 4:4.5.3
  _ZN18Q3TextStyleCommandC2EP14Q3TextDocumentiiRK10QByteArray@Base 4:4.5.3
- (optional=external|arch=alpha armel mips mips64el mipsel powerpcspe s390 sh4 sparc)_ZN18QStyleOptionButtonD1Ev@Base 4:4.8.1
- (optional=external|arch=alpha armel mips mips64el mipsel powerpcspe s390 sh4 sparc)_ZN18QStyleOptionButtonD2Ev@Base 4:4.8.1
  _ZN19Q3CanvasPixmapArray11readPixmapsERK7QStringi@Base 4:4.5.3
  _ZN19Q3CanvasPixmapArray11readPixmapsERK7QStringib@Base 4:4.5.3
  _ZN19Q3CanvasPixmapArray18readCollisionMasksERK7QString@Base 4:4.5.3
@@ -3342,7 +3341,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN7Q3TableD0Ev@Base 4:4.5.3
  _ZN7Q3TableD1Ev@Base 4:4.5.3
  _ZN7Q3TableD2Ev@Base 4:4.5.3
- (arch=alpha amd64 arm64 armel armhf mips mips64el mipsel powerpc powerpcspe ppc64 ppc64el s390x sh4)_ZN7QString5clearEv@Base 4:4.8.7
+ _ZN7QString5clearEv@Base 4:4.8.7
  _ZN8Q3Action10removeFromEP7QWidget@Base 4:4.5.3
  _ZN8Q3Action10setEnabledEb@Base 4:4.5.3
  _ZN8Q3Action10setIconSetERK5QIcon@Base 4:4.5.3
@@ -4344,6 +4343,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZNK12Q3TextFormat7descentEv@Base 4:4.5.3
  _ZNK12Q3TextFormat7leadingEv@Base 4:4.5.3
  _ZNK12Q3TextString5widthEi@Base 4:4.5.3
+ (optional=gccinternal|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !x32)_ZNK12Q3TextString8toStringEv@Base 4:4.8.7
  _ZNK12Q3TextString9checkBidiEv@Base 4:4.5.3
  _ZNK12QPaintDevice7devTypeEv@Base 4:4.5.3
  _ZNK13Q3ActionGroup10metaObjectEv@Base 4:4.5.3
@@ -4687,6 +4687,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZNK16Q3TextCustomItem9placementEv@Base 4:4.5.3
  _ZNK16Q3TextStringChar10anchorHrefEv@Base 4:4.5.3
  _ZNK16Q3TextStringChar10anchorNameEv@Base 4:4.5.3
+ (optional=gccinternal|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !x32)_ZNK16Q3TextStringChar6heightEv@Base 4:4.8.7
  _ZNK17Q3CanvasRectangle10areaPointsEv@Base 4:4.5.3
  _ZNK17Q3CanvasRectangle12collidesWithEPK12Q3CanvasItem@Base 4:4.5.3
  _ZNK17Q3CanvasRectangle12collidesWithEPK14Q3CanvasSpritePK21Q3CanvasPolygonalItemPKS_PK15Q3CanvasEllipsePK12Q3CanvasText@Base 4:4.5.3
