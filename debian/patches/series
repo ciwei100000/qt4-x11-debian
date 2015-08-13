@@ -73,3 +73,6 @@ kubuntu_qclipboard_delay.diff
 kubuntu_qclipboard_fix_recursive.diff
 
 gcc-5.diff
+CVE-2015-0295.patch
+CVE-2015-1858-1859.patch
+CVE-2015-1860.patch
