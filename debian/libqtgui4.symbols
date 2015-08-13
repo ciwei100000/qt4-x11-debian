@@ -2,7 +2,6 @@
 libQtGui.so.4 libqtgui4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qDrawArrowP8QPainterN2Qt9ArrowTypeENS1_8GUIStyleEbiiiiRK8QPaletteb@Base 4:4.5.3
- (optional=templinst|arch=sparc)_Z10qt_memfillIhEvPT_S0_i@Base 4:4.8.5+git242
  _Z10qt_x11InfoPK12QPaintDevice@Base 4:4.5.3
  _Z11qFadeEffectP7QWidgeti@Base 4:4.5.3
  _Z11qt_image_idRK6QImage@Base 4:4.5.3
@@ -3591,8 +3590,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN15QAbstractSliderD0Ev@Base 4:4.5.3
  _ZN15QAbstractSliderD1Ev@Base 4:4.5.3
  _ZN15QAbstractSliderD2Ev@Base 4:4.5.3
- (optional=external|arch=sh4 sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (optional=external|arch=sh4 sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
+ (optional=external|arch=sh4)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
+ (optional=external|arch=sh4)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN15QCalendarWidget10updateCellERK5QDate@Base 4:4.5.3
  _ZN15QCalendarWidget11eventFilterEP7QObjectP6QEvent@Base 4:4.5.3
  _ZN15QCalendarWidget11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -6027,8 +6026,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN25QStyleOptionProgressBarV2C2ERKS_@Base 4:4.5.3
  _ZN25QStyleOptionProgressBarV2C2Ei@Base 4:4.5.3
  _ZN25QStyleOptionProgressBarV2C2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=sparc)_ZN25QStyleOptionProgressBarV2D1Ev@Base 4:4.8.5+git242
- (optional=gccinternal|arch=sparc)_ZN25QStyleOptionProgressBarV2D2Ev@Base 4:4.8.5+git242
  _ZN25QStyleOptionProgressBarV2aSERK23QStyleOptionProgressBar@Base 4:4.5.3
  _ZN26QAbstractGraphicsShapeItem6setPenERK4QPen@Base 4:4.5.3
  _ZN26QAbstractGraphicsShapeItem8setBrushERK6QBrush@Base 4:4.5.3
@@ -7688,8 +7685,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN8QX11InfoaSERKS_@Base 4:4.5.3
  (arch=!hurd-i386 !i386 !kfreebsd-i386 !x32)_ZN9QBitArray6setBitEi@Base 4:4.8.7
  _ZN9QBitArray8clearBitEi@Base 4:4.8.7
- (optional=gccinternal|arch=sparc)_ZN9QBitArrayD1Ev@Base 4:4.8.5+git242
- (optional=gccinternal|arch=sparc)_ZN9QBitArrayD2Ev@Base 4:4.8.5+git242
  _ZN9QCDEStyle11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN9QCDEStyle11qt_metacastEPKc@Base 4:4.5.3
  _ZN9QCDEStyle16staticMetaObjectE@Base 4:4.5.3
@@ -11837,7 +11832,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK8QToolBox7indexOfEP7QWidget@Base 4:4.5.3
  _ZNK8QToolBox8itemIconEi@Base 4:4.5.3
  _ZNK8QToolBox8itemTextEi@Base 4:4.5.3
- (optional=templinst|arch=sparc)_ZNK8QVariant5valueI7QPixmapEET_v@Base 4:4.8.5+git242
  _ZNK8QX11Info10getX11DataEb@Base 4:4.5.3
  _ZNK8QX11Info13defaultVisualEv@Base 4:4.5.3
  _ZNK8QX11Info15defaultColormapEv@Base 4:4.5.3

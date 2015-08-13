@@ -151,8 +151,8 @@ libQtScript.so.4 libqt4-script #MINVER#
  _ZN14QScriptProgramD1Ev@Base 4:4.6.1
  _ZN14QScriptProgramD2Ev@Base 4:4.6.1
  _ZN14QScriptProgramaSERKS_@Base 4:4.6.1
- (optional=external|arch=sh4 sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
- (optional=external|arch=sh4 sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
+ (optional=external|arch=sh4)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
+ (optional=external|arch=sh4)_ZN15QBasicAtomicInt5derefEv@Base 4:4.5.3
  _ZN18QScriptContextInfoC1EPK14QScriptContext@Base 4:4.5.3
  _ZN18QScriptContextInfoC1ERKS_@Base 4:4.5.3
  _ZN18QScriptContextInfoC1Ev@Base 4:4.5.3

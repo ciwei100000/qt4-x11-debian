@@ -52,7 +52,7 @@ libQtSvg.so.4 libqt4-svg #MINVER#
  _ZN13QSvgGeneratorD0Ev@Base 4:4.5.3
  _ZN13QSvgGeneratorD1Ev@Base 4:4.5.3
  _ZN13QSvgGeneratorD2Ev@Base 4:4.5.3
- (optional=external|arch=sh4 sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
+ (optional=external|arch=sh4)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
  (arch=sh4)_ZN15QBasicAtomicInt5derefEv@Base 4:4.8.5
  _ZN16QGraphicsSvgItem11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN16QGraphicsSvgItem11qt_metacastEPKc@Base 4:4.5.3

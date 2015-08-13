@@ -59,8 +59,8 @@ libQtXmlPatterns.so.4 libqt4-xmlpatterns #MINVER#
  _ZN14QXmlSerializerC1ERK9QXmlQueryP9QIODevice@Base 4:4.5.3
  _ZN14QXmlSerializerC2EP27QAbstractXmlReceiverPrivate@Base 4:4.5.3
  _ZN14QXmlSerializerC2ERK9QXmlQueryP9QIODevice@Base 4:4.5.3
- (optional=gccinternal|arch=sh4 sparc)_ZN15QBasicAtomicInt3refEv@Base 4:4.8.5+git242
- (optional=gccinternal|arch=sh4 sparc)_ZN15QBasicAtomicInt5derefEv@Base 4:4.8.5+git242
+ (optional=gccinternal|arch=sh4)_ZN15QBasicAtomicInt3refEv@Base 4:4.8.5+git242
+ (optional=gccinternal|arch=sh4)_ZN15QBasicAtomicInt5derefEv@Base 4:4.8.5+git242
  _ZN15QSourceLocation6setUriERK4QUrl@Base 4:4.5.3
  _ZN15QSourceLocation7setLineEx@Base 4:4.5.3
  _ZN15QSourceLocation9setColumnEx@Base 4:4.5.3
