@@ -3,6 +3,9 @@ qt4-x11 (4:4.8.7+dfsg-4) UNRELEASED; urgency=medium
   [ Rico Tzschichholz ]
   * Change the libicu52 suggestion in libqtcore4 to libicu55.
 
+  [ Dmitry Shachnev ]
+  * Update symbols files with buildds' logs.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 13 Aug 2015 11:52:15 +0300
 
 qt4-x11 (4:4.8.7+dfsg-3) unstable; urgency=medium
