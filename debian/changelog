@@ -94,6 +94,8 @@ qt4-x11 (4:4.8.6+git64-g5dc8b2b+dfsg-2) unstable; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Remove debian/NEWS, it's no longer accurate.
   * Update symbols files with buildds' logs.
+  * Remove sparc references from symbols files.
+    Sparc is dead and we no longer have build logs for it.
 
   [ Adam Majer ]
   * Add xmlpatterns_stack_overflow_fix.diff which changes a recursive call
