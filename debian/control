@@ -479,7 +479,7 @@ Depends: libqt4-dbus (= ${binary:Version}),
          qt4-qmake (= ${binary:Version}),
          qtchooser,
          ${misc:Depends}
-Recommends: libqt4-opengl-dev (= ${binary:Version}), libqtwebkit-dev (>= 2.0~)
+Recommends: libqt4-opengl-dev (= ${binary:Version})
 Suggests: firebird-dev,
           libmysqlclient-dev,
           libpq-dev,
