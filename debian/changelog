@@ -8,6 +8,7 @@ qt4-x11 (4:4.8.7+dfsg-4) UNRELEASED; urgency=medium
   * Remove sparc references from symbols files.
     Sparc is dead and we no longer have build logs for it.
   * Use canonical Vcs-Browser link.
+  * Update git clone address in README.source.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 13 Aug 2015 11:52:15 +0300
 

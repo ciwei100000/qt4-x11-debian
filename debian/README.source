@@ -230,7 +230,7 @@ Integrating original source into local repository
      b) Original source can be fetched from the remote upstream repository.
         For example, let's define a new remote 'qt' for original Qt sources.
 
-          $ git remote add qt git://gitorious.org/qt/qt.git
+          $ git remote add qt git://code.qt.io/qt/qt.git
           $ git remote update
           # Wait ...
           $ git branch upstream qt/master # optional
