@@ -780,7 +780,6 @@ Description: Qt 4 API documentation (HTML format)
 Package: qt4-default
 Architecture: any
 Depends: libqt4-dev, qtchooser, ${misc:Depends}
-Section: libdevel
 Conflicts: qt5-default
 Description: Qt 4 development defaults package
  Qt is a cross-platform C++ application framework. Qt's primary feature
