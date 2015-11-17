@@ -14,7 +14,7 @@ qt4-x11 (4:4.8.7+dfsg-4) UNRELEASED; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Move qt4-default to section libs, it's definitely not part of libdevel
     as it controls run time preferences.
-  * Add qt-at-spi as a libqtcore4 suggestion as discussed in pkg-kde-talk.
+  * Add qt-at-spi as a libqtgui4 recommendation as discussed in pkg-kde-talk.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 13 Aug 2015 11:52:15 +0300
 
