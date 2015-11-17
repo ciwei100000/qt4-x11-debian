@@ -1,4 +1,4 @@
-qt4-x11 (4:4.8.7+dfsg-4) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.7+dfsg-4) unstable; urgency=medium
 
   [ Rico Tzschichholz ]
   * Change the libicu52 suggestion in libqtcore4 to libicu55.
@@ -16,7 +16,7 @@ qt4-x11 (4:4.8.7+dfsg-4) UNRELEASED; urgency=medium
     as it controls run time preferences.
   * Add qt-at-spi as a libqtgui4 recommendation as discussed in pkg-kde-talk.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 13 Aug 2015 11:52:15 +0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 17 Nov 2015 12:50:47 -0300
 
 qt4-x11 (4:4.8.7+dfsg-3) unstable; urgency=medium
 
