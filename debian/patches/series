@@ -54,4 +54,5 @@ qtdoc-build-offline-docs.patch
 remove_addsense.patch
 parisc-atomic.patch
 QtScript_x32_config.diff
-x32.diff
+ix32.diff
+no-ssl3.patch
