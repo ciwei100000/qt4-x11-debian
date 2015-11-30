@@ -1,11 +1,10 @@
-qt4-x11 (4:4.8.7+dfsg-5) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.7+dfsg-5) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Add no-ssl3.patch to avoid calling SSLv3 functions as they have been removed
     from Debian's packaging (Closes: #806505).
   * Update symbols files with buildds' logs.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 30 Nov 2015 13:25:41 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 30 Nov 2015 16:13:32 -0300
 
 qt4-x11 (4:4.8.7+dfsg-4) unstable; urgency=medium
 
