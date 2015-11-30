@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.7 alpha amd64 armel hurd-i386 i386 kfreebsd-i386 mips mipsel s390x x32
+# SymbolsHelper-Confirmed: 4:4.8.7 alpha amd64 armel hurd-i386 i386 kfreebsd-i386 mips mips64el mipsel s390x x32
 libQtGui.so.4 libqtgui4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qDrawArrowP8QPainterN2Qt9ArrowTypeENS1_8GUIStyleEbiiiiRK8QPaletteb@Base 4:4.5.3
@@ -13243,7 +13243,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZlsR11QTextStreamRK9QSplitter@Base 4:4.5.3
  _ZlsR6QDebugRK11QVectorPath@Base 4:4.5.3
  _ZmlRK12QPainterPathRK7QMatrix@Base 4:4.5.3
- (arch=alpha armel mips mipsel)_ZneRK6QRectFS1_@Base 4:4.8.7
+ (arch=alpha armel mips mips64el mipsel)_ZneRK6QRectFS1_@Base 4:4.8.7
  _ZrsR11QDataStreamR10QMatrix4x4@Base 4:4.6.1
  _ZrsR11QDataStreamR10QTransform@Base 4:4.5.3
  _ZrsR11QDataStreamR11QColorGroup@Base 4:4.5.3
