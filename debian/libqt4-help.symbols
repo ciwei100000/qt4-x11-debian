@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.7 amd64
+# SymbolsHelper-Confirmed: 4:4.8.7 amd64 sh4
 libQtHelp.so.4 libqt4-help #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN11QHelpEngine11indexWidgetEv@Base 4:4.5.3
@@ -39,6 +39,7 @@ libQtHelp.so.4 libqt4-help #MINVER#
  _ZN14QHelpGeneratorD1Ev@Base 4:4.5.3
  _ZN14QHelpGeneratorD2Ev@Base 4:4.5.3
  (optional=external|arch=sh4)_ZN15QBasicAtomicInt3refEv@Base 4:4.8.5
+ (optional=gccinternal|arch=sh4)_ZN15QBasicAtomicInt5derefEv@Base 4:4.8.7
  _ZN15QHelpEngineCore11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN15QHelpEngineCore11qt_metacastEPKc@Base 4:4.5.3
  _ZN15QHelpEngineCore12setupStartedEv@Base 4:4.5.3
@@ -57,7 +58,7 @@ libQtHelp.so.4 libqt4-help #MINVER#
  _ZN15QHelpEngineCore21documentationFileNameERK7QString@Base 4:4.5.3
  _ZN15QHelpEngineCore21registerDocumentationERK7QString@Base 4:4.5.3
  _ZN15QHelpEngineCore23unregisterDocumentationERK7QString@Base 4:4.5.3
- (optional=gccinternal|arch=!sh4)_ZN15QHelpEngineCore27readersAboutToBeInvalidatedEv@Base 4:4.8.6
+ (optional=gccinternal)_ZN15QHelpEngineCore27readersAboutToBeInvalidatedEv@Base 4:4.8.6
  _ZN15QHelpEngineCore5filesE7QStringRK11QStringListRKS0_@Base 4:4.5.3
  _ZN15QHelpEngineCore7warningERK7QString@Base 4:4.5.3
  _ZN15QHelpEngineCore8metaDataERK7QStringS2_@Base 4:4.5.3

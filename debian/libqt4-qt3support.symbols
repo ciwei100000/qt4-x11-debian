@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.7 alpha amd64 arm64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 m68k mips mipsel powerpc ppc64 ppc64el s390x x32
+# SymbolsHelper-Confirmed: 4:4.8.7 alpha amd64 arm64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 m68k mips mipsel powerpc ppc64 ppc64el s390x sh4 x32
 libQt3Support.so.4 libqt4-qt3support #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z16qt_tryAccelEventP7QWidgetP9QKeyEvent@Base 4:4.5.3
@@ -2460,6 +2460,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN15Q3TextTableCellD1Ev@Base 4:4.5.3
  _ZN15Q3TextTableCellD2Ev@Base 4:4.5.3
  (optional=external|arch=sh4)_ZN15QBasicAtomicInt3refEv@Base 4:4.5.3
+ (optional=gccinternal|arch=sh4)_ZN15QBasicAtomicInt5derefEv@Base 4:4.8.7
  _ZN16Q3CanvasItemList10drawUniqueER8QPainter@Base 4:4.5.3
  _ZN16Q3CanvasItemList4sortEv@Base 4:4.5.3
  _ZN16Q3CheckTableItem10setCheckedEb@Base 4:4.5.3
@@ -4682,6 +4683,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZNK16Q3TextCustomItem9placementEv@Base 4:4.5.3
  _ZNK16Q3TextStringChar10anchorHrefEv@Base 4:4.5.3
  _ZNK16Q3TextStringChar10anchorNameEv@Base 4:4.5.3
+ (optional=gccinternal|arch=sh4)_ZNK16Q3TextStringChar6ascentEv@Base 4:4.8.7
  (optional=gccinternal|arch=!amd64 !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !x32)_ZNK16Q3TextStringChar6heightEv@Base 4:4.8.7
  _ZNK17Q3CanvasRectangle10areaPointsEv@Base 4:4.5.3
  _ZNK17Q3CanvasRectangle12collidesWithEPK12Q3CanvasItem@Base 4:4.5.3

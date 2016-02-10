@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.7 alpha amd64 arm64 armel armhf hppa kfreebsd-amd64 m68k mips mips64el mipsel powerpc ppc64el s390x sparc64 x32
+# SymbolsHelper-Confirmed: 4:4.8.7 alpha amd64 arm64 armel armhf hppa kfreebsd-amd64 m68k mips mips64el mipsel powerpc ppc64el s390x sh4 sparc64 x32
 libQtDesigner.so.4 libqt4-designer #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z20domPropertyToVariantP20QAbstractFormBuilderPK11QMetaObjectPK11DomProperty@Base 4:4.5.3
@@ -2829,7 +2829,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN7DomTimeC2Ev@Base 4:4.5.3
  _ZN7DomTimeD1Ev@Base 4:4.5.3
  _ZN7DomTimeD2Ev@Base 4:4.5.3
- (optional=external|arch=alpha arm64 armel armhf hppa m68k mips mips64el mipsel powerpc powerpcspe ppc64 ppc64el s390x sparc64)_ZN7QString5clearEv@Base 4:4.8.1
+ (optional=external|arch=alpha arm64 armel armhf hppa m68k mips mips64el mipsel powerpc powerpcspe ppc64 ppc64el s390x sh4 sparc64)_ZN7QString5clearEv@Base 4:4.8.1
  _ZN8DomBrush15setElementColorEP8DomColor@Base 4:4.5.3
  _ZN8DomBrush16takeElementColorEv@Base 4:4.5.3
  _ZN8DomBrush17setElementTextureEP11DomProperty@Base 4:4.5.3
@@ -2905,6 +2905,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN8DomSlotsC2Ev@Base 4:4.5.3
  _ZN8DomSlotsD1Ev@Base 4:4.5.3
  _ZN8DomSlotsD2Ev@Base 4:4.5.3
+ (optional=gccinternal|arch=sh4)_ZN8QToolBox7addItemEP7QWidgetRK7QString@Base 4:4.8.7
  _ZN9DomAction18setElementPropertyERK5QListIP11DomPropertyE@Base 4:4.5.3
  _ZN9DomAction19setElementAttributeERK5QListIP11DomPropertyE@Base 4:4.5.3
  _ZN9DomAction4readER16QXmlStreamReader@Base 4:4.5.3
