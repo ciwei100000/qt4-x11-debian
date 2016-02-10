@@ -1,3 +1,7 @@
+qt4-x11 (4:4.8.7+dfsg-6) UNRELEASED; urgency=medium
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 10 Feb 2016 10:44:21 -0300
+
 qt4-x11 (4:4.8.7+dfsg-5) unstable; urgency=medium
 
   * Add no-ssl3.patch to avoid calling SSLv3 functions as they have been removed
