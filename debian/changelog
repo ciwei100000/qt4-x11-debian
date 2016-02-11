@@ -1,12 +1,11 @@
-qt4-x11 (4:4.8.7+dfsg-6) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.7+dfsg-6) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Add Eduard Sanou's backport patch from qttools5 to make qch files
     reproducible by replacing the current time by a fixed date
     (Closes: #814280). Thanks Eduard!
   * Update symbols files with buildds' logs.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 10 Feb 2016 10:44:21 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 10 Feb 2016 11:05:32 -0300
 
 qt4-x11 (4:4.8.7+dfsg-5) unstable; urgency=medium
 
