@@ -1,3 +1,8 @@
+qt4-x11 (4:4.8.7+dfsg-7) UNRELEASED; urgency=medium
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 21 Mar 2016 21:26:26 +0100
+
 qt4-x11 (4:4.8.7+dfsg-6) unstable; urgency=medium
 
   * Add Eduard Sanou's backport patch from qttools5 to make qch files
