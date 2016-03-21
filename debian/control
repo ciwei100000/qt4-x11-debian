@@ -477,7 +477,7 @@ Depends: libqt4-dbus (= ${binary:Version}),
          libqtgui4 (= ${binary:Version}),
          qt4-linguist-tools (= ${binary:Version}),
          qt4-qmake (= ${binary:Version}),
-         qtchooser,
+         qtchooser (>= 55-gc9562a1-1~),
          ${misc:Depends}
 Recommends: libqt4-opengl-dev (= ${binary:Version})
 Suggests: firebird-dev,
@@ -499,7 +499,7 @@ Package: libqt4-dev-bin
 Architecture: any
 Multi-Arch: foreign
 Section: devel
-Depends: qtchooser, ${misc:Depends}, ${shlibs:Depends}
+Depends: qtchooser (>= 55-gc9562a1-1~), ${misc:Depends}, ${shlibs:Depends}
 Breaks: libqt4-dev (<< 4:4.8.0-2)
 Replaces: libqt4-dev (<< 4:4.8.0-2)
 Description: Qt 4 development programs
@@ -628,7 +628,7 @@ Description: Qt 4 examples and demos debugging symbols
 Package: qt4-designer
 Architecture: any
 Section: devel
-Depends: qtchooser, ${misc:Depends}, ${shlibs:Depends}
+Depends: qtchooser (>= 55-gc9562a1-1~), ${misc:Depends}, ${shlibs:Depends}
 Recommends: libqt4-dev
 Description: graphical designer for Qt 4 applications
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -640,7 +640,7 @@ Description: graphical designer for Qt 4 applications
 Package: qt4-dev-tools
 Architecture: any
 Section: devel
-Depends: libqt4-sql-sqlite, qtchooser, ${misc:Depends}, ${shlibs:Depends}
+Depends: libqt4-sql-sqlite, qtchooser (>= 55-gc9562a1-1~), ${misc:Depends}, ${shlibs:Depends}
 Recommends: libqt4-dev, qt4-designer, qt4-doc
 Suggests: qt4-doc-html
 Conflicts: qt3-dev-tools-embedded
@@ -664,7 +664,7 @@ Package: qt4-qmake
 Architecture: any
 Multi-Arch: foreign
 Section: devel
-Depends: qtchooser, ${misc:Depends}, ${shlibs:Depends}
+Depends: qtchooser (>= 55-gc9562a1-1~), ${misc:Depends}, ${shlibs:Depends}
 Suggests: libqtcore4
 Description: Qt 4 qmake Makefile generator tool
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -684,7 +684,7 @@ Description: Qt 4 qmake Makefile generator tool
 Package: qt4-qtconfig
 Architecture: any
 Section: x11
-Depends: qtchooser, ${misc:Depends}, ${shlibs:Depends}
+Depends: qtchooser (>= 55-gc9562a1-1~), ${misc:Depends}, ${shlibs:Depends}
 Description: Qt 4 configuration tool
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -710,7 +710,7 @@ Description: Qt 4 examples and demos
 Package: qt4-qmlviewer
 Architecture: any
 Section: devel
-Depends: qtchooser, ${misc:Depends}, ${shlibs:Depends}
+Depends: qtchooser (>= 55-gc9562a1-1~), ${misc:Depends}, ${shlibs:Depends}
 Recommends: imagemagick | gifsicle
 Description: Qt 4 QML viewer
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -723,7 +723,7 @@ Package: qt4-linguist-tools
 Architecture: any
 Multi-Arch: foreign
 Section: devel
-Depends: qtchooser, ${misc:Depends}, ${shlibs:Depends}
+Depends: qtchooser (>= 55-gc9562a1-1~), ${misc:Depends}, ${shlibs:Depends}
 Breaks: libqt4-dev (<< 4:4.7.3-2)
 Replaces: libqt4-dev (<< 4:4.7.3-2)
 Description: Qt 4 Linguist tools
@@ -739,7 +739,7 @@ Package: qdbus
 Architecture: any
 Multi-Arch: foreign
 Section: utils
-Depends: qtchooser, ${misc:Depends}, ${shlibs:Depends}
+Depends: qtchooser (>= 55-gc9562a1-1~), ${misc:Depends}, ${shlibs:Depends}
 Breaks: libqt4-dbus (<< 4:4.7.4-1)
 Replaces: libqt4-dbus (<< 4:4.7.4-1)
 Description: Qt 4 D-Bus tool
@@ -779,7 +779,7 @@ Description: Qt 4 API documentation (HTML format)
 
 Package: qt4-default
 Architecture: any
-Depends: libqt4-dev, qtchooser, ${misc:Depends}
+Depends: libqt4-dev, qtchooser (>= 55-gc9562a1-1~), ${misc:Depends}
 Conflicts: qt5-default
 Description: Qt 4 development defaults package
  Qt is a cross-platform C++ application framework. Qt's primary feature
