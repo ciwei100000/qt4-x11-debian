@@ -9,6 +9,10 @@ qt4-x11 (4:4.8.7+dfsg-7) UNRELEASED; urgency=medium
   * Drop menu files, since we ship already .desktop file for assistant,
     designer, linguist, and qtconfig.
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Apply Fedora's qt-everywhere-opensource-src-4.8.7-gcc6.patch to solve two
+    issues while building with GCC6.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 21 Mar 2016 21:26:26 +0100
 
 qt4-x11 (4:4.8.7+dfsg-6) unstable; urgency=medium
