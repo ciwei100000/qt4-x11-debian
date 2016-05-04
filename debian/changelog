@@ -14,6 +14,8 @@ qt4-x11 (4:4.8.7+dfsg-7) UNRELEASED; urgency=medium
     issues while building with GCC6.
   * Apply Better-handling-of-invalid-font-tables.patch, which is a backport
     from Qt 5 meant to improve the handling of invalid font tables.
+  * Set std=gnu++98 to workaround class std::auto_ptr deprecation in GCC6, also
+    hinted by Fedora's packaging.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 21 Mar 2016 21:26:26 +0100
 
