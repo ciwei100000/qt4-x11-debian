@@ -1,4 +1,4 @@
-qt4-x11 (4:4.8.7+dfsg-7) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.7+dfsg-7) unstable; urgency=medium
 
   [ Dmitry Shachnev ]
   * Move qtchooser configuration files (except the qt-default one) from
@@ -17,7 +17,7 @@ qt4-x11 (4:4.8.7+dfsg-7) UNRELEASED; urgency=medium
   * Set std=gnu++98 to workaround class std::auto_ptr deprecation in GCC6, also
     hinted by Fedora's packaging.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 21 Mar 2016 21:26:26 +0100
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 22 May 2016 11:19:24 -0300
 
 qt4-x11 (4:4.8.7+dfsg-6) unstable; urgency=medium
 
