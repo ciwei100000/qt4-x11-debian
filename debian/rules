@@ -85,7 +85,7 @@ else
   endif
 endif
 
-no_pch_architectures := arm64 armhf ia64 powerpc ppc64 ppc64el
+no_pch_architectures := arm64 armhf ia64 powerpc powerpcspe ppc64 ppc64el
 ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(no_pch_architectures)))
 	extra_configure_opts += -no-pch
 endif
