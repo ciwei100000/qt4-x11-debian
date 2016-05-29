@@ -5,6 +5,7 @@ qt4-x11 (4:4.8.7+dfsg-8) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Apply Raphaël Halimi's patch to add MATE detection (Closes: #825769).
+  * Update symbols files with buildds' logs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 22 May 2016 19:33:08 +0200
 
