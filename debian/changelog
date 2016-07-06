@@ -1,5 +1,8 @@
 qt4-x11 (4:4.8.7+dfsg-8~bpo8+1) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Upload to jessie-backports.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 06 Jul 2016 15:19:10 -0300
 
 qt4-x11 (4:4.8.7+dfsg-8) unstable; urgency=medium
