@@ -1,10 +1,9 @@
-qt4-x11 (4:4.8.7+dfsg-9) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.7+dfsg-9) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
-  * Update symbols files with buildds' logs.
+  * Update symbols files with buildds' and current logs.
   * Add support for LXDE (Closes: #836894).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 09 Sep 2016 08:13:56 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 09 Sep 2016 08:36:40 -0300
 
 qt4-x11 (4:4.8.7+dfsg-8) unstable; urgency=medium
 
