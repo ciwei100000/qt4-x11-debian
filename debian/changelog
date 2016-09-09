@@ -3,7 +3,7 @@ qt4-x11 (4:4.8.7+dfsg-9) unstable; urgency=medium
   * Update symbols files with buildds' and current logs.
   * Add support for LXDE (Closes: #836894).
 
- -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 09 Sep 2016 08:36:40 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 09 Sep 2016 14:09:51 -0300
 
 qt4-x11 (4:4.8.7+dfsg-8) unstable; urgency=medium
 
