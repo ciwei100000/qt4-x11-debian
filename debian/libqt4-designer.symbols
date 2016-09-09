@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.7 alpha amd64 arm64 armel armhf hppa kfreebsd-amd64 m68k mips mips64el mipsel powerpc ppc64el s390x sh4 sparc64 x32
+# SymbolsHelper-Confirmed: 4:4.8.7 alpha amd64 arm64 armel armhf hppa kfreebsd-amd64 m68k mips mips64el mipsel powerpc powerpcspe ppc64el s390x sh4 sparc64 x32
 libQtDesigner.so.4 libqt4-designer #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z20domPropertyToVariantP20QAbstractFormBuilderPK11QMetaObjectPK11DomProperty@Base 4:4.5.3
@@ -130,8 +130,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN11DomTabStopsC2Ev@Base 4:4.5.3
  _ZN11DomTabStopsD1Ev@Base 4:4.5.3
  _ZN11DomTabStopsD2Ev@Base 4:4.5.3
- (arch=powerpcspe)_ZN11QDomElementD1Ev@Base 4:4.8.5+git209
- (arch=powerpcspe)_ZN11QDomElementD2Ev@Base 4:4.8.5+git209
  _ZN12DomActionRef4readER16QXmlStreamReader@Base 4:4.5.3
  _ZN12DomActionRef5clearEb@Base 4:4.5.3
  _ZN12DomActionRefC1Ev@Base 4:4.5.3
@@ -507,10 +505,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN15QDesignerWidgetD0Ev@Base 4:4.5.3
  _ZN15QDesignerWidgetD1Ev@Base 4:4.5.3
  _ZN15QDesignerWidgetD2Ev@Base 4:4.5.3
- (arch=powerpcspe)_ZN15QRadialGradientD1Ev@Base 4:4.8.5+git209
- (arch=powerpcspe)_ZN15QRadialGradientD2Ev@Base 4:4.8.5+git209
- (arch=powerpcspe)_ZN15QTextCharFormatD1Ev@Base 4:4.8.5+git209
- (arch=powerpcspe)_ZN15QTextCharFormatD2Ev@Base 4:4.8.5+git209
  _ZN15QtResourceModel11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN15QtResourceModel11qt_metacastEPKc@Base 4:4.5.3
  _ZN15QtResourceModel11setModifiedERK7QString@Base 4:4.5.3
@@ -869,8 +863,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal12ListContents20createFromListWidgetEPK11QListWidgetb@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal12ListContentsC1EPK15QTreeWidgetItem@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal12ListContentsC2EPK15QTreeWidgetItem@Base 4:4.5.3
- (arch=powerpcspe)_ZN18qdesigner_internal12ListContentsD1Ev@Base 4:4.8.5+git209
- (arch=powerpcspe)_ZN18qdesigner_internal12ListContentsD2Ev@Base 4:4.8.5+git209
  (optional=internal)_ZN18qdesigner_internal12MetaDataBase11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal12MetaDataBase11qt_metacastEPKc@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal12MetaDataBase13slotDestroyedEP7QObject@Base 4:4.5.3
@@ -1475,9 +1467,7 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal18ToolBarEventFilterC1EP8QToolBar@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18ToolBarEventFilterC2EP8QToolBar@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18TreeWidgetContents12ItemContentsC1EPK15QTreeWidgetItemb@Base 4:4.5.3
- (arch=powerpcspe)_ZN18qdesigner_internal18TreeWidgetContents12ItemContentsC1ERKS1_@Base 4:4.8.5+git209
  (optional=internal)_ZN18qdesigner_internal18TreeWidgetContents12ItemContentsC2EPK15QTreeWidgetItemb@Base 4:4.5.3
- (arch=powerpcspe)_ZN18qdesigner_internal18TreeWidgetContents12ItemContentsC2ERKS1_@Base 4:4.8.5+git209
  (optional=internal)_ZN18qdesigner_internal18TreeWidgetContents14fromTreeWidgetEPK11QTreeWidgetb@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18TreeWidgetContents5clearEv@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal18WidgetDataBaseItem10setExtendsERK7QString@Base 4:4.5.3
@@ -1928,8 +1918,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  (optional=internal)_ZN18qdesigner_internal24PropertySheetPixmapValueC1Ev@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal24PropertySheetPixmapValueC2ERK7QString@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal24PropertySheetPixmapValueC2Ev@Base 4:4.5.3
- (arch=powerpcspe)_ZN18qdesigner_internal24PropertySheetPixmapValueD1Ev@Base 4:4.8.5+git209
- (arch=powerpcspe)_ZN18qdesigner_internal24PropertySheetPixmapValueD2Ev@Base 4:4.8.5+git209
  (optional=internal)_ZN18qdesigner_internal24PropertySheetStringValue10setCommentERK7QString@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal24PropertySheetStringValue15setTranslatableEb@Base 4:4.5.3
  (optional=internal)_ZN18qdesigner_internal24PropertySheetStringValue17setDisambiguationERK7QString@Base 4:4.5.3
@@ -2648,8 +2636,6 @@ libQtDesigner.so.4 libqt4-designer #MINVER#
  _ZN37QDesignerAbstractPropertySheetFactory16staticMetaObjectE@Base 4:4.5.3
  _ZN37QDesignerAbstractPropertySheetFactory27PropertySheetFactoryPrivateC1Ev@Base 4:4.5.3
  _ZN37QDesignerAbstractPropertySheetFactory27PropertySheetFactoryPrivateC2Ev@Base 4:4.5.3
- (arch=powerpcspe)_ZN37QDesignerAbstractPropertySheetFactory27PropertySheetFactoryPrivateD1Ev@Base 4:4.8.5+git209
- (arch=powerpcspe)_ZN37QDesignerAbstractPropertySheetFactory27PropertySheetFactoryPrivateD2Ev@Base 4:4.8.5+git209
  _ZN37QDesignerAbstractPropertySheetFactoryC1EP17QExtensionManager@Base 4:4.5.3
  _ZN37QDesignerAbstractPropertySheetFactoryC2EP17QExtensionManager@Base 4:4.5.3
  _ZN37QDesignerAbstractPropertySheetFactoryD0Ev@Base 4:4.5.3
@@ -4339,7 +4325,6 @@ libQtDesignerComponents.so.4 libqt4-designer #MINVER#
  _ZN19QDesignerComponents20createResourceEditorEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  _ZN19QDesignerComponents21createObjectInspectorEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
  _ZN19QDesignerComponents22createSignalSlotEditorEP28QDesignerFormEditorInterfaceP7QWidget@Base 4:4.5.3
- (arch=powerpcspe)_ZN9QHashData8willGrowEv@Base 4:4.8.5+git209
  (optional=gccinternal|arch=alpha arm64 armel armhf hppa m68k mips mips64el mipsel powerpc powerpcspe ppc64 ppc64el s390x sh4 sparc64)_ZN9QHashData9hasShrunkEv@Base 4:4.8.6
  _ZTI22QItemEditorCreatorBase@Base 4:4.5.3
  _ZTS22QItemEditorCreatorBase@Base 4:4.5.3

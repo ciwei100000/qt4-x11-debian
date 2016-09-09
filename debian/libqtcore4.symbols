@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.7 alpha amd64 arm64 armel armhf hppa m68k mips mips64el mipsel powerpc ppc64 ppc64el s390x sparc64 x32
+# SymbolsHelper-Confirmed: 4:4.8.7 alpha amd64 arm64 armel armhf hppa m68k mips mips64el mipsel powerpc powerpcspe ppc64 ppc64el s390x sparc64 x32
 libQtCLucene.so.4 libqtcore4 #MINVER#
 * Build-Depends-Package: libqt4-dev
  _ZN12QCLuceneHits2idEi@Base 4:4.5.3
@@ -441,8 +441,6 @@ libQtCLucene.so.4 libqtcore4 #MINVER#
  _ZNK21QCLuceneMultiSearcher6maxDocEv@Base 4:4.5.3
  _ZNK21QCLuceneMultiSearcher6subDocEi@Base 4:4.5.3
  (optional=templinst)_ZNSt6vectorIPKwSaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_@Base 4:4.5.3
- (optional=templinst|arch=powerpcspe)_ZNSt6vectorIPKwSaIS1_EED1Ev@Base 4:4.8.5+git209
- (optional=templinst|arch=powerpcspe)_ZNSt6vectorIPKwSaIS1_EED2Ev@Base 4:4.8.5+git209
  (optional=templinst)_ZNSt6vectorIPhSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_@Base 4:4.5.3
  (optional=templinst)_ZNSt6vectorIPwSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_@Base 4:4.5.3
  (optional=templinst)_ZNSt6vectorIiSaIiEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPiS1_EERKi@Base 4:4.5.3
@@ -726,7 +724,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN10QByteArray7replaceEiiPKc@Base 4:4.5.3
  _ZN10QByteArray7replaceEiiPKci@Base 4:4.7.0~beta1
  _ZN10QByteArray7replaceEiiRKS_@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZN10QByteArray7reserveEi@Base 4:4.8.5+git209
  _ZN10QByteArray8truncateEi@Base 4:4.5.3
  _ZN10QByteArrayC1EPKc@Base 4:4.5.3
  _ZN10QByteArrayC1EPKci@Base 4:4.5.3
@@ -1309,7 +1306,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN14QObjectPrivateD0Ev@Base 4:4.5.3
  _ZN14QObjectPrivateD1Ev@Base 4:4.5.3
  _ZN14QObjectPrivateD2Ev@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZN14QObjectPrivateaSERKS_@Base 4:4.8.5+git209
  _ZN14QReadWriteLock11lockForReadEv@Base 4:4.5.3
  _ZN14QReadWriteLock12lockForWriteEv@Base 4:4.5.3
  _ZN14QReadWriteLock14tryLockForReadEi@Base 4:4.5.3
@@ -2470,8 +2466,6 @@ libQtCore.so.4 libqtcore4 #MINVER#
  _ZN5QUuidC2EPKc@Base 4:4.5.3
  _ZN5QUuidC2ERK10QByteArray@Base 4:4.8.0
  _ZN5QUuidC2ERK7QString@Base 4:4.5.3
- (optional=gccinternal|arch=powerpcspe)_ZN6QDebug6StreamD1Ev@Base 4:4.8.5+git209
- (optional=gccinternal|arch=powerpcspe)_ZN6QDebug6StreamD2Ev@Base 4:4.8.5+git209
  _ZN6QEvent16staticMetaObjectE@Base 4:4.6.1
  _ZN6QEvent17registerEventTypeEi@Base 4:4.5.3
  _ZN6QEventC1ENS_4TypeE@Base 4:4.5.3

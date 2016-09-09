@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.7 amd64 armel mips mipsel
+# SymbolsHelper-Confirmed: 4:4.8.7 amd64 armel mips mipsel powerpcspe
 libQtDeclarative.so.4 libqt4-declarative #MINVER#
 * Build-Depends-Package: libqt4-dev
  _Z10qmlContextPK7QObject@Base 4:4.7.0~beta1
@@ -1340,7 +1340,6 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZN7QPacketD0Ev@Base 4:4.7.0~beta1
  _ZN7QPacketD1Ev@Base 4:4.7.0~beta1
  _ZN7QPacketD2Ev@Base 4:4.7.0~beta1
- (arch=powerpcspe)_ZN7QString5clearEv@Base 4:4.8.5+git209
  _ZNK12QPaintDevice7devTypeEv@Base 4:4.7.2
  _ZNK15QDeclarativePen10metaObjectEv@Base 4:4.7.0~beta1
  _ZNK15QPacketProtocol10metaObjectEv@Base 4:4.7.0~beta1
@@ -1879,7 +1878,6 @@ libQtDeclarative.so.4 libqt4-declarative #MINVER#
  _ZNK36QDeclarativeDomValueValueInterceptor6objectEv@Base 4:4.7.0~beta1
  _ZNK38QDeclarativeDebugObjectExpressionWatch10expressionEv@Base 4:4.7.0~beta1
  _ZNK38QDeclarativeDebugObjectExpressionWatch10metaObjectEv@Base 4:4.7.0~beta1
- (arch=powerpcspe)_ZNK6QRectF6toRectEv@Base 4:4.8.5+git209
  _ZNK7QPacket4dataEv@Base 4:4.7.2
  _ZNK7QPacket7isEmptyEv@Base 4:4.7.0~beta1
  _ZTI11QMetaObject@Base 4:4.7.0~beta1
