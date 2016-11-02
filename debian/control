@@ -62,7 +62,7 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: qtcore4-l10n, ${misc:Depends}, ${shlibs:Depends}
-Suggests: libicu55, libthai0
+Suggests: libicu57, libthai0
 Description: Qt 4 core module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
