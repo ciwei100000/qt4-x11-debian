@@ -4,6 +4,12 @@ qt4-x11 (4:4.8.7+dfsg-10) UNRELEASED; urgency=medium
   * Update symbols files with buildds' logs.
   * Update libqtcore4's libicu55 suggestion to libicu57 (Closes: #842955).
     Thanks Dmitry Eremin-Solenikov for the bug report.
+  * Switch the build dependency on libssl-dev to libssl1.0-dev. While a
+    patch has been proposed applying it just a few days before the transitions
+    freeze is not the right moment to do such a change, specially when we have
+    no Qt upstream that will check the code nor working unit tests for the
+    functionality. We will push this patch as soon as the Buster development
+    cycle is started.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 02 Nov 2016 10:04:21 -0300
 
