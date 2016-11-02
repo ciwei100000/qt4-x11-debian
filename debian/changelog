@@ -1,6 +1,5 @@
-qt4-x11 (4:4.8.7+dfsg-10) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.7+dfsg-10) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Update symbols files with buildds' logs.
   * Update libqtcore4's libicu55 suggestion to libicu57 (Closes: #842955).
     Thanks Dmitry Eremin-Solenikov for the bug report.
@@ -11,7 +10,7 @@ qt4-x11 (4:4.8.7+dfsg-10) UNRELEASED; urgency=medium
     functionality. We will push this patch as soon as the Buster development
     cycle is started.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 02 Nov 2016 10:04:21 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 02 Nov 2016 20:40:33 -0300
 
 qt4-x11 (4:4.8.7+dfsg-9) unstable; urgency=medium
 
