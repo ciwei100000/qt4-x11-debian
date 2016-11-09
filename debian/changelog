@@ -1,5 +1,8 @@
 qt4-x11 (4:4.8.7+dfsg-11) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Switch libmysqlclient-dev to default-libmysqlclient-dev.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 09 Nov 2016 13:32:54 -0300
 
 qt4-x11 (4:4.8.7+dfsg-10) unstable; urgency=medium
