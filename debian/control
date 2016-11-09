@@ -640,7 +640,10 @@ Description: graphical designer for Qt 4 applications
 Package: qt4-dev-tools
 Architecture: any
 Section: devel
-Depends: libqt4-sql-sqlite, qtchooser (>= 55-gc9562a1-1~), ${misc:Depends}, ${shlibs:Depends}
+Depends: libqt4-sql-sqlite,
+         qtchooser (>= 55-gc9562a1-1~),
+         ${misc:Depends},
+         ${shlibs:Depends}
 Recommends: libqt4-dev, qt4-designer, qt4-doc
 Suggests: qt4-doc-html
 Conflicts: qt3-dev-tools-embedded
