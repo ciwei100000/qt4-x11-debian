@@ -2,6 +2,7 @@ qt4-x11 (4:4.8.7+dfsg-12) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Add openssl_1.1.patch to let Qt4 use OpenSSL 1.1 (Closes: #828522).
+    - Switch libssl-1.0-dev to libssl-dev to use OpenSSL 1.1.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 14 Aug 2017 14:48:26 -0300
 
