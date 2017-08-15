@@ -4090,6 +4090,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  (subst)_ZN16QConicalGradientC2ERK7QPointF{qreal}@Base 4:4.5.3
  _ZN16QConicalGradientC2Ev@Base 4:4.5.3
  (subst)_ZN16QConicalGradientC2E{qreal}{qreal}{qreal}@Base 4:4.5.3
+ (optional=gccinternal|arch=amd64)_ZN16QCoreApplication20sendSpontaneousEventEP7QObjectP6QEvent@Base 4:4.8.7
+ (optional=gccinternal|arch=amd64)_ZN16QCoreApplication9sendEventEP7QObjectP6QEvent@Base 4:4.8.7
  _ZN16QDesktopServices11displayNameENS_16StandardLocationE@Base 4:4.5.3
  _ZN16QDesktopServices13setUrlHandlerERK7QStringP7QObjectPKc@Base 4:4.5.3
  _ZN16QDesktopServices15storageLocationENS_16StandardLocationE@Base 4:4.5.3
@@ -7653,7 +7655,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN8QX11InfoD1Ev@Base 4:4.5.3
  _ZN8QX11InfoD2Ev@Base 4:4.5.3
  _ZN8QX11InfoaSERKS_@Base 4:4.5.3
- (arch=!amd64 !kfreebsd-amd64 !x32)_ZN9QBitArray6setBitEi@Base 4:4.8.7
+ (optional=gccinternal|arch=!kfreebsd-amd64 !x32)_ZN9QBitArray6setBitEi@Base 4:4.8.7
  _ZN9QBitArray8clearBitEi@Base 4:4.8.7
  _ZN9QCDEStyle11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN9QCDEStyle11qt_metacastEPKc@Base 4:4.5.3
@@ -13149,6 +13151,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZTVN16QTreeViewPrivate17AnimatedOperationE@Base 4:4.8.0
  _ZTVN4QCss13StyleSelectorE@Base 4:4.5.3
  (subst)_ZdvRK10QMatrix4x4{qreal}@Base 4:4.6.2
+ (optional=gccinternal|arch=amd64)_ZeqRK6QRectFS1_@Base 4:4.8.7
  _Zls6QDebug6QFlagsIN13QGraphicsItem16GraphicsItemFlagEE@Base 4:4.5.3
  _Zls6QDebug6QFlagsIN6QStyle9StateFlagEE@Base 4:4.6.1
  _Zls6QDebugN13QGraphicsItem16GraphicsItemFlagE@Base 4:4.5.3

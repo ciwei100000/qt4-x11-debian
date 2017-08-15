@@ -3331,7 +3331,7 @@ libQt3Support.so.4 libqt4-qt3support #MINVER#
  _ZN7Q3TableD0Ev@Base 4:4.5.3
  _ZN7Q3TableD1Ev@Base 4:4.5.3
  _ZN7Q3TableD2Ev@Base 4:4.5.3
- (arch=!m68k)_ZN7QString5clearEv@Base 4:4.8.7
+ (optional=gccinternal|arch=!amd64 !m68k)_ZN7QString5clearEv@Base 4:4.8.7
  _ZN8Q3Action10removeFromEP7QWidget@Base 4:4.5.3
  _ZN8Q3Action10setEnabledEb@Base 4:4.5.3
  _ZN8Q3Action10setIconSetERK5QIcon@Base 4:4.5.3
