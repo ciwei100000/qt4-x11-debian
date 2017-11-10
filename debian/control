@@ -480,8 +480,8 @@ Depends: libqt4-dbus (= ${binary:Version}),
          qtchooser (>= 55-gc9562a1-1~),
          ${misc:Depends}
 Recommends: libqt4-opengl-dev (= ${binary:Version})
-Suggests: firebird-dev,
-          libmysqlclient-dev,
+Suggests: default-libmysqlclient-dev,
+          firebird-dev,
           libpq-dev,
           libsqlite0-dev,
           libsqlite3-dev,

@@ -3,6 +3,7 @@ qt4-x11 (4:4.8.7+dfsg-13) UNRELEASED; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Add extra patch from Dmitry Eremin-Solenikov to make Qt4 work with
     OpenSSL 1.1 (Closes: #873275).
+  * Recommend default-libmysqlclient-dev instead of libmysqlclient-dev.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 07 Nov 2017 15:24:48 -0300
 
