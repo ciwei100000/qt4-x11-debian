@@ -3,7 +3,7 @@ qt4-x11 (4:4.8.7+dfsg-14) experimental; urgency=medium
   * Update symbols files with buildds' logs.
   * Add NEWS.Debian to explicitely tell users of the OpenSSL 1.1 patch.
 
- -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 18 Apr 2018 16:24:33 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 18 Apr 2018 16:30:10 -0300
 
 qt4-x11 (4:4.8.7+dfsg-13) experimental; urgency=medium
 
