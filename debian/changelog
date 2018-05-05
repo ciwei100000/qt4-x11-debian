@@ -2,6 +2,8 @@ qt4-x11 (4:4.8.7+dfsg-16) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Update symbols files with buildds' logs.
+  * Add a patch by Manuel A. Fernandez Montecelo to provide riscv64 support
+   (Closes: #897667).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 04 May 2018 21:15:44 -0300
 

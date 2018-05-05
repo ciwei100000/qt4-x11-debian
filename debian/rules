@@ -69,8 +69,8 @@ endif
 ifeq ($(DEB_HOST_ARCH_OS),linux)
   ifneq (,$(filter $(DEB_HOST_ARCH),alpha ia64 mips64 mips64el))
 	platform_arg = linux-g++
-  else ifeq ($(DEB_HOST_ARCH),arm64)
-	# arm64 does not uses -m64, so avoid linux-g++-64.
+  else ifneq (,$(filter $(DEB_HOST_ARCH),arm64 riscv64))
+	# arm64 and riscv64 do not use -m64, so avoid linux-g++-64.
 	platform_arg = linux-g++
   else ifeq ($(DEB_HOST_ARCH_BITS),64)
 	platform_arg = linux-g++-64
@@ -85,7 +85,7 @@ else
   endif
 endif
 
-no_pch_architectures := arm64 armhf ia64 powerpc powerpcspe ppc64 ppc64el
+no_pch_architectures := arm64 armhf ia64 powerpc powerpcspe ppc64 ppc64el riscv64
 ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), $(no_pch_architectures)))
 	extra_configure_opts += -no-pch
 endif
