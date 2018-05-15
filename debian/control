@@ -54,8 +54,8 @@ Build-Depends: debhelper (>= 9),
 Build-Conflicts: libqtwebkit-dev
 Standards-Version: 3.9.6
 Homepage: http://qt-project.org/
-Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qt4-x11.git
-Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/qt/qt4-x11.git
+Vcs-Git: https://salsa.debian.org/qt-kde-team/qt/qt4-x11.git
+Vcs-Browser: https://salsa.debian.org/qt-kde-team/qt/qt4-x11
 
 Package: libqtcore4
 Architecture: any

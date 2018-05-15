@@ -6,6 +6,7 @@ qt4-x11 (4:4.8.7+dfsg-17) UNRELEASED; urgency=medium
    patch!
   * Put the source package in section oldlibs. We do not expect new
     developments with qt4-x11.
+  * Update Vcs-[Git Browser] to the new location in salsa.debian.org.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 15 May 2018 12:57:22 -0300
 
