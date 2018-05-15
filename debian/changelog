@@ -1,6 +1,5 @@
-qt4-x11 (4:4.8.7+dfsg-17) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.7+dfsg-17) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Add fix-build-icu59.patch from OpenSuse. Fixes build with icu59
    (Closes: #898542). Thanks John Paul Adrian Glaubitz for digging the
    patch!
@@ -8,7 +7,7 @@ qt4-x11 (4:4.8.7+dfsg-17) UNRELEASED; urgency=medium
     developments with qt4-x11.
   * Update Vcs-[Git Browser] to the new location in salsa.debian.org.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 15 May 2018 12:57:22 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 15 May 2018 13:24:10 -0300
 
 qt4-x11 (4:4.8.7+dfsg-16) unstable; urgency=medium
 
