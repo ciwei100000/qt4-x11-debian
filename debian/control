@@ -1,5 +1,5 @@
 Source: qt4-x11
-Section: libs
+Section: oldlibs
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Sune Vuorela <debian@pusling.com>,
