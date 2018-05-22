@@ -1,3 +1,7 @@
+qt4-x11 (4:4.8.7+dfsg-18) UNRELEASED; urgency=medium
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 22 May 2018 10:27:58 -0300
+
 qt4-x11 (4:4.8.7+dfsg-17) unstable; urgency=medium
 
   * Add fix-build-icu59.patch from OpenSuse. Fixes build with icu59
