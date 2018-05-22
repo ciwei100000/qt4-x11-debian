@@ -1,5 +1,8 @@
 qt4-x11 (4:4.8.7+dfsg-18) UNRELEASED; urgency=medium
 
+  [ Edward Betts ]
+  * debian/NEWS: Replace UNRELEASED with unstable.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 22 May 2018 10:27:58 -0300
 
 qt4-x11 (4:4.8.7+dfsg-17) unstable; urgency=medium

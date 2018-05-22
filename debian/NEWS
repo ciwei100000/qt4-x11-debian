@@ -1,4 +1,4 @@
-qt4-x11 (4:4.8.7+dfsg-14) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.7+dfsg-14) unstable; urgency=medium
 
   Since 4:4.8.7+dfsg-13 qt4-x11 is patched to make use of OpenSSL 1.1. As Qt4
   is not supported upstream anymore this patch did not get a full review.
