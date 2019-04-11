@@ -3,6 +3,15 @@ qt4-x11 (4:4.8.7+dfsg-18) UNRELEASED; urgency=medium
   [ Edward Betts ]
   * debian/NEWS: Replace UNRELEASED with unstable.
 
+  [ Alexander Volkov ]
+  * Backport some vulnerability fixes from Qt 5 (closes: #923003).
+    - CVE-2018-15518: double free or corruption in QXmlStreamReader.
+    - CVE-2018-19869: Qt Svg crash when parsing malformed url reference.
+    - CVE-2018-19870: NULL pointer dereference in QGifHandler.
+    - CVE-2018-19871: QTgaFile CPU exhaustion.
+    - CVE-2018-19872: crash when parsing a malformed PPM image.
+    - CVE-2018-19873: QBmpHandler segfault on malformed BMP file.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 22 May 2018 10:27:58 -0300
 
 qt4-x11 (4:4.8.7+dfsg-17) unstable; urgency=medium

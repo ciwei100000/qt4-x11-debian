@@ -13,6 +13,12 @@ plugin_system_for_systemtray.patch
 
 # Patches backported from Qt5 that will never be part of Qt4.
 replace_timestamps_with_fixed_date_in_qhelpgenerator.patch
+CVE-2018-15518.patch
+CVE-2018-19869.patch
+CVE-2018-19870.patch
+CVE-2018-19871.patch
+CVE-2018-19872.patch
+CVE-2018-19873.patch
 
 # qt-copy patches
 0195-compositing-properties.diff
