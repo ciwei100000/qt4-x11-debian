@@ -1,4 +1,6 @@
-qt4-x11 (4:4.8.7+dfsg-18) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.7+dfsg-18) unstable; urgency=medium
+
+  * Team upload.
 
   [ Edward Betts ]
   * debian/NEWS: Replace UNRELEASED with unstable.
@@ -12,7 +14,7 @@ qt4-x11 (4:4.8.7+dfsg-18) UNRELEASED; urgency=medium
     - CVE-2018-19872: crash when parsing a malformed PPM image.
     - CVE-2018-19873: QBmpHandler segfault on malformed BMP file.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 22 May 2018 10:27:58 -0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 12 Apr 2019 23:10:28 +0300
 
 qt4-x11 (4:4.8.7+dfsg-17) unstable; urgency=medium
 
