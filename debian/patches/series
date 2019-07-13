@@ -72,3 +72,4 @@ add-lxde-support.patch
 openssl_1.1.patch
 riscv64-support.patch
 fix-build-icu59.patch
+gcc9-qforeach.patch
