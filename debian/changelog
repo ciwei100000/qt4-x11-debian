@@ -2,6 +2,8 @@ qt4-x11 (4:4.8.7+dfsg-19) UNRELEASED; urgency=medium
 
   * Fix FTBS with GCC 9. (Closes: #925811)
     - Add gcc9-qforeach.patch to backport Q_FOREACH changes from Qt 5
+    - Update qt-everywhere-opensource-src-4.8.7-gcc6.patch to add GCC 9 to
+      the compiler checks
 
  -- Felix Geyer <fgeyer@debian.org>  Sat, 13 Jul 2019 17:03:02 +0200
 
