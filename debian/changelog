@@ -8,6 +8,7 @@ qt4-x11 (4:4.8.7+dfsg-20) UNRELEASED; urgency=medium
   * Add missing colon in closes line.
   * Change priority extra to priority optional.
   * Drop unnecessary dh arguments: --parallel
+  * Rely on pre-initialized dpkg-architecture variables.
 
  -- Debian Janitor <janitor@jelmer.uk>  Thu, 21 Nov 2019 21:13:06 +0000
 
