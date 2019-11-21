@@ -5,6 +5,7 @@ qt4-x11 (4:4.8.7+dfsg-20) UNRELEASED; urgency=medium
   * Set debhelper-compat version in Build-Depends.
   * Remove patches 13_fix_prl_files_dont_link_entire_world.diff.disabled
     that are missing from debian/patches/series.
+  * Add missing colon in closes line.
 
  -- Debian Janitor <janitor@jelmer.uk>  Thu, 21 Nov 2019 21:13:06 +0000
 
@@ -1866,7 +1867,7 @@ qt4-x11 (4:4.5.2-1) unstable; urgency=low
       This is the long-standing issue of whether Phonon headers should be
       written with a capital P or a lowercase one.
     - 81_hurd_clock_gettime.diff
-      Fix FTBFS on hurd-i386. Thanks to Samuel Thibault. (Closes #533526)
+      Fix FTBFS on hurd-i386. Thanks to Samuel Thibault. (Closes: #533526)
   * Add epoch 4 to avoid headache for Phonon handling.
   * Build Phonon from Qt sources:
     - Remove libphonon-dev build dependency.
