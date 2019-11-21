@@ -338,9 +338,6 @@ override_dh_auto_install:
 		-regex '.*\.\(app\|conf\|cpp\|h\|js\|php\|png\|pro\|xml\|xsl\)$$' \
 		-exec chmod a-x {} \;
 
-override_dh_install:
-	dh_install --fail-missing
-
 override_dh_installdocs:
 	dh_installdocs --all LGPL_EXCEPTION.txt
 
@@ -384,3 +381,6 @@ prune-nonfree:
 	rm -fv examples/webkit/fancybrowser/jquery.min.js
 
 .PHONY: override_dh_auto_test
+
+override_dh_missing:
+	dh_missing --fail-missing
