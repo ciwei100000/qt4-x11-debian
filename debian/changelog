@@ -1,3 +1,9 @@
+qt4-x11 (4:4.8.7+dfsg-20) UNRELEASED; urgency=medium
+
+  * Trim trailing whitespace.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Thu, 21 Nov 2019 21:13:06 +0000
+
 qt4-x11 (4:4.8.7+dfsg-19) unstable; urgency=medium
 
   * Team upload.
@@ -1479,11 +1485,11 @@ qt4-x11 (4:4.6.3-1) unstable; urgency=low
 
   [ Fathi Boudra ]
   * Remove upstream patches:
-    - 0001_qpixmap_load_no_modify_referenced_copies.diff - stolen upstream 
-    - 0002_qmake_qfileinfo_absolutepath.diff - stolen upstream 
-    - 0003_s390_fix_atomic_ops_related_crashes.diff - stolen upstream 
-    - 0005_always_redraw_the_complete_control.diff - stolen upstream 
-    - 0006_expand_indicator_would_not_be_displayed.diff - stolen upstream 
+    - 0001_qpixmap_load_no_modify_referenced_copies.diff - stolen upstream
+    - 0002_qmake_qfileinfo_absolutepath.diff - stolen upstream
+    - 0003_s390_fix_atomic_ops_related_crashes.diff - stolen upstream
+    - 0005_always_redraw_the_complete_control.diff - stolen upstream
+    - 0006_expand_indicator_would_not_be_displayed.diff - stolen upstream
   * Remove Debian patches:
     - 97_alpha_ftbfs_qatomic_alpha_h_types.diff - merged upstream
     - 98_alpha_ftbfs_wtf_platform_support.diff - merged upstream
