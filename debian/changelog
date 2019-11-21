@@ -6,6 +6,7 @@ qt4-x11 (4:4.8.7+dfsg-20) UNRELEASED; urgency=medium
   * Remove patches 13_fix_prl_files_dont_link_entire_world.diff.disabled
     that are missing from debian/patches/series.
   * Add missing colon in closes line.
+  * Change priority extra to priority optional.
 
  -- Debian Janitor <janitor@jelmer.uk>  Thu, 21 Nov 2019 21:13:06 +0000
 

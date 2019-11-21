@@ -526,7 +526,7 @@ Description: Qt 4 OpenGL library development files
  using QtOpenGL library.
 
 Package: libqt4-dbg
-Priority: extra
+Priority: optional
 Architecture: any
 Multi-Arch: same
 Section: debug
@@ -539,7 +539,7 @@ Description: Qt 4 library debugging symbols
  This package contains the debugging symbols for the Qt 4 libraries.
 
 Package: libqt4-designer-dbg
-Priority: extra
+Priority: optional
 Architecture: any
 Multi-Arch: same
 Section: debug
@@ -554,7 +554,7 @@ Description: Qt 4 designer library debugging symbols
  This package contains the debugging symbols for the Qt 4 Designer library.
 
 Package: libqt4-qt3support-dbg
-Priority: extra
+Priority: optional
 Architecture: any
 Multi-Arch: same
 Section: debug
@@ -570,7 +570,7 @@ Description: Qt 3 compatibility library for Qt 4 debugging symbols
  for Qt 4.
 
 Package: libqt4-script-dbg
-Priority: extra
+Priority: optional
 Architecture: any
 Multi-Arch: same
 Section: debug
@@ -585,7 +585,7 @@ Description: Qt 4 script library debugging symbols
  This package contains the debugging symbols for the Qt 4 Script library.
 
 Package: libqt4-xmlpatterns-dbg
-Priority: extra
+Priority: optional
 Architecture: any
 Multi-Arch: same
 Section: debug
@@ -599,7 +599,7 @@ Description: Qt 4 XML patterns library debugging symbols
  library.
 
 Package: qt4-bin-dbg
-Priority: extra
+Priority: optional
 Architecture: any
 Section: debug
 Depends: libqt4-dev-bin (= ${binary:Version}), ${misc:Depends}
@@ -613,7 +613,7 @@ Description: Qt 4 binaries debugging symbols
  This package contains the debugging symbols for the Qt 4 binaries.
 
 Package: qt4-demos-dbg
-Priority: extra
+Priority: optional
 Architecture: any
 Section: debug
 Depends: qt4-demos (= ${binary:Version}), ${misc:Depends}
