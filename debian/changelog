@@ -3,6 +3,8 @@ qt4-x11 (4:4.8.7+dfsg-20) UNRELEASED; urgency=medium
   * Trim trailing whitespace.
   * Bump debhelper from old 9 to 12.
   * Set debhelper-compat version in Build-Depends.
+  * Remove patches 13_fix_prl_files_dont_link_entire_world.diff.disabled
+    that are missing from debian/patches/series.
 
  -- Debian Janitor <janitor@jelmer.uk>  Thu, 21 Nov 2019 21:13:06 +0000
 
