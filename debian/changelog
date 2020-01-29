@@ -1,5 +1,6 @@
 qt4-x11 (4:4.8.7+dfsg-20) UNRELEASED; urgency=medium
 
+  [ Debian Janitor ]
   * Trim trailing whitespace.
   * Bump debhelper from old 9 to 12.
   * Set debhelper-compat version in Build-Depends.
@@ -9,6 +10,9 @@ qt4-x11 (4:4.8.7+dfsg-20) UNRELEASED; urgency=medium
   * Change priority extra to priority optional.
   * Drop unnecessary dh arguments: --parallel
   * Rely on pre-initialized dpkg-architecture variables.
+
+  [ Dmitry Shachnev ]
+  * Stop shipping qt-default/qtchooser/default.conf in libqtcore4.
 
  -- Debian Janitor <janitor@jelmer.uk>  Thu, 21 Nov 2019 21:13:06 +0000
 

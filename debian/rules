@@ -318,11 +318,6 @@ override_dh_auto_install:
 	mkdir -p $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qtchooser
 	ln -s /usr/share/qtchooser/qt4-$(DEB_HOST_MULTIARCH).conf $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qtchooser/default.conf
 
-	# As a special case to avoid FTBFSs for current Qt4 packages, ship a second
-	# default.conf which will be searched by qtchooser. Only Qt4 should ship this.
-	mkdir -p $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt-default/qtchooser
-	ln -s /usr/share/qtchooser/qt4-$(DEB_HOST_MULTIARCH).conf $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt-default/qtchooser/default.conf
-
 	# Remove leftover directories
 	find $(CURDIR)/debian/tmp/usr/lib/qt4 -depth -type d \( -false \
 	  -o -name .moc\* \

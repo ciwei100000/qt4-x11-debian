@@ -1,4 +1,3 @@
 usr/lib/*/libQtCLucene.so.*
 usr/lib/*/libQtCore.so.*
-usr/lib/*/qt-default/qtchooser/default.conf
 usr/lib/*/qt4/plugins/codecs/*.so
