@@ -1,4 +1,6 @@
-qt4-x11 (4:4.8.7+dfsg-20) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.7+dfsg-20) unstable; urgency=medium
+
+  * Team upload.
 
   [ Debian Janitor ]
   * Trim trailing whitespace.
@@ -14,7 +16,7 @@ qt4-x11 (4:4.8.7+dfsg-20) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * Stop shipping qt-default/qtchooser/default.conf in libqtcore4.
 
- -- Debian Janitor <janitor@jelmer.uk>  Thu, 21 Nov 2019 21:13:06 +0000
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 04 Feb 2020 15:25:09 +0300
 
 qt4-x11 (4:4.8.7+dfsg-19) unstable; urgency=medium
 
