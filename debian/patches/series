@@ -6,6 +6,7 @@ xmlpatterns_stack_overflow_fix.diff
 Better-handling-of-invalid-font-tables.patch
 
 # Patches submitted upstream but still not accepted
+CVE-2020-0569.diff
 aarch64_arm64_qatomic_support.patch
 
 # Patched blessed by upstream but that will never reach Qt4.
