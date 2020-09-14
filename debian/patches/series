@@ -20,6 +20,7 @@ CVE-2018-19870.patch
 CVE-2018-19871.patch
 CVE-2018-19872.patch
 CVE-2018-19873.patch
+CVE-2020-17507.patch
 
 # qt-copy patches
 0195-compositing-properties.diff
