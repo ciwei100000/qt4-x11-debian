@@ -1,9 +1,9 @@
-qt4-x11 (4:4.8.7+dfsg-18+deb10u1) UNRELEASED; urgency=medium
+qt4-x11 (4:4.8.7+dfsg-18+deb10u1) buster; urgency=medium
 
   * Backport upstream patch to fix buffer overflow in XBM parser, CVE-2020-17507
     (Closes: #970308).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 30 Jan 2020 12:55:38 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Mon, 14 Sep 2020 10:56:35 -0300
 
 qt4-x11 (4:4.8.7+dfsg-18) unstable; urgency=medium
 
