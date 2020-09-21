@@ -1,0 +1,17 @@
+Description: fix undefined reference to `cti_vm_throw'
+Author: ciwei100000 <ciwei100000@gmail.com>
+Forwarded: not-needed
+Last-Update: 2020-09-12
+
+
+--- a/src/3rdparty/javascriptcore/JavaScriptCore/jit/JITStubs.h
++++ b/src/3rdparty/javascriptcore/JavaScriptCore/jit/JITStubs.h
+@@ -316,7 +316,7 @@ extern "C" {
+     EncodedJSValue JIT_STUB cti_op_to_primitive(STUB_ARGS_DECLARATION);
+     EncodedJSValue JIT_STUB cti_op_typeof(STUB_ARGS_DECLARATION);
+     EncodedJSValue JIT_STUB cti_op_urshift(STUB_ARGS_DECLARATION);
+-    EncodedJSValue JIT_STUB cti_vm_throw(STUB_ARGS_DECLARATION);
++    EncodedJSValue JIT_STUB cti_vm_throw(STUB_ARGS_DECLARATION) __attribute__((used));
+     EncodedJSValue JIT_STUB cti_to_object(STUB_ARGS_DECLARATION);
+     JSObject* JIT_STUB cti_op_construct_JSConstruct(STUB_ARGS_DECLARATION);
+     JSObject* JIT_STUB cti_op_new_array(STUB_ARGS_DECLARATION);
